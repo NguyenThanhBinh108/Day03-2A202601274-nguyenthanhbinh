@@ -75,6 +75,40 @@ THOUGHT_RE = re.compile(r"^Thought:\s*(.+)$", re.MULTILINE)
 ACTION_RE = re.compile(r"^Action:\s*(\w+)\s*\[(.*?)\]\s*$", re.MULTILINE)
 FINAL_RE = re.compile(r"^Final Answer:\s*(.*)$", re.MULTILINE | re.DOTALL)
 
+# 🚨 Các model nhóm đã test và XÁC NHẬN LỖI với REACT_SYSTEM_PROMPT dài.
+# Cảnh báo ngay lúc khởi động để không ai mất thời gian debug màn hình trắng.
+KNOWN_BAD_MODELS = {
+    "gemini-flash-lite-latest": "trả về rỗng (MALFORMED_RESPONSE) khi gặp prompt ReAct dài",
+    "gemini-2.5-flash": "Google đã ngừng cấp cho tài khoản mới (lỗi 404 NOT_FOUND)",
+    "gemini-2.0-flash-lite": "đã hết hạn mức ngày ở gói free",
+}
+RECOMMENDED_MODEL = "gemini-3.1-flash-lite"
+
+
+def check_model_config(provider):
+    """
+    Kiểm tra model đang cấu hình có nằm trong danh sách đã biết là lỗi không.
+    In cảnh báo rõ ràng thay vì để người chạy tự đoán khi thấy output rỗng.
+    """
+    model = getattr(provider, "model_name", "") or ""
+    if model in KNOWN_BAD_MODELS:
+        print()
+        print("=" * 66)
+        print(f"⚠️  CẢNH BÁO: model '{model}' đã được nhóm test và XÁC NHẬN LỖI.")
+        print(f"    Lý do: {KNOWN_BAD_MODELS[model]}")
+        print(f"    ➜ Hãy sửa file .env thành: LLM_MODEL={RECOMMENDED_MODEL}")
+        print("=" * 66)
+        return False
+    if provider.__class__.__name__ == "MockProvider":
+        print()
+        print("=" * 66)
+        print("⚠️  CẢNH BÁO: đang chạy MockProvider (không có API key).")
+        print("    Mọi câu hỏi sẽ trả về CÙNG một chuỗi -> không dùng để chấm điểm.")
+        print("    ➜ Hãy copy .env.example thành .env rồi điền GEMINI_API_KEY.")
+        print("=" * 66)
+        return False
+    return True
+
 
 # ============================================================
 # HELPERS
@@ -291,10 +325,24 @@ def run_react_agent(user_query: str, provider, session_id: str = "") -> dict:
         output = _cut_hallucinated_observation(raw)
 
         if not output:
+<<<<<<< HEAD
             logger.warning(f"[Agent] Step {step}: Empty LLM response")
             break
 
         step_trace: dict = {"step": step, "llm_output": output}
+=======
+            print("❌ LLM trả về RỖNG.")
+            print(f"   ➜ Nguyên nhân thường gặp: model không xử lý được prompt dài.")
+            print(f"   ➜ Hãy sửa .env thành: LLM_MODEL={RECOMMENDED_MODEL}")
+            return None
+
+        if output.startswith("[") and ("Error" in output[:40] or "Exception" in output[:40]):
+            print(f"❌ Provider báo lỗi: {raw[:250]}")
+            if "RESOURCE_EXHAUSTED" in raw or "429" in raw:
+                print("   ➜ Hết hạn mức gọi API. Chờ 1 phút rồi chạy lại, "
+                      "hoặc đổi LLM_MODEL / API key.")
+            return None
+>>>>>>> da8d4e21354a66b6ba28f9c04bdcf63bcb6ac52f
 
         thought_m = THOUGHT_RE.search(output)
         thought = thought_m.group(1).strip() if thought_m else extract_thought(output)
@@ -417,7 +465,13 @@ if __name__ == "__main__":
     model_name = getattr(provider, "model_name", "Offline Mock")
     print(f"\n🔌 Provider: {provider.__class__.__name__} | Model: {model_name}")
 
+<<<<<<< HEAD
     # Load test cases
+=======
+    # 🛡️ Chặn sớm các cấu hình đã biết là lỗi
+    check_model_config(provider)
+
+>>>>>>> da8d4e21354a66b6ba28f9c04bdcf63bcb6ac52f
     tests = load_test_cases()
     print(f"✅ Đã tải thành công {len(tests)} Test Cases từ config/test_cases.json")
     print(f"🛡️ Guardrail: MAX_ITERATIONS = {MAX_ITERATIONS}\n")
