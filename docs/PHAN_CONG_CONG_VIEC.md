@@ -7,6 +7,7 @@
 ## 👥 1. BẢNG PHÂN VAI & FILE ĐẢM NHẬN
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Vai trò (Role)                               | File đảm nhận           | Nhiệm vụ chính                                                                                          | Người đảm nhận                |
 | :-------------------------------------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------- | :--------------------------------- |
 | **Role 1: Product Architect**           | `config/test_cases.json` | Định hướng bài toán & soạn bộ câu test case                                                       | `________________`               |
@@ -23,6 +24,15 @@
 | **Role 4: Core Developer / Integrator** | `src/app.py`             | **Đầu mối kéo code/file của nhóm (`git pull`), Vibe Code lắp ráp thành App hoàn chỉnh** | `_______Đăng_________` |
 | **Role 5: Observability**               | `docs/trace_eval.md`     | Lập bảng Scoring Matrix & Soi nhật ký Trace Log                                                        | `________Bình________`  |
 >>>>>>> 4c534b4618d44ff7d50402e208128a63a23e6f3b
+=======
+| Vai trò (Role)                               | File đảm nhận           | Nhiệm vụ chính                                                                                          | Người đảm nhận               |
+| :-------------------------------------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| **Role 1: Product Architect**           | `config/test_cases.json` | Định hướng bài toán & soạn bộ câu test case                                                       | Đỗ Văn Linh  - 2A202601190     |
+| **Role 2: Tool Engineer**               | `src/tools.py`           | Định nghĩa các công cụ (Tools) cho Agent                                                             | Trần Chí Vũ -2A202601044       |
+| **Role 3: Prompt Engineer**             | `src/prompts.py`         | Viết ReAct System Prompt & phanh Guardrails                                                               | Đỗ Thu Liễu - 2A202601898      |
+| **Role 4: Core Developer / Integrator** | `src/app.py`             | **Đầu mối kéo code/file của nhóm (`git pull`), Vibe Code lắp ráp thành App hoàn chỉnh** | Trịnh Hải Đăng - 2A202601602  |
+| **Role 5: Observability**               | `docs/trace_eval.md`     | Lập bảng Scoring Matrix & Soi nhật ký Trace Log                                                        | Nguyễn Thanh Bình - 2A202601274 |
+>>>>>>> 30f6f5e5ba0abe0f8d85dc9fde5675bd8c3261c7
 
 *Note: Nếu nhóm 6 người, Role 5 tách thành 5A (Trace Analyst) và 5B (Flowchart Architect).*
 
