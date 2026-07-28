@@ -58,6 +58,58 @@ def _find_role(roles: dict, keyword: str):
     return None, None
 
 
+# ============================================================
+# XÁC THỰC ĐỊA ĐIỂM (phục vụ Edge Case TC10 - địa điểm không tồn tại)
+# ============================================================
+# Bộ dữ liệu data/real/ tổng hợp theo VỊ TRÍ CÔNG VIỆC, không có chiều địa
+# điểm -> không thể lọc thật theo tỉnh/thành. Nhưng vẫn PHẢI xác thực địa
+# điểm người dùng nhập: nếu là địa danh không có thật thì báo lỗi rõ ràng,
+# tuyệt đối không trả về kết quả toàn quốc như thể đã lọc.
+
+_KNOWN_LOCATIONS = {
+    # Toàn quốc / không giới hạn
+    "việt nam", "viet nam", "vietnam", "toàn quốc", "toan quoc",
+    "cả nước", "ca nuoc", "remote", "toàn cầu",
+    # Các tỉnh/thành có thị trường IT
+    "hà nội", "ha noi", "hanoi",
+    "hồ chí minh", "ho chi minh", "tp hcm", "tphcm", "hcm",
+    "sài gòn", "sai gon", "saigon",
+    "đà nẵng", "da nang", "danang",
+    "hải phòng", "hai phong",
+    "cần thơ", "can tho",
+    "bình dương", "binh duong",
+    "đồng nai", "dong nai",
+    "bắc ninh", "bac ninh",
+    "huế", "hue", "thừa thiên huế",
+    "nha trang", "khánh hòa", "khanh hoa",
+    "vũng tàu", "vung tau", "bà rịa",
+    "quảng ninh", "quang ninh", "hạ long",
+    "thanh hóa", "thanh hoa", "nghệ an", "nghe an", "vinh",
+}
+
+# Tiền tố hành chính cần bỏ trước khi đối chiếu ("thành phố Hà Nội" -> "hà nội")
+_LOCATION_PREFIXES = ("thành phố ", "thanh pho ", "tp. ", "tp.", "tp ",
+                      "tỉnh ", "tinh ", "quận ", "huyện ")
+
+
+def _clean_location(location: str) -> str:
+    """Chuẩn hóa tên địa điểm: bỏ khoảng trắng thừa và tiền tố hành chính."""
+    loc = " ".join(location.strip().lower().split())
+    changed = True
+    while changed:
+        changed = False
+        for p in _LOCATION_PREFIXES:
+            if loc.startswith(p):
+                loc = loc[len(p):].strip()
+                changed = True
+    return loc
+
+
+def _is_known_location(location: str) -> bool:
+    """True nếu địa điểm nằm trong danh sách tỉnh/thành được hỗ trợ."""
+    return _clean_location(location) in _KNOWN_LOCATIONS
+
+
 def search_jobs(keyword: str, location: str = "") -> str:
     """
     Tra cứu danh sách việc làm theo ngành nghề, kỹ năng và địa điểm.
@@ -67,10 +119,28 @@ def search_jobs(keyword: str, location: str = "") -> str:
         location (str, optional): Địa điểm làm việc (VD: 'Hà Nội', 'Hồ Chí Minh'). Mặc định '' (cả nước).
 
     Returns:
-        str: Danh sách tin tuyển dụng phù hợp kèm thông tin công ty, lương, địa điểm.
+        str: Danh sách tin tuyển dụng phù hợp kèm số lượng tin và kỹ năng yêu cầu.
+
+    Error:
+        - Trả về chuỗi báo lỗi nếu keyword rỗng.
+        - Trả về chuỗi báo lỗi nếu location không phải tỉnh/thành được hỗ trợ.
+        - Trả về chuỗi báo lỗi nếu không tìm thấy vị trí nào khớp keyword.
     """
     if not keyword or not keyword.strip():
         return "Vui lòng nhập từ khóa tìm kiếm."
+
+    # 🛡️ Xác thực địa điểm TRƯỚC khi tra cứu (Edge Case TC10).
+    # Địa danh không có thật -> báo lỗi ngay, không trả kết quả toàn quốc.
+    if location and location.strip():
+        if not _is_known_location(location):
+            goi_y = "Hà Nội, TP.HCM, Đà Nẵng, Hải Phòng, Cần Thơ, Bình Dương"
+            return (
+                f"LỖI: Không tìm thấy dữ liệu tuyển dụng cho địa điểm '{location}'. "
+                f"Địa điểm này không nằm trong danh sách được hỗ trợ. "
+                f"Các địa điểm hợp lệ: {goi_y}. "
+                f"Hoặc để trống địa điểm để tra cứu trên toàn quốc."
+            )
+
     try:
         data = _load_json("career_maps/all_roles.json")
         if not data or "roles" not in data:
@@ -92,7 +162,12 @@ def search_jobs(keyword: str, location: str = "") -> str:
             skills = ", ".join(s["skill"] for s in info.get("top_skills", [])[:5])
             lines.append(f"\n• {name}: {info.get('total_jds', '?')} tin — {skills}")
         if location:
-            lines.append(f"\n(Lưu ý: chưa hỗ trợ lọc địa điểm '{location}')")
+            # Địa điểm hợp lệ nhưng dữ liệu không tách theo tỉnh/thành.
+            # Nói rõ để Agent không hiểu nhầm là đã lọc theo địa điểm.
+            lines.append(
+                f"\n(Lưu ý: số liệu trên là tổng hợp TOÀN QUỐC. "
+                f"Bộ dữ liệu chưa tách riêng theo địa điểm '{location}'.)"
+            )
         return "\n".join(lines)
     except Exception as e:
         return f"Đã xảy ra lỗi khi tra cứu việc làm: {str(e)}"
