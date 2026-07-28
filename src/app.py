@@ -19,7 +19,7 @@ if sys.stdout.encoding != 'utf-8':
         pass
 
 # Import các thành phần từ file của Role 2, Role 3 & Multi-Provider Adapter
-from tools import AVAILABLE_TOOLS, get_weather, search_flights
+from tools import AVAILABLE_TOOLS, search_jobs, get_skill_requirements
 from prompts import CHATBOT_BASELINE_PROMPT, REACT_SYSTEM_PROMPT, MAX_ITERATIONS
 from providers import get_llm_provider
 
@@ -61,17 +61,26 @@ def run_react_agent(user_query: str, provider):
         step += 1
         print(f"\n--- 🔄 Vòng lặp ReAct (Step {step}/{MAX_ITERATIONS}) ---")
         
+        # ⚠️ TẠM THỜI: đây vẫn là kịch bản giả lập cứng, CHƯA gọi LLM.
+        # Role 4 sẽ thay bằng vòng lặp ReAct thật (parse Thought/Action từ LLM) ở Mốc 3.
         if step == 1:
-            print("🧠 Thought: Câu hỏi này cần tra cứu thời tiết thời gian thực.")
-            print("🛠️ Action: get_weather['Hà Nội']")
-            
+            print("🧠 Thought: Câu hỏi này cần tra cứu tin tuyển dụng thực tế.")
+            print("🛠️ Action: search_jobs['AI Engineer', 'Việt Nam']")
+
             # Thực thi tool
-            obs = get_weather("Hà Nội")
+            obs = search_jobs("AI Engineer", "Việt Nam")
             print(f"👁️ Observation: {obs}")
-            
+
         elif step == 2:
-            print("🧠 Thought: Tôi đã có thông tin thời tiết Hà Nội, giờ tôi có thể tư vấn trang phục.")
-            print("🏁 Final Answer: Thời tiết Hà Nội hôm nay 28°C, nắng nhẹ. Bạn nên mặc áo phông thoáng mát!")
+            print("🧠 Thought: Đã có tin tuyển dụng, giờ tra cứu kỹ năng yêu cầu.")
+            print("🛠️ Action: get_skill_requirements['AI Engineer']")
+
+            obs = get_skill_requirements("AI Engineer")
+            print(f"👁️ Observation: {obs}")
+
+        else:
+            print("🧠 Thought: Tôi đã có đủ thông tin để trả lời.")
+            print("🏁 Final Answer: (kịch bản giả lập — chờ Role 4 nối LLM thật ở Mốc 3)")
             break
             
     if step >= MAX_ITERATIONS:
