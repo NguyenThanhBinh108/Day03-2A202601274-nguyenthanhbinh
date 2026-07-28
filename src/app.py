@@ -2,6 +2,11 @@
 🚀 CORE AGENT APP (Dành cho Role 4: Core Agent Developer)
 File chính ghép nối tất cả các thành phần: Tools + Prompts + Security + Multi-Provider.
 Pipeline: Input → Security Check → Intent Router → Chatbot | ReAct Agent → Response
+
+Cách chạy:
+    python src/app.py           # chạy test case mặc định (TC6)
+    python src/app.py 10        # chạy riêng TC10
+    python src/app.py 8 9 10    # chạy nhiều test case
 """
 
 import json
@@ -31,7 +36,9 @@ from prompts import (
     MAX_ITERATIONS,
     TIMEOUT_SECONDS,
     SAFE_FALLBACK_MESSAGE,
+    GUARDRAIL_MESSAGE,
     ADVERSARIAL_RESPONSE,
+    REACT_STOP_SEQUENCES,
 )
 from providers import get_llm_provider
 from security import (
@@ -63,6 +70,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger("edupath")
 
+# Bộ nhận dạng các dòng trong giao thức ReAct
+THOUGHT_RE = re.compile(r"^Thought:\s*(.+)$", re.MULTILINE)
+ACTION_RE = re.compile(r"^Action:\s*(\w+)\s*\[(.*?)\]\s*$", re.MULTILINE)
+FINAL_RE = re.compile(r"^Final Answer:\s*(.*)$", re.MULTILINE | re.DOTALL)
+
 
 # ============================================================
 # HELPERS
@@ -72,6 +84,7 @@ def load_test_cases() -> list:
     """Đọc bộ test cases từ config/test_cases.json của Role 1"""
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     config_path = os.path.join(base_dir, "config", "test_cases.json")
+    # Fallback kiểm tra nếu file ở thư mục hiện tại
     if not os.path.exists(config_path):
         config_path = "test_cases.json"
     with open(config_path, "r", encoding="utf-8") as f:
@@ -87,21 +100,20 @@ def parse_action(text: str) -> tuple[str | None, list[str]]:
     """
     Trích xuất Action và tham số từ LLM output.
     Hỗ trợ các format:
-        Action: tool_name(arg1, arg2)
-        Action: tool_name["arg1"]
-        Action: tool_name[arg1, arg2]
+        Action: tool_name(arg1, arg2)   ← format v2.0
+        Action: tool_name[arg1, arg2]   ← format main branch
     Returns: (tool_name, [arg1, arg2, ...])
     """
-    # Format: tool_name(args)
-    m = re.search(r"Action\s*:\s*(\w+)\(([^)]*)\)", text)
+    # Format: tool_name[args]  (main branch format — ưu tiên vì REACT_SYSTEM_PROMPT dùng format này)
+    m = ACTION_RE.search(text)
     if m:
         name = m.group(1).strip()
         raw_args = m.group(2).strip()
         args = [a.strip().strip("\"'") for a in raw_args.split(",") if a.strip()]
         return name, args
 
-    # Format: tool_name["args"] or tool_name[args]
-    m = re.search(r"Action\s*:\s*(\w+)\[([^\]]*)\]", text)
+    # Format: tool_name(args)  (fallback)
+    m = re.search(r"Action\s*:\s*(\w+)\(([^)]*)\)", text)
     if m:
         name = m.group(1).strip()
         raw_args = m.group(2).strip()
@@ -113,47 +125,65 @@ def parse_action(text: str) -> tuple[str | None, list[str]]:
 
 def extract_thought(text: str) -> str:
     """Trích xuất nội dung Thought từ LLM output."""
+    m = THOUGHT_RE.search(text)
+    if m:
+        return m.group(1).strip()
     m = re.search(r"Thought\s*:\s*(.+?)(?=\n(?:Action|Final Answer)|$)", text, re.DOTALL)
     return m.group(1).strip() if m else text.strip()[:200]
 
 
 def extract_final_answer(text: str) -> str:
     """Trích xuất Final Answer từ LLM output."""
+    m = FINAL_RE.search(text)
+    if m:
+        return m.group(1).strip()
     m = re.search(r"Final Answer\s*:\s*(.+)", text, re.DOTALL)
     return m.group(1).strip() if m else text.strip()
 
 
-def safe_execute_tool(tool_name: str, args: list[str]) -> str:
+def _cut_hallucinated_observation(text: str) -> str:
     """
-    Gọi tool an toàn với timeout và error handling.
-    Không crash app — luôn trả về string (kể cả khi lỗi).
-    """
-    if tool_name not in AVAILABLE_TOOLS:
-        return json.dumps({
-            "status": "error",
-            "error": f"Tool '{tool_name}' không tồn tại. Các tool hợp lệ: {', '.join(AVAILABLE_TOOLS.keys())}",
-            "retryable": False
-        }, ensure_ascii=False)
+    🛡️ Cắt bỏ phần Agent TỰ BỊA dòng Observation.
 
-    tool_fn = AVAILABLE_TOOLS[tool_name]
+    Provider hiện chưa hỗ trợ stop_sequences, nên ta cắt thủ công: mọi thứ từ
+    'Observation:' trở đi đều bị bỏ, vì Observation là việc của hệ thống.
+    """
+    idx = text.find("Observation:")
+    return text[:idx].strip() if idx != -1 else text.strip()
+
+
+def execute_tool(tool_name: str, raw_args: str) -> str:
+    """
+    Thực thi một công cụ theo tên và chuỗi tham số Agent sinh ra.
+
+    LUÔN trả về chuỗi, KHÔNG BAO GIỜ ném exception ra ngoài — nếu tool lỗi thì
+    Agent phải đọc được thông báo lỗi để tự phục hồi (Failure Mode #1, #4).
+    """
+    # 🛡️ Guardrail: Agent gọi tool không tồn tại
+    if tool_name not in AVAILABLE_TOOLS:
+        ds = ", ".join(AVAILABLE_TOOLS)
+        return f"LỖI: Không có công cụ tên '{tool_name}'. Các công cụ hợp lệ: {ds}."
+
+    fn = AVAILABLE_TOOLS[tool_name]
+    args = [a.strip().strip("'\"") for a in raw_args.split(",")] if raw_args.strip() else []
+
     try:
-        # Call tool với timeout (signal-based trên Unix, threading trên Windows)
-        result = tool_fn(*args)
-        logger.info(f"Tool {tool_name}({args}) → {str(result)[:100]}...")
-        return result
-    except TypeError as e:
-        return json.dumps({
-            "status": "invalid_args",
-            "error": f"Sai tham số cho tool '{tool_name}': {str(e)}",
-            "retryable": False
-        }, ensure_ascii=False)
+        return fn(*args)
+    except TypeError:
+        # 🛡️ Guardrail: Agent truyền sai số lượng tham số → thử gộp lại làm 1
+        try:
+            return fn(raw_args.strip())
+        except Exception as e:
+            return f"LỖI: Gọi '{tool_name}' sai tham số ({e})."
     except Exception as e:
         logger.error(f"Tool {tool_name} exception: {e}")
-        return json.dumps({
-            "status": "error",
-            "error": f"Lỗi khi chạy tool '{tool_name}': {str(e)}",
-            "retryable": True
-        }, ensure_ascii=False)
+        return f"LỖI: Công cụ '{tool_name}' gặp sự cố: {e}"
+
+
+def safe_execute_tool(tool_name: str, args: list[str]) -> str:
+    """Wrapper cho execute_tool khi args đã parse thành list."""
+    raw_args = ", ".join(args)
+    return execute_tool(tool_name, raw_args)
 
 
 # ============================================================
@@ -179,7 +209,7 @@ def security_check(user_input: str, session_id: str) -> tuple[str | None, str | 
         return None, ADVERSARIAL_RESPONSE
 
     if detect_salary_guarantee_request(cleaned):
-        logger.info(f"[Security] Salary guarantee request detected")
+        logger.info("[Security] Salary guarantee request detected")
         return cleaned, None  # Không block, nhưng flag để xử lý ở response level
 
     return cleaned, None
@@ -246,39 +276,43 @@ def run_react_agent(user_query: str, provider, session_id: str = "") -> dict:
         print(f"🛡️ [BLOCKED] {error}")
         return {"status": "blocked", "answer": error, "trace": [], "steps": 0, "session_id": session_id}
 
-    # Build conversation history (multi-turn aware)
-    history: list[dict] = [{"role": "user", "content": cleaned}]
+    # Transcript-style history (tương thích với cả hai format)
+    transcript = f"{REACT_SYSTEM_PROMPT}\nQuestion: {cleaned}\n"
     trace: list[dict] = []
     observations: list[str] = []
     start_time = time.time()
-    seen_actions: set[str] = set()  # Detect duplicate tool calls
+    used_actions: set[str] = set()  # Detect duplicate tool calls
 
     for step in range(1, MAX_ITERATIONS + 1):
         print(f"\n--- 🔄 Vòng lặp ReAct (Step {step}/{MAX_ITERATIONS}) ---")
 
-        # Build full prompt from history
-        full_prompt = "\n\n".join(
-            f"{'User' if m['role']=='user' else 'Assistant'}: {m['content']}"
-            for m in history
-        )
-
         # Gọi LLM
-        llm_response = provider.generate(full_prompt, system_prompt=REACT_SYSTEM_PROMPT)
-        step_trace: dict = {"step": step, "llm_output": llm_response}
+        raw = provider.generate(transcript, system_prompt="")
+        output = _cut_hallucinated_observation(raw)
 
-        thought = extract_thought(llm_response)
+        if not output:
+            logger.warning(f"[Agent] Step {step}: Empty LLM response")
+            break
+
+        step_trace: dict = {"step": step, "llm_output": output}
+
+        thought_m = THOUGHT_RE.search(output)
+        thought = thought_m.group(1).strip() if thought_m else extract_thought(output)
         print(f"🧠 Thought: {thought}")
         step_trace["thought"] = thought
 
-        # Kiểm tra Final Answer
-        if "Final Answer:" in llm_response:
-            final_answer = extract_final_answer(llm_response)
+        action_m = ACTION_RE.search(output)
+        final_m = FINAL_RE.search(output)
 
-            # Grounding check — cảnh báo nếu claim không có trong observations
+        # --- Final Answer ---
+        if final_m and not action_m:
+            final_answer = final_m.group(1).strip()
+
+            # Grounding check
             grounding = check_response_grounding(final_answer, observations)
             if not grounding["grounded"]:
                 logger.warning(f"[Grounding] Ungrounded claims: {grounding['ungrounded_claims']}")
-                print(f"⚠️ [Grounding Warning] Một số số liệu chưa được xác thực: {grounding['ungrounded_claims']}")
+                print(f"⚠️ [Grounding Warning] Số liệu chưa xác thực: {grounding['ungrounded_claims']}")
 
             print(f"🏁 Final Answer:\n{final_answer}")
             step_trace["final_answer"] = final_answer
@@ -298,44 +332,62 @@ def run_react_agent(user_query: str, provider, session_id: str = "") -> dict:
                 "timestamp": datetime.now().isoformat()
             }
 
-        # Parse Action
-        action_name, action_args = parse_action(llm_response)
-        step_trace["action"] = action_name
-        step_trace["args"] = action_args
+        # --- Fallback: Final Answer without explicit action check ---
+        if "Final Answer:" in output and not action_m:
+            final_answer = extract_final_answer(output)
+            grounding = check_response_grounding(final_answer, observations)
+            step_trace["final_answer"] = final_answer
+            trace.append(step_trace)
+            elapsed = time.time() - start_time
+            return {
+                "status": "success",
+                "answer": final_answer,
+                "trace": trace,
+                "steps": step,
+                "observations": observations,
+                "grounding": grounding,
+                "session_id": session_id,
+                "elapsed_seconds": round(elapsed, 2),
+                "timestamp": datetime.now().isoformat()
+            }
 
-        if not action_name:
-            # LLM không ra Action cũng không ra Final Answer — fallback
-            logger.warning(f"[Agent] Step {step}: No Action or Final Answer parsed")
+        # --- Action ---
+        if not action_m:
+            print(f"⚠️ Không đọc được Action lẫn Final Answer. Output thô:\n{output[:300]}")
             trace.append(step_trace)
             break
 
-        print(f"🛠️ Action: {action_name}({', '.join(action_args)})")
+        tool_name = action_m.group(1)
+        raw_args = action_m.group(2)
+        signature = f"{tool_name}[{raw_args}]"
 
-        # Detect duplicate tool call (loop prevention)
-        action_key = f"{action_name}({','.join(action_args)})"
-        if action_key in seen_actions:
-            observation = json.dumps({
-                "status": "loop_detected",
-                "error": f"Tool '{action_name}' đã được gọi với cùng tham số. Không lặp lại."
-            }, ensure_ascii=False)
-            logger.warning(f"[Agent] Duplicate action detected: {action_key}")
+        # 🛡️ Guardrail: cấm lặp lại y hệt một Action đã gọi
+        if signature in used_actions:
+            print(f"🛠️ Action: {signature}")
+            print("🛡️ GUARDRAIL: Action này đã gọi rồi, chặn để tránh lặp vô tận.")
+            observation = (
+                f"LỖI: Bạn đã gọi công cụ này với đúng tham số này rồi. "
+                f"Hãy đổi cách tiếp cận hoặc trả lời luôn cho người dùng."
+            )
         else:
-            seen_actions.add(action_key)
-            observation = safe_execute_tool(action_name, action_args)
+            used_actions.add(signature)
+            print(f"🛠️ Action: {signature}")
+            observation = execute_tool(tool_name, raw_args)
 
         observations.append(observation)
         print(f"👁️ Observation: {observation[:300]}{'...' if len(observation) > 300 else ''}")
 
+        step_trace["action"] = tool_name
+        step_trace["args"] = [a.strip() for a in raw_args.split(",")]
         step_trace["observation"] = observation
         trace.append(step_trace)
 
-        # Cập nhật conversation history
-        history.append({"role": "assistant", "content": llm_response})
-        history.append({"role": "user", "content": f"Observation: {observation}"})
+        transcript += f"\nThought: {thought}\nAction: {signature}\nObservation: {observation}\n"
 
     # MAX_ITERATIONS reached without Final Answer
     elapsed = time.time() - start_time
     print(f"\n🛡️ GUARDRAIL TRIGGERED: Đã đạt giới hạn {MAX_ITERATIONS} bước. Trả về safe fallback.")
+    print(f"🏁 Final Answer: {GUARDRAIL_MESSAGE}")
     logger.warning(f"[Agent] Session {session_id[:8]} hit MAX_ITERATIONS after {elapsed:.2f}s")
 
     return {
@@ -367,40 +419,41 @@ if __name__ == "__main__":
 
     # Load test cases
     tests = load_test_cases()
-    print(f"✅ Loaded {len(tests)} test cases\n")
+    print(f"✅ Đã tải thành công {len(tests)} Test Cases từ config/test_cases.json")
+    print(f"🛡️ Guardrail: MAX_ITERATIONS = {MAX_ITERATIONS}\n")
 
-    # Demo với test case số 3 (index 2) — hỗ trợ cả 2 schema
-    sample_query = _get_query(tests[2])
+    # Cho phép chọn test case từ dòng lệnh: python src/app.py 8 9 10
+    wanted = {tc["id"] for tc in tests if tc["id"] in {a for a in sys.argv[1:]}}
+    if not wanted and len(sys.argv) > 1:
+        # Thử parse số nguyên: python src/app.py 6
+        nums = {int(a) for a in sys.argv[1:] if a.isdigit()}
+        wanted = {tc["id"] for tc in tests if any(tc["id"].endswith(str(n)) for n in nums)}
 
-    session = make_session_id("demo")
-    print(f"🔑 Session ID: {session}")
+    selected = [t for t in tests if t["id"] in wanted] if wanted else [tests[5]]
 
-    print("\n" + "─" * 60)
-    print("DEMO 1: CHATBOT BASELINE (Cấp 2 — Không tool)")
-    print("─" * 60)
-    chatbot_result = run_baseline_chatbot(sample_query, provider, session)
+    for tc in selected:
+        print("\n" + "=" * 60)
+        print(f"📌 TEST CASE {tc['id']} — {tc.get('category', 'unknown')}")
+        if tc.get("scenario"):
+            print(f"📝 {tc['scenario']}")
+        print("=" * 60)
 
-    print("\n" + "─" * 60)
-    print("DEMO 2: REACT AGENT (Cấp 3 — Có tool, có guardrails)")
-    print("─" * 60)
-    agent_result = run_react_agent(sample_query, provider, session)
+        query = _get_query(tc)
+        session = make_session_id(tc["id"])
 
-    print("\n" + "─" * 60)
-    print("📊 SUMMARY")
-    print("─" * 60)
-    print(f"Chatbot: {chatbot_result.get('status')} | {chatbot_result.get('elapsed_seconds', 0):.2f}s")
-    print(f"Agent:   {agent_result.get('status')} | {agent_result.get('steps', 0)} steps | {agent_result.get('elapsed_seconds', 0):.2f}s")
+        print("\n--- DEMO 1: CHẠY TRÊN CHATBOT BASELINE (Cấp 2 — Không tool) ---")
+        run_baseline_chatbot(query, provider, session)
 
-    # Save trace log
-    trace_path = os.path.join(
-        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        "logs", f"trace_{session}.json"
-    )
-    with open(trace_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "session_id": session,
-            "query": sample_query,
-            "chatbot_result": chatbot_result,
-            "agent_result": agent_result
-        }, f, ensure_ascii=False, indent=2)
-    print(f"\n📝 Trace log saved: {trace_path}")
+        print("\n--- DEMO 2: CHẠY TRÊN REACT AGENT (Cấp 3 — Có tool, có guardrails) ---")
+        result = run_react_agent(query, provider, session)
+
+        # Save trace log
+        trace_path = os.path.join(_LOG_DIR, f"trace_{session}.json")
+        with open(trace_path, "w", encoding="utf-8") as f:
+            json.dump({
+                "session_id": session,
+                "tc_id": tc["id"],
+                "query": query,
+                "agent_result": result
+            }, f, ensure_ascii=False, indent=2)
+        print(f"\n📝 Trace log saved: {trace_path}")

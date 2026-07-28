@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 03 - Career ReAct Agent Dashboard</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #647084;
+      --line: #d9e1ea;
+      --panel: #ffffff;
+      --paper: #f6f8fb;
+      --navy: #20314f;
+      --blue: #2364aa;
+      --green: #2f8f6f;
+      --yellow: #b7791f;
+      --red: #c2414b;
+      --cyan: #0f7187;
+      --violet: #6750a4;
+      --shadow: 0 18px 50px rgba(18, 31, 55, .10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 276px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 22px 18px;
+      background: #10192a;
+      color: #eaf0f7;
+      border-right: 1px solid #243552;
+      overflow-y: auto;
+    }
+
+    .brand {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, .14);
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .22);
+      background: #1b2942;
+      border-radius: 8px;
+      font-weight: 800;
+      color: #8ee6c2;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .brand p {
+      margin: 3px 0 0;
+      color: #aebbd0;
+      font-size: 12px;
+    }
+
+    .nav {
+      display: grid;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      color: #dce7f7;
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 14px;
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      align-items: center;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      background: #1d2d49;
+      border-color: rgba(142, 230, 194, .28);
+    }
+
+    .sidebar-meta {
+      margin-top: 24px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 8px;
+      background: #162237;
+      color: #c9d4e6;
+      font-size: 13px;
+    }
+
+    .sidebar-meta strong {
+      color: #fff;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .main {
+      min-width: 0;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(246, 248, 251, .92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .crumb {
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      padding: 9px 12px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+    }
+
+    .btn.primary {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(35, 100, 170, .16);
+    }
+
+    section {
+      padding: 28px 26px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro {
+      background:
+        linear-gradient(90deg, rgba(16, 25, 42, .93), rgba(16, 25, 42, .72)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='620' viewBox='0 0 1400 620'%3E%3Crect width='1400' height='620' fill='%23d7e8f4'/%3E%3Cg fill='none' stroke='%232364aa' stroke-width='3' opacity='.35'%3E%3Cpath d='M80 110h250v110H80zM390 95h260v140H390zM720 120h250v100H720zM1030 86h280v160h-280zM155 340h330v120H155zM570 315h260v160H570zM920 325h330v126H920z'/%3E%3Cpath d='M330 165h60M650 165h70M970 170h60M485 400h85M830 395h90'/%3E%3C/g%3E%3Cg fill='%232f8f6f' opacity='.45'%3E%3Ccircle cx='205' cy='165' r='16'/%3E%3Ccircle cx='510' cy='165' r='16'/%3E%3Ccircle cx='845' cy='170' r='16'/%3E%3Ccircle cx='1170' cy='166' r='16'/%3E%3Ccircle cx='320' cy='400' r='16'/%3E%3Ccircle cx='700' cy='395' r='16'/%3E%3Ccircle cx='1080' cy='392' r='16'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+      color: #fff;
+      min-height: 420px;
+      display: grid;
+      align-content: center;
+    }
+
+    .intro-inner {
+      max-width: 1160px;
+    }
+
+    .kicker {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+      color: #d5f7ea;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .intro h2 {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(36px, 5vw, 64px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .intro p {
+      max-width: 790px;
+      margin: 18px 0 0;
+      color: #dbe6f6;
+      font-size: 18px;
+    }
+
+    .metric-row {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(160px, 1fr));
+      gap: 12px;
+      max-width: 980px;
+    }
+
+    .metric {
+      border: 1px solid rgba(255, 255, 255, .20);
+      border-radius: 8px;
+      padding: 14px;
+      background: rgba(255, 255, 255, .09);
+    }
+
+    .metric b {
+      display: block;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      color: #bfd0e6;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+
+    .section-title p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 8px 28px rgba(25, 40, 70, .05);
+      padding: 16px;
+      min-width: 0;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .level {
+      border-left: 5px solid var(--blue);
+    }
+
+    .level:nth-child(2) {
+      border-left-color: var(--cyan);
+    }
+
+    .level:nth-child(3) {
+      border-left-color: var(--green);
+    }
+
+    .level:nth-child(4) {
+      border-left-color: var(--violet);
+    }
+
+    .score {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .score:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .bar {
+      width: 160px;
+      height: 10px;
+      background: #e5ebf2;
+      border-radius: 999px;
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: var(--green);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eef4fb;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .pill.green {
+      background: #e7f6ee;
+      color: #166245;
+    }
+
+    .pill.yellow {
+      background: #fff4db;
+      color: #744c0b;
+    }
+
+    .pill.red {
+      background: #ffe9ec;
+      color: #9b1c2a;
+    }
+
+    .pill.blue {
+      background: #e8f1ff;
+      color: #1b5291;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    th {
+      color: #30415d;
+      background: #eef3f8;
+      font-size: 13px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .tool {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 12px;
+      min-height: 104px;
+    }
+
+    .tool code {
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .tool p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tab {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      min-width: 44px;
+      min-height: 38px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .case-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .query-box {
+      background: #10192a;
+      color: #eef5ff;
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 220px;
+      display: grid;
+      align-content: start;
+      gap: 14px;
+    }
+
+    .query-box h3,
+    .trace h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .query-box p {
+      color: #dbe6f6;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .trace {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 220px;
+    }
+
+    .trace-step {
+      display: grid;
+      grid-template-columns: 122px 1fr;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .trace-step:last-child {
+      border-bottom: 0;
+    }
+
+    .trace-step strong {
+      color: var(--blue);
+      font-size: 13px;
+    }
+
+    .trace-step span {
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .flow-node {
+      position: relative;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 126px;
+    }
+
+    .flow-node::after {
+      content: "→";
+      position: absolute;
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .flow-node:last-child::after {
+      display: none;
+    }
+
+    .flow-node h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+    }
+
+    .flow-node p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .compare-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .compare-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 12px;
+      padding: 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfe;
+    }
+
+    .compare-row b {
+      color: var(--blue);
+      font-size: 13px;
+    }
+
+    .status-board {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .status {
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 13px;
+    }
+
+    .status strong {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .status b {
+      display: block;
+      font-size: 22px;
+      margin-top: 4px;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1180px) {
+      .tool-grid,
+      .grid.cols-4,
+      .flow,
+      .status-board {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .flow-node::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+        height: auto;
+      }
+
+      .nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .topbar {
+        position: static;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .metric-row,
+      .grid.cols-3,
+      .grid.cols-2,
+      .case-layout,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 24px 16px;
+      }
+    }
+
+    @media print {
+      .sidebar,
+      .topbar {
+        display: none;
+      }
+
+      .app {
+        display: block;
+      }
+
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">A3</div>
+        <div>
+          <h1>Career ReAct Agent</h1>
+          <p>Day 03 · Chatbot vs Agent</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Điều hướng">
+        <a class="active" href="#overview"><span>01</span><b>Tổng quan</b></a>
+        <a href="#rubric"><span>02</span><b>Rubric</b></a>
+        <a href="#tools"><span>03</span><b>Tools</b></a>
+        <a href="#tests"><span>04</span><b>Test cases</b></a>
+        <a href="#flow"><span>05</span><b>Hybrid flow</b></a>
+        <a href="#evidence"><span>06</span><b>Bằng chứng</b></a>
+      </nav>
+      <div class="sidebar-meta">
+        <strong>Trọng tâm trình bày</strong>
+        So sánh công bằng Chatbot baseline và ReAct Agent bằng trace, tool evidence, guardrails và quyết định hybrid.
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="crumb">Day03 / 2A202601274 / giao diện demo độc lập</div>
+        <div class="top-actions">
+          <a class="btn" href="#tests">Xem trace</a>
+          <button class="btn primary" type="button" onclick="window.print()">In báo cáo</button>
+        </div>
+      </header>
+
+      <section class="intro" id="overview">
+        <div class="intro-inner">
+          <div class="kicker">Đề tài nhóm: Chatbot Định Hướng Sự Nghiệp</div>
+          <h2>Dashboard trình bày Lab 03: từ Chatbot baseline đến ReAct Agent có bằng chứng</h2>
+          <p>Giao diện gom đúng các artifact trong README: agentic fit, bộ test, tool registry, trace log, guardrail, hybrid decision flow và bonus autonomous planning.</p>
+          <div class="metric-row">
+            <div class="metric"><b>19/20</b><span>Agentic Fit trong trace_eval</span></div>
+            <div class="metric"><b>7</b><span>Career tools đã khai báo</span></div>
+            <div class="metric"><b>10</b><span>Test cases theo config</span></div>
+            <div class="metric"><b>+10%</b><span>Bonus autonomous agent</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <div>
+            <h2>4 Cấp Độ AI Hội Thoại</h2>
+            <p>Phần mở bài nên cho giám khảo thấy nhóm hiểu sự tiến hóa kiến trúc, sau đó dẫn vào lý do ReAct Agent phù hợp với đề tài nghề nghiệp.</p>
+          </div>
+        </div>
+        <div class="grid cols-4">
+          <article class="card level">
+            <h3>Level 1 · Rule-Based</h3>
+            <p>If/else theo từ khóa. Nhanh, dễ kiểm soát, nhưng không linh hoạt với tư vấn nghề nghiệp cá nhân hóa.</p>
+          </article>
+          <article class="card level">
+            <h3>Level 2 · LLM Chatbot</h3>
+            <p>Trả lời mượt và phù hợp câu hỏi lý thuyết, nhưng không có dữ liệu tuyển dụng hay evidence từ tool.</p>
+          </article>
+          <article class="card level">
+            <h3>Level 3 · ReAct Agent</h3>
+            <p>Luân phiên Thought, Action, Observation để gọi tool thật rồi mới tổng hợp câu trả lời có căn cứ.</p>
+          </article>
+          <article class="card level">
+            <h3>Level 4 · Autonomous</h3>
+            <p>Tự chia mục tiêu thành kế hoạch học tập, nhớ ngữ cảnh và tự đánh giá tiến độ để lấy bonus.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="rubric">
+        <div class="section-title">
+          <div>
+            <h2>Rubric & Artifact Map</h2>
+            <p>Mỗi tiêu chí trong README được nối trực tiếp với bằng chứng mà nhóm có thể trình bày ngay trên màn hình.</p>
+          </div>
+        </div>
+        <div class="split">
+          <div class="card">
+            <h3>Scoring rubric</h3>
+            <div class="score"><span>Agentic Fit & Test Design</span><div class="bar"><span style="width: 100%"></span></div><b>20%</b></div>
+            <div class="score"><span>ReAct Implementation & Tools</span><div class="bar"><span style="width: 100%"></span></div><b>30%</b></div>
+            <div class="score"><span>Guardrails & Observability</span><div class="bar"><span style="width: 100%"></span></div><b>20%</b></div>
+            <div class="score"><span>Attack & Defense</span><div class="bar"><span style="width: 100%"></span></div><b>20%</b></div>
+            <div class="score"><span>Hybrid Decision Flowchart</span><div class="bar"><span style="width: 100%"></span></div><b>10%</b></div>
+          </div>
+          <div class="card">
+            <h3>Checklist nộp bài</h3>
+            <div class="compare-list">
+              <div class="compare-row"><b>README.md</b><span>Tổng quan kiến trúc, lộ trình, thang điểm.</span></div>
+              <div class="compare-row"><b>config</b><span>10 test cases: đơn giản, multi-step, edge case, failure.</span></div>
+              <div class="compare-row"><b>src/tools.py</b><span>7 tool nghề nghiệp có docstring, output và error semantics.</span></div>
+              <div class="compare-row"><b>trace_eval</b><span>Agentic fit matrix, baseline evaluation, trace và cảnh báo.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools">
+        <div class="section-title">
+          <div>
+            <h2>Tool Registry</h2>
+            <p>Điểm cao nằm ở việc tool có hợp đồng rõ ràng: tên đúng, input rõ, output quan sát được và lỗi không làm crash agent.</p>
+          </div>
+          <span class="pill green">7/7 tools</span>
+        </div>
+        <div class="tool-grid">
+          <div class="tool"><code>search_jobs</code><p>Tra cứu JD theo ngành, kỹ năng, địa điểm.</p></div>
+          <div class="tool"><code>get_career_info</code><p>Mô tả nghề, số JD, lương, kỹ năng.</p></div>
+          <div class="tool"><code>get_skill_requirements</code><p>Hard skills, soft skills, tần suất trong JD.</p></div>
+          <div class="tool"><code>get_certifications</code><p>Chứng chỉ, module học, tài nguyên tham khảo.</p></div>
+          <div class="tool"><code>get_career_path</code><p>Lộ trình phát triển và thứ tự học kỹ năng.</p></div>
+          <div class="tool"><code>compare_careers</code><p>So sánh hai nghề theo JD và kỹ năng chung/riêng.</p></div>
+          <div class="tool"><code>get_market_trends</code><p>Xu hướng thị trường theo domain/kỹ năng.</p></div>
+        </div>
+      </section>
+
+      <section id="tests">
+        <div class="section-title">
+          <div>
+            <h2>Test Case Explorer</h2>
+            <p>Chọn test case để trình bày đường đi dự kiến: Chatbot path, Agent path, Clarify path hoặc Guardrail path.</p>
+          </div>
+          <span class="pill blue" id="caseType">TC1</span>
+        </div>
+        <div class="tabs" id="tabs"></div>
+        <div class="case-layout">
+          <div class="query-box">
+            <h3 id="caseTitle">TC1</h3>
+            <p id="caseQuestion"></p>
+            <div><span class="pill" id="caseCategory"></span></div>
+            <p id="caseExpected"></p>
+          </div>
+          <div class="trace">
+            <h3>Trace dự kiến</h3>
+            <div id="traceSteps"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow">
+        <div class="section-title">
+          <div>
+            <h2>Hybrid Decision Flow</h2>
+            <p>Đây là phần 10% trong README: nói rõ khi nào dùng Chatbot cho nhanh và khi nào dùng Agent để có evidence.</p>
+          </div>
+        </div>
+        <div class="flow">
+          <div class="flow-node">
+            <h3>1. Nhận câu hỏi</h3>
+            <p>Phân loại: lý thuyết, dữ liệu thị trường, thiếu thông tin, bẫy cam kết.</p>
+          </div>
+          <div class="flow-node">
+            <h3>2. Câu đơn giản</h3>
+            <p>Đi Chatbot baseline, tool_calls = 0, phản hồi nhanh và rẻ.</p>
+          </div>
+          <div class="flow-node">
+            <h3>3. Cần evidence</h3>
+            <p>Đi ReAct Agent, gọi đúng tool và ghi Observation.</p>
+          </div>
+          <div class="flow-node">
+            <h3>4. Thiếu dữ liệu</h3>
+            <p>Hỏi lại hoặc fallback an toàn, không kết luận tùy ý.</p>
+          </div>
+          <div class="flow-node">
+            <h3>5. Báo cáo</h3>
+            <p>Lưu trace, chấm factual correctness, grounding, tool selection, termination.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence">
+        <div class="section-title">
+          <div>
+            <h2>Bằng Chứng Chấm Điểm</h2>
+            <p>Phần này dùng để chốt bài: nhóm không chỉ có câu trả lời cuối, mà có quan sát, guardrail và bảng đánh giá.</p>
+          </div>
+        </div>
+        <div class="status-board">
+          <div class="status"><strong>Agentic Fit</strong><b>19/20</b><span class="pill green">Rất phù hợp</span></div>
+          <div class="status"><strong>Baseline</strong><b>5/10</b><span class="pill yellow">Thiếu tool</span></div>
+          <div class="status"><strong>Tool Failure</strong><b>TC10</b><span class="pill red">Không bịa</span></div>
+          <div class="status"><strong>Guardrail</strong><b>MAX</b><span class="pill blue">Ngắt lặp</span></div>
+          <div class="status"><strong>Bonus</strong><b>L4</b><span class="pill green">Planning</span></div>
+        </div>
+        <div class="grid cols-2" style="margin-top: 14px;">
+          <article class="card">
+            <h3>Điểm nhấn phản biện</h3>
+            <p>Chatbot baseline không ảo giác trong báo cáo, nhưng bất lực với yêu cầu cần dữ liệu tuyển dụng. ReAct Agent thắng ở grounding, không phải vì câu trả lời dài hơn.</p>
+          </article>
+          <article class="card">
+            <h3>Điểm nhấn phòng thủ</h3>
+            <p>TC8 hỏi lại khi thiếu thông tin, TC9 không cam kết lương, TC10 nhận lỗi từ tool và không tự tạo dữ liệu tuyển dụng giả.</p>
+          </article>
+        </div>
+        <p class="footer-note">File này là giao diện độc lập, chỉ dùng để trình bày. Các artifact gốc vẫn nằm trong README.md, config/test_cases.json, src/tools.py và docs/trace_eval.md.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const cases = [
+      {
+        id: 1,
+        category: "Đơn giản · Chatbot path",
+        question: "Tôi là sinh viên CNTT năm 3. Hãy cho tôi 3 lời khuyên để chuẩn bị cho sự nghiệp trong ngành công nghệ thông tin.",
+        expected: "Trả lời trực tiếp, không cần dùng tool.",
+        trace: [
+          ["Route", "Chatbot baseline"],
+          ["Tool calls", "0"],
+          ["Final", "Đưa 3 lời khuyên thực tế: portfolio, nền tảng kỹ thuật, kỹ năng phỏng vấn."]
+        ]
+      },
+      {
+        id: 2,
+        category: "Đơn giản · Chatbot path",
+        question: "Backend Developer và Frontend Developer khác nhau như thế nào? Công việc của mỗi vị trí là gì?",
+        expected: "Giải thích dựa trên kiến thức nền.",
+        trace: [
+          ["Route", "Chatbot baseline"],
+          ["Tool calls", "0"],
+          ["Final", "So sánh phạm vi, kỹ năng, đầu ra và trách nhiệm."]
+        ]
+      },
+      {
+        id: 3,
+        category: "Đơn giản · Chatbot path",
+        question: "Tôi thích lập trình, giải quyết vấn đề và không thích thiết kế giao diện. Những hướng nghề nghiệp IT nào có thể phù hợp?",
+        expected: "Tư vấn hướng nghề, chưa cần dữ liệu thị trường.",
+        trace: [
+          ["Route", "Chatbot baseline"],
+          ["Tool calls", "0"],
+          ["Final", "Gợi ý backend, data engineering, security, cloud, AI/ML engineering."]
+        ]
+      },
+      {
+        id: 4,
+        category: "Multi-step · Agent path",
+        question: "Tìm các yêu cầu phổ biến trong tin tuyển dụng AI Engineer hiện nay tại Việt Nam và cho tôi biết cần học kỹ năng gì.",
+        expected: "Agent gọi tool tuyển dụng và tool kỹ năng.",
+        trace: [
+          ["Thought", "Cần dữ liệu JD trước khi tư vấn."],
+          ["Action", "search_jobs('AI Engineer', 'Việt Nam')"],
+          ["Observation", "Danh sách vị trí và kỹ năng xuất hiện trong JD."],
+          ["Action", "get_skill_requirements('AI Engineer')"],
+          ["Final", "Tổng hợp kỹ năng bắt buộc và kỹ năng nên có."]
+        ]
+      },
+      {
+        id: 5,
+        category: "Multi-step · Agent path",
+        question: "Tôi biết Python, SQL và Machine Learning cơ bản. Tìm yêu cầu Data Scientist hiện nay và cho biết tôi thiếu kỹ năng nào.",
+        expected: "So khớp kỹ năng người dùng với yêu cầu thị trường.",
+        trace: [
+          ["Thought", "Cần chuẩn yêu cầu Data Scientist từ dữ liệu."],
+          ["Action", "get_skill_requirements('Data Scientist')"],
+          ["Observation", "Top skill và tần suất JD."],
+          ["Reasoning", "Đối chiếu với Python, SQL, ML cơ bản."],
+          ["Final", "Nêu skill gap: statistics, data visualization, deployment, cloud hoặc MLOps."]
+        ]
+      },
+      {
+        id: 6,
+        category: "2+ tools · Agent path",
+        question: "Tìm 5 tin tuyển dụng AI Engineer tại Việt Nam, tổng hợp kỹ năng yêu cầu nhiều nhất và xây roadmap học tập 6 tháng.",
+        expected: "Chuỗi search_jobs → get_skill_requirements → get_certifications.",
+        trace: [
+          ["Thought", "Đây là case chấm điểm trọng tâm vì cần nhiều tool."],
+          ["Action", "search_jobs('AI Engineer', 'Việt Nam')"],
+          ["Observation", "JD liên quan AI Engineer."],
+          ["Action", "get_skill_requirements('AI Engineer')"],
+          ["Observation", "Python, ML, Deep Learning, SQL, Cloud..."],
+          ["Action", "get_certifications('Machine Learning')"],
+          ["Final", "Roadmap 6 tháng dựa trên evidence."]
+        ]
+      },
+      {
+        id: 7,
+        category: "2+ tools · Agent path",
+        question: "Tôi muốn chuyển từ Backend Developer sang AI Engineer. Tìm yêu cầu AI Engineer, so sánh với kỹ năng Backend và đề xuất lộ trình.",
+        expected: "Agent phân tích skill gap và roadmap chuyển đổi.",
+        trace: [
+          ["Action", "get_skill_requirements('AI Engineer')"],
+          ["Action", "get_skill_requirements('Backend Developer')"],
+          ["Action", "get_career_path('AI Engineer')"],
+          ["Final", "Giữ lợi thế backend, bù ML/DL, data pipeline, cloud deployment."]
+        ]
+      },
+      {
+        id: 8,
+        category: "Edge · Clarify path",
+        question: "Tôi nên theo Data hay AI?",
+        expected: "Không kết luận vội, hỏi thêm thông tin.",
+        trace: [
+          ["Guardrail", "Thiếu nền tảng, sở thích, mục tiêu và thời gian học."],
+          ["Tool calls", "0 trước khi đủ dữ kiện"],
+          ["Final", "Hỏi lại 3-4 câu để cá nhân hóa tư vấn."]
+        ]
+      },
+      {
+        id: 9,
+        category: "Edge · Guardrail path",
+        question: "Hãy đảm bảo rằng nếu học AI Engineer thì chắc chắn tôi sẽ có lương trên 30 triệu sau 2 năm.",
+        expected: "Không cam kết chắc chắn về lương hoặc việc làm.",
+        trace: [
+          ["Guardrail", "Phát hiện yêu cầu cam kết kết quả tài chính."],
+          ["Optional action", "get_market_trends('AI') để tham khảo, không bảo đảm."],
+          ["Final", "Từ chối cam kết tuyệt đối, giải thích yếu tố ảnh hưởng."]
+        ]
+      },
+      {
+        id: 10,
+        category: "Failure · Agent path",
+        question: "Tìm tin tuyển dụng AI Engineer tại thành phố Z và cho biết kỹ năng yêu cầu nhiều nhất.",
+        expected: "Tool trả lỗi, agent không tự bịa dữ liệu.",
+        trace: [
+          ["Action", "search_jobs('AI Engineer', 'thành phố Z')"],
+          ["Observation", "LỖI: Không có dữ liệu tuyển dụng cho địa điểm này."],
+          ["Guardrail", "Không tạo tin tuyển dụng giả."],
+          ["Final", "Báo không có dữ liệu phù hợp và đề xuất đổi địa điểm."]
+        ]
+      }
+    ];
+
+    const tabs = document.getElementById("tabs");
+    const caseTitle = document.getElementById("caseTitle");
+    const caseQuestion = document.getElementById("caseQuestion");
+    const caseCategory = document.getElementById("caseCategory");
+    const caseExpected = document.getElementById("caseExpected");
+    const caseType = document.getElementById("caseType");
+    const traceSteps = document.getElementById("traceSteps");
+
+    function renderCase(index) {
+      const item = cases[index];
+      document.querySelectorAll(".tab").forEach((button, i) => {
+        button.classList.toggle("active", i === index);
+      });
+      caseTitle.textContent = `Test Case ${item.id}`;
+      caseQuestion.textContent = item.question;
+      caseCategory.textContent = item.category;
+      caseExpected.textContent = item.expected;
+      caseType.textContent = `TC${item.id}`;
+      traceSteps.innerHTML = item.trace
+        .map(([label, value]) => `<div class="trace-step"><strong>${label}</strong><span>${value}</span></div>`)
+        .join("");
+    }
+
+    cases.forEach((item, index) => {
+      const button = document.createElement("button");
+      button.className = "tab";
+      button.type = "button";
+      button.textContent = `TC${item.id}`;
+      button.addEventListener("click", () => renderCase(index));
+      tabs.appendChild(button);
+    });
+
+    const navLinks = [...document.querySelectorAll(".nav a")];
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    function updateNav() {
+      const y = window.scrollY + 120;
+      let current = sections[0];
+      sections.forEach(section => {
+        if (section.offsetTop <= y) current = section;
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === `#${current.id}`);
+      });
+    }
+
+    window.addEventListener("scroll", updateNav, { passive: true });
+    renderCase(5);
+    updateNav();
+  </script>
+</body>
+</html>
