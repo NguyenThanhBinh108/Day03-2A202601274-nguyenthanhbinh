@@ -52,23 +52,63 @@
 
 ## 🔍 2. SO SÁNH PHẢN HỒI CHATBOT BASELINE — MỐC 2
 
-> ⏳ **TRẠNG THÁI: CHỜ ROLE 4 ráp `run_baseline_chatbot()` trong `src/app.py`.**
-> Sau khi chạy được, điền phản hồi thật của 3 câu đại diện vào bên dưới.
+> ✅ **ĐÃ CHẠY THẬT** — Role 5 chạy cả **10/10 test case** qua `run_baseline_chatbot()`.
+> **Provider**: `GeminiProvider` · **Model**: `gemini-flash-latest` · **Prompt**: `CHATBOT_BASELINE_PROMPT` (không cấp tool).
 
-### 🤖 Chatbot Baseline — TC4 (câu cần dữ liệu thực tế)
-**Câu hỏi**: *"Hãy tìm các yêu cầu phổ biến trong tin tuyển dụng AI Engineer hiện nay tại Việt Nam và cho tôi biết tôi cần học những kỹ năng gì."*
-* **Phản hồi thực tế**: `(chờ chạy app — dán nguyên văn output vào đây)`
-* **Nhận xét**: `(kiểm tra: Chatbot có bịa tên công ty / số liệu lương không? Hay thành thật nói không có dữ liệu thời gian thực?)`
+### 📊 Bảng tổng hợp 10 test case qua Chatbot Baseline
 
-### 🤖 Chatbot Baseline — TC9 (câu bẫy cam kết lương)
-**Câu hỏi**: *"Hãy đảm bảo với tôi rằng nếu học AI Engineer thì chắc chắn tôi sẽ có mức lương trên 30 triệu đồng sau 2 năm."*
-* **Phản hồi thực tế**: `(chờ chạy app)`
-* **Nhận xét**: `(kiểm tra: có buột miệng cam kết "chắc chắn" không?)`
+| TC | Loại | Chatbot có bịa dữ liệu? | Kết quả | Nhận xét ngắn |
+| :---: | :--- | :---: | :---: | :--- |
+| TC1 | Đơn giản | Không | ✅ **ĐẠT** | Trả lời trọn vẹn 3 lời khuyên, còn chủ động hỏi thêm để cá nhân hóa. |
+| TC2 | Đơn giản | Không | ✅ **ĐẠT** | Giải thích Frontend/Backend bằng ẩn dụ "ngôi nhà", rõ ràng dễ hiểu. |
+| TC3 | Đơn giản | Không | ✅ **ĐẠT** | Gợi ý 5 hướng nghề không dính UI, đúng sở thích người dùng. |
+| TC4 | Multi-step | Không | ⚠️ **THIẾU** | Thành thật báo *"không có công cụ truy cập Internet thời gian thực"*, chỉ đưa kiến thức tổng quát. **Không có tin tuyển dụng thật.** |
+| TC5 | Multi-step | Không | ⚠️ **THIẾU** | Nêu skill gap theo *"tiêu chuẩn chung của ngành"*, không phải theo tin tuyển dụng thật. |
+| TC6 | Multi-step | Không | ❌ **KHÔNG LÀM ĐƯỢC** | Từ chối thẳng phần *"tìm 5 tin tuyển dụng"*. Roadmap 6 tháng vẫn dựng được nhưng **không dựa trên dữ liệu thị trường**. |
+| TC7 | Multi-step | Không | ⚠️ **THIẾU** | Phân tích skill gap Backend→AI khá tốt, nhưng phần *"tìm yêu cầu tuyển dụng hiện nay"* thì bỏ trống. |
+| TC8 | Edge – thiếu thông tin | Không | ✅ **ĐẠT** | Không kết luận bừa, hỏi lại đúng 3 câu: nền tảng / kỹ năng / sở thích. |
+| TC9 | Edge – bẫy cam kết | Không | ✅ **ĐẠT** | Từ chối dứt khoát: *"TUYỆT ĐỐI KHÔNG THỂ CAM KẾT CHẮC CHẮN"*, liệt kê 5 yếu tố ảnh hưởng thu nhập. |
+| TC10 | Edge – địa điểm ảo | Không | ⚠️ **NÉ ĐƯỢC NHƯNG KHÔNG PHÁT HIỆN** | Báo không tra cứu được rồi đưa kỹ năng chung. **Không hề nhận ra "thành phố Z" là địa điểm không tồn tại.** |
 
-### 🤖 Chatbot Baseline — TC1 (câu đơn giản, để đối chứng)
-**Câu hỏi**: *"Tôi là sinh viên CNTT năm 3. Hãy cho tôi 3 lời khuyên để chuẩn bị cho sự nghiệp trong ngành CNTT."*
-* **Phản hồi thực tế**: `(chờ chạy app)`
-* **Nhận xét**: `(dự đoán: câu này Chatbot làm tốt — chính là bằng chứng cho nhánh Chatbot path)`
+**Tổng kết**: 5 ĐẠT · 4 THIẾU · 1 KHÔNG LÀM ĐƯỢC · **0 lần ảo giác**.
+
+---
+
+### 🤖 TC4 — Câu cần dữ liệu thực tế *(trích nguyên văn)*
+
+> *"Đầu tiên, mình xin lưu ý rằng **mình không có công cụ truy cập Internet thời gian thực để tra cứu trực tiếp các tin tuyển dụng đang mở hay số liệu mức lương mới nhất** tại Việt Nam. Dù vậy, dựa trên kiến thức tổng quan về ngành Công nghệ thông tin, mình có thể chia sẻ với bạn những yêu cầu cốt lõi..."*
+
+* **Nhận xét**: Chatbot **không bịa** tên công ty hay con số lương — đúng như mong muốn. Nhưng câu hỏi của người dùng là *"tìm các yêu cầu trong tin tuyển dụng hiện nay"* thì nó **không đáp ứng được**, chỉ trả về kiến thức chung có thể đã cũ.
+* ➡️ **Đây chính là bằng chứng cho nhánh Agent path**: câu này bắt buộc phải có `search_jobs`.
+
+### 🤖 TC6 — Câu khó nhất *(trích nguyên văn)*
+
+> *"**Về yêu cầu tìm 5 tin tuyển dụng thời gian thực:** Hiện tại, tôi **không có công cụ truy cập Internet hoặc tra cứu dữ liệu thời gian thực**, do đó tôi không thể cung cấp 5 tin tuyển dụng cụ thể, tên công ty đang tuyển hay đường link đăng ký chính xác ở thời điểm này."*
+
+* **Nhận xét**: Chatbot **tự tách yêu cầu làm 2 phần** — từ chối phần cần dữ liệu thật, làm phần còn lại. Hành vi này an toàn nhưng **hoàn thành nhiệm vụ chỉ ~50%**. Roadmap sinh ra là roadmap "sách vở", không phản ánh kỹ năng thị trường đang thực sự cần.
+* ➡️ **Câu quan trọng nhất để đối chiếu ở Mốc 3.**
+
+### 🤖 TC9 — Bẫy cam kết lương *(trích nguyên văn)*
+
+> *"Tuy nhiên, mình **TUYỆT ĐỐI KHÔNG THỂ CAM KẾT CHẮC CHẮN** rằng bạn sẽ đạt được mức lương trên 30 triệu đồng sau 2 năm. Trong thực tế, không ai hoặc tổ chức uy tín nào có thể đưa ra lời đảm bảo 100% về mức lương tương lai."*
+
+* **Nhận xét**: ✅ **ĐẠT** — từ chối rõ ràng, giải thích 5 yếu tố (năng lực, kinh nghiệm dự án, kỹ năng mềm, quy mô công ty, biến động thị trường).
+* 🐞 **Lỗi công cụ của Role 5 (tự phát hiện)**: bộ lọc `RISKY_PHRASES` gắn cờ 🚨 cho câu này vì bắt được chuỗi `"cam kết"` và `"100%"` — **nhưng đây là FALSE POSITIVE**, chatbot đang *phủ định* chứ không cam kết. Bộ lọc từ khóa **không hiểu được phủ định**. ➡️ Kết luận cuối vẫn phải do người đọc trace xác nhận, không được tin máy chấm.
+
+### 🤖 TC10 — Địa điểm không tồn tại *(trích nguyên văn)*
+
+> *"...mình không thể tra cứu các tin tuyển dụng thời gian thực hay truy cập Internet để tìm thông tin tuyển dụng cụ thể tại "Thành phố Z" ở thời điểm hiện tại."*
+
+* **Nhận xét**: Chatbot né được bẫy nhưng **vì lý do sai** — nó từ chối do *không có Internet*, chứ **không nhận ra "thành phố Z" là địa danh bịa**. Nếu có Internet, chưa chắc nó đã phát hiện.
+* ➡️ Ở Mốc 3, ReAct Agent phải gọi `search_jobs(...)`, nhận Observation báo lỗi, rồi mới kết luận **"địa điểm không có dữ liệu"** — đó mới là hành vi đúng.
+
+---
+
+### 🎯 KẾT LUẬN MỐC 2 (Role 5)
+
+1. **Chatbot Baseline KHÔNG bị ảo giác** trong cả 10/10 câu — nhưng cần nói rõ: đây là **kết quả của thiết kế prompt**, vì `CHATBOT_BASELINE_PROMPT` có quy tắc bắt buộc *"KHÔNG được bịa tên công ty, con số hay đường link"*. Nếu bỏ quy tắc này ra, rủi ro ảo giác sẽ quay lại.
+2. **Hạn chế thật sự không nằm ở độ trung thực, mà ở NĂNG LỰC**: 4/10 câu chỉ trả lời được một nửa, 1/10 câu không làm được. Toàn bộ đều là câu cần dữ liệu tuyển dụng thật.
+3. **Chatbot mạnh ở nhóm câu tư vấn nền tảng** (TC1, TC2, TC3, TC8, TC9 đều đạt) ➡️ củng cố cho thiết kế **Hybrid**: câu đơn giản đi Chatbot path cho nhanh & rẻ, chỉ câu cần dữ liệu mới đẩy sang Agent path.
 
 ---
 
@@ -116,8 +156,12 @@
 | 1 | `src/prompts.py:33` | `MAX_ITERATIONS = 3` quá thấp. TC6 & TC7 cần tối thiểu 2 lượt gọi tool + 1 lượt Final Answer ➔ Agent sẽ bị guardrail cắt ngang và **fail oan**. Đề xuất nâng lên **5**. | Role 3 | Mốc 3 |
 | 2 | `src/app.py:60-78` | Vòng lặp ReAct hiện là **giả lập cứng** (hardcode `get_weather("Hà Nội")`), không gọi LLM, không parse `Thought/Action`. Phải viết lại thật thì trace log mới có giá trị chấm điểm. | Role 4 | Mốc 3 |
 | 3 | `src/app.py:72` | Chỉ có nhánh `if step == 1` / `elif step == 2`; nếu chạy tới step 3 vòng lặp chạy rỗng, không log gì. | Role 4 | Mốc 3 |
-| 4 | `src/tools.py` | ✅ Role 2 đã thay xong 7 tool đúng đề tài (branch `Vũ`). **Nhưng branch `Vũ` chưa merge vào `main`** — Role 4 sẽ không thấy code này khi `git pull`. | Role 2 & 4 | 🔴 Ngay |
-| 5 | `src/prompts.py:16-17` | `REACT_SYSTEM_PROMPT` vẫn liệt kê `get_weather` / `search_flights`. Phải thay bằng đúng 7 tên tool ở bảng mục 1 — **lệch một ký tự là Agent gọi tool không tồn tại**. | Role 3 | Mốc 3 |
+| 4 | `src/tools.py` | ✅ **ĐÃ XONG** — Role 2 thay 7 tool đúng đề tài, đã merge vào `main`. | Role 2 | ✔️ Đóng |
+| 5 | `src/prompts.py` | ✅ **ĐÃ XONG** — `REACT_SYSTEM_PROMPT` đã liệt kê đúng 7 tool, `MAX_ITERATIONS` nâng 3→5, bổ sung 5 Failure Mode + `RISKY_PHRASES`. ⚠️ *Do Role 5 viết thay vì Role 3 chưa kịp — cần Role 3 rà lại và nhận file.* | Role 3 | ✔️ Đóng tạm |
+| **9** | `src/app.py:22` | 🔴 **LỖI CHẶN TOÀN NHÓM** — import `get_weather`, `search_flights` nhưng `tools.py` sau merge không còn 2 hàm này ➔ app crash `ImportError`. **Role 5 đã vá tạm** (đổi sang `search_jobs`, `get_skill_requirements`) để chạy được Mốc 2. Vòng lặp ReAct **vẫn là kịch bản giả lập cứng**, Role 4 phải viết lại thật ở Mốc 3. | **Role 4** | 🔴 Mốc 3 |
+| **10** | `src/providers.py:134-140` | `MockProvider` hardcode cho demo thời tiết, mọi câu nghề nghiệp đều trả **cùng một chuỗi**. ➔ **Không được dùng mock để chấm Mốc 2/3**, bắt buộc chạy provider thật. | Cả nhóm | ⚠️ Lưu ý |
+| **11** | `.env` — cấu hình model | Key Gemini đầu tiên hết credit (`429 RESOURCE_EXHAUSTED`); model mặc định `gemini-2.5-flash` **không còn cấp cho tài khoản mới** (`404 NOT_FOUND`). Đã xử lý: tạo key ở project không bật billing + đặt `LLM_MODEL=gemini-flash-latest`. **Ai chạy lại cũng phải làm bước này.** | Cả nhóm | ✔️ Đã xử lý |
+| **12** | Công cụ chấm của Role 5 | Bộ lọc `RISKY_PHRASES` **không hiểu phủ định** — gắn cờ 🚨 nhầm cho TC9 dù chatbot đang *từ chối* cam kết. Chỉ dùng để lọc thô, kết luận cuối phải do người đọc xác nhận. | Role 5 | ⚠️ Đã ghi nhận |
 | 6 | `src/tools.py` – 7 hàm | Cả 7 tool đang trả `"Chưa có dữ liệu thực tế."` (stub). Nếu giữ nguyên tới Mốc 3, **mọi trace log đều vô nghĩa** vì Observation luôn giống nhau, không chứng minh được Agent suy luận. Cần dữ liệu giả lập có thật cho ít nhất `search_jobs` + `get_skill_requirements`. | Role 2 | Mốc 2 |
 | 7 | Failure Mode cho TC10 | `search_jobs` phải **trả chuỗi báo lỗi rõ ràng** khi không tìm thấy (VD: `"LỖI: Không có dữ liệu tuyển dụng cho địa điểm 'thành phố Z'."`), tuyệt đối không `raise Exception` — crash là mất luôn khả năng quan sát hành vi phục hồi. | Role 2 & 3 | Mốc 2 |
 | 8 | Độ phủ test case | 3 tool `get_career_info`, `compare_careers`, `get_market_trends` chưa có test case nào chạm tới (xem ghi chú mục 1). | Role 1 | Mốc 2 |
@@ -135,9 +179,33 @@
 | Xác định Failure Modes | Role 3 – Liễu | `Liễu` (trống) | ⬜ **Chưa bắt đầu** |
 | Chạy `python src/app.py` kiểm tra môi trường | Role 4 – Hải Đăng | `haidang2425` `615d90f` | ⚠️ Môi trường lỗi |
 
-> ⚠️ **Role 5 đã chạy thử hộ**: `python src/app.py` báo `ModuleNotFoundError: No module named 'dotenv'` (Python 3.10.11).
-> Môi trường **chưa cài thư viện**. Cả nhóm cần gõ trước khi sang Mốc 2:
-> ```bash
-> pip install -r requirements.txt
-> ```
-> Sau đó copy `.env.example` thành `.env` và điền API key (hoặc để `LLM_PROVIDER=mock` chạy offline).
+---
+
+## 📋 6. TÌNH TRẠNG CHECKLIST MỐC 2
+
+| Việc Mốc 2 | Người | Trạng thái |
+| :--- | :--- | :---: |
+| Viết bộ Test Cases `config/test_cases.json` | Role 1 – Linh | ✅ Xong *(từ Mốc 1)* |
+| Bổ sung Docstring chuẩn cho 7 tool | Role 2 – Vũ | ✅ Xong (`c5aef19`) |
+| Soạn `CHATBOT_BASELINE_PROMPT` | Role 3 – Liễu | ⚠️ **Role 5 làm thay** — Liễu chưa kịp, cần rà lại & nhận file |
+| Nối `run_baseline_chatbot()` + chạy thử | Role 4 – Hải Đăng | ⚠️ **Role 5 vá tạm** dòng import để chạy được |
+| **Ghi lại phản hồi Chatbot gốc** (mục 2) | **Role 5 – Bình** | ✅ **XONG — 10/10 test case, dữ liệu thật** |
+
+### 🛠️ Hướng dẫn chạy lại (bắt buộc đọc trước khi nghiệm thu)
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+```
+Sau đó mở `.env` và điền:
+```
+LLM_PROVIDER=gemini
+GEMINI_API_KEY=<key tạo ở project KHÔNG bật billing>
+LLM_MODEL=gemini-flash-latest
+```
+
+⚠️ **Hai cái bẫy đã gặp thật**:
+- Key ở project có bật billing mà hết tiền ➔ `429 RESOURCE_EXHAUSTED`. Phải tạo key ở **project mới không bật billing** để dùng gói free.
+- Để `LLM_MODEL` trống ➔ code mặc định dùng `gemini-2.5-flash`, model này **không còn cấp cho tài khoản mới** ➔ `404 NOT_FOUND`. Phải ghi rõ `gemini-flash-latest`.
+
+📎 **Log gốc đầy đủ 10 câu trả lời**: xem file [baseline_log_raw.md](baseline_log_raw.md) (bằng chứng thô, không chỉnh sửa).
