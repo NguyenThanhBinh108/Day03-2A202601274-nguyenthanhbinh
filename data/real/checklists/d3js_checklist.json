@@ -1,0 +1,154 @@
+{
+  "skill": "D3.js",
+  "skill_key": "d3js",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.526772Z",
+  "checklist_items": [
+    {
+      "item_id": "d3js_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Data binding",
+      "description": "Master Data binding trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=D3.js+Data+binding+tutorial",
+      "resource_title": "D3.js — Data binding",
+      "quiz_ids": [
+        "d3js_l1_001"
+      ],
+      "market_relevance": "Data binding là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Selections",
+      "description": "Master Selections trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=D3.js+Selections+tutorial",
+      "resource_title": "D3.js — Selections",
+      "quiz_ids": [
+        "d3js_l2_002"
+      ],
+      "market_relevance": "Selections là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Scales",
+      "description": "Master Scales trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=D3.js+Scales+tutorial",
+      "resource_title": "D3.js — Scales",
+      "quiz_ids": [
+        "d3js_l3_003"
+      ],
+      "market_relevance": "Scales là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Axes",
+      "description": "Master Axes trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=D3.js+Axes+tutorial",
+      "resource_title": "D3.js — Axes",
+      "quiz_ids": [
+        "d3js_l4_004"
+      ],
+      "market_relevance": "Axes là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Line/Bar/Pie charts",
+      "description": "Master Line/Bar/Pie charts trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=D3.js+Line/Bar/Pie+charts+tutorial",
+      "resource_title": "D3.js — Line/Bar/Pie charts",
+      "quiz_ids": [
+        "d3js_l5_005"
+      ],
+      "market_relevance": "Line/Bar/Pie charts là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Transitions",
+      "description": "Master Transitions trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=D3.js+Transitions+tutorial",
+      "resource_title": "D3.js — Transitions",
+      "quiz_ids": [
+        "d3js_l5_006"
+      ],
+      "market_relevance": "Transitions là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Brushing/Zooming",
+      "description": "Master Brushing/Zooming trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=D3.js+Brushing/Zooming+tutorial",
+      "resource_title": "D3.js — Brushing/Zooming",
+      "quiz_ids": [
+        "d3js_l5_007"
+      ],
+      "market_relevance": "Brushing/Zooming là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Force simulation",
+      "description": "Master Force simulation trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=D3.js+Force+simulation+tutorial",
+      "resource_title": "D3.js — Force simulation",
+      "quiz_ids": [
+        "d3js_l5_008"
+      ],
+      "market_relevance": "Force simulation là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "GeoJSON/Maps",
+      "description": "Master GeoJSON/Maps trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=D3.js+GeoJSON/Maps+tutorial",
+      "resource_title": "D3.js — GeoJSON/Maps",
+      "quiz_ids": [
+        "d3js_l5_009"
+      ],
+      "market_relevance": "GeoJSON/Maps là key skill trong D3.js Frontend development"
+    },
+    {
+      "item_id": "d3js_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "React + D3",
+      "description": "Master React + D3 trong D3.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=D3.js+React+++D3+tutorial",
+      "resource_title": "D3.js — React + D3",
+      "quiz_ids": [
+        "d3js_l5_010"
+      ],
+      "market_relevance": "React + D3 là key skill trong D3.js Frontend development"
+    }
+  ]
+}

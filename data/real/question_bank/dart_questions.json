@@ -1,0 +1,218 @@
+{
+  "skill": "Dart",
+  "skill_key": "dart",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.569448Z",
+  "source_references": [
+    "https://www.google.com/search?q=Dart+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "dart_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Dart, Dart basics có vai trò gì?",
+      "options": {
+        "A": "Dart basics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dart basics là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dart basics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dart basics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dart basics trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Dart basics là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Dart basics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Dart+basics+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "dart-basics"
+      ]
+    },
+    {
+      "question_id": "dart_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Dart, Async/await/Futures có vai trò gì?",
+      "options": {
+        "A": "Async/await/Futures là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Async/await/Futures là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Async/await/Futures đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Async/await/Futures là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Async/await/Futures trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Async/await/Futures là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Async/await/Futures giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Async/await/Futures+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "async-await-futures"
+      ]
+    },
+    {
+      "question_id": "dart_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Dart, Streams có vai trò gì?",
+      "options": {
+        "A": "Streams là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Streams là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Streams đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Streams là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Streams trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Streams là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Streams giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Streams+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "streams"
+      ]
+    },
+    {
+      "question_id": "dart_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Dart, Null safety có vai trò gì?",
+      "options": {
+        "A": "Null safety là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Null safety là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Null safety đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Null safety là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Null safety trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Null safety là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Null safety giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Null+safety+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "null-safety"
+      ]
+    },
+    {
+      "question_id": "dart_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Dart, Classes/Mixins có vai trò gì?",
+      "options": {
+        "A": "Classes/Mixins là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Classes/Mixins là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Classes/Mixins đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Classes/Mixins là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Classes/Mixins trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Classes/Mixins là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Classes/Mixins giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Classes/Mixins+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "classes-mixins"
+      ]
+    },
+    {
+      "question_id": "dart_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Dart, Generics có vai trò gì?",
+      "options": {
+        "A": "Generics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Generics là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Generics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Generics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Generics trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Generics là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Generics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Generics+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "generics"
+      ]
+    },
+    {
+      "question_id": "dart_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Dart, Collections có vai trò gì?",
+      "options": {
+        "A": "Collections là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Collections là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Collections đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Collections là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Collections trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Collections là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Collections giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Collections+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "collections"
+      ]
+    },
+    {
+      "question_id": "dart_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Dart, dart:io có vai trò gì?",
+      "options": {
+        "A": "dart:io là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "dart:io là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "dart:io đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên dart:io là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "dart:io trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và dart:io là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ dart:io giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+dart:io+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "dart:io"
+      ]
+    },
+    {
+      "question_id": "dart_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Dart, dart:convert có vai trò gì?",
+      "options": {
+        "A": "dart:convert là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "dart:convert là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "dart:convert đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên dart:convert là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "dart:convert trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và dart:convert là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ dart:convert giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+dart:convert+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "dart:convert"
+      ]
+    },
+    {
+      "question_id": "dart_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Dart, Testing có vai trò gì?",
+      "options": {
+        "A": "Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Testing là core concept trong Dart — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Testing trong Dart: Đây là một trong những concepts quan trọng nhất. Dart được sử dụng rộng rãi trong industry và Testing là phần không thể thiếu. Khi làm việc với Dart trong production, hiểu rõ Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Dart+Testing+tutorial",
+      "tags": [
+        "dart",
+        "mobile",
+        "testing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Android Development",
+  "skill_key": "android",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.573446Z",
+  "source_references": [
+    "https://www.google.com/search?q=Android+Development+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "android_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Android Development, Activity lifecycle có vai trò gì?",
+      "options": {
+        "A": "Activity lifecycle là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Activity lifecycle là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Activity lifecycle đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Activity lifecycle là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Activity lifecycle trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Activity lifecycle là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Activity lifecycle giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Activity+lifecycle+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "activity-lifecycle"
+      ]
+    },
+    {
+      "question_id": "android_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Android Development, Fragments có vai trò gì?",
+      "options": {
+        "A": "Fragments là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Fragments là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Fragments đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Fragments là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Fragments trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Fragments là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Fragments giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Fragments+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "fragments"
+      ]
+    },
+    {
+      "question_id": "android_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Android Development, Intents có vai trò gì?",
+      "options": {
+        "A": "Intents là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Intents là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Intents đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Intents là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Intents trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Intents là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Intents giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Intents+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "intents"
+      ]
+    },
+    {
+      "question_id": "android_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Android Development, Services có vai trò gì?",
+      "options": {
+        "A": "Services là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Services là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Services đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Services là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Services trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Services là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Services giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Services+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "services"
+      ]
+    },
+    {
+      "question_id": "android_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Android Development, Broadcast receivers có vai trò gì?",
+      "options": {
+        "A": "Broadcast receivers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Broadcast receivers là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Broadcast receivers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Broadcast receivers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Broadcast receivers trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Broadcast receivers là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Broadcast receivers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Broadcast+receivers+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "broadcast-receivers"
+      ]
+    },
+    {
+      "question_id": "android_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Android Development, Content providers có vai trò gì?",
+      "options": {
+        "A": "Content providers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Content providers là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Content providers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Content providers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Content providers trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Content providers là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Content providers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Content+providers+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "content-providers"
+      ]
+    },
+    {
+      "question_id": "android_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Android Development, RecyclerView có vai trò gì?",
+      "options": {
+        "A": "RecyclerView là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "RecyclerView là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "RecyclerView đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên RecyclerView là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "RecyclerView trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và RecyclerView là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ RecyclerView giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+RecyclerView+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "recyclerview"
+      ]
+    },
+    {
+      "question_id": "android_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Android Development, Material Design có vai trò gì?",
+      "options": {
+        "A": "Material Design là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Material Design là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Material Design đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Material Design là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Material Design trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Material Design là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Material Design giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Material+Design+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "material-design"
+      ]
+    },
+    {
+      "question_id": "android_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Android Development, Permissions có vai trò gì?",
+      "options": {
+        "A": "Permissions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Permissions là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Permissions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Permissions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Permissions trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Permissions là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Permissions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Permissions+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "permissions"
+      ]
+    },
+    {
+      "question_id": "android_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Android Development, Publishing có vai trò gì?",
+      "options": {
+        "A": "Publishing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Publishing là core concept trong Android Development — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Publishing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Publishing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Publishing trong Android Development: Đây là một trong những concepts quan trọng nhất. Android Development được sử dụng rộng rãi trong industry và Publishing là phần không thể thiếu. Khi làm việc với Android Development trong production, hiểu rõ Publishing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Android+Development+Publishing+tutorial",
+      "tags": [
+        "android",
+        "mobile",
+        "publishing"
+      ]
+    }
+  ]
+}

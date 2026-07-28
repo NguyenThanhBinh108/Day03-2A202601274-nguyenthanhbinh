@@ -1,0 +1,218 @@
+{
+  "skill": "Ansible",
+  "skill_key": "ansible",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.617808Z",
+  "source_references": [
+    "https://www.google.com/search?q=Ansible+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "ansible_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Ansible, Inventory có vai trò gì?",
+      "options": {
+        "A": "Inventory là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Inventory là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Inventory đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Inventory là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Inventory trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Inventory là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Inventory giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Inventory+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "inventory"
+      ]
+    },
+    {
+      "question_id": "ansible_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Ansible, Playbooks có vai trò gì?",
+      "options": {
+        "A": "Playbooks là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Playbooks là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Playbooks đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Playbooks là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Playbooks trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Playbooks là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Playbooks giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Playbooks+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "playbooks"
+      ]
+    },
+    {
+      "question_id": "ansible_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Ansible, Tasks/Handlers có vai trò gì?",
+      "options": {
+        "A": "Tasks/Handlers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Tasks/Handlers là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Tasks/Handlers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Tasks/Handlers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Tasks/Handlers trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Tasks/Handlers là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Tasks/Handlers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Tasks/Handlers+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "tasks-handlers"
+      ]
+    },
+    {
+      "question_id": "ansible_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Ansible, Roles có vai trò gì?",
+      "options": {
+        "A": "Roles là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Roles là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Roles đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Roles là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Roles trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Roles là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Roles giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Roles+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "roles"
+      ]
+    },
+    {
+      "question_id": "ansible_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Ansible, Variables có vai trò gì?",
+      "options": {
+        "A": "Variables là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Variables là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Variables đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Variables là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Variables trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Variables là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Variables giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Variables+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "variables"
+      ]
+    },
+    {
+      "question_id": "ansible_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Ansible, Jinja2 templates có vai trò gì?",
+      "options": {
+        "A": "Jinja2 templates là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Jinja2 templates là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Jinja2 templates đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Jinja2 templates là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Jinja2 templates trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Jinja2 templates là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Jinja2 templates giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Jinja2+templates+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "jinja2-templates"
+      ]
+    },
+    {
+      "question_id": "ansible_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Ansible, Vault secrets có vai trò gì?",
+      "options": {
+        "A": "Vault secrets là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Vault secrets là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Vault secrets đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Vault secrets là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Vault secrets trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Vault secrets là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Vault secrets giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Vault+secrets+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "vault-secrets"
+      ]
+    },
+    {
+      "question_id": "ansible_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Ansible, Galaxy có vai trò gì?",
+      "options": {
+        "A": "Galaxy là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Galaxy là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Galaxy đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Galaxy là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Galaxy trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Galaxy là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Galaxy giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Galaxy+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "galaxy"
+      ]
+    },
+    {
+      "question_id": "ansible_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Ansible, Dynamic inventory có vai trò gì?",
+      "options": {
+        "A": "Dynamic inventory là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dynamic inventory là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dynamic inventory đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dynamic inventory là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dynamic inventory trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và Dynamic inventory là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ Dynamic inventory giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+Dynamic+inventory+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "dynamic-inventory"
+      ]
+    },
+    {
+      "question_id": "ansible_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Ansible, AWX/Tower có vai trò gì?",
+      "options": {
+        "A": "AWX/Tower là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "AWX/Tower là core concept trong Ansible — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "AWX/Tower đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên AWX/Tower là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "AWX/Tower trong Ansible: Đây là một trong những concepts quan trọng nhất. Ansible được sử dụng rộng rãi trong industry và AWX/Tower là phần không thể thiếu. Khi làm việc với Ansible trong production, hiểu rõ AWX/Tower giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Ansible+AWX/Tower+tutorial",
+      "tags": [
+        "ansible",
+        "devops",
+        "awx-tower"
+      ]
+    }
+  ]
+}

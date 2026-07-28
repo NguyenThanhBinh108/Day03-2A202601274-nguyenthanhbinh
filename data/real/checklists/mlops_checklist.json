@@ -1,0 +1,154 @@
+{
+  "skill": "MLOps",
+  "skill_key": "mlops",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.653077Z",
+  "checklist_items": [
+    {
+      "item_id": "mlops_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "ML pipeline",
+      "description": "Master ML pipeline trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MLOps+ML+pipeline+tutorial",
+      "resource_title": "MLOps — ML pipeline",
+      "quiz_ids": [
+        "mlops_l1_001"
+      ],
+      "market_relevance": "ML pipeline là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Feature store",
+      "description": "Master Feature store trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MLOps+Feature+store+tutorial",
+      "resource_title": "MLOps — Feature store",
+      "quiz_ids": [
+        "mlops_l2_002"
+      ],
+      "market_relevance": "Feature store là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "MLflow model registry",
+      "description": "Master MLflow model registry trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=MLOps+MLflow+model+registry+tutorial",
+      "resource_title": "MLOps — MLflow model registry",
+      "quiz_ids": [
+        "mlops_l3_003"
+      ],
+      "market_relevance": "MLflow model registry là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Model versioning",
+      "description": "Master Model versioning trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=MLOps+Model+versioning+tutorial",
+      "resource_title": "MLOps — Model versioning",
+      "quiz_ids": [
+        "mlops_l4_004"
+      ],
+      "market_relevance": "Model versioning là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "A/B testing",
+      "description": "Master A/B testing trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MLOps+A/B+testing+tutorial",
+      "resource_title": "MLOps — A/B testing",
+      "quiz_ids": [
+        "mlops_l5_005"
+      ],
+      "market_relevance": "A/B testing là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "DVC data versioning",
+      "description": "Master DVC data versioning trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MLOps+DVC+data+versioning+tutorial",
+      "resource_title": "MLOps — DVC data versioning",
+      "quiz_ids": [
+        "mlops_l5_006"
+      ],
+      "market_relevance": "DVC data versioning là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Model monitoring",
+      "description": "Master Model monitoring trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=MLOps+Model+monitoring+tutorial",
+      "resource_title": "MLOps — Model monitoring",
+      "quiz_ids": [
+        "mlops_l5_007"
+      ],
+      "market_relevance": "Model monitoring là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "CI/CD for ML",
+      "description": "Master CI/CD for ML trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=MLOps+CI/CD+for+ML+tutorial",
+      "resource_title": "MLOps — CI/CD for ML",
+      "quiz_ids": [
+        "mlops_l5_008"
+      ],
+      "market_relevance": "CI/CD for ML là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Kubeflow",
+      "description": "Master Kubeflow trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MLOps+Kubeflow+tutorial",
+      "resource_title": "MLOps — Kubeflow",
+      "quiz_ids": [
+        "mlops_l5_009"
+      ],
+      "market_relevance": "Kubeflow là key skill trong MLOps AI/ML development"
+    },
+    {
+      "item_id": "mlops_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "BentoML/Triton",
+      "description": "Master BentoML/Triton trong MLOps — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MLOps+BentoML/Triton+tutorial",
+      "resource_title": "MLOps — BentoML/Triton",
+      "quiz_ids": [
+        "mlops_l5_010"
+      ],
+      "market_relevance": "BentoML/Triton là key skill trong MLOps AI/ML development"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "skill": "MongoDB",
+  "skill_key": "mongodb",
+  "total_questions": 7,
+  "levels": {
+    "1": 3,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.490961",
+  "source_references": [
+    "https://www.mongodb.com/docs/",
+    "https://www.w3schools.com/mongodb/",
+    "https://www.geeksforgeeks.org/mongodb-tutorial/"
+  ],
+  "questions": [
+    {
+      "question_id": "mongo_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "MongoDB là gì và khác SQL databases thế nào?",
+      "options": {
+        "A": "MongoDB là SQL database với XML",
+        "B": "MongoDB: document-oriented NoSQL, lưu JSON-like BSON documents, schema-flexible, horizontal scaling tốt, không có JOINs",
+        "C": "MongoDB chỉ cho big data",
+        "D": "MongoDB không hỗ trợ indexing"
+      },
+      "correct_answer": "B",
+      "explanation": "MongoDB: document store (không phải table/row). Collection = table, Document = row (BSON). Schema-less: documents trong cùng collection có thể khác structure. Advantages: flexible schema, horizontal scaling (sharding), embedded documents (thay JOIN), good for unstructured/semi-structured data. Disadvantages: no ACID multi-document transactions (trước 4.x), no JOINs (dùng $lookup), eventual consistency. BSON: Binary JSON, hỗ trợ thêm types (Date, ObjectId, Binary).",
+      "source": "https://www.geeksforgeeks.org/introduction-to-mongodb/",
+      "tags": [
+        "MongoDB",
+        "NoSQL",
+        "document",
+        "BSON",
+        "schema-flexible"
+      ]
+    },
+    {
+      "question_id": "mongo_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "MongoDB CRUD operations cơ bản?",
+      "options": {
+        "A": "MongoDB dùng SQL syntax",
+        "B": "insertOne/insertMany, find/findOne (với filter), updateOne/updateMany ($set/$push/$pull), deleteOne/deleteMany",
+        "C": "MongoDB không có update",
+        "D": "find() trả về array"
+      },
+      "correct_answer": "B",
+      "explanation": "Insert: db.users.insertOne({name:'Alice', age:25}). Query: db.users.find({age:{$gt:20}}, {name:1, _id:0}). Update: db.users.updateOne({_id:id}, {$set:{age:26}, $push:{tags:'vip'}}). Delete: db.users.deleteMany({active:false}). Operators: $eq, $ne, $gt, $gte, $lt, $lte, $in, $nin, $and, $or, $not. Projection: 1=include, 0=exclude. Cursor: find() trả về cursor, .toArray() hoặc iterate. sort(), limit(), skip() cho pagination.",
+      "source": "https://www.w3schools.com/mongodb/",
+      "tags": [
+        "CRUD",
+        "find",
+        "insertOne",
+        "updateOne",
+        "operators"
+      ]
+    },
+    {
+      "question_id": "mongo_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "MongoDB Aggregation Pipeline là gì?",
+      "options": {
+        "A": "Aggregation chỉ để count",
+        "B": "Pipeline: sequence of stages ($match, $group, $sort, $project, $lookup, $unwind) xử lý documents — tương đương SQL GROUP BY + JOIN",
+        "C": "Aggregation không hỗ trợ JOIN",
+        "D": "Aggregation chậm hơn find()"
+      },
+      "correct_answer": "B",
+      "explanation": "db.orders.aggregate([$match:{status:'completed'}, $group:{_id:'$userId', totalAmount:{$sum:'$amount'}, orderCount:{$sum:1}}, $sort:{totalAmount:-1}, $limit:10]). Stages: $match (filter, dùng index), $group (aggregate), $project (reshape), $sort, $limit, $skip, $lookup (JOIN), $unwind (array → separate docs), $addFields, $count. $lookup: {from:'users', localField:'userId', foreignField:'_id', as:'user'}. Indexes help $match và $sort stages.",
+      "source": "https://www.geeksforgeeks.org/mongodb-aggregation/",
+      "tags": [
+        "aggregation",
+        "pipeline",
+        "$match",
+        "$group",
+        "$lookup"
+      ]
+    },
+    {
+      "question_id": "mongo_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "MongoDB Indexes — types và khi nào cần tạo?",
+      "options": {
+        "A": "MongoDB tự index tất cả fields",
+        "B": "Single field, compound, multikey (array), text, geospatial, hashed. Tạo trên fields thường query, sort. EXPLAIN để verify. Index memory và write overhead",
+        "C": "Chỉ cần index _id",
+        "D": "Index không cần thiết với MongoDB"
+      },
+      "correct_answer": "B",
+      "explanation": "Single: createIndex({email:1}). Compound: createIndex({status:1, createdAt:-1}) — ESR rule (Equality, Sort, Range). Multikey: tự động khi index array field. Text: $text search. TTL: createIndex({createdAt:1}, {expireAfterSeconds:3600}) — tự xóa expired docs. Partial: createIndex({status:1}, {partialFilterExpression:{status:'active'}}). EXPLAIN: explain('executionStats') — xem IXSCAN vs COLLSCAN. Index limit: 64 per collection. Background indexing: createIndex({...}, {background:true}) (deprecated) → dùng rolling index build cho replica sets.",
+      "source": "https://www.geeksforgeeks.org/indexing-in-mongodb/",
+      "tags": [
+        "index",
+        "compound",
+        "text-index",
+        "EXPLAIN",
+        "TTL"
+      ]
+    },
+    {
+      "question_id": "mongo_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Embedded documents vs Referenced documents — khi nào dùng cái nào?",
+      "options": {
+        "A": "Luôn dùng embedded",
+        "B": "Embed khi: data always accessed together, child data nhỏ, 1-few relationship. Reference khi: data lớn, nhiều-nhiều relationship, cần query independently",
+        "C": "Luôn dùng references",
+        "D": "MongoDB không hỗ trợ references"
+      },
+      "correct_answer": "B",
+      "explanation": "Embed (denormalization): {user:{name:'Alice'}, address:{city:'HCM'}} — 1 read. Good for: user profile + address, order + line items, blog post + comments (giới hạn). Bad for: unbounded arrays (vượt 16MB document limit), data cần update many places. Reference (normalization): {userId: ObjectId('...')} + $lookup. Good for: products shared across many orders, users referenced from many collections. Hybrid: embed most-used data, reference less-used. 16MB document size limit.",
+      "source": "https://www.geeksforgeeks.org/mongodb-embedded-documents/",
+      "tags": [
+        "embedding",
+        "reference",
+        "schema-design",
+        "denormalization",
+        "16MB-limit"
+      ]
+    },
+    {
+      "question_id": "mongo_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "MongoDB memory usage cao — query chậm mặc dù có index. Debug?",
+      "options": {
+        "A": "Thêm RAM",
+        "B": "explain('executionStats'), check index usage, Working Set phải fit trong RAM, tối ưu query projection, index intersection",
+        "C": "Restart MongoDB",
+        "D": "Xóa bớt documents"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug: (1) explain('executionStats'): docsExamined >> nReturned → index không selective. (2) db.collection.stats(): kiểm tra index sizes. (3) mongoTop: real-time operation stats. (4) mongoStat: server metrics. Working Set: frequently accessed data phải fit trong RAM (wiredTiger cache default 50% RAM). If Working Set > RAM → page faults → slow. Fix: (1) Compound index để cover query. (2) Projection để reduce documents size. (3) Covered query: all fields trong index (no document fetch). (4) Increase RAM hoặc scale out. (5) Archiving old data.",
+      "source": "https://www.geeksforgeeks.org/mongodb-performance-tuning/",
+      "tags": [
+        "performance",
+        "explain",
+        "working-set",
+        "covered-query",
+        "WiredTiger"
+      ]
+    },
+    {
+      "question_id": "mongo_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "MongoDB replica set setup cho high availability?",
+      "options": {
+        "A": "Single MongoDB instance là đủ cho production",
+        "B": "Replica set: 1 Primary + 2+ Secondaries. Automatic failover. Read từ secondaries. Write concern và read concern cho consistency",
+        "C": "Sharding thay thế replica set",
+        "D": "Replica set chỉ cho backup"
+      },
+      "correct_answer": "B",
+      "explanation": "Replica set: Primary nhận writes, Secondary replicate asynchronously. Automatic failover: nếu Primary down → election → Secondary mới thành Primary (< 12s). Read preferences: primary, primaryPreferred, secondary, secondaryPreferred, nearest. Write concern: {w:'majority'} — confirm write trên majority nodes. Read concern: 'majority' — đọc data confirmed bởi majority. Oplog: capped collection tracking all writes — TTL đủ cho replication lag. Hidden member: không nhận reads, dùng cho reporting. Delayed member: backup với delay. MongoDB Atlas: managed replica set + automatic sharding.",
+      "source": "https://www.geeksforgeeks.org/mongodb-replication/",
+      "tags": [
+        "replica-set",
+        "high-availability",
+        "failover",
+        "write-concern",
+        "read-preference"
+      ]
+    }
+  ]
+}

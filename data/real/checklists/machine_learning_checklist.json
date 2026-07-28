@@ -1,0 +1,154 @@
+{
+  "skill": "Machine Learning",
+  "skill_key": "machine_learning",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.632725Z",
+  "checklist_items": [
+    {
+      "item_id": "machine_learning_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Supervised learning",
+      "description": "Master Supervised learning trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Supervised+learning+tutorial",
+      "resource_title": "Machine Learning — Supervised learning",
+      "quiz_ids": [
+        "machine_learning_l1_001"
+      ],
+      "market_relevance": "Supervised learning là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Unsupervised learning",
+      "description": "Master Unsupervised learning trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Unsupervised+learning+tutorial",
+      "resource_title": "Machine Learning — Unsupervised learning",
+      "quiz_ids": [
+        "machine_learning_l2_002"
+      ],
+      "market_relevance": "Unsupervised learning là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Linear regression",
+      "description": "Master Linear regression trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Linear+regression+tutorial",
+      "resource_title": "Machine Learning — Linear regression",
+      "quiz_ids": [
+        "machine_learning_l3_003"
+      ],
+      "market_relevance": "Linear regression là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Decision trees",
+      "description": "Master Decision trees trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Decision+trees+tutorial",
+      "resource_title": "Machine Learning — Decision trees",
+      "quiz_ids": [
+        "machine_learning_l4_004"
+      ],
+      "market_relevance": "Decision trees là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Random forests",
+      "description": "Master Random forests trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Random+forests+tutorial",
+      "resource_title": "Machine Learning — Random forests",
+      "quiz_ids": [
+        "machine_learning_l5_005"
+      ],
+      "market_relevance": "Random forests là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Feature engineering",
+      "description": "Master Feature engineering trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Feature+engineering+tutorial",
+      "resource_title": "Machine Learning — Feature engineering",
+      "quiz_ids": [
+        "machine_learning_l5_006"
+      ],
+      "market_relevance": "Feature engineering là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Model evaluation",
+      "description": "Master Model evaluation trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Model+evaluation+tutorial",
+      "resource_title": "Machine Learning — Model evaluation",
+      "quiz_ids": [
+        "machine_learning_l5_007"
+      ],
+      "market_relevance": "Model evaluation là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Overfitting/Regularization",
+      "description": "Master Overfitting/Regularization trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Overfitting/Regularization+tutorial",
+      "resource_title": "Machine Learning — Overfitting/Regularization",
+      "quiz_ids": [
+        "machine_learning_l5_008"
+      ],
+      "market_relevance": "Overfitting/Regularization là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "scikit-learn",
+      "description": "Master scikit-learn trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+scikit-learn+tutorial",
+      "resource_title": "Machine Learning — scikit-learn",
+      "quiz_ids": [
+        "machine_learning_l5_009"
+      ],
+      "market_relevance": "scikit-learn là key skill trong Machine Learning AI/ML development"
+    },
+    {
+      "item_id": "machine_learning_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Model deployment",
+      "description": "Master Model deployment trong Machine Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Machine+Learning+Model+deployment+tutorial",
+      "resource_title": "Machine Learning — Model deployment",
+      "quiz_ids": [
+        "machine_learning_l5_010"
+      ],
+      "market_relevance": "Model deployment là key skill trong Machine Learning AI/ML development"
+    }
+  ]
+}

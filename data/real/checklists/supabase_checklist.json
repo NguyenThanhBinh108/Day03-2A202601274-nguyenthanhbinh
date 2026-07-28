@@ -1,0 +1,154 @@
+{
+  "skill": "Supabase",
+  "skill_key": "supabase",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.590508Z",
+  "checklist_items": [
+    {
+      "item_id": "supabase_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "PostgreSQL foundation",
+      "description": "Master PostgreSQL foundation trong Supabase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Supabase+PostgreSQL+foundation+tutorial",
+      "resource_title": "Supabase — PostgreSQL foundation",
+      "quiz_ids": [
+        "supabase_l1_001"
+      ],
+      "market_relevance": "PostgreSQL foundation là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Row Level Security",
+      "description": "Master Row Level Security trong Supabase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Supabase+Row+Level+Security+tutorial",
+      "resource_title": "Supabase — Row Level Security",
+      "quiz_ids": [
+        "supabase_l2_002"
+      ],
+      "market_relevance": "Row Level Security là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Supabase Auth",
+      "description": "Master Supabase Auth trong Supabase — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Supabase+Supabase+Auth+tutorial",
+      "resource_title": "Supabase — Supabase Auth",
+      "quiz_ids": [
+        "supabase_l3_003"
+      ],
+      "market_relevance": "Supabase Auth là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Real-time subscriptions",
+      "description": "Master Real-time subscriptions trong Supabase — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Supabase+Real-time+subscriptions+tutorial",
+      "resource_title": "Supabase — Real-time subscriptions",
+      "quiz_ids": [
+        "supabase_l4_004"
+      ],
+      "market_relevance": "Real-time subscriptions là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Storage",
+      "description": "Master Storage trong Supabase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Supabase+Storage+tutorial",
+      "resource_title": "Supabase — Storage",
+      "quiz_ids": [
+        "supabase_l5_005"
+      ],
+      "market_relevance": "Storage là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Edge Functions",
+      "description": "Master Edge Functions trong Supabase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Supabase+Edge+Functions+tutorial",
+      "resource_title": "Supabase — Edge Functions",
+      "quiz_ids": [
+        "supabase_l5_006"
+      ],
+      "market_relevance": "Edge Functions là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Client SDK",
+      "description": "Master Client SDK trong Supabase — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Supabase+Client+SDK+tutorial",
+      "resource_title": "Supabase — Client SDK",
+      "quiz_ids": [
+        "supabase_l5_007"
+      ],
+      "market_relevance": "Client SDK là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Database backups",
+      "description": "Master Database backups trong Supabase — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Supabase+Database+backups+tutorial",
+      "resource_title": "Supabase — Database backups",
+      "quiz_ids": [
+        "supabase_l5_008"
+      ],
+      "market_relevance": "Database backups là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Local development",
+      "description": "Master Local development trong Supabase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Supabase+Local+development+tutorial",
+      "resource_title": "Supabase — Local development",
+      "quiz_ids": [
+        "supabase_l5_009"
+      ],
+      "market_relevance": "Local development là key skill trong Supabase Database development"
+    },
+    {
+      "item_id": "supabase_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Self-hosting",
+      "description": "Master Self-hosting trong Supabase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Supabase+Self-hosting+tutorial",
+      "resource_title": "Supabase — Self-hosting",
+      "quiz_ids": [
+        "supabase_l5_010"
+      ],
+      "market_relevance": "Self-hosting là key skill trong Supabase Database development"
+    }
+  ]
+}

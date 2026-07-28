@@ -1,0 +1,218 @@
+{
+  "skill": "MySQL",
+  "skill_key": "mysql",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.575445Z",
+  "source_references": [
+    "https://www.google.com/search?q=MySQL+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "mysql_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong MySQL, SQL queries có vai trò gì?",
+      "options": {
+        "A": "SQL queries là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SQL queries là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SQL queries đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SQL queries là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SQL queries trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và SQL queries là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ SQL queries giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+SQL+queries+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "sql-queries"
+      ]
+    },
+    {
+      "question_id": "mysql_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong MySQL, JOINs có vai trò gì?",
+      "options": {
+        "A": "JOINs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "JOINs là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "JOINs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên JOINs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "JOINs trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và JOINs là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ JOINs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+JOINs+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "joins"
+      ]
+    },
+    {
+      "question_id": "mysql_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong MySQL, Indexes có vai trò gì?",
+      "options": {
+        "A": "Indexes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Indexes là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Indexes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Indexes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Indexes trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Indexes là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Indexes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Indexes+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "indexes"
+      ]
+    },
+    {
+      "question_id": "mysql_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong MySQL, Transactions có vai trò gì?",
+      "options": {
+        "A": "Transactions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transactions là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transactions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transactions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transactions trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Transactions là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Transactions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Transactions+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "transactions"
+      ]
+    },
+    {
+      "question_id": "mysql_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong MySQL, Stored procedures có vai trò gì?",
+      "options": {
+        "A": "Stored procedures là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Stored procedures là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Stored procedures đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Stored procedures là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Stored procedures trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Stored procedures là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Stored procedures giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Stored+procedures+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "stored-procedures"
+      ]
+    },
+    {
+      "question_id": "mysql_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong MySQL, Views có vai trò gì?",
+      "options": {
+        "A": "Views là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Views là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Views đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Views là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Views trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Views là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Views giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Views+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "views"
+      ]
+    },
+    {
+      "question_id": "mysql_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong MySQL, Replication có vai trò gì?",
+      "options": {
+        "A": "Replication là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Replication là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Replication đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Replication là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Replication trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Replication là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Replication giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Replication+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "replication"
+      ]
+    },
+    {
+      "question_id": "mysql_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong MySQL, Partitioning có vai trò gì?",
+      "options": {
+        "A": "Partitioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Partitioning là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Partitioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Partitioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Partitioning trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và Partitioning là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ Partitioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+Partitioning+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "partitioning"
+      ]
+    },
+    {
+      "question_id": "mysql_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong MySQL, EXPLAIN query plan có vai trò gì?",
+      "options": {
+        "A": "EXPLAIN query plan là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "EXPLAIN query plan là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "EXPLAIN query plan đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên EXPLAIN query plan là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "EXPLAIN query plan trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và EXPLAIN query plan là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ EXPLAIN query plan giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+EXPLAIN+query+plan+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "explain-query-plan"
+      ]
+    },
+    {
+      "question_id": "mysql_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong MySQL, MySQL 8 features có vai trò gì?",
+      "options": {
+        "A": "MySQL 8 features là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "MySQL 8 features là core concept trong MySQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "MySQL 8 features đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên MySQL 8 features là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "MySQL 8 features trong MySQL: Đây là một trong những concepts quan trọng nhất. MySQL được sử dụng rộng rãi trong industry và MySQL 8 features là phần không thể thiếu. Khi làm việc với MySQL trong production, hiểu rõ MySQL 8 features giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MySQL+MySQL+8+features+tutorial",
+      "tags": [
+        "mysql",
+        "database",
+        "mysql-8-features"
+      ]
+    }
+  ]
+}

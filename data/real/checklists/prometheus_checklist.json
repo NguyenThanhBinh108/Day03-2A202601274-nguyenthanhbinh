@@ -1,0 +1,154 @@
+{
+  "skill": "Prometheus",
+  "skill_key": "prometheus",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.627343Z",
+  "checklist_items": [
+    {
+      "item_id": "prometheus_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Metrics types",
+      "description": "Master Metrics types trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Metrics+types+tutorial",
+      "resource_title": "Prometheus — Metrics types",
+      "quiz_ids": [
+        "prometheus_l1_001"
+      ],
+      "market_relevance": "Metrics types là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "PromQL",
+      "description": "Master PromQL trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Prometheus+PromQL+tutorial",
+      "resource_title": "Prometheus — PromQL",
+      "quiz_ids": [
+        "prometheus_l2_002"
+      ],
+      "market_relevance": "PromQL là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Scrape configuration",
+      "description": "Master Scrape configuration trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Scrape+configuration+tutorial",
+      "resource_title": "Prometheus — Scrape configuration",
+      "quiz_ids": [
+        "prometheus_l3_003"
+      ],
+      "market_relevance": "Scrape configuration là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Alertmanager",
+      "description": "Master Alertmanager trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Alertmanager+tutorial",
+      "resource_title": "Prometheus — Alertmanager",
+      "quiz_ids": [
+        "prometheus_l4_004"
+      ],
+      "market_relevance": "Alertmanager là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Recording rules",
+      "description": "Master Recording rules trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Recording+rules+tutorial",
+      "resource_title": "Prometheus — Recording rules",
+      "quiz_ids": [
+        "prometheus_l5_005"
+      ],
+      "market_relevance": "Recording rules là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Service discovery",
+      "description": "Master Service discovery trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Service+discovery+tutorial",
+      "resource_title": "Prometheus — Service discovery",
+      "quiz_ids": [
+        "prometheus_l5_006"
+      ],
+      "market_relevance": "Service discovery là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Exporters",
+      "description": "Master Exporters trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Exporters+tutorial",
+      "resource_title": "Prometheus — Exporters",
+      "quiz_ids": [
+        "prometheus_l5_007"
+      ],
+      "market_relevance": "Exporters là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Grafana integration",
+      "description": "Master Grafana integration trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Grafana+integration+tutorial",
+      "resource_title": "Prometheus — Grafana integration",
+      "quiz_ids": [
+        "prometheus_l5_008"
+      ],
+      "market_relevance": "Grafana integration là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Retention",
+      "description": "Master Retention trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Prometheus+Retention+tutorial",
+      "resource_title": "Prometheus — Retention",
+      "quiz_ids": [
+        "prometheus_l5_009"
+      ],
+      "market_relevance": "Retention là key skill trong Prometheus DevOps development"
+    },
+    {
+      "item_id": "prometheus_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "High availability",
+      "description": "Master High availability trong Prometheus — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Prometheus+High+availability+tutorial",
+      "resource_title": "Prometheus — High availability",
+      "quiz_ids": [
+        "prometheus_l5_010"
+      ],
+      "market_relevance": "High availability là key skill trong Prometheus DevOps development"
+    }
+  ]
+}

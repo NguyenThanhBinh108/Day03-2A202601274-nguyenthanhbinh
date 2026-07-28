@@ -1,0 +1,63 @@
+{
+  "skill": "Java",
+  "skill_key": "java",
+  "total_resources": 6,
+  "generated_at": "2026-06-12T02:22:05.485840",
+  "resources": [
+    {
+      "resource_id": "java_r001",
+      "title": "W3Schools Java Tutorial",
+      "url": "https://www.w3schools.com/java/default.asp",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 4,
+      "description": "Java từ cơ bản với Try It Editor"
+    },
+    {
+      "resource_id": "java_r002",
+      "title": "GeeksForGeeks Java Tutorial",
+      "url": "https://www.geeksforgeeks.org/java/",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Java comprehensive tutorial, interview prep"
+    },
+    {
+      "resource_id": "java_r003",
+      "title": "Oracle Java Documentation",
+      "url": "https://docs.oracle.com/en/java/javase/21/",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official Java docs"
+    },
+    {
+      "resource_id": "java_r004",
+      "title": "freeCodeCamp Java Articles",
+      "url": "https://www.freecodecamp.org/news/tag/java/",
+      "is_free": true,
+      "level": "beginner_to_intermediate",
+      "rating": 4,
+      "description": "Java articles và tutorials"
+    },
+    {
+      "resource_id": "java_r005",
+      "title": "Baeldung — Java Guides",
+      "url": "https://www.baeldung.com/",
+      "is_free": true,
+      "level": "intermediate_to_advanced",
+      "rating": 5,
+      "description": "Best Java resource cho Spring và advanced topics"
+    },
+    {
+      "resource_id": "java_r006",
+      "title": "Viblo Java Articles",
+      "url": "https://viblo.asia/tags/java",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "Java tiếng Việt"
+    }
+  ]
+}

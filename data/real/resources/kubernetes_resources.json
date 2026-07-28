@@ -1,0 +1,58 @@
+{
+  "skill": "Kubernetes",
+  "skill_key": "kubernetes",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "resources": [
+    {
+      "resource_id": "k8s_r001",
+      "title": "Kubernetes Official Documentation",
+      "url": "https://kubernetes.io/docs/home/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official K8s docs"
+    },
+    {
+      "resource_id": "k8s_r002",
+      "title": "GeeksForGeeks Kubernetes Tutorial",
+      "url": "https://www.geeksforgeeks.org/kubernetes-tutorial/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "beginner_to_intermediate",
+      "rating": 4,
+      "description": "Kubernetes từ cơ bản"
+    },
+    {
+      "resource_id": "k8s_r003",
+      "title": "freeCodeCamp Kubernetes Articles",
+      "url": "https://www.freecodecamp.org/news/tag/kubernetes/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "K8s articles"
+    },
+    {
+      "resource_id": "k8s_r004",
+      "title": "Play with Kubernetes (Free Lab)",
+      "url": "https://labs.play-with-k8s.com/",
+      "type": "lab",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 5,
+      "description": "K8s lab trong browser"
+    },
+    {
+      "resource_id": "k8s_r005",
+      "title": "Viblo Kubernetes Articles",
+      "url": "https://viblo.asia/tags/kubernetes",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "K8s tiếng Việt"
+    }
+  ]
+}

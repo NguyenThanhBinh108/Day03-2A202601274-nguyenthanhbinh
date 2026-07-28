@@ -1,0 +1,154 @@
+{
+  "skill": "React Native",
+  "skill_key": "react_native",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.559937Z",
+  "checklist_items": [
+    {
+      "item_id": "react_native_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Core components",
+      "description": "Master Core components trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=React+Native+Core+components+tutorial",
+      "resource_title": "React Native — Core components",
+      "quiz_ids": [
+        "react_native_l1_001"
+      ],
+      "market_relevance": "Core components là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "StyleSheet",
+      "description": "Master StyleSheet trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=React+Native+StyleSheet+tutorial",
+      "resource_title": "React Native — StyleSheet",
+      "quiz_ids": [
+        "react_native_l2_002"
+      ],
+      "market_relevance": "StyleSheet là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "React Navigation",
+      "description": "Master React Navigation trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=React+Native+React+Navigation+tutorial",
+      "resource_title": "React Native — React Navigation",
+      "quiz_ids": [
+        "react_native_l3_003"
+      ],
+      "market_relevance": "React Navigation là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "State management",
+      "description": "Master State management trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=React+Native+State+management+tutorial",
+      "resource_title": "React Native — State management",
+      "quiz_ids": [
+        "react_native_l4_004"
+      ],
+      "market_relevance": "State management là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Native modules",
+      "description": "Master Native modules trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=React+Native+Native+modules+tutorial",
+      "resource_title": "React Native — Native modules",
+      "quiz_ids": [
+        "react_native_l5_005"
+      ],
+      "market_relevance": "Native modules là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Expo",
+      "description": "Master Expo trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=React+Native+Expo+tutorial",
+      "resource_title": "React Native — Expo",
+      "quiz_ids": [
+        "react_native_l5_006"
+      ],
+      "market_relevance": "Expo là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "AsyncStorage",
+      "description": "Master AsyncStorage trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=React+Native+AsyncStorage+tutorial",
+      "resource_title": "React Native — AsyncStorage",
+      "quiz_ids": [
+        "react_native_l5_007"
+      ],
+      "market_relevance": "AsyncStorage là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Camera/media",
+      "description": "Master Camera/media trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=React+Native+Camera/media+tutorial",
+      "resource_title": "React Native — Camera/media",
+      "quiz_ids": [
+        "react_native_l5_008"
+      ],
+      "market_relevance": "Camera/media là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Push notifications",
+      "description": "Master Push notifications trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=React+Native+Push+notifications+tutorial",
+      "resource_title": "React Native — Push notifications",
+      "quiz_ids": [
+        "react_native_l5_009"
+      ],
+      "market_relevance": "Push notifications là key skill trong React Native Mobile development"
+    },
+    {
+      "item_id": "react_native_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "App store deployment",
+      "description": "Master App store deployment trong React Native — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=React+Native+App+store+deployment+tutorial",
+      "resource_title": "React Native — App store deployment",
+      "quiz_ids": [
+        "react_native_l5_010"
+      ],
+      "market_relevance": "App store deployment là key skill trong React Native Mobile development"
+    }
+  ]
+}

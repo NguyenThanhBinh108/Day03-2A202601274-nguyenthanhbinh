@@ -1,0 +1,205 @@
+{
+  "skill": "Docker",
+  "market_frequency": "19.4% JDs yêu cầu Docker",
+  "market_role": "Backend Developer, DevOps Engineer, Full-stack Developer",
+  "total_learning_hours": 25,
+  "generated_at": "2026-06-12T00:05:36.345991",
+  "modules": [
+    {
+      "module_id": "docker_01",
+      "title": "Container Fundamentals",
+      "order": 1,
+      "hours": 10,
+      "topics": [
+        {
+          "topic_id": "docker_01_01",
+          "title": "VM vs Container, Docker Architecture",
+          "hours": 3,
+          "academic": {
+            "summary": "Namespaces, cgroups, image layers, Union FS, Docker daemon, registry vs repository",
+            "resources": [
+              {
+                "title": "Docker Overview — Official Docs",
+                "url": "https://docs.docker.com/get-started/overview/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 20
+              },
+              {
+                "title": "Docker Tutorial — freeCodeCamp YouTube",
+                "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo",
+                "type": "video",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "Play with Docker — Interactive Lab",
+                "url": "https://labs.play-with-docker.com",
+                "type": "lab",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Cài Docker Desktop, chạy nginx container -d -p 8080:80, verify browser, exec vào container, xem logs -f",
+            "resources": [
+              {
+                "title": "Docker Get Started",
+                "url": "https://docs.docker.com/get-started/",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "docker_01_01_q1",
+                "level": 1,
+                "question": "Docker container khác Virtual Machine ở điểm cơ bản nhất?",
+                "options": {
+                  "A": "Container dùng chung OS kernel với host, VM có OS riêng + hypervisor",
+                  "B": "Container nặng hơn VM",
+                  "C": "VM nhanh hơn Container",
+                  "D": "Container không chạy trên Linux"
+                },
+                "correct_answer": "A",
+                "explanation": "Container share OS kernel → nhẹ, boot giây. VM: hypervisor + Guest OS → nặng, boot phút. VM: stronger isolation, container: portable, density."
+              },
+              {
+                "question_id": "docker_01_01_q2",
+                "level": 2,
+                "question": "Lệnh chạy nginx ở background, map port 8080 host vào 80 container?",
+                "options": {
+                  "A": "docker run nginx -p 8080:80",
+                  "B": "docker run -d -p 8080:80 nginx",
+                  "C": "docker start -p 8080:80 nginx",
+                  "D": "docker run -p 80:8080 -d nginx"
+                },
+                "correct_answer": "B",
+                "explanation": "-d=detached, -p host:container. D sai: map 80→8080 (ngược). Flags trước image name."
+              },
+              {
+                "question_id": "docker_01_01_q3",
+                "level": 4,
+                "question": "Exit code 137 trong container production nghĩa là gì?",
+                "options": {
+                  "A": "OOMKilled — kernel kill do vượt memory limit",
+                  "B": "Network error",
+                  "C": "Port conflict",
+                  "D": "Docker version cũ"
+                },
+                "correct_answer": "A",
+                "explanation": "137 = 128 + SIGKILL(9) = OOMKilled. Kiểm tra: docker inspect [id] | grep OOMKilled. Fix: tăng --memory, profile memory leak."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "docker_01_02",
+          "title": "Dockerfile và Multi-stage Builds",
+          "hours": 4,
+          "academic": {
+            "summary": "FROM, RUN, COPY, ADD, CMD, ENTRYPOINT, ENV, ARG, multi-stage, .dockerignore, layer caching",
+            "resources": [
+              {
+                "title": "Dockerfile Best Practices",
+                "url": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 45
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Dockerfile Node.js app: multi-stage build, non-root user, .dockerignore, health check. Giảm image size từ 900MB → <150MB",
+            "resources": [
+              {
+                "title": "Docker Multi-stage Builds",
+                "url": "https://docs.docker.com/build/building/multi-stage/",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "docker_01_02_q1",
+                "level": 3,
+                "question": "CMD vs ENTRYPOINT trong Dockerfile?",
+                "options": {
+                  "A": "ENTRYPOINT: main command (không bị override). CMD: default args (bị override bởi docker run args)",
+                  "B": "CMD là main, ENTRYPOINT là args",
+                  "C": "Chúng giống nhau",
+                  "D": "CMD không hoạt động production"
+                },
+                "correct_answer": "A",
+                "explanation": "ENTRYPOINT [\"node\"] + CMD [\"app.js\"] → node app.js. `docker run img server.js` → node server.js (CMD bị override). `docker run --entrypoint python img app.py` → override ENTRYPOINT."
+              },
+              {
+                "question_id": "docker_01_02_q2",
+                "level": 4,
+                "question": "Multi-stage build trong Dockerfile lợi ích gì?",
+                "options": {
+                  "A": "Build trong stage riêng (có build tools), copy chỉ artifacts sang final stage → image nhỏ hơn nhiều",
+                  "B": "Build nhanh hơn",
+                  "C": "Không có lợi ích thực tế",
+                  "D": "Chỉ cho production"
+                },
+                "correct_answer": "A",
+                "explanation": "Stage 1 (builder): Node/Maven/Go compiler tools. Stage 2 (runtime): chỉ copy compiled artifacts. Kết quả: không có source code, build tools trong final image → size giảm 10x."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "docker_01_03",
+          "title": "Docker Compose + Networking + Volumes",
+          "hours": 3,
+          "academic": {
+            "summary": "services, networks, volumes, depends_on, healthcheck, environment, secrets",
+            "resources": [
+              {
+                "title": "Docker Compose Docs",
+                "url": "https://docs.docker.com/compose/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Compose stack: React + FastAPI + PostgreSQL + Redis. .env file cho secrets, health checks, named volumes cho DB",
+            "resources": [
+              {
+                "title": "Compose File Reference",
+                "url": "https://docs.docker.com/reference/compose-file/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "docker_01_03_q1",
+                "level": 3,
+                "question": "depends_on trong Docker Compose đảm bảo điều gì?",
+                "options": {
+                  "A": "Start order (không đảm bảo ready). Dùng condition: service_healthy để đảm bảo health",
+                  "B": "Service B chờ A healthy hoàn toàn",
+                  "C": "Network connection",
+                  "D": "depends_on không hoạt động Compose v3+"
+                },
+                "correct_answer": "A",
+                "explanation": "depends_on mặc định: chỉ thứ tự start. service_healthy: check healthcheck trước khi start dependent. Healthcheck trong service là bắt buộc."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

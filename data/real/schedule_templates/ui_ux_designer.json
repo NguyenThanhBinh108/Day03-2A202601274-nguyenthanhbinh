@@ -1,0 +1,101 @@
+{
+  "role_id": "ui_ux_designer",
+  "role_name": "UI/UX Designer",
+  "market_overview": "Sự trưởng thành của thị trường phần mềm VN khiến các doanh nghiệp nhận ra tính năng tốt là chưa đủ, sản phẩm phải đẹp và dễ dùng. Nhu cầu tuyển UI/UX Designer đang tăng mạnh ở các công ty làm SaaS, Fintech và E-commerce. Đòi hỏi sự kết hợp giữa tư duy thẩm mỹ (UI) và tư duy logic, phân tích hành vi người dùng (UX).",
+  "salary_range_vnd": "15-35 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_ux_research_wireframing",
+      "title": "Nghiên Cứu Người Dùng & Phác Thảo Cấu Trúc (UX)",
+      "duration_weeks": 5,
+      "core_skills": [
+        "Xây dựng User Persona và Customer Journey Map",
+        "Nghiên cứu đối thủ (Competitor Analysis) và Phân tích Heuristic",
+        "Thiết kế cấu trúc thông tin (Information Architecture)",
+        "Tạo Wireframe (Low-fidelity) để kiểm chứng luồng tương tác"
+      ],
+      "toolchains": [
+        "Figma / FigJam",
+        "Whimsical / Balsamiq",
+        "Google Analytics / Hotjar (Đọc data hành vi)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Tái cấu trúc (Redesign) luồng Đăng ký/Đăng nhập cho App Ngân Hàng",
+          "business_context": "Tỷ lệ rớt (Drop-off rate) ở màn hình eKYC chụp ảnh CMND quá cao. Cần tìm hiểu nguyên nhân và thiết kế lại luồng mượt mà hơn.",
+          "tech_stack_used": [
+            "FigJam",
+            "Figma"
+          ],
+          "key_challenges": [
+            "Cân bằng giữa yêu cầu bảo mật khắt khe của ngân hàng và sự tiện lợi cho người dùng lớn tuổi.",
+            "Thiết kế hệ thống báo lỗi (Error Handling) rõ ràng để người dùng biết tại sao ảnh bị từ chối."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Làm thế nào để bạn bảo vệ thiết kế của mình trước sếp hoặc khách hàng khi họ nói 'Tôi không thích màu này/nút này'?",
+          "expected_answer_points": [
+            "Không bảo vệ thiết kế bằng cảm tính thẩm mỹ.",
+            "Sử dụng dữ liệu: User Testing, Heatmap, hoặc các nguyên lý UX (Gestalt principles, luật Fitts) để giải thích tại sao thiết kế này hiệu quả cho mục tiêu kinh doanh."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Bỏ qua trạng thái rỗng (Empty States) và Edge Cases",
+          "why_its_bad": "Chỉ thiết kế màn hình khi có đầy đủ dữ liệu hoàn hảo (Happy Path). Khi Dev code thực tế, người dùng mới đăng ký chưa có dữ liệu sẽ thấy một màn hình trắng bóc, gây bối rối.",
+          "better_approach": "Luôn phải thiết kế các trạng thái: Rỗng, Đang tải (Loading), Có lỗi (Error), và Thành công (Success)."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_ui_design_system",
+      "title": "Thiết Kế Giao Diện & Design System (UI)",
+      "duration_weeks": 7,
+      "core_skills": [
+        "Ứng dụng nguyên lý thị giác: Layout, Typography, Color Theory, Spacing",
+        "Xây dựng và duy trì Design System / Component Library",
+        "Thiết kế tương tác (Micro-interactions) và Prototyping",
+        "Bàn giao thiết kế cho Developer (Handoff) chuẩn xác"
+      ],
+      "toolchains": [
+        "Figma (Auto Layout, Variants, Variables)",
+        "Protopie / Principle",
+        "Zeplin (Tùy chọn)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Xây dựng Component Library cho hệ thống Dashboard quản trị",
+          "business_context": "Công ty có 5 sản phẩm nội bộ giao diện lộn xộn. Cần tạo một thư viện UI chuẩn để các team Dev tái sử dụng, đảm bảo tính nhất quán.",
+          "tech_stack_used": [
+            "Figma (Advanced)"
+          ],
+          "key_challenges": [
+            "Sử dụng Auto Layout và Figma Variables để thiết kế các bảng (Tables) có thể tự động co giãn theo responsive.",
+            "Quy hoạch tên các token màu sắc (VD: 'primary-500' thay vì 'blue-light') để Dev dễ dàng map vào code CSS/Tailwind."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Sự khác biệt giữa em, rem và px là gì? Tại sao Designer nên dùng hệ thống lưới 8pt (8-point grid)?",
+          "expected_answer_points": [
+            "Hệ thống lưới 8pt giúp khoảng cách (padding/margin) luôn đồng nhất và chia hết cho các màn hình có độ phân giải tỷ lệ chẵn, tránh bị vỡ pixel (sub-pixel rendering).",
+            "Giúp giao tiếp với Dev dễ dàng hơn bằng hệ số nhân (x1, x2, x3)."
+          ],
+          "difficulty": "Fresher"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Tách rời khỏi thực tế kỹ thuật (Dribbble Syndrome)",
+          "why_its_bad": "Vẽ ra những giao diện cực đẹp trên Dribbble nhưng phi logic về mặt dữ liệu, hoặc sử dụng hiệu ứng blur/shadow quá nặng khiến Frontend không thể code nổi hoặc app giật lag.",
+          "better_approach": "Luôn làm việc sát với Frontend Developer. Hiểu cơ bản về cách HTML/CSS hoạt động (Box model) để thiết kế những component khả thi và tối ưu hiệu suất."
+        }
+      ]
+    }
+  ]
+}

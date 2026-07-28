@@ -1,0 +1,199 @@
+{
+  "skill": "Flutter",
+  "market_frequency": "3.6% JDs yêu cầu Flutter",
+  "market_role": "Mobile Developer (iOS & Android)",
+  "total_learning_hours": 60,
+  "generated_at": "2026-06-12T00:05:36.350139",
+  "modules": [
+    {
+      "module_id": "flutter_01",
+      "title": "Flutter & Dart Fundamentals",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "flutter_01_01",
+          "title": "Dart Language Basics",
+          "hours": 8,
+          "academic": {
+            "summary": "Strong typing, null safety, async/await, Futures, Streams, isolates, mixins",
+            "resources": [
+              {
+                "title": "Dart Official Tour",
+                "url": "https://dart.dev/language",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "Dart Pad — Online IDE",
+                "url": "https://dartpad.dev",
+                "type": "tool",
+                "is_free": true,
+                "duration_minutes": 0
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết Dart class quản lý shopping cart với generics, null safety, async load từ fake API",
+            "resources": [
+              {
+                "title": "Effective Dart",
+                "url": "https://dart.dev/effective-dart",
+                "type": "guide",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "flutter_01_01_q1",
+                "level": 2,
+                "question": "Dart null safety: `String?` vs `String` khác nhau?",
+                "options": {
+                  "A": "String: non-nullable (không thể null). String?: nullable (có thể null)",
+                  "B": "Chúng giống nhau",
+                  "C": "String? nhanh hơn",
+                  "D": "String không thể null trong mọi trường hợp"
+                },
+                "correct_answer": "A",
+                "explanation": "Sound null safety: String never null. String? possibly null. ?. (null-aware operator): str?.length. ?? (null coalescing): str ?? 'default'. late: non-nullable nhưng initialize sau."
+              },
+              {
+                "question_id": "flutter_01_01_q2",
+                "level": 3,
+                "question": "Future vs Stream trong Dart?",
+                "options": {
+                  "A": "Future: 1 async value (one-shot). Stream: sequence of async values (ongoing)",
+                  "B": "Chúng giống nhau",
+                  "C": "Stream là synchronous",
+                  "D": "Future cho network, Stream cho DB"
+                },
+                "correct_answer": "A",
+                "explanation": "Future<T>: completes once (HTTP response). Stream<T>: multiple values over time (WebSocket, location updates, file chunks). StreamController để create custom streams. broadcast vs. single-subscription."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "flutter_01_02",
+          "title": "Flutter Widgets & Layout",
+          "hours": 10,
+          "academic": {
+            "summary": "StatelessWidget, StatefulWidget, Widget tree, Column/Row/Stack/Expanded, Navigator 2.0",
+            "resources": [
+              {
+                "title": "Flutter Official Docs",
+                "url": "https://docs.flutter.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Flutter & Dart — freeCodeCamp",
+                "url": "https://www.freecodecamp.org/news/learn-flutter-full-course/",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng E-commerce app: product list, detail, cart, checkout với Material Design. Navigation 2.0",
+            "resources": [
+              {
+                "title": "Flutter Cookbook",
+                "url": "https://docs.flutter.dev/cookbook",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "flutter_01_02_q1",
+                "level": 2,
+                "question": "StatelessWidget vs StatefulWidget khi nào dùng?",
+                "options": {
+                  "A": "Stateless: UI không thay đổi sau build. Stateful: UI cần rebuild khi state thay đổi",
+                  "B": "Luôn dùng Stateful",
+                  "C": "Stateless không thể nhận props",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "StatelessWidget: immutable — build() gọi 1 lần hoặc khi parent rebuild. StatefulWidget: có State object, setState() trigger rebuild. Performance: Stateless nhẹ hơn — prefer khi không cần state."
+              },
+              {
+                "question_id": "flutter_01_02_q2",
+                "level": 3,
+                "question": "Flutter Expanded vs Flexible khác nhau?",
+                "options": {
+                  "A": "Expanded: chiếm toàn bộ available space. Flexible: chiếm tối đa flex ratio nhưng không bắt buộc",
+                  "B": "Chúng giống nhau",
+                  "C": "Flexible không support flex property",
+                  "D": "Expanded chỉ cho Row"
+                },
+                "correct_answer": "A",
+                "explanation": "Expanded = Flexible(fit: FlexFit.tight): buộc chiếm đủ allocated space. Flexible(fit: FlexFit.loose): chiếm tối đa allocated space nhưng có thể nhỏ hơn. Dùng Expanded khi muốn fill, Flexible khi muốn flexible sizing."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "flutter_01_03",
+          "title": "State Management: Bloc, Riverpod, Provider",
+          "hours": 7,
+          "academic": {
+            "summary": "BLoC pattern (Events/States/Streams), Cubit, Riverpod providers, StateNotifier",
+            "resources": [
+              {
+                "title": "Bloc Library Docs",
+                "url": "https://bloclibrary.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "Riverpod Docs",
+                "url": "https://riverpod.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement authentication flow với Bloc: AuthEvent (LogIn/LogOut), AuthState (Authenticated/Unauthenticated/Loading)",
+            "resources": [
+              {
+                "title": "Bloc Examples",
+                "url": "https://github.com/felangel/bloc/tree/master/examples",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "flutter_01_03_q1",
+                "level": 3,
+                "question": "BLoC pattern tách biệt gì?",
+                "options": {
+                  "A": "UI → Event → BLoC (business logic) → State → UI. Không có logic trong widgets",
+                  "B": "Chỉ network calls",
+                  "C": "Database access",
+                  "D": "Navigation"
+                },
+                "correct_answer": "A",
+                "explanation": "BLoC: Business Logic Component. Events: user actions. States: UI states. Stream-based: BLoC receive events, emit states. BlocBuilder rebuild UI khi state thay đổi. Testable: test BLoC mà không cần UI."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

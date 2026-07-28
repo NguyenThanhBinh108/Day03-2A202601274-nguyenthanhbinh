@@ -1,0 +1,80 @@
+{
+  "skill": "MongoDB",
+  "skill_key": "mongodb",
+  "total_topics": 7,
+  "estimated_total_hours": 9.0,
+  "generated_at": "2026-06-12T02:22:05.491944",
+  "checklist_items": [
+    {
+      "item_id": "mongo_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "MongoDB cơ bản — CRUD và MongoDB Shell",
+      "description": "mongosh, insertOne/Many, find với operators, updateOne với $set/$push, deleteOne",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/mongodb/",
+      "resource_title": "W3Schools — MongoDB Tutorial"
+    },
+    {
+      "item_id": "mongo_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Schema Design — Embedded vs Referenced",
+      "description": "Document model, embedding vs referencing, 16MB limit, schema patterns",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/mongodb-embedded-documents/",
+      "resource_title": "GeeksForGeeks — MongoDB Embedded Documents"
+    },
+    {
+      "item_id": "mongo_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "Aggregation Pipeline",
+      "description": "$match, $group, $sort, $project, $lookup, $unwind, $addFields, $count",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/mongodb-aggregation/",
+      "resource_title": "GeeksForGeeks — MongoDB Aggregation",
+      "hands_on_task": "Build analytics: top 10 users by order value, daily revenue report"
+    },
+    {
+      "item_id": "mongo_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Indexing và Query Optimization",
+      "description": "Single/compound/text indexes, EXPLAIN, ESR rule, covered queries, TTL indexes",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/indexing-in-mongodb/",
+      "resource_title": "GeeksForGeeks — MongoDB Indexing"
+    },
+    {
+      "item_id": "mongo_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "MongoDB với Node.js hoặc Spring Boot",
+      "description": "Mongoose ODM (Node), MongoRepository (Spring), connection pooling, error handling",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/mongoose-module-in-node-js/",
+      "resource_title": "GeeksForGeeks — Mongoose"
+    },
+    {
+      "item_id": "mongo_c006",
+      "order": 6,
+      "phase": "advanced",
+      "title": "Transactions và ACID (4.x+)",
+      "description": "Multi-document transactions, session, withTransaction(), read/write concerns",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/mongodb-transactions/",
+      "resource_title": "GeeksForGeeks — MongoDB Transactions"
+    },
+    {
+      "item_id": "mongo_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Replica Set và High Availability",
+      "description": "Replica set setup, primary/secondary, failover, read preferences, write concern",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/mongodb-replication/",
+      "resource_title": "GeeksForGeeks — MongoDB Replication"
+    }
+  ]
+}

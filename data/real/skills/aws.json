@@ -1,0 +1,179 @@
+{
+  "skill": "AWS",
+  "market_frequency": "18.4% JDs yêu cầu AWS",
+  "market_role": "DevOps Engineer, Backend Developer, Data Engineer",
+  "total_learning_hours": 65,
+  "generated_at": "2026-06-12T00:05:36.349510",
+  "modules": [
+    {
+      "module_id": "aws_01",
+      "title": "AWS Core Services",
+      "order": 1,
+      "hours": 30,
+      "topics": [
+        {
+          "topic_id": "aws_01_01",
+          "title": "EC2, VPC, IAM, S3",
+          "hours": 12,
+          "academic": {
+            "summary": "Instance types, Security Groups, VPC/subnets/NAT, IAM roles/policies, S3 lifecycle, versioning",
+            "resources": [
+              {
+                "title": "AWS Official Documentation",
+                "url": "https://docs.aws.amazon.com",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 480
+              },
+              {
+                "title": "AWS Free Tier Account",
+                "url": "https://aws.amazon.com/free/",
+                "type": "lab",
+                "is_free": true,
+                "duration_minutes": 0
+              },
+              {
+                "title": "A Cloud Guru AWS Course",
+                "url": "https://acloudguru.com",
+                "type": "course",
+                "is_free": false,
+                "duration_minutes": 1200
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Deploy web app: EC2 + ALB + Auto Scaling + S3 static hosting + CloudFront CDN + RDS PostgreSQL",
+            "resources": [
+              {
+                "title": "AWS Well-Architected Framework",
+                "url": "https://aws.amazon.com/architecture/well-architected/",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "aws_01_01_q1",
+                "level": 3,
+                "question": "Security Group vs Network ACL trong AWS?",
+                "options": {
+                  "A": "SG: instance-level, stateful, allow only. NACL: subnet-level, stateless, allow/deny",
+                  "B": "SG: subnet-level, NACL: instance-level",
+                  "C": "Chúng giống nhau",
+                  "D": "SG chỉ cho EC2"
+                },
+                "correct_answer": "A",
+                "explanation": "SG: stateful (return traffic auto allow), chỉ allow rules. NACL: stateless (phải explicit allow inbound + outbound), có deny rules. SG = firewall per instance, NACL = subnet perimeter."
+              },
+              {
+                "question_id": "aws_01_01_q2",
+                "level": 4,
+                "question": "IAM Role vs IAM User khác nhau?",
+                "options": {
+                  "A": "User: long-term credentials (access key). Role: temporary credentials, assume by services/users",
+                  "B": "Chúng giống nhau",
+                  "C": "Role chỉ cho Lambda",
+                  "D": "User không thể có policies"
+                },
+                "correct_answer": "A",
+                "explanation": "User: người/app với permanent credentials. Role: identity với policies, no credentials — assumed tạm thời bởi EC2, Lambda, ECS tasks, cross-account. Best practice: không dùng root user, dùng roles cho services."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "aws_01_02",
+          "title": "ECS, Lambda, API Gateway, RDS",
+          "hours": 12,
+          "academic": {
+            "summary": "ECS Fargate, Lambda cold starts, API Gateway integration, RDS Multi-AZ, read replicas, Aurora",
+            "resources": [
+              {
+                "title": "AWS Lambda Docs",
+                "url": "https://docs.aws.amazon.com/lambda/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Serverless REST API: Lambda + API Gateway + DynamoDB. Implement cold start optimization và connection pooling",
+            "resources": [
+              {
+                "title": "AWS Serverless Land",
+                "url": "https://serverlessland.com",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "aws_01_02_q1",
+                "level": 4,
+                "question": "Lambda cold start là gì và cách giảm thiểu?",
+                "options": {
+                  "A": "Lần đầu invoke: khởi tạo runtime + load code → latency cao. Giảm: Provisioned Concurrency, keep-warm, giảm package size",
+                  "B": "Lambda bị crash",
+                  "C": "Network timeout",
+                  "D": "Memory không đủ"
+                },
+                "correct_answer": "A",
+                "explanation": "Cold start: ~100ms-10s tùy runtime. Python/Node: nhanh hơn Java/.NET. Giảm: Provisioned Concurrency (pre-warm, tốn tiền), minimize dependencies, lazy imports, SnapStart (Java)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "aws_01_03",
+          "title": "CloudFormation / Terraform IaC",
+          "hours": 6,
+          "academic": {
+            "summary": "Infrastructure as Code, CloudFormation templates, Terraform HCL, state management, modules",
+            "resources": [
+              {
+                "title": "Terraform AWS Provider Docs",
+                "url": "https://registry.terraform.io/providers/hashicorp/aws/latest/docs",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Provision VPC + EC2 + RDS + S3 bằng Terraform. Remote state trong S3 + DynamoDB lock. Terraform modules",
+            "resources": [
+              {
+                "title": "Learn Terraform — HashiCorp",
+                "url": "https://learn.hashicorp.com/terraform",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "aws_01_03_q1",
+                "level": 4,
+                "question": "Terraform state file là gì và tại sao cần remote state?",
+                "options": {
+                  "A": "State: map giữa Terraform config và real infrastructure. Remote: team collaboration, locking, không commit vào Git",
+                  "B": "Config file",
+                  "C": "Log file",
+                  "D": "Backup"
+                },
+                "correct_answer": "A",
+                "explanation": "State file (.tfstate): Terraform track resources đã tạo. Remote state (S3 + DynamoDB): team có thể share state, DynamoDB prevent concurrent modifications, không expose secrets trong Git."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "skill": "System Design",
+  "skill_key": "system_design",
+  "total_topics": 10,
+  "estimated_total_hours": 16.0,
+  "generated_at": "2026-06-12T01:37:31.882545",
+  "checklist_items": [
+    {
+      "item_id": "sysdes_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Fundamentals — Latency, Throughput, Availability",
+      "description": "SLA/SLO/SLI, latency numbers (cache=1μs, disk=1ms, network=100ms), throughput, IOPS",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/system-design/",
+      "resource_title": "GeeksForGeeks — System Design",
+      "quiz_ids": [
+        "sysdes_l1_001"
+      ]
+    },
+    {
+      "item_id": "sysdes_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Scaling — Horizontal vs Vertical, Load Balancing",
+      "description": "Scale up vs out, load balancing algorithms, stateless services, session management",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/load-balancing-algorithms/",
+      "resource_title": "GeeksForGeeks — Load Balancing",
+      "quiz_ids": [
+        "sysdes_l1_001",
+        "sysdes_l1_002"
+      ]
+    },
+    {
+      "item_id": "sysdes_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Caching Strategies",
+      "description": "Cache-aside, write-through, write-back, TTL, CDN, Redis vs Memcached, cache invalidation",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/caching-in-system-design/",
+      "resource_title": "GeeksForGeeks — Caching",
+      "quiz_ids": [
+        "sysdes_l1_003"
+      ]
+    },
+    {
+      "item_id": "sysdes_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Database Scaling — Replication, Sharding, Partitioning",
+      "description": "Master-slave replication, read replicas, sharding strategies, connection pooling, CAP theorem",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/database-sharding/",
+      "resource_title": "GeeksForGeeks — Database Sharding",
+      "quiz_ids": [
+        "sysdes_l1_004",
+        "sysdes_l2_002"
+      ]
+    },
+    {
+      "item_id": "sysdes_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Message Queues và Async Processing",
+      "description": "Kafka vs RabbitMQ, pub-sub, consumer groups, fan-out, idempotency, dead letter queues",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/message-queues-in-system-design/",
+      "resource_title": "GeeksForGeeks — Message Queues",
+      "quiz_ids": [
+        "sysdes_l2_003"
+      ]
+    },
+    {
+      "item_id": "sysdes_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Design Common Systems — URL Shortener, Rate Limiter",
+      "description": "Estimate requirements → API design → DB schema → scale components → bottlenecks",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/design-url-shortener/",
+      "resource_title": "GeeksForGeeks — Design URL Shortener",
+      "quiz_ids": [
+        "sysdes_l2_001"
+      ],
+      "hands_on_task": "White-board thiết kế URL shortener: estimate → design → explain trade-offs"
+    },
+    {
+      "item_id": "sysdes_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Design Real-time Systems — Chat, Notification",
+      "description": "WebSocket vs SSE vs polling, connection management, fan-out, push notifications",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/design-messaging-application/",
+      "resource_title": "GeeksForGeeks — Design Chat App",
+      "quiz_ids": [
+        "sysdes_l3_001"
+      ]
+    },
+    {
+      "item_id": "sysdes_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Microservices Patterns — API Gateway, Service Mesh",
+      "description": "API Gateway (authentication, rate limiting, routing), Service Mesh (Istio), Circuit Breaker, Saga pattern",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/microservices-design-patterns/",
+      "resource_title": "GeeksForGeeks — Microservices Patterns",
+      "quiz_ids": [
+        "sysdes_l4_001"
+      ]
+    },
+    {
+      "item_id": "sysdes_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Observability — Monitoring, Logging, Tracing",
+      "description": "Prometheus + Grafana, ELK Stack, distributed tracing (Jaeger/Zipkin), SLO/SLA alerting",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/observability-in-system-design/",
+      "resource_title": "GeeksForGeeks — Observability",
+      "quiz_ids": [
+        "sysdes_l4_001"
+      ]
+    },
+    {
+      "item_id": "sysdes_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Design High-traffic VN E-commerce — Flash Sale, Payment",
+      "description": "Flash sale với Redis atomic, payment gateway integration, distributed transactions, anti-fraud",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/flash-sale-system-design/",
+      "resource_title": "GeeksForGeeks — Flash Sale System",
+      "quiz_ids": [
+        "sysdes_l5_001"
+      ],
+      "hands_on_task": "Design hệ thống flash sale cho sản phẩm 1000 units, 100k users đồng thời"
+    }
+  ]
+}

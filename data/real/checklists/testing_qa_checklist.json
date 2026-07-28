@@ -1,0 +1,93 @@
+{
+  "skill": "Testing QA",
+  "skill_key": "testing_qa",
+  "total_topics": 8,
+  "estimated_total_hours": 10.5,
+  "generated_at": "2026-06-12T02:22:05.508096",
+  "checklist_items": [
+    {
+      "item_id": "qa_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Testing fundamentals — types và strategies",
+      "description": "Unit/Integration/E2E, test pyramid, TDD, BDD, test doubles, code coverage",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/test-pyramid/",
+      "resource_title": "freeCodeCamp — Test Pyramid"
+    },
+    {
+      "item_id": "qa_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Unit Testing với Jest (JS) hoặc pytest (Python)",
+      "description": "Test cases, assertions, mocking, beforeEach/afterEach, parameterized tests, coverage report",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/jest-testing/",
+      "resource_title": "freeCodeCamp — Jest Testing",
+      "hands_on_task": "Viết unit tests cho service layer: 10+ test cases, > 80% coverage"
+    },
+    {
+      "item_id": "qa_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "API Testing với Postman và Newman",
+      "description": "Collections, environments, test scripts, data-driven, Newman CLI cho CI",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/api-testing/",
+      "resource_title": "GeeksForGeeks — API Testing"
+    },
+    {
+      "item_id": "qa_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Integration Testing",
+      "description": "Test DB interactions, Testcontainers, Spring @DataJpaTest, SuperTest, external service mocking",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/integration-testing/",
+      "resource_title": "GeeksForGeeks — Integration Testing",
+      "hands_on_task": "Build integration test suite: API → DB → cache với Testcontainers"
+    },
+    {
+      "item_id": "qa_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "E2E Testing với Playwright",
+      "description": "Setup, selectors, interactions, assertions, Page Object Model, CI integration, fixtures",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/playwright-testing/",
+      "resource_title": "freeCodeCamp — Playwright Testing",
+      "hands_on_task": "Automate user flows: login, browse products, checkout"
+    },
+    {
+      "item_id": "qa_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Test CI/CD Integration",
+      "description": "Run tests in GitHub Actions, fail pipeline on failure, coverage gates, test reports",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/nodejs-ci-cd-pipeline/",
+      "resource_title": "freeCodeCamp — CI/CD Pipeline"
+    },
+    {
+      "item_id": "qa_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Performance và Load Testing với k6",
+      "description": "k6 scripting, VU/RPS, ramp-up stages, thresholds, smoke/load/stress tests, CI integration",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/performance-testing-k6/",
+      "resource_title": "freeCodeCamp — k6 Performance Testing",
+      "hands_on_task": "Load test API: 200 VU, p95 < 500ms, error rate < 1%"
+    },
+    {
+      "item_id": "qa_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Security Testing — OWASP, ZAP, Snyk",
+      "description": "OWASP Top 10, DAST với ZAP, SAST với Snyk/SonarQube, dependency scanning, pen test basics",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/owasp-top-10/",
+      "resource_title": "GeeksForGeeks — OWASP Top 10"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "PyTorch",
+  "skill_key": "pytorch",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.639245Z",
+  "checklist_items": [
+    {
+      "item_id": "pytorch_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Tensors",
+      "description": "Master Tensors trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Tensors+tutorial",
+      "resource_title": "PyTorch — Tensors",
+      "quiz_ids": [
+        "pytorch_l1_001"
+      ],
+      "market_relevance": "Tensors là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Autograd",
+      "description": "Master Autograd trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Autograd+tutorial",
+      "resource_title": "PyTorch — Autograd",
+      "quiz_ids": [
+        "pytorch_l2_002"
+      ],
+      "market_relevance": "Autograd là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "nn.Module",
+      "description": "Master nn.Module trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PyTorch+nn.Module+tutorial",
+      "resource_title": "PyTorch — nn.Module",
+      "quiz_ids": [
+        "pytorch_l3_003"
+      ],
+      "market_relevance": "nn.Module là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "DataLoader/Dataset",
+      "description": "Master DataLoader/Dataset trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PyTorch+DataLoader/Dataset+tutorial",
+      "resource_title": "PyTorch — DataLoader/Dataset",
+      "quiz_ids": [
+        "pytorch_l4_004"
+      ],
+      "market_relevance": "DataLoader/Dataset là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Training loop",
+      "description": "Master Training loop trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Training+loop+tutorial",
+      "resource_title": "PyTorch — Training loop",
+      "quiz_ids": [
+        "pytorch_l5_005"
+      ],
+      "market_relevance": "Training loop là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Loss functions",
+      "description": "Master Loss functions trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Loss+functions+tutorial",
+      "resource_title": "PyTorch — Loss functions",
+      "quiz_ids": [
+        "pytorch_l5_006"
+      ],
+      "market_relevance": "Loss functions là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Optimizers",
+      "description": "Master Optimizers trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Optimizers+tutorial",
+      "resource_title": "PyTorch — Optimizers",
+      "quiz_ids": [
+        "pytorch_l5_007"
+      ],
+      "market_relevance": "Optimizers là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "GPU training",
+      "description": "Master GPU training trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PyTorch+GPU+training+tutorial",
+      "resource_title": "PyTorch — GPU training",
+      "quiz_ids": [
+        "pytorch_l5_008"
+      ],
+      "market_relevance": "GPU training là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Model saving",
+      "description": "Master Model saving trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PyTorch+Model+saving+tutorial",
+      "resource_title": "PyTorch — Model saving",
+      "quiz_ids": [
+        "pytorch_l5_009"
+      ],
+      "market_relevance": "Model saving là key skill trong PyTorch AI/ML development"
+    },
+    {
+      "item_id": "pytorch_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "TorchScript/ONNX",
+      "description": "Master TorchScript/ONNX trong PyTorch — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PyTorch+TorchScript/ONNX+tutorial",
+      "resource_title": "PyTorch — TorchScript/ONNX",
+      "quiz_ids": [
+        "pytorch_l5_010"
+      ],
+      "market_relevance": "TorchScript/ONNX là key skill trong PyTorch AI/ML development"
+    }
+  ]
+}

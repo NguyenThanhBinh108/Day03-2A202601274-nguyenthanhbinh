@@ -1,0 +1,583 @@
+{
+  "skill": "React",
+  "skill_key": "react",
+  "total_questions": 27,
+  "levels": {
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 3
+  },
+  "generated_at": "2026-06-12T01:24:07.163998",
+  "source_references": [
+    "https://react.dev/",
+    "https://www.freecodecamp.org/news/tag/react/",
+    "https://www.geeksforgeeks.org/reactjs/"
+  ],
+  "questions": [
+    {
+      "question_id": "react_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "React là gì và tại sao được dùng phổ biến?",
+      "options": {
+        "A": "Database framework của Facebook",
+        "B": "JavaScript library để build UI với component-based architecture, virtual DOM, declarative programming",
+        "C": "CSS framework",
+        "D": "Server-side rendering framework"
+      },
+      "correct_answer": "B",
+      "explanation": "React: UI library (không phải full framework). Component-based: chia UI thành reusable components. Virtual DOM: tính toán diff và chỉ update phần DOM thật sự thay đổi → performance tốt. Declarative: mô tả 'UI trông thế nào' thay vì 'làm thế nào để update'. 74% JD Frontend VN yêu cầu React. Ecosystem: Redux, React Query, Next.js, React Native.",
+      "source": "https://react.dev/learn",
+      "tags": [
+        "react",
+        "basics",
+        "virtual-DOM",
+        "component"
+      ]
+    },
+    {
+      "question_id": "react_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Sự khác biệt giữa state và props trong React?",
+      "options": {
+        "A": "Cả hai đều giống nhau",
+        "B": "Props: data từ parent (read-only); State: data local của component (mutable, trigger re-render)",
+        "C": "State từ parent, props là local",
+        "D": "Props dùng cho class, state dùng cho function"
+      },
+      "correct_answer": "B",
+      "explanation": "Props (properties): truyền từ parent xuống child, read-only (child không được modify). State: local data của component, mutable (dùng setState/useState), khi thay đổi trigger re-render. Props + State → UI. Lifting state up: khi nhiều components cần share state → move state lên component ancestor chung.",
+      "source": "https://react.dev/learn/passing-props-to-a-component",
+      "tags": [
+        "props",
+        "state",
+        "component",
+        "data-flow"
+      ]
+    },
+    {
+      "question_id": "react_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "useState hook dùng như thế nào?",
+      "options": {
+        "A": "useState('value') trả về value",
+        "B": "const [state, setState] = useState(initialValue) — setState trigger re-render",
+        "C": "useState chỉ dùng trong class component",
+        "D": "useState tự động persist data"
+      },
+      "correct_answer": "B",
+      "explanation": "const [count, setCount] = useState(0): destructure [currentValue, setterFunction]. setState(newValue) hoặc setState(prev => prev + 1) (functional update khi new state phụ thuộc old state — tránh stale closure). React batch updates trong event handlers. useState lazy initialization: useState(() => expensiveComputation()) — chỉ tính lần đầu.",
+      "source": "https://react.dev/reference/react/useState",
+      "tags": [
+        "useState",
+        "hooks",
+        "state"
+      ]
+    },
+    {
+      "question_id": "react_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "useEffect hook dùng để làm gì?",
+      "options": {
+        "A": "Thay thế state trong functional components",
+        "B": "Xử lý side effects (fetch data, subscriptions, DOM manipulation) sau khi render",
+        "C": "Tối ưu performance",
+        "D": "Tạo custom events"
+      },
+      "correct_answer": "B",
+      "explanation": "useEffect(() => { /* effect */ return () => { /* cleanup */ }; }, [dependencies]). Dependency array: [] = chỉ chạy sau render đầu (componentDidMount). [dep1, dep2] = chạy khi dep thay đổi. Không có array = mọi render. Cleanup function: chạy trước effect tiếp theo hoặc khi unmount (remove listeners, cancel fetches, clear timers). Fetch data trong useEffect là pattern phổ biến (nhưng React Query/SWR tốt hơn cho production).",
+      "source": "https://react.dev/reference/react/useEffect",
+      "tags": [
+        "useEffect",
+        "hooks",
+        "side-effects",
+        "lifecycle"
+      ]
+    },
+    {
+      "question_id": "react_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "JSX là gì và tại sao React dùng nó?",
+      "options": {
+        "A": "JavaScript eXtended, một ngôn ngữ mới",
+        "B": "Syntax extension cho JavaScript — viết HTML-like trong JS, được Babel transform thành React.createElement() calls",
+        "C": "JSON extension cho React",
+        "D": "JSX là CSS-in-JS"
+      },
+      "correct_answer": "B",
+      "explanation": "JSX: JavaScript XML. <div className='app'>{name}</div> → React.createElement('div', {className:'app'}, name). Lưu ý: class → className, for → htmlFor (vì class/for là reserved words JS). Curly braces {} cho JS expressions. JSX phải return single root element → dùng <></> (Fragment) để wrap. Babel (hoặc SWC) transform JSX → JS trước khi browser nhận.",
+      "source": "https://react.dev/learn/writing-markup-with-jsx",
+      "tags": [
+        "JSX",
+        "Babel",
+        "React.createElement",
+        "syntax"
+      ]
+    },
+    {
+      "question_id": "react_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Conditional rendering trong React thực hiện thế nào?",
+      "options": {
+        "A": "Dùng if/else thông thường trong JSX",
+        "B": "Ternary operator trong JSX, && short-circuit, hoặc if/else bên ngoài return để quyết định render gì",
+        "C": "Dùng v-if như Vue",
+        "D": "Chỉ có thể dùng switch/case"
+      },
+      "correct_answer": "B",
+      "explanation": "Pattern 1 — Ternary: {isLoggedIn ? <UserPanel /> : <LoginForm />}. Pattern 2 — &&: {isLoading && <Spinner />} (chú ý: 0 && <Comp /> render '0', dùng !!0 || {count > 0 && ...}). Pattern 3 — if/else trước return: const content = isLoading ? <Spinner/> : <Data/>; return <div>{content}</div>. Pattern 4 — early return: if (isLoading) return <Spinner/>; return <Data/>. Không thể dùng if/else trực tiếp trong JSX (JSX là expression).",
+      "source": "https://react.dev/learn/conditional-rendering",
+      "tags": [
+        "conditional-rendering",
+        "ternary",
+        "JSX"
+      ]
+    },
+    {
+      "question_id": "react_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "React reconciliation và Virtual DOM hoạt động thế nào?",
+      "options": {
+        "A": "React update toàn bộ DOM mỗi render",
+        "B": "React tạo Virtual DOM mới sau mỗi state change, diff với Virtual DOM cũ (reconciliation), chỉ apply minimum DOM changes cần thiết",
+        "C": "Virtual DOM là HTML cache",
+        "D": "Reconciliation chỉ xảy ra sau user events"
+      },
+      "correct_answer": "B",
+      "explanation": "Reconciliation: React compare (diff) Virtual DOM tree mới vs cũ. Rules: (1) Same type element → update props. (2) Different type → unmount old, mount new. (3) Lists: dùng key để identify elements. key prop quan trọng cho list performance: không dùng index nếu list có thể reorder/filter. React 18: concurrent rendering — có thể interrupt và resume renders, better UX.",
+      "source": "https://react.dev/learn/preserving-and-resetting-state",
+      "tags": [
+        "reconciliation",
+        "virtual-DOM",
+        "diff",
+        "key"
+      ]
+    },
+    {
+      "question_id": "react_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "useMemo và useCallback khác nhau thế nào? Khi nào cần dùng?",
+      "options": {
+        "A": "Cả hai giống nhau",
+        "B": "useMemo: memoize computed value; useCallback: memoize function reference. Chỉ dùng khi có performance issue thực sự, tránh premature optimization",
+        "C": "useMemo chỉ cho server, useCallback cho client",
+        "D": "useMemo thay thế useState"
+      },
+      "correct_answer": "B",
+      "explanation": "useMemo(() => expensiveCalc(a, b), [a, b]): chỉ tính lại khi a hoặc b thay đổi. useCallback((e) => handleClick(e, id), [id]): stable function reference khi deps không đổi. Khi cần: (1) Child component wrapped bằng React.memo (prevent re-render khi parent re-renders). (2) Function/value trong deps array của useEffect (stable reference). Đừng premature optimize: thêm vào TRƯỚC khi profile và confirm là bottleneck.",
+      "source": "https://react.dev/reference/react/useMemo",
+      "tags": [
+        "useMemo",
+        "useCallback",
+        "memoization",
+        "performance"
+      ]
+    },
+    {
+      "question_id": "react_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "React Context API giải quyết vấn đề gì và limitations của nó?",
+      "options": {
+        "A": "Context thay thế Redux hoàn toàn",
+        "B": "Context giải quyết prop drilling; limitation: mọi consumer re-render khi context value thay đổi dù không dùng phần thay đổi",
+        "C": "Context chỉ cho authentication",
+        "D": "Context không có limitations"
+      },
+      "correct_answer": "B",
+      "explanation": "Prop drilling: A → B → C → D → E (chỉ E cần data của A). Context: createContext + Provider bọc tree + useContext trong consumer. Limitation: bất kỳ state nào trong context value thay đổi → tất cả consumers re-render. Fix: split contexts (auth, theme, user), value memoization (useMemo cho context value). Context phù hợp: theme, locale, authenticated user, không phải high-frequency updates. Zustand/Jotai/Redux Toolkit tốt hơn cho complex state.",
+      "source": "https://react.dev/learn/passing-data-deeply-with-context",
+      "tags": [
+        "Context",
+        "prop-drilling",
+        "state-management"
+      ]
+    },
+    {
+      "question_id": "react_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "useRef dùng để làm gì ngoài việc access DOM elements?",
+      "options": {
+        "A": "Chỉ dùng để access DOM",
+        "B": "Mutable ref object persist giữa renders WITHOUT triggering re-render — dùng cho DOM access, mutable values (timer IDs, previous values), instance variables",
+        "C": "Thay thế useState",
+        "D": "useRef chỉ trong class components"
+      },
+      "correct_answer": "B",
+      "explanation": "const ref = useRef(initialValue). ref.current = value — KHÔNG trigger re-render. Use cases: (1) DOM access: ref.current.focus(). (2) Lưu timer IDs: clearTimeout(timerRef.current). (3) Track previous value: prevCountRef.current = count trong useEffect. (4) Flag để check mounted (tránh setState sau unmount). (5) Imperative animation với GSAP/Three.js. Khác useState: thay đổi ref không trigger re-render, không stale closure.",
+      "source": "https://react.dev/reference/react/useRef",
+      "tags": [
+        "useRef",
+        "DOM",
+        "mutable",
+        "no-rerender"
+      ]
+    },
+    {
+      "question_id": "react_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "React performance optimization — React.memo hoạt động thế nào?",
+      "options": {
+        "A": "React.memo tự động apply cho tất cả components",
+        "B": "React.memo là HOC — wrap component, chỉ re-render nếu props thay đổi (shallow comparison). Dùng khi parent re-renders thường xuyên nhưng props của child không đổi",
+        "C": "React.memo là deprecated",
+        "D": "React.memo dùng deep comparison"
+      },
+      "correct_answer": "B",
+      "explanation": "React.memo(Component): shallow compare props trước mỗi render. Nếu props không đổi → skip re-render, dùng lại kết quả lần trước. Khi cần: component render expensive, parent re-renders thường xuyên, props ít thay đổi. Kết hợp: React.memo + useCallback cho functions passed as props + useMemo cho objects/arrays passed as props. Custom comparison: React.memo(Comp, (prev, next) => deepEqual(prev, next)). Không phải silver bullet — profile first.",
+      "source": "https://react.dev/reference/react/memo",
+      "tags": [
+        "React.memo",
+        "performance",
+        "HOC",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "react_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "useReducer vs useState — khi nào nên chọn useReducer?",
+      "options": {
+        "A": "useReducer luôn tốt hơn useState",
+        "B": "useReducer tốt hơn khi: state phức tạp (object với nhiều fields), next state phụ thuộc nhiều vào previous state, nhiều actions thay đổi state",
+        "C": "useState deprecated trong React 18",
+        "D": "useReducer chỉ dùng với Redux"
+      },
+      "correct_answer": "B",
+      "explanation": "useState: tốt cho simple values (boolean, number, string, simple object). useReducer(reducer, initialState): tốt cho (1) Complex state transitions (form với validation), (2) Multiple pieces of state cần update cùng nhau, (3) Logic update phức tạp (nhiều actions), (4) Testing — reducer là pure function, dễ test. Reducer: (state, action) => newState. Dispatch: dispatch({type: 'INCREMENT', payload: 5}). useReducer + Context = lightweight Redux.",
+      "source": "https://react.dev/reference/react/useReducer",
+      "tags": [
+        "useReducer",
+        "useState",
+        "state-management"
+      ]
+    },
+    {
+      "question_id": "react_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Cách fetch data đúng trong React — tránh race conditions và memory leaks?",
+      "options": {
+        "A": "useEffect với fetch() mà không cần cleanup",
+        "B": "useEffect với AbortController cho cleanup; hoặc dùng React Query/SWR cho production — tự xử lý caching, deduplication, race conditions",
+        "C": "Fetch data ở component render",
+        "D": "Chỉ fetch trong componentDidMount"
+      },
+      "correct_answer": "B",
+      "explanation": "Race condition: request A gửi trước request B, nhưng B response về trước → setState(A_data) sau setState(B_data) → stale data. Fix với AbortController: const controller = new AbortController(); fetch(url, {signal: controller.signal}); cleanup: () => controller.abort(). Memory leak: setState sau unmount → warning. Fix: isMounted flag hoặc AbortController. React Query: tự handle tất cả — caching, background refetch, deduplication, optimistic updates. Đây là production standard 2024.",
+      "source": "https://react.dev/learn/synchronizing-with-effects",
+      "tags": [
+        "fetch",
+        "race-condition",
+        "memory-leak",
+        "React-Query",
+        "AbortController"
+      ]
+    },
+    {
+      "question_id": "react_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Custom Hook — khi nào tạo và cách tạo đúng?",
+      "options": {
+        "A": "Custom hook chỉ dùng được trong class components",
+        "B": "Custom hook là function bắt đầu bằng 'use', extract reusable stateful logic từ multiple components — không phải UI",
+        "C": "Custom hook phải return JSX",
+        "D": "Không thể dùng built-in hooks trong custom hook"
+      },
+      "correct_answer": "B",
+      "explanation": "Custom hook: function (tên bắt đầu use) chứa stateful logic để reuse. Ví dụ: useLocalStorage(key, initial), useDebounce(value, delay), useFetch(url), useMediaQuery(query), useIntersectionObserver. Không share state (mỗi call là independent instance). Giúp: separation of concerns, testability, reusability. Ví dụ thực tế: useAuth (login/logout/user), useForm (validation, submit), useWebSocket (connect/disconnect/messages).",
+      "source": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+      "tags": [
+        "custom-hooks",
+        "reusability",
+        "separation-of-concerns"
+      ]
+    },
+    {
+      "question_id": "react_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "React Router v6 — setup routing và nested routes thế nào?",
+      "options": {
+        "A": "React Router không support nested routes",
+        "B": "<BrowserRouter><Routes><Route path='/' element={<Home/>}/><Route path='/user/:id' element={<User/>}/></Routes></BrowserRouter> — useParams, useNavigate, Outlet cho nested",
+        "C": "React Router dùng config file riêng",
+        "D": "Chỉ có single-level routing"
+      },
+      "correct_answer": "B",
+      "explanation": "React Router v6: Routes → Route với element prop (không phải component prop). Nested: <Route path='/dashboard' element={<Dashboard/>}><Route index element={<Overview/>}/><Route path='settings' element={<Settings/>}/></Route>. <Outlet/> trong Dashboard để render child routes. useParams() cho URL params. useNavigate() replace useHistory. useSearchParams() cho query strings. Loader (React Router 6.4+): data fetching trước khi render route.",
+      "source": "https://www.freecodecamp.org/news/react-router-v6/",
+      "tags": [
+        "React-Router",
+        "routing",
+        "SPA",
+        "nested-routes"
+      ]
+    },
+    {
+      "question_id": "react_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "State management library nào phù hợp cho project React production VN năm 2024?",
+      "options": {
+        "A": "Luôn dùng Redux Classic",
+        "B": "Small-medium app: Zustand (simple API) hoặc Jotai (atomic). Complex app: Redux Toolkit. Server state: React Query/TanStack Query. Tùy scale và team familiarity",
+        "C": "Context API đủ cho mọi app",
+        "D": "Chỉ MobX mới phù hợp production"
+      },
+      "correct_answer": "B",
+      "explanation": "2024 State management landscape: Zustand: < 1KB, minimal boilerplate, dễ học. Jotai: atomic state (như Recoil nhưng lighter). Redux Toolkit (RTK): industry standard enterprise, RTK Query cho server state. React Query / TanStack Query: server state (caching, sync, loading/error states) — không phải client state manager. Recoil: Facebook's atomic state (ít được dùng). Khuyến nghị: React Query cho server state + Zustand cho client state = minimal, powerful setup.",
+      "source": "https://www.freecodecamp.org/news/react-state-management/",
+      "tags": [
+        "state-management",
+        "Zustand",
+        "Redux-Toolkit",
+        "React-Query"
+      ]
+    },
+    {
+      "question_id": "react_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Làm thế nào để share logic giữa components mà không dùng HOC hay render props?",
+      "options": {
+        "A": "Copy paste code vào mỗi component",
+        "B": "Custom hooks là pattern hiện đại nhất — extract stateful logic thành reusable functions, compose nhiều hooks trong 1 component",
+        "C": "Redux thay thế shared logic",
+        "D": "Context là cách duy nhất"
+      },
+      "correct_answer": "B",
+      "explanation": "Evolution: Mixins (React old) → HOC (wrap component) → Render Props (prop là function) → Custom Hooks (extract logic). Custom hooks lợi thế: không tạo extra components trong tree, không nesting hell, TypeScript support tốt hơn, composition dễ hơn. Ví dụ compose: const MyComponent = () => { const user = useAuth(); const {data} = useFetch('/api/profile'); const isMobile = useMediaQuery('(max-width:768px)'); return ... }. Hooks pattern = Functional Programming trong React.",
+      "source": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+      "tags": [
+        "custom-hooks",
+        "HOC",
+        "render-props",
+        "code-reuse"
+      ]
+    },
+    {
+      "question_id": "react_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Code splitting và lazy loading trong React implement thế nào?",
+      "options": {
+        "A": "React tự động code split tất cả",
+        "B": "React.lazy(() => import('./Component')) + Suspense fallback — route-based splitting là phổ biến nhất",
+        "C": "Chỉ Next.js hỗ trợ code splitting",
+        "D": "Dùng bundle analyzer để split"
+      },
+      "correct_answer": "B",
+      "explanation": "React.lazy: const LazyComp = React.lazy(() => import('./LazyComp')). Suspense: <Suspense fallback={<Spinner/>}><LazyComp/></Suspense>. Route-based splitting (phổ biến nhất): const Home = lazy(() => import('./pages/Home')). Webpack (hoặc Vite) tạo separate chunk per import(). Dynamic import cũng cho libraries: const {Chart} = await import('chart.js'). Kết quả: initial bundle nhỏ hơn → faster first load. Preload: <link rel='prefetch'> cho routes user likely to visit.",
+      "source": "https://react.dev/reference/react/lazy",
+      "tags": [
+        "code-splitting",
+        "lazy-loading",
+        "performance",
+        "Suspense"
+      ]
+    },
+    {
+      "question_id": "react_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "React app bị infinite loop — useEffect chạy liên tục. Nguyên nhân phổ biến nhất?",
+      "options": {
+        "A": "React bug, cần downgrade version",
+        "B": "Object/array trong dependency array tạo mới mỗi render; hoặc setState trong useEffect không có điều kiện dừng",
+        "C": "useEffect không support async",
+        "D": "Quá nhiều useEffect trong 1 component"
+      },
+      "correct_answer": "B",
+      "explanation": "Infinite loop patterns: (1) Object dep: useEffect(fn, [options]) — {options} tạo mới mỗi render → referential inequality → loop. Fix: useMemo cho options hoặc primitive deps. (2) Array dep: useEffect(fn, [items]) — [] tạo mới mỗi render. Fix: useMemo. (3) setState không điều kiện: useEffect(() => setCount(c => c+1), [count]) — vòng lặp vô hạn. Fix: thêm điều kiện. (4) Missing cleanup cho subscription. Tool: React DevTools Profiler để thấy re-renders.",
+      "source": "https://www.freecodecamp.org/news/react-infinite-loop/",
+      "tags": [
+        "useEffect",
+        "infinite-loop",
+        "debugging",
+        "dependency-array"
+      ]
+    },
+    {
+      "question_id": "react_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Stale closure problem trong React hooks — khi nào xảy ra và cách fix?",
+      "options": {
+        "A": "Stale closure chỉ xảy ra trong class components",
+        "B": "Function capture snapshot của state khi tạo — nếu function không refresh (useCallback với wrong deps, setTimeout), nó thấy old state value",
+        "C": "Tất cả hooks tự cập nhật với latest state",
+        "D": "Stale closure = React bug"
+      },
+      "correct_answer": "B",
+      "explanation": "Stale closure: setTimeout(() => console.log(count), 5000) — in giá trị count tại thời điểm setTimeout được tạo, không phải 5 giây sau. Fix 1: useRef để lưu latest value: counterRef.current = count; setTimeout(() => console.log(counterRef.current), 5000). Fix 2: functional update: setCount(prev => prev + 1) — không cần capture count. Fix 3: thêm đúng deps vào useCallback. ESLint plugin react-hooks/exhaustive-deps bắt most stale closure bugs.",
+      "source": "https://www.geeksforgeeks.org/what-are-stale-closures-in-react/",
+      "tags": [
+        "stale-closure",
+        "hooks",
+        "closure",
+        "setTimeout"
+      ]
+    },
+    {
+      "question_id": "react_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "'Cannot update a component while rendering a different component' warning — nguyên nhân?",
+      "options": {
+        "A": "React không cho phép update state",
+        "B": "setState được gọi trong render phase của component khác — gây cascade updates. Fix: wrap setState call trong useEffect hoặc event handler",
+        "C": "Quá nhiều components",
+        "D": "Chỉ xảy ra trong StrictMode"
+      },
+      "correct_answer": "B",
+      "explanation": "Warning xảy ra khi: Parent renders → render triggers setState trong child → child setState trong render của parent → cascade. Thường gặp: (1) setState trong render function (không phải trong event handler hay effect). (2) Callback được gọi trong render: <Comp onChange={() => setParentState()} /> — nếu Comp gọi onChange trong render. (3) Context consumer cập nhật context khi render. Fix: đảm bảo state updates trong event handlers, useEffect, hoặc callbacks được trigger bởi user events.",
+      "source": "https://www.geeksforgeeks.org/react-error-boundaries/",
+      "tags": [
+        "warning",
+        "setState",
+        "render-phase",
+        "debugging"
+      ]
+    },
+    {
+      "question_id": "react_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "React rendering quá nhiều lần — cách profile và optimize?",
+      "options": {
+        "A": "Thêm React.memo vào tất cả components",
+        "B": "Dùng React DevTools Profiler để identify expensive renders, sau đó targeted optimization với memo/useMemo/useCallback/component structure",
+        "C": "Chuyển sang class components",
+        "D": "Xóa bớt state"
+      },
+      "correct_answer": "B",
+      "explanation": "Workflow: (1) React DevTools Profiler: record user interaction, xem flamegraph — components nào render lâu nhất. (2) 'Why did this render?': option trong DevTools. (3) console.count('renders') trong component để đếm. Optimizations (theo thứ tự ưu tiên): (a) Fix data structure (không tạo object/array mới mỗi render). (b) Component decomposition (tách component nhỏ hơn, render ít hơn). (c) React.memo cho expensive child. (d) useMemo/useCallback. (e) State colocation (state gần với nơi dùng). Premature optimization là root of all evil — measure first.",
+      "source": "https://react.dev/learn/render-and-commit",
+      "tags": [
+        "profiling",
+        "performance",
+        "DevTools",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "react_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Error Boundary trong React dùng để làm gì?",
+      "options": {
+        "A": "Catch JavaScript errors trong async operations",
+        "B": "Catch rendering errors trong component tree, hiển thị fallback UI thay vì crash toàn bộ app — class component với componentDidCatch",
+        "C": "Boundary chỉ dùng ở production",
+        "D": "Error Boundary thay thế try/catch"
+      },
+      "correct_answer": "B",
+      "explanation": "Error Boundary: class component với componentDidCatch(error, errorInfo) và getDerivedStateFromError(). Khi child component throw trong render/lifecycle → Error Boundary catch, hiển thị fallback UI. Không catch: async errors (setTimeout, Promises), event handlers (dùng try/catch thủ công), server-side rendering errors. react-error-boundary library: hook-based wrapper tiện lợi hơn. Production: log errors đến Sentry/Datadog trong componentDidCatch. Granular: nhiều Error Boundaries cho different parts của UI.",
+      "source": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary",
+      "tags": [
+        "Error-Boundary",
+        "error-handling",
+        "resilience"
+      ]
+    },
+    {
+      "question_id": "react_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "React key prop không đúng gây ra bug gì? Ví dụ thực tế?",
+      "options": {
+        "A": "Key prop chỉ ảnh hưởng styling",
+        "B": "Sai key → React reuse DOM node sai → state/refs của component cũ bị carry over sang item mới — input value, animation, timer bugs",
+        "C": "Thiếu key chỉ gây warning, không bug",
+        "D": "Dùng index là best practice"
+      },
+      "correct_answer": "B",
+      "explanation": "Bug thực tế: list items với key=index, sau khi sort/filter → React giữ nguyên DOM nodes (index 0,1,2) nhưng data đã đổi vị trí → input values bị mix. Fix: dùng stable unique ID làm key. Ví dụ: <TodoItem key={todo.id}> thay vì <TodoItem key={index}>. Index OK khi: list không reorder/filter, static list. Thêm bug: <SomeComponent key={id}/> — khi id đổi, React unmount và remount component mới (tất cả state reset). Dùng làm feature: reset form state bằng cách đổi key.",
+      "source": "https://react.dev/learn/rendering-lists",
+      "tags": [
+        "key",
+        "list",
+        "state-preservation",
+        "bug"
+      ]
+    },
+    {
+      "question_id": "react_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "React SPA bị vấn đề SEO — Googlebot không index content. Giải pháp production cho e-commerce VN?",
+      "options": {
+        "A": "React tự nhiên SEO friendly",
+        "B": "Next.js với SSR/SSG: SSR cho dynamic content (product pages), SSG với ISR cho catalog. Hoặc prerender.io/rendertron cho existing React app",
+        "C": "Thêm meta tags là đủ",
+        "D": "Dùng sitemap.xml"
+      },
+      "correct_answer": "B",
+      "explanation": "SPA SEO problem: Googlebot nhận HTML shell, JS chưa chạy → không thấy content. Solutions: (1) Next.js (best): SSR (getServerSideProps cho dynamic pages), SSG (getStaticProps + getStaticPaths cho product catalog), ISR (revalidate: 60). (2) React 18 + SSR với frameworks. (3) Prerendering service (prerender.io): serve pre-rendered HTML cho crawlers. (4) Dynamic rendering: detect bots, serve SSR; humans get SPA. E-commerce VN: Tiki, Shopee dùng SSR/SSG. Next.js 14 App Router: React Server Components mặc định.",
+      "source": "https://www.freecodecamp.org/news/react-seo/",
+      "tags": [
+        "SEO",
+        "SSR",
+        "SSG",
+        "Next.js",
+        "e-commerce"
+      ]
+    },
+    {
+      "question_id": "react_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "React app bị nhiều 'Maximum update depth exceeded' errors trên production. Cách debug và fix systemically?",
+      "options": {
+        "A": "Tăng giới hạn update depth",
+        "B": "Tìm setState gây mutual trigger: A setState → B render → B setState → A render. Fix: break cycle với điều kiện, useEffect deps đúng, tách state",
+        "C": "Dùng class components",
+        "D": "Disable StrictMode"
+      },
+      "correct_answer": "B",
+      "explanation": "Circular update: setState của component A trigger render của B, B setState trigger render của A → vô hạn. Debug: React DevTools → Components tab → xem component nào re-render liên tục. console.trace() trong setState để thấy call stack. Fix strategies: (1) Conditional setState: if (newValue !== currentValue) setState(newValue). (2) useEffect deps đúng (không thiếu, không thừa). (3) Tách state không liên quan. (4) useMemo để stable reference. (5) Kiểm tra unstable context value (object/array tạo mới mỗi render). ESLint rule exhaustive-deps bắt nhiều cases.",
+      "source": "https://www.geeksforgeeks.org/maximum-update-depth-exceeded-error-in-react/",
+      "tags": [
+        "maximum-update-depth",
+        "infinite-render",
+        "debugging",
+        "circular-updates"
+      ]
+    },
+    {
+      "question_id": "react_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Migrate legacy React class component codebase sang functional hooks — strategy và risks?",
+      "options": {
+        "A": "Rewrite toàn bộ cùng lúc",
+        "B": "Incremental migration: React hỗ trợ cả hai, ưu tiên leaf components trước, colocate logic với hooks, giữ Error Boundaries là class, test mỗi migration",
+        "C": "Chỉ migrate khi có time",
+        "D": "Dùng automated migration tool — không cần review"
+      },
+      "correct_answer": "B",
+      "explanation": "Incremental migration strategy: (1) Không cần migrate class components nếu chúng hoạt động OK — React không deprecate class components. (2) New code → functional. (3) Migrate khi refactor existing: leaf components trước (ít dependencies), sau đó container components. (4) Error Boundaries vẫn phải là class (chưa có hook equivalent). (5) Lifecycle → hooks mapping: componentDidMount → useEffect(fn, []), componentDidUpdate → useEffect(fn, [deps]), componentWillUnmount → cleanup function trong useEffect. (6) Test trước khi và sau khi migrate.",
+      "source": "https://www.freecodecamp.org/news/react-class-component-vs-functional-component/",
+      "tags": [
+        "migration",
+        "class-components",
+        "hooks",
+        "refactoring"
+      ]
+    }
+  ]
+}

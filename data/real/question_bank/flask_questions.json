@@ -1,0 +1,218 @@
+{
+  "skill": "Flask",
+  "skill_key": "flask",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.530784Z",
+  "source_references": [
+    "https://www.google.com/search?q=Flask+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "flask_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Flask, Application factory có vai trò gì?",
+      "options": {
+        "A": "Application factory là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Application factory là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Application factory đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Application factory là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Application factory trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Application factory là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Application factory giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Application+factory+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "application-factory"
+      ]
+    },
+    {
+      "question_id": "flask_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Flask, Blueprints có vai trò gì?",
+      "options": {
+        "A": "Blueprints là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Blueprints là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Blueprints đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Blueprints là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Blueprints trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Blueprints là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Blueprints giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Blueprints+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "blueprints"
+      ]
+    },
+    {
+      "question_id": "flask_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Flask, Flask-SQLAlchemy có vai trò gì?",
+      "options": {
+        "A": "Flask-SQLAlchemy là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Flask-SQLAlchemy là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Flask-SQLAlchemy đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Flask-SQLAlchemy là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Flask-SQLAlchemy trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Flask-SQLAlchemy là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Flask-SQLAlchemy giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Flask-SQLAlchemy+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "flask-sqlalchemy"
+      ]
+    },
+    {
+      "question_id": "flask_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Flask, Flask-Migrate có vai trò gì?",
+      "options": {
+        "A": "Flask-Migrate là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Flask-Migrate là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Flask-Migrate đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Flask-Migrate là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Flask-Migrate trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Flask-Migrate là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Flask-Migrate giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Flask-Migrate+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "flask-migrate"
+      ]
+    },
+    {
+      "question_id": "flask_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Flask, Flask-JWT-Extended có vai trò gì?",
+      "options": {
+        "A": "Flask-JWT-Extended là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Flask-JWT-Extended là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Flask-JWT-Extended đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Flask-JWT-Extended là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Flask-JWT-Extended trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Flask-JWT-Extended là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Flask-JWT-Extended giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Flask-JWT-Extended+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "flask-jwt-extended"
+      ]
+    },
+    {
+      "question_id": "flask_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Flask, Flask-CORS có vai trò gì?",
+      "options": {
+        "A": "Flask-CORS là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Flask-CORS là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Flask-CORS đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Flask-CORS là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Flask-CORS trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Flask-CORS là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Flask-CORS giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Flask-CORS+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "flask-cors"
+      ]
+    },
+    {
+      "question_id": "flask_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Flask, Flask-RESTful có vai trò gì?",
+      "options": {
+        "A": "Flask-RESTful là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Flask-RESTful là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Flask-RESTful đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Flask-RESTful là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Flask-RESTful trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Flask-RESTful là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Flask-RESTful giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Flask-RESTful+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "flask-restful"
+      ]
+    },
+    {
+      "question_id": "flask_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Flask, Testing có vai trò gì?",
+      "options": {
+        "A": "Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Testing là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Testing trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Testing là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Testing+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "testing"
+      ]
+    },
+    {
+      "question_id": "flask_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Flask, Gunicorn deployment có vai trò gì?",
+      "options": {
+        "A": "Gunicorn deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Gunicorn deployment là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Gunicorn deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Gunicorn deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Gunicorn deployment trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Gunicorn deployment là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Gunicorn deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Gunicorn+deployment+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "gunicorn-deployment"
+      ]
+    },
+    {
+      "question_id": "flask_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Flask, Configuration có vai trò gì?",
+      "options": {
+        "A": "Configuration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Configuration là core concept trong Flask — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Configuration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Configuration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Configuration trong Flask: Đây là một trong những concepts quan trọng nhất. Flask được sử dụng rộng rãi trong industry và Configuration là phần không thể thiếu. Khi làm việc với Flask trong production, hiểu rõ Configuration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Flask+Configuration+tutorial",
+      "tags": [
+        "flask",
+        "backend",
+        "configuration"
+      ]
+    }
+  ]
+}

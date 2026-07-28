@@ -1,0 +1,154 @@
+{
+  "skill": "AWS DynamoDB",
+  "skill_key": "dynamodb",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.597035Z",
+  "checklist_items": [
+    {
+      "item_id": "dynamodb_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Table design",
+      "description": "Master Table design trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+Table+design+tutorial",
+      "resource_title": "AWS DynamoDB — Table design",
+      "quiz_ids": [
+        "dynamodb_l1_001"
+      ],
+      "market_relevance": "Table design là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Single table design",
+      "description": "Master Single table design trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+Single+table+design+tutorial",
+      "resource_title": "AWS DynamoDB — Single table design",
+      "quiz_ids": [
+        "dynamodb_l2_002"
+      ],
+      "market_relevance": "Single table design là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "GSI/LSI",
+      "description": "Master GSI/LSI trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+GSI/LSI+tutorial",
+      "resource_title": "AWS DynamoDB — GSI/LSI",
+      "quiz_ids": [
+        "dynamodb_l3_003"
+      ],
+      "market_relevance": "GSI/LSI là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "DynamoDB Streams",
+      "description": "Master DynamoDB Streams trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+DynamoDB+Streams+tutorial",
+      "resource_title": "AWS DynamoDB — DynamoDB Streams",
+      "quiz_ids": [
+        "dynamodb_l4_004"
+      ],
+      "market_relevance": "DynamoDB Streams là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Capacity modes",
+      "description": "Master Capacity modes trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+Capacity+modes+tutorial",
+      "resource_title": "AWS DynamoDB — Capacity modes",
+      "quiz_ids": [
+        "dynamodb_l5_005"
+      ],
+      "market_relevance": "Capacity modes là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "DynamoDB DAX",
+      "description": "Master DynamoDB DAX trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+DynamoDB+DAX+tutorial",
+      "resource_title": "AWS DynamoDB — DynamoDB DAX",
+      "quiz_ids": [
+        "dynamodb_l5_006"
+      ],
+      "market_relevance": "DynamoDB DAX là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Transactions",
+      "description": "Master Transactions trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+Transactions+tutorial",
+      "resource_title": "AWS DynamoDB — Transactions",
+      "quiz_ids": [
+        "dynamodb_l5_007"
+      ],
+      "market_relevance": "Transactions là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "TTL",
+      "description": "Master TTL trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+TTL+tutorial",
+      "resource_title": "AWS DynamoDB — TTL",
+      "quiz_ids": [
+        "dynamodb_l5_008"
+      ],
+      "market_relevance": "TTL là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Backup/restore",
+      "description": "Master Backup/restore trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+Backup/restore+tutorial",
+      "resource_title": "AWS DynamoDB — Backup/restore",
+      "quiz_ids": [
+        "dynamodb_l5_009"
+      ],
+      "market_relevance": "Backup/restore là key skill trong AWS DynamoDB Database development"
+    },
+    {
+      "item_id": "dynamodb_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "SDK patterns",
+      "description": "Master SDK patterns trong AWS DynamoDB — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=AWS+DynamoDB+SDK+patterns+tutorial",
+      "resource_title": "AWS DynamoDB — SDK patterns",
+      "quiz_ids": [
+        "dynamodb_l5_010"
+      ],
+      "market_relevance": "SDK patterns là key skill trong AWS DynamoDB Database development"
+    }
+  ]
+}

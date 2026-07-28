@@ -1,0 +1,154 @@
+{
+  "skill": "Apache Cassandra",
+  "skill_key": "cassandra",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.594507Z",
+  "checklist_items": [
+    {
+      "item_id": "cassandra_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Wide-column model",
+      "description": "Master Wide-column model trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Wide-column+model+tutorial",
+      "resource_title": "Apache Cassandra — Wide-column model",
+      "quiz_ids": [
+        "cassandra_l1_001"
+      ],
+      "market_relevance": "Wide-column model là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Partition/clustering key",
+      "description": "Master Partition/clustering key trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Partition/clustering+key+tutorial",
+      "resource_title": "Apache Cassandra — Partition/clustering key",
+      "quiz_ids": [
+        "cassandra_l2_002"
+      ],
+      "market_relevance": "Partition/clustering key là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "CQL",
+      "description": "Master CQL trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+CQL+tutorial",
+      "resource_title": "Apache Cassandra — CQL",
+      "quiz_ids": [
+        "cassandra_l3_003"
+      ],
+      "market_relevance": "CQL là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Consistency levels",
+      "description": "Master Consistency levels trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Consistency+levels+tutorial",
+      "resource_title": "Apache Cassandra — Consistency levels",
+      "quiz_ids": [
+        "cassandra_l4_004"
+      ],
+      "market_relevance": "Consistency levels là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Replication strategies",
+      "description": "Master Replication strategies trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Replication+strategies+tutorial",
+      "resource_title": "Apache Cassandra — Replication strategies",
+      "quiz_ids": [
+        "cassandra_l5_005"
+      ],
+      "market_relevance": "Replication strategies là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Compaction",
+      "description": "Master Compaction trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Compaction+tutorial",
+      "resource_title": "Apache Cassandra — Compaction",
+      "quiz_ids": [
+        "cassandra_l5_006"
+      ],
+      "market_relevance": "Compaction là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Performance tuning",
+      "description": "Master Performance tuning trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Performance+tuning+tutorial",
+      "resource_title": "Apache Cassandra — Performance tuning",
+      "quiz_ids": [
+        "cassandra_l5_007"
+      ],
+      "market_relevance": "Performance tuning là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Data modeling",
+      "description": "Master Data modeling trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Data+modeling+tutorial",
+      "resource_title": "Apache Cassandra — Data modeling",
+      "quiz_ids": [
+        "cassandra_l5_008"
+      ],
+      "market_relevance": "Data modeling là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "CAP theorem",
+      "description": "Master CAP theorem trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+CAP+theorem+tutorial",
+      "resource_title": "Apache Cassandra — CAP theorem",
+      "quiz_ids": [
+        "cassandra_l5_009"
+      ],
+      "market_relevance": "CAP theorem là key skill trong Apache Cassandra Database development"
+    },
+    {
+      "item_id": "cassandra_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Multi-datacenter",
+      "description": "Master Multi-datacenter trong Apache Cassandra — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Apache+Cassandra+Multi-datacenter+tutorial",
+      "resource_title": "Apache Cassandra — Multi-datacenter",
+      "quiz_ids": [
+        "cassandra_l5_010"
+      ],
+      "market_relevance": "Multi-datacenter là key skill trong Apache Cassandra Database development"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "LangChain",
+  "skill_key": "langchain",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.645246Z",
+  "checklist_items": [
+    {
+      "item_id": "langchain_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "LLM integration",
+      "description": "Master LLM integration trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=LangChain+LLM+integration+tutorial",
+      "resource_title": "LangChain — LLM integration",
+      "quiz_ids": [
+        "langchain_l1_001"
+      ],
+      "market_relevance": "LLM integration là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Chains",
+      "description": "Master Chains trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=LangChain+Chains+tutorial",
+      "resource_title": "LangChain — Chains",
+      "quiz_ids": [
+        "langchain_l2_002"
+      ],
+      "market_relevance": "Chains là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Agents/Tools",
+      "description": "Master Agents/Tools trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=LangChain+Agents/Tools+tutorial",
+      "resource_title": "LangChain — Agents/Tools",
+      "quiz_ids": [
+        "langchain_l3_003"
+      ],
+      "market_relevance": "Agents/Tools là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Memory",
+      "description": "Master Memory trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=LangChain+Memory+tutorial",
+      "resource_title": "LangChain — Memory",
+      "quiz_ids": [
+        "langchain_l4_004"
+      ],
+      "market_relevance": "Memory là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Vector stores",
+      "description": "Master Vector stores trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=LangChain+Vector+stores+tutorial",
+      "resource_title": "LangChain — Vector stores",
+      "quiz_ids": [
+        "langchain_l5_005"
+      ],
+      "market_relevance": "Vector stores là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Embeddings",
+      "description": "Master Embeddings trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=LangChain+Embeddings+tutorial",
+      "resource_title": "LangChain — Embeddings",
+      "quiz_ids": [
+        "langchain_l5_006"
+      ],
+      "market_relevance": "Embeddings là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "RAG pattern",
+      "description": "Master RAG pattern trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=LangChain+RAG+pattern+tutorial",
+      "resource_title": "LangChain — RAG pattern",
+      "quiz_ids": [
+        "langchain_l5_007"
+      ],
+      "market_relevance": "RAG pattern là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Prompt templates",
+      "description": "Master Prompt templates trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=LangChain+Prompt+templates+tutorial",
+      "resource_title": "LangChain — Prompt templates",
+      "quiz_ids": [
+        "langchain_l5_008"
+      ],
+      "market_relevance": "Prompt templates là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "LangSmith",
+      "description": "Master LangSmith trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=LangChain+LangSmith+tutorial",
+      "resource_title": "LangChain — LangSmith",
+      "quiz_ids": [
+        "langchain_l5_009"
+      ],
+      "market_relevance": "LangSmith là key skill trong LangChain AI/ML development"
+    },
+    {
+      "item_id": "langchain_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "LangGraph",
+      "description": "Master LangGraph trong LangChain — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=LangChain+LangGraph+tutorial",
+      "resource_title": "LangChain — LangGraph",
+      "quiz_ids": [
+        "langchain_l5_010"
+      ],
+      "market_relevance": "LangGraph là key skill trong LangChain AI/ML development"
+    }
+  ]
+}

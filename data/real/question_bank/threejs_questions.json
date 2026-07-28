@@ -1,0 +1,218 @@
+{
+  "skill": "Three.js",
+  "skill_key": "threejs",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.522263Z",
+  "source_references": [
+    "https://www.google.com/search?q=Three.js+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "threejs_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Three.js, Scene/Camera/Renderer có vai trò gì?",
+      "options": {
+        "A": "Scene/Camera/Renderer là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Scene/Camera/Renderer là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Scene/Camera/Renderer đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Scene/Camera/Renderer là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Scene/Camera/Renderer trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Scene/Camera/Renderer là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Scene/Camera/Renderer giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Scene/Camera/Renderer+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "scene-camera-renderer"
+      ]
+    },
+    {
+      "question_id": "threejs_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Three.js, Geometries có vai trò gì?",
+      "options": {
+        "A": "Geometries là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Geometries là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Geometries đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Geometries là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Geometries trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Geometries là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Geometries giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Geometries+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "geometries"
+      ]
+    },
+    {
+      "question_id": "threejs_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Three.js, Materials có vai trò gì?",
+      "options": {
+        "A": "Materials là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Materials là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Materials đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Materials là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Materials trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Materials là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Materials giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Materials+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "materials"
+      ]
+    },
+    {
+      "question_id": "threejs_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Three.js, Lighting có vai trò gì?",
+      "options": {
+        "A": "Lighting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Lighting là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Lighting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Lighting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Lighting trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Lighting là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Lighting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Lighting+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "lighting"
+      ]
+    },
+    {
+      "question_id": "threejs_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Three.js, Textures có vai trò gì?",
+      "options": {
+        "A": "Textures là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Textures là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Textures đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Textures là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Textures trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Textures là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Textures giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Textures+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "textures"
+      ]
+    },
+    {
+      "question_id": "threejs_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Three.js, Animations có vai trò gì?",
+      "options": {
+        "A": "Animations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Animations là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Animations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Animations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Animations trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Animations là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Animations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Animations+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "animations"
+      ]
+    },
+    {
+      "question_id": "threejs_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Three.js, Raycasting có vai trò gì?",
+      "options": {
+        "A": "Raycasting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Raycasting là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Raycasting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Raycasting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Raycasting trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Raycasting là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Raycasting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Raycasting+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "raycasting"
+      ]
+    },
+    {
+      "question_id": "threejs_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Three.js, Post-processing có vai trò gì?",
+      "options": {
+        "A": "Post-processing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Post-processing là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Post-processing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Post-processing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Post-processing trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Post-processing là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Post-processing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Post-processing+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "post-processing"
+      ]
+    },
+    {
+      "question_id": "threejs_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Three.js, GLTF models có vai trò gì?",
+      "options": {
+        "A": "GLTF models là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GLTF models là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GLTF models đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GLTF models là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GLTF models trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và GLTF models là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ GLTF models giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+GLTF+models+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "gltf-models"
+      ]
+    },
+    {
+      "question_id": "threejs_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Three.js, Performance optimization có vai trò gì?",
+      "options": {
+        "A": "Performance optimization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Performance optimization là core concept trong Three.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Performance optimization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Performance optimization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance optimization trong Three.js: Đây là một trong những concepts quan trọng nhất. Three.js được sử dụng rộng rãi trong industry và Performance optimization là phần không thể thiếu. Khi làm việc với Three.js trong production, hiểu rõ Performance optimization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Three.js+Performance+optimization+tutorial",
+      "tags": [
+        "threejs",
+        "frontend",
+        "performance-optimization"
+      ]
+    }
+  ]
+}

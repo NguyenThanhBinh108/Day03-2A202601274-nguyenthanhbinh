@@ -1,0 +1,154 @@
+{
+  "skill": "Ansible",
+  "skill_key": "ansible",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.618808Z",
+  "checklist_items": [
+    {
+      "item_id": "ansible_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Inventory",
+      "description": "Master Inventory trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Ansible+Inventory+tutorial",
+      "resource_title": "Ansible — Inventory",
+      "quiz_ids": [
+        "ansible_l1_001"
+      ],
+      "market_relevance": "Inventory là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Playbooks",
+      "description": "Master Playbooks trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Ansible+Playbooks+tutorial",
+      "resource_title": "Ansible — Playbooks",
+      "quiz_ids": [
+        "ansible_l2_002"
+      ],
+      "market_relevance": "Playbooks là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Tasks/Handlers",
+      "description": "Master Tasks/Handlers trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Ansible+Tasks/Handlers+tutorial",
+      "resource_title": "Ansible — Tasks/Handlers",
+      "quiz_ids": [
+        "ansible_l3_003"
+      ],
+      "market_relevance": "Tasks/Handlers là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Roles",
+      "description": "Master Roles trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Ansible+Roles+tutorial",
+      "resource_title": "Ansible — Roles",
+      "quiz_ids": [
+        "ansible_l4_004"
+      ],
+      "market_relevance": "Roles là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Variables",
+      "description": "Master Variables trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Ansible+Variables+tutorial",
+      "resource_title": "Ansible — Variables",
+      "quiz_ids": [
+        "ansible_l5_005"
+      ],
+      "market_relevance": "Variables là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Jinja2 templates",
+      "description": "Master Jinja2 templates trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Ansible+Jinja2+templates+tutorial",
+      "resource_title": "Ansible — Jinja2 templates",
+      "quiz_ids": [
+        "ansible_l5_006"
+      ],
+      "market_relevance": "Jinja2 templates là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Vault secrets",
+      "description": "Master Vault secrets trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Ansible+Vault+secrets+tutorial",
+      "resource_title": "Ansible — Vault secrets",
+      "quiz_ids": [
+        "ansible_l5_007"
+      ],
+      "market_relevance": "Vault secrets là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Galaxy",
+      "description": "Master Galaxy trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Ansible+Galaxy+tutorial",
+      "resource_title": "Ansible — Galaxy",
+      "quiz_ids": [
+        "ansible_l5_008"
+      ],
+      "market_relevance": "Galaxy là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Dynamic inventory",
+      "description": "Master Dynamic inventory trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Ansible+Dynamic+inventory+tutorial",
+      "resource_title": "Ansible — Dynamic inventory",
+      "quiz_ids": [
+        "ansible_l5_009"
+      ],
+      "market_relevance": "Dynamic inventory là key skill trong Ansible DevOps development"
+    },
+    {
+      "item_id": "ansible_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "AWX/Tower",
+      "description": "Master AWX/Tower trong Ansible — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Ansible+AWX/Tower+tutorial",
+      "resource_title": "Ansible — AWX/Tower",
+      "quiz_ids": [
+        "ansible_l5_010"
+      ],
+      "market_relevance": "AWX/Tower là key skill trong Ansible DevOps development"
+    }
+  ]
+}

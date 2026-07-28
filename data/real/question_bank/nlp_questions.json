@@ -1,0 +1,218 @@
+{
+  "skill": "NLP",
+  "skill_key": "nlp",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.648774Z",
+  "source_references": [
+    "https://www.google.com/search?q=NLP+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "nlp_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong NLP, Tokenization có vai trò gì?",
+      "options": {
+        "A": "Tokenization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Tokenization là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Tokenization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Tokenization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Tokenization trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Tokenization là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Tokenization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Tokenization+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "tokenization"
+      ]
+    },
+    {
+      "question_id": "nlp_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong NLP, Word embeddings có vai trò gì?",
+      "options": {
+        "A": "Word embeddings là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Word embeddings là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Word embeddings đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Word embeddings là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Word embeddings trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Word embeddings là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Word embeddings giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Word+embeddings+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "word-embeddings"
+      ]
+    },
+    {
+      "question_id": "nlp_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong NLP, Transformers (BERT/GPT) có vai trò gì?",
+      "options": {
+        "A": "Transformers (BERT/GPT) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transformers (BERT/GPT) là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transformers (BERT/GPT) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transformers (BERT/GPT) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transformers (BERT/GPT) trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Transformers (BERT/GPT) là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Transformers (BERT/GPT) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Transformers+(BERT/GPT)+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "transformers-bert-gpt"
+      ]
+    },
+    {
+      "question_id": "nlp_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong NLP, Text classification có vai trò gì?",
+      "options": {
+        "A": "Text classification là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Text classification là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Text classification đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Text classification là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Text classification trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Text classification là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Text classification giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Text+classification+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "text-classification"
+      ]
+    },
+    {
+      "question_id": "nlp_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong NLP, NER có vai trò gì?",
+      "options": {
+        "A": "NER là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "NER là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "NER đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên NER là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "NER trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và NER là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ NER giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+NER+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "ner"
+      ]
+    },
+    {
+      "question_id": "nlp_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong NLP, Sentiment analysis có vai trò gì?",
+      "options": {
+        "A": "Sentiment analysis là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Sentiment analysis là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Sentiment analysis đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Sentiment analysis là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Sentiment analysis trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Sentiment analysis là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Sentiment analysis giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Sentiment+analysis+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "sentiment-analysis"
+      ]
+    },
+    {
+      "question_id": "nlp_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong NLP, Question answering có vai trò gì?",
+      "options": {
+        "A": "Question answering là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Question answering là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Question answering đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Question answering là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Question answering trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Question answering là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Question answering giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Question+answering+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "question-answering"
+      ]
+    },
+    {
+      "question_id": "nlp_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong NLP, HuggingFace có vai trò gì?",
+      "options": {
+        "A": "HuggingFace là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HuggingFace là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HuggingFace đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HuggingFace là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HuggingFace trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và HuggingFace là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ HuggingFace giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+HuggingFace+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "huggingface"
+      ]
+    },
+    {
+      "question_id": "nlp_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong NLP, Fine-tuning có vai trò gì?",
+      "options": {
+        "A": "Fine-tuning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Fine-tuning là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Fine-tuning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Fine-tuning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Fine-tuning trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Fine-tuning là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Fine-tuning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Fine-tuning+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "fine-tuning"
+      ]
+    },
+    {
+      "question_id": "nlp_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong NLP, Evaluation metrics có vai trò gì?",
+      "options": {
+        "A": "Evaluation metrics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Evaluation metrics là core concept trong NLP — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Evaluation metrics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Evaluation metrics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Evaluation metrics trong NLP: Đây là một trong những concepts quan trọng nhất. NLP được sử dụng rộng rãi trong industry và Evaluation metrics là phần không thể thiếu. Khi làm việc với NLP trong production, hiểu rõ Evaluation metrics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=NLP+Evaluation+metrics+tutorial",
+      "tags": [
+        "nlp",
+        "ai/ml",
+        "evaluation-metrics"
+      ]
+    }
+  ]
+}

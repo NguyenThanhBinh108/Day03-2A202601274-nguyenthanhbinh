@@ -1,0 +1,58 @@
+{
+  "skill": "Data Structures & Algorithms",
+  "skill_key": "dsa",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.521509",
+  "resources": [
+    {
+      "resource_id": "dsa_r001",
+      "title": "GeeksForGeeks DSA Tutorial",
+      "url": "https://www.geeksforgeeks.org/data-structures/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Best DSA resource online"
+    },
+    {
+      "resource_id": "dsa_r002",
+      "title": "freeCodeCamp Algorithms",
+      "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+      "type": "course",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 5,
+      "description": "DSA course với certification"
+    },
+    {
+      "resource_id": "dsa_r003",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "type": "practice",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Best platform to practice DSA"
+    },
+    {
+      "resource_id": "dsa_r004",
+      "title": "NeetCode.io",
+      "url": "https://neetcode.io/practice",
+      "type": "practice",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 5,
+      "description": "Curated DSA problems với video solutions"
+    },
+    {
+      "resource_id": "dsa_r005",
+      "title": "Visualgo — Algorithm Visualizations",
+      "url": "https://visualgo.net/",
+      "type": "interactive",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 5,
+      "description": "Visual algorithm animations"
+    }
+  ]
+}

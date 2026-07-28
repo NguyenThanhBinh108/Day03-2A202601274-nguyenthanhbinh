@@ -1,0 +1,154 @@
+{
+  "skill": "Google Cloud Platform",
+  "skill_key": "gcp",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.603366Z",
+  "checklist_items": [
+    {
+      "item_id": "gcp_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "GKE",
+      "description": "Master GKE trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+GKE+tutorial",
+      "resource_title": "Google Cloud Platform — GKE",
+      "quiz_ids": [
+        "gcp_l1_001"
+      ],
+      "market_relevance": "GKE là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Cloud Run",
+      "description": "Master Cloud Run trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Run+tutorial",
+      "resource_title": "Google Cloud Platform — Cloud Run",
+      "quiz_ids": [
+        "gcp_l2_002"
+      ],
+      "market_relevance": "Cloud Run là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Cloud Functions",
+      "description": "Master Cloud Functions trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Functions+tutorial",
+      "resource_title": "Google Cloud Platform — Cloud Functions",
+      "quiz_ids": [
+        "gcp_l3_003"
+      ],
+      "market_relevance": "Cloud Functions là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "BigQuery",
+      "description": "Master BigQuery trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+BigQuery+tutorial",
+      "resource_title": "Google Cloud Platform — BigQuery",
+      "quiz_ids": [
+        "gcp_l4_004"
+      ],
+      "market_relevance": "BigQuery là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Cloud SQL",
+      "description": "Master Cloud SQL trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+SQL+tutorial",
+      "resource_title": "Google Cloud Platform — Cloud SQL",
+      "quiz_ids": [
+        "gcp_l5_005"
+      ],
+      "market_relevance": "Cloud SQL là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Pub/Sub",
+      "description": "Master Pub/Sub trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Pub/Sub+tutorial",
+      "resource_title": "Google Cloud Platform — Pub/Sub",
+      "quiz_ids": [
+        "gcp_l5_006"
+      ],
+      "market_relevance": "Pub/Sub là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Cloud Storage",
+      "description": "Master Cloud Storage trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Storage+tutorial",
+      "resource_title": "Google Cloud Platform — Cloud Storage",
+      "quiz_ids": [
+        "gcp_l5_007"
+      ],
+      "market_relevance": "Cloud Storage là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "IAM",
+      "description": "Master IAM trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+IAM+tutorial",
+      "resource_title": "Google Cloud Platform — IAM",
+      "quiz_ids": [
+        "gcp_l5_008"
+      ],
+      "market_relevance": "IAM là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Cloud Build",
+      "description": "Master Cloud Build trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Build+tutorial",
+      "resource_title": "Google Cloud Platform — Cloud Build",
+      "quiz_ids": [
+        "gcp_l5_009"
+      ],
+      "market_relevance": "Cloud Build là key skill trong Google Cloud Platform DevOps development"
+    },
+    {
+      "item_id": "gcp_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Vertex AI",
+      "description": "Master Vertex AI trong Google Cloud Platform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Google+Cloud+Platform+Vertex+AI+tutorial",
+      "resource_title": "Google Cloud Platform — Vertex AI",
+      "quiz_ids": [
+        "gcp_l5_010"
+      ],
+      "market_relevance": "Vertex AI là key skill trong Google Cloud Platform DevOps development"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Elixir",
+  "skill_key": "elixir",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.552412Z",
+  "checklist_items": [
+    {
+      "item_id": "elixir_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Pattern matching",
+      "description": "Master Pattern matching trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elixir+Pattern+matching+tutorial",
+      "resource_title": "Elixir — Pattern matching",
+      "quiz_ids": [
+        "elixir_l1_001"
+      ],
+      "market_relevance": "Pattern matching là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "GenServer",
+      "description": "Master GenServer trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elixir+GenServer+tutorial",
+      "resource_title": "Elixir — GenServer",
+      "quiz_ids": [
+        "elixir_l2_002"
+      ],
+      "market_relevance": "GenServer là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Supervisors",
+      "description": "Master Supervisors trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Elixir+Supervisors+tutorial",
+      "resource_title": "Elixir — Supervisors",
+      "quiz_ids": [
+        "elixir_l3_003"
+      ],
+      "market_relevance": "Supervisors là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Phoenix framework",
+      "description": "Master Phoenix framework trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Elixir+Phoenix+framework+tutorial",
+      "resource_title": "Elixir — Phoenix framework",
+      "quiz_ids": [
+        "elixir_l4_004"
+      ],
+      "market_relevance": "Phoenix framework là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Ecto",
+      "description": "Master Ecto trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elixir+Ecto+tutorial",
+      "resource_title": "Elixir — Ecto",
+      "quiz_ids": [
+        "elixir_l5_005"
+      ],
+      "market_relevance": "Ecto là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Channels WebSocket",
+      "description": "Master Channels WebSocket trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elixir+Channels+WebSocket+tutorial",
+      "resource_title": "Elixir — Channels WebSocket",
+      "quiz_ids": [
+        "elixir_l5_006"
+      ],
+      "market_relevance": "Channels WebSocket là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "OTP",
+      "description": "Master OTP trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Elixir+OTP+tutorial",
+      "resource_title": "Elixir — OTP",
+      "quiz_ids": [
+        "elixir_l5_007"
+      ],
+      "market_relevance": "OTP là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Mix tooling",
+      "description": "Master Mix tooling trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Elixir+Mix+tooling+tutorial",
+      "resource_title": "Elixir — Mix tooling",
+      "quiz_ids": [
+        "elixir_l5_008"
+      ],
+      "market_relevance": "Mix tooling là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "ExUnit Testing",
+      "description": "Master ExUnit Testing trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elixir+ExUnit+Testing+tutorial",
+      "resource_title": "Elixir — ExUnit Testing",
+      "quiz_ids": [
+        "elixir_l5_009"
+      ],
+      "market_relevance": "ExUnit Testing là key skill trong Elixir Backend development"
+    },
+    {
+      "item_id": "elixir_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Deployment",
+      "description": "Master Deployment trong Elixir — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elixir+Deployment+tutorial",
+      "resource_title": "Elixir — Deployment",
+      "quiz_ids": [
+        "elixir_l5_010"
+      ],
+      "market_relevance": "Deployment là key skill trong Elixir Backend development"
+    }
+  ]
+}

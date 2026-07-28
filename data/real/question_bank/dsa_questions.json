@@ -1,0 +1,175 @@
+{
+  "skill": "Data Structures & Algorithms",
+  "skill_key": "dsa",
+  "total_questions": 7,
+  "levels": {
+    "1": 2,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.519513",
+  "source_references": [
+    "https://www.geeksforgeeks.org/data-structures/",
+    "https://leetcode.com/"
+  ],
+  "questions": [
+    {
+      "question_id": "dsa_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Big O Notation — O(1), O(n), O(log n), O(n²)?",
+      "options": {
+        "A": "Big O là về memory chỉ",
+        "B": "Big O: worst-case time/space complexity. O(1)=constant, O(log n)=binary search, O(n)=linear, O(n log n)=merge sort, O(n²)=bubble sort",
+        "C": "O(n) luôn tốt nhất",
+        "D": "Big O không quan trọng trong thực tế"
+      },
+      "correct_answer": "B",
+      "explanation": "Big O: asymptotic upper bound. O(1): array access, hash table lookup. O(log n): binary search, balanced BST. O(n): linear scan, single pass. O(n log n): merge sort, heap sort, efficient sorts. O(n²): nested loops, bubble/insertion sort. O(2^n): recursive Fibonacci without memoization. O(n!): permutations. Drop constants: O(2n) = O(n). Drop lower terms: O(n² + n) = O(n²). Space complexity: O(1) in-place, O(n) extra space. Interview: explain your solution's complexity.",
+      "source": "https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/",
+      "tags": [
+        "Big-O",
+        "time-complexity",
+        "space-complexity",
+        "O(n)",
+        "O(log-n)"
+      ]
+    },
+    {
+      "question_id": "dsa_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Array vs Linked List — trade-offs?",
+      "options": {
+        "A": "Linked List luôn tốt hơn Array",
+        "B": "Array: O(1) random access, O(n) insert/delete middle. Linked List: O(1) insert/delete at head/tail (với pointer), O(n) random access, extra memory for pointers",
+        "C": "Array và Linked List giống nhau",
+        "D": "Linked List không dùng trong thực tế"
+      },
+      "correct_answer": "B",
+      "explanation": "Array: contiguous memory, cache-friendly, O(1) index access. Insert at middle: O(n) shift. Dynamic arrays (ArrayList/vector): amortized O(1) append. Linked List: nodes with data + next pointer (doubly: prev + next). O(1) insert at known position (với pointer to node), O(n) to find position. Use cases: Array — random access, cache performance. LinkedList — frequent insert/delete at ends (queue, deque), undo/redo, LRU cache implementation. Stack: can use both. Queue: prefer deque/LinkedList.",
+      "source": "https://www.geeksforgeeks.org/array-vs-linked-list/",
+      "tags": [
+        "Array",
+        "LinkedList",
+        "trade-offs",
+        "O(1)",
+        "cache-friendly"
+      ]
+    },
+    {
+      "question_id": "dsa_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Hash Table — implementation và collision handling?",
+      "options": {
+        "A": "Hash Table luôn O(1)",
+        "B": "Hash Table: hash(key) % size → bucket. Collision: chaining (linked list) hoặc open addressing (linear probing). Average O(1), worst O(n) khi many collisions",
+        "C": "Hash Table không hỗ trợ strings",
+        "D": "Hash collision không thể xảy ra"
+      },
+      "correct_answer": "B",
+      "explanation": "Hash function: map key → index. Good hash: uniform distribution, fast compute. Collision: 2 keys → same bucket. Chaining: each bucket = linked list of (key, value). O(1) average, O(n) worst. Open addressing: Linear probing (next empty slot), Quadratic probing, Double hashing. Load factor: n/m (items/buckets). When load factor > 0.7 → resize (double) → rehash all. Java HashMap: chaining, resizes at 0.75. Python dict: open addressing. Real-world: O(1) average với good hash and reasonable load factor.",
+      "source": "https://www.geeksforgeeks.org/hashing-data-structure/",
+      "tags": [
+        "Hash-Table",
+        "collision",
+        "chaining",
+        "open-addressing",
+        "load-factor"
+      ]
+    },
+    {
+      "question_id": "dsa_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Binary Search Tree (BST) operations và time complexity?",
+      "options": {
+        "A": "BST luôn O(log n)",
+        "B": "BST: left < root < right. Search/Insert/Delete: O(h) where h=height. Balanced BST (AVL/Red-Black): O(log n). Unbalanced/skewed: O(n)",
+        "C": "BST không hỗ trợ delete",
+        "D": "BST và Binary Tree giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "BST property: all left subtree < node < all right subtree. Search: compare → go left or right recursively. Insert: search then insert at null. Delete: 3 cases — no child (remove), 1 child (replace), 2 children (find inorder successor/predecessor). Height h: balanced → h = O(log n), skewed → h = O(n). Balanced BSTs: AVL Tree (strict balance, rotations), Red-Black Tree (flexible, fewer rotations, used in Java TreeMap/TreeSet). In-order traversal → sorted sequence. Use cases: sorted data with fast search, range queries.",
+      "source": "https://www.geeksforgeeks.org/binary-search-tree-data-structure/",
+      "tags": [
+        "BST",
+        "height",
+        "balanced",
+        "AVL",
+        "Red-Black-Tree",
+        "inorder"
+      ]
+    },
+    {
+      "question_id": "dsa_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Dynamic Programming — memoization vs tabulation?",
+      "options": {
+        "A": "DP chỉ dùng cho recursive problems",
+        "B": "Memoization (top-down): recursive + cache. Tabulation (bottom-up): iterative, fill table. DP khi: optimal substructure + overlapping subproblems",
+        "C": "DP luôn chậm hơn brute force",
+        "D": "Memoization và Tabulation cho kết quả khác nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "DP conditions: (1) Optimal Substructure: optimal solution = optimal solutions of subproblems. (2) Overlapping Subproblems: same subproblems computed repeatedly. Memoization: fib(n) = memo[n] if exists else compute and store. Tabulation: dp[0]=0, dp[1]=1, dp[i] = dp[i-1] + dp[i-2]. Tabulation: no recursion stack overflow, usually faster. Classic DP: Fibonacci, Knapsack, Longest Common Subsequence, Coin Change, Matrix Chain Multiplication. Interview: identify base case, recurrence relation, state variables.",
+      "source": "https://www.geeksforgeeks.org/dynamic-programming/",
+      "tags": [
+        "DP",
+        "memoization",
+        "tabulation",
+        "optimal-substructure",
+        "overlapping-subproblems"
+      ]
+    },
+    {
+      "question_id": "dsa_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Algorithm gives wrong answer for edge cases. Debug approach?",
+      "options": {
+        "A": "Try all inputs until find bug",
+        "B": "Test edge cases explicitly: empty, single element, all same, sorted/reverse sorted, max values, negatives. Draw algorithm step by step with small input",
+        "C": "Algorithm is always correct",
+        "D": "Increase iteration count"
+      },
+      "correct_answer": "B",
+      "explanation": "Edge case checklist: Empty input ([], null, 0). Single element. Duplicate elements. Already sorted / reverse sorted. Maximum/minimum values (overflow?). Negative numbers (if applicable). All same values. Very large input (performance). Debug technique: Trace through algorithm with small input (4-5 elements) on paper/whiteboard. Add print statements at each step. Invariant checking: assert conditions that should always be true. For arrays: check off-by-one (i < n vs i <= n). For recursion: base case correct? For DP: index order correct?",
+      "source": "https://www.geeksforgeeks.org/debugging-algorithm/",
+      "tags": [
+        "edge-cases",
+        "debugging",
+        "invariant",
+        "off-by-one",
+        "trace"
+      ]
+    },
+    {
+      "question_id": "dsa_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Tìm shortest path trong graph với million nodes — thuật toán nào?",
+      "options": {
+        "A": "BFS/DFS là đủ",
+        "B": "Dijkstra với priority queue O(E log V) cho weighted. A* cho heuristic (maps). Bellman-Ford O(VE) cho negative weights. SSSP vs APSP",
+        "C": "Chỉ cần linear search",
+        "D": "DFS luôn tìm shortest path"
+      },
+      "correct_answer": "B",
+      "explanation": "Shortest path algorithms: BFS: unweighted graph, O(V+E). Dijkstra: non-negative weights, O((V+E) log V) với min-heap. Greedy, không hoạt động với negative weights. A*: heuristic guided Dijkstra, faster cho specific destination (GPS). Bellman-Ford: negative weights OK, detect negative cycles, O(VE). Floyd-Warshall: All-Pairs Shortest Path (APSP), O(V³), cho dense graphs. Scale: Google Maps với 1B nodes → bidirectional Dijkstra + contraction hierarchies. Real-world: route optimization, network routing (BGP), social graph shortest path.",
+      "source": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/",
+      "tags": [
+        "Dijkstra",
+        "A-star",
+        "Bellman-Ford",
+        "shortest-path",
+        "graph",
+        "priority-queue"
+      ]
+    }
+  ]
+}

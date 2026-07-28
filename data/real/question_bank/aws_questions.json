@@ -1,0 +1,175 @@
+{
+  "skill": "AWS",
+  "skill_key": "aws",
+  "total_questions": 7,
+  "levels": {
+    "1": 3,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "source_references": [
+    "https://docs.aws.amazon.com/",
+    "https://www.geeksforgeeks.org/amazon-web-services/"
+  ],
+  "questions": [
+    {
+      "question_id": "aws_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "AWS core services — EC2, S3, RDS, Lambda, VPC là gì?",
+      "options": {
+        "A": "Tất cả chỉ là server ảo",
+        "B": "EC2: virtual machines. S3: object storage. RDS: managed relational DB. Lambda: serverless functions. VPC: isolated network. IAM: identity management",
+        "C": "AWS chỉ có EC2",
+        "D": "Lambda là như EC2 nhưng nhanh hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "EC2 (Elastic Compute Cloud): VMs, choose instance type (t3.micro, c6g.xlarge). S3 (Simple Storage Service): object store, 99.999999999% durability, static website hosting, infinite scale. RDS: managed MySQL/PostgreSQL/Aurora — auto backup, patching, Multi-AZ. Lambda: serverless, auto-scale, pay per invocation, max 15 min timeout. VPC (Virtual Private Cloud): isolated network, subnets (public/private), security groups, NACLs. IAM: users, roles, policies. ECS/EKS: container orchestration. CloudFront: CDN.",
+      "source": "https://www.geeksforgeeks.org/amazon-web-services/",
+      "tags": [
+        "EC2",
+        "S3",
+        "RDS",
+        "Lambda",
+        "VPC",
+        "IAM"
+      ]
+    },
+    {
+      "question_id": "aws_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "IAM roles, policies, và least privilege principle?",
+      "options": {
+        "A": "Dùng root account cho tất cả",
+        "B": "IAM: users, groups, roles, policies. Least privilege: chỉ cấp permissions cần thiết. Roles: tạm thời, cho EC2/Lambda/external. Policy: JSON định nghĩa Allow/Deny actions",
+        "C": "1 IAM user cho cả team là đủ",
+        "D": "IAM chỉ cho billing management"
+      },
+      "correct_answer": "B",
+      "explanation": "Policy JSON: {Version, Statement: [{Effect:Allow, Action:[s3:GetObject], Resource:arn:aws:s3:::my-bucket/*}]}. Identity-based vs resource-based policies. Managed policies (AWS managed, Customer managed) vs inline policies. Roles: không permanent credentials, assume role (STS). EC2 instance profile: role attached to EC2, no need to hardcode credentials. Least privilege: start with deny all, add only needed. MFA: multi-factor authentication cho sensitive operations. AWS Organizations: multiple accounts, Service Control Policies.",
+      "source": "https://www.geeksforgeeks.org/aws-iam-tutorial/",
+      "tags": [
+        "IAM",
+        "roles",
+        "policies",
+        "least-privilege",
+        "MFA"
+      ]
+    },
+    {
+      "question_id": "aws_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "S3 storage classes và lifecycle policies?",
+      "options": {
+        "A": "Chỉ có Standard S3",
+        "B": "Standard (frequent access), Intelligent-Tiering (auto), Standard-IA (infrequent), Glacier (archive). Lifecycle rules: auto transition between classes, auto delete",
+        "C": "S3 là real-time database",
+        "D": "S3 không hỗ trợ versioning"
+      },
+      "correct_answer": "B",
+      "explanation": "Storage classes: S3 Standard (99.99% availability, frequent access). S3 Standard-IA (Infrequent Access): cheaper storage, per-retrieval fee. S3 Glacier: archival, retrieval 1-12h. Glacier Instant Retrieval: ms retrieval. Glacier Deep Archive: cheapest, 12h retrieval. Intelligent-Tiering: auto move between tiers based on access patterns. Lifecycle: transition to IA after 30 days, Glacier after 90 days, delete after 365 days. Versioning: keep all versions, undelete. Cross-region replication. S3 Object Lock: WORM compliance.",
+      "source": "https://www.geeksforgeeks.org/s3-storage-classes/",
+      "tags": [
+        "S3",
+        "storage-classes",
+        "Glacier",
+        "lifecycle",
+        "versioning"
+      ]
+    },
+    {
+      "question_id": "aws_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "AWS VPC — subnets, security groups, NACLs?",
+      "options": {
+        "A": "VPC chỉ cần 1 subnet",
+        "B": "Public subnet: internet gateway. Private subnet: NAT gateway. Security groups: stateful, instance level. NACLs: stateless, subnet level. Bastion host cho SSH",
+        "C": "Security groups và NACLs giống nhau",
+        "D": "Internet gateway không cần thiết"
+      },
+      "correct_answer": "B",
+      "explanation": "VPC: CIDR block (10.0.0.0/16). Public subnet: route table → Internet Gateway → internet access. Private subnet: route table → NAT Gateway → outbound internet, no inbound. Security Group: stateful (return traffic auto allowed), instance/ENI level. Allow rules only. NACL: stateless (must allow both inbound AND outbound), subnet level. Allow and deny rules. VPC Peering: connect VPCs. VPN: site-to-site VPN, client VPN. Direct Connect: dedicated network. PrivateLink: private endpoint cho AWS services.",
+      "source": "https://www.geeksforgeeks.org/amazon-vpc/",
+      "tags": [
+        "VPC",
+        "subnet",
+        "security-group",
+        "NACL",
+        "NAT-gateway"
+      ]
+    },
+    {
+      "question_id": "aws_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Deploy containerized app lên AWS ECS Fargate?",
+      "options": {
+        "A": "Chỉ EC2 support containers",
+        "B": "ECR: store Docker images. ECS Fargate: serverless containers. Task Definition: container spec. Service: desired count, load balancer. ALB: HTTP routing",
+        "C": "Fargate chỉ cho Lambda",
+        "D": "ECS không support Docker"
+      },
+      "correct_answer": "B",
+      "explanation": "Workflow: (1) Build và push image lên ECR. (2) Task Definition: container image, CPU/memory, env vars, port mappings, log config (CloudWatch). (3) ECS Cluster + Fargate launch type (no EC2 management). (4) ECS Service: desired tasks, ALB integration, auto-scaling. (5) ALB: Target Group → ECS Service. Fargate: serverless, pay per vCPU/memory per second. vs EC2 launch type: manage your own EC2 instances. Service auto-scaling: target tracking (CPU%). Blue/green deployment với CodeDeploy.",
+      "source": "https://www.geeksforgeeks.org/amazon-elastic-container-service/",
+      "tags": [
+        "ECS",
+        "Fargate",
+        "ECR",
+        "ALB",
+        "Task-Definition"
+      ]
+    },
+    {
+      "question_id": "aws_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "AWS Lambda cold start — nguyên nhân và cách giảm?",
+      "options": {
+        "A": "Cold start không thể giảm",
+        "B": "Cold start: khởi tạo execution environment. Reduce bằng: Provisioned Concurrency, smaller package, keep-warm, runtime selection (Go/Rust nhanh hơn Java)",
+        "C": "Tăng memory giải quyết cold start",
+        "D": "Cold start chỉ xảy ra với Python"
+      },
+      "correct_answer": "B",
+      "explanation": "Cold start: Lambda cần create execution environment (download code, start runtime, run init code). Thường 1-5s. Warm start: reuse existing environment (<10ms). Factors: runtime (Java/C# chậm, Python/Node/Go nhanh), package size (smaller = faster), init code amount. Reduce: (1) Provisioned Concurrency: pre-warm instances ($$$). (2) Keep-warm: EventBridge rule ping Lambda mỗi 5 phút (cho free tier). (3) Reduce package size: tree shaking, exclude test files. (4) Move heavy init ngoài handler. (5) SnapStart (Java): snapshot execution environment. (6) Container images: cold start tương tự zip.",
+      "source": "https://www.geeksforgeeks.org/aws-lambda-cold-start/",
+      "tags": [
+        "Lambda",
+        "cold-start",
+        "Provisioned-Concurrency",
+        "warm-start",
+        "SnapStart"
+      ]
+    },
+    {
+      "question_id": "aws_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Design highly available 3-tier web app trên AWS?",
+      "options": {
+        "A": "1 EC2 instance là đủ",
+        "B": "Multi-AZ: ALB → EC2 Auto Scaling Group (multiple AZs) → RDS Multi-AZ + Read Replicas. CloudFront CDN. Route 53 health checks. ElastiCache Redis",
+        "C": "Chỉ cần EC2 và RDS",
+        "D": "Serverless thay thế tất cả"
+      },
+      "correct_answer": "B",
+      "explanation": "HA architecture: (1) CloudFront CDN → static assets S3, dynamic → ALB. (2) Route 53: DNS failover. (3) ALB: cross-zone load balancing, health checks. (4) Auto Scaling Group: min/max/desired, scale on CPU/request count, multi-AZ. (5) RDS Multi-AZ: synchronous replication, auto failover (< 2min). Read Replicas: offload reads. (6) ElastiCache Redis: session store, caching. (7) All in private subnets, NAT Gateway cho outbound. (8) AWS Secrets Manager: DB credentials. (9) CloudWatch: monitoring, alarms, auto-scaling triggers. (10) S3 + CloudFront: static assets với global CDN.",
+      "source": "https://www.geeksforgeeks.org/aws-high-availability/",
+      "tags": [
+        "HA",
+        "Multi-AZ",
+        "ALB",
+        "Auto-Scaling",
+        "RDS",
+        "CloudFront"
+      ]
+    }
+  ]
+}

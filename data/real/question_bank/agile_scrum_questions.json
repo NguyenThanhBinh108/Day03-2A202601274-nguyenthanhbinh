@@ -1,0 +1,173 @@
+{
+  "skill": "Agile/Scrum",
+  "skill_key": "agile_scrum",
+  "total_questions": 7,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 0
+  },
+  "generated_at": "2026-06-12T02:22:05.511523",
+  "source_references": [
+    "https://scrumguides.org/",
+    "https://www.geeksforgeeks.org/agile-development-models/"
+  ],
+  "questions": [
+    {
+      "question_id": "agile_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Scrum là gì và 3 roles trong Scrum?",
+      "options": {
+        "A": "Scrum = Project Manager + Team",
+        "B": "Scrum: agile framework. 3 roles: Scrum Master (facilitator), Product Owner (backlog, vision), Development Team (self-organizing, cross-functional)",
+        "C": "Scrum chỉ cho software projects",
+        "D": "Scrum cần phải có PMO"
+      },
+      "correct_answer": "B",
+      "explanation": "Scrum: iterative, incremental framework. 3 roles: (1) Scrum Master: ensure Scrum is understood, remove impediments, NOT a PM. (2) Product Owner: maximize product value, manage backlog, single wringable neck. (3) Development Team: 3-9 people, self-organizing, cross-functional (no sub-teams). Scrum events: Sprint (1-4 weeks), Sprint Planning, Daily Scrum (15 min standup), Sprint Review, Sprint Retrospective. Artifacts: Product Backlog, Sprint Backlog, Increment.",
+      "source": "https://www.geeksforgeeks.org/agile-development-models/",
+      "tags": [
+        "Scrum",
+        "Scrum-Master",
+        "Product-Owner",
+        "Development-Team",
+        "Sprint"
+      ]
+    },
+    {
+      "question_id": "agile_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Agile Manifesto — 4 values và 12 principles?",
+      "options": {
+        "A": "Agile là methodology cụ thể",
+        "B": "4 values: Individuals over processes, Working software over docs, Customer collaboration over negotiation, Responding to change over following a plan",
+        "C": "Agile = Scrum",
+        "D": "Agile manifesto chỉ cho software"
+      },
+      "correct_answer": "B",
+      "explanation": "Agile Manifesto (2001): 4 values — (1) Individuals and interactions OVER processes and tools. (2) Working software OVER comprehensive documentation. (3) Customer collaboration OVER contract negotiation. (4) Responding to change OVER following a plan. Key word: value left MORE, không dismiss right. 12 principles: customer satisfaction, welcome change, frequent delivery, business + dev collaboration, motivated individuals, face-to-face, working software = progress, sustainable pace, technical excellence, simplicity, self-organizing teams, regular reflection.",
+      "source": "https://www.geeksforgeeks.org/agile-manifesto/",
+      "tags": [
+        "Agile-Manifesto",
+        "4-values",
+        "12-principles",
+        "Agile"
+      ]
+    },
+    {
+      "question_id": "agile_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "User Story format và Acceptance Criteria?",
+      "options": {
+        "A": "User Story là bug report",
+        "B": "As a [user], I want [feature], So that [benefit]. Acceptance Criteria: Given-When-Then (BDD). INVEST: Independent, Negotiable, Valuable, Estimable, Small, Testable",
+        "C": "User Story chỉ cần title",
+        "D": "AC không cần cho small stories"
+      },
+      "correct_answer": "B",
+      "explanation": "User Story: As a returning customer, I want to save my payment info, So that I can checkout faster. Must have: Who (role), What (feature), Why (benefit/value). Acceptance Criteria: Given I have saved a card, When I click 'Use saved card', Then my order is placed without re-entering card details. INVEST criteria: Independent (can be developed alone), Negotiable (details can change), Valuable (delivers value), Estimable (team can size it), Small (fits in sprint), Testable (clear done criteria). Story Points: relative effort estimation, not hours. Definition of Done: what 'done' means for the team.",
+      "source": "https://www.geeksforgeeks.org/user-story-in-agile/",
+      "tags": [
+        "user-story",
+        "acceptance-criteria",
+        "Given-When-Then",
+        "INVEST",
+        "story-points"
+      ]
+    },
+    {
+      "question_id": "agile_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Sprint Planning, Daily Scrum, Sprint Review, Retrospective — mục đích của mỗi ceremony?",
+      "options": {
+        "A": "Tất cả chỉ là meeting không cần thiết",
+        "B": "Planning: what & how sprint. Daily Scrum: sync, 15 min. Review: demo to stakeholders. Retrospective: team improvement. Mỗi ceremony có mục đích rõ ràng",
+        "C": "Chỉ cần Daily Standup",
+        "D": "Review và Retro là cùng meeting"
+      },
+      "correct_answer": "B",
+      "explanation": "Sprint Planning (2-4h): Team + PO chọn backlog items, tạo Sprint Goal, decompose tasks. Daily Scrum (15 min, dev team only): 3 questions truyền thống → không required, focus: inspect progress toward Sprint Goal. Sprint Review (2h): demo increment, gather feedback từ stakeholders, update backlog. Sprint Retrospective (1.5h): team reflection — What went well? What to improve? Action items (1-3 actionable improvements). Scrum Master facilitates. Anti-pattern: blame game, no action items, skipping retro.",
+      "source": "https://www.geeksforgeeks.org/scrum-ceremonies/",
+      "tags": [
+        "Sprint-Planning",
+        "Daily-Scrum",
+        "Sprint-Review",
+        "Retrospective",
+        "ceremony"
+      ]
+    },
+    {
+      "question_id": "agile_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Kanban vs Scrum — khi nào chọn cái nào?",
+      "options": {
+        "A": "Kanban = Scrum chỉ khác tên",
+        "B": "Scrum: iterations (sprints), roles, events — tốt cho product development. Kanban: continuous flow, WIP limits, visualize work — tốt cho support/ops/maintenance",
+        "C": "Kanban không có metrics",
+        "D": "Scrum luôn tốt hơn Kanban"
+      },
+      "correct_answer": "B",
+      "explanation": "Scrum: time-boxed (sprint), committed backlog, velocity metric, 3 roles mandatory. Good for: new product development, clear sprint goals, predictable cadence. Kanban: continuous flow, no sprints (but can have cadences), WIP limits (prevent overload), Lead Time / Cycle Time metrics, pull-based. Good for: support teams, ops, maintenance, unpredictable work. Scrumban: hybrid. Metrics: Scrum velocity, Kanban throughput + lead time, CFD (Cumulative Flow Diagram). SAFe, LeSS, Nexus: scaled agile frameworks.",
+      "source": "https://www.geeksforgeeks.org/kanban-vs-scrum/",
+      "tags": [
+        "Kanban",
+        "Scrum",
+        "WIP-limits",
+        "Scrumban",
+        "velocity",
+        "lead-time"
+      ]
+    },
+    {
+      "question_id": "agile_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Backlog refinement và story point estimation?",
+      "options": {
+        "A": "PM estimate alone là đủ",
+        "B": "Team-based: Planning Poker (consensus), T-shirt sizing, story splitting (INVEST). Velocity (avg pts/sprint) cho sprint planning. Reference stories để calibrate",
+        "C": "Hour-based estimation là chính xác hơn",
+        "D": "No estimation needed với Scrum"
+      },
+      "correct_answer": "B",
+      "explanation": "Backlog refinement (grooming): ongoing, < 10% sprint capacity. Goals: stories clear, estimated, ordered. Planning Poker: each member vote independently (Fibonacci: 1,2,3,5,8,13,21,?). Extremes discuss → consensus. Reference story: 'feature X = 5 points' làm baseline. Story splitting: SPIDR (Spike, Path, Interface, Data, Rules). Avoid: hour estimation (inaccurate, creates false precision), 1 person estimates for all. Velocity: average completed story points/sprint. Use for planning, not as performance metric. No estimates (#NoEstimates) movement.",
+      "source": "https://www.geeksforgeeks.org/agile-estimation/",
+      "tags": [
+        "Planning-Poker",
+        "story-points",
+        "velocity",
+        "backlog-refinement",
+        "story-splitting"
+      ]
+    },
+    {
+      "question_id": "agile_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Sprint failed — team không deliver Sprint Goal. Postmortem?",
+      "options": {
+        "A": "Blame team members",
+        "B": "Blameless retrospective: analyze why (overcommitted, impediments, scope creep, unclear requirements), action items, adjust velocity, communicate to stakeholders",
+        "C": "Tăng working hours",
+        "D": "Cancel Scrum và dùng Waterfall"
+      },
+      "correct_answer": "B",
+      "explanation": "Sprint failure analysis: (1) Overcommitted: velocity history không accurate, high uncertainty stories. Fix: use velocity data, add buffer, time-box spikes. (2) Impediments not removed: Scrum Master failed to escalate, blocked dependencies. Fix: impediment log, daily escalation. (3) Scope creep: PO added stories during sprint. Fix: clear Sprint Goal, PO cannot change committed backlog. (4) Unclear requirements: stories refined insufficiently. Fix: better Definition of Ready. (5) Technical debt slowed progress. Fix: allocate 20% capacity for tech debt. Communication: transparent với stakeholders, không hide failures.",
+      "source": "https://www.geeksforgeeks.org/sprint-retrospective/",
+      "tags": [
+        "sprint-failure",
+        "retrospective",
+        "blameless",
+        "impediments",
+        "scope-creep"
+      ]
+    }
+  ]
+}

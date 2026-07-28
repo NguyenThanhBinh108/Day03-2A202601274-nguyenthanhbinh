@@ -1,0 +1,154 @@
+{
+  "skill": "Elasticsearch",
+  "skill_key": "elasticsearch",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.585983Z",
+  "checklist_items": [
+    {
+      "item_id": "elasticsearch_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Index/Document/Shard",
+      "description": "Master Index/Document/Shard trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Index/Document/Shard+tutorial",
+      "resource_title": "Elasticsearch — Index/Document/Shard",
+      "quiz_ids": [
+        "elasticsearch_l1_001"
+      ],
+      "market_relevance": "Index/Document/Shard là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Mappings",
+      "description": "Master Mappings trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Mappings+tutorial",
+      "resource_title": "Elasticsearch — Mappings",
+      "quiz_ids": [
+        "elasticsearch_l2_002"
+      ],
+      "market_relevance": "Mappings là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Analyzers",
+      "description": "Master Analyzers trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Analyzers+tutorial",
+      "resource_title": "Elasticsearch — Analyzers",
+      "quiz_ids": [
+        "elasticsearch_l3_003"
+      ],
+      "market_relevance": "Analyzers là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Query DSL",
+      "description": "Master Query DSL trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Query+DSL+tutorial",
+      "resource_title": "Elasticsearch — Query DSL",
+      "quiz_ids": [
+        "elasticsearch_l4_004"
+      ],
+      "market_relevance": "Query DSL là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Aggregations",
+      "description": "Master Aggregations trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Aggregations+tutorial",
+      "resource_title": "Elasticsearch — Aggregations",
+      "quiz_ids": [
+        "elasticsearch_l5_005"
+      ],
+      "market_relevance": "Aggregations là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Full-text search",
+      "description": "Master Full-text search trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Full-text+search+tutorial",
+      "resource_title": "Elasticsearch — Full-text search",
+      "quiz_ids": [
+        "elasticsearch_l5_006"
+      ],
+      "market_relevance": "Full-text search là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Kibana",
+      "description": "Master Kibana trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Kibana+tutorial",
+      "resource_title": "Elasticsearch — Kibana",
+      "quiz_ids": [
+        "elasticsearch_l5_007"
+      ],
+      "market_relevance": "Kibana là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "ELK Stack",
+      "description": "Master ELK Stack trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+ELK+Stack+tutorial",
+      "resource_title": "Elasticsearch — ELK Stack",
+      "quiz_ids": [
+        "elasticsearch_l5_008"
+      ],
+      "market_relevance": "ELK Stack là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Cluster management",
+      "description": "Master Cluster management trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Cluster+management+tutorial",
+      "resource_title": "Elasticsearch — Cluster management",
+      "quiz_ids": [
+        "elasticsearch_l5_009"
+      ],
+      "market_relevance": "Cluster management là key skill trong Elasticsearch Database development"
+    },
+    {
+      "item_id": "elasticsearch_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Performance tuning",
+      "description": "Master Performance tuning trong Elasticsearch — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Elasticsearch+Performance+tuning+tutorial",
+      "resource_title": "Elasticsearch — Performance tuning",
+      "quiz_ids": [
+        "elasticsearch_l5_010"
+      ],
+      "market_relevance": "Performance tuning là key skill trong Elasticsearch Database development"
+    }
+  ]
+}

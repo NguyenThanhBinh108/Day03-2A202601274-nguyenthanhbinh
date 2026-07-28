@@ -1,0 +1,80 @@
+{
+  "skill": "TypeScript",
+  "skill_key": "typescript",
+  "total_resources": 6,
+  "generated_at": "2026-06-12T01:31:37.825581",
+  "resources": [
+    {
+      "resource_id": "ts_r001",
+      "title": "TypeScript Official Documentation",
+      "url": "https://www.typescriptlang.org/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "all",
+      "rating": 5,
+      "description": "TypeScript official docs với excellent playground",
+      "best_for": "Complete reference, experimentation"
+    },
+    {
+      "resource_id": "ts_r002",
+      "title": "W3Schools TypeScript Tutorial",
+      "url": "https://www.w3schools.com/typescript/default.asp",
+      "type": "tutorial",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner",
+      "rating": 4,
+      "description": "TypeScript basics với Try It Editor",
+      "best_for": "Beginners"
+    },
+    {
+      "resource_id": "ts_r003",
+      "title": "GeeksForGeeks TypeScript Tutorial",
+      "url": "https://www.geeksforgeeks.org/typescript/",
+      "type": "tutorial",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner_to_advanced",
+      "rating": 4,
+      "description": "TypeScript tutorial từ cơ bản đến advanced",
+      "best_for": "Comprehensive learning"
+    },
+    {
+      "resource_id": "ts_r004",
+      "title": "Execute Program — TypeScript (Free Tier)",
+      "url": "https://www.executeprogram.com/courses/typescript",
+      "type": "course",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner_to_intermediate",
+      "rating": 5,
+      "description": "Interactive TypeScript course, spaced repetition",
+      "best_for": "Hands-on practice"
+    },
+    {
+      "resource_id": "ts_r005",
+      "title": "freeCodeCamp — TypeScript Tutorial",
+      "url": "https://www.freecodecamp.org/news/learn-typescript-beginners-guide/",
+      "type": "article",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner",
+      "rating": 4,
+      "description": "Beginner guide to TypeScript",
+      "best_for": "Getting started quickly"
+    },
+    {
+      "resource_id": "ts_r006",
+      "title": "Total TypeScript (Matt Pocock)",
+      "url": "https://www.totaltypescript.com/tutorials",
+      "type": "course",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate_to_advanced",
+      "rating": 5,
+      "description": "Advanced TypeScript tutorials từ TypeScript expert",
+      "best_for": "Advanced TypeScript mastery"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Fastify",
+  "skill_key": "fastify",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.528782Z",
+  "checklist_items": [
+    {
+      "item_id": "fastify_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Plugin system",
+      "description": "Master Plugin system trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Fastify+Plugin+system+tutorial",
+      "resource_title": "Fastify — Plugin system",
+      "quiz_ids": [
+        "fastify_l1_001"
+      ],
+      "market_relevance": "Plugin system là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Schema validation",
+      "description": "Master Schema validation trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Fastify+Schema+validation+tutorial",
+      "resource_title": "Fastify — Schema validation",
+      "quiz_ids": [
+        "fastify_l2_002"
+      ],
+      "market_relevance": "Schema validation là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Decorators",
+      "description": "Master Decorators trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Fastify+Decorators+tutorial",
+      "resource_title": "Fastify — Decorators",
+      "quiz_ids": [
+        "fastify_l3_003"
+      ],
+      "market_relevance": "Decorators là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Hooks lifecycle",
+      "description": "Master Hooks lifecycle trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Fastify+Hooks+lifecycle+tutorial",
+      "resource_title": "Fastify — Hooks lifecycle",
+      "quiz_ids": [
+        "fastify_l4_004"
+      ],
+      "market_relevance": "Hooks lifecycle là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "TypeScript support",
+      "description": "Master TypeScript support trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Fastify+TypeScript+support+tutorial",
+      "resource_title": "Fastify — TypeScript support",
+      "quiz_ids": [
+        "fastify_l5_005"
+      ],
+      "market_relevance": "TypeScript support là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Pino logging",
+      "description": "Master Pino logging trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Fastify+Pino+logging+tutorial",
+      "resource_title": "Fastify — Pino logging",
+      "quiz_ids": [
+        "fastify_l5_006"
+      ],
+      "market_relevance": "Pino logging là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Auth plugins",
+      "description": "Master Auth plugins trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Fastify+Auth+plugins+tutorial",
+      "resource_title": "Fastify — Auth plugins",
+      "quiz_ids": [
+        "fastify_l5_007"
+      ],
+      "market_relevance": "Auth plugins là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Database integration",
+      "description": "Master Database integration trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Fastify+Database+integration+tutorial",
+      "resource_title": "Fastify — Database integration",
+      "quiz_ids": [
+        "fastify_l5_008"
+      ],
+      "market_relevance": "Database integration là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Testing",
+      "description": "Master Testing trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Fastify+Testing+tutorial",
+      "resource_title": "Fastify — Testing",
+      "quiz_ids": [
+        "fastify_l5_009"
+      ],
+      "market_relevance": "Testing là key skill trong Fastify Backend development"
+    },
+    {
+      "item_id": "fastify_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Performance",
+      "description": "Master Performance trong Fastify — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Fastify+Performance+tutorial",
+      "resource_title": "Fastify — Performance",
+      "quiz_ids": [
+        "fastify_l5_010"
+      ],
+      "market_relevance": "Performance là key skill trong Fastify Backend development"
+    }
+  ]
+}

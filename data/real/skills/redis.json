@@ -1,0 +1,185 @@
+{
+  "skill": "Redis",
+  "market_frequency": "8.7% JDs yêu cầu Redis",
+  "market_role": "Backend Developer, DevOps Engineer",
+  "total_learning_hours": 20,
+  "generated_at": "2026-06-12T00:05:36.354831",
+  "modules": [
+    {
+      "module_id": "redis_01",
+      "title": "Redis Data Structures & Patterns",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "redis_01_01",
+          "title": "Data Structures: String, Hash, List, Set, Sorted Set",
+          "hours": 8,
+          "academic": {
+            "summary": "String (GET/SET/INCR), Hash (HGET/HSET), List (LPUSH/RPOP), Set (SADD/SINTER), Sorted Set (ZADD/ZRANGE)",
+            "resources": [
+              {
+                "title": "Redis Official Docs",
+                "url": "https://redis.io/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "Redis University — Free Courses",
+                "url": "https://university.redis.com",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement: session storage (Hash), rate limiter (INCR + EXPIRE), leaderboard (Sorted Set), pub/sub chat",
+            "resources": [
+              {
+                "title": "Redis CLI Tool",
+                "url": "https://redis.io/docs/manual/cli/",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "redis_01_01_q1",
+                "level": 2,
+                "question": "Redis Sorted Set (ZSET) khác Set ở điểm nào?",
+                "options": {
+                  "A": "ZSET: mỗi member có score (float), tự động sắp xếp theo score. Set: unordered unique members",
+                  "B": "Chúng giống nhau",
+                  "C": "ZSET không unique",
+                  "D": "Set có score"
+                },
+                "correct_answer": "A",
+                "explanation": "Sorted Set: ZADD key score member. ZRANGE key 0 -1 WITHSCORES → sorted ASC. ZREVRANGE → DESC. Use cases: leaderboard, rate limiting windows, time-series with timestamp as score."
+              },
+              {
+                "question_id": "redis_01_01_q2",
+                "level": 3,
+                "question": "Implement rate limiter với Redis — approach nào tốt nhất?",
+                "options": {
+                  "A": "INCR counter với EXPIRE — hoặc Sliding window với Sorted Set (timestamp as score)",
+                  "B": "Chỉ dùng SET",
+                  "C": "Không thể dùng Redis cho rate limiting",
+                  "D": "Dùng Redis Pub/Sub"
+                },
+                "correct_answer": "A",
+                "explanation": "Fixed window: INCR key; IF count==1 THEN EXPIRE key window. Sliding window: ZADD key timestamp timestamp; ZREMRANGEBYSCORE key 0 (now-window); ZCARD key để count requests. Script Lua để atomic."
+              },
+              {
+                "question_id": "redis_01_01_q3",
+                "level": 4,
+                "question": "Redis persistence options: RDB vs AOF?",
+                "options": {
+                  "A": "RDB: snapshot tại intervals (compact, fast recovery). AOF: log mọi write operation (durability cao hơn, file lớn hơn)",
+                  "B": "Chúng giống nhau",
+                  "C": "AOF nhanh hơn RDB",
+                  "D": "RDB không thể disable"
+                },
+                "correct_answer": "A",
+                "explanation": "RDB: BGSAVE fork process, point-in-time snapshots. AOF: append write commands, fsync policies (always/everysec/no). Hybrid: RDB+AOF. Production: AOF với everysec + RDB backup."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "redis_01_02",
+          "title": "Caching Patterns, Pub/Sub, Redis Cluster",
+          "hours": 8,
+          "academic": {
+            "summary": "Cache-aside, write-through, cache invalidation, pub/sub messaging, Redis Cluster sharding",
+            "resources": [
+              {
+                "title": "Redis Patterns — Official",
+                "url": "https://redis.io/docs/manual/patterns/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement cache-aside pattern: check Redis → DB miss → set cache với TTL. Redis pub/sub cho real-time notifications",
+            "resources": [
+              {
+                "title": "Redis Best Practices",
+                "url": "https://redis.io/docs/manual/patterns/",
+                "type": "guide",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "redis_01_02_q1",
+                "level": 4,
+                "question": "Cache-aside vs Write-through pattern?",
+                "options": {
+                  "A": "Cache-aside: app manage cache (read miss→DB→cache). Write-through: write vào cache và DB đồng thời",
+                  "B": "Chúng giống nhau",
+                  "C": "Write-through không dùng DB",
+                  "D": "Cache-aside chỉ cho read"
+                },
+                "correct_answer": "A",
+                "explanation": "Cache-aside (Lazy Loading): read miss → DB → cache. Simple but potential stale data. Write-through: always update cache when write to DB. Consistent but write overhead. Write-behind (async): fast write, eventual DB sync."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "redis_01_03",
+          "title": "Transactions, Lua Scripting, Distributed Locks",
+          "hours": 4,
+          "academic": {
+            "summary": "MULTI/EXEC, WATCH optimistic locking, Lua atomic scripts, Redlock distributed lock algorithm",
+            "resources": [
+              {
+                "title": "Redis Transactions",
+                "url": "https://redis.io/docs/manual/transactions/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement Redlock distributed lock với 3 Redis instances. Lua script cho atomic check-and-set operations",
+            "resources": [
+              {
+                "title": "Redlock Algorithm",
+                "url": "https://redis.io/docs/manual/patterns/distributed-locks/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "redis_01_03_q1",
+                "level": 5,
+                "question": "Tại sao Redlock dùng nhiều Redis instances?",
+                "options": {
+                  "A": "Quorum-based: lock valid khi acquire trên majority (N/2+1) instances — tolerate node failures",
+                  "B": "Performance tốt hơn",
+                  "C": "Backup",
+                  "D": "Load balancing"
+                },
+                "correct_answer": "A",
+                "explanation": "Redlock: acquire lock trên N>=3 odd Redis instances, quorum = N/2+1. Nếu majority confirm trong TTL → lock acquired. Tolerate N/2-1 failures. Controversial (Martin Kleppmann critique) — not perfect but pragmatic."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

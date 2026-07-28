@@ -1,0 +1,218 @@
+{
+  "skill": "Apache Cassandra",
+  "skill_key": "cassandra",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.592508Z",
+  "source_references": [
+    "https://www.google.com/search?q=Apache+Cassandra+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "cassandra_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Apache Cassandra, Wide-column model có vai trò gì?",
+      "options": {
+        "A": "Wide-column model là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Wide-column model là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Wide-column model đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Wide-column model là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Wide-column model trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Wide-column model là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Wide-column model giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Wide-column+model+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "wide-column-model"
+      ]
+    },
+    {
+      "question_id": "cassandra_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Apache Cassandra, Partition/clustering key có vai trò gì?",
+      "options": {
+        "A": "Partition/clustering key là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Partition/clustering key là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Partition/clustering key đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Partition/clustering key là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Partition/clustering key trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Partition/clustering key là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Partition/clustering key giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Partition/clustering+key+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "partition-clustering-key"
+      ]
+    },
+    {
+      "question_id": "cassandra_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Apache Cassandra, CQL có vai trò gì?",
+      "options": {
+        "A": "CQL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CQL là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CQL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CQL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CQL trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và CQL là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ CQL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+CQL+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "cql"
+      ]
+    },
+    {
+      "question_id": "cassandra_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Apache Cassandra, Consistency levels có vai trò gì?",
+      "options": {
+        "A": "Consistency levels là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Consistency levels là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Consistency levels đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Consistency levels là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Consistency levels trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Consistency levels là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Consistency levels giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Consistency+levels+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "consistency-levels"
+      ]
+    },
+    {
+      "question_id": "cassandra_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Apache Cassandra, Replication strategies có vai trò gì?",
+      "options": {
+        "A": "Replication strategies là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Replication strategies là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Replication strategies đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Replication strategies là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Replication strategies trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Replication strategies là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Replication strategies giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Replication+strategies+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "replication-strategies"
+      ]
+    },
+    {
+      "question_id": "cassandra_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Apache Cassandra, Compaction có vai trò gì?",
+      "options": {
+        "A": "Compaction là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Compaction là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Compaction đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Compaction là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Compaction trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Compaction là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Compaction giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Compaction+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "compaction"
+      ]
+    },
+    {
+      "question_id": "cassandra_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Apache Cassandra, Performance tuning có vai trò gì?",
+      "options": {
+        "A": "Performance tuning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Performance tuning là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Performance tuning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Performance tuning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance tuning trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Performance tuning là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Performance tuning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Performance+tuning+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "performance-tuning"
+      ]
+    },
+    {
+      "question_id": "cassandra_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Apache Cassandra, Data modeling có vai trò gì?",
+      "options": {
+        "A": "Data modeling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data modeling là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data modeling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data modeling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data modeling trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Data modeling là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Data modeling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Data+modeling+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "data-modeling"
+      ]
+    },
+    {
+      "question_id": "cassandra_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Apache Cassandra, CAP theorem có vai trò gì?",
+      "options": {
+        "A": "CAP theorem là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CAP theorem là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CAP theorem đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CAP theorem là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CAP theorem trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và CAP theorem là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ CAP theorem giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+CAP+theorem+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "cap-theorem"
+      ]
+    },
+    {
+      "question_id": "cassandra_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Apache Cassandra, Multi-datacenter có vai trò gì?",
+      "options": {
+        "A": "Multi-datacenter là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Multi-datacenter là core concept trong Apache Cassandra — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Multi-datacenter đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Multi-datacenter là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Multi-datacenter trong Apache Cassandra: Đây là một trong những concepts quan trọng nhất. Apache Cassandra được sử dụng rộng rãi trong industry và Multi-datacenter là phần không thể thiếu. Khi làm việc với Apache Cassandra trong production, hiểu rõ Multi-datacenter giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Apache+Cassandra+Multi-datacenter+tutorial",
+      "tags": [
+        "cassandra",
+        "database",
+        "multi-datacenter"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Web Security",
+  "skill_key": "security",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.665545Z",
+  "checklist_items": [
+    {
+      "item_id": "security_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "OWASP Top 10",
+      "description": "Master OWASP Top 10 trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Web+Security+OWASP+Top+10+tutorial",
+      "resource_title": "Web Security — OWASP Top 10",
+      "quiz_ids": [
+        "security_l1_001"
+      ],
+      "market_relevance": "OWASP Top 10 là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "SQL Injection",
+      "description": "Master SQL Injection trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Web+Security+SQL+Injection+tutorial",
+      "resource_title": "Web Security — SQL Injection",
+      "quiz_ids": [
+        "security_l2_002"
+      ],
+      "market_relevance": "SQL Injection là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "XSS prevention",
+      "description": "Master XSS prevention trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Web+Security+XSS+prevention+tutorial",
+      "resource_title": "Web Security — XSS prevention",
+      "quiz_ids": [
+        "security_l3_003"
+      ],
+      "market_relevance": "XSS prevention là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "CSRF protection",
+      "description": "Master CSRF protection trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Web+Security+CSRF+protection+tutorial",
+      "resource_title": "Web Security — CSRF protection",
+      "quiz_ids": [
+        "security_l4_004"
+      ],
+      "market_relevance": "CSRF protection là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Auth best practices",
+      "description": "Master Auth best practices trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Web+Security+Auth+best+practices+tutorial",
+      "resource_title": "Web Security — Auth best practices",
+      "quiz_ids": [
+        "security_l5_005"
+      ],
+      "market_relevance": "Auth best practices là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "JWT security",
+      "description": "Master JWT security trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Web+Security+JWT+security+tutorial",
+      "resource_title": "Web Security — JWT security",
+      "quiz_ids": [
+        "security_l5_006"
+      ],
+      "market_relevance": "JWT security là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "HTTPS/TLS",
+      "description": "Master HTTPS/TLS trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Web+Security+HTTPS/TLS+tutorial",
+      "resource_title": "Web Security — HTTPS/TLS",
+      "quiz_ids": [
+        "security_l5_007"
+      ],
+      "market_relevance": "HTTPS/TLS là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Input validation",
+      "description": "Master Input validation trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Web+Security+Input+validation+tutorial",
+      "resource_title": "Web Security — Input validation",
+      "quiz_ids": [
+        "security_l5_008"
+      ],
+      "market_relevance": "Input validation là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Security headers",
+      "description": "Master Security headers trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Web+Security+Security+headers+tutorial",
+      "resource_title": "Web Security — Security headers",
+      "quiz_ids": [
+        "security_l5_009"
+      ],
+      "market_relevance": "Security headers là key skill trong Web Security Fundamentals development"
+    },
+    {
+      "item_id": "security_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Dependency scanning",
+      "description": "Master Dependency scanning trong Web Security — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Web+Security+Dependency+scanning+tutorial",
+      "resource_title": "Web Security — Dependency scanning",
+      "quiz_ids": [
+        "security_l5_010"
+      ],
+      "market_relevance": "Dependency scanning là key skill trong Web Security Fundamentals development"
+    }
+  ]
+}

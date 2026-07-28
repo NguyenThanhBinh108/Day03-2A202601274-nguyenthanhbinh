@@ -1,0 +1,310 @@
+{
+  "skill": "Java",
+  "market_frequency": "27.3% JDs yêu cầu Java",
+  "market_role": "Backend Developer, Full-stack Developer",
+  "total_learning_hours": 90,
+  "generated_at": "2026-06-12T00:05:36.329725",
+  "modules": [
+    {
+      "module_id": "java_01",
+      "title": "Java Core",
+      "order": 1,
+      "hours": 35,
+      "topics": [
+        {
+          "topic_id": "java_01_01",
+          "title": "OOP, Collections, Generics",
+          "hours": 12,
+          "academic": {
+            "summary": "Inheritance, polymorphism, interfaces, generics, ArrayList/HashMap/LinkedList, Iterator",
+            "resources": [
+              {
+                "title": "Java Tutorials — Oracle",
+                "url": "https://docs.oracle.com/javase/tutorial/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 360
+              },
+              {
+                "title": "Baeldung Java Guides",
+                "url": "https://www.baeldung.com",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement generic Stack<T> và Queue<T>. Viết unit tests với JUnit5. So sánh LinkedList vs ArrayList performance",
+            "resources": [
+              {
+                "title": "Spring Initializr",
+                "url": "https://start.spring.io",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "java_01_01_q1",
+                "level": 2,
+                "question": "String s1 = \"hello\"; String s2 = \"hello\"; s1 == s2 trả về gì?",
+                "options": {
+                  "A": "false vì 2 object",
+                  "B": "true vì String Pool intern literals tự động",
+                  "C": "Compile error",
+                  "D": "Phụ thuộc JVM"
+                },
+                "correct_answer": "B",
+                "explanation": "Java String Pool: literals intern tự động → s1 và s2 cùng object. Nhưng new String('hello') tạo object mới → false. Luôn dùng .equals() so sánh nội dung."
+              },
+              {
+                "question_id": "java_01_01_q2",
+                "level": 3,
+                "question": "Java `ArrayList` vs `LinkedList` — khi nào dùng cái nào?",
+                "options": {
+                  "A": "ArrayList: random access O(1), tốt cho read nhiều. LinkedList: insert/delete O(1) ở đầu/giữa, tốt cho queue/deque",
+                  "B": "LinkedList luôn nhanh hơn",
+                  "C": "ArrayList không thể resize",
+                  "D": "Chúng hoàn toàn giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "ArrayList backed by array: get(i) O(1), add/remove giữa O(n). LinkedList backed by doubly-linked nodes: get(i) O(n), add/remove đầu/đuôi O(1). Trong thực tế ArrayList thường faster do cache locality."
+              },
+              {
+                "question_id": "java_01_01_q3",
+                "level": 4,
+                "question": "Sự khác biệt giữa `interface` và `abstract class` trong Java 8+?",
+                "options": {
+                  "A": "Interface: multiple inheritance, default methods. Abstract class: single inheritance, state (fields)",
+                  "B": "Chúng giống nhau sau Java 8",
+                  "C": "Abstract class có thể implement multiple interfaces",
+                  "D": "Interface không thể có methods"
+                },
+                "correct_answer": "A",
+                "explanation": "Java 8 interface: default methods, static methods. Interface: không có state (chỉ constants), multiple inheritance. Abstract class: có state, constructors, chỉ single inheritance. Dùng interface khi chỉ cần contract, abstract class khi cần shared implementation + state."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "java_01_02",
+          "title": "Streams API, Lambda, Optional",
+          "hours": 10,
+          "academic": {
+            "summary": "Stream operations: filter/map/reduce/collect, method references, Optional chaining, parallel streams",
+            "resources": [
+              {
+                "title": "Java Stream API Guide — Baeldung",
+                "url": "https://www.baeldung.com/java-8-streams",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 90
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Refactor code legacy với explicit loops sang Stream API. Tính top 3 nhân viên lương cao nhất mỗi phòng ban dùng groupingBy + sorted",
+            "resources": [
+              {
+                "title": "Java Streams in Practice",
+                "url": "https://www.baeldung.com/java-8-streams-introduction",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "java_01_02_q1",
+                "level": 3,
+                "question": "`Optional.orElse(val)` vs `Optional.orElseGet(() -> val)` khác nhau thế nào?",
+                "options": {
+                  "A": "orElse luôn evaluate val (dù Optional có value). orElseGet lazy — chỉ call supplier khi empty",
+                  "B": "Chúng giống nhau",
+                  "C": "orElseGet nhanh hơn trong mọi trường hợp",
+                  "D": "orElse không hoạt động với null"
+                },
+                "correct_answer": "A",
+                "explanation": "orElse(expensiveOp()) → expensiveOp() luôn chạy. orElseGet(() -> expensiveOp()) → chỉ chạy khi Optional empty. Dùng orElseGet khi default value tốn kém tạo (DB query, network call)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "java_01_03",
+          "title": "Concurrency: Threads, ExecutorService, CompletableFuture",
+          "hours": 8,
+          "academic": {
+            "summary": "Thread lifecycle, synchronized, volatile, ReentrantLock, thread pools, CompletableFuture chaining",
+            "resources": [
+              {
+                "title": "Java Concurrency In Practice (book)",
+                "url": "https://jcip.net",
+                "type": "book",
+                "is_free": false,
+                "duration_minutes": 1200
+              },
+              {
+                "title": "Baeldung Concurrency Guide",
+                "url": "https://www.baeldung.com/java-concurrency",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng async task processor: CompletableFuture.supplyAsync() + thenCompose + exceptionally. Handle timeout và retry",
+            "resources": [
+              {
+                "title": "CompletableFuture Guide",
+                "url": "https://www.baeldung.com/java-completablefuture",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "java_01_03_q1",
+                "level": 4,
+                "question": "`volatile` keyword trong Java đảm bảo điều gì?",
+                "options": {
+                  "A": "Visibility: changes visible to all threads immediately. Không đảm bảo atomicity",
+                  "B": "Thread-safety hoàn toàn",
+                  "C": "Biến không thể thay đổi",
+                  "D": "Chỉ 1 thread access được tại 1 thời điểm"
+                },
+                "correct_answer": "A",
+                "explanation": "volatile: tắt CPU cache → mỗi thread luôn đọc từ main memory. Không đảm bảo atomicity của compound operations (i++ = read+increment+write → cần AtomicInteger hoặc synchronized)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "java_01_04",
+          "title": "JVM Internals, GC, Performance Tuning",
+          "hours": 5,
+          "academic": {
+            "summary": "JVM architecture, heap/stack, garbage collectors (G1, ZGC), JIT compilation, profiling",
+            "resources": [
+              {
+                "title": "Java GC Tuning Guide",
+                "url": "https://docs.oracle.com/en/java/javase/17/gctuning/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Profile một Java application với VisualVM, identify memory leak, fix và verify với heap dump analysis",
+            "resources": [
+              {
+                "title": "VisualVM Tool",
+                "url": "https://visualvm.github.io",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "java_01_04_q1",
+                "level": 5,
+                "question": "Stop-the-World pause trong GC là gì và cách giảm thiểu?",
+                "options": {
+                  "A": "GC tạm dừng toàn bộ application threads để collect garbage. Giảm: dùng G1/ZGC, tăng heap, giảm object allocation",
+                  "B": "Application đợi network",
+                  "C": "Thread deadlock",
+                  "D": "CPU throttling"
+                },
+                "correct_answer": "A",
+                "explanation": "STW pause: GC cần consistent heap view → tạm dừng all threads. G1 GC: STW ms-level. ZGC/Shenandoah: concurrent, STW <1ms. Giảm: right-size heap (-Xmx), avoid object churn, tune GC flags."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "java_02",
+      "title": "Spring Boot Framework",
+      "order": 2,
+      "hours": 55,
+      "topics": [
+        {
+          "topic_id": "java_02_01",
+          "title": "IoC, DI, Spring MVC, JPA",
+          "hours": 15,
+          "academic": {
+            "summary": "@Bean, @Autowired, @RestController, @Service, @Entity, Spring Data JPA, Repository",
+            "resources": [
+              {
+                "title": "Spring.io Official Guides",
+                "url": "https://spring.io/guides",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Baeldung Spring Tutorials",
+                "url": "https://www.baeldung.com/spring-tutorial",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng Blog REST API: Spring Boot + PostgreSQL + JWT + Swagger. CRUD posts/comments, phân trang, tìm kiếm",
+            "resources": [
+              {
+                "title": "Spring Boot Reference",
+                "url": "https://docs.spring.io/spring-boot/docs/current/reference/html/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "java_02_01_q1",
+                "level": 3,
+                "question": "@Transactional hoạt động như thế nào?",
+                "options": {
+                  "A": "Wrap method trong DB transaction, auto rollback nếu RuntimeException",
+                  "B": "Lock DB table",
+                  "C": "Chạy method trong thread riêng",
+                  "D": "Auto commit mỗi SQL"
+                },
+                "correct_answer": "A",
+                "explanation": "@Transactional: proxy AOP. begin → method → commit/rollback. Self-invocation không hoạt động (gọi method @Transactional từ cùng class). Dùng propagation để control nested transactions."
+              },
+              {
+                "question_id": "java_02_01_q2",
+                "level": 4,
+                "question": "Spring @Scope('prototype') vs @Scope('singleton')?",
+                "options": {
+                  "A": "singleton: 1 instance/ApplicationContext (default). prototype: new instance mỗi lần inject",
+                  "B": "prototype nhanh hơn",
+                  "C": "singleton thread-safe tự động",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "Singleton (default): 1 bean/context, shared. Prototype: new instance mỗi lần request từ context. Inject prototype vào singleton phức tạp → cần ApplicationContext.getBean() hoặc @Lookup."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

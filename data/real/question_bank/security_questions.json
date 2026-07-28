@@ -1,0 +1,218 @@
+{
+  "skill": "Web Security",
+  "skill_key": "security",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.664543Z",
+  "source_references": [
+    "https://www.google.com/search?q=Web+Security+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "security_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Web Security, OWASP Top 10 có vai trò gì?",
+      "options": {
+        "A": "OWASP Top 10 là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "OWASP Top 10 là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "OWASP Top 10 đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên OWASP Top 10 là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "OWASP Top 10 trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và OWASP Top 10 là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ OWASP Top 10 giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+OWASP+Top+10+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "owasp-top-10"
+      ]
+    },
+    {
+      "question_id": "security_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Web Security, SQL Injection có vai trò gì?",
+      "options": {
+        "A": "SQL Injection là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SQL Injection là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SQL Injection đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SQL Injection là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SQL Injection trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và SQL Injection là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ SQL Injection giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+SQL+Injection+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "sql-injection"
+      ]
+    },
+    {
+      "question_id": "security_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Web Security, XSS prevention có vai trò gì?",
+      "options": {
+        "A": "XSS prevention là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "XSS prevention là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "XSS prevention đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên XSS prevention là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "XSS prevention trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và XSS prevention là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ XSS prevention giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+XSS+prevention+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "xss-prevention"
+      ]
+    },
+    {
+      "question_id": "security_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Web Security, CSRF protection có vai trò gì?",
+      "options": {
+        "A": "CSRF protection là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CSRF protection là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CSRF protection đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CSRF protection là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CSRF protection trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và CSRF protection là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ CSRF protection giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+CSRF+protection+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "csrf-protection"
+      ]
+    },
+    {
+      "question_id": "security_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Web Security, Auth best practices có vai trò gì?",
+      "options": {
+        "A": "Auth best practices là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Auth best practices là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Auth best practices đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Auth best practices là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Auth best practices trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và Auth best practices là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ Auth best practices giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+Auth+best+practices+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "auth-best-practices"
+      ]
+    },
+    {
+      "question_id": "security_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Web Security, JWT security có vai trò gì?",
+      "options": {
+        "A": "JWT security là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "JWT security là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "JWT security đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên JWT security là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "JWT security trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và JWT security là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ JWT security giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+JWT+security+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "jwt-security"
+      ]
+    },
+    {
+      "question_id": "security_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Web Security, HTTPS/TLS có vai trò gì?",
+      "options": {
+        "A": "HTTPS/TLS là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HTTPS/TLS là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HTTPS/TLS đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HTTPS/TLS là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HTTPS/TLS trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và HTTPS/TLS là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ HTTPS/TLS giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+HTTPS/TLS+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "https-tls"
+      ]
+    },
+    {
+      "question_id": "security_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Web Security, Input validation có vai trò gì?",
+      "options": {
+        "A": "Input validation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Input validation là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Input validation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Input validation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Input validation trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và Input validation là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ Input validation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+Input+validation+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "input-validation"
+      ]
+    },
+    {
+      "question_id": "security_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Web Security, Security headers có vai trò gì?",
+      "options": {
+        "A": "Security headers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security headers là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security headers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security headers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security headers trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và Security headers là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ Security headers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+Security+headers+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "security-headers"
+      ]
+    },
+    {
+      "question_id": "security_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Web Security, Dependency scanning có vai trò gì?",
+      "options": {
+        "A": "Dependency scanning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dependency scanning là core concept trong Web Security — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dependency scanning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dependency scanning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dependency scanning trong Web Security: Đây là một trong những concepts quan trọng nhất. Web Security được sử dụng rộng rãi trong industry và Dependency scanning là phần không thể thiếu. Khi làm việc với Web Security trong production, hiểu rõ Dependency scanning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Web+Security+Dependency+scanning+tutorial",
+      "tags": [
+        "security",
+        "fundamentals",
+        "dependency-scanning"
+      ]
+    }
+  ]
+}

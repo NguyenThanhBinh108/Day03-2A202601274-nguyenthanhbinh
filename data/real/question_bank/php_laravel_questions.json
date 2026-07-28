@@ -1,0 +1,218 @@
+{
+  "skill": "PHP/Laravel",
+  "skill_key": "php_laravel",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.538792Z",
+  "source_references": [
+    "https://www.google.com/search?q=PHP/Laravel+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "php_laravel_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PHP/Laravel, MVC Architecture có vai trò gì?",
+      "options": {
+        "A": "MVC Architecture là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "MVC Architecture là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "MVC Architecture đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên MVC Architecture là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "MVC Architecture trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và MVC Architecture là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ MVC Architecture giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+MVC+Architecture+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "mvc-architecture"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PHP/Laravel, Eloquent ORM có vai trò gì?",
+      "options": {
+        "A": "Eloquent ORM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Eloquent ORM là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Eloquent ORM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Eloquent ORM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Eloquent ORM trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Eloquent ORM là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Eloquent ORM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Eloquent+ORM+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "eloquent-orm"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PHP/Laravel, Blade templates có vai trò gì?",
+      "options": {
+        "A": "Blade templates là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Blade templates là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Blade templates đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Blade templates là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Blade templates trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Blade templates là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Blade templates giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Blade+templates+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "blade-templates"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PHP/Laravel, Artisan CLI có vai trò gì?",
+      "options": {
+        "A": "Artisan CLI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Artisan CLI là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Artisan CLI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Artisan CLI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Artisan CLI trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Artisan CLI là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Artisan CLI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Artisan+CLI+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "artisan-cli"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PHP/Laravel, Migrations/Seeders có vai trò gì?",
+      "options": {
+        "A": "Migrations/Seeders là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Migrations/Seeders là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Migrations/Seeders đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Migrations/Seeders là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Migrations/Seeders trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Migrations/Seeders là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Migrations/Seeders giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Migrations/Seeders+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "migrations-seeders"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PHP/Laravel, Authentication có vai trò gì?",
+      "options": {
+        "A": "Authentication là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Authentication là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Authentication đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Authentication là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Authentication trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Authentication là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Authentication giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Authentication+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "authentication"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PHP/Laravel, Queue/Jobs có vai trò gì?",
+      "options": {
+        "A": "Queue/Jobs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Queue/Jobs là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Queue/Jobs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Queue/Jobs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Queue/Jobs trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Queue/Jobs là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Queue/Jobs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Queue/Jobs+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "queue-jobs"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PHP/Laravel, Events/Listeners có vai trò gì?",
+      "options": {
+        "A": "Events/Listeners là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Events/Listeners là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Events/Listeners đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Events/Listeners là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Events/Listeners trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Events/Listeners là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Events/Listeners giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Events/Listeners+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "events-listeners"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PHP/Laravel, PHPUnit Testing có vai trò gì?",
+      "options": {
+        "A": "PHPUnit Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "PHPUnit Testing là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "PHPUnit Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên PHPUnit Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "PHPUnit Testing trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và PHPUnit Testing là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ PHPUnit Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+PHPUnit+Testing+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "phpunit-testing"
+      ]
+    },
+    {
+      "question_id": "php_laravel_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PHP/Laravel, Deployment có vai trò gì?",
+      "options": {
+        "A": "Deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Deployment là core concept trong PHP/Laravel — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Deployment trong PHP/Laravel: Đây là một trong những concepts quan trọng nhất. PHP/Laravel được sử dụng rộng rãi trong industry và Deployment là phần không thể thiếu. Khi làm việc với PHP/Laravel trong production, hiểu rõ Deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PHP/Laravel+Deployment+tutorial",
+      "tags": [
+        "php_laravel",
+        "backend",
+        "deployment"
+      ]
+    }
+  ]
+}

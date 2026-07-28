@@ -1,0 +1,186 @@
+{
+  "skill": "CI/CD",
+  "market_frequency": "15.9% JDs yêu cầu CI/CD",
+  "market_role": "DevOps Engineer, Backend Developer",
+  "total_learning_hours": 20,
+  "generated_at": "2026-06-12T00:05:36.359829",
+  "modules": [
+    {
+      "module_id": "cicd_01",
+      "title": "CI/CD Pipelines & DevOps",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "cicd_01_01",
+          "title": "GitHub Actions, GitLab CI, Jenkins",
+          "hours": 8,
+          "academic": {
+            "summary": "Pipeline stages: build, test, lint, scan, deploy. Matrix builds, artifacts, environments, approvals",
+            "resources": [
+              {
+                "title": "GitHub Actions Docs",
+                "url": "https://docs.github.com/en/actions",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "GitLab CI/CD Docs",
+                "url": "https://docs.gitlab.com/ee/ci/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "CI pipeline: test (matrix: Node 18/20) + lint + security scan (Snyk) + build Docker + push to ECR + deploy ECS",
+            "resources": [
+              {
+                "title": "GitHub Actions Marketplace",
+                "url": "https://github.com/marketplace?type=actions",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "cicd_01_01_q1",
+                "level": 3,
+                "question": "CI vs CD (Continuous Delivery vs Continuous Deployment) khác nhau?",
+                "options": {
+                  "A": "Delivery: auto deploy đến staging, manual approval for production. Deployment: fully automated to production",
+                  "B": "Chúng giống nhau",
+                  "C": "Delivery: chỉ build. Deployment: test + deploy",
+                  "D": "CD không cần CI"
+                },
+                "correct_answer": "A",
+                "explanation": "CI: integrate code often, auto test. CD (Delivery): auto deploy to staging, human gate for prod. CD (Deployment): fully auto to prod. True CD Deployment requires: high test coverage, feature flags, automated rollback."
+              },
+              {
+                "question_id": "cicd_01_01_q2",
+                "level": 4,
+                "question": "Blue-Green Deployment vs Canary Release?",
+                "options": {
+                  "A": "Blue-Green: 2 identical envs, instant switch. Canary: gradual traffic shift (5%→25%→100%)",
+                  "B": "Chúng giống nhau",
+                  "C": "Canary nhanh hơn",
+                  "D": "Blue-Green không có rollback"
+                },
+                "correct_answer": "A",
+                "explanation": "Blue-Green: zero downtime, instant rollback (switch DNS/LB). Requires 2x infra cost. Canary: gradual, catch issues early, metrics-driven. Feature flags: code-level canary. Rolling: k8s default, upgrade pods gradually."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "cicd_01_02",
+          "title": "Infrastructure as Code, Monitoring, Observability",
+          "hours": 8,
+          "academic": {
+            "summary": "Terraform, Helm charts, Prometheus + Grafana, ELK stack, distributed tracing (Jaeger)",
+            "resources": [
+              {
+                "title": "Prometheus Docs",
+                "url": "https://prometheus.io/docs/introduction/overview/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "Grafana Docs",
+                "url": "https://grafana.com/docs/grafana/latest/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Setup observability: Prometheus scrape metrics, Grafana dashboards, alerting rules, Loki log aggregation",
+            "resources": [
+              {
+                "title": "Grafana Play — Online Demo",
+                "url": "https://play.grafana.org",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "cicd_01_02_q1",
+                "level": 4,
+                "question": "Golden Signals trong monitoring là gì?",
+                "options": {
+                  "A": "Latency, Traffic, Errors, Saturation — 4 metrics đủ để characterize service health",
+                  "B": "CPU, Memory, Disk, Network",
+                  "C": "Uptime, Requests, Errors, Timeout",
+                  "D": "P99, P95, P50, Average"
+                },
+                "correct_answer": "A",
+                "explanation": "Google SRE Golden Signals: Latency (response time), Traffic (requests/sec), Error rate, Saturation (% resource used). Đủ để detect và diagnose hầu hết production issues. SLO/SLA nên dựa trên these signals."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "cicd_01_03",
+          "title": "Security: SAST, DAST, Secrets Management",
+          "hours": 4,
+          "academic": {
+            "summary": "OWASP Top 10, SonarQube SAST, Snyk dependency scan, OWASP ZAP DAST, HashiCorp Vault",
+            "resources": [
+              {
+                "title": "OWASP Top 10",
+                "url": "https://owasp.org/Top10/",
+                "type": "reference",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "Snyk — Developer Security Platform",
+                "url": "https://snyk.io",
+                "type": "tool",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Integrate SAST (SonarQube) + dependency scan (Snyk) vào CI pipeline. Fail build khi critical vulnerability detected",
+            "resources": [
+              {
+                "title": "SonarQube Docs",
+                "url": "https://docs.sonarqube.org",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "cicd_01_03_q1",
+                "level": 4,
+                "question": "SAST vs DAST trong DevSecOps?",
+                "options": {
+                  "A": "SAST: analyze source code (shift-left, early). DAST: test running application (black-box, later)",
+                  "B": "Chúng giống nhau",
+                  "C": "DAST chỉ cho production",
+                  "D": "SAST không tìm được bugs"
+                },
+                "correct_answer": "A",
+                "explanation": "SAST (Static): scan source code, fast, no running app needed, nhiều false positives. DAST (Dynamic): test live app như attacker, realistic, slower. IAST: instrument app during test (best of both). Shift-left: integrate security sớm trong pipeline."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

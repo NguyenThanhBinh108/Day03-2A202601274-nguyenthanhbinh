@@ -1,0 +1,102 @@
+{
+  "role_id": "it_business_analyst",
+  "role_name": "IT Business Analyst",
+  "market_overview": "Với vị thế là trung tâm IT Outsourcing của khu vực, nhu cầu tuyển dụng IT BA tại Việt Nam luôn ở mức rất cao. BA là người phiên dịch ngôn ngữ kinh doanh của khách hàng thành tài liệu kỹ thuật cho đội ngũ lập trình viên. Đòi hỏi kỹ năng giao tiếp xuất sắc, khả năng tư duy logic hệ thống và thấu hiểu cả quy trình kinh doanh lẫn giới hạn của công nghệ.",
+  "salary_range_vnd": "15-40 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_requirement_elicitation",
+      "title": "Khai thác & Phân tích yêu cầu (Requirement Elicitation)",
+      "duration_weeks": 5,
+      "core_skills": [
+        "Làm việc với Stakeholders để lấy yêu cầu bằng phương pháp Phỏng vấn, Khảo sát, Workshop",
+        "Phân tích nghiệp vụ (Business Domain Analysis) và xác định Pain Points",
+        "Viết tài liệu BRD (Business Requirement Document) và SRS (Software Requirements Specification)"
+      ],
+      "toolchains": [
+        "Miro / FigJam (Brainstorming)",
+        "Microsoft Visio / Draw.io",
+        "Confluence / Notion"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Phân tích yêu cầu hệ thống Quản lý kho (WMS) cho chuỗi bán lẻ",
+          "business_context": "Khách hàng quản lý kho bằng Excel đang bị thất thoát hàng hóa. Cần số hóa quy trình nhập, xuất, kiểm kê kho.",
+          "tech_stack_used": [
+            "Draw.io",
+            "Confluence"
+          ],
+          "key_challenges": [
+            "Khách hàng đưa ra giải pháp (muốn một nút bấm màu đỏ) thay vì nói ra vấn đề thực sự (nhân viên hay quên quét mã vạch).",
+            "Gom nhóm và ưu tiên (Prioritize) hàng trăm yêu cầu lắt nhắt thành các tính năng cốt lõi (MVP)."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Khi khách hàng yêu cầu thay đổi tính năng (Change Request) vào sát ngày release, bạn xử lý thế nào?",
+          "expected_answer_points": [
+            "Không từ chối ngay, nhưng không hứa hẹn ngay.",
+            "Ghi nhận yêu cầu, phân tích Impact Analysis (ảnh hưởng thời gian, chi phí, kiến trúc).",
+            "Trình bày với PM/Khách hàng để quyết định đưa vào phase sau hay chấp nhận trễ deadline để làm ngay."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Order Taker (Chỉ biết ghi chép như người phục vụ bàn)",
+          "why_its_bad": "Khách hàng bảo gì ghi nấy vào tài liệu mà không đặt câu hỏi 'Tại sao?'. Dẫn đến xây dựng một hệ thống đúng yêu cầu nhưng vô dụng trong thực tế.",
+          "better_approach": "Áp dụng kỹ thuật 5-Whys để đào sâu đến gốc rễ vấn đề trước khi bắt đầu phác thảo giải pháp hệ thống."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_system_design_uml",
+      "title": "Mô Hình Hóa Hệ Thống & UML",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Vẽ biểu đồ Use Case, Activity, Sequence, State Machine (UML)",
+        "Thiết kế cấu trúc dữ liệu cơ bản (Entity Relationship Diagram - ERD)",
+        "Thiết kế giao diện thô (Wireframing/Mockups)",
+        "Viết User Stories và Acceptance Criteria theo chuẩn BDD (Given-When-Then)"
+      ],
+      "toolchains": [
+        "Lucidchart / Enterprise Architect",
+        "Balsamiq / Figma (mức độ cơ bản)",
+        "Jira (Quản lý Epic, Story)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Thiết kế luồng thanh toán tích hợp VNPay cho Web E-commerce",
+          "business_context": "Hệ thống cần tích hợp cổng thanh toán bên thứ 3, đòi hỏi xử lý chuẩn xác trạng thái đơn hàng khi thanh toán thành công, thất bại hoặc bị timeout.",
+          "tech_stack_used": [
+            "UML (Sequence Diagram)",
+            "Jira"
+          ],
+          "key_challenges": [
+            "Vẽ Sequence Diagram mô tả rõ luồng gọi API giữa Frontend, Backend và VNPay Server.",
+            "Xác định các Edge Cases (VD: Khách hàng trừ tiền nhưng VNPay chưa gửi Webhook trả về) để viết Acceptance Criteria."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Sự khác biệt giữa Functional Requirement (Yêu cầu chức năng) và Non-functional Requirement (Yêu cầu phi chức năng)?",
+          "expected_answer_points": [
+            "Functional: Hệ thống làm gì (VD: User có thể đăng nhập bằng Google).",
+            "Non-functional: Hệ thống hoạt động thế nào (VD: Thời gian phản hồi trang phải dưới 2s, chịu tải 10,000 user)."
+          ],
+          "difficulty": "Fresher"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Viết User Story thiếu Acceptance Criteria (Tiêu chí nghiệm thu)",
+          "why_its_bad": "Developer tự hiểu theo ý mình, QA không biết test thế nào là pass. Khi demo khách hàng sẽ báo lỗi vì luồng đi không đúng kỳ vọng.",
+          "better_approach": "Mỗi User Story bắt buộc phải có AC rõ ràng. Áp dụng format: Given [precondition] When [action] Then [result]."
+        }
+      ]
+    }
+  ]
+}

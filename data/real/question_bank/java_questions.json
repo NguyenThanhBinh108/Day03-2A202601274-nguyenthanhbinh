@@ -1,0 +1,326 @@
+{
+  "skill": "Java",
+  "skill_key": "java",
+  "total_questions": 14,
+  "levels": {
+    "1": 6,
+    "2": 3,
+    "3": 2,
+    "4": 2,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.475920",
+  "source_references": [
+    "https://www.w3schools.com/java/",
+    "https://www.geeksforgeeks.org/java/",
+    "https://www.freecodecamp.org/news/tag/java/"
+  ],
+  "questions": [
+    {
+      "question_id": "java_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Java là ngôn ngữ gì và 'Write Once Run Anywhere' nghĩa là gì?",
+      "options": {
+        "A": "Java chỉ chạy trên Windows",
+        "B": "Java biên dịch thành bytecode chạy trên JVM — mọi OS có JVM đều chạy được cùng code",
+        "C": "Java là scripting language",
+        "D": "Java cần biên dịch lại cho mỗi OS"
+      },
+      "correct_answer": "B",
+      "explanation": "Java source (.java) → javac → bytecode (.class) → JVM execute. JVM (Java Virtual Machine) là tầng trung gian, có thể cài trên Windows/Linux/Mac. WORA: cùng .class file chạy mọi nơi. JDK = JRE + compiler + tools. JRE = JVM + standard libraries. OpenJDK (free) vs Oracle JDK. LTS versions: Java 8, 11, 17, 21.",
+      "source": "https://www.w3schools.com/java/java_intro.asp",
+      "tags": [
+        "JVM",
+        "bytecode",
+        "WORA",
+        "JDK",
+        "JRE"
+      ]
+    },
+    {
+      "question_id": "java_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "OOP trong Java — 4 tính chất cơ bản?",
+      "options": {
+        "A": "Fast, Safe, Simple, Portable",
+        "B": "Encapsulation, Inheritance, Polymorphism, Abstraction",
+        "C": "Public, Private, Protected, Default",
+        "D": "Class, Object, Method, Field"
+      },
+      "correct_answer": "B",
+      "explanation": "Encapsulation: gộp data + methods, hide internal state (private fields + public getters/setters). Inheritance: extends — tái sử dụng code từ parent class. Polymorphism: cùng method name, hành vi khác nhau (overriding, overloading). Abstraction: ẩn implementation chi tiết (abstract class, interface). Java không có multiple inheritance (class), nhưng có qua interfaces.",
+      "source": "https://www.w3schools.com/java/java_oop.asp",
+      "tags": [
+        "OOP",
+        "encapsulation",
+        "inheritance",
+        "polymorphism",
+        "abstraction"
+      ]
+    },
+    {
+      "question_id": "java_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Interface vs Abstract class trong Java — khi nào dùng cái nào?",
+      "options": {
+        "A": "Cả hai giống nhau",
+        "B": "Interface: contract (all abstract by default, Java 8+ default methods), multiple implements. Abstract class: partial implementation, single extends, có constructors",
+        "C": "Abstract class nhanh hơn Interface",
+        "D": "Java 11 bỏ abstract class"
+      },
+      "correct_answer": "B",
+      "explanation": "Interface: không có state (chỉ constants), không constructor, multiple implements. Dùng cho: defining contracts (Serializable, Comparable, Runnable). Abstract class: có state, constructor, có thể có concrete methods. Dùng cho: partial implementation, template method pattern. Java 8+: default + static methods trong interface. Java 9+: private methods trong interface. Prefer interface over abstract class (SOLID: Dependency Inversion).",
+      "source": "https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/",
+      "tags": [
+        "interface",
+        "abstract-class",
+        "OOP",
+        "Java8"
+      ]
+    },
+    {
+      "question_id": "java_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "Java Collections — List, Set, Map khi nào dùng cái nào?",
+      "options": {
+        "A": "Chỉ cần ArrayList là đủ",
+        "B": "List: ordered, duplicates allowed (ArrayList/LinkedList). Set: unique (HashSet/TreeSet). Map: key-value (HashMap/TreeMap). Chọn theo use case",
+        "C": "Map không phải Collection",
+        "D": "LinkedList luôn tốt hơn ArrayList"
+      },
+      "correct_answer": "B",
+      "explanation": "ArrayList: O(1) random access, O(n) insert/delete middle. LinkedList: O(1) insert/delete head/tail, O(n) random access. HashSet: O(1) add/remove/contains, unordered. TreeSet: sorted, O(log n). HashMap: O(1) average get/put, unordered. TreeMap: sorted by key, O(log n). LinkedHashMap: insertion order. ConcurrentHashMap: thread-safe. PriorityQueue: min/max heap. Choose based on: ordering needed? duplicates? thread-safety? time complexity?",
+      "source": "https://www.geeksforgeeks.org/collections-in-java-2/",
+      "tags": [
+        "Collections",
+        "ArrayList",
+        "HashMap",
+        "HashSet",
+        "TreeMap"
+      ]
+    },
+    {
+      "question_id": "java_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Exception handling trong Java — checked vs unchecked?",
+      "options": {
+        "A": "Tất cả exceptions đều cần try/catch",
+        "B": "Checked: phải declare (throws) hoặc catch (IOException, SQLException). Unchecked: RuntimeException không bắt buộc (NullPointerException, ArrayIndexOutOfBoundsException)",
+        "C": "Java không có unchecked exceptions",
+        "D": "finally không cần thiết"
+      },
+      "correct_answer": "B",
+      "explanation": "Exception hierarchy: Throwable → Error (JVM errors, không handle) + Exception → RuntimeException (unchecked) + checked exceptions. try-catch-finally: finally LUÔN chạy. try-with-resources: AutoCloseable tự đóng. Multi-catch: catch (IOException | SQLException e). Custom exception: class MyException extends RuntimeException. Best practice: prefer unchecked exceptions, đừng swallow exceptions (empty catch), log properly.",
+      "source": "https://www.w3schools.com/java/java_try_catch.asp",
+      "tags": [
+        "exception",
+        "checked",
+        "unchecked",
+        "try-catch",
+        "RuntimeException"
+      ]
+    },
+    {
+      "question_id": "java_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Java Generics dùng để làm gì?",
+      "options": {
+        "A": "Chỉ dùng với Collections",
+        "B": "Generics: type parameters cho type-safe code tại compile time, eliminate casts — List<String>, Method<T>, Class<T extends Comparable<T>>",
+        "C": "Generics là deprecated trong Java 17",
+        "D": "Generics chỉ cho primitive types"
+      },
+      "correct_answer": "B",
+      "explanation": "Without generics: List list = new ArrayList(); String s = (String) list.get(0); — ClassCastException runtime. With generics: List<String> list = new ArrayList<>() — type-safe, no cast. Generic method: <T> T getFirst(List<T> list). Bounded: <T extends Number>. Wildcard: List<?> (any type), List<? extends Number> (covariant), List<? super Integer> (contravariant). Type erasure: generics removed at compile time → no runtime overhead.",
+      "source": "https://www.geeksforgeeks.org/generics-in-java/",
+      "tags": [
+        "generics",
+        "type-safety",
+        "wildcards",
+        "type-erasure"
+      ]
+    },
+    {
+      "question_id": "java_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Java Stream API và Lambda expressions — cách dùng thực tế?",
+      "options": {
+        "A": "Stream thay thế hoàn toàn vòng lặp",
+        "B": "Stream: chaining lazy operations trên collections. Lambda: anonymous function implementation. Kết hợp: list.stream().filter().map().collect()",
+        "C": "Stream chỉ cho List",
+        "D": "Lambda chỉ dùng với Stream"
+      },
+      "correct_answer": "B",
+      "explanation": "Lambda: (params) -> expression. Method reference: String::toUpperCase. Stream pipeline: source → intermediate ops (filter, map, flatMap, sorted, distinct, limit) → terminal op (collect, forEach, reduce, count, findFirst). Lazy evaluation: intermediate ops không chạy cho đến khi terminal. Collectors: toList(), toMap(), groupingBy(), joining(). Parallel stream: .parallelStream() (cẩn thận với shared mutable state). Java 9+: Stream.of(), takeWhile(), dropWhile().",
+      "source": "https://www.geeksforgeeks.org/stream-in-java/",
+      "tags": [
+        "Stream",
+        "Lambda",
+        "functional",
+        "collectors",
+        "lazy-evaluation"
+      ]
+    },
+    {
+      "question_id": "java_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Java Multithreading — Thread, Runnable, ExecutorService?",
+      "options": {
+        "A": "Java chỉ chạy single-threaded",
+        "B": "Thread/Runnable: cơ bản. ExecutorService: thread pool (không tạo thread mới mỗi lần). Future/CompletableFuture: async result handling",
+        "C": "synchronized là đủ cho mọi case",
+        "D": "Java 17 bỏ Thread class"
+      },
+      "correct_answer": "B",
+      "explanation": "Thread: extends Thread hoặc implements Runnable. ExecutorService: Executors.newFixedThreadPool(n), submit(task) → Future. CompletableFuture (Java 8+): async chaining: CompletableFuture.supplyAsync(() -> fetch()).thenApply(data -> process(data)).exceptionally(e -> fallback). synchronized: mutual exclusion nhưng không scalable. java.util.concurrent: Lock, ReadWriteLock, Semaphore, CountDownLatch, CyclicBarrier. Virtual threads (Java 21): lightweight threads cho I/O-bound (Project Loom).",
+      "source": "https://www.geeksforgeeks.org/multithreading-in-java/",
+      "tags": [
+        "Thread",
+        "ExecutorService",
+        "CompletableFuture",
+        "synchronized",
+        "virtual-threads"
+      ]
+    },
+    {
+      "question_id": "java_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Java Memory Model — Heap, Stack, Garbage Collection?",
+      "options": {
+        "A": "Java không có garbage collection",
+        "B": "Heap: objects, GC managed. Stack: method frames, local vars. GC: mark-and-sweep, generations (young/old/metaspace). -Xmx/-Xms để config",
+        "C": "Stack và Heap là cùng một vùng memory",
+        "D": "GC chạy synchronously trước mỗi allocation"
+      },
+      "correct_answer": "B",
+      "explanation": "Stack: per-thread, local variables, method call frames, LIFO. Heap: shared, all objects, GC managed. Generations: Young Gen (Eden + Survivor) → Minor GC. Old Gen → Major GC. Metaspace (Java 8+): class metadata. GC algorithms: Serial, Parallel, G1 (default Java 9+), ZGC (low latency Java 11+), Shenandoah. Memory leaks: static collections, unclosed streams. -Xmx512m: max heap. -Xms256m: initial heap. GC tuning: complex, measure first.",
+      "source": "https://www.geeksforgeeks.org/java-memory-management/",
+      "tags": [
+        "Heap",
+        "Stack",
+        "GC",
+        "JVM-memory",
+        "generations"
+      ]
+    },
+    {
+      "question_id": "java_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Design Pattern trong Java — Factory, Singleton, Builder?",
+      "options": {
+        "A": "Design patterns là Java-specific",
+        "B": "Factory: tạo objects không lộ creation logic. Singleton: 1 instance (double-checked locking hoặc enum). Builder: construct complex objects step-by-step",
+        "C": "Singleton luôn là best pattern",
+        "D": "Java 17 tích hợp tất cả design patterns"
+      },
+      "correct_answer": "B",
+      "explanation": "Singleton (thread-safe): enum Singleton { INSTANCE; } hoặc double-checked locking với volatile. Factory Method: abstract createProduct() → subclass decide. Abstract Factory: family of related objects. Builder: new Pizza.Builder().size(LARGE).cheese(true).pepperoni(true).build(). Observer: Spring ApplicationEvent. Strategy: sort algorithms, payment methods. Decorator: Java I/O streams. Proxy: Spring AOP. Prefer composition over inheritance. SOLID principles > design patterns.",
+      "source": "https://www.geeksforgeeks.org/java-design-patterns/",
+      "tags": [
+        "design-patterns",
+        "Singleton",
+        "Factory",
+        "Builder",
+        "Observer"
+      ]
+    },
+    {
+      "question_id": "java_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Java Optional — tại sao và cách dùng đúng?",
+      "options": {
+        "A": "Optional là wrapper không cần thiết",
+        "B": "Optional<T>: explicit nullable, thay thế null checks. Dùng: orElse, orElseGet, map, filter, ifPresent — KHÔNG dùng Optional.get() mà không isPresent()",
+        "C": "Optional chỉ dùng trong Stream",
+        "D": "Optional làm code chậm hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "Optional.of(value): not null. Optional.ofNullable(value): có thể null. Optional.empty(): no value. Usage: optional.map(User::getEmail).orElse('unknown'). optional.ifPresent(u -> sendEmail(u)). optional.orElseThrow(() -> new NotFoundException()). Antipattern: optional.get() không check → NoSuchElementException. optional.isPresent() + optional.get() = giống null check thường. Không dùng Optional làm field trong class (serialization issues). Dùng để return type cho repository methods.",
+      "source": "https://www.geeksforgeeks.org/java-8-optional-class/",
+      "tags": [
+        "Optional",
+        "null-safety",
+        "Java8",
+        "orElse",
+        "map"
+      ]
+    },
+    {
+      "question_id": "java_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Java app bị OutOfMemoryError: Java heap space. Debug thế nào?",
+      "options": {
+        "A": "Tăng -Xmx là đủ",
+        "B": "Heap dump analysis (jmap/VisualVM/Eclipse MAT), tìm memory leak (objects không được GC), fix root cause, tối ưu memory usage",
+        "C": "Restart JVM định kỳ",
+        "D": "Giảm số threads"
+      },
+      "correct_answer": "B",
+      "explanation": "OOM causes: (1) Memory leak: objects tham chiếu indefinitely (static lists, caches). (2) Large data loaded vào memory (pagination thay vì load all). (3) -Xmx quá nhỏ. Debug: jmap -dump:format=b,file=heap.hprof <pid>. Analyze với Eclipse MAT (Memory Analyzer Tool) hoặc VisualVM. Tìm: Retained Heap size, largest objects, reference chains. Enable OOM heap dump: -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/path. Fix: unregister listeners, use WeakReference, LRU cache, stream instead of collect all.",
+      "source": "https://www.geeksforgeeks.org/java-out-of-memory-error/",
+      "tags": [
+        "OutOfMemoryError",
+        "heap-dump",
+        "memory-leak",
+        "VisualVM",
+        "GC"
+      ]
+    },
+    {
+      "question_id": "java_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Java NullPointerException — phòng chống và debug?",
+      "options": {
+        "A": "try/catch NPE là đủ",
+        "B": "Java 14+ NullPointerException messages chỉ rõ variable nào null. Phòng chống: Optional, @NonNull/@Nullable, Objects.requireNonNull, fail-fast",
+        "C": "NPE không thể phòng chống",
+        "D": "Dùng null thường xuyên là OK"
+      },
+      "correct_answer": "B",
+      "explanation": "Java 14+ helpful NPE: 'Cannot read field \"name\" because \"user\" is null' — chỉ rõ variable. Phòng chống: (1) Optional<T> cho nullable returns. (2) @NonNull/@Nullable (Lombok, JSR-305). (3) Objects.requireNonNull(param, 'param must not be null') — fail-fast. (4) Default values: String name = user != null ? user.getName() : 'Unknown'. (5) Collections: return empty list thay vì null. (6) Null Object Pattern. Avoid: passing null parameters, returning null from methods, chaining without null check.",
+      "source": "https://www.geeksforgeeks.org/null-pointer-exception-in-java/",
+      "tags": [
+        "NullPointerException",
+        "Optional",
+        "NonNull",
+        "fail-fast",
+        "Java14"
+      ]
+    },
+    {
+      "question_id": "java_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Java backend đang serving 10k TPS. GC pauses 500ms gây latency spikes. Fix?",
+      "options": {
+        "A": "Tăng heap size",
+        "B": "Switch to low-latency GC (ZGC/Shenandoah), tune GC params, reduce object allocation, profile allocation hotspots, consider GC-free design",
+        "C": "Tăng thread pool size",
+        "D": "Restart service thường xuyên hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "GC pause investigation: jstat -gcutil <pid> 1000, GC logs (-Xlog:gc*). High pauses = Old gen full = long Major GC. Solutions: (1) ZGC (Java 15+ production ready): sub-millisecond pauses, good for large heaps. Enable: -XX:+UseZGC. (2) Shenandoah: similar to ZGC, RedHat contributed. (3) G1 tuning: -XX:MaxGCPauseMillis=200. (4) Allocation profiling: async-profiler (alloc mode) → find hotspot allocations → reduce object creation, use primitive arrays, pooling. (5) Off-heap: direct ByteBuffer, Netty pooled allocator for network buffers.",
+      "source": "https://www.geeksforgeeks.org/garbage-collection-in-java/",
+      "tags": [
+        "GC-tuning",
+        "ZGC",
+        "Shenandoah",
+        "latency",
+        "production"
+      ]
+    }
+  ]
+}

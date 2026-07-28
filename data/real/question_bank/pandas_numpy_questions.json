@@ -1,0 +1,218 @@
+{
+  "skill": "Pandas & NumPy",
+  "skill_key": "pandas_numpy",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.640243Z",
+  "source_references": [
+    "https://www.google.com/search?q=Pandas+&+NumPy+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "pandas_numpy_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Pandas & NumPy, NumPy arrays có vai trò gì?",
+      "options": {
+        "A": "NumPy arrays là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "NumPy arrays là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "NumPy arrays đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên NumPy arrays là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "NumPy arrays trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và NumPy arrays là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ NumPy arrays giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+NumPy+arrays+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "numpy-arrays"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Pandas & NumPy, Broadcasting có vai trò gì?",
+      "options": {
+        "A": "Broadcasting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Broadcasting là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Broadcasting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Broadcasting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Broadcasting trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Broadcasting là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Broadcasting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Broadcasting+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "broadcasting"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Pandas & NumPy, DataFrame operations có vai trò gì?",
+      "options": {
+        "A": "DataFrame operations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DataFrame operations là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DataFrame operations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DataFrame operations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DataFrame operations trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và DataFrame operations là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ DataFrame operations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+DataFrame+operations+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "dataframe-operations"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Pandas & NumPy, Indexing/Selection có vai trò gì?",
+      "options": {
+        "A": "Indexing/Selection là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Indexing/Selection là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Indexing/Selection đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Indexing/Selection là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Indexing/Selection trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Indexing/Selection là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Indexing/Selection giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Indexing/Selection+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "indexing-selection"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Pandas & NumPy, GroupBy/Aggregations có vai trò gì?",
+      "options": {
+        "A": "GroupBy/Aggregations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GroupBy/Aggregations là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GroupBy/Aggregations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GroupBy/Aggregations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GroupBy/Aggregations trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và GroupBy/Aggregations là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ GroupBy/Aggregations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+GroupBy/Aggregations+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "groupby-aggregations"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Pandas & NumPy, Merge/Join có vai trò gì?",
+      "options": {
+        "A": "Merge/Join là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Merge/Join là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Merge/Join đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Merge/Join là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Merge/Join trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Merge/Join là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Merge/Join giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Merge/Join+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "merge-join"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Pandas & NumPy, Time series có vai trò gì?",
+      "options": {
+        "A": "Time series là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Time series là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Time series đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Time series là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Time series trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Time series là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Time series giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Time+series+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "time-series"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Pandas & NumPy, Data cleaning có vai trò gì?",
+      "options": {
+        "A": "Data cleaning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data cleaning là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data cleaning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data cleaning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data cleaning trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Data cleaning là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Data cleaning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Data+cleaning+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "data-cleaning"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Pandas & NumPy, Visualization có vai trò gì?",
+      "options": {
+        "A": "Visualization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Visualization là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Visualization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Visualization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Visualization trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Visualization là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Visualization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Visualization+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "visualization"
+      ]
+    },
+    {
+      "question_id": "pandas_numpy_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Pandas & NumPy, Performance có vai trò gì?",
+      "options": {
+        "A": "Performance là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Performance là core concept trong Pandas & NumPy — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Performance đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Performance là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance trong Pandas & NumPy: Đây là một trong những concepts quan trọng nhất. Pandas & NumPy được sử dụng rộng rãi trong industry và Performance là phần không thể thiếu. Khi làm việc với Pandas & NumPy trong production, hiểu rõ Performance giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Pandas+&+NumPy+Performance+tutorial",
+      "tags": [
+        "pandas_numpy",
+        "ai/ml",
+        "performance"
+      ]
+    }
+  ]
+}

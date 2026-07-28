@@ -1,0 +1,80 @@
+{
+  "skill": "System Design",
+  "skill_key": "system_design",
+  "total_resources": 6,
+  "generated_at": "2026-06-12T01:37:31.883628",
+  "resources": [
+    {
+      "resource_id": "sysdes_r001",
+      "title": "System Design Primer (GitHub)",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "type": "reference",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate_to_advanced",
+      "rating": 5,
+      "description": "Best free system design resource, 230k+ stars, comprehensive",
+      "best_for": "Interview prep, deep understanding"
+    },
+    {
+      "resource_id": "sysdes_r002",
+      "title": "GeeksForGeeks System Design Tutorial",
+      "url": "https://www.geeksforgeeks.org/system-design/",
+      "type": "tutorial",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner_to_advanced",
+      "rating": 4,
+      "description": "System design từ fundamentals đến interview questions",
+      "best_for": "Structured learning"
+    },
+    {
+      "resource_id": "sysdes_r003",
+      "title": "freeCodeCamp System Design Articles",
+      "url": "https://www.freecodecamp.org/news/tag/system-design/",
+      "type": "articles",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate",
+      "rating": 4,
+      "description": "System design articles với real-world examples",
+      "best_for": "Specific topic deep dives"
+    },
+    {
+      "resource_id": "sysdes_r004",
+      "title": "High Scalability Blog",
+      "url": "http://highscalability.com/",
+      "type": "blog",
+      "is_free": true,
+      "language": "English",
+      "level": "advanced",
+      "rating": 5,
+      "description": "Real-world architecture từ các công ty lớn (Uber, Airbnb, Twitter)",
+      "best_for": "Learning from production systems"
+    },
+    {
+      "resource_id": "sysdes_r005",
+      "title": "ByteByteGo Newsletter",
+      "url": "https://blog.bytebytego.com/",
+      "type": "newsletter",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate",
+      "rating": 5,
+      "description": "System design concepts với visual diagrams, miễn phí tier",
+      "best_for": "Visual learners, interview prep"
+    },
+    {
+      "resource_id": "sysdes_r006",
+      "title": "Viblo System Design Articles",
+      "url": "https://viblo.asia/tags/system-design",
+      "type": "community",
+      "is_free": true,
+      "language": "Vietnamese",
+      "level": "intermediate",
+      "rating": 4,
+      "description": "System design tiếng Việt",
+      "best_for": "Vietnamese learners"
+    }
+  ]
+}

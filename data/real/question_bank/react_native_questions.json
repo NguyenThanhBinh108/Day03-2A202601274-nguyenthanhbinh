@@ -1,0 +1,218 @@
+{
+  "skill": "React Native",
+  "skill_key": "react_native",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.557936Z",
+  "source_references": [
+    "https://www.google.com/search?q=React+Native+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "react_native_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong React Native, Core components có vai trò gì?",
+      "options": {
+        "A": "Core components là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Core components là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Core components đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Core components là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Core components trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và Core components là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ Core components giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+Core+components+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "core-components"
+      ]
+    },
+    {
+      "question_id": "react_native_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong React Native, StyleSheet có vai trò gì?",
+      "options": {
+        "A": "StyleSheet là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "StyleSheet là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "StyleSheet đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên StyleSheet là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "StyleSheet trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và StyleSheet là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ StyleSheet giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+StyleSheet+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "stylesheet"
+      ]
+    },
+    {
+      "question_id": "react_native_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong React Native, React Navigation có vai trò gì?",
+      "options": {
+        "A": "React Navigation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "React Navigation là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "React Navigation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên React Navigation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "React Navigation trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và React Navigation là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ React Navigation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+React+Navigation+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "react-navigation"
+      ]
+    },
+    {
+      "question_id": "react_native_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong React Native, State management có vai trò gì?",
+      "options": {
+        "A": "State management là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "State management là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "State management đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên State management là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "State management trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và State management là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ State management giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+State+management+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "state-management"
+      ]
+    },
+    {
+      "question_id": "react_native_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong React Native, Native modules có vai trò gì?",
+      "options": {
+        "A": "Native modules là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Native modules là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Native modules đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Native modules là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Native modules trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và Native modules là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ Native modules giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+Native+modules+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "native-modules"
+      ]
+    },
+    {
+      "question_id": "react_native_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong React Native, Expo có vai trò gì?",
+      "options": {
+        "A": "Expo là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Expo là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Expo đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Expo là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Expo trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và Expo là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ Expo giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+Expo+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "expo"
+      ]
+    },
+    {
+      "question_id": "react_native_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong React Native, AsyncStorage có vai trò gì?",
+      "options": {
+        "A": "AsyncStorage là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "AsyncStorage là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "AsyncStorage đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên AsyncStorage là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "AsyncStorage trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và AsyncStorage là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ AsyncStorage giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+AsyncStorage+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "asyncstorage"
+      ]
+    },
+    {
+      "question_id": "react_native_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong React Native, Camera/media có vai trò gì?",
+      "options": {
+        "A": "Camera/media là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Camera/media là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Camera/media đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Camera/media là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Camera/media trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và Camera/media là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ Camera/media giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+Camera/media+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "camera-media"
+      ]
+    },
+    {
+      "question_id": "react_native_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong React Native, Push notifications có vai trò gì?",
+      "options": {
+        "A": "Push notifications là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Push notifications là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Push notifications đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Push notifications là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Push notifications trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và Push notifications là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ Push notifications giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+Push+notifications+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "push-notifications"
+      ]
+    },
+    {
+      "question_id": "react_native_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong React Native, App store deployment có vai trò gì?",
+      "options": {
+        "A": "App store deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "App store deployment là core concept trong React Native — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "App store deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên App store deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "App store deployment trong React Native: Đây là một trong những concepts quan trọng nhất. React Native được sử dụng rộng rãi trong industry và App store deployment là phần không thể thiếu. Khi làm việc với React Native trong production, hiểu rõ App store deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=React+Native+App+store+deployment+tutorial",
+      "tags": [
+        "react_native",
+        "mobile",
+        "app-store-deployment"
+      ]
+    }
+  ]
+}

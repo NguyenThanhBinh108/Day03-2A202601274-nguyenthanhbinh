@@ -1,0 +1,218 @@
+{
+  "skill": "Sass/SCSS",
+  "skill_key": "sass",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.518595Z",
+  "source_references": [
+    "https://www.google.com/search?q=Sass/SCSS+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "sass_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Sass/SCSS, Variables có vai trò gì?",
+      "options": {
+        "A": "Variables là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Variables là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Variables đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Variables là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Variables trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Variables là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Variables giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Variables+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "variables"
+      ]
+    },
+    {
+      "question_id": "sass_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Sass/SCSS, Nesting có vai trò gì?",
+      "options": {
+        "A": "Nesting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Nesting là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Nesting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Nesting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Nesting trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Nesting là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Nesting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Nesting+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "nesting"
+      ]
+    },
+    {
+      "question_id": "sass_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Sass/SCSS, Mixins có vai trò gì?",
+      "options": {
+        "A": "Mixins là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Mixins là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Mixins đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Mixins là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Mixins trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Mixins là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Mixins giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Mixins+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "mixins"
+      ]
+    },
+    {
+      "question_id": "sass_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Sass/SCSS, Functions có vai trò gì?",
+      "options": {
+        "A": "Functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Functions là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Functions trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Functions là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Functions+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "functions"
+      ]
+    },
+    {
+      "question_id": "sass_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Sass/SCSS, Extend có vai trò gì?",
+      "options": {
+        "A": "Extend là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Extend là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Extend đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Extend là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Extend trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Extend là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Extend giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Extend+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "extend"
+      ]
+    },
+    {
+      "question_id": "sass_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Sass/SCSS, Partials/Import có vai trò gì?",
+      "options": {
+        "A": "Partials/Import là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Partials/Import là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Partials/Import đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Partials/Import là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Partials/Import trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Partials/Import là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Partials/Import giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Partials/Import+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "partials-import"
+      ]
+    },
+    {
+      "question_id": "sass_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Sass/SCSS, Maps có vai trò gì?",
+      "options": {
+        "A": "Maps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Maps là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Maps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Maps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Maps trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Maps là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Maps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Maps+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "maps"
+      ]
+    },
+    {
+      "question_id": "sass_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Sass/SCSS, Operators có vai trò gì?",
+      "options": {
+        "A": "Operators là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Operators là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Operators đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Operators là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Operators trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và Operators là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ Operators giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+Operators+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "operators"
+      ]
+    },
+    {
+      "question_id": "sass_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Sass/SCSS, BEM methodology có vai trò gì?",
+      "options": {
+        "A": "BEM methodology là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "BEM methodology là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "BEM methodology đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên BEM methodology là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "BEM methodology trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và BEM methodology là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ BEM methodology giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+BEM+methodology+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "bem-methodology"
+      ]
+    },
+    {
+      "question_id": "sass_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Sass/SCSS, PostCSS integration có vai trò gì?",
+      "options": {
+        "A": "PostCSS integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "PostCSS integration là core concept trong Sass/SCSS — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "PostCSS integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên PostCSS integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "PostCSS integration trong Sass/SCSS: Đây là một trong những concepts quan trọng nhất. Sass/SCSS được sử dụng rộng rãi trong industry và PostCSS integration là phần không thể thiếu. Khi làm việc với Sass/SCSS trong production, hiểu rõ PostCSS integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Sass/SCSS+PostCSS+integration+tutorial",
+      "tags": [
+        "sass",
+        "frontend",
+        "postcss-integration"
+      ]
+    }
+  ]
+}

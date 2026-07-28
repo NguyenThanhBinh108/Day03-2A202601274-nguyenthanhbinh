@@ -1,0 +1,48 @@
+{
+  "skill": "Agile/Scrum",
+  "skill_key": "agile_scrum",
+  "total_resources": 4,
+  "generated_at": "2026-06-12T02:22:05.513262",
+  "resources": [
+    {
+      "resource_id": "agile_r001",
+      "title": "Scrum Guide (Free Official)",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official Scrum Guide, free"
+    },
+    {
+      "resource_id": "agile_r002",
+      "title": "GeeksForGeeks Agile Tutorial",
+      "url": "https://www.geeksforgeeks.org/agile-development-models/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "Agile và Scrum tutorial"
+    },
+    {
+      "resource_id": "agile_r003",
+      "title": "Atlassian Agile Coach",
+      "url": "https://www.atlassian.com/agile",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Comprehensive Agile resource từ Atlassian"
+    },
+    {
+      "resource_id": "agile_r004",
+      "title": "freeCodeCamp Agile Articles",
+      "url": "https://www.freecodecamp.org/news/tag/agile/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "Agile articles"
+    }
+  ]
+}

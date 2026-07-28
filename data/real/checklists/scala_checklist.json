@@ -1,0 +1,154 @@
+{
+  "skill": "Scala",
+  "skill_key": "scala",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.555413Z",
+  "checklist_items": [
+    {
+      "item_id": "scala_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Functional programming",
+      "description": "Master Functional programming trong Scala — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Scala+Functional+programming+tutorial",
+      "resource_title": "Scala — Functional programming",
+      "quiz_ids": [
+        "scala_l1_001"
+      ],
+      "market_relevance": "Functional programming là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Case classes",
+      "description": "Master Case classes trong Scala — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Scala+Case+classes+tutorial",
+      "resource_title": "Scala — Case classes",
+      "quiz_ids": [
+        "scala_l2_002"
+      ],
+      "market_relevance": "Case classes là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Pattern matching",
+      "description": "Master Pattern matching trong Scala — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Scala+Pattern+matching+tutorial",
+      "resource_title": "Scala — Pattern matching",
+      "quiz_ids": [
+        "scala_l3_003"
+      ],
+      "market_relevance": "Pattern matching là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Akka HTTP",
+      "description": "Master Akka HTTP trong Scala — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Scala+Akka+HTTP+tutorial",
+      "resource_title": "Scala — Akka HTTP",
+      "quiz_ids": [
+        "scala_l4_004"
+      ],
+      "market_relevance": "Akka HTTP là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Play Framework",
+      "description": "Master Play Framework trong Scala — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Scala+Play+Framework+tutorial",
+      "resource_title": "Scala — Play Framework",
+      "quiz_ids": [
+        "scala_l5_005"
+      ],
+      "market_relevance": "Play Framework là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Cats/ZIO",
+      "description": "Master Cats/ZIO trong Scala — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Scala+Cats/ZIO+tutorial",
+      "resource_title": "Scala — Cats/ZIO",
+      "quiz_ids": [
+        "scala_l5_006"
+      ],
+      "market_relevance": "Cats/ZIO là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Slick ORM",
+      "description": "Master Slick ORM trong Scala — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Scala+Slick+ORM+tutorial",
+      "resource_title": "Scala — Slick ORM",
+      "quiz_ids": [
+        "scala_l5_007"
+      ],
+      "market_relevance": "Slick ORM là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "SBT",
+      "description": "Master SBT trong Scala — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Scala+SBT+tutorial",
+      "resource_title": "Scala — SBT",
+      "quiz_ids": [
+        "scala_l5_008"
+      ],
+      "market_relevance": "SBT là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Kafka integration",
+      "description": "Master Kafka integration trong Scala — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Scala+Kafka+integration+tutorial",
+      "resource_title": "Scala — Kafka integration",
+      "quiz_ids": [
+        "scala_l5_009"
+      ],
+      "market_relevance": "Kafka integration là key skill trong Scala Backend development"
+    },
+    {
+      "item_id": "scala_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Deployment",
+      "description": "Master Deployment trong Scala — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Scala+Deployment+tutorial",
+      "resource_title": "Scala — Deployment",
+      "quiz_ids": [
+        "scala_l5_010"
+      ],
+      "market_relevance": "Deployment là key skill trong Scala Backend development"
+    }
+  ]
+}

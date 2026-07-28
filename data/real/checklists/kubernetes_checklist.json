@@ -1,0 +1,90 @@
+{
+  "skill": "Kubernetes",
+  "skill_key": "kubernetes",
+  "total_topics": 8,
+  "estimated_total_hours": 10.5,
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "checklist_items": [
+    {
+      "item_id": "k8s_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "K8s concepts — Pod, Deployment, Service",
+      "description": "kubectl basics, create/get/describe/delete, namespaces, labels, selectors",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/introduction-to-kubernetes/",
+      "resource_title": "GeeksForGeeks — Kubernetes Introduction"
+    },
+    {
+      "item_id": "k8s_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "ConfigMap, Secret, và Environment Variables",
+      "description": "Create and mount ConfigMaps/Secrets, envFrom, volume mount, External Secrets",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-configmap/",
+      "resource_title": "GeeksForGeeks — Kubernetes ConfigMap"
+    },
+    {
+      "item_id": "k8s_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "Health Checks và Rolling Updates",
+      "description": "liveness/readiness/startup probes, rolling update strategy, rollback, maxSurge/maxUnavailable",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-health-checks/",
+      "resource_title": "GeeksForGeeks — K8s Health Checks"
+    },
+    {
+      "item_id": "k8s_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Resources, Limits, và QoS",
+      "description": "requests/limits cho CPU/memory, QoS classes, LimitRange, ResourceQuota",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-resource-limits/",
+      "resource_title": "GeeksForGeeks — K8s Resource Limits"
+    },
+    {
+      "item_id": "k8s_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Ingress, Nginx Ingress, SSL",
+      "description": "Ingress resource, Nginx Ingress Controller, cert-manager, TLS termination, annotations",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-ingress/",
+      "resource_title": "GeeksForGeeks — Kubernetes Ingress",
+      "hands_on_task": "Setup domain routing với Nginx Ingress + SSL từ Let's Encrypt"
+    },
+    {
+      "item_id": "k8s_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Persistent Volumes và Stateful Apps",
+      "description": "PV/PVC, StorageClass, StatefulSet, ReadWriteOnce/ReadWriteMany, volume expansion",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-volumes/",
+      "resource_title": "GeeksForGeeks — K8s Volumes"
+    },
+    {
+      "item_id": "k8s_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Autoscaling — HPA, VPA, KEDA",
+      "description": "HPA với Metrics Server, VPA, KEDA cho custom metrics, Cluster Autoscaler",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/kubernetes-horizontal-pod-autoscaling/",
+      "resource_title": "GeeksForGeeks — K8s HPA"
+    },
+    {
+      "item_id": "k8s_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Helm Charts và GitOps",
+      "description": "Helm chart structure, values.yaml, install/upgrade/rollback, ArgoCD GitOps workflow",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/helm-in-kubernetes/",
+      "resource_title": "GeeksForGeeks — Helm in Kubernetes"
+    }
+  ]
+}

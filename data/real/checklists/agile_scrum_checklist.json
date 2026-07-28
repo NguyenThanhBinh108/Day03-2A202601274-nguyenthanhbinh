@@ -1,0 +1,69 @@
+{
+  "skill": "Agile/Scrum",
+  "skill_key": "agile_scrum",
+  "total_topics": 6,
+  "estimated_total_hours": 5.5,
+  "generated_at": "2026-06-12T02:22:05.511523",
+  "checklist_items": [
+    {
+      "item_id": "agile_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Agile principles và Scrum framework",
+      "description": "Agile manifesto, Scrum roles/events/artifacts, Kanban basics, Jira/Trello setup",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/agile-development-models/",
+      "resource_title": "GeeksForGeeks — Agile Development"
+    },
+    {
+      "item_id": "agile_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "User Stories và Acceptance Criteria",
+      "description": "User story format, INVEST, AC với Given-When-Then, story splitting techniques",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/user-story-in-agile/",
+      "resource_title": "GeeksForGeeks — User Story"
+    },
+    {
+      "item_id": "agile_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "Sprint Ceremonies và Facilitation",
+      "description": "Planning, Daily Scrum, Review, Retrospective — facilitate effectively, anti-patterns",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/scrum-ceremonies/",
+      "resource_title": "GeeksForGeeks — Scrum Ceremonies"
+    },
+    {
+      "item_id": "agile_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Backlog Management và Estimation",
+      "description": "Backlog refinement, Planning Poker, velocity, capacity planning, story splitting",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/agile-estimation/",
+      "resource_title": "GeeksForGeeks — Agile Estimation"
+    },
+    {
+      "item_id": "agile_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Agile Metrics và Reporting",
+      "description": "Velocity, burndown/burnup charts, cycle time, lead time, team health metrics",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/agile-metrics/",
+      "resource_title": "GeeksForGeeks — Agile Metrics"
+    },
+    {
+      "item_id": "agile_c006",
+      "order": 6,
+      "phase": "advanced",
+      "title": "Scaled Agile — SAFe, LeSS, Nexus",
+      "description": "Multi-team coordination, PI Planning, Program Increment, Scrum of Scrums",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/scaled-agile-framework/",
+      "resource_title": "GeeksForGeeks — SAFe"
+    }
+  ]
+}

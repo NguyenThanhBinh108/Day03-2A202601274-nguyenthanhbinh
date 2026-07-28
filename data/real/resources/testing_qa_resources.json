@@ -1,0 +1,58 @@
+{
+  "skill": "Testing QA",
+  "skill_key": "testing_qa",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.508096",
+  "resources": [
+    {
+      "resource_id": "qa_r001",
+      "title": "freeCodeCamp Testing Articles",
+      "url": "https://www.freecodecamp.org/news/tag/testing/",
+      "type": "articles",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Comprehensive testing articles"
+    },
+    {
+      "resource_id": "qa_r002",
+      "title": "GeeksForGeeks Software Testing",
+      "url": "https://www.geeksforgeeks.org/software-testing-basics/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "Software testing từ cơ bản"
+    },
+    {
+      "resource_id": "qa_r003",
+      "title": "Playwright Official Docs",
+      "url": "https://playwright.dev/docs/intro",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 5,
+      "description": "E2E testing với Playwright"
+    },
+    {
+      "resource_id": "qa_r004",
+      "title": "k6 Documentation",
+      "url": "https://k6.io/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 5,
+      "description": "Performance testing với k6"
+    },
+    {
+      "resource_id": "qa_r005",
+      "title": "OWASP Testing Guide",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "advanced",
+      "rating": 5,
+      "description": "Security testing guide"
+    }
+  ]
+}

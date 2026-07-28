@@ -1,0 +1,561 @@
+{
+  "skill": "Git",
+  "skill_key": "git",
+  "total_questions": 26,
+  "levels": {
+    "1_beginner": 6,
+    "2_understanding": 6,
+    "3_application": 6,
+    "4_debugging": 6,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T01:12:32.394506",
+  "source_references": [
+    "https://www.w3schools.com/git/",
+    "https://git-scm.com/book/en/v2",
+    "https://www.geeksforgeeks.org/git-tutorial/",
+    "https://www.freecodecamp.org/news/tag/git/"
+  ],
+  "questions": [
+    {
+      "question_id": "git_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Git là gì và tại sao cần dùng version control?",
+      "options": {
+        "A": "Git là một cloud storage như Google Drive",
+        "B": "Distributed version control system — track changes, collaboration, branching/merging, history, rollback",
+        "C": "Git chỉ dùng cho source code, không dùng cho documents",
+        "D": "Git là bắt buộc chỉ cho open source"
+      },
+      "correct_answer": "B",
+      "explanation": "Git: distributed VCS (mỗi developer có copy đầy đủ của repo). Không phải centralized (SVN: 1 server). Lợi ích: (1) History toàn bộ changes với context (ai, khi nào, tại sao). (2) Branching: làm tính năng mới mà không ảnh hưởng main. (3) Rollback: quay lại version bất kỳ. (4) Collaboration: nhiều người làm cùng project không conflict. (5) Backup: distributed = nhiều copies.",
+      "source": "https://www.w3schools.com/git/git_intro.asp",
+      "tags": [
+        "git",
+        "VCS",
+        "basics"
+      ]
+    },
+    {
+      "question_id": "git_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Sự khác biệt giữa git add, git commit, và git push?",
+      "options": {
+        "A": "Cả ba đều làm cùng một việc",
+        "B": "add: staging area; commit: lưu vào local repo với message; push: gửi commits lên remote repo",
+        "C": "commit gửi lên server ngay",
+        "D": "push lưu vào local"
+      },
+      "correct_answer": "B",
+      "explanation": "Git workflow: Working Directory → (git add) → Staging Area → (git commit) → Local Repository → (git push) → Remote Repository. git add file.txt: thêm file vào staging (prepare để commit). git add .: thêm tất cả changes. git commit -m 'message': tạo snapshot trong local repo. git push origin main: gửi local commits lên remote. Tại sao có staging? Cho phép chọn chính xác những gì muốn commit (không phải tất cả changes).",
+      "source": "https://www.w3schools.com/git/git_staging_environment.asp",
+      "tags": [
+        "add",
+        "commit",
+        "push",
+        "workflow"
+      ]
+    },
+    {
+      "question_id": "git_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Branch trong Git là gì và tại sao dùng?",
+      "options": {
+        "A": "Branch là backup của repo",
+        "B": "Branch là pointer đến commit, cho phép phát triển song song mà không ảnh hưởng nhánh khác",
+        "C": "Branch chỉ dùng cho team lớn",
+        "D": "Branch là tên khác của remote repo"
+      },
+      "correct_answer": "B",
+      "explanation": "Branch = lightweight, movable pointer đến commit. git branch feature/login: tạo branch mới. git checkout feature/login (hoặc git switch feature/login): chuyển branch. git checkout -b feature/login: tạo và chuyển cùng lúc. Tại sao: develop feature mới không ảnh hưởng main/production, code review qua PR, hotfix nhanh. Git flow: main (production), develop, feature/, hotfix/, release/.",
+      "source": "https://www.w3schools.com/git/git_branch.asp",
+      "tags": [
+        "branch",
+        "workflow",
+        "basics"
+      ]
+    },
+    {
+      "question_id": "git_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "git clone, git pull, và git fetch khác nhau thế nào?",
+      "options": {
+        "A": "Cả ba đều giống nhau",
+        "B": "clone: copy toàn bộ repo về local; fetch: download changes từ remote nhưng không merge; pull = fetch + merge",
+        "C": "pull an toàn hơn fetch",
+        "D": "fetch chỉ download metadata"
+      },
+      "correct_answer": "B",
+      "explanation": "git clone URL: copy remote repo về local (lần đầu). git fetch origin: download changes từ remote vào remote-tracking branches (origin/main) nhưng KHÔNG thay đổi working directory. git pull: fetch + merge (hoặc rebase nếu config). Tại sao fetch before merge: kiểm tra changes trước khi apply. git pull --rebase: thay vì merge commit, rebase local commits lên trên remote changes → history clean hơn.",
+      "source": "https://www.w3schools.com/git/git_pull.asp",
+      "tags": [
+        "clone",
+        "pull",
+        "fetch",
+        "remote"
+      ]
+    },
+    {
+      "question_id": "git_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "git log và git status cho biết thông tin gì?",
+      "options": {
+        "A": "Chỉ show tên files",
+        "B": "status: working tree changes (modified/staged/untracked); log: commit history (hash, author, date, message)",
+        "C": "Cả hai đều show logs của server",
+        "D": "log show errors chỉ"
+      },
+      "correct_answer": "B",
+      "explanation": "git status: xem staged/unstaged/untracked files. git log: history commits với SHA hash, author, date, message. git log --oneline: compact view. git log --graph --all --oneline: visual branch graph. git log -p: show diff của mỗi commit. git log --author='Name': filter theo author. git log --since='2 weeks ago': filter theo thời gian. git show COMMIT_HASH: xem chi tiết 1 commit.",
+      "source": "https://www.w3schools.com/git/git_log.asp",
+      "tags": [
+        "log",
+        "status",
+        "history"
+      ]
+    },
+    {
+      "question_id": "git_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": ".gitignore file dùng để làm gì?",
+      "options": {
+        "A": "Ignore git commands",
+        "B": "Liệt kê files/directories không muốn track bởi git (node_modules, .env, build artifacts, IDE configs)",
+        "C": "Chỉ ignore binary files",
+        "D": "Xóa files khỏi repo"
+      },
+      "correct_answer": "B",
+      "explanation": ".gitignore: Git không track các files/patterns được liệt kê. Cú pháp: *.log (mọi .log), node_modules/ (folder), !important.log (exception), /build (chỉ root build). Template tại gitignore.io. Phổ biến: node_modules/, .env, .DS_Store, __pycache__/, *.pyc, .idea/, .vscode/, dist/, build/. Lưu ý: file đã commit trước đó không bị affect bởi .gitignore sau này → phải git rm --cached file.",
+      "source": "https://www.w3schools.com/git/git_ignore.asp",
+      "tags": [
+        "gitignore",
+        "workflow",
+        "basics"
+      ]
+    },
+    {
+      "question_id": "git_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "git merge và git rebase khác nhau về history thế nào?",
+      "options": {
+        "A": "Cả hai giống hệt nhau",
+        "B": "merge: tạo merge commit, preserve history; rebase: move/replay commits lên base mới → history tuyến tính nhưng rewrite history",
+        "C": "rebase an toàn hơn merge",
+        "D": "merge chỉ dùng cho main branch"
+      },
+      "correct_answer": "B",
+      "explanation": "Merge: git merge feature → tạo merge commit (M) gộp 2 branches. History: thấy rõ khi nào branch và merge. Rebase: git rebase main → move feature commits lên đầu main → history tuyến tính như feature được develop từ HEAD của main. Golden rule: KHÔNG rebase public/shared branches (rewrite history → force push → team conflict). Dùng rebase cho: local feature branch trước khi merge, interactive rebase để squash commits trước PR.",
+      "source": "https://www.geeksforgeeks.org/git-rebase/",
+      "tags": [
+        "merge",
+        "rebase",
+        "history",
+        "workflow"
+      ]
+    },
+    {
+      "question_id": "git_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "git stash dùng khi nào và cách dùng?",
+      "options": {
+        "A": "Stash xóa vĩnh viễn changes",
+        "B": "Tạm thời lưu changes chưa commit để switch context; git stash → switch branch → làm việc → quay lại → git stash pop",
+        "C": "Stash đồng bộ với remote",
+        "D": "Chỉ stash staged changes"
+      },
+      "correct_answer": "B",
+      "explanation": "Tình huống: đang làm feature, urgent bug trên main → cần switch branch ngay. git stash: lưu working directory + staged changes vào stash stack, working directory clean. git stash pop: áp dụng stash gần nhất và xóa khỏi stack. git stash apply: áp dụng nhưng giữ trong stack. git stash list: xem tất cả stashes. git stash save 'message': đặt tên cho stash. git stash drop stash@{0}: xóa specific stash. git stash branch feature/name: tạo branch từ stash.",
+      "source": "https://www.geeksforgeeks.org/git-stash/",
+      "tags": [
+        "stash",
+        "workflow",
+        "context-switching"
+      ]
+    },
+    {
+      "question_id": "git_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "git cherry-pick dùng để làm gì?",
+      "options": {
+        "A": "Chọn files để commit",
+        "B": "Apply specific commit(s) từ branch này sang branch khác mà không merge toàn bộ branch",
+        "C": "Chọn changes để revert",
+        "D": "Cherry-pick branch khác vào local"
+      },
+      "correct_answer": "B",
+      "explanation": "Tình huống: feature branch có 10 commits, chỉ cần apply 1 commit cụ thể vào main (ví dụ: hotfix đã làm trên feature). git cherry-pick COMMIT_HASH: copy commit lên current branch (tạo commit mới với content giống nhau, SHA mới). git cherry-pick A..B: range of commits. Conflict có thể xảy ra, resolve như bình thường. Use cases: hotfix apply cho nhiều branches, backport fix, cherry-pick specific fix cho stable release.",
+      "source": "https://www.geeksforgeeks.org/git-cherry-pick/",
+      "tags": [
+        "cherry-pick",
+        "workflow",
+        "commit"
+      ]
+    },
+    {
+      "question_id": "git_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "git reset, git revert, git checkout — khi nào dùng cái nào để undo changes?",
+      "options": {
+        "A": "Cả ba đều giống nhau",
+        "B": "reset: thay đổi HEAD (có thể mất commits, --soft/--mixed/--hard); revert: tạo commit mới undo previous (safe); checkout file: discard working directory changes",
+        "C": "chỉ dùng revert là đủ",
+        "D": "reset là cách an toàn nhất"
+      },
+      "correct_answer": "B",
+      "explanation": "git reset --soft HEAD~1: undo commit, giữ changes trong staging. --mixed (default): undo commit + unstage, giữ changes trong working dir. --hard: undo commit + discard all changes (NGUY HIỂM, khó recover). git revert HASH: tạo commit mới undo changes của commit đó — SAFE vì không rewrite history (dùng cho public commits). git checkout -- file.txt (hoặc git restore file.txt): discard working directory changes cho file (không recover được). git reflog: thần chú để recover sau reset --hard nhầm.",
+      "source": "https://www.geeksforgeeks.org/git-difference-between-git-revert-checkout-and-reset/",
+      "tags": [
+        "reset",
+        "revert",
+        "checkout",
+        "undo"
+      ]
+    },
+    {
+      "question_id": "git_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "Git workflow nào phổ biến nhất tại công ty IT Việt Nam?",
+      "options": {
+        "A": "Chỉ commit thẳng vào main là đủ",
+        "B": "GitHub Flow (feature branch + PR) cho most teams; Git Flow cho release-based products; trunk-based với feature flags cho high-velocity teams",
+        "C": "SVN flow",
+        "D": "Chỉ có 1 workflow duy nhất"
+      },
+      "correct_answer": "B",
+      "explanation": "GitHub Flow (phổ biến nhất VN): main + feature branches + Pull Request. Steps: create branch → commit → push → PR → review → merge → deploy. Git Flow: main + develop + feature/* + release/* + hotfix/*. Phức tạp hơn, tốt cho versioned software releases. Trunk-based: commit thẳng vào main (hoặc short-lived branches <1 day) với feature flags. Phổ biến ở Google, Facebook. Conventional Commits: feat:, fix:, docs:, chore: trong commit message → tự generate changelog.",
+      "source": "https://www.geeksforgeeks.org/branching-strategies-in-git/",
+      "tags": [
+        "workflow",
+        "GitHub-flow",
+        "Git-flow",
+        "branching"
+      ]
+    },
+    {
+      "question_id": "git_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "Squash commits trong Pull Request tại sao và cách làm?",
+      "options": {
+        "A": "Squash xóa commit history",
+        "B": "Gộp nhiều WIP commits thành 1 logical commit có message rõ ràng trước khi merge → clean history",
+        "C": "Squash chỉ dùng cho hotfix",
+        "D": "Squash tự động sau merge"
+      },
+      "correct_answer": "B",
+      "explanation": "Trước khi merge PR: feature branch có 20 commits (WIP, fix typo, fix again...). Squash → 1 commit với message chuẩn. Cách: (1) GitHub: merge PR với 'Squash and merge' option. (2) Interactive rebase: git rebase -i HEAD~10 → đổi 'pick' → 'squash' cho commits muốn gộp. (3) Soft reset + commit: git reset --soft main; git commit -m 'feature: add user auth'. Lợi ích: git bisect hoạt động tốt hơn với atomic commits, git log --oneline clean hơn, blame rõ ràng hơn.",
+      "source": "https://www.geeksforgeeks.org/git-squash/",
+      "tags": [
+        "squash",
+        "rebase",
+        "PR",
+        "clean-history"
+      ]
+    },
+    {
+      "question_id": "git_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Cách setup git hooks để enforce commit message format và run tests trước khi commit?",
+      "options": {
+        "A": "Git hooks không thể customize",
+        "B": "pre-commit hook: run tests/linting; commit-msg hook: validate format; dùng husky + lint-staged cho Node.js projects",
+        "C": "Chỉ CI có thể enforce rules",
+        "D": "Dùng .gitconfig để config"
+      },
+      "correct_answer": "B",
+      "explanation": ".git/hooks/: hook scripts (pre-commit, commit-msg, pre-push, post-merge...). pre-commit: run linting, tests. commit-msg: validate format (feat/fix/docs...). Dùng Husky (Node.js): npx husky init; .husky/pre-commit: npx lint-staged. lint-staged: chỉ run linting trên staged files (nhanh hơn toàn bộ project). commitlint: enforce Conventional Commits format. Python: pre-commit framework (pre-commit.com). Không dùng husky: copy script vào .git/hooks/ thủ công (không share được với team qua git).",
+      "source": "https://www.geeksforgeeks.org/git-hooks/",
+      "tags": [
+        "hooks",
+        "pre-commit",
+        "husky",
+        "workflow"
+      ]
+    },
+    {
+      "question_id": "git_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Resolve merge conflict đúng cách trong team project?",
+      "options": {
+        "A": "Accept tất cả 'ours' hoặc 'theirs'",
+        "B": "Pull latest main → rebase/merge → open conflicted files → understand both changes → resolve logically → stage → continue",
+        "C": "Delete conflicting files và rewrite",
+        "D": "Conflict không xảy ra nếu team nhỏ"
+      },
+      "correct_answer": "B",
+      "explanation": "Conflict markers: <<<<<<< HEAD (your changes) ======= (separator) >>>>>>> branch-name (incoming). Steps: (1) Đọc BOTH sides trước khi quyết định. (2) Discuss với người tạo conflict nếu không chắc. (3) Edit file để giữ đúng logic (có thể combine cả hai). (4) Xóa conflict markers. (5) git add file; git merge --continue hoặc git rebase --continue. Tools: VS Code (built-in), IntelliJ (3-way merge), git mergetool (vimdiff). Tránh conflict: communicate, pull frequently, small PRs, không sửa cùng file với nhiều người.",
+      "source": "https://www.geeksforgeeks.org/merge-conflicts-and-how-to-handle-them/",
+      "tags": [
+        "conflict",
+        "merge",
+        "teamwork",
+        "resolution"
+      ]
+    },
+    {
+      "question_id": "git_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "git bisect dùng để làm gì trong debugging?",
+      "options": {
+        "A": "Bisect tách branch thành 2 phần",
+        "B": "Binary search qua commit history để tìm commit đầu tiên gây ra bug — O(log n) commits cần check",
+        "C": "Chỉ dùng với even number of commits",
+        "D": "Bisect so sánh 2 branches"
+      },
+      "correct_answer": "B",
+      "explanation": "Tình huống: feature worked 2 weeks ago, broken now, 200 commits ở giữa. git bisect start; git bisect bad (current commit là bad); git bisect good v1.0 (commit/tag biết là good). Git checkout commit ở giữa → test → git bisect good/bad → repeat. Binary search: 200 commits → ~8 iterations. git bisect run pytest: tự động run test script. Kết quả: first bad commit rõ ràng. Reset: git bisect reset. Thực tế VN: ít người biết dùng, nhưng cực hữu ích khi regression bug phức tạp.",
+      "source": "https://www.geeksforgeeks.org/git-bisect/",
+      "tags": [
+        "bisect",
+        "debugging",
+        "binary-search",
+        "regression"
+      ]
+    },
+    {
+      "question_id": "git_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Cách viết commit message tốt theo Conventional Commits?",
+      "options": {
+        "A": "Commit message không quan trọng",
+        "B": "type(scope): subject — type: feat/fix/docs/style/refactor/test/chore; body: tại sao; footer: BREAKING CHANGE, closes #issue",
+        "C": "Chỉ cần message ngắn gọn",
+        "D": "Phải viết bằng tiếng Anh mới hợp lệ"
+      },
+      "correct_answer": "B",
+      "explanation": "Conventional Commits: feat: add user registration. fix(auth): resolve JWT expiry issue. docs: update API documentation. feat!: redesign checkout flow (! = breaking change). Body (optional): tại sao change, không phải cái gì. Footer: BREAKING CHANGE: old API removed; Closes #123. Lợi ích: tự generate CHANGELOG, semantic versioning tự động (feat=minor, fix=patch, breaking=major), dễ đọc git log --oneline, searchable. Tool: commitizen (CLI helper), commitlint (validation).",
+      "source": "https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/",
+      "tags": [
+        "commit-message",
+        "conventional-commits",
+        "best-practices"
+      ]
+    },
+    {
+      "question_id": "git_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "git reflog cứu bạn thế nào khi git reset --hard nhầm?",
+      "options": {
+        "A": "reflog không thể recover deleted commits",
+        "B": "reflog track mọi HEAD movement — ngay cả commits đã 'mất' vẫn có thể recover bằng git checkout hoặc git reset --hard REFLOG_HASH",
+        "C": "reflog chỉ work trong 1 giờ",
+        "D": "reflog chỉ show remote changes"
+      },
+      "correct_answer": "B",
+      "explanation": "git reflog: show lịch sử của mọi HEAD movement (commit, checkout, reset, merge, rebase...). Commits đã bị 'mất' sau reset --hard vẫn còn trong objects store (~90 days trước khi GC). git reflog → tìm hash của commit cần recover → git checkout HASH (xem) hoặc git reset --hard HASH (recover). git fsck --lost-found: tìm dangling commits. Bài học: KHÔNG dùng --force-push lên public branches (rewrite remote history → team conflict, commits lost).",
+      "source": "https://www.geeksforgeeks.org/git-reflog/",
+      "tags": [
+        "reflog",
+        "recovery",
+        "reset",
+        "emergency"
+      ]
+    },
+    {
+      "question_id": "git_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Large files và binary files trong Git gây ra vấn đề gì và cách giải quyết?",
+      "options": {
+        "A": "Git handle tốt mọi file size",
+        "B": "Binary/large files: mỗi version lưu full copy → repo size tăng nhanh. Fix: .gitignore + Git LFS (Large File Storage) cho binary assets",
+        "C": "Chỉ cần .gitignore là đủ",
+        "D": "Dùng git compress để giải quyết"
+      },
+      "correct_answer": "B",
+      "explanation": "Vấn đề: Git lưu TOÀN BỘ content của mỗi version, không chỉ diff (binary files không diff được). 1 video 100MB, 10 versions = 1GB trong .git. Git LFS (Large File Storage): thay thế binary files bằng text pointers trong Git repo, actual content lưu trên LFS server. git lfs track '*.psd'; git lfs track '*.mp4'. Giới hạn GitHub: 100MB/file, 1GB free LFS. Alternative: không commit binary/data files (dùng cloud storage), gitignore model weights (ML projects), DVC (Data Version Control) cho ML datasets.",
+      "source": "https://www.geeksforgeeks.org/git-lfs/",
+      "tags": [
+        "LFS",
+        "binary-files",
+        "repo-size",
+        "performance"
+      ]
+    },
+    {
+      "question_id": "git_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "git push bị rejected với 'non-fast-forward'. Nguyên nhân và cách xử lý đúng?",
+      "options": {
+        "A": "Dùng git push --force để fix",
+        "B": "Remote có commits mà local không có; pull (fetch + merge/rebase) trước, resolve conflicts, rồi push",
+        "C": "Xóa remote branch và push lại",
+        "D": "Luôn dùng --force-with-lease"
+      },
+      "correct_answer": "B",
+      "explanation": "Non-fast-forward: remote branch đã tiến lên (người khác push) trong khi bạn cũng commit local. Remote không thể fast-forward vì lịch sử đã phân kỳ. Fix đúng: git pull origin main (hoặc git fetch; git rebase origin/main) → resolve conflicts → git push. git push --force: NGUY HIỂM trên shared branches — overwrite remote history, mất commits của người khác. git push --force-with-lease: safer, chỉ force nếu remote vẫn ở trạng thái bạn expect (không có commits mới). --force-with-lease cho phép rewrite local history (sau rebase) mà không risk overwrite người khác.",
+      "source": "https://www.geeksforgeeks.org/common-git-errors-and-how-to-fix-them/",
+      "tags": [
+        "push",
+        "non-fast-forward",
+        "force-push",
+        "conflict"
+      ]
+    },
+    {
+      "question_id": "git_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Detached HEAD state trong Git là gì và cách thoát ra?",
+      "options": {
+        "A": "Git bị lỗi, cần reinstall",
+        "B": "HEAD trỏ trực tiếp đến commit hash thay vì branch name — commits mới không thuộc branch nào, có thể 'mất' khi checkout branch khác",
+        "C": "Chỉ xảy ra khi network lỗi",
+        "D": "HEAD detached = HEAD đang ở đầu branch"
+      },
+      "correct_answer": "B",
+      "explanation": "Detached HEAD: xảy ra khi git checkout COMMIT_HASH, git checkout tag, git bisect. Bạn có thể commit nhưng commits không thuộc branch nào. Khi checkout branch khác → commits 'orphaned' (GC sẽ xóa sau ~90 days). Cách xử lý: muốn giữ commits → git branch new-feature-branch (tạo branch từ HEAD hiện tại). Không cần commits → git checkout main (về main, commits sẽ bị orphaned). Phòng ngừa: dùng tags thay vì commit hash khi cần reference specific point.",
+      "source": "https://www.geeksforgeeks.org/git-detached-head/",
+      "tags": [
+        "detached-HEAD",
+        "checkout",
+        "branch",
+        "recovery"
+      ]
+    },
+    {
+      "question_id": "git_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tìm author của một dòng code cụ thể (debugging/blame) trong Git thế nào?",
+      "options": {
+        "A": "Đọc toàn bộ git log",
+        "B": "git blame file.py: show author và commit của mỗi dòng; git log -S 'code snippet': tìm commits thêm/xóa code cụ thể",
+        "C": "Hỏi team",
+        "D": "Chỉ xem trên GitHub"
+      },
+      "correct_answer": "B",
+      "explanation": "git blame file.py: show từng dòng với commit hash, author, timestamp. git blame -L 10,20 file.py: chỉ dòng 10-20. GitHub UI: blame button. VS Code: GitLens extension (inline blame). git log -S 'function_name': pickaxe search — tìm commits thêm/xóa string cụ thể trong diff. git log -G 'regex': search bằng regex. Tình huống thực tế: tìm ai introduce bug, hỏi context của quyết định thiết kế, code archaeology. Không dùng blame để 'blame' người — dùng để understand context.",
+      "source": "https://www.geeksforgeeks.org/git-blame/",
+      "tags": [
+        "blame",
+        "log",
+        "search",
+        "debugging"
+      ]
+    },
+    {
+      "question_id": "git_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "Rebase tương tác (interactive rebase) dùng để làm gì trong practice?",
+      "options": {
+        "A": "Merge nhiều branches cùng lúc",
+        "B": "Chỉnh sửa, xóa, squash, reorder, split commits trong history trước khi share — dọn dẹp feature branch trước khi PR",
+        "C": "Chỉ dùng để squash commits",
+        "D": "Rebase tương tác là nguy hiểm và không nên dùng"
+      },
+      "correct_answer": "B",
+      "explanation": "git rebase -i HEAD~5: interactive rebase 5 commits cuối. Editor mở với list commits. Actions: pick (giữ nguyên), reword (đổi message), edit (pause để amend), squash (gộp vào trước, keep message), fixup (gộp, discard message), drop (xóa commit). Use cases: squash WIP commits trước PR, fix typo trong commit message (reword), split large commit (edit), reorder commits cho logical flow. Không làm trên shared commits sau khi push (rewrite history = force push cần thiết).",
+      "source": "https://www.geeksforgeeks.org/git-interactive-rebase/",
+      "tags": [
+        "interactive-rebase",
+        "squash",
+        "history-rewriting",
+        "workflow"
+      ]
+    },
+    {
+      "question_id": "git_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Git submodule và git subtree khác nhau thế nào? Khi nào dùng?",
+      "options": {
+        "A": "Cả hai giống nhau, chỉ khác tên",
+        "B": "Submodule: reference đến external repo (phức tạp hơn, cần init/update riêng); subtree: merge external repo vào, simpler workflow",
+        "C": "Subtree chỉ cho monorepo",
+        "D": "Chỉ dùng npm packages, không dùng git submodule"
+      },
+      "correct_answer": "B",
+      "explanation": "Submodule: external repo là separate entity, .gitmodules file tracking. git submodule add URL path; git submodule update --init --recursive. Vấn đề: developer hay quên chạy submodule update → nhầm version → bugs. Subtree: merge external repo vào subdirectory, lịch sử được include. git subtree add --prefix=vendor/lib URL main. Simpler: chỉ cần normal git commands, không cần init riêng. Khi dùng submodule: shared libraries across many repos cần version control riêng. Khi dùng subtree: copy code, muốn simple workflow. Alternative hiện đại: git sparse-checkout, nx monorepo, Turborepo.",
+      "source": "https://www.geeksforgeeks.org/git-submodule/",
+      "tags": [
+        "submodule",
+        "subtree",
+        "monorepo",
+        "dependency"
+      ]
+    },
+    {
+      "question_id": "git_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao git commit --amend nguy hiểm nếu commit đã được push?",
+      "options": {
+        "A": "amend không cho phép sau khi push",
+        "B": "amend rewrite commit (SHA mới), push cần --force, overwrite remote → team members đang base on old SHA sẽ conflict",
+        "C": "amend chỉ đổi message, không ảnh hưởng code",
+        "D": "push --force-with-lease giải quyết hoàn toàn"
+      },
+      "correct_answer": "B",
+      "explanation": "git commit --amend: tạo commit MỚI với SHA khác (replace last commit). Nếu chưa push: hoàn toàn OK. Nếu đã push lên shared branch: remote có SHA_old, local có SHA_new. Push bình thường → rejected (non-fast-forward). Push --force → overwrite SHA_old trên remote → team đang làm việc với SHA_old → conflict khi họ pull. Best practice: amend chỉ trước khi push. Sau khi push shared branch: dùng git revert thay thế. Nếu personal branch (chỉ mình dùng): --force-with-lease là OK.",
+      "source": "https://www.geeksforgeeks.org/git-amend/",
+      "tags": [
+        "amend",
+        "force-push",
+        "history-rewriting",
+        "teamwork"
+      ]
+    },
+    {
+      "question_id": "git_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Team 20 người, production bị broken sau merge. git bisect cho thấy commit của dev A introduce bug. Quy trình xử lý?",
+      "options": {
+        "A": "Blame dev A và yêu cầu fix ngay",
+        "B": "Revert commit về main (git revert), deploy fix, sau đó blameless postmortem để cải thiện process (test coverage, PR review, staging env)",
+        "C": "Rollback toàn bộ production database",
+        "D": "Yêu cầu dev A nghỉ phép"
+      },
+      "correct_answer": "B",
+      "explanation": "Production incident process: (1) Immediate: git revert COMMIT_HASH → PR → merge → deploy (nhanh hơn fix vì chỉ undo, không phải debug). (2) Communicate: notify stakeholders về incident và ETA fix. (3) Postmortem (blameless): không blame người — tìm systemic failure. Tại sao bug không bị catch? Thiếu test? Test không cover case này? Code review không đủ kỹ? Staging env không giống production? (4) Action items: thêm test cho case này, cải thiện PR checklist, deploy staging first policy. Blameless culture: người sợ blame sẽ không report incidents sớm.",
+      "source": "https://www.freecodecamp.org/news/git-best-practices/",
+      "tags": [
+        "incident",
+        "revert",
+        "blameless",
+        "production",
+        "postmortem"
+      ]
+    },
+    {
+      "question_id": "git_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Monorepo với 500k files — git operations (status, checkout) rất chậm. Cách tối ưu?",
+      "options": {
+        "A": "Chia thành nhiều repos nhỏ hơn",
+        "B": "git sparse-checkout (chỉ checkout phần cần), partial clone, git maintenance, filesystem monitor (watchman), git index-pack threads",
+        "C": "Dùng SVN thay thế",
+        "D": "Mua SSD nhanh hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "Large monorepo optimizations (Google, Meta scale): (1) Sparse checkout: git sparse-checkout set packages/my-package — chỉ checkout subdirectory cần thiết. (2) Partial clone: git clone --filter=blob:none (không download blobs ngay, lazy-fetch khi cần). (3) git maintenance start: background optimization tasks (commit-graph, pack-refs, gc). (4) Watchman (Facebook): filesystem watcher giúp git status nhanh hơn 10-100x trên large repos. (5) Shallow clone (CI): git clone --depth=1 cho CI pipelines (không cần full history). (6) Virtual filesystem (VFS for Git): Windows, file-on-demand.",
+      "source": "https://www.freecodecamp.org/news/git-large-repository/",
+      "tags": [
+        "monorepo",
+        "performance",
+        "sparse-checkout",
+        "large-repo"
+      ]
+    }
+  ]
+}

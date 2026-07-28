@@ -1,0 +1,218 @@
+{
+  "skill": "Vite",
+  "skill_key": "vite",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.513005Z",
+  "source_references": [
+    "https://www.google.com/search?q=Vite+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "vite_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Vite, Dev server HMR có vai trò gì?",
+      "options": {
+        "A": "Dev server HMR là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dev server HMR là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dev server HMR đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dev server HMR là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dev server HMR trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Dev server HMR là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Dev server HMR giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Dev+server+HMR+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "dev-server-hmr"
+      ]
+    },
+    {
+      "question_id": "vite_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Vite, Build pipeline (Rollup) có vai trò gì?",
+      "options": {
+        "A": "Build pipeline (Rollup) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Build pipeline (Rollup) là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Build pipeline (Rollup) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Build pipeline (Rollup) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Build pipeline (Rollup) trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Build pipeline (Rollup) là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Build pipeline (Rollup) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Build+pipeline+(Rollup)+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "build-pipeline-rollup"
+      ]
+    },
+    {
+      "question_id": "vite_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Vite, Plugin API có vai trò gì?",
+      "options": {
+        "A": "Plugin API là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Plugin API là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Plugin API đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Plugin API là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Plugin API trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Plugin API là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Plugin API giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Plugin+API+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "plugin-api"
+      ]
+    },
+    {
+      "question_id": "vite_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Vite, CSS handling có vai trò gì?",
+      "options": {
+        "A": "CSS handling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CSS handling là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CSS handling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CSS handling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CSS handling trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và CSS handling là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ CSS handling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+CSS+handling+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "css-handling"
+      ]
+    },
+    {
+      "question_id": "vite_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Vite, Asset handling có vai trò gì?",
+      "options": {
+        "A": "Asset handling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Asset handling là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Asset handling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Asset handling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Asset handling trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Asset handling là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Asset handling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Asset+handling+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "asset-handling"
+      ]
+    },
+    {
+      "question_id": "vite_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Vite, Environment variables có vai trò gì?",
+      "options": {
+        "A": "Environment variables là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Environment variables là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Environment variables đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Environment variables là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Environment variables trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Environment variables là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Environment variables giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Environment+variables+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "environment-variables"
+      ]
+    },
+    {
+      "question_id": "vite_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Vite, SSR mode có vai trò gì?",
+      "options": {
+        "A": "SSR mode là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SSR mode là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SSR mode đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SSR mode là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SSR mode trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và SSR mode là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ SSR mode giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+SSR+mode+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "ssr-mode"
+      ]
+    },
+    {
+      "question_id": "vite_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Vite, Library mode có vai trò gì?",
+      "options": {
+        "A": "Library mode là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Library mode là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Library mode đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Library mode là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Library mode trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Library mode là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Library mode giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Library+mode+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "library-mode"
+      ]
+    },
+    {
+      "question_id": "vite_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Vite, Vitest integration có vai trò gì?",
+      "options": {
+        "A": "Vitest integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Vitest integration là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Vitest integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Vitest integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Vitest integration trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Vitest integration là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Vitest integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Vitest+integration+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "vitest-integration"
+      ]
+    },
+    {
+      "question_id": "vite_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Vite, Monorepo setup có vai trò gì?",
+      "options": {
+        "A": "Monorepo setup là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Monorepo setup là core concept trong Vite — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Monorepo setup đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Monorepo setup là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Monorepo setup trong Vite: Đây là một trong những concepts quan trọng nhất. Vite được sử dụng rộng rãi trong industry và Monorepo setup là phần không thể thiếu. Khi làm việc với Vite trong production, hiểu rõ Monorepo setup giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Vite+Monorepo+setup+tutorial",
+      "tags": [
+        "vite",
+        "frontend",
+        "monorepo-setup"
+      ]
+    }
+  ]
+}

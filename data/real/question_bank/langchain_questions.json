@@ -1,0 +1,218 @@
+{
+  "skill": "LangChain",
+  "skill_key": "langchain",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.643242Z",
+  "source_references": [
+    "https://www.google.com/search?q=LangChain+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "langchain_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong LangChain, LLM integration có vai trò gì?",
+      "options": {
+        "A": "LLM integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "LLM integration là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "LLM integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên LLM integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "LLM integration trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và LLM integration là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ LLM integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+LLM+integration+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "llm-integration"
+      ]
+    },
+    {
+      "question_id": "langchain_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong LangChain, Chains có vai trò gì?",
+      "options": {
+        "A": "Chains là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Chains là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Chains đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Chains là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Chains trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Chains là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Chains giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Chains+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "chains"
+      ]
+    },
+    {
+      "question_id": "langchain_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong LangChain, Agents/Tools có vai trò gì?",
+      "options": {
+        "A": "Agents/Tools là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Agents/Tools là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Agents/Tools đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Agents/Tools là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Agents/Tools trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Agents/Tools là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Agents/Tools giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Agents/Tools+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "agents-tools"
+      ]
+    },
+    {
+      "question_id": "langchain_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong LangChain, Memory có vai trò gì?",
+      "options": {
+        "A": "Memory là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Memory là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Memory đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Memory là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Memory trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Memory là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Memory giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Memory+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "memory"
+      ]
+    },
+    {
+      "question_id": "langchain_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong LangChain, Vector stores có vai trò gì?",
+      "options": {
+        "A": "Vector stores là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Vector stores là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Vector stores đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Vector stores là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Vector stores trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Vector stores là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Vector stores giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Vector+stores+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "vector-stores"
+      ]
+    },
+    {
+      "question_id": "langchain_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong LangChain, Embeddings có vai trò gì?",
+      "options": {
+        "A": "Embeddings là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Embeddings là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Embeddings đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Embeddings là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Embeddings trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Embeddings là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Embeddings giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Embeddings+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "embeddings"
+      ]
+    },
+    {
+      "question_id": "langchain_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong LangChain, RAG pattern có vai trò gì?",
+      "options": {
+        "A": "RAG pattern là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "RAG pattern là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "RAG pattern đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên RAG pattern là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "RAG pattern trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và RAG pattern là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ RAG pattern giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+RAG+pattern+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "rag-pattern"
+      ]
+    },
+    {
+      "question_id": "langchain_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong LangChain, Prompt templates có vai trò gì?",
+      "options": {
+        "A": "Prompt templates là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Prompt templates là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Prompt templates đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Prompt templates là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Prompt templates trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và Prompt templates là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ Prompt templates giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+Prompt+templates+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "prompt-templates"
+      ]
+    },
+    {
+      "question_id": "langchain_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong LangChain, LangSmith có vai trò gì?",
+      "options": {
+        "A": "LangSmith là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "LangSmith là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "LangSmith đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên LangSmith là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "LangSmith trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và LangSmith là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ LangSmith giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+LangSmith+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "langsmith"
+      ]
+    },
+    {
+      "question_id": "langchain_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong LangChain, LangGraph có vai trò gì?",
+      "options": {
+        "A": "LangGraph là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "LangGraph là core concept trong LangChain — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "LangGraph đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên LangGraph là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "LangGraph trong LangChain: Đây là một trong những concepts quan trọng nhất. LangChain được sử dụng rộng rãi trong industry và LangGraph là phần không thể thiếu. Khi làm việc với LangChain trong production, hiểu rõ LangGraph giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=LangChain+LangGraph+tutorial",
+      "tags": [
+        "langchain",
+        "ai/ml",
+        "langgraph"
+      ]
+    }
+  ]
+}

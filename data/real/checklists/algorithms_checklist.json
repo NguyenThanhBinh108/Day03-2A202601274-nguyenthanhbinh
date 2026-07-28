@@ -1,0 +1,154 @@
+{
+  "skill": "Algorithms & DSA",
+  "skill_key": "algorithms",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.657208Z",
+  "checklist_items": [
+    {
+      "item_id": "algorithms_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Array/String",
+      "description": "Master Array/String trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Array/String+tutorial",
+      "resource_title": "Algorithms & DSA — Array/String",
+      "quiz_ids": [
+        "algorithms_l1_001"
+      ],
+      "market_relevance": "Array/String là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Linked Lists",
+      "description": "Master Linked Lists trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Linked+Lists+tutorial",
+      "resource_title": "Algorithms & DSA — Linked Lists",
+      "quiz_ids": [
+        "algorithms_l2_002"
+      ],
+      "market_relevance": "Linked Lists là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Stacks/Queues",
+      "description": "Master Stacks/Queues trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Stacks/Queues+tutorial",
+      "resource_title": "Algorithms & DSA — Stacks/Queues",
+      "quiz_ids": [
+        "algorithms_l3_003"
+      ],
+      "market_relevance": "Stacks/Queues là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Trees/Graphs",
+      "description": "Master Trees/Graphs trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Trees/Graphs+tutorial",
+      "resource_title": "Algorithms & DSA — Trees/Graphs",
+      "quiz_ids": [
+        "algorithms_l4_004"
+      ],
+      "market_relevance": "Trees/Graphs là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Dynamic programming",
+      "description": "Master Dynamic programming trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Dynamic+programming+tutorial",
+      "resource_title": "Algorithms & DSA — Dynamic programming",
+      "quiz_ids": [
+        "algorithms_l5_005"
+      ],
+      "market_relevance": "Dynamic programming là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Binary search",
+      "description": "Master Binary search trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Binary+search+tutorial",
+      "resource_title": "Algorithms & DSA — Binary search",
+      "quiz_ids": [
+        "algorithms_l5_006"
+      ],
+      "market_relevance": "Binary search là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Sorting algorithms",
+      "description": "Master Sorting algorithms trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Sorting+algorithms+tutorial",
+      "resource_title": "Algorithms & DSA — Sorting algorithms",
+      "quiz_ids": [
+        "algorithms_l5_007"
+      ],
+      "market_relevance": "Sorting algorithms là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Hashing",
+      "description": "Master Hashing trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Hashing+tutorial",
+      "resource_title": "Algorithms & DSA — Hashing",
+      "quiz_ids": [
+        "algorithms_l5_008"
+      ],
+      "market_relevance": "Hashing là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Recursion/Backtracking",
+      "description": "Master Recursion/Backtracking trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Recursion/Backtracking+tutorial",
+      "resource_title": "Algorithms & DSA — Recursion/Backtracking",
+      "quiz_ids": [
+        "algorithms_l5_009"
+      ],
+      "market_relevance": "Recursion/Backtracking là key skill trong Algorithms & DSA Fundamentals development"
+    },
+    {
+      "item_id": "algorithms_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Big-O complexity",
+      "description": "Master Big-O complexity trong Algorithms & DSA — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Algorithms+&+DSA+Big-O+complexity+tutorial",
+      "resource_title": "Algorithms & DSA — Big-O complexity",
+      "quiz_ids": [
+        "algorithms_l5_010"
+      ],
+      "market_relevance": "Big-O complexity là key skill trong Algorithms & DSA Fundamentals development"
+    }
+  ]
+}

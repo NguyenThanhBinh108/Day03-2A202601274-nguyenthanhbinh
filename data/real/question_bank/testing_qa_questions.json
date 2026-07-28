@@ -1,0 +1,195 @@
+{
+  "skill": "Testing QA",
+  "skill_key": "testing_qa",
+  "total_questions": 8,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.508096",
+  "source_references": [
+    "https://www.freecodecamp.org/news/tag/testing/",
+    "https://www.geeksforgeeks.org/software-testing-basics/"
+  ],
+  "questions": [
+    {
+      "question_id": "qa_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Test pyramid — Unit, Integration, E2E tests tỷ lệ như thế nào?",
+      "options": {
+        "A": "E2E tests là quan trọng nhất",
+        "B": "Unit (70%): fast, cheap, isolated. Integration (20%): test component interaction. E2E (10%): slow, expensive, flaky. Tháp: base rộng là unit",
+        "C": "Chỉ cần integration tests",
+        "D": "E2E tests thay thế unit tests"
+      },
+      "correct_answer": "B",
+      "explanation": "Test pyramid (Mike Cohn): Unit (base) → Integration (middle) → E2E (top). Unit: test 1 function/class in isolation, mock dependencies, ms speed, cheap to run. Integration: test components together (API + DB, external services). E2E: test entire flow từ user perspective (Selenium, Playwright, Cypress). Ice cream anti-pattern: đảo ngược pyramid (nhiều E2E, ít unit) → slow, flaky, expensive CI. Testing trophy (Kent C. Dodds): integration tests trọng tâm hơn unit.",
+      "source": "https://www.freecodecamp.org/news/test-pyramid/",
+      "tags": [
+        "test-pyramid",
+        "unit-test",
+        "integration",
+        "E2E",
+        "testing-trophy"
+      ]
+    },
+    {
+      "question_id": "qa_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "TDD (Test-Driven Development) — Red-Green-Refactor cycle?",
+      "options": {
+        "A": "TDD: viết test sau khi code xong",
+        "B": "Red: write failing test. Green: write minimal code to pass. Refactor: improve code while tests pass. TDD design = testable code",
+        "C": "TDD chỉ cho backend",
+        "D": "TDD làm code chậm hơn và không cần thiết"
+      },
+      "correct_answer": "B",
+      "explanation": "TDD cycle: (1) Red: write a failing test (test không pass vì code chưa tồn tại). (2) Green: write MINIMAL code to make test pass. (3) Refactor: clean up code, tests still pass. Benefits: forces design thinking, living documentation, confidence to refactor, fewer bugs. Challenges: takes discipline, need fast test suite, learning curve. BDD (Behavior-Driven Development): Given-When-Then syntax, Gherkin, collaboration tool (Cucumber, Behave). ATDD: Acceptance Test-Driven Development.",
+      "source": "https://www.freecodecamp.org/news/test-driven-development-tutorial-how-to-test-javascript-and-reactjs-app/",
+      "tags": [
+        "TDD",
+        "Red-Green-Refactor",
+        "BDD",
+        "ATDD",
+        "testing-discipline"
+      ]
+    },
+    {
+      "question_id": "qa_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Test doubles — Mock, Stub, Spy, Fake, Dummy khác nhau thế nào?",
+      "options": {
+        "A": "Tất cả giống nhau, chỉ tên khác",
+        "B": "Dummy: placeholder. Stub: canned responses. Fake: working implementation (in-memory DB). Spy: record calls. Mock: verify interactions",
+        "C": "Mock là tên chung cho tất cả",
+        "D": "Chỉ cần Mock và Stub"
+      },
+      "correct_answer": "B",
+      "explanation": "Test doubles (Gerard Meszaros): Dummy: passed but never used (fill params). Stub: return hardcoded responses (when repository.findById(1) thenReturn user). Spy: like stub but records calls (verify() trong Mockito). Mock: pre-programmed với expectations, verify behavior. Fake: actual working implementation but simplified (H2 in-memory DB thay PostgreSQL, fake email server). Common confusion: 'mocking' thường dùng để nói chung test doubles. Mockito (Java), unittest.mock (Python), Jest (JS): frameworks để tạo test doubles.",
+      "source": "https://www.geeksforgeeks.org/test-doubles-in-software-testing/",
+      "tags": [
+        "Mock",
+        "Stub",
+        "Spy",
+        "Fake",
+        "test-doubles",
+        "Mockito"
+      ]
+    },
+    {
+      "question_id": "qa_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Code coverage — metrics và pitfalls?",
+      "options": {
+        "A": "100% coverage = no bugs",
+        "B": "Coverage metrics: line, branch, function. Coverage là necessary nhưng không sufficient — test quality quan trọng hơn quantity. Mutation testing để check quality",
+        "C": "Coverage < 80% không thể production",
+        "D": "Coverage không cần thiết với TDD"
+      },
+      "correct_answer": "B",
+      "explanation": "Coverage types: Line coverage (% lines executed), Branch coverage (% if/else branches), Function coverage. Pitfalls: (1) Test quality: test passes nhưng không assert gì (100% coverage, 0 value). (2) Coverage không đo missing cases. (3) Gaming metrics: write tests chỉ để tăng số. Mutation testing (PIT, Stryker): tự động thay đổi code (mutant) → nếu test không fail → test yếu. Good coverage: 80%+ nhưng focus on critical paths. Don't pursue 100% (diminishing returns, test brittle infrastructure code).",
+      "source": "https://www.freecodecamp.org/news/test-coverage/",
+      "tags": [
+        "coverage",
+        "branch-coverage",
+        "mutation-testing",
+        "quality-vs-quantity"
+      ]
+    },
+    {
+      "question_id": "qa_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "API Testing với Postman và automation?",
+      "options": {
+        "A": "Manual Postman testing là đủ",
+        "B": "Postman: collections, environments, pre-request scripts, test scripts. Newman: CLI runner cho CI/CD. REST Assured (Java), SuperTest (Node) cho automation",
+        "C": "Postman chỉ cho manual testing",
+        "D": "API testing không cần authentication"
+      },
+      "correct_answer": "B",
+      "explanation": "Postman: create requests, collections (group related). Environment variables: {{base_url}}, {{token}}. Pre-request script: generate auth token. Test scripts (JavaScript): pm.test('Status 200', () => pm.response.to.have.status(200)); pm.expect(responseJson.data.id).to.be.a('number'). Data-driven: CSV/JSON data files for parameterized tests. Newman: newman run collection.json --environment prod.json — chạy trong CI. Mock servers: Postman mock cho development. Contract testing: Pact — consumer-driven contract.",
+      "source": "https://www.geeksforgeeks.org/api-testing/",
+      "tags": [
+        "Postman",
+        "Newman",
+        "API-testing",
+        "REST-Assured",
+        "contract-testing"
+      ]
+    },
+    {
+      "question_id": "qa_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "E2E testing với Playwright — setup và best practices?",
+      "options": {
+        "A": "Selenium là tốt nhất cho E2E",
+        "B": "Playwright: multi-browser (Chrome/Firefox/Safari), auto-wait, screenshot/video on fail, network intercept. Page Object Model cho maintainability",
+        "C": "E2E không cần trong CI",
+        "D": "Playwright chỉ cho JavaScript"
+      },
+      "correct_answer": "B",
+      "explanation": "Playwright setup: npm init playwright. Test: test('login flow', async ({ page }) => { await page.goto('/login'); await page.fill('#email', 'user@test.com'); await page.fill('#password', 'password'); await page.click('button[type=submit]'); await expect(page).toHaveURL('/dashboard'); }). Auto-wait: Playwright tự chờ element visible, không cần explicit waits. Page Object Model: class LoginPage { async login(email, pass) {...} }. Screenshot on fail: attachments. Trace viewer: full debug info. API mocking: await page.route('**/api/users', route => route.fulfill({body:...})). vs Cypress: Playwright multi-tab, cross-browser, faster CI.",
+      "source": "https://www.freecodecamp.org/news/playwright-testing/",
+      "tags": [
+        "Playwright",
+        "E2E",
+        "Page-Object-Model",
+        "auto-wait",
+        "screenshot"
+      ]
+    },
+    {
+      "question_id": "qa_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Flaky tests trong CI — systematic approach để fix?",
+      "options": {
+        "A": "Retry 3 lần là đủ",
+        "B": "Identify root cause: async timing, shared state, external dependencies, order dependency. Fix: proper await, test isolation, mock externals, deterministic data",
+        "C": "Xóa flaky tests",
+        "D": "Tăng timeout là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "Flaky test causes: (1) Async timing: không await properly, race conditions. Fix: explicit await, wait for element/condition. (2) Shared state: test A modifies data, Test B assumes clean state. Fix: beforeEach cleanup, test-specific data. (3) External dependencies: network, file system, time. Fix: mock/stub externals, deterministic fixtures. (4) Test order dependency: test passes only when run after another. Fix: each test must be independent. (5) Flaky E2E: animation, dynamic content. Fix: disable animations in test env, wait for specific element. Track: flakiness rate per test, quarantine + fix.",
+      "source": "https://www.freecodecamp.org/news/flaky-tests/",
+      "tags": [
+        "flaky-tests",
+        "async",
+        "test-isolation",
+        "shared-state",
+        "deterministic"
+      ]
+    },
+    {
+      "question_id": "qa_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Performance testing với k6 — load test API trước release?",
+      "options": {
+        "A": "Manual testing là đủ",
+        "B": "k6: virtual users, ramp-up/sustained/ramp-down phases, thresholds (p95 < 500ms, error < 1%). Smoke → Load → Stress → Spike → Soak tests",
+        "C": "Performance test chỉ khi bị complaint",
+        "D": "APM thay thế load testing"
+      },
+      "correct_answer": "B",
+      "explanation": "k6 test types: Smoke (minimal load, sanity check), Load (expected + peak load), Stress (beyond capacity, find breaking point), Spike (sudden traffic spikes), Soak (sustained load, memory leaks). k6 script: import http from 'k6/http'; export const options = { stages: [{duration:'2m', target:100}, {duration:'5m', target:100}, {duration:'2m', target:0}], thresholds: {'http_req_duration': ['p(95)<500'], 'http_req_failed': ['rate<0.01']} }; export default function() { http.get('https://api.example.com/products'); }. CI integration: k6 cloud hoặc run in CI, fail pipeline nếu thresholds exceeded.",
+      "source": "https://www.freecodecamp.org/news/performance-testing-k6/",
+      "tags": [
+        "k6",
+        "load-testing",
+        "thresholds",
+        "performance",
+        "stress-test"
+      ]
+    }
+  ]
+}

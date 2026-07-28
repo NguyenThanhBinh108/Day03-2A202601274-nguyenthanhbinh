@@ -1,0 +1,54 @@
+{
+  "skill": "Spring Boot",
+  "skill_key": "spring_boot",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.490082",
+  "resources": [
+    {
+      "resource_id": "spring_r001",
+      "title": "Spring Official Documentation",
+      "url": "https://spring.io/guides",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official Spring guides và docs"
+    },
+    {
+      "resource_id": "spring_r002",
+      "title": "GeeksForGeeks Spring Boot Tutorial",
+      "url": "https://www.geeksforgeeks.org/spring-boot-tutorial/",
+      "is_free": true,
+      "level": "beginner_to_advanced",
+      "rating": 4,
+      "description": "Spring Boot toàn diện"
+    },
+    {
+      "resource_id": "spring_r003",
+      "title": "Baeldung Spring Tutorials",
+      "url": "https://www.baeldung.com/spring-tutorial",
+      "is_free": true,
+      "level": "intermediate_to_advanced",
+      "rating": 5,
+      "description": "Best Spring resource online"
+    },
+    {
+      "resource_id": "spring_r004",
+      "title": "freeCodeCamp Spring Boot Tutorial",
+      "url": "https://www.freecodecamp.org/news/spring-boot-tutorial/",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 4,
+      "description": "Spring Boot cho người mới bắt đầu"
+    },
+    {
+      "resource_id": "spring_r005",
+      "title": "Viblo Spring Articles",
+      "url": "https://viblo.asia/tags/spring-boot",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "Spring Boot tiếng Việt"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "REST API Design",
+  "skill_key": "rest_api",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.668080Z",
+  "source_references": [
+    "https://www.google.com/search?q=REST+API+Design+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "rest_api_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong REST API Design, HTTP methods có vai trò gì?",
+      "options": {
+        "A": "HTTP methods là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HTTP methods là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HTTP methods đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HTTP methods là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HTTP methods trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và HTTP methods là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ HTTP methods giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+HTTP+methods+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "http-methods"
+      ]
+    },
+    {
+      "question_id": "rest_api_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong REST API Design, Status codes có vai trò gì?",
+      "options": {
+        "A": "Status codes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Status codes là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Status codes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Status codes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Status codes trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Status codes là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Status codes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Status+codes+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "status-codes"
+      ]
+    },
+    {
+      "question_id": "rest_api_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong REST API Design, URL design có vai trò gì?",
+      "options": {
+        "A": "URL design là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "URL design là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "URL design đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên URL design là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "URL design trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và URL design là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ URL design giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+URL+design+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "url-design"
+      ]
+    },
+    {
+      "question_id": "rest_api_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong REST API Design, Versioning có vai trò gì?",
+      "options": {
+        "A": "Versioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Versioning là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Versioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Versioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Versioning trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Versioning là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Versioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Versioning+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "versioning"
+      ]
+    },
+    {
+      "question_id": "rest_api_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong REST API Design, Pagination có vai trò gì?",
+      "options": {
+        "A": "Pagination là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Pagination là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Pagination đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Pagination là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Pagination trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Pagination là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Pagination giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Pagination+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "pagination"
+      ]
+    },
+    {
+      "question_id": "rest_api_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong REST API Design, Filtering/Sorting có vai trò gì?",
+      "options": {
+        "A": "Filtering/Sorting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Filtering/Sorting là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Filtering/Sorting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Filtering/Sorting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Filtering/Sorting trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Filtering/Sorting là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Filtering/Sorting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Filtering/Sorting+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "filtering-sorting"
+      ]
+    },
+    {
+      "question_id": "rest_api_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong REST API Design, HATEOAS có vai trò gì?",
+      "options": {
+        "A": "HATEOAS là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HATEOAS là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HATEOAS đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HATEOAS là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HATEOAS trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và HATEOAS là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ HATEOAS giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+HATEOAS+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "hateoas"
+      ]
+    },
+    {
+      "question_id": "rest_api_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong REST API Design, Error format có vai trò gì?",
+      "options": {
+        "A": "Error format là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Error format là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Error format đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Error format là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Error format trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Error format là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Error format giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Error+format+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "error-format"
+      ]
+    },
+    {
+      "question_id": "rest_api_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong REST API Design, Auth patterns có vai trò gì?",
+      "options": {
+        "A": "Auth patterns là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Auth patterns là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Auth patterns đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Auth patterns là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Auth patterns trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và Auth patterns là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ Auth patterns giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+Auth+patterns+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "auth-patterns"
+      ]
+    },
+    {
+      "question_id": "rest_api_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong REST API Design, OpenAPI/Swagger có vai trò gì?",
+      "options": {
+        "A": "OpenAPI/Swagger là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "OpenAPI/Swagger là core concept trong REST API Design — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "OpenAPI/Swagger đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên OpenAPI/Swagger là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "OpenAPI/Swagger trong REST API Design: Đây là một trong những concepts quan trọng nhất. REST API Design được sử dụng rộng rãi trong industry và OpenAPI/Swagger là phần không thể thiếu. Khi làm việc với REST API Design trong production, hiểu rõ OpenAPI/Swagger giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=REST+API+Design+OpenAPI/Swagger+tutorial",
+      "tags": [
+        "rest_api",
+        "fundamentals",
+        "openapi-swagger"
+      ]
+    }
+  ]
+}

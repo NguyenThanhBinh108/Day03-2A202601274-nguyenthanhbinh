@@ -1,0 +1,218 @@
+{
+  "skill": "Rust",
+  "skill_key": "rust",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.535262Z",
+  "source_references": [
+    "https://www.google.com/search?q=Rust+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "rust_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Rust, Ownership/Borrowing có vai trò gì?",
+      "options": {
+        "A": "Ownership/Borrowing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Ownership/Borrowing là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Ownership/Borrowing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Ownership/Borrowing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Ownership/Borrowing trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Ownership/Borrowing là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Ownership/Borrowing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Ownership/Borrowing+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "ownership-borrowing"
+      ]
+    },
+    {
+      "question_id": "rust_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Rust, Lifetimes có vai trò gì?",
+      "options": {
+        "A": "Lifetimes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Lifetimes là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Lifetimes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Lifetimes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Lifetimes trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Lifetimes là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Lifetimes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Lifetimes+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "lifetimes"
+      ]
+    },
+    {
+      "question_id": "rust_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Rust, Traits có vai trò gì?",
+      "options": {
+        "A": "Traits là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Traits là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Traits đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Traits là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Traits trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Traits là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Traits giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Traits+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "traits"
+      ]
+    },
+    {
+      "question_id": "rust_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Rust, Enums/Pattern matching có vai trò gì?",
+      "options": {
+        "A": "Enums/Pattern matching là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Enums/Pattern matching là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Enums/Pattern matching đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Enums/Pattern matching là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Enums/Pattern matching trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Enums/Pattern matching là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Enums/Pattern matching giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Enums/Pattern+matching+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "enums-pattern-matching"
+      ]
+    },
+    {
+      "question_id": "rust_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Rust, Error handling có vai trò gì?",
+      "options": {
+        "A": "Error handling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Error handling là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Error handling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Error handling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Error handling trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Error handling là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Error handling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Error+handling+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "error-handling"
+      ]
+    },
+    {
+      "question_id": "rust_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Rust, Cargo có vai trò gì?",
+      "options": {
+        "A": "Cargo là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cargo là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cargo đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cargo là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cargo trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Cargo là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Cargo giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Cargo+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "cargo"
+      ]
+    },
+    {
+      "question_id": "rust_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Rust, Async (Tokio) có vai trò gì?",
+      "options": {
+        "A": "Async (Tokio) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Async (Tokio) là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Async (Tokio) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Async (Tokio) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Async (Tokio) trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Async (Tokio) là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Async (Tokio) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Async+(Tokio)+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "async-tokio"
+      ]
+    },
+    {
+      "question_id": "rust_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Rust, Actix-web/Axum có vai trò gì?",
+      "options": {
+        "A": "Actix-web/Axum là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Actix-web/Axum là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Actix-web/Axum đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Actix-web/Axum là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Actix-web/Axum trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Actix-web/Axum là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Actix-web/Axum giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Actix-web/Axum+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "actix-web-axum"
+      ]
+    },
+    {
+      "question_id": "rust_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Rust, Serde có vai trò gì?",
+      "options": {
+        "A": "Serde là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Serde là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Serde đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Serde là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Serde trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Serde là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Serde giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Serde+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "serde"
+      ]
+    },
+    {
+      "question_id": "rust_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Rust, Testing có vai trò gì?",
+      "options": {
+        "A": "Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Testing là core concept trong Rust — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Testing trong Rust: Đây là một trong những concepts quan trọng nhất. Rust được sử dụng rộng rãi trong industry và Testing là phần không thể thiếu. Khi làm việc với Rust trong production, hiểu rõ Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Rust+Testing+tutorial",
+      "tags": [
+        "rust",
+        "backend",
+        "testing"
+      ]
+    }
+  ]
+}

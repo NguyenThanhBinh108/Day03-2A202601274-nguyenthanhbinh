@@ -1,0 +1,154 @@
+{
+  "skill": "TensorFlow/PyTorch",
+  "market_frequency": "Kỹ năng thiết yếu cho AI/ML Engineer, Data Scientist",
+  "market_role": "AI/ML Engineer, Data Scientist",
+  "total_learning_hours": 60,
+  "generated_at": "2026-06-12T00:05:36.365357",
+  "modules": [
+    {
+      "module_id": "ml_01",
+      "title": "Machine Learning & Deep Learning",
+      "order": 1,
+      "hours": 60,
+      "topics": [
+        {
+          "topic_id": "ml_01_01",
+          "title": "ML Fundamentals: sklearn, Training Pipeline",
+          "hours": 15,
+          "academic": {
+            "summary": "Supervised/unsupervised learning, train/val/test split, cross-validation, metrics (F1, AUC, RMSE), regularization",
+            "resources": [
+              {
+                "title": "scikit-learn User Guide",
+                "url": "https://scikit-learn.org/stable/user_guide.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 360
+              },
+              {
+                "title": "Kaggle Learn — Intro to ML",
+                "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 300
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "End-to-end ML pipeline: Titanic survival prediction, EDA, feature engineering, 3 models comparison, hyperparameter tuning với GridSearchCV",
+            "resources": [
+              {
+                "title": "Kaggle Titanic",
+                "url": "https://www.kaggle.com/c/titanic",
+                "type": "practice",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ml_01_01_q1",
+                "level": 3,
+                "question": "Overfitting là gì và cách phát hiện/fix?",
+                "options": {
+                  "A": "Model fit training data too well → low train error, high val error. Fix: regularization, dropout, more data, early stopping",
+                  "B": "Model quá đơn giản",
+                  "C": "Training quá chậm",
+                  "D": "Không đủ data"
+                },
+                "correct_answer": "A",
+                "explanation": "Overfitting: memorize training data. Detect: train loss ↓ nhưng val loss ↑. Fix: L1/L2 regularization, Dropout (neural nets), Pruning (trees), more training data, data augmentation, ensemble."
+              },
+              {
+                "question_id": "ml_01_01_q2",
+                "level": 4,
+                "question": "Precision vs Recall trade-off — khi nào ưu tiên Recall cao hơn Precision?",
+                "options": {
+                  "A": "Khi false negative tốn kém (cancer detection: bỏ sót bệnh nhân). High Recall: ít false negatives dù nhiều false positives",
+                  "B": "Luôn ưu tiên Precision",
+                  "C": "Chúng không liên quan",
+                  "D": "F1 score giải quyết tất cả"
+                },
+                "correct_answer": "A",
+                "explanation": "Precision = TP/(TP+FP): trong những gì predict positive, bao nhiêu thực sự positive. Recall = TP/(TP+FN): trong những gì thực sự positive, bao nhiêu bị detect. Cancer: high Recall (bỏ sót nguy hiểm). Spam filter: high Precision (inbox quan trọng)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "ml_01_02",
+          "title": "Deep Learning: PyTorch / TensorFlow",
+          "hours": 20,
+          "academic": {
+            "summary": "Neural networks, backpropagation, CNN, RNN/LSTM, Transformer basics, PyTorch nn.Module, training loops",
+            "resources": [
+              {
+                "title": "PyTorch Official Tutorials",
+                "url": "https://pytorch.org/tutorials/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 480
+              },
+              {
+                "title": "fast.ai Practical Deep Learning",
+                "url": "https://course.fast.ai",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 2400
+              },
+              {
+                "title": "DeepLearning.AI Specialization",
+                "url": "https://www.coursera.org/specializations/deep-learning",
+                "type": "course",
+                "is_free": false,
+                "duration_minutes": 3600
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Train image classifier: ResNet fine-tuning trên custom dataset, data augmentation, learning rate scheduler, model export ONNX",
+            "resources": [
+              {
+                "title": "Hugging Face Models",
+                "url": "https://huggingface.co/models",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ml_01_02_q1",
+                "level": 4,
+                "question": "Vanishing gradient problem trong deep networks là gì?",
+                "options": {
+                  "A": "Gradients become exponentially small → early layers learn slowly. Fix: ResNet skip connections, BatchNorm, better activations (ReLU/GELU)",
+                  "B": "Gradient quá lớn",
+                  "C": "Learning rate quá cao",
+                  "D": "Overfitting"
+                },
+                "correct_answer": "A",
+                "explanation": "Chain rule trong backprop: gradient = product of many Jacobians. Sigmoid/tanh: saturate → gradients near 0 → vanish. ReLU không saturate (positive side). ResNet: skip connections → gradient highway. BatchNorm: normalize activations → stable gradients."
+              },
+              {
+                "question_id": "ml_01_02_q2",
+                "level": 5,
+                "question": "Transfer Learning: khi nào freeze layers vs fine-tune toàn bộ?",
+                "options": {
+                  "A": "Small dataset giống domain: freeze all, train classifier. Large dataset: fine-tune all. Similar domain: freeze early, tune late layers",
+                  "B": "Luôn fine-tune toàn bộ",
+                  "C": "Luôn freeze toàn bộ",
+                  "D": "Transfer learning chỉ cho images"
+                },
+                "correct_answer": "A",
+                "explanation": "Pretrained model: early layers = general features (edges, textures), late layers = task-specific. Small similar dataset: freeze all, train head. Small different: unfreeze more. Large dataset: fine-tune with low LR. Catastrophic forgetting: learning too fast erases pretrained knowledge."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

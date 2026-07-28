@@ -1,0 +1,218 @@
+{
+  "skill": "Google Cloud Platform",
+  "skill_key": "gcp",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.602369Z",
+  "source_references": [
+    "https://www.google.com/search?q=Google+Cloud+Platform+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "gcp_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Google Cloud Platform, GKE có vai trò gì?",
+      "options": {
+        "A": "GKE là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GKE là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GKE đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GKE là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GKE trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và GKE là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ GKE giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+GKE+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "gke"
+      ]
+    },
+    {
+      "question_id": "gcp_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Google Cloud Platform, Cloud Run có vai trò gì?",
+      "options": {
+        "A": "Cloud Run là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud Run là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud Run đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud Run là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud Run trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Cloud Run là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Cloud Run giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Run+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "cloud-run"
+      ]
+    },
+    {
+      "question_id": "gcp_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Google Cloud Platform, Cloud Functions có vai trò gì?",
+      "options": {
+        "A": "Cloud Functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud Functions là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud Functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud Functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud Functions trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Cloud Functions là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Cloud Functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Functions+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "cloud-functions"
+      ]
+    },
+    {
+      "question_id": "gcp_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Google Cloud Platform, BigQuery có vai trò gì?",
+      "options": {
+        "A": "BigQuery là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "BigQuery là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "BigQuery đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên BigQuery là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "BigQuery trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và BigQuery là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ BigQuery giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+BigQuery+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "bigquery"
+      ]
+    },
+    {
+      "question_id": "gcp_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Google Cloud Platform, Cloud SQL có vai trò gì?",
+      "options": {
+        "A": "Cloud SQL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud SQL là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud SQL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud SQL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud SQL trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Cloud SQL là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Cloud SQL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+SQL+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "cloud-sql"
+      ]
+    },
+    {
+      "question_id": "gcp_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Google Cloud Platform, Pub/Sub có vai trò gì?",
+      "options": {
+        "A": "Pub/Sub là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Pub/Sub là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Pub/Sub đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Pub/Sub là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Pub/Sub trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Pub/Sub là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Pub/Sub giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Pub/Sub+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "pub-sub"
+      ]
+    },
+    {
+      "question_id": "gcp_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Google Cloud Platform, Cloud Storage có vai trò gì?",
+      "options": {
+        "A": "Cloud Storage là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud Storage là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud Storage đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud Storage là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud Storage trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Cloud Storage là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Cloud Storage giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Storage+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "cloud-storage"
+      ]
+    },
+    {
+      "question_id": "gcp_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Google Cloud Platform, IAM có vai trò gì?",
+      "options": {
+        "A": "IAM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "IAM là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "IAM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên IAM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "IAM trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và IAM là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ IAM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+IAM+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "iam"
+      ]
+    },
+    {
+      "question_id": "gcp_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Google Cloud Platform, Cloud Build có vai trò gì?",
+      "options": {
+        "A": "Cloud Build là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud Build là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud Build đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud Build là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud Build trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Cloud Build là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Cloud Build giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Cloud+Build+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "cloud-build"
+      ]
+    },
+    {
+      "question_id": "gcp_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Google Cloud Platform, Vertex AI có vai trò gì?",
+      "options": {
+        "A": "Vertex AI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Vertex AI là core concept trong Google Cloud Platform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Vertex AI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Vertex AI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Vertex AI trong Google Cloud Platform: Đây là một trong những concepts quan trọng nhất. Google Cloud Platform được sử dụng rộng rãi trong industry và Vertex AI là phần không thể thiếu. Khi làm việc với Google Cloud Platform trong production, hiểu rõ Vertex AI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Google+Cloud+Platform+Vertex+AI+tutorial",
+      "tags": [
+        "gcp",
+        "devops",
+        "vertex-ai"
+      ]
+    }
+  ]
+}
