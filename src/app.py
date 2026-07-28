@@ -325,24 +325,21 @@ def run_react_agent(user_query: str, provider, session_id: str = "") -> dict:
         output = _cut_hallucinated_observation(raw)
 
         if not output:
-<<<<<<< HEAD
             logger.warning(f"[Agent] Step {step}: Empty LLM response")
-            break
-
-        step_trace: dict = {"step": step, "llm_output": output}
-=======
             print("❌ LLM trả về RỖNG.")
-            print(f"   ➜ Nguyên nhân thường gặp: model không xử lý được prompt dài.")
-            print(f"   ➜ Hãy sửa .env thành: LLM_MODEL={RECOMMENDED_MODEL}")
-            return None
+            print("   ➜ Nguyên nhân thường gặp: model không xử lý được prompt dài.")
+            print("   ➜ Hãy kiểm tra LLM_MODEL trong .env (dùng gemini-1.5-flash-latest)")
+            break
 
         if output.startswith("[") and ("Error" in output[:40] or "Exception" in output[:40]):
             print(f"❌ Provider báo lỗi: {raw[:250]}")
             if "RESOURCE_EXHAUSTED" in raw or "429" in raw:
                 print("   ➜ Hết hạn mức gọi API. Chờ 1 phút rồi chạy lại, "
                       "hoặc đổi LLM_MODEL / API key.")
-            return None
->>>>>>> da8d4e21354a66b6ba28f9c04bdcf63bcb6ac52f
+            logger.error(f"[Agent] Provider error at step {step}: {raw[:100]}")
+            break
+
+        step_trace: dict = {"step": step, "llm_output": output}
 
         thought_m = THOUGHT_RE.search(output)
         thought = thought_m.group(1).strip() if thought_m else extract_thought(output)
