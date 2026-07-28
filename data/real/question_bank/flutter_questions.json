@@ -1,0 +1,199 @@
+{
+  "skill": "Flutter",
+  "skill_key": "flutter",
+  "total_questions": 8,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "source_references": [
+    "https://docs.flutter.dev/",
+    "https://www.geeksforgeeks.org/google-flutter/"
+  ],
+  "questions": [
+    {
+      "question_id": "flutter_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Flutter là gì và tại sao cross-platform?",
+      "options": {
+        "A": "Flutter chỉ cho Android",
+        "B": "Flutter: Dart-based UI framework, compile to native ARM, own rendering engine (Skia/Impeller) — 1 codebase cho iOS, Android, Web, Desktop",
+        "C": "Flutter dùng JavaScript",
+        "D": "Flutter chậm hơn React Native"
+      },
+      "correct_answer": "B",
+      "explanation": "Flutter: Google's UI toolkit. Dart language. Single codebase → iOS, Android, Web, Desktop, Embedded. Own rendering engine (không dùng platform widgets) → pixel-perfect UI, consistent across platforms. Hot reload: thay đổi thấy ngay (< 1s). Compile: ahead-of-time (AOT) cho release → native performance. vs React Native: Flutter render own UI, React Native bridge to native components. Flutter 3.x: stable for all platforms.",
+      "source": "https://www.geeksforgeeks.org/google-flutter/",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "cross-platform",
+        "Skia",
+        "hot-reload"
+      ]
+    },
+    {
+      "question_id": "flutter_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Widget tree và StatelessWidget vs StatefulWidget?",
+      "options": {
+        "A": "Flutter không có stateful widgets",
+        "B": "Everything is widget. StatelessWidget: immutable, no state. StatefulWidget: has State object, can rebuild với setState()",
+        "C": "StatefulWidget luôn tốt hơn",
+        "D": "Widget tree chỉ có 2 levels"
+      },
+      "correct_answer": "B",
+      "explanation": "Flutter UI = tree of widgets. StatelessWidget: build() gọi 1 lần, rebuild chỉ khi parent rebuild. StatefulWidget: có State<T> object. setState(() { count++; }) → trigger rebuild. Lifecycle: initState(), didChangeDependencies(), build(), didUpdateWidget(), dispose(). Widget types: Layout (Row, Column, Stack, Container), Display (Text, Image, Icon), Input (TextField, ElevatedButton), Navigation (Navigator, Route). Composition pattern: nhỏ, reusable widgets thay vì 1 widget lớn.",
+      "source": "https://www.geeksforgeeks.org/flutter-stateful-vs-stateless-widgets/",
+      "tags": [
+        "StatelessWidget",
+        "StatefulWidget",
+        "setState",
+        "widget-tree",
+        "lifecycle"
+      ]
+    },
+    {
+      "question_id": "flutter_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Flutter Layout — Row, Column, Stack, Expanded, Flexible?",
+      "options": {
+        "A": "Chỉ cần Container cho mọi layout",
+        "B": "Row: horizontal. Column: vertical. Stack: overlap. Expanded: fill remaining space. Flexible: proportional. SizedBox: fixed size. mainAxis/crossAxis alignment",
+        "C": "Flutter layout dùng CSS",
+        "D": "Stack không hỗ trợ positioning"
+      },
+      "correct_answer": "B",
+      "explanation": "Row/Column: children layout horizontally/vertically. mainAxisAlignment: start/center/end/spaceBetween/spaceAround. crossAxisAlignment: start/center/end/stretch. Expanded: flex:1 mặc định, fill available space. Flexible: không force fill, can be smaller. Stack: absolute positioning với Positioned(top, left, right, bottom, child). SafeArea: avoid notch/status bar. SingleChildScrollView: scrollable content. ListView.builder: efficient scrollable list. Wrap: flow layout khi không đủ chỗ.",
+      "source": "https://www.geeksforgeeks.org/flutter-layouts/",
+      "tags": [
+        "Row",
+        "Column",
+        "Stack",
+        "Expanded",
+        "Flexible",
+        "layout"
+      ]
+    },
+    {
+      "question_id": "flutter_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "State management trong Flutter — Provider, Riverpod, BLoC?",
+      "options": {
+        "A": "setState() cho mọi app",
+        "B": "setState: local/simple. Provider: dependency injection + state. Riverpod: improved Provider (compile-safe). BLoC: stream-based, separation of concerns. Zustand-like: GetX (simple)",
+        "C": "Chỉ dùng BLoC là đúng",
+        "D": "Flutter không cần state management"
+      },
+      "correct_answer": "B",
+      "explanation": "setState: chỉ cho local, simple state. Provider (ChangeNotifier): ChangeNotifierProvider → Consumer/context.watch. Good for medium apps. Riverpod: type-safe, no BuildContext dependency, auto-dispose. BLoC (Business Logic Component): Events → BLoC → States via Streams. flutter_bloc package. Recommended bởi Google cho large apps. GetX: simple, less boilerplate nhưng opinionated. Trend 2024: Riverpod growing fast. Choose: small app → Provider/setState, large app → Riverpod/BLoC.",
+      "source": "https://www.geeksforgeeks.org/flutter-state-management/",
+      "tags": [
+        "Provider",
+        "Riverpod",
+        "BLoC",
+        "setState",
+        "state-management"
+      ]
+    },
+    {
+      "question_id": "flutter_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Flutter Navigation — Navigator 2.0, GoRouter?",
+      "options": {
+        "A": "Flutter chỉ có Navigator.push",
+        "B": "Navigator 1.0: push/pop. Navigator 2.0: declarative, Router API. GoRouter: popular package trên Navigator 2.0, named routes, deep linking, guarded routes",
+        "C": "Flutter không hỗ trợ deep linking",
+        "D": "GoRouter chỉ cho web"
+      },
+      "correct_answer": "B",
+      "explanation": "Navigator 1.0 (imperative): Navigator.push(context, MaterialPageRoute(builder: (_) => Screen())). Named routes: Navigator.pushNamed('/profile', arguments: userId). Navigator 2.0 (declarative): Router widget, RouterDelegate, RouteInformationParser — phức tạp nhưng powerful. GoRouter (recommended 2024): const router = GoRouter(routes: [GoRoute(path:'/', builder: ...), GoRoute(path:'/user/:id', builder: ...)]). context.go('/user/123'). ShellRoute: persistent navigation (bottom nav). Deep linking: auto handle URL → screen.",
+      "source": "https://www.geeksforgeeks.org/navigation-in-flutter/",
+      "tags": [
+        "Navigator",
+        "GoRouter",
+        "deep-linking",
+        "named-routes",
+        "Navigation-2.0"
+      ]
+    },
+    {
+      "question_id": "flutter_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Flutter và REST API — dio package, error handling?",
+      "options": {
+        "A": "Flutter chỉ có http package",
+        "B": "dio: interceptors, FormData, download/upload, timeout, retry. Combine với Riverpod: repository pattern, loading/error/data states, freezed for models",
+        "C": "http package là đủ cho production",
+        "D": "Flutter không thể call API"
+      },
+      "correct_answer": "B",
+      "explanation": "dio setup: Dio dio = Dio(BaseOptions(baseUrl: 'https://api.example.com', connectTimeout: 5000, receiveTimeout: 3000)). Interceptors: dio.interceptors.add(InterceptorsWrapper(onRequest: addToken, onError: handleRefresh)). Error handling: DioException types (timeout, cancel, badResponse). Repository pattern: abstract interface → implementation với dio. Response model: fromJson với json_serializable hoặc freezed (immutable). Riverpod FutureProvider: async data với loading/error/data states. Pagination: dio_cookie_manager + page cursor.",
+      "source": "https://www.geeksforgeeks.org/flutter-http-requests/",
+      "tags": [
+        "dio",
+        "REST-API",
+        "interceptors",
+        "freezed",
+        "Riverpod",
+        "repository-pattern"
+      ]
+    },
+    {
+      "question_id": "flutter_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Flutter app bị jank (dropped frames). Debug thế nào?",
+      "options": {
+        "A": "Tăng phone RAM",
+        "B": "Flutter DevTools Performance tab: identify expensive widgets, jank frames. Avoid rebuilds: const constructors, RepaintBoundary, ListView.builder thay ListView",
+        "C": "Giảm số widgets",
+        "D": "Dùng StatefulWidget thay StatelessWidget"
+      },
+      "correct_answer": "B",
+      "explanation": "Jank: < 60fps (16ms per frame). Flutter DevTools → Performance tab → UI/GPU thread time. Frame rendering: Skia rasterization. Common causes: (1) Expensive build() methods: compute in background, cache results. (2) Too many widgets rebuild: const widgets không rebuild, RepaintBoundary isolate subtree. (3) Large images: ResizeImage, cacheWidth/cacheHeight. (4) Opacity: AnimatedOpacity tốt hơn Opacity(đặc biệt animating). (5) ListView: builder thay children (lazy). (6) Heavy operations on main thread: compute() isolate. Profile mode: flutter run --profile.",
+      "source": "https://www.geeksforgeeks.org/flutter-performance/",
+      "tags": [
+        "performance",
+        "jank",
+        "DevTools",
+        "RepaintBoundary",
+        "const",
+        "isolate"
+      ]
+    },
+    {
+      "question_id": "flutter_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Flutter app release — code signing, CI/CD, app store submission?",
+      "options": {
+        "A": "Flutter build apk là đủ",
+        "B": "Android: keystore sign, Gradle config. iOS: certificates + provisioning profiles, Xcode. Fastlane hoặc GitHub Actions tự động build/sign/deploy. App store policies",
+        "C": "Chỉ cần debug APK",
+        "D": "iOS không cần signing nếu dùng Flutter"
+      },
+      "correct_answer": "B",
+      "explanation": "Android release: (1) Generate keystore: keytool -genkey. (2) Configure key.properties. (3) Gradle signingConfigs. (4) flutter build apk --release hoặc appbundle. iOS release: (1) Apple Developer account. (2) Certificates (Development/Distribution). (3) Provisioning profiles. (4) Xcode Archive → distribute. Fastlane: match (manage certificates), gym (build), deliver (upload to App Store). GitHub Actions: checkout → setup flutter → get deps → run tests → build → sign → upload. Firebase App Distribution: beta testing. Play Console / App Store Connect: release management, staged rollout.",
+      "source": "https://www.geeksforgeeks.org/flutter-releasing-the-app/",
+      "tags": [
+        "release",
+        "code-signing",
+        "CI-CD",
+        "Fastlane",
+        "App-Store",
+        "Play-Store"
+      ]
+    }
+  ]
+}

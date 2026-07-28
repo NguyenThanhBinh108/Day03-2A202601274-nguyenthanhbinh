@@ -1,0 +1,584 @@
+{
+  "skill": "Python",
+  "skill_key": "python",
+  "total_questions": 27,
+  "levels": {
+    "1_beginner": 6,
+    "2_understanding": 6,
+    "3_application": 6,
+    "4_debugging": 6,
+    "5_production": 3
+  },
+  "generated_at": "2026-06-12T01:12:32.379252",
+  "source_references": [
+    "https://www.w3schools.com/python/",
+    "https://docs.python.org/3/",
+    "https://www.freecodecamp.org/news/tag/python/",
+    "https://www.geeksforgeeks.org/python-programming-language/"
+  ],
+  "questions": [
+    {
+      "question_id": "py_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Sự khác biệt giữa list và tuple trong Python là gì?",
+      "options": {
+        "A": "List nhanh hơn tuple",
+        "B": "List mutable (có thể thay đổi), tuple immutable (không thể thay đổi); tuple thường dùng cho fixed data",
+        "C": "Tuple có thể chứa nhiều kiểu dữ liệu hơn list",
+        "D": "Không có sự khác biệt"
+      },
+      "correct_answer": "B",
+      "explanation": "List: [] mutable — có thể add/remove/change elements. Tuple: () immutable — không thể thay đổi sau khi tạo. Tuple: hashable (có thể dùng làm dict key), nhanh hơn list (ít overhead), dùng cho data không đổi (tọa độ, RGB values, database records).",
+      "source": "https://www.w3schools.com/python/python_tuples.asp",
+      "tags": [
+        "list",
+        "tuple",
+        "mutable",
+        "immutable"
+      ]
+    },
+    {
+      "question_id": "py_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Python dictionary (dict) là gì và khi nào nên dùng?",
+      "options": {
+        "A": "Ordered sequence như list",
+        "B": "Key-value pairs, O(1) lookup, keys phải unique và hashable, dùng khi cần map relationship",
+        "C": "Chỉ lưu được strings",
+        "D": "Giống set nhưng có thứ tự"
+      },
+      "correct_answer": "B",
+      "explanation": "Dict: key-value pairs, unordered (Python 3.6 trở đi thực ra insertion-ordered), O(1) average lookup/insert/delete. Keys phải hashable (string, number, tuple). Dùng khi: cần lookup theo name/id, group data, count frequencies (Counter), JSON-like data. Dict comprehension: {k: v for k, v in items}.",
+      "source": "https://www.w3schools.com/python/python_dictionaries.asp",
+      "tags": [
+        "dict",
+        "hashmap",
+        "data-structure"
+      ]
+    },
+    {
+      "question_id": "py_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "List comprehension trong Python dùng như thế nào?",
+      "options": {
+        "A": "[item for item in list if condition] — cú pháp ngắn gọn để tạo list mới",
+        "B": "Chỉ dùng được với số",
+        "C": "Giống vòng lặp for thông thường, không có gì đặc biệt",
+        "D": "Chỉ dùng trong Python 2"
+      },
+      "correct_answer": "A",
+      "explanation": "List comprehension: [expression for item in iterable if condition]. Ví dụ: [x**2 for x in range(10) if x % 2 == 0] → [0, 4, 16, 36, 64]. Cũng có dict comprehension: {k: v for k, v in d.items()}, set comprehension: {x for x in lst}. Generator expression: (x**2 for x in range(10)) — lazy, tiết kiệm memory.",
+      "source": "https://www.w3schools.com/python/python_lists_comprehension.asp",
+      "tags": [
+        "comprehension",
+        "pythonic",
+        "list"
+      ]
+    },
+    {
+      "question_id": "py_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "*args và **kwargs trong Python function là gì?",
+      "options": {
+        "A": "*args cho positional arguments bất định, **kwargs cho keyword arguments bất định",
+        "B": "*args chỉ cho strings, **kwargs chỉ cho numbers",
+        "C": "Cả hai đều giống nhau",
+        "D": "Chỉ dùng trong class methods"
+      },
+      "correct_answer": "A",
+      "explanation": "*args: nhận bao nhiêu positional arguments tùy ý, trong function là tuple. **kwargs: nhận bao nhiêu keyword arguments tùy ý, trong function là dict. Ví dụ: def func(*args, **kwargs): print(args, kwargs). Gọi: func(1, 2, 3, name='Alice', age=25) → (1,2,3) {'name':'Alice','age':25}. Dùng để tạo flexible APIs và wrapper functions.",
+      "source": "https://www.w3schools.com/python/gloss_python_function_arbitrary_arguments.asp",
+      "tags": [
+        "args",
+        "kwargs",
+        "functions",
+        "variadic"
+      ]
+    },
+    {
+      "question_id": "py_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Python decorator là gì?",
+      "options": {
+        "A": "Cách trang trí code bằng comments đặc biệt",
+        "B": "Function nhận function khác làm argument và return function mới, dùng @syntax để apply",
+        "C": "Chỉ dùng với class methods (@staticmethod, @classmethod)",
+        "D": "Phiên bản đặc biệt của lambda"
+      },
+      "correct_answer": "B",
+      "explanation": "Decorator = higher-order function. @decorator cú pháp sugar cho: func = decorator(func). Dùng để: logging, timing, caching (@functools.lru_cache), authentication, validation. Ví dụ: @app.route('/') trong Flask/FastAPI là decorator. Built-in: @staticmethod, @classmethod, @property. Phải dùng @functools.wraps để preserve function metadata.",
+      "source": "https://www.geeksforgeeks.org/decorators-in-python/",
+      "tags": [
+        "decorator",
+        "higher-order",
+        "metaprogramming"
+      ]
+    },
+    {
+      "question_id": "py_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Python xử lý exception thế nào?",
+      "options": {
+        "A": "Chỉ dùng if/else để check lỗi",
+        "B": "try/except/else/finally blocks; raise để throw; custom exceptions kế thừa Exception",
+        "C": "Exception chỉ có trong Python 3",
+        "D": "Không có cơ chế exception, chỉ return error codes"
+      },
+      "correct_answer": "B",
+      "explanation": "Python exception handling: try: ... except ValueError as e: ... except (TypeError, KeyError): ... else: # chạy nếu không có exception ... finally: # luôn chạy. raise ValueError('message') để throw. Custom: class ValidationError(Exception): pass. EAFP (Easier to Ask Forgiveness than Permission) là Python style: thử trước, xử lý lỗi sau — khác với LBYL (Look Before You Leap) của nhiều ngôn ngữ khác.",
+      "source": "https://www.w3schools.com/python/python_try_except.asp",
+      "tags": [
+        "exception",
+        "try-except",
+        "error-handling"
+      ]
+    },
+    {
+      "question_id": "py_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Generator trong Python là gì và tại sao nó tiết kiệm memory?",
+      "options": {
+        "A": "Generator giống list nhưng không thể dùng index",
+        "B": "Generator dùng yield để trả về giá trị lazily — chỉ compute khi cần, không load tất cả vào memory cùng lúc",
+        "C": "Generator chỉ dùng được với số",
+        "D": "Generator là tên khác của list comprehension"
+      },
+      "correct_answer": "B",
+      "explanation": "Generator function: dùng yield thay vì return. Mỗi lần next() được gọi, function chạy đến yield tiếp theo. Ví dụ: def infinite(): n=0; while True: yield n; n+=1. Tiết kiệm memory: đọc file 10GB dòng-dòng: for line in open('huge.txt'): process(line) — không load cả file vào RAM. Generator expression: (x**2 for x in range(1000000)) — lazy, chỉ tính khi iterate.",
+      "source": "https://www.geeksforgeeks.org/generators-in-python/",
+      "tags": [
+        "generator",
+        "yield",
+        "memory",
+        "lazy-evaluation"
+      ]
+    },
+    {
+      "question_id": "py_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Python GIL (Global Interpreter Lock) là gì và ảnh hưởng thế nào đến đa luồng?",
+      "options": {
+        "A": "GIL là tính năng bảo mật cho web apps",
+        "B": "GIL chỉ cho phép 1 thread chạy Python code tại một thời điểm — multi-threading không giúp CPU-bound tasks, nhưng OK cho I/O-bound",
+        "C": "GIL không tồn tại trong Python 3",
+        "D": "GIL làm Python nhanh hơn các ngôn ngữ khác"
+      },
+      "correct_answer": "B",
+      "explanation": "GIL: mutex lock trong CPython, chỉ 1 thread được execute Python bytecode tại 1 thời điểm. Ảnh hưởng: Threading với CPU-bound tasks (tính toán nặng) → không song song thật, đôi khi chậm hơn do overhead. I/O-bound tasks (network calls, file I/O): GIL release khi chờ I/O → threading vẫn có lợi. Alternative: multiprocessing (mỗi process có GIL riêng), asyncio (single-threaded async), concurrent.futures.ProcessPoolExecutor.",
+      "source": "https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/",
+      "tags": [
+        "GIL",
+        "threading",
+        "concurrency",
+        "CPython"
+      ]
+    },
+    {
+      "question_id": "py_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Context manager và from __future__ import annotations trong Python là gì?",
+      "options": {
+        "A": "Context manager chỉ dùng để mở file",
+        "B": "Context manager (with statement) đảm bảo cleanup resources dù có exception; implement qua __enter__/__exit__ hoặc @contextmanager",
+        "C": "Chỉ dùng trong Python 2",
+        "D": "Context manager làm code chậm hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "with open('file') as f: — tự đóng file kể cả khi có exception. __enter__ return resource, __exit__ cleanup (luôn gọi dù exception). Tự tạo: @contextlib.contextmanager def timer(): start=time.time(); yield; print(time.time()-start). Dùng cho: file I/O, database connections, locks, temporary directory, mock patches (unittest.mock.patch), database transactions.",
+      "source": "https://www.geeksforgeeks.org/context-manager-in-python/",
+      "tags": [
+        "context-manager",
+        "with-statement",
+        "resource-management"
+      ]
+    },
+    {
+      "question_id": "py_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Python type hints và Pydantic dùng như thế nào trong production code?",
+      "options": {
+        "A": "Type hints chỉ là comment, không ảnh hưởng runtime",
+        "B": "Type hints document types (checked bởi mypy/pyright), Pydantic validate data at runtime với type coercion và rich error messages",
+        "C": "Type hints bắt buộc phải dùng trong Python 3.10+",
+        "D": "Pydantic thay thế hoàn toàn type hints"
+      },
+      "correct_answer": "B",
+      "explanation": "Type hints (PEP 484): def greet(name: str) -> str. Không enforce runtime (trừ khi dùng runtime checker). Tools: mypy, pyright (VS Code Pylance). Pydantic: runtime validation — class User(BaseModel): name: str; age: int; email: EmailStr. User(name='Alice', age='25') → auto-coerce '25'→25. ValidationError với chi tiết. FastAPI dùng Pydantic cho request/response schemas. Dataclasses: lightweight alternative, no validation.",
+      "source": "https://www.geeksforgeeks.org/type-hints-in-python/",
+      "tags": [
+        "type-hints",
+        "pydantic",
+        "validation",
+        "mypy"
+      ]
+    },
+    {
+      "question_id": "py_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "Sự khác biệt giữa @classmethod và @staticmethod trong Python?",
+      "options": {
+        "A": "Cả hai đều giống nhau, chỉ tên khác",
+        "B": "@classmethod nhận cls (class) làm argument đầu tiên, @staticmethod không nhận self hay cls — chỉ là utility function trong class",
+        "C": "@staticmethod chỉ dùng trong abstract class",
+        "D": "@classmethod không thể gọi từ instance"
+      },
+      "correct_answer": "B",
+      "explanation": "Instance method: nhận self (instance). @classmethod: nhận cls (class), dùng để tạo alternative constructors — User.from_dict({'name':'Alice'}). @staticmethod: không nhận self hay cls, chỉ là function trong namespace của class — thường là utility function liên quan đến class nhưng không cần access class/instance state. Gọi: Class.method() cho cả classmethod và staticmethod.",
+      "source": "https://www.geeksforgeeks.org/class-method-vs-static-method-python/",
+      "tags": [
+        "classmethod",
+        "staticmethod",
+        "OOP"
+      ]
+    },
+    {
+      "question_id": "py_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "Python asyncio và async/await hoạt động thế nào?",
+      "options": {
+        "A": "asyncio là multi-threading",
+        "B": "asyncio là single-threaded event loop — async functions return coroutines, await yield control đến event loop khi chờ I/O",
+        "C": "async/await chỉ dùng được với database",
+        "D": "asyncio nhanh hơn threading trong mọi trường hợp"
+      },
+      "correct_answer": "B",
+      "explanation": "asyncio: cooperative multitasking, single-threaded. async def func(): return await something(). Coroutine chỉ chạy khi được await hoặc chạy trong event loop. asyncio.gather() để run coroutines concurrently. Khi nào dùng: I/O-bound (network calls, file I/O) — không dùng cho CPU-bound (dùng multiprocessing). FastAPI, aiohttp, databases async — tất cả dùng asyncio. Lưu ý: không mix sync-heavy code trong async function.",
+      "source": "https://www.geeksforgeeks.org/asyncio-in-python/",
+      "tags": [
+        "asyncio",
+        "async-await",
+        "concurrency",
+        "event-loop"
+      ]
+    },
+    {
+      "question_id": "py_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Cách tốt nhất để đọc file CSV lớn (5GB) mà không out-of-memory?",
+      "options": {
+        "A": "pandas.read_csv('huge.csv') — pandas xử lý được",
+        "B": "Đọc từng chunk: pandas.read_csv('file.csv', chunksize=10000) hoặc dùng generator để đọc từng dòng",
+        "C": "Tăng RAM Python process",
+        "D": "Split file trước, đọc từng phần"
+      },
+      "correct_answer": "B",
+      "explanation": "pandas.read_csv() với file 5GB sẽ cần ~10-15GB RAM (với index/dtypes overhead). Solutions: (1) Chunked reading: for chunk in pd.read_csv('file.csv', chunksize=10000): process(chunk). (2) Specify dtypes: dtype={'col': 'int32'} giảm memory 4x so với int64. (3) usecols=['col1','col2'] chỉ đọc columns cần. (4) Iterator: pd.read_csv(..., iterator=True). (5) Polars: nhanh hơn pandas, lazy evaluation. (6) Dask: distributed pandas cho massive datasets.",
+      "source": "https://www.geeksforgeeks.org/how-to-read-large-files-in-python/",
+      "tags": [
+        "file-io",
+        "memory",
+        "pandas",
+        "chunked-reading"
+      ]
+    },
+    {
+      "question_id": "py_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Implement một simple caching decorator với TTL (Time-To-Live) trong Python?",
+      "options": {
+        "A": "Dùng global dict để cache",
+        "B": "Implement với functools.wraps, dict lưu (result, timestamp), check TTL mỗi lần gọi; hoặc dùng @functools.lru_cache cho in-memory cache",
+        "C": "Cache chỉ có thể implement với Redis",
+        "D": "Dùng pickle để serialize"
+      },
+      "correct_answer": "B",
+      "explanation": "Simple TTL cache: import time; from functools import wraps; def ttl_cache(ttl=60): def decorator(func): cache={}; @wraps(func) def wrapper(*args): if args in cache: result, ts = cache[args]; if time.time()-ts < ttl: return result; result=func(*args); cache[args]=(result,time.time()); return result; return wrapper; return decorator. Production: dùng cachetools library, Redis (distributed cache), hoặc @functools.lru_cache(maxsize=128) cho simple in-memory LRU.",
+      "source": "https://www.geeksforgeeks.org/python-functools-lru_cache/",
+      "tags": [
+        "caching",
+        "decorator",
+        "performance",
+        "functools"
+      ]
+    },
+    {
+      "question_id": "py_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Python data classes (@dataclass) giúp gì so với class thông thường?",
+      "options": {
+        "A": "Dataclass nhanh hơn class thông thường 10x",
+        "B": "Tự generate __init__, __repr__, __eq__ từ field annotations; giảm boilerplate code đáng kể",
+        "C": "Dataclass không thể có methods",
+        "D": "Chỉ dùng được với primitive types"
+      },
+      "correct_answer": "B",
+      "explanation": "@dataclass tự generate: __init__(self, name: str, age: int), __repr__, __eq__. Ví dụ: @dataclass class Point: x: float; y: float; def distance(self): return (x**2+y**2)**0.5. Thêm options: @dataclass(frozen=True) → immutable (như namedtuple nhưng readable), @dataclass(order=True) → so sánh được. field() để config: field(default_factory=list) cho mutable defaults. Python 3.10+: @dataclass(slots=True) → nhanh hơn, dùng ít memory hơn.",
+      "source": "https://www.geeksforgeeks.org/dataclasses-in-python/",
+      "tags": [
+        "dataclass",
+        "OOP",
+        "boilerplate",
+        "Python3.7+"
+      ]
+    },
+    {
+      "question_id": "py_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Cách viết unit test cho Python function dùng pytest?",
+      "options": {
+        "A": "Chỉ dùng print() để kiểm tra",
+        "B": "pytest tự discover test_ functions, dùng assert để check, fixtures cho test setup, monkeypatch để mock dependencies",
+        "C": "Cần install special test runner",
+        "D": "Unit test không cần thiết với Python"
+      },
+      "correct_answer": "B",
+      "explanation": "pytest: file test_*.py, function test_*(). Ví dụ: def test_add(): assert add(2,3)==5. Fixtures: @pytest.fixture def db(): conn=create_connection(); yield conn; conn.close(). Parametrize: @pytest.mark.parametrize('a,b,expected',[(1,2,3),(0,0,0)]). Monkeypatch: def test_api(monkeypatch): monkeypatch.setattr(module, 'fetch', mock_fetch). Mock: unittest.mock.patch(). Coverage: pytest --cov=src. TDD: write test first, then implementation.",
+      "source": "https://www.freecodecamp.org/news/pytest-for-beginners/",
+      "tags": [
+        "pytest",
+        "unit-testing",
+        "TDD",
+        "fixtures"
+      ]
+    },
+    {
+      "question_id": "py_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Python Virtual Environment và dependency management best practices?",
+      "options": {
+        "A": "Cài tất cả packages globally với pip là đủ",
+        "B": "Dùng venv/poetry/conda tạo isolated environments; requirements.txt hoặc pyproject.toml (poetry) để track dependencies",
+        "C": "Docker thay thế hoàn toàn virtual environments",
+        "D": "Virtual environments chỉ cần cho production"
+      },
+      "correct_answer": "B",
+      "explanation": "Vấn đề: cài global → conflict giữa projects (ProjectA cần Django 3.x, ProjectB cần 4.x). Solutions: venv (built-in): python -m venv .venv; source .venv/bin/activate. requirements.txt: pip freeze > requirements.txt; pip install -r requirements.txt. Poetry (modern): pyproject.toml, lock file, virtual env tự động, publish packages dễ. pip-tools: compile requirements. Conda: data science, includes non-Python deps. Best practice: một venv per project, commit requirements.txt/pyproject.toml, không commit .venv.",
+      "source": "https://www.freecodecamp.org/news/python-virtual-environments-explained-with-examples/",
+      "tags": [
+        "venv",
+        "dependency-management",
+        "poetry",
+        "pip"
+      ]
+    },
+    {
+      "question_id": "py_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Xử lý concurrent HTTP requests trong Python FastAPI thế nào để tối ưu performance?",
+      "options": {
+        "A": "Dùng threading.Thread cho mỗi request",
+        "B": "async/await với httpx.AsyncClient cho I/O, asyncio.gather() cho parallel requests, connection pooling",
+        "C": "Chạy nhiều worker processes là đủ",
+        "D": "Synchronous requests trong FastAPI là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "FastAPI là async framework. Parallel requests: async with httpx.AsyncClient() as client: results = await asyncio.gather(client.get(url1), client.get(url2), client.get(url3)). Connection pooling: limits.max_connections=100, keepalive_expiry=30. Background tasks: BackgroundTasks để run non-blocking after response. Worker processes: uvicorn app:app --workers 4 (mỗi worker một event loop riêng). CPU-bound: asyncio.run_in_executor(executor, cpu_func) để không block event loop.",
+      "source": "https://www.geeksforgeeks.org/fastapi-tutorial/",
+      "tags": [
+        "FastAPI",
+        "async",
+        "concurrent",
+        "httpx"
+      ]
+    },
+    {
+      "question_id": "py_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Python app bị memory leak mặc dù đã dùng del và gc.collect(). Cách debug và fix?",
+      "options": {
+        "A": "Restart process định kỳ là đủ",
+        "B": "Dùng memory_profiler, objgraph, tracemalloc để tìm leaking objects; check circular references, __del__ methods, C extensions",
+        "C": "Tăng RAM server",
+        "D": "Chuyển sang PyPy"
+      },
+      "correct_answer": "B",
+      "explanation": "Python GC xử lý được circular refs thông thường, nhưng leak vẫn xảy ra với: (1) Circular refs có __del__ (Python <3.4 không thu gọn được). (2) C extension không release memory đúng cách. (3) Caches không có eviction (dict grow vô hạn). (4) Unclosed file/socket/DB connections. Debug: tracemalloc.start(); snapshot=tracemalloc.take_snapshot(); top_stats=snapshot.statistics('lineno'). objgraph.show_most_common_types(). memory_profiler: @profile decorator. Guppyf3 hay Heapy cho heap analysis.",
+      "source": "https://www.geeksforgeeks.org/memory-profiling-in-python-using-memory-profiler/",
+      "tags": [
+        "memory-leak",
+        "debugging",
+        "GC",
+        "profiling"
+      ]
+    },
+    {
+      "question_id": "py_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Code Python dùng pandas chạy đúng nhưng rất chậm với dataset lớn. Cách tối ưu?",
+      "options": {
+        "A": "Dùng faster hardware",
+        "B": "Vectorized operations thay vì loops, đúng dtypes, apply với numba JIT, dùng Polars/Dask cho dataset cực lớn",
+        "C": "Chuyển sang R",
+        "D": "Giảm số columns"
+      },
+      "correct_answer": "B",
+      "explanation": "Common pandas bottlenecks: (1) Row-wise loops: df.iterrows() → rất chậm. Thay bằng vectorized: df['col'].apply(func) hoặc numpy operations. (2) Wrong dtypes: category dtype cho string columns với ít unique values → memory 10-100x nhỏ hơn. (3) Chaining vs copy: df[df.col>0].reset_index() tạo copies không cần thiết. (4) Numba: @numba.jit cho custom numeric functions → near C speed. (5) Polars: lazy evaluation, multi-threaded, 10-100x nhanh hơn pandas. (6) Modin: drop-in pandas replacement dùng Ray/Dask.",
+      "source": "https://www.geeksforgeeks.org/how-to-optimize-pandas-performance/",
+      "tags": [
+        "pandas",
+        "performance",
+        "vectorization",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "py_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "Python multiprocessing Pool deadlock — tại sao và cách fix?",
+      "options": {
+        "A": "Tăng pool size là đủ",
+        "B": "Deadlock khi: share mutable state giữa processes, Manager objects bị misuse, pipe full — dùng Queue đúng cách, timeout, avoid shared mutable state",
+        "C": "Dùng threading thay vì multiprocessing",
+        "D": "Chỉ xảy ra trên Windows"
+      },
+      "correct_answer": "B",
+      "explanation": "Pool deadlock scenarios: (1) Pool.map() với function dùng Pool khác bên trong (nested pools). (2) Process communicate qua Pipe đầy (buffer ~65KB) mà không có consumer. (3) Manager proxy objects bị deadlock khi access concurrent. Fixes: (1) Dùng Queue thay Pipe cho large data. (2) timeout parameter trong Pool.get(timeout=30). (3) Tránh nested pools. (4) concurrent.futures.ProcessPoolExecutor thường safer hơn raw multiprocessing. (5) Dùng imap_unordered() cho streaming results.",
+      "source": "https://www.geeksforgeeks.org/multiprocessing-in-python-set-1/",
+      "tags": [
+        "multiprocessing",
+        "deadlock",
+        "concurrency",
+        "Pool"
+      ]
+    },
+    {
+      "question_id": "py_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao default mutable argument trong Python là bug phổ biến?",
+      "options": {
+        "A": "Mutable defaults chạy chậm hơn",
+        "B": "Default argument chỉ evaluate 1 lần khi function define, nên list/dict default bị SHARE giữa tất cả calls — dùng None làm default thay thế",
+        "C": "Python 3 đã fix bug này",
+        "D": "Chỉ xảy ra với list, không xảy ra với dict"
+      },
+      "correct_answer": "B",
+      "explanation": "Bug: def append(item, lst=[]): lst.append(item); return lst. append(1) → [1]. append(2) → [1, 2] (!) — cùng list! Vì lst=[] chỉ tạo 1 lần khi function được define. Fix chuẩn: def append(item, lst=None): if lst is None: lst = []; lst.append(item); return lst. Áp dụng với mọi mutable type: list, dict, set. Tuy nhiên đây đôi khi là tính năng hữu ích: caching với mutable default dict.",
+      "source": "https://www.geeksforgeeks.org/how-to-use-mutable-default-arguments-in-python/",
+      "tags": [
+        "default-arguments",
+        "mutable",
+        "bug",
+        "gotcha"
+      ]
+    },
+    {
+      "question_id": "py_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Python import circular dependencies — nguyên nhân và cách giải quyết?",
+      "options": {
+        "A": "Tất cả imports đều phải ở đầu file",
+        "B": "Circular import: A imports B, B imports A. Fix: restructure code, lazy imports, import inside function, hoặc dùng TYPE_CHECKING",
+        "C": "Circular imports không thể xảy ra với Python 3",
+        "D": "Chỉ fix được bằng cách restart Python"
+      },
+      "correct_answer": "B",
+      "explanation": "Circular import error: ImportError: cannot import name 'X' from partially initialized module. Fix strategies: (1) Restructure: tạo module C chứa shared code mà A và B đều import. (2) Lazy import: import B inside function khi cần dùng, không phải top-level. (3) TYPE_CHECKING: from typing import TYPE_CHECKING; if TYPE_CHECKING: from module import Type — chỉ dùng trong type hints. (4) importlib.import_module() cho dynamic imports. Thường gặp trong models.py và serializers.py trong Django.",
+      "source": "https://www.geeksforgeeks.org/circular-import-in-python/",
+      "tags": [
+        "circular-import",
+        "module-structure",
+        "debugging"
+      ]
+    },
+    {
+      "question_id": "py_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao Python string immutable và ảnh hưởng đến performance thế nào?",
+      "options": {
+        "A": "String immutable làm code an toàn hơn nhưng không ảnh hưởng performance",
+        "B": "String immutable nên string concatenation trong loop (s += str) tạo N objects mới → O(N²) → dùng list.append() + ''.join() thay thế",
+        "C": "Python 3 đã làm string mutable",
+        "D": "Immutable string luôn nhanh hơn mutable string"
+      },
+      "correct_answer": "B",
+      "explanation": "String trong Python là immutable sequence of Unicode characters. s = 'hello'; s[0] = 'H' → TypeError. Performance impact: 'a' + 'b' + 'c' + ... (N lần) → tạo N-1 intermediate strings, O(N²) total copies. Fix: result = []; result.append(part); final = ''.join(result) — O(N). f-string (f'{a} {b}') là cách nhanh nhất cho formatting. String interning: Python cache strings nhỏ/identifier-like, vì vậy 'hello' is 'hello' → True (implementation detail, không nên rely on).",
+      "source": "https://www.geeksforgeeks.org/python-string-concatenation/",
+      "tags": [
+        "string",
+        "immutable",
+        "performance",
+        "memory"
+      ]
+    },
+    {
+      "question_id": "py_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "FastAPI app của bạn serve 10,000 req/s nhưng response time tăng dần theo thời gian (từ 50ms lên 2s sau 2 giờ). Nguyên nhân và cách debug?",
+      "options": {
+        "A": "Tăng số lượng uvicorn workers",
+        "B": "Likely: DB connection pool exhausted, memory leak, hoặc blocking sync code trong async handler — profile với py-spy, check DB pool metrics",
+        "C": "Restart service mỗi 2 giờ",
+        "D": "Chuyển sang synchronous Django"
+      },
+      "correct_answer": "B",
+      "explanation": "Response time tăng dần là dấu hiệu resource leak hoặc bottleneck tích lũy. Debug steps: (1) py-spy top --pid <pid> — xem hot spots không cần restart. (2) psutil để monitor memory/CPU trend. (3) DB pool: kiểm tra active connections — nếu pool exhausted, requests xếp hàng. Fix: tăng pool size hoặc giảm connection time. (4) asyncio.create_task() không awaited → task accumulation. (5) Blocking sync code trong async (requests.get() thay vì httpx.AsyncClient) → block event loop. (6) Prometheus + Grafana để track metrics theo thời gian.",
+      "source": "https://www.geeksforgeeks.org/fastapi-tutorial/",
+      "tags": [
+        "FastAPI",
+        "performance",
+        "profiling",
+        "production",
+        "connection-pool"
+      ]
+    },
+    {
+      "question_id": "py_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Python ML model serving trong production: model load time 30s, nhưng phải serve requests trong <100ms. Architecture nào đúng?",
+      "options": {
+        "A": "Load model mỗi request",
+        "B": "Load model một lần khi app start (singleton), warm-up requests, horizontal scaling với load balancer, model caching với version management",
+        "C": "Dùng caching ở frontend",
+        "D": "Giảm model size xuống dưới 1MB"
+      },
+      "correct_answer": "B",
+      "explanation": "Model serving best practices: (1) Load once at startup — FastAPI startup event: @app.on_event('startup') async def load_model(): app.state.model = load_model(). (2) Warm-up: gửi dummy requests sau khi load để JIT compile (TensorFlow/PyTorch trace). (3) Model registry: MLflow/BentoML version management. (4) Batching: gom requests lại, process batch một lần (GPU utilization cao hơn). (5) TorchServe/TF Serving cho production model serving với multi-worker support. (6) Quantization/ONNX để giảm inference time. (7) Auto-scaling: thêm replicas khi traffic tăng.",
+      "source": "https://www.freecodecamp.org/news/machine-learning-model-deployment/",
+      "tags": [
+        "ML-serving",
+        "FastAPI",
+        "production",
+        "model-loading",
+        "scalability"
+      ]
+    },
+    {
+      "question_id": "py_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Celery task queue trong production bị stuck — tasks không được execute mặc dù worker đang chạy. Checklist debug?",
+      "options": {
+        "A": "Restart tất cả workers",
+        "B": "Check broker connection (Redis/RabbitMQ), task routing, worker concurrency, task serialization, chord/group deadlocks, và monitor với Flower",
+        "C": "Tăng số lượng tasks",
+        "D": "Dùng cron jobs thay Celery"
+      },
+      "correct_answer": "B",
+      "explanation": "Celery debugging checklist: (1) Broker status: redis-cli ping hoặc rabbitmq-diagnostics status. (2) Worker status: celery -A app inspect active. (3) Task routing: task enqueued vào đúng queue mà worker đang listen? celery -A app inspect reserved. (4) Serialization: task args phải JSON-serializable khi dùng json serializer (default). (5) Chord deadlock: chord cần 1 result backend, nếu chord member retry quá nhiều → chord callback không fire. (6) Task TTL: task hết hạn trong queue. (7) Flower (monitoring UI): celery -A app flower — xem real-time task states. (8) Inspect logs: CELERY_LOG_LEVEL=DEBUG.",
+      "source": "https://www.geeksforgeeks.org/celery-integration-with-django/",
+      "tags": [
+        "Celery",
+        "task-queue",
+        "debugging",
+        "production",
+        "Redis"
+      ]
+    }
+  ]
+}

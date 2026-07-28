@@ -1,0 +1,248 @@
+{
+  "role_id": "backend_developer",
+  "role_name": "Backend Developer (Java / Python / Node.js)",
+  "market_overview": "Backend Developer là xương sống của mọi hệ thống phần mềm. Tại Việt Nam 2025, đây là vị trí có nhu cầu tuyển dụng cao nhất thị trường IT với 552+ JD được phân tích từ ITviec/TopDev. Kỹ sư Backend giỏi không chỉ biết viết API — họ phải thiết kế hệ thống chịu tải cao (High Scalability), tối ưu Database và đảm bảo bảo mật. Java/Spring Boot vẫn chiếm ưu thế ở các công ty lớn và FinTech, trong khi Node.js và Python chiếm lĩnh startup và công ty product.",
+  "salary_range_vnd": "15-45 triệu/tháng (Junior: 10-18tr | Middle: 18-30tr | Senior: 30-45tr+)",
+  "milestones": [
+    {
+      "milestone_id": "m1_backend_foundation",
+      "title": "Nền Tảng Lập Trình & Tư Duy Backend",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Nắm vững ngôn ngữ chính: Java (OOP, Generics, Collections, Streams, Lambda) hoặc Python (async/await, type hints) hoặc Node.js (Event Loop, Promise, async/await)",
+        "Hiểu sâu HTTP Protocol: Request/Response, HTTP Methods (GET/POST/PUT/DELETE/PATCH), Status Codes, Headers, CORS",
+        "RESTful API Design: Resource naming, Stateless, Versioning (v1/v2), HATEOAS concepts",
+        "SQL nâng cao: JOIN (INNER/LEFT/RIGHT), Subqueries, Aggregation, Index, Explain Query",
+        "Git workflow chuyên nghiệp: Branching strategy (Gitflow, trunk-based), Pull Request, Code Review, Conventional Commits",
+        "Tư duy Clean Code: SOLID Principles, DRY, KISS, YAGNI — không chỉ học lý thuyết mà phải áp dụng vào code thực tế"
+      ],
+      "toolchains": [
+        "IntelliJ IDEA / VS Code",
+        "Postman / Bruno (API Testing)",
+        "Git + GitHub/GitLab",
+        "PostgreSQL + DBeaver",
+        "Linux Terminal (bash basics)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Xây dựng hệ thống quản lý thư viện sách (Library Management API)",
+          "business_context": "Một chuỗi thư viện cần API để quản lý sách, độc giả và lịch mượn/trả. Hệ thống phải xử lý đúng các edge case: mượn quá hạn, sách hết stock, độc giả bị blacklist.",
+          "tech_stack_used": ["Java / Node.js", "PostgreSQL", "REST API", "Postman"],
+          "key_challenges": [
+            "Thiết kế Database Schema đúng chuẩn 3NF: Tránh data redundancy, xác định đúng Primary Key và Foreign Key.",
+            "Xử lý Race Condition: Khi 2 người cùng mượn cuốn sách cuối cùng, làm sao đảm bảo chỉ 1 người thành công? (Giải pháp: Database Transaction + SELECT FOR UPDATE).",
+            "Viết unit test bằng JUnit/Jest để đảm bảo business logic đúng trước khi deploy."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích sự khác biệt giữa PUT và PATCH trong REST API?",
+          "expected_answer_points": [
+            "PUT: Thay thế toàn bộ resource. Nếu không gửi một trường, trường đó sẽ bị xóa/null.",
+            "PATCH: Cập nhật một phần resource. Chỉ các trường được gửi lên mới bị thay đổi.",
+            "Thực tế: PATCH phổ biến hơn vì tiết kiệm băng thông và an toàn hơn."
+          ],
+          "difficulty": "Junior"
+        },
+        {
+          "question": "Index trong Database hoạt động như thế nào? Khi nào nên và không nên dùng Index?",
+          "expected_answer_points": [
+            "Index hoạt động như mục lục sách — tạo ra một cấu trúc dữ liệu phụ (B-Tree) giúp tìm kiếm nhanh hơn O(log n) thay vì O(n) full scan.",
+            "Nên dùng: Cột thường xuyên dùng trong WHERE, JOIN, ORDER BY.",
+            "Không nên dùng: Cột có ít giá trị unique (VD: cột gender chỉ có 2 giá trị), hoặc bảng nhỏ < 1000 rows, hoặc cột thường xuyên bị UPDATE (Index làm chậm write)."
+          ],
+          "difficulty": "Junior-Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "God Class / Fat Controller",
+          "why_its_bad": "Nhét toàn bộ business logic vào Controller hoặc một class duy nhất. Class này có hàng ngàn dòng code, cực kỳ khó test và maintain. Thêm tính năng mới = sửa 1 file khổng lồ = dễ break cả hệ thống.",
+          "better_approach": "Tách biệt theo lớp: Controller (nhận request) → Service (business logic) → Repository (truy vấn DB). Mỗi class chỉ có 1 trách nhiệm duy nhất (Single Responsibility)."
+        },
+        {
+          "pattern_name": "N+1 Query Problem",
+          "why_its_bad": "Khi lấy danh sách 100 orders, code lại chạy thêm 100 query riêng để lấy thông tin customer của từng order. Tổng = 101 query thay vì 1 query với JOIN. Với 10.000 orders, hệ thống sẽ chết.",
+          "better_approach": "Dùng JOIN hoặc Eager Loading (fetch data trong 1 query). Trong Spring Boot: @EntityGraph hoặc JOIN FETCH. Trong Sequelize/TypeORM: include. Luôn dùng SQL Profiler để phát hiện N+1."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_backend_framework_db",
+      "title": "Framework & Database Chuyên Sâu",
+      "duration_weeks": 10,
+      "core_skills": [
+        "Spring Boot (Java): Dependency Injection, Bean lifecycle, Spring Security (JWT), Spring Data JPA, Validation, Exception Handling @ControllerAdvice",
+        "Hoặc Express.js/Fastify (Node.js): Middleware pipeline, Router, Error handling middleware",
+        "Hoặc Django/FastAPI (Python): ORM, Serializer, Dependency injection pattern",
+        "Database nâng cao: Connection Pooling, Database Migration (Flyway/Liquibase/Alembic), Query Optimization với EXPLAIN ANALYZE",
+        "Redis: Caching strategies (Cache-aside, Write-through), Session storage, Rate Limiting",
+        "API Security: Input validation, SQL Injection prevention, XSS prevention, Rate Limiting, HTTPS"
+      ],
+      "toolchains": [
+        "Spring Boot 3.x / Express 5.x / FastAPI",
+        "PostgreSQL + pgAdmin",
+        "Redis + RedisInsight",
+        "Flyway / Liquibase (DB Migration)",
+        "Swagger/OpenAPI (API Documentation)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "API hệ thống E-commerce với Authentication & Authorization",
+          "business_context": "Xây dựng backend cho trang thương mại điện tử: Đăng ký/Đăng nhập (JWT), quản lý Product, Order, giỏ hàng, và phân quyền (Admin/User). Hệ thống cần xử lý đúng business rule: Không được mua hàng quá stock, phải trừ stock atomic khi đặt hàng.",
+          "tech_stack_used": ["Spring Boot / Node.js", "PostgreSQL", "Redis (cart & session)", "JWT", "Swagger"],
+          "key_challenges": [
+            "Implement JWT Authentication đúng cách: Access Token (15 phút) + Refresh Token (7 ngày) + Token Blacklist khi logout.",
+            "Xử lý Concurrency khi flash sale: 1000 người cùng đặt 1 sản phẩm còn 10 cái. Dùng Optimistic Locking (version field) hoặc Redis Atomic Decrement để giải quyết.",
+            "Design API theo chuẩn RESTful với đầy đủ error response format nhất quán: {error_code, message, details}."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích cơ chế hoạt động của JWT. Tại sao không nên lưu thông tin nhạy cảm trong payload?",
+          "expected_answer_points": [
+            "JWT gồm 3 phần: Header (thuật toán) + Payload (data) + Signature (chữ ký). Phần Payload chỉ được Base64 encode — bất kỳ ai decode được đều đọc được nội dung.",
+            "Tuyệt đối không lưu password, credit card, hay thông tin nhạy cảm trong payload.",
+            "Server verify JWT bằng cách ký lại Header + Payload và so sánh với Signature. Nếu ai sửa Payload, Signature sẽ không khớp."
+          ],
+          "difficulty": "Junior-Middle"
+        },
+        {
+          "question": "Connection Pooling là gì? Tại sao nó quan trọng trong production?",
+          "expected_answer_points": [
+            "Tạo kết nối DB mới cho mỗi request rất tốn tài nguyên (TCP handshake, auth ~10-50ms). Connection Pool giữ sẵn N connections, tái sử dụng thay vì tạo mới.",
+            "Không có Pool: 1000 request/s = 1000 connections = DB bị overload và sập.",
+            "Spring Boot dùng HikariCP (nhanh nhất), cấu hình: maximum-pool-size (10-20 cho DB thường), minimum-idle."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Lưu password dạng plain text hoặc chỉ MD5/SHA1",
+          "why_its_bad": "MD5 và SHA1 đã bị crack hoàn toàn bằng Rainbow Table. Nếu DB bị leak, toàn bộ mật khẩu của user sẽ bị lộ ngay lập tức. Đây là lỗi bảo mật nghiêm trọng nhất.",
+          "better_approach": "BẮT BUỘC dùng BCrypt, Argon2 hoặc SCrypt. Các thuật toán này có salt ngẫu nhiên và có thể điều chỉnh cost factor để chạy chậm hơn khi hardware mạnh hơn — làm brute force không khả thi."
+        },
+        {
+          "pattern_name": "Trả về 200 OK cho mọi response kể cả lỗi",
+          "why_its_bad": "Frontend và monitoring tools đều dựa vào HTTP Status Code để xử lý. Trả về 200 kể cả khi có lỗi khiến frontend không thể phân biệt success/failure, monitoring không alert được, API trở nên không thể tích hợp.",
+          "better_approach": "Dùng đúng HTTP Status Code: 201 Created, 400 Bad Request (validation fail), 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 500 Internal Server Error. Kết hợp với body lỗi nhất quán."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m3_backend_devops_production",
+      "title": "Containerization, CI/CD & Production-Ready System",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Docker: Viết Dockerfile tối ưu (multi-stage build, non-root user, .dockerignore), Docker Compose cho local dev với nhiều services",
+        "CI/CD với GitHub Actions / GitLab CI: Build → Test → Lint → Docker Build → Push Registry → Deploy. Tự động chạy khi push code",
+        "AWS cơ bản: EC2 (deploy app), RDS (managed PostgreSQL), S3 (file storage), IAM (permission), ECR (Docker registry)",
+        "Observability: Structured Logging (JSON format, request ID, trace ID), Health Check endpoint /actuator/health, Basic metrics với Prometheus/Grafana",
+        "Environment Configuration: 12-Factor App — không bao giờ hardcode config, dùng environment variables và .env files"
+      ],
+      "toolchains": [
+        "Docker + Docker Compose",
+        "GitHub Actions / GitLab CI",
+        "AWS (EC2, RDS, S3, IAM)",
+        "Nginx (reverse proxy, SSL termination)",
+        "Let's Encrypt (HTTPS miễn phí)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Deploy E-commerce API lên AWS với CI/CD Pipeline hoàn chỉnh",
+          "business_context": "Đưa project E-commerce từ giai đoạn trước lên production thực tế. Mục tiêu: mỗi khi merge code vào main branch, hệ thống tự động test → build Docker image → deploy lên EC2 mà không cần can thiệp thủ công.",
+          "tech_stack_used": ["Docker", "GitHub Actions", "AWS EC2 + RDS + S3", "Nginx + Let's Encrypt"],
+          "key_challenges": [
+            "Viết Dockerfile multi-stage để giảm image size từ ~500MB xuống còn ~100MB (build stage dùng JDK, runtime stage chỉ cần JRE).",
+            "Cấu hình Zero-downtime Deployment: Dùng Blue-Green Deployment hoặc Rolling Update để không có downtime khi deploy version mới.",
+            "Setup Secrets Management: API keys, DB password KHÔNG bao giờ được hardcode hay commit lên Git. Dùng GitHub Secrets trong CI/CD và AWS Parameter Store ở production."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Sự khác biệt giữa Docker Image và Docker Container? Tại sao Docker quan trọng trong phát triển phần mềm hiện đại?",
+          "expected_answer_points": [
+            "Image: Template bất biến (read-only) chứa code + dependencies + config. Giống như bản thiết kế nhà.",
+            "Container: Instance đang chạy từ Image. Giống như ngôi nhà được xây từ bản thiết kế. Mỗi container độc lập, có filesystem và network riêng.",
+            "Tại sao quan trọng: Giải quyết 'works on my machine' — đảm bảo môi trường dev/staging/production giống hệt nhau. Dễ scale và deploy."
+          ],
+          "difficulty": "Junior-Middle"
+        },
+        {
+          "question": "Microservices vs Monolith — khi nào nên dùng cái nào? Hãy cho ví dụ thực tế.",
+          "expected_answer_points": [
+            "Monolith: Phù hợp với startup, team nhỏ < 10 người, product chưa rõ domain. Dễ develop, debug và deploy. 80% công ty Việt Nam đang dùng.",
+            "Microservices: Phù hợp khi team lớn, domain rõ ràng, cần scale từng service độc lập. Tốn kém hơn nhiều: cần Service Discovery, API Gateway, Distributed Tracing, Message Queue.",
+            "Lời khuyên thực tế: Bắt đầu với Monolith được thiết kế tốt (Modular Monolith), chỉ tách Microservices khi có pain point rõ ràng."
+          ],
+          "difficulty": "Middle-Senior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Commit secrets / credentials lên Git",
+          "why_its_bad": "GitHub có bot tự động quét API keys. Chỉ cần commit key lên public repo dù chỉ 1 giây, bot của hacker đã sao chép được. Hậu quả: AWS bill hàng chục ngàn USD trong một đêm, data breach, mất tài khoản.",
+          "better_approach": "Dùng .gitignore cho .env files. Cài git-secrets hoặc gitleaks vào pre-commit hook. Với CI/CD: dùng GitHub Secrets / GitLab Variables. Với production: AWS Parameter Store hoặc HashiCorp Vault."
+        },
+        {
+          "pattern_name": "Không có Health Check và không có Log có cấu trúc",
+          "why_its_bad": "Khi hệ thống production lỗi lúc 3 giờ sáng, bạn không biết service nào chết, lỗi gì xảy ra, lúc mấy giờ. Debug bằng cách SSH vào server và đọc log text thuần túy mất hàng giờ.",
+          "better_approach": "Implement /health endpoint trả về status của app và các dependencies (DB, Redis, external APIs). Dùng structured logging JSON format với request_id, user_id, duration để dễ dàng query bằng ELK Stack hoặc CloudWatch."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m4_backend_advanced",
+      "title": "Advanced: Message Queue, System Design & Performance",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Message Queue với RabbitMQ / Kafka: Pub/Sub pattern, Consumer Groups, Dead Letter Queue, idempotent consumers",
+        "System Design fundamentals: Load Balancing, Horizontal Scaling, CAP Theorem, Eventual Consistency",
+        "Caching Strategy: Cache invalidation, Cache stampede prevention, Distributed Cache với Redis Cluster",
+        "Database advanced: Read Replica, Database Sharding concepts, Connection Pool tuning, Slow Query analysis",
+        "API Gateway patterns: Rate Limiting, Circuit Breaker (Resilience4j/hystrix), Retry với Exponential Backoff"
+      ],
+      "toolchains": [
+        "RabbitMQ / Apache Kafka",
+        "Redis Cluster",
+        "Nginx / AWS API Gateway",
+        "JMeter / k6 (Load Testing)",
+        "Prometheus + Grafana (Monitoring)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Hệ thống xử lý đơn hàng bất đồng bộ với Message Queue",
+          "business_context": "Khi user đặt hàng, hệ thống cần: (1) Trừ stock, (2) Gửi email xác nhận, (3) Thông báo cho warehouse, (4) Cập nhật analytics. Nếu làm synchronous, 1 bước fail = toàn bộ order fail và user chờ 5-10 giây. Cần tách các bước này thành async events.",
+          "tech_stack_used": ["RabbitMQ / Kafka", "Spring Boot", "PostgreSQL", "Redis"],
+          "key_challenges": [
+            "Đảm bảo Exactly-Once Processing: Message có thể bị gửi lại khi consumer crash. Implement idempotency key để tránh xử lý đơn hàng 2 lần.",
+            "Xử lý Dead Letter Queue: Khi message fail sau 3 lần retry, đẩy vào DLQ để team ops review thủ công, không được drop message.",
+            "Load Testing với k6: Simulate 1000 concurrent users đặt hàng và đo throughput, latency P50/P95/P99."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích CAP Theorem và ý nghĩa thực tế khi chọn database cho hệ thống?",
+          "expected_answer_points": [
+            "CAP: Consistency (mọi node thấy data như nhau), Availability (hệ thống luôn phản hồi), Partition Tolerance (chịu được network partition).",
+            "Chỉ có thể chọn 2 trong 3. Partition là thực tế không tránh khỏi trong distributed system, nên thực tế là chọn giữa CP và AP.",
+            "PostgreSQL/MySQL: CP — ưu tiên consistency. MongoDB (default): AP — ưu tiên availability. Tùy use case mà chọn."
+          ],
+          "difficulty": "Senior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Premature Optimization & Over-engineering",
+          "why_its_bad": "Ngày đầu tiên đã thiết kế hệ thống Microservices với Kafka, Kubernetes, Service Mesh cho một app có 100 user. Tốn gấp 10x thời gian develop, team junior không ai hiểu hệ thống, mọi bug đều khó debug.",
+          "better_approach": "Start simple — Monolith với PostgreSQL có thể chịu được hàng triệu user nếu được thiết kế tốt. Scale khi có pain point thực sự. Amazon và Netflix cũng bắt đầu từ Monolith."
+        }
+      ]
+    }
+  ]
+}

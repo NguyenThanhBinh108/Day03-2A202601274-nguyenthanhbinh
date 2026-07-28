@@ -1,0 +1,154 @@
+{
+  "skill": "Linux",
+  "skill_key": "linux",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.613649Z",
+  "checklist_items": [
+    {
+      "item_id": "linux_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "File system",
+      "description": "Master File system trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Linux+File+system+tutorial",
+      "resource_title": "Linux — File system",
+      "quiz_ids": [
+        "linux_l1_001"
+      ],
+      "market_relevance": "File system là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Process management",
+      "description": "Master Process management trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Linux+Process+management+tutorial",
+      "resource_title": "Linux — Process management",
+      "quiz_ids": [
+        "linux_l2_002"
+      ],
+      "market_relevance": "Process management là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "User/permissions",
+      "description": "Master User/permissions trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Linux+User/permissions+tutorial",
+      "resource_title": "Linux — User/permissions",
+      "quiz_ids": [
+        "linux_l3_003"
+      ],
+      "market_relevance": "User/permissions là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Bash scripting",
+      "description": "Master Bash scripting trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Linux+Bash+scripting+tutorial",
+      "resource_title": "Linux — Bash scripting",
+      "quiz_ids": [
+        "linux_l4_004"
+      ],
+      "market_relevance": "Bash scripting là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Networking (netstat/ssh)",
+      "description": "Master Networking (netstat/ssh) trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Linux+Networking+(netstat/ssh)+tutorial",
+      "resource_title": "Linux — Networking (netstat/ssh)",
+      "quiz_ids": [
+        "linux_l5_005"
+      ],
+      "market_relevance": "Networking (netstat/ssh) là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Package managers",
+      "description": "Master Package managers trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Linux+Package+managers+tutorial",
+      "resource_title": "Linux — Package managers",
+      "quiz_ids": [
+        "linux_l5_006"
+      ],
+      "market_relevance": "Package managers là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "systemd services",
+      "description": "Master systemd services trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Linux+systemd+services+tutorial",
+      "resource_title": "Linux — systemd services",
+      "quiz_ids": [
+        "linux_l5_007"
+      ],
+      "market_relevance": "systemd services là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "cron jobs",
+      "description": "Master cron jobs trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Linux+cron+jobs+tutorial",
+      "resource_title": "Linux — cron jobs",
+      "quiz_ids": [
+        "linux_l5_008"
+      ],
+      "market_relevance": "cron jobs là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Log management",
+      "description": "Master Log management trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Linux+Log+management+tutorial",
+      "resource_title": "Linux — Log management",
+      "quiz_ids": [
+        "linux_l5_009"
+      ],
+      "market_relevance": "Log management là key skill trong Linux DevOps development"
+    },
+    {
+      "item_id": "linux_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Security (firewall)",
+      "description": "Master Security (firewall) trong Linux — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Linux+Security+(firewall)+tutorial",
+      "resource_title": "Linux — Security (firewall)",
+      "quiz_ids": [
+        "linux_l5_010"
+      ],
+      "market_relevance": "Security (firewall) là key skill trong Linux DevOps development"
+    }
+  ]
+}

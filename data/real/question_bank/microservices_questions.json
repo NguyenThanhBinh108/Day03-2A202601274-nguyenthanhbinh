@@ -1,0 +1,130 @@
+{
+  "skill": "Microservices",
+  "skill_key": "microservices",
+  "total_questions": 5,
+  "levels": {
+    "1": 1,
+    "2": 2,
+    "3": 1,
+    "4": 0,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.516393",
+  "source_references": [
+    "https://www.geeksforgeeks.org/microservices/",
+    "https://martinfowler.com/articles/microservices.html"
+  ],
+  "questions": [
+    {
+      "question_id": "micro_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Microservices vs Monolith — trade-offs?",
+      "options": {
+        "A": "Microservices luôn tốt hơn",
+        "B": "Monolith: đơn giản, dễ develop/debug ban đầu. Microservices: scale independently, tech diversity, team autonomy — nhưng phức tạp hơn (network, distributed transactions, observability)",
+        "C": "Microservices = Docker containers",
+        "D": "Monolith không thể scale"
+      },
+      "correct_answer": "B",
+      "explanation": "Monolith advantages: simple deployment, easy debugging, no network latency between components, ACID transactions. When to microservices: team > 10-15 engineers, different scaling requirements per component, different release cycles, polyglot needs. Microservices problems: distributed system complexity, network failures, service discovery, distributed transactions (Saga pattern), data consistency (eventual), observability (need distributed tracing). Martin Fowler: 'Don't start with microservices'. Start monolith, extract services khi necessary (Strangler Fig Pattern).",
+      "source": "https://www.geeksforgeeks.org/microservices/",
+      "tags": [
+        "microservices",
+        "monolith",
+        "trade-offs",
+        "distributed",
+        "Strangler-Fig"
+      ]
+    },
+    {
+      "question_id": "micro_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Saga pattern cho distributed transactions trong microservices?",
+      "options": {
+        "A": "Two-Phase Commit là tốt nhất",
+        "B": "Saga: chuỗi local transactions, mỗi bước publish event. Choreography: event-driven. Orchestration: central coordinator. Compensating transactions khi fail",
+        "C": "Distributed transactions không thể",
+        "D": "Saga chỉ cho databases"
+      },
+      "correct_answer": "B",
+      "explanation": "Distributed transaction problem: Order + Inventory + Payment service cần atomic. 2PC (Two-Phase Commit): coordinator, blocking, không practical trong microservices. Saga: chuỗi local transactions + compensating transactions nếu fail. Choreography: mỗi service emit event → next service reacts. Decentralized, hard to track. Orchestration: Saga orchestrator (separate service) gọi từng service, handle failures. Easier to track. Compensating transaction: undo completed steps (refund payment, restore inventory). Eventual consistency — không ACID.",
+      "source": "https://www.geeksforgeeks.org/saga-pattern/",
+      "tags": [
+        "Saga",
+        "distributed-transaction",
+        "choreography",
+        "orchestration",
+        "eventual-consistency"
+      ]
+    },
+    {
+      "question_id": "micro_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "API Gateway pattern trong microservices?",
+      "options": {
+        "A": "Client gọi trực tiếp từng service",
+        "B": "API Gateway: single entry point, route to services, cross-cutting concerns (auth, rate limit, logging, SSL). BFF pattern: gateway per client type",
+        "C": "API Gateway thay thế load balancer",
+        "D": "API Gateway chỉ cho REST"
+      },
+      "correct_answer": "B",
+      "explanation": "API Gateway responsibilities: (1) Routing: /users → user-service, /orders → order-service. (2) Auth: validate JWT once, không mỗi service. (3) Rate limiting: per client. (4) SSL termination. (5) Request/response transformation. (6) Logging + tracing. (7) Circuit breaker. BFF (Backend for Frontend): dedicated gateway per frontend type (mobile BFF, web BFF, 3rd party BFF) — different data shapes. Tools: Kong, AWS API Gateway, nginx, Traefik, Spring Cloud Gateway. Service Mesh (Istio): sidecars handle cross-cutting, không cần centralized gateway.",
+      "source": "https://www.geeksforgeeks.org/api-gateway-pattern/",
+      "tags": [
+        "API-Gateway",
+        "BFF",
+        "routing",
+        "Kong",
+        "Service-Mesh"
+      ]
+    },
+    {
+      "question_id": "micro_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Circuit Breaker pattern — implement với Resilience4j?",
+      "options": {
+        "A": "Circuit breaker không cần thiết",
+        "B": "Circuit Breaker: CLOSED (normal) → OPEN (failures > threshold, fast-fail) → HALF-OPEN (test) → CLOSED. Prevents cascade failures",
+        "C": "Retry là đủ",
+        "D": "Circuit breaker chỉ cho Java"
+      },
+      "correct_answer": "B",
+      "explanation": "Circuit Breaker states: CLOSED: requests flow normally, track failures. OPEN: nếu failure rate > threshold (50%), fail fast với fallback, không call downstream. HALF-OPEN: sau timeout, allow test requests. If success → CLOSED. If fail → OPEN. Resilience4j: @CircuitBreaker(name='paymentService', fallbackMethod='paymentFallback'). Config: slidingWindowSize:10, failureRateThreshold:50, waitDurationInOpenState:10s. Combined với: Retry (@Retry), Timeout (@TimeLimiter), Bulkhead. Netflix Hystrix (deprecated) → Resilience4j. Prevents: cascade failures, thundering herd after recovery.",
+      "source": "https://www.geeksforgeeks.org/circuit-breaker-design-pattern/",
+      "tags": [
+        "Circuit-Breaker",
+        "Resilience4j",
+        "CLOSED",
+        "OPEN",
+        "HALF-OPEN",
+        "cascade-failure"
+      ]
+    },
+    {
+      "question_id": "micro_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Service A calls B calls C — cascade failure khi C down?",
+      "options": {
+        "A": "Restart tất cả services",
+        "B": "Circuit Breakers tại mỗi call, Bulkhead (isolate thread pools), Fallback, Timeout, Retry với exponential backoff — Defense in depth",
+        "C": "Tăng timeout",
+        "D": "Scale up Service C"
+      },
+      "correct_answer": "B",
+      "explanation": "Cascade failure: A → B → C (C down) → B threads exhausted waiting → B down → A down. Prevention: (1) Timeout: B wait max 1s cho C. (2) Circuit Breaker: sau N failures, B fast-fail without calling C. (3) Bulkhead: separate thread pools per downstream service, C problems không exhaust all of B's threads. (4) Fallback: return cached data, default value, or error message gracefully. (5) Retry: với exponential backoff + jitter để tránh thundering herd. (6) Health checks: load balancer không route đến unhealthy. (7) Observability: alert khi error rate tăng trước khi cascade.",
+      "source": "https://www.geeksforgeeks.org/microservices-fault-tolerance/",
+      "tags": [
+        "cascade-failure",
+        "Circuit-Breaker",
+        "Bulkhead",
+        "timeout",
+        "exponential-backoff"
+      ]
+    }
+  ]
+}

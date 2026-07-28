@@ -1,0 +1,154 @@
+{
+  "skill": "Pandas & NumPy",
+  "skill_key": "pandas_numpy",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.642243Z",
+  "checklist_items": [
+    {
+      "item_id": "pandas_numpy_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "NumPy arrays",
+      "description": "Master NumPy arrays trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+NumPy+arrays+tutorial",
+      "resource_title": "Pandas & NumPy — NumPy arrays",
+      "quiz_ids": [
+        "pandas_numpy_l1_001"
+      ],
+      "market_relevance": "NumPy arrays là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Broadcasting",
+      "description": "Master Broadcasting trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Broadcasting+tutorial",
+      "resource_title": "Pandas & NumPy — Broadcasting",
+      "quiz_ids": [
+        "pandas_numpy_l2_002"
+      ],
+      "market_relevance": "Broadcasting là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "DataFrame operations",
+      "description": "Master DataFrame operations trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+DataFrame+operations+tutorial",
+      "resource_title": "Pandas & NumPy — DataFrame operations",
+      "quiz_ids": [
+        "pandas_numpy_l3_003"
+      ],
+      "market_relevance": "DataFrame operations là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Indexing/Selection",
+      "description": "Master Indexing/Selection trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Indexing/Selection+tutorial",
+      "resource_title": "Pandas & NumPy — Indexing/Selection",
+      "quiz_ids": [
+        "pandas_numpy_l4_004"
+      ],
+      "market_relevance": "Indexing/Selection là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "GroupBy/Aggregations",
+      "description": "Master GroupBy/Aggregations trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+GroupBy/Aggregations+tutorial",
+      "resource_title": "Pandas & NumPy — GroupBy/Aggregations",
+      "quiz_ids": [
+        "pandas_numpy_l5_005"
+      ],
+      "market_relevance": "GroupBy/Aggregations là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Merge/Join",
+      "description": "Master Merge/Join trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Merge/Join+tutorial",
+      "resource_title": "Pandas & NumPy — Merge/Join",
+      "quiz_ids": [
+        "pandas_numpy_l5_006"
+      ],
+      "market_relevance": "Merge/Join là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Time series",
+      "description": "Master Time series trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Time+series+tutorial",
+      "resource_title": "Pandas & NumPy — Time series",
+      "quiz_ids": [
+        "pandas_numpy_l5_007"
+      ],
+      "market_relevance": "Time series là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Data cleaning",
+      "description": "Master Data cleaning trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Data+cleaning+tutorial",
+      "resource_title": "Pandas & NumPy — Data cleaning",
+      "quiz_ids": [
+        "pandas_numpy_l5_008"
+      ],
+      "market_relevance": "Data cleaning là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Visualization",
+      "description": "Master Visualization trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Visualization+tutorial",
+      "resource_title": "Pandas & NumPy — Visualization",
+      "quiz_ids": [
+        "pandas_numpy_l5_009"
+      ],
+      "market_relevance": "Visualization là key skill trong Pandas & NumPy AI/ML development"
+    },
+    {
+      "item_id": "pandas_numpy_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Performance",
+      "description": "Master Performance trong Pandas & NumPy — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Pandas+&+NumPy+Performance+tutorial",
+      "resource_title": "Pandas & NumPy — Performance",
+      "quiz_ids": [
+        "pandas_numpy_l5_010"
+      ],
+      "market_relevance": "Performance là key skill trong Pandas & NumPy AI/ML development"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Supabase",
+  "skill_key": "supabase",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.589506Z",
+  "source_references": [
+    "https://www.google.com/search?q=Supabase+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "supabase_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Supabase, PostgreSQL foundation có vai trò gì?",
+      "options": {
+        "A": "PostgreSQL foundation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "PostgreSQL foundation là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "PostgreSQL foundation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên PostgreSQL foundation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "PostgreSQL foundation trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và PostgreSQL foundation là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ PostgreSQL foundation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+PostgreSQL+foundation+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "postgresql-foundation"
+      ]
+    },
+    {
+      "question_id": "supabase_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Supabase, Row Level Security có vai trò gì?",
+      "options": {
+        "A": "Row Level Security là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Row Level Security là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Row Level Security đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Row Level Security là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Row Level Security trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Row Level Security là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Row Level Security giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Row+Level+Security+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "row-level-security"
+      ]
+    },
+    {
+      "question_id": "supabase_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Supabase, Supabase Auth có vai trò gì?",
+      "options": {
+        "A": "Supabase Auth là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Supabase Auth là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Supabase Auth đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Supabase Auth là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Supabase Auth trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Supabase Auth là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Supabase Auth giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Supabase+Auth+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "supabase-auth"
+      ]
+    },
+    {
+      "question_id": "supabase_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Supabase, Real-time subscriptions có vai trò gì?",
+      "options": {
+        "A": "Real-time subscriptions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Real-time subscriptions là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Real-time subscriptions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Real-time subscriptions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Real-time subscriptions trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Real-time subscriptions là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Real-time subscriptions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Real-time+subscriptions+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "real-time-subscriptions"
+      ]
+    },
+    {
+      "question_id": "supabase_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Supabase, Storage có vai trò gì?",
+      "options": {
+        "A": "Storage là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Storage là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Storage đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Storage là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Storage trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Storage là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Storage giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Storage+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "storage"
+      ]
+    },
+    {
+      "question_id": "supabase_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Supabase, Edge Functions có vai trò gì?",
+      "options": {
+        "A": "Edge Functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Edge Functions là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Edge Functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Edge Functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Edge Functions trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Edge Functions là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Edge Functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Edge+Functions+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "edge-functions"
+      ]
+    },
+    {
+      "question_id": "supabase_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Supabase, Client SDK có vai trò gì?",
+      "options": {
+        "A": "Client SDK là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Client SDK là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Client SDK đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Client SDK là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Client SDK trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Client SDK là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Client SDK giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Client+SDK+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "client-sdk"
+      ]
+    },
+    {
+      "question_id": "supabase_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Supabase, Database backups có vai trò gì?",
+      "options": {
+        "A": "Database backups là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Database backups là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Database backups đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Database backups là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Database backups trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Database backups là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Database backups giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Database+backups+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "database-backups"
+      ]
+    },
+    {
+      "question_id": "supabase_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Supabase, Local development có vai trò gì?",
+      "options": {
+        "A": "Local development là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Local development là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Local development đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Local development là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Local development trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Local development là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Local development giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Local+development+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "local-development"
+      ]
+    },
+    {
+      "question_id": "supabase_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Supabase, Self-hosting có vai trò gì?",
+      "options": {
+        "A": "Self-hosting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Self-hosting là core concept trong Supabase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Self-hosting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Self-hosting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Self-hosting trong Supabase: Đây là một trong những concepts quan trọng nhất. Supabase được sử dụng rộng rãi trong industry và Self-hosting là phần không thể thiếu. Khi làm việc với Supabase trong production, hiểu rõ Self-hosting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Supabase+Self-hosting+tutorial",
+      "tags": [
+        "supabase",
+        "database",
+        "self-hosting"
+      ]
+    }
+  ]
+}

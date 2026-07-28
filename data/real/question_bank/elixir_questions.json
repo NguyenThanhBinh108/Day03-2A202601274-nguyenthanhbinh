@@ -1,0 +1,218 @@
+{
+  "skill": "Elixir",
+  "skill_key": "elixir",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.550413Z",
+  "source_references": [
+    "https://www.google.com/search?q=Elixir+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "elixir_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Elixir, Pattern matching có vai trò gì?",
+      "options": {
+        "A": "Pattern matching là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Pattern matching là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Pattern matching đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Pattern matching là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Pattern matching trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Pattern matching là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Pattern matching giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Pattern+matching+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "pattern-matching"
+      ]
+    },
+    {
+      "question_id": "elixir_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Elixir, GenServer có vai trò gì?",
+      "options": {
+        "A": "GenServer là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GenServer là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GenServer đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GenServer là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GenServer trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và GenServer là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ GenServer giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+GenServer+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "genserver"
+      ]
+    },
+    {
+      "question_id": "elixir_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Elixir, Supervisors có vai trò gì?",
+      "options": {
+        "A": "Supervisors là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Supervisors là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Supervisors đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Supervisors là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Supervisors trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Supervisors là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Supervisors giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Supervisors+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "supervisors"
+      ]
+    },
+    {
+      "question_id": "elixir_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Elixir, Phoenix framework có vai trò gì?",
+      "options": {
+        "A": "Phoenix framework là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Phoenix framework là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Phoenix framework đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Phoenix framework là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Phoenix framework trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Phoenix framework là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Phoenix framework giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Phoenix+framework+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "phoenix-framework"
+      ]
+    },
+    {
+      "question_id": "elixir_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Elixir, Ecto có vai trò gì?",
+      "options": {
+        "A": "Ecto là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Ecto là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Ecto đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Ecto là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Ecto trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Ecto là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Ecto giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Ecto+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "ecto"
+      ]
+    },
+    {
+      "question_id": "elixir_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Elixir, Channels WebSocket có vai trò gì?",
+      "options": {
+        "A": "Channels WebSocket là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Channels WebSocket là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Channels WebSocket đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Channels WebSocket là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Channels WebSocket trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Channels WebSocket là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Channels WebSocket giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Channels+WebSocket+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "channels-websocket"
+      ]
+    },
+    {
+      "question_id": "elixir_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Elixir, OTP có vai trò gì?",
+      "options": {
+        "A": "OTP là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "OTP là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "OTP đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên OTP là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "OTP trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và OTP là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ OTP giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+OTP+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "otp"
+      ]
+    },
+    {
+      "question_id": "elixir_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Elixir, Mix tooling có vai trò gì?",
+      "options": {
+        "A": "Mix tooling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Mix tooling là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Mix tooling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Mix tooling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Mix tooling trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Mix tooling là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Mix tooling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Mix+tooling+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "mix-tooling"
+      ]
+    },
+    {
+      "question_id": "elixir_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Elixir, ExUnit Testing có vai trò gì?",
+      "options": {
+        "A": "ExUnit Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "ExUnit Testing là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "ExUnit Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên ExUnit Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "ExUnit Testing trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và ExUnit Testing là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ ExUnit Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+ExUnit+Testing+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "exunit-testing"
+      ]
+    },
+    {
+      "question_id": "elixir_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Elixir, Deployment có vai trò gì?",
+      "options": {
+        "A": "Deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Deployment là core concept trong Elixir — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Deployment trong Elixir: Đây là một trong những concepts quan trọng nhất. Elixir được sử dụng rộng rãi trong industry và Deployment là phần không thể thiếu. Khi làm việc với Elixir trong production, hiểu rõ Deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elixir+Deployment+tutorial",
+      "tags": [
+        "elixir",
+        "backend",
+        "deployment"
+      ]
+    }
+  ]
+}

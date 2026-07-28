@@ -1,0 +1,199 @@
+{
+  "skill": "Testing/QA",
+  "market_frequency": "Kỹ năng thiết yếu cho QA Engineer, Software Engineer",
+  "market_role": "QA Engineer, Software Engineer",
+  "total_learning_hours": 30,
+  "generated_at": "2026-06-12T00:05:36.363145",
+  "modules": [
+    {
+      "module_id": "qa_01",
+      "title": "Software Testing & QA",
+      "order": 1,
+      "hours": 30,
+      "topics": [
+        {
+          "topic_id": "qa_01_01",
+          "title": "Unit Testing, Integration Testing, TDD",
+          "hours": 12,
+          "academic": {
+            "summary": "Test pyramid, JUnit5/pytest/Jest, mocking (Mockito/Jest mocks), assertions, test coverage, TDD cycle",
+            "resources": [
+              {
+                "title": "Testing Library Docs",
+                "url": "https://testing-library.com/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "pytest Documentation",
+                "url": "https://docs.pytest.org/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "JUnit 5 User Guide",
+                "url": "https://junit.org/junit5/docs/current/user-guide/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "TDD một BankAccount class: viết failing test trước, implement, refactor. Test doubles: mocks, stubs, spies",
+            "resources": [
+              {
+                "title": "Martin Fowler — Test Doubles",
+                "url": "https://martinfowler.com/bliki/TestDouble.html",
+                "type": "article",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "qa_01_01_q1",
+                "level": 2,
+                "question": "Test Pyramid — tại sao unit tests nhiều hơn E2E tests?",
+                "options": {
+                  "A": "Unit: fast, isolated, cheap. E2E: slow, brittle, expensive. Nhiều unit tests → fast feedback loop",
+                  "B": "E2E tốt hơn unit tests",
+                  "C": "Không cần unit tests",
+                  "D": "Chúng giống nhau về cost"
+                },
+                "correct_answer": "A",
+                "explanation": "Pyramid: nhiều unit (fast, cheap) → ít integration → rất ít E2E (slow, expensive, brittle). Ice cream cone anti-pattern: ngược lại. Unit test: ms. Integration: giây. E2E: phút."
+              },
+              {
+                "question_id": "qa_01_01_q2",
+                "level": 3,
+                "question": "Mock vs Stub vs Spy trong testing?",
+                "options": {
+                  "A": "Stub: canned response. Mock: verify interactions. Spy: wrap real object, track calls",
+                  "B": "Chúng giống nhau",
+                  "C": "Mock là real object",
+                  "D": "Stub verify interactions"
+                },
+                "correct_answer": "A",
+                "explanation": "Stub: return predefined value, không verify. Mock: verify calls (was method called? with what args?). Spy: wrap real implementation, can verify calls. Fake: lightweight implementation (in-memory DB)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "qa_01_02",
+          "title": "E2E Testing: Selenium, Playwright, Cypress",
+          "hours": 10,
+          "academic": {
+            "summary": "Page Object Model, Selenium WebDriver, Playwright API, Cypress intercept, parallel execution, CI integration",
+            "resources": [
+              {
+                "title": "Playwright Official Docs",
+                "url": "https://playwright.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "Cypress Documentation",
+                "url": "https://docs.cypress.io",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "E2E test cho login, product search, checkout flow với Playwright. Page Object Model, screenshot on failure, CI integration",
+            "resources": [
+              {
+                "title": "Playwright Test Generator",
+                "url": "https://playwright.dev/docs/codegen",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "qa_01_02_q1",
+                "level": 3,
+                "question": "Playwright vs Selenium — ưu điểm của Playwright?",
+                "options": {
+                  "A": "Auto-wait, network interception, multiple browsers in 1 API, faster, built-in trace viewer",
+                  "B": "Selenium luôn tốt hơn",
+                  "C": "Playwright chỉ cho Chrome",
+                  "D": "Selenium không cần driver"
+                },
+                "correct_answer": "A",
+                "explanation": "Playwright: auto-wait eliminates flakiness, network/mock API built-in, codegen, trace viewer, screenshot/video recording. Selenium: mature ecosystem, supports more languages. Playwright preferred for new projects."
+              },
+              {
+                "question_id": "qa_01_02_q2",
+                "level": 4,
+                "question": "Page Object Model (POM) trong E2E testing là gì?",
+                "options": {
+                  "A": "Design pattern: encapsulate page elements và actions trong class → test code không phụ thuộc selectors cụ thể",
+                  "B": "HTML page structure",
+                  "C": "Database pattern",
+                  "D": "API design"
+                },
+                "correct_answer": "A",
+                "explanation": "POM: LoginPage class với properties (locators) và methods (login(), getError()). Tests call page methods, không biết implementation. Khi UI thay đổi: chỉ sửa POM class, không sửa tests."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "qa_01_03",
+          "title": "API Testing: Postman, Newman, REST Assured",
+          "hours": 8,
+          "academic": {
+            "summary": "Postman collections, environment variables, pre-request scripts, test assertions, Newman CI, REST Assured Java",
+            "resources": [
+              {
+                "title": "Postman Learning Center",
+                "url": "https://learning.postman.com",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Postman collection cho REST API: auth flow, CRUD tests, chained requests (token từ login → dùng trong subsequent requests), Newman in CI",
+            "resources": [
+              {
+                "title": "Postman API Platform",
+                "url": "https://www.postman.com",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "qa_01_03_q1",
+                "level": 3,
+                "question": "Postman environment variables dùng để làm gì?",
+                "options": {
+                  "A": "Tách config (URL, token) khỏi collection — switch giữa dev/staging/prod mà không sửa requests",
+                  "B": "Store passwords",
+                  "C": "Chỉ cho authentication",
+                  "D": "Không có tác dụng thực tế"
+                },
+                "correct_answer": "A",
+                "explanation": "{{baseUrl}}, {{token}}: reference variables. Environments: dev (localhost:3000), staging (api.staging.com). Collection Variables: shared trong collection. pm.environment.set() trong scripts để dynamic values."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

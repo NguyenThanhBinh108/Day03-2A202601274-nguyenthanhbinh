@@ -1,0 +1,310 @@
+{
+  "skill": "React",
+  "market_frequency": "21.8% JDs yêu cầu React",
+  "market_role": "Frontend Developer, Full-stack Developer",
+  "total_learning_hours": 65,
+  "generated_at": "2026-06-12T00:05:36.340154",
+  "modules": [
+    {
+      "module_id": "react_01",
+      "title": "React Core",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "react_01_01",
+          "title": "Components, Props, State, Hooks cơ bản",
+          "hours": 10,
+          "academic": {
+            "summary": "JSX, functional components, useState, useEffect, useRef, props drilling, lifting state, keys",
+            "resources": [
+              {
+                "title": "React Official Docs — react.dev",
+                "url": "https://react.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "React Tutorial — freeCodeCamp",
+                "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng Todo App: add/delete/filter todos, useState + useEffect + localStorage persistence, mỗi todo có priority",
+            "resources": [
+              {
+                "title": "React Dev Learn",
+                "url": "https://react.dev/learn",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "react_01_01_q1",
+                "level": 1,
+                "question": "useEffect với dependency array rỗng [] chạy khi nào?",
+                "options": {
+                  "A": "Mỗi lần component re-render",
+                  "B": "Chỉ 1 lần sau lần render đầu tiên (mounting)",
+                  "C": "Không bao giờ chạy",
+                  "D": "Mỗi khi state thay đổi"
+                },
+                "correct_answer": "B",
+                "explanation": "useEffect(() => {}, []) = componentDidMount. useEffect(() => {}) = mỗi render. useEffect(() => {}, [dep]) = khi dep thay đổi."
+              },
+              {
+                "question_id": "react_01_01_q2",
+                "level": 2,
+                "question": "Tại sao không mutate state trực tiếp trong React?",
+                "options": {
+                  "A": "React dùng shallow comparison để detect change. Mutate trực tiếp không trigger re-render",
+                  "B": "Vì state là const",
+                  "C": "React dùng deep comparison",
+                  "D": "Chỉ là convention"
+                },
+                "correct_answer": "A",
+                "explanation": "React so sánh tham chiếu (===). arr.push() → reference không đổi → React không detect → không re-render. [...arr, item] tạo reference mới → re-render."
+              },
+              {
+                "question_id": "react_01_01_q3",
+                "level": 3,
+                "question": "React key prop trong list dùng để làm gì?",
+                "options": {
+                  "A": "Giúp React xác định element nào thay đổi/thêm/xóa trong list — tối ưu reconciliation",
+                  "B": "Style element",
+                  "C": "Event handling",
+                  "D": "TypeScript typing"
+                },
+                "correct_answer": "A",
+                "explanation": "Key: stable, unique identifier giúp React's reconciliation algorithm. Không dùng index làm key khi list có thể reorder — gây bug."
+              },
+              {
+                "question_id": "react_01_01_q4",
+                "level": 4,
+                "question": "`useCallback` và `useMemo` khác nhau ở điểm nào?",
+                "options": {
+                  "A": "useCallback: cache function reference. useMemo: cache computed value",
+                  "B": "Chúng giống nhau",
+                  "C": "useMemo cache function, useCallback cache value",
+                  "D": "useCallback cho state, useMemo cho props"
+                },
+                "correct_answer": "A",
+                "explanation": "useCallback(fn, deps) = memoize function reference. useMemo(() => compute(), deps) = memoize result. useCallback(fn) === useMemo(() => fn). Dùng với React.memo() để tối ưu re-renders."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "react_01_02",
+          "title": "Context API, useReducer, Custom Hooks",
+          "hours": 8,
+          "academic": {
+            "summary": "createContext, Provider, useContext, useReducer pattern, custom hooks composition",
+            "resources": [
+              {
+                "title": "React Context — react.dev",
+                "url": "https://react.dev/learn/passing-data-deeply-with-context",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng Shopping Cart với useReducer + Context. Actions: ADD_ITEM, REMOVE_ITEM, CLEAR_CART. Custom hook useCart()",
+            "resources": [
+              {
+                "title": "useReducer Hook",
+                "url": "https://react.dev/reference/react/useReducer",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "react_01_02_q1",
+                "level": 3,
+                "question": "Khi nào nên dùng useReducer thay vì useState?",
+                "options": {
+                  "A": "Khi state logic phức tạp, nhiều sub-values, hoặc next state phụ thuộc previous state",
+                  "B": "useReducer luôn tốt hơn useState",
+                  "C": "Chỉ khi cần Redux",
+                  "D": "useState luôn đủ"
+                },
+                "correct_answer": "A",
+                "explanation": "useReducer: tốt cho complex state (nhiều fields), business logic trong reducer, easier testing. useState: đơn giản hơn cho simple values. useReducer + Context = Redux pattern nhẹ."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "react_01_03",
+          "title": "Performance: React.memo, Suspense, Concurrent",
+          "hours": 7,
+          "academic": {
+            "summary": "React.memo, lazy loading, Suspense, React Profiler, Virtual DOM reconciliation, fiber",
+            "resources": [
+              {
+                "title": "React Performance — react.dev",
+                "url": "https://react.dev/learn/render-and-commit",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 90
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Profile một component tree với React DevTools Profiler, identify unnecessary re-renders, fix với memo/useCallback",
+            "resources": [
+              {
+                "title": "React DevTools",
+                "url": "https://react.dev/learn/react-developer-tools",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "react_01_03_q1",
+                "level": 4,
+                "question": "React.memo() ngăn chặn gì?",
+                "options": {
+                  "A": "Re-render khi parent re-render nhưng props không thay đổi (shallow comparison)",
+                  "B": "Memoize computed values",
+                  "C": "Prevent state updates",
+                  "D": "Cache API responses"
+                },
+                "correct_answer": "A",
+                "explanation": "React.memo: HOC wrap component, so sánh props shallowly trước khi re-render. Custom comparison: React.memo(Component, (prev, next) => prev.id === next.id)."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "react_02",
+      "title": "React Ecosystem",
+      "order": 2,
+      "hours": 40,
+      "topics": [
+        {
+          "topic_id": "react_02_01",
+          "title": "React Router v6, TanStack Query",
+          "hours": 12,
+          "academic": {
+            "summary": "BrowserRouter, Routes, useParams, useNavigate, loader, TanStack Query: useQuery, useMutation, cache",
+            "resources": [
+              {
+                "title": "React Router v6 Docs",
+                "url": "https://reactrouter.com/en/main",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "TanStack Query Docs",
+                "url": "https://tanstack.com/query/latest",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "SPA với nested routing, protected routes, TanStack Query cho server state (loading, error, refetch, cache)",
+            "resources": [
+              {
+                "title": "TanStack Query Overview",
+                "url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "react_02_01_q1",
+                "level": 3,
+                "question": "TanStack Query staleTime vs cacheTime khác nhau thế nào?",
+                "options": {
+                  "A": "staleTime: bao lâu data được coi là fresh. cacheTime: bao lâu data được giữ sau khi không dùng",
+                  "B": "Chúng giống nhau",
+                  "C": "cacheTime cho network, staleTime cho memory",
+                  "D": "staleTime là timeout, cacheTime là TTL"
+                },
+                "correct_answer": "A",
+                "explanation": "staleTime: trong thời gian này không refetch (default 0). cacheTime (gcTime): sau khi query unmount, giữ data này bao lâu trước khi GC (default 5 phút)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "react_02_02",
+          "title": "State Management: Zustand, Redux Toolkit",
+          "hours": 10,
+          "academic": {
+            "summary": "Zustand store, selectors, middleware. Redux: slices, createAsyncThunk, RTK Query",
+            "resources": [
+              {
+                "title": "Zustand GitHub",
+                "url": "https://github.com/pmndrs/zustand",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              },
+              {
+                "title": "Redux Toolkit Docs",
+                "url": "https://redux-toolkit.js.org",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "E-commerce cart với Zustand: persist middleware (localStorage), devtools, optimistic updates",
+            "resources": [
+              {
+                "title": "Zustand Docs",
+                "url": "https://docs.pmnd.rs/zustand/getting-started/introduction",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "react_02_02_q1",
+                "level": 3,
+                "question": "Zustand vs Redux Toolkit — khi nào nên dùng cái nào?",
+                "options": {
+                  "A": "Zustand: simple, less boilerplate, smaller apps. RTK: complex logic, time-travel debugging, large teams",
+                  "B": "Luôn dùng Redux",
+                  "C": "Zustand không production-ready",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "Zustand: ~1KB, zero boilerplate, outside React tree accessible. RTK: DevTools excellence, standardized patterns, mature ecosystem. Context + useReducer cho small apps, Zustand cho medium, RTK cho large/complex."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

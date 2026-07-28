@@ -1,0 +1,109 @@
+{
+  "skill": "Java",
+  "skill_key": "java",
+  "total_topics": 10,
+  "estimated_total_hours": 15.5,
+  "generated_at": "2026-06-12T02:22:05.477822",
+  "checklist_items": [
+    {
+      "item_id": "java_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Java Syntax và OOP cơ bản",
+      "description": "Classes, objects, constructors, access modifiers, this/super, static, final, instanceof",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/java/java_oop.asp",
+      "resource_title": "W3Schools — Java OOP"
+    },
+    {
+      "item_id": "java_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Inheritance, Interface, Abstract Class",
+      "description": "extends, implements, @Override, interface default methods, abstract class, polymorphism",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/",
+      "resource_title": "GeeksForGeeks — Interface vs Abstract"
+    },
+    {
+      "item_id": "java_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Collections Framework",
+      "description": "List/Set/Map implementations, Iterator, Comparator/Comparable, generics cơ bản",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/collections-in-java-2/",
+      "resource_title": "GeeksForGeeks — Java Collections"
+    },
+    {
+      "item_id": "java_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Exception Handling và I/O",
+      "description": "try-catch-finally, checked/unchecked, custom exceptions, File I/O, try-with-resources",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/java/java_try_catch.asp",
+      "resource_title": "W3Schools — Java Exceptions"
+    },
+    {
+      "item_id": "java_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Java 8+ Features — Lambda, Stream, Optional",
+      "description": "Lambda expressions, method references, Stream API, Optional, Date-Time API",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/stream-in-java/",
+      "resource_title": "GeeksForGeeks — Java Stream"
+    },
+    {
+      "item_id": "java_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Multithreading và Concurrency",
+      "description": "Thread, Runnable, ExecutorService, CompletableFuture, synchronized, Lock, atomic types",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/multithreading-in-java/",
+      "resource_title": "GeeksForGeeks — Java Multithreading"
+    },
+    {
+      "item_id": "java_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Design Patterns trong Java",
+      "description": "Singleton, Factory, Builder, Observer, Strategy, Decorator — implementation thực tế",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/java-design-patterns/",
+      "resource_title": "GeeksForGeeks — Java Design Patterns"
+    },
+    {
+      "item_id": "java_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "JVM Memory Model và GC",
+      "description": "Heap/Stack, GC algorithms, -Xmx/-Xms, heap dump, jstat, VisualVM profiling",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/java-memory-management/",
+      "resource_title": "GeeksForGeeks — Java Memory Management"
+    },
+    {
+      "item_id": "java_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Java Testing — JUnit 5, Mockito",
+      "description": "@Test, @BeforeEach, @MockBean, verify, stubbing, ArgumentCaptor, integration tests",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/java-unit-testing/",
+      "resource_title": "freeCodeCamp — Java Unit Testing"
+    },
+    {
+      "item_id": "java_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Performance Tuning và Production",
+      "description": "GC tuning (G1/ZGC), profiling với async-profiler, JVM flags, heap dump analysis",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/garbage-collection-in-java/",
+      "resource_title": "GeeksForGeeks — GC in Java"
+    }
+  ]
+}

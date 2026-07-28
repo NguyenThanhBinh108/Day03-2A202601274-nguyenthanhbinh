@@ -1,0 +1,196 @@
+{
+  "skill": "Redis",
+  "skill_key": "redis",
+  "total_questions": 8,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.491944",
+  "source_references": [
+    "https://redis.io/docs/",
+    "https://www.geeksforgeeks.org/redis-tutorial/"
+  ],
+  "questions": [
+    {
+      "question_id": "redis_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Redis là gì và tại sao được dùng như cache?",
+      "options": {
+        "A": "Redis là SQL database",
+        "B": "Redis: in-memory key-value store, sub-millisecond latency, rich data structures, persistence options — ideal cho caching, sessions, queues",
+        "C": "Redis chỉ cho lưu trữ",
+        "D": "Redis chậm hơn PostgreSQL"
+      },
+      "correct_answer": "B",
+      "explanation": "Redis (Remote Dictionary Server): in-memory, single-threaded (fast), sub-millisecond operations. Data structures: String, Hash, List, Set, Sorted Set, Stream, HyperLogLog. Persistence: RDB (snapshot), AOF (append-only file), hybrid. Use cases: caching (hot data), sessions, rate limiting, pub/sub, leaderboards, job queues (Bull/BullMQ). Cluster: horizontal scaling, 16384 hash slots. Sentinel: HA monitoring. Redis Stack: JSON, Search, Time Series, Bloom filter. 80%+ Vietnamese companies dùng Redis cho caching.",
+      "source": "https://www.geeksforgeeks.org/introduction-to-redis/",
+      "tags": [
+        "Redis",
+        "in-memory",
+        "caching",
+        "data-structures",
+        "sub-millisecond"
+      ]
+    },
+    {
+      "question_id": "redis_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Redis data types — String, Hash, List, Set, Sorted Set?",
+      "options": {
+        "A": "Redis chỉ lưu String",
+        "B": "String: text/number/binary. Hash: object fields. List: ordered linked list. Set: unique unordered. Sorted Set: unique with score, ordered by score",
+        "C": "Hash là cách dùng duy nhất",
+        "D": "List không support pop operations"
+      },
+      "correct_answer": "B",
+      "explanation": "String: SET/GET/INCR/DECR/APPEND/STRLEN. Hữu ích: counter, cached JSON, session token. Hash: HSET/HGET/HGETALL/HMSET. Hữu ích: user object fields. List: LPUSH/RPUSH/LPOP/RPOP/LRANGE/LLEN. Hữu ích: message queue, activity feed. Set: SADD/SMEMBERS/SISMEMBER/SINTER/SUNION. Hữu ích: unique visitors, tags, social graph. Sorted Set: ZADD/ZRANGE/ZRANGEBYSCORE/ZRANK. Hữu ích: leaderboard, delayed queue. TTL: EXPIRE key seconds, TTL key.",
+      "source": "https://www.geeksforgeeks.org/redis-data-types/",
+      "tags": [
+        "String",
+        "Hash",
+        "List",
+        "Set",
+        "SortedSet",
+        "TTL"
+      ]
+    },
+    {
+      "question_id": "redis_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Cache-aside pattern với Redis?",
+      "options": {
+        "A": "Redis tự cập nhật cache khi DB thay đổi",
+        "B": "App check Redis → cache miss → query DB → store in Redis với TTL → return. Cache hit: return Redis data",
+        "C": "Write to Redis chỉ, không cần DB",
+        "D": "Cache-aside chỉ cho read-heavy data"
+      },
+      "correct_answer": "B",
+      "explanation": "Cache-aside (Lazy Loading): (1) Check Redis: GET user:123. (2) Cache HIT → return data. (3) Cache MISS → SELECT * FROM users WHERE id=123. (4) Store: SET user:123 JSON TTL 3600. (5) Return data. Advantages: only cache what's requested, cache failure không break app. Disadvantages: cache miss = slow (3 ops), stale data nếu TTL dài. Write strategies: Write-through (write Redis + DB đồng thời), Write-behind (write Redis, async write DB). Cache stampede: nhiều requests cùng miss → DB overload. Fix: mutex lock, probabilistic early expiry.",
+      "source": "https://www.geeksforgeeks.org/caching-patterns-in-system-design/",
+      "tags": [
+        "cache-aside",
+        "TTL",
+        "cache-miss",
+        "cache-stampede",
+        "write-through"
+      ]
+    },
+    {
+      "question_id": "redis_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Redis Pub/Sub và Streams — khác nhau thế nào?",
+      "options": {
+        "A": "Pub/Sub và Streams giống nhau",
+        "B": "Pub/Sub: fire-and-forget, no persistence, subscriber phải online. Streams (5.0+): persistent log, consumer groups, message acknowledgment — như Kafka lightweight",
+        "C": "Streams chỉ cho time-series data",
+        "D": "Pub/Sub hỗ trợ message replay"
+      },
+      "correct_answer": "B",
+      "explanation": "Pub/Sub: PUBLISH channel message, SUBSCRIBE channel. Messages lost nếu subscriber offline. Use: real-time notifications, simple messaging. Streams: XADD stream_key * field value. XREAD: consume messages. Consumer groups: XGROUP CREATE, XREADGROUP — multiple consumers, track processed. XACK: acknowledge processing. Persistent: survives Redis restart (với AOF). Use: task queues, event sourcing, activity feeds. BullMQ (Node.js): Streams-based job queue. Recommendation: dùng Streams cho production queues, Pub/Sub cho simple fanout.",
+      "source": "https://www.geeksforgeeks.org/redis-streams/",
+      "tags": [
+        "Pub/Sub",
+        "Streams",
+        "consumer-groups",
+        "XADD",
+        "XREADGROUP"
+      ]
+    },
+    {
+      "question_id": "redis_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Redis persistence — RDB vs AOF?",
+      "options": {
+        "A": "Redis chỉ in-memory, không persist",
+        "B": "RDB: periodic snapshot (BGSAVE), compact, faster restart, data loss between snapshots. AOF: log every write, durable, slower restart, larger file. Hybrid: RDB + AOF",
+        "C": "AOF luôn tốt hơn RDB",
+        "D": "Persistence làm Redis chậm đáng kể"
+      },
+      "correct_answer": "B",
+      "explanation": "RDB (Redis Database): fork → BGSAVE → write snapshot file (dump.rdb). Config: save 900 1 (snapshot nếu 1 key đổi trong 900s). Tradeoff: data loss nếu crash giữa 2 snapshots. AOF (Append-Only File): log every write command. fsync options: always (safe, slow), everysec (1s data loss, balanced), no (OS decide). AOF rewrite: compact file periodically. Hybrid mode (Redis 4+): RDB snapshot + AOF tail — best of both. Production recommendation: hybrid với fsync everysec.",
+      "source": "https://www.geeksforgeeks.org/redis-persistence/",
+      "tags": [
+        "RDB",
+        "AOF",
+        "persistence",
+        "BGSAVE",
+        "fsync"
+      ]
+    },
+    {
+      "question_id": "redis_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Implement rate limiting với Redis cho API?",
+      "options": {
+        "A": "Rate limiting chỉ cần ở nginx",
+        "B": "Token bucket hoặc sliding window: INCR key với EXPIRE, hoặc sorted set với timestamps, hoặc Redis Cell module",
+        "C": "Database lock là cách duy nhất",
+        "D": "Rate limiting không cần Redis"
+      },
+      "correct_answer": "B",
+      "explanation": "Fixed window (đơn giản): INCR rate:user:123:2024-01-15-14. EXPIRE rate:... 60. If count > 100: reject. Nhược: boundary burst. Sliding window với Sorted Set: ZADD rate:user:123 timestamp timestamp. ZREMRANGEBYSCORE rate:... 0 (now-60000). ZCARD rate:... → if > 100: reject. EXPIRE rate:... 60. Atomic Lua script: đảm bảo race condition free. Redis Cell (module): cl.throttle key max_burst count_per_period period — built-in token bucket. express-rate-limit với Redis store cho Node.js.",
+      "source": "https://www.geeksforgeeks.org/rate-limiting-in-system-design/",
+      "tags": [
+        "rate-limiting",
+        "token-bucket",
+        "sliding-window",
+        "Lua-script",
+        "express-rate-limit"
+      ]
+    },
+    {
+      "question_id": "redis_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Redis memory usage cao — keys không expire. Debug và fix?",
+      "options": {
+        "A": "Restart Redis",
+        "B": "redis-cli --bigkeys, INFO memory, DEBUG OBJECT để check encoding, SCAN để find keyspace patterns, set maxmemory và eviction policy",
+        "C": "Tăng server RAM",
+        "D": "FLUSHALL để clear"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug: (1) INFO memory: used_memory, mem_fragmentation_ratio. (2) redis-cli --bigkeys: find largest keys. (3) MEMORY USAGE key: bytes of specific key. (4) MEMORY DOCTOR: advice. (5) redis-cli --hotkeys: most accessed. Fix: (1) maxmemory 2gb + maxmemory-policy allkeys-lru (evict LRU khi đầy). (2) Enforce TTL: mọi cache key phải có TTL. (3) Compact encoding: set hash-max-listpack-entries 128 (small hashes dùng efficient encoding). (4) OBJECT ENCODING key: ziplist/listpack vs hashtable. (5) SCAN 0 MATCH 'pattern*' COUNT 100: iterate keys không block. KEYS '*' KHÔNG dùng production (block Redis).",
+      "source": "https://www.geeksforgeeks.org/redis-memory-optimization/",
+      "tags": [
+        "memory",
+        "maxmemory",
+        "eviction",
+        "bigkeys",
+        "SCAN"
+      ]
+    },
+    {
+      "question_id": "redis_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Redis Cluster setup và consistent hashing?",
+      "options": {
+        "A": "Single Redis là đủ cho mọi scale",
+        "B": "Redis Cluster: 16384 hash slots phân chia giữa masters. CLUSTER KEYSLOT để tính slot. Hash tags {user} để collocate keys. Read từ replicas",
+        "C": "Cluster chỉ cần khi data > 1TB",
+        "D": "Sentinel thay thế Cluster"
+      },
+      "correct_answer": "B",
+      "explanation": "Redis Cluster: tối thiểu 3 masters + 3 replicas. 16384 hash slots: CRC16(key) % 16384 → determine shard. Minimum: each master has its own replica. Hash tags: {user}:profile và {user}:sessions → same slot (multi-key operations). Cross-slot operations: không support MGET với keys khác slot. CLUSTER INFO: cluster state. CLUSTER NODES: topology. Scale: thêm node → CLUSTER REBALANCE. Failure: nếu master down → replica promoted. Setup: redis-cli --cluster create host1:6379 host2:6379 ... --cluster-replicas 1. Sentinel: HA cho single master (không phải sharding).",
+      "source": "https://www.geeksforgeeks.org/redis-cluster/",
+      "tags": [
+        "Redis-Cluster",
+        "hash-slots",
+        "sharding",
+        "hash-tags",
+        "Sentinel"
+      ]
+    }
+  ]
+}

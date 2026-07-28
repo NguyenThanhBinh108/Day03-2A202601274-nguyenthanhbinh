@@ -1,0 +1,218 @@
+{
+  "skill": "GitHub Actions",
+  "skill_key": "github_actions",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.604376Z",
+  "source_references": [
+    "https://www.google.com/search?q=GitHub+Actions+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "github_actions_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong GitHub Actions, Workflow syntax có vai trò gì?",
+      "options": {
+        "A": "Workflow syntax là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Workflow syntax là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Workflow syntax đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Workflow syntax là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Workflow syntax trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Workflow syntax là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Workflow syntax giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Workflow+syntax+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "workflow-syntax"
+      ]
+    },
+    {
+      "question_id": "github_actions_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong GitHub Actions, Triggers có vai trò gì?",
+      "options": {
+        "A": "Triggers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Triggers là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Triggers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Triggers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Triggers trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Triggers là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Triggers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Triggers+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "triggers"
+      ]
+    },
+    {
+      "question_id": "github_actions_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong GitHub Actions, Jobs/Steps có vai trò gì?",
+      "options": {
+        "A": "Jobs/Steps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Jobs/Steps là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Jobs/Steps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Jobs/Steps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Jobs/Steps trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Jobs/Steps là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Jobs/Steps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Jobs/Steps+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "jobs-steps"
+      ]
+    },
+    {
+      "question_id": "github_actions_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong GitHub Actions, Actions marketplace có vai trò gì?",
+      "options": {
+        "A": "Actions marketplace là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Actions marketplace là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Actions marketplace đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Actions marketplace là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Actions marketplace trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Actions marketplace là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Actions marketplace giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Actions+marketplace+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "actions-marketplace"
+      ]
+    },
+    {
+      "question_id": "github_actions_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong GitHub Actions, Secrets/Environments có vai trò gì?",
+      "options": {
+        "A": "Secrets/Environments là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Secrets/Environments là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Secrets/Environments đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Secrets/Environments là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Secrets/Environments trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Secrets/Environments là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Secrets/Environments giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Secrets/Environments+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "secrets-environments"
+      ]
+    },
+    {
+      "question_id": "github_actions_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong GitHub Actions, Matrix strategy có vai trò gì?",
+      "options": {
+        "A": "Matrix strategy là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Matrix strategy là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Matrix strategy đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Matrix strategy là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Matrix strategy trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Matrix strategy là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Matrix strategy giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Matrix+strategy+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "matrix-strategy"
+      ]
+    },
+    {
+      "question_id": "github_actions_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong GitHub Actions, Caching có vai trò gì?",
+      "options": {
+        "A": "Caching là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Caching là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Caching đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Caching là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Caching trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Caching là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Caching giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Caching+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "caching"
+      ]
+    },
+    {
+      "question_id": "github_actions_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong GitHub Actions, Docker build/push có vai trò gì?",
+      "options": {
+        "A": "Docker build/push là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Docker build/push là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Docker build/push đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Docker build/push là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker build/push trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Docker build/push là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Docker build/push giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Docker+build/push+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "docker-build-push"
+      ]
+    },
+    {
+      "question_id": "github_actions_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong GitHub Actions, CD to cloud có vai trò gì?",
+      "options": {
+        "A": "CD to cloud là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CD to cloud là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CD to cloud đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CD to cloud là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CD to cloud trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và CD to cloud là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ CD to cloud giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+CD+to+cloud+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "cd-to-cloud"
+      ]
+    },
+    {
+      "question_id": "github_actions_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong GitHub Actions, Security scanning có vai trò gì?",
+      "options": {
+        "A": "Security scanning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security scanning là core concept trong GitHub Actions — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security scanning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security scanning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security scanning trong GitHub Actions: Đây là một trong những concepts quan trọng nhất. GitHub Actions được sử dụng rộng rãi trong industry và Security scanning là phần không thể thiếu. Khi làm việc với GitHub Actions trong production, hiểu rõ Security scanning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=GitHub+Actions+Security+scanning+tutorial",
+      "tags": [
+        "github_actions",
+        "devops",
+        "security-scanning"
+      ]
+    }
+  ]
+}

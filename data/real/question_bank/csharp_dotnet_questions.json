@@ -1,0 +1,218 @@
+{
+  "skill": "C# / .NET",
+  "skill_key": "csharp_dotnet",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.542313Z",
+  "source_references": [
+    "https://www.google.com/search?q=C#+/+.NET+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "csharp_dotnet_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong C# / .NET, ASP.NET Core có vai trò gì?",
+      "options": {
+        "A": "ASP.NET Core là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "ASP.NET Core là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "ASP.NET Core đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên ASP.NET Core là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "ASP.NET Core trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và ASP.NET Core là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ ASP.NET Core giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+ASP.NET+Core+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "asp.net-core"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong C# / .NET, LINQ có vai trò gì?",
+      "options": {
+        "A": "LINQ là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "LINQ là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "LINQ đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên LINQ là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "LINQ trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và LINQ là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ LINQ giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+LINQ+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "linq"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong C# / .NET, Entity Framework Core có vai trò gì?",
+      "options": {
+        "A": "Entity Framework Core là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Entity Framework Core là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Entity Framework Core đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Entity Framework Core là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Entity Framework Core trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và Entity Framework Core là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ Entity Framework Core giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+Entity+Framework+Core+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "entity-framework-core"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong C# / .NET, Dependency Injection có vai trò gì?",
+      "options": {
+        "A": "Dependency Injection là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dependency Injection là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dependency Injection đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dependency Injection là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dependency Injection trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và Dependency Injection là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ Dependency Injection giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+Dependency+Injection+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "dependency-injection"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong C# / .NET, Middleware có vai trò gì?",
+      "options": {
+        "A": "Middleware là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Middleware là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Middleware đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Middleware là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Middleware trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và Middleware là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ Middleware giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+Middleware+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "middleware"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong C# / .NET, JWT Authentication có vai trò gì?",
+      "options": {
+        "A": "JWT Authentication là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "JWT Authentication là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "JWT Authentication đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên JWT Authentication là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "JWT Authentication trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và JWT Authentication là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ JWT Authentication giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+JWT+Authentication+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "jwt-authentication"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong C# / .NET, SignalR có vai trò gì?",
+      "options": {
+        "A": "SignalR là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SignalR là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SignalR đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SignalR là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SignalR trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và SignalR là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ SignalR giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+SignalR+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "signalr"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong C# / .NET, Background Services có vai trò gì?",
+      "options": {
+        "A": "Background Services là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Background Services là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Background Services đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Background Services là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Background Services trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và Background Services là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ Background Services giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+Background+Services+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "background-services"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong C# / .NET, xUnit Testing có vai trò gì?",
+      "options": {
+        "A": "xUnit Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "xUnit Testing là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "xUnit Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên xUnit Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "xUnit Testing trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và xUnit Testing là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ xUnit Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+xUnit+Testing+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "xunit-testing"
+      ]
+    },
+    {
+      "question_id": "csharp_dotnet_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong C# / .NET, Docker deployment có vai trò gì?",
+      "options": {
+        "A": "Docker deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Docker deployment là core concept trong C# / .NET — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Docker deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Docker deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker deployment trong C# / .NET: Đây là một trong những concepts quan trọng nhất. C# / .NET được sử dụng rộng rãi trong industry và Docker deployment là phần không thể thiếu. Khi làm việc với C# / .NET trong production, hiểu rõ Docker deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=C#+/+.NET+Docker+deployment+tutorial",
+      "tags": [
+        "csharp_dotnet",
+        "backend",
+        "docker-deployment"
+      ]
+    }
+  ]
+}

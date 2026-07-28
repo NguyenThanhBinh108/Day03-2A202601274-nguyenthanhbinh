@@ -1,0 +1,68 @@
+{
+  "skill": "MongoDB",
+  "skill_key": "mongodb",
+  "total_resources": 6,
+  "generated_at": "2026-06-12T02:22:05.491944",
+  "resources": [
+    {
+      "resource_id": "mdb_r001",
+      "title": "MongoDB Official Docs",
+      "url": "https://www.mongodb.com/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official MongoDB documentation"
+    },
+    {
+      "resource_id": "mdb_r002",
+      "title": "W3Schools MongoDB",
+      "url": "https://www.w3schools.com/mongodb/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "beginner",
+      "rating": 4,
+      "description": "MongoDB basics với Try It Editor"
+    },
+    {
+      "resource_id": "mdb_r003",
+      "title": "GeeksForGeeks MongoDB Tutorial",
+      "url": "https://www.geeksforgeeks.org/mongodb-tutorial/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "MongoDB toàn diện"
+    },
+    {
+      "resource_id": "mdb_r004",
+      "title": "freeCodeCamp MongoDB Articles",
+      "url": "https://www.freecodecamp.org/news/tag/mongodb/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "MongoDB articles"
+    },
+    {
+      "resource_id": "mdb_r005",
+      "title": "MongoDB University (Free)",
+      "url": "https://learn.mongodb.com/",
+      "type": "course",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Free MongoDB courses từ MongoDB University"
+    },
+    {
+      "resource_id": "mdb_r006",
+      "title": "Viblo MongoDB Articles",
+      "url": "https://viblo.asia/tags/mongodb",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "MongoDB tiếng Việt"
+    }
+  ]
+}

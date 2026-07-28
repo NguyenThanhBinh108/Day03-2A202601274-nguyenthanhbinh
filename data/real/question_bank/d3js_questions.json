@@ -1,0 +1,218 @@
+{
+  "skill": "D3.js",
+  "skill_key": "d3js",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.525264Z",
+  "source_references": [
+    "https://www.google.com/search?q=D3.js+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "d3js_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong D3.js, Data binding có vai trò gì?",
+      "options": {
+        "A": "Data binding là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data binding là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data binding đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data binding là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data binding trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Data binding là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Data binding giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Data+binding+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "data-binding"
+      ]
+    },
+    {
+      "question_id": "d3js_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong D3.js, Selections có vai trò gì?",
+      "options": {
+        "A": "Selections là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Selections là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Selections đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Selections là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Selections trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Selections là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Selections giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Selections+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "selections"
+      ]
+    },
+    {
+      "question_id": "d3js_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong D3.js, Scales có vai trò gì?",
+      "options": {
+        "A": "Scales là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Scales là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Scales đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Scales là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Scales trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Scales là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Scales giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Scales+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "scales"
+      ]
+    },
+    {
+      "question_id": "d3js_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong D3.js, Axes có vai trò gì?",
+      "options": {
+        "A": "Axes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Axes là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Axes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Axes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Axes trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Axes là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Axes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Axes+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "axes"
+      ]
+    },
+    {
+      "question_id": "d3js_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong D3.js, Line/Bar/Pie charts có vai trò gì?",
+      "options": {
+        "A": "Line/Bar/Pie charts là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Line/Bar/Pie charts là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Line/Bar/Pie charts đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Line/Bar/Pie charts là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Line/Bar/Pie charts trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Line/Bar/Pie charts là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Line/Bar/Pie charts giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Line/Bar/Pie+charts+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "line-bar-pie-charts"
+      ]
+    },
+    {
+      "question_id": "d3js_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong D3.js, Transitions có vai trò gì?",
+      "options": {
+        "A": "Transitions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transitions là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transitions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transitions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transitions trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Transitions là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Transitions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Transitions+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "transitions"
+      ]
+    },
+    {
+      "question_id": "d3js_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong D3.js, Brushing/Zooming có vai trò gì?",
+      "options": {
+        "A": "Brushing/Zooming là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Brushing/Zooming là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Brushing/Zooming đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Brushing/Zooming là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Brushing/Zooming trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Brushing/Zooming là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Brushing/Zooming giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Brushing/Zooming+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "brushing-zooming"
+      ]
+    },
+    {
+      "question_id": "d3js_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong D3.js, Force simulation có vai trò gì?",
+      "options": {
+        "A": "Force simulation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Force simulation là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Force simulation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Force simulation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Force simulation trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và Force simulation là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ Force simulation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+Force+simulation+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "force-simulation"
+      ]
+    },
+    {
+      "question_id": "d3js_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong D3.js, GeoJSON/Maps có vai trò gì?",
+      "options": {
+        "A": "GeoJSON/Maps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GeoJSON/Maps là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GeoJSON/Maps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GeoJSON/Maps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GeoJSON/Maps trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và GeoJSON/Maps là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ GeoJSON/Maps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+GeoJSON/Maps+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "geojson-maps"
+      ]
+    },
+    {
+      "question_id": "d3js_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong D3.js, React + D3 có vai trò gì?",
+      "options": {
+        "A": "React + D3 là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "React + D3 là core concept trong D3.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "React + D3 đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên React + D3 là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "React + D3 trong D3.js: Đây là một trong những concepts quan trọng nhất. D3.js được sử dụng rộng rãi trong industry và React + D3 là phần không thể thiếu. Khi làm việc với D3.js trong production, hiểu rõ React + D3 giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=D3.js+React+++D3+tutorial",
+      "tags": [
+        "d3js",
+        "frontend",
+        "react-+-d3"
+      ]
+    }
+  ]
+}

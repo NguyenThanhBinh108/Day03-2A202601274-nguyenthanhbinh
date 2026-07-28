@@ -1,0 +1,147 @@
+{
+  "skill": "Kubernetes",
+  "market_frequency": "11.5% JDs yêu cầu Kubernetes",
+  "market_role": "DevOps Engineer, Cloud Engineer",
+  "total_learning_hours": 40,
+  "generated_at": "2026-06-12T00:05:36.355831",
+  "modules": [
+    {
+      "module_id": "k8s_01",
+      "title": "Kubernetes Fundamentals",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "k8s_01_01",
+          "title": "Core Concepts: Pods, Services, Deployments",
+          "hours": 8,
+          "academic": {
+            "summary": "Pod lifecycle, ReplicaSet, Deployment rolling update, Service types (ClusterIP/NodePort/LoadBalancer), Ingress",
+            "resources": [
+              {
+                "title": "Kubernetes Official Docs",
+                "url": "https://kubernetes.io/docs/home/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 360
+              },
+              {
+                "title": "Kubernetes Tutorial — freeCodeCamp",
+                "url": "https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours/",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "Play with Kubernetes",
+                "url": "https://labs.play-with-k8s.com",
+                "type": "lab",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Deploy microservices app: 3 services với Deployments, Services, Ingress, HPA. Rolling update without downtime",
+            "resources": [
+              {
+                "title": "minikube — Local K8s",
+                "url": "https://minikube.sigs.k8s.io/docs/start/",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "k8s_01_01_q1",
+                "level": 3,
+                "question": "Pod vs Deployment trong Kubernetes?",
+                "options": {
+                  "A": "Pod: 1+ containers (ephemeral). Deployment: manages ReplicaSet → ensures N pods always running, rolling updates",
+                  "B": "Chúng giống nhau",
+                  "C": "Deployment chỉ cho 1 pod",
+                  "D": "Pod là parent của Deployment"
+                },
+                "correct_answer": "A",
+                "explanation": "Pod: smallest deployable unit, ephemeral. Deployment: desired state declaration. Kubernetes reconcile loop: thực tế ≠ desired → tạo/xóa pods. Rolling update: tăng dần replicas mới, giảm dần replicas cũ."
+              },
+              {
+                "question_id": "k8s_01_01_q2",
+                "level": 3,
+                "question": "ClusterIP vs NodePort vs LoadBalancer Service?",
+                "options": {
+                  "A": "ClusterIP: internal only. NodePort: expose trên Node's IP. LoadBalancer: cloud provider external LB",
+                  "B": "Chúng giống nhau",
+                  "C": "LoadBalancer chỉ cho AWS",
+                  "D": "NodePort chỉ cho development"
+                },
+                "correct_answer": "A",
+                "explanation": "ClusterIP (default): reachable only inside cluster. NodePort: NodeIP:NodePort, external access. LoadBalancer: cloud LB, production. Ingress: L7 routing (path-based, host-based) → single entry point."
+              },
+              {
+                "question_id": "k8s_01_01_q3",
+                "level": 4,
+                "question": "Kubernetes liveness vs readiness probe?",
+                "options": {
+                  "A": "Liveness: container alive? → restart if fail. Readiness: ready to receive traffic? → remove from LB if fail",
+                  "B": "Chúng giống nhau",
+                  "C": "Readiness restart container",
+                  "D": "Liveness remove from LB"
+                },
+                "correct_answer": "A",
+                "explanation": "Liveness: is container healthy? Fail → kubelet restart pod. Readiness: can serve requests? Fail → remove pod from Service endpoints (không nhận traffic). Startup probe: protect slow-starting containers."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "k8s_01_02",
+          "title": "ConfigMaps, Secrets, RBAC, Namespaces",
+          "hours": 6,
+          "academic": {
+            "summary": "ConfigMap từ file/env, Secret base64 encoding, RBAC (Role/ClusterRole/Binding), Namespace isolation",
+            "resources": [
+              {
+                "title": "K8s RBAC Docs",
+                "url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 90
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Setup dev/staging/prod namespaces với RBAC. Secrets từ Vault injected vào pod. ConfigMap cho app config",
+            "resources": [
+              {
+                "title": "Kubernetes Secrets Management",
+                "url": "https://kubernetes.io/docs/concepts/configuration/secret/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "k8s_01_02_q1",
+                "level": 4,
+                "question": "Kubernetes Secrets có thực sự 'secure' không?",
+                "options": {
+                  "A": "Không hoàn toàn — chỉ base64 encoded (không encrypted by default). Cần encrypt at rest + external vault (HashiCorp Vault/AWS SSM)",
+                  "B": "Có, fully encrypted",
+                  "C": "Secrets giống ConfigMap",
+                  "D": "Secrets không thể bị access"
+                },
+                "correct_answer": "A",
+                "explanation": "K8s Secrets: base64 chỉ là encoding, không encryption. Ai có kubectl access có thể decode. Production: enable etcd encryption at rest, hoặc dùng Vault Agent Injector, ExternalSecrets Operator, AWS Secrets Manager CSI driver."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Machine Learning",
+  "skill_key": "machine_learning",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.631720Z",
+  "source_references": [
+    "https://www.google.com/search?q=Machine+Learning+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "machine_learning_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Machine Learning, Supervised learning có vai trò gì?",
+      "options": {
+        "A": "Supervised learning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Supervised learning là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Supervised learning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Supervised learning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Supervised learning trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Supervised learning là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Supervised learning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Supervised+learning+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "supervised-learning"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Machine Learning, Unsupervised learning có vai trò gì?",
+      "options": {
+        "A": "Unsupervised learning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Unsupervised learning là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Unsupervised learning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Unsupervised learning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Unsupervised learning trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Unsupervised learning là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Unsupervised learning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Unsupervised+learning+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "unsupervised-learning"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Machine Learning, Linear regression có vai trò gì?",
+      "options": {
+        "A": "Linear regression là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Linear regression là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Linear regression đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Linear regression là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Linear regression trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Linear regression là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Linear regression giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Linear+regression+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "linear-regression"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Machine Learning, Decision trees có vai trò gì?",
+      "options": {
+        "A": "Decision trees là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Decision trees là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Decision trees đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Decision trees là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Decision trees trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Decision trees là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Decision trees giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Decision+trees+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "decision-trees"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Machine Learning, Random forests có vai trò gì?",
+      "options": {
+        "A": "Random forests là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Random forests là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Random forests đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Random forests là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Random forests trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Random forests là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Random forests giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Random+forests+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "random-forests"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Machine Learning, Feature engineering có vai trò gì?",
+      "options": {
+        "A": "Feature engineering là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Feature engineering là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Feature engineering đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Feature engineering là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Feature engineering trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Feature engineering là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Feature engineering giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Feature+engineering+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "feature-engineering"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Machine Learning, Model evaluation có vai trò gì?",
+      "options": {
+        "A": "Model evaluation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model evaluation là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model evaluation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model evaluation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model evaluation trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Model evaluation là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Model evaluation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Model+evaluation+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "model-evaluation"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Machine Learning, Overfitting/Regularization có vai trò gì?",
+      "options": {
+        "A": "Overfitting/Regularization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Overfitting/Regularization là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Overfitting/Regularization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Overfitting/Regularization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Overfitting/Regularization trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Overfitting/Regularization là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Overfitting/Regularization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Overfitting/Regularization+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "overfitting-regularization"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Machine Learning, scikit-learn có vai trò gì?",
+      "options": {
+        "A": "scikit-learn là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "scikit-learn là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "scikit-learn đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên scikit-learn là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "scikit-learn trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và scikit-learn là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ scikit-learn giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+scikit-learn+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "scikit-learn"
+      ]
+    },
+    {
+      "question_id": "machine_learning_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Machine Learning, Model deployment có vai trò gì?",
+      "options": {
+        "A": "Model deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model deployment là core concept trong Machine Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model deployment trong Machine Learning: Đây là một trong những concepts quan trọng nhất. Machine Learning được sử dụng rộng rãi trong industry và Model deployment là phần không thể thiếu. Khi làm việc với Machine Learning trong production, hiểu rõ Model deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Machine+Learning+Model+deployment+tutorial",
+      "tags": [
+        "machine_learning",
+        "ai/ml",
+        "model-deployment"
+      ]
+    }
+  ]
+}

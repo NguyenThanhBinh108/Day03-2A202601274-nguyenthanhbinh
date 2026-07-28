@@ -1,0 +1,154 @@
+{
+  "skill": "Flask",
+  "skill_key": "flask",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.532783Z",
+  "checklist_items": [
+    {
+      "item_id": "flask_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Application factory",
+      "description": "Master Application factory trong Flask — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Flask+Application+factory+tutorial",
+      "resource_title": "Flask — Application factory",
+      "quiz_ids": [
+        "flask_l1_001"
+      ],
+      "market_relevance": "Application factory là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Blueprints",
+      "description": "Master Blueprints trong Flask — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Flask+Blueprints+tutorial",
+      "resource_title": "Flask — Blueprints",
+      "quiz_ids": [
+        "flask_l2_002"
+      ],
+      "market_relevance": "Blueprints là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Flask-SQLAlchemy",
+      "description": "Master Flask-SQLAlchemy trong Flask — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Flask+Flask-SQLAlchemy+tutorial",
+      "resource_title": "Flask — Flask-SQLAlchemy",
+      "quiz_ids": [
+        "flask_l3_003"
+      ],
+      "market_relevance": "Flask-SQLAlchemy là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Flask-Migrate",
+      "description": "Master Flask-Migrate trong Flask — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Flask+Flask-Migrate+tutorial",
+      "resource_title": "Flask — Flask-Migrate",
+      "quiz_ids": [
+        "flask_l4_004"
+      ],
+      "market_relevance": "Flask-Migrate là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Flask-JWT-Extended",
+      "description": "Master Flask-JWT-Extended trong Flask — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Flask+Flask-JWT-Extended+tutorial",
+      "resource_title": "Flask — Flask-JWT-Extended",
+      "quiz_ids": [
+        "flask_l5_005"
+      ],
+      "market_relevance": "Flask-JWT-Extended là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Flask-CORS",
+      "description": "Master Flask-CORS trong Flask — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Flask+Flask-CORS+tutorial",
+      "resource_title": "Flask — Flask-CORS",
+      "quiz_ids": [
+        "flask_l5_006"
+      ],
+      "market_relevance": "Flask-CORS là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Flask-RESTful",
+      "description": "Master Flask-RESTful trong Flask — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Flask+Flask-RESTful+tutorial",
+      "resource_title": "Flask — Flask-RESTful",
+      "quiz_ids": [
+        "flask_l5_007"
+      ],
+      "market_relevance": "Flask-RESTful là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Testing",
+      "description": "Master Testing trong Flask — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Flask+Testing+tutorial",
+      "resource_title": "Flask — Testing",
+      "quiz_ids": [
+        "flask_l5_008"
+      ],
+      "market_relevance": "Testing là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Gunicorn deployment",
+      "description": "Master Gunicorn deployment trong Flask — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Flask+Gunicorn+deployment+tutorial",
+      "resource_title": "Flask — Gunicorn deployment",
+      "quiz_ids": [
+        "flask_l5_009"
+      ],
+      "market_relevance": "Gunicorn deployment là key skill trong Flask Backend development"
+    },
+    {
+      "item_id": "flask_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Configuration",
+      "description": "Master Configuration trong Flask — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Flask+Configuration+tutorial",
+      "resource_title": "Flask — Configuration",
+      "quiz_ids": [
+        "flask_l5_010"
+      ],
+      "market_relevance": "Configuration là key skill trong Flask Backend development"
+    }
+  ]
+}

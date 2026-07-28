@@ -1,0 +1,102 @@
+{
+  "skill": "Flutter",
+  "skill_key": "flutter",
+  "total_topics": 9,
+  "estimated_total_hours": 11.5,
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "checklist_items": [
+    {
+      "item_id": "flutter_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Flutter và Dart cơ bản",
+      "description": "Dart syntax, null safety, async/await, Flutter SDK setup, hello world app",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/google-flutter/",
+      "resource_title": "GeeksForGeeks — Google Flutter"
+    },
+    {
+      "item_id": "flutter_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Widgets — StatelessWidget và StatefulWidget",
+      "description": "widget lifecycle, setState, build method, hot reload, widget tree",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-stateful-vs-stateless-widgets/",
+      "resource_title": "GeeksForGeeks — Flutter Widgets"
+    },
+    {
+      "item_id": "flutter_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Layout Widgets",
+      "description": "Row, Column, Stack, Container, Expanded, Flexible, SafeArea, SingleChildScrollView",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-layouts/",
+      "resource_title": "GeeksForGeeks — Flutter Layouts",
+      "hands_on_task": "Build responsive profile page với Row/Column/Stack layout"
+    },
+    {
+      "item_id": "flutter_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Navigation cơ bản",
+      "description": "Navigator.push/pop, named routes, GoRouter setup, passing arguments",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/navigation-in-flutter/",
+      "resource_title": "GeeksForGeeks — Flutter Navigation"
+    },
+    {
+      "item_id": "flutter_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "State Management — Riverpod",
+      "description": "StateProvider, FutureProvider, NotifierProvider, ref.watch/read, auto-dispose",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-state-management/",
+      "resource_title": "GeeksForGeeks — Flutter State Management",
+      "hands_on_task": "Implement shopping cart với Riverpod: add/remove/quantity/total"
+    },
+    {
+      "item_id": "flutter_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "REST API với dio",
+      "description": "dio setup, GET/POST, interceptors (auth token), error handling, models với freezed",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-http-requests/",
+      "resource_title": "GeeksForGeeks — Flutter HTTP Requests",
+      "hands_on_task": "Build app list products từ API, detail screen, pagination"
+    },
+    {
+      "item_id": "flutter_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Local Storage — SharedPreferences, Hive, SQLite",
+      "description": "SharedPreferences cho simple data, Hive cho objects, sqflite cho relational",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-shared-preferences/",
+      "resource_title": "GeeksForGeeks — Flutter Shared Preferences"
+    },
+    {
+      "item_id": "flutter_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Performance Optimization",
+      "description": "const constructors, RepaintBoundary, ListView.builder, compute(), profiling với DevTools",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-performance/",
+      "resource_title": "GeeksForGeeks — Flutter Performance"
+    },
+    {
+      "item_id": "flutter_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "CI/CD và Release",
+      "description": "Fastlane, GitHub Actions, code signing Android/iOS, App Store/Play Store submission",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/flutter-releasing-the-app/",
+      "resource_title": "GeeksForGeeks — Flutter Releasing App"
+    }
+  ]
+}

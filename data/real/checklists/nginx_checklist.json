@@ -1,0 +1,154 @@
+{
+  "skill": "Nginx",
+  "skill_key": "nginx",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.623827Z",
+  "checklist_items": [
+    {
+      "item_id": "nginx_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Virtual hosts",
+      "description": "Master Virtual hosts trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nginx+Virtual+hosts+tutorial",
+      "resource_title": "Nginx — Virtual hosts",
+      "quiz_ids": [
+        "nginx_l1_001"
+      ],
+      "market_relevance": "Virtual hosts là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Reverse proxy",
+      "description": "Master Reverse proxy trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nginx+Reverse+proxy+tutorial",
+      "resource_title": "Nginx — Reverse proxy",
+      "quiz_ids": [
+        "nginx_l2_002"
+      ],
+      "market_relevance": "Reverse proxy là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Load balancing",
+      "description": "Master Load balancing trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Nginx+Load+balancing+tutorial",
+      "resource_title": "Nginx — Load balancing",
+      "quiz_ids": [
+        "nginx_l3_003"
+      ],
+      "market_relevance": "Load balancing là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "SSL/TLS termination",
+      "description": "Master SSL/TLS termination trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Nginx+SSL/TLS+termination+tutorial",
+      "resource_title": "Nginx — SSL/TLS termination",
+      "quiz_ids": [
+        "nginx_l4_004"
+      ],
+      "market_relevance": "SSL/TLS termination là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Static file serving",
+      "description": "Master Static file serving trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nginx+Static+file+serving+tutorial",
+      "resource_title": "Nginx — Static file serving",
+      "quiz_ids": [
+        "nginx_l5_005"
+      ],
+      "market_relevance": "Static file serving là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Caching",
+      "description": "Master Caching trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nginx+Caching+tutorial",
+      "resource_title": "Nginx — Caching",
+      "quiz_ids": [
+        "nginx_l5_006"
+      ],
+      "market_relevance": "Caching là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Rate limiting",
+      "description": "Master Rate limiting trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Nginx+Rate+limiting+tutorial",
+      "resource_title": "Nginx — Rate limiting",
+      "quiz_ids": [
+        "nginx_l5_007"
+      ],
+      "market_relevance": "Rate limiting là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "HTTP/2",
+      "description": "Master HTTP/2 trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Nginx+HTTP/2+tutorial",
+      "resource_title": "Nginx — HTTP/2",
+      "quiz_ids": [
+        "nginx_l5_008"
+      ],
+      "market_relevance": "HTTP/2 là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Security headers",
+      "description": "Master Security headers trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nginx+Security+headers+tutorial",
+      "resource_title": "Nginx — Security headers",
+      "quiz_ids": [
+        "nginx_l5_009"
+      ],
+      "market_relevance": "Security headers là key skill trong Nginx DevOps development"
+    },
+    {
+      "item_id": "nginx_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Nginx Plus",
+      "description": "Master Nginx Plus trong Nginx — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nginx+Nginx+Plus+tutorial",
+      "resource_title": "Nginx — Nginx Plus",
+      "quiz_ids": [
+        "nginx_l5_010"
+      ],
+      "market_relevance": "Nginx Plus là key skill trong Nginx DevOps development"
+    }
+  ]
+}

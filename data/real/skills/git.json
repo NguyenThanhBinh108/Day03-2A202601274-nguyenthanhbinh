@@ -1,0 +1,205 @@
+{
+  "skill": "Git",
+  "market_frequency": "23.9% JDs yêu cầu Git",
+  "market_role": "Tất cả roles IT",
+  "total_learning_hours": 15,
+  "generated_at": "2026-06-12T00:05:36.346505",
+  "modules": [
+    {
+      "module_id": "git_01",
+      "title": "Git Workflow & Collaboration",
+      "order": 1,
+      "hours": 15,
+      "topics": [
+        {
+          "topic_id": "git_01_01",
+          "title": "Branching, Merging, Rebasing",
+          "hours": 5,
+          "academic": {
+            "summary": "Branch model, merge vs rebase, conflict resolution, cherry-pick, stash, interactive rebase",
+            "resources": [
+              {
+                "title": "Pro Git Book (free)",
+                "url": "https://git-scm.com/book/en/v2",
+                "type": "book",
+                "is_free": true,
+                "duration_minutes": 480
+              },
+              {
+                "title": "Atlassian Git Tutorials",
+                "url": "https://www.atlassian.com/git/tutorials",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "Learn Git Branching — Interactive",
+                "url": "https://learngitbranching.js.org",
+                "type": "interactive",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Git Flow: feature branch, PR, code review, merge --no-ff, xử lý merge conflict thủ công, interactive rebase để squash commits",
+            "resources": [
+              {
+                "title": "GitHub Flow Guide",
+                "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+                "type": "guide",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "git_01_01_q1",
+                "level": 2,
+                "question": "git rebase vs git merge khác nhau?",
+                "options": {
+                  "A": "rebase: linear history (viết lại). merge: merge commit (preserve history)",
+                  "B": "merge viết lại history",
+                  "C": "Chúng giống nhau",
+                  "D": "rebase chỉ cho main"
+                },
+                "correct_answer": "A",
+                "explanation": "rebase: move commits lên tip của target → linear, dễ đọc. merge: tạo merge commit → explicit history. Golden rule: không rebase shared/public branches."
+              },
+              {
+                "question_id": "git_01_01_q2",
+                "level": 3,
+                "question": "git stash pop vs git stash apply?",
+                "options": {
+                  "A": "pop: apply rồi xóa stash. apply: apply nhưng giữ stash",
+                  "B": "Chúng giống nhau",
+                  "C": "apply xóa stash",
+                  "D": "pop không apply"
+                },
+                "correct_answer": "A",
+                "explanation": "stash pop = apply + drop. apply: giữ stash entry trong stash list (có thể apply nhiều lần hoặc different branches). pop: cleanup sau khi apply."
+              },
+              {
+                "question_id": "git_01_01_q3",
+                "level": 4,
+                "question": "git cherry-pick dùng để làm gì?",
+                "options": {
+                  "A": "Apply một commit cụ thể từ branch khác vào current branch",
+                  "B": "Merge toàn bộ branch",
+                  "C": "Revert commit",
+                  "D": "Stash changes"
+                },
+                "correct_answer": "A",
+                "explanation": "cherry-pick: copy một commit cụ thể (tạo commit mới với cùng changes nhưng hash khác). Dùng khi: hotfix cần backport, lấy 1 feature từ branch chưa merge."
+              },
+              {
+                "question_id": "git_01_01_q4",
+                "level": 5,
+                "question": "git reflog dùng để làm gì và khi nào cần?",
+                "options": {
+                  "A": "Log mọi thay đổi HEAD — dùng để recover commits sau hard reset/drop stash",
+                  "B": "Log remote changes",
+                  "C": "Log file changes",
+                  "D": "Không có tác dụng"
+                },
+                "correct_answer": "A",
+                "explanation": "reflog: local log của mọi lần HEAD di chuyển. git reset --hard HEAD~5 rồi hối hận? git reflog → tìm hash cũ → git reset --hard <hash>. Commits không thực sự bị xóa ngay — chỉ unreachable."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "git_01_02",
+          "title": "GitHub Actions CI/CD & Git Hooks",
+          "hours": 6,
+          "academic": {
+            "summary": "Workflow YAML, triggers, jobs, steps, secrets, artifacts, pre-commit hooks, Husky",
+            "resources": [
+              {
+                "title": "GitHub Actions Docs",
+                "url": "https://docs.github.com/en/actions",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Setup CI pipeline: test → lint → build → deploy khi push to main. Matrix testing cho Node 18/20. Husky pre-commit hook",
+            "resources": [
+              {
+                "title": "GitHub Actions Quickstart",
+                "url": "https://docs.github.com/en/actions/quickstart",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "git_01_02_q1",
+                "level": 3,
+                "question": "GitHub Actions `on: push: branches: [main]` vs `on: pull_request:` khác nhau?",
+                "options": {
+                  "A": "push: trigger sau khi merge vào main. pull_request: trigger khi tạo/update PR",
+                  "B": "Chúng giống nhau",
+                  "C": "pull_request chỉ cho forks",
+                  "D": "push trigger trước merge"
+                },
+                "correct_answer": "A",
+                "explanation": "push [main]: chạy sau merge. pull_request: chạy khi PR opened/updated — tốt cho pre-merge checks. Best practice: test trên PR, deploy on push to main."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "git_01_03",
+          "title": "Git Internals & Advanced Commands",
+          "hours": 4,
+          "academic": {
+            "summary": "Object model (blob/tree/commit/tag), packfiles, garbage collection, bisect, worktree",
+            "resources": [
+              {
+                "title": "Git Internals — Pro Git Book",
+                "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+                "type": "book",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Dùng git bisect để tìm commit gây regression trong 100 commits. Setup git worktree để review PR mà không stash work",
+            "resources": [
+              {
+                "title": "git bisect Docs",
+                "url": "https://git-scm.com/docs/git-bisect",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "git_01_03_q1",
+                "level": 5,
+                "question": "git bisect dùng để làm gì?",
+                "options": {
+                  "A": "Binary search trên commit history để tìm commit đầu tiên gây bug",
+                  "B": "Split repository thành 2",
+                  "C": "Compare 2 branches",
+                  "D": "Merge 2 branches"
+                },
+                "correct_answer": "A",
+                "explanation": "bisect: mark 'good' và 'bad' commit → binary search → checkout giữa → test → mark good/bad → repeat. O(log n) thay vì O(n). Có thể automate: git bisect run npm test."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

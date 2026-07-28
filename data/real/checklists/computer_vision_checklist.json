@@ -1,0 +1,154 @@
+{
+  "skill": "Computer Vision",
+  "skill_key": "computer_vision",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.646752Z",
+  "checklist_items": [
+    {
+      "item_id": "computer_vision_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "OpenCV basics",
+      "description": "Master OpenCV basics trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+OpenCV+basics+tutorial",
+      "resource_title": "Computer Vision — OpenCV basics",
+      "quiz_ids": [
+        "computer_vision_l1_001"
+      ],
+      "market_relevance": "OpenCV basics là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Object detection (YOLO)",
+      "description": "Master Object detection (YOLO) trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Object+detection+(YOLO)+tutorial",
+      "resource_title": "Computer Vision — Object detection (YOLO)",
+      "quiz_ids": [
+        "computer_vision_l2_002"
+      ],
+      "market_relevance": "Object detection (YOLO) là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Image classification",
+      "description": "Master Image classification trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Image+classification+tutorial",
+      "resource_title": "Computer Vision — Image classification",
+      "quiz_ids": [
+        "computer_vision_l3_003"
+      ],
+      "market_relevance": "Image classification là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Semantic segmentation",
+      "description": "Master Semantic segmentation trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Semantic+segmentation+tutorial",
+      "resource_title": "Computer Vision — Semantic segmentation",
+      "quiz_ids": [
+        "computer_vision_l4_004"
+      ],
+      "market_relevance": "Semantic segmentation là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Feature extraction",
+      "description": "Master Feature extraction trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Feature+extraction+tutorial",
+      "resource_title": "Computer Vision — Feature extraction",
+      "quiz_ids": [
+        "computer_vision_l5_005"
+      ],
+      "market_relevance": "Feature extraction là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "CNN architectures",
+      "description": "Master CNN architectures trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+CNN+architectures+tutorial",
+      "resource_title": "Computer Vision — CNN architectures",
+      "quiz_ids": [
+        "computer_vision_l5_006"
+      ],
+      "market_relevance": "CNN architectures là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Data augmentation",
+      "description": "Master Data augmentation trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Data+augmentation+tutorial",
+      "resource_title": "Computer Vision — Data augmentation",
+      "quiz_ids": [
+        "computer_vision_l5_007"
+      ],
+      "market_relevance": "Data augmentation là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Transfer learning",
+      "description": "Master Transfer learning trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Transfer+learning+tutorial",
+      "resource_title": "Computer Vision — Transfer learning",
+      "quiz_ids": [
+        "computer_vision_l5_008"
+      ],
+      "market_relevance": "Transfer learning là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Model deployment",
+      "description": "Master Model deployment trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Model+deployment+tutorial",
+      "resource_title": "Computer Vision — Model deployment",
+      "quiz_ids": [
+        "computer_vision_l5_009"
+      ],
+      "market_relevance": "Model deployment là key skill trong Computer Vision AI/ML development"
+    },
+    {
+      "item_id": "computer_vision_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Edge inference",
+      "description": "Master Edge inference trong Computer Vision — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Computer+Vision+Edge+inference+tutorial",
+      "resource_title": "Computer Vision — Edge inference",
+      "quiz_ids": [
+        "computer_vision_l5_010"
+      ],
+      "market_relevance": "Edge inference là key skill trong Computer Vision AI/ML development"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Kotlin Backend",
+  "skill_key": "kotlin_backend",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.546822Z",
+  "source_references": [
+    "https://www.google.com/search?q=Kotlin+Backend+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "kotlin_backend_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Kotlin Backend, Kotlin coroutines có vai trò gì?",
+      "options": {
+        "A": "Kotlin coroutines là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Kotlin coroutines là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Kotlin coroutines đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Kotlin coroutines là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Kotlin coroutines trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Kotlin coroutines là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Kotlin coroutines giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Kotlin+coroutines+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "kotlin-coroutines"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Kotlin Backend, Ktor framework có vai trò gì?",
+      "options": {
+        "A": "Ktor framework là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Ktor framework là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Ktor framework đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Ktor framework là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Ktor framework trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Ktor framework là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Ktor framework giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Ktor+framework+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "ktor-framework"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Kotlin Backend, Spring Boot + Kotlin có vai trò gì?",
+      "options": {
+        "A": "Spring Boot + Kotlin là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Spring Boot + Kotlin là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Spring Boot + Kotlin đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Spring Boot + Kotlin là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Spring Boot + Kotlin trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Spring Boot + Kotlin là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Spring Boot + Kotlin giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Spring+Boot+++Kotlin+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "spring-boot-+-kotlin"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Kotlin Backend, Exposed ORM có vai trò gì?",
+      "options": {
+        "A": "Exposed ORM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Exposed ORM là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Exposed ORM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Exposed ORM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Exposed ORM trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Exposed ORM là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Exposed ORM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Exposed+ORM+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "exposed-orm"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Kotlin Backend, Data classes có vai trò gì?",
+      "options": {
+        "A": "Data classes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data classes là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data classes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data classes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data classes trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Data classes là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Data classes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Data+classes+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "data-classes"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Kotlin Backend, Extension functions có vai trò gì?",
+      "options": {
+        "A": "Extension functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Extension functions là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Extension functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Extension functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Extension functions trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Extension functions là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Extension functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Extension+functions+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "extension-functions"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Kotlin Backend, Null safety có vai trò gì?",
+      "options": {
+        "A": "Null safety là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Null safety là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Null safety đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Null safety là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Null safety trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Null safety là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Null safety giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Null+safety+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "null-safety"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Kotlin Backend, Kotest có vai trò gì?",
+      "options": {
+        "A": "Kotest là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Kotest là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Kotest đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Kotest là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Kotest trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Kotest là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Kotest giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Kotest+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "kotest"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Kotlin Backend, Docker có vai trò gì?",
+      "options": {
+        "A": "Docker là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Docker là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Docker đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Docker là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và Docker là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ Docker giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+Docker+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "docker"
+      ]
+    },
+    {
+      "question_id": "kotlin_backend_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Kotlin Backend, gRPC có vai trò gì?",
+      "options": {
+        "A": "gRPC là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "gRPC là core concept trong Kotlin Backend — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "gRPC đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên gRPC là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "gRPC trong Kotlin Backend: Đây là một trong những concepts quan trọng nhất. Kotlin Backend được sử dụng rộng rãi trong industry và gRPC là phần không thể thiếu. Khi làm việc với Kotlin Backend trong production, hiểu rõ gRPC giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Backend+gRPC+tutorial",
+      "tags": [
+        "kotlin_backend",
+        "backend",
+        "grpc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Design Patterns",
+  "skill_key": "design_patterns",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.663543Z",
+  "checklist_items": [
+    {
+      "item_id": "design_patterns_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Singleton",
+      "description": "Master Singleton trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Singleton+tutorial",
+      "resource_title": "Design Patterns — Singleton",
+      "quiz_ids": [
+        "design_patterns_l1_001"
+      ],
+      "market_relevance": "Singleton là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Factory/Abstract Factory",
+      "description": "Master Factory/Abstract Factory trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Factory/Abstract+Factory+tutorial",
+      "resource_title": "Design Patterns — Factory/Abstract Factory",
+      "quiz_ids": [
+        "design_patterns_l2_002"
+      ],
+      "market_relevance": "Factory/Abstract Factory là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Builder",
+      "description": "Master Builder trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Builder+tutorial",
+      "resource_title": "Design Patterns — Builder",
+      "quiz_ids": [
+        "design_patterns_l3_003"
+      ],
+      "market_relevance": "Builder là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Observer",
+      "description": "Master Observer trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Observer+tutorial",
+      "resource_title": "Design Patterns — Observer",
+      "quiz_ids": [
+        "design_patterns_l4_004"
+      ],
+      "market_relevance": "Observer là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Strategy",
+      "description": "Master Strategy trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Strategy+tutorial",
+      "resource_title": "Design Patterns — Strategy",
+      "quiz_ids": [
+        "design_patterns_l5_005"
+      ],
+      "market_relevance": "Strategy là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Decorator",
+      "description": "Master Decorator trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Decorator+tutorial",
+      "resource_title": "Design Patterns — Decorator",
+      "quiz_ids": [
+        "design_patterns_l5_006"
+      ],
+      "market_relevance": "Decorator là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Command",
+      "description": "Master Command trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Command+tutorial",
+      "resource_title": "Design Patterns — Command",
+      "quiz_ids": [
+        "design_patterns_l5_007"
+      ],
+      "market_relevance": "Command là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Repository",
+      "description": "Master Repository trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Repository+tutorial",
+      "resource_title": "Design Patterns — Repository",
+      "quiz_ids": [
+        "design_patterns_l5_008"
+      ],
+      "market_relevance": "Repository là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Adapter/Facade",
+      "description": "Master Adapter/Facade trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Adapter/Facade+tutorial",
+      "resource_title": "Design Patterns — Adapter/Facade",
+      "quiz_ids": [
+        "design_patterns_l5_009"
+      ],
+      "market_relevance": "Adapter/Facade là key skill trong Design Patterns Fundamentals development"
+    },
+    {
+      "item_id": "design_patterns_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Template Method",
+      "description": "Master Template Method trong Design Patterns — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Design+Patterns+Template+Method+tutorial",
+      "resource_title": "Design Patterns — Template Method",
+      "quiz_ids": [
+        "design_patterns_l5_010"
+      ],
+      "market_relevance": "Template Method là key skill trong Design Patterns Fundamentals development"
+    }
+  ]
+}

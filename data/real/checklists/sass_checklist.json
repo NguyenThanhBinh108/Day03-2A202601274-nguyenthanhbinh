@@ -1,0 +1,154 @@
+{
+  "skill": "Sass/SCSS",
+  "skill_key": "sass",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.520102Z",
+  "checklist_items": [
+    {
+      "item_id": "sass_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Variables",
+      "description": "Master Variables trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Variables+tutorial",
+      "resource_title": "Sass/SCSS — Variables",
+      "quiz_ids": [
+        "sass_l1_001"
+      ],
+      "market_relevance": "Variables là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Nesting",
+      "description": "Master Nesting trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Nesting+tutorial",
+      "resource_title": "Sass/SCSS — Nesting",
+      "quiz_ids": [
+        "sass_l2_002"
+      ],
+      "market_relevance": "Nesting là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Mixins",
+      "description": "Master Mixins trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Mixins+tutorial",
+      "resource_title": "Sass/SCSS — Mixins",
+      "quiz_ids": [
+        "sass_l3_003"
+      ],
+      "market_relevance": "Mixins là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Functions",
+      "description": "Master Functions trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Functions+tutorial",
+      "resource_title": "Sass/SCSS — Functions",
+      "quiz_ids": [
+        "sass_l4_004"
+      ],
+      "market_relevance": "Functions là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Extend",
+      "description": "Master Extend trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Extend+tutorial",
+      "resource_title": "Sass/SCSS — Extend",
+      "quiz_ids": [
+        "sass_l5_005"
+      ],
+      "market_relevance": "Extend là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Partials/Import",
+      "description": "Master Partials/Import trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Partials/Import+tutorial",
+      "resource_title": "Sass/SCSS — Partials/Import",
+      "quiz_ids": [
+        "sass_l5_006"
+      ],
+      "market_relevance": "Partials/Import là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Maps",
+      "description": "Master Maps trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Maps+tutorial",
+      "resource_title": "Sass/SCSS — Maps",
+      "quiz_ids": [
+        "sass_l5_007"
+      ],
+      "market_relevance": "Maps là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Operators",
+      "description": "Master Operators trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+Operators+tutorial",
+      "resource_title": "Sass/SCSS — Operators",
+      "quiz_ids": [
+        "sass_l5_008"
+      ],
+      "market_relevance": "Operators là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "BEM methodology",
+      "description": "Master BEM methodology trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+BEM+methodology+tutorial",
+      "resource_title": "Sass/SCSS — BEM methodology",
+      "quiz_ids": [
+        "sass_l5_009"
+      ],
+      "market_relevance": "BEM methodology là key skill trong Sass/SCSS Frontend development"
+    },
+    {
+      "item_id": "sass_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "PostCSS integration",
+      "description": "Master PostCSS integration trong Sass/SCSS — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Sass/SCSS+PostCSS+integration+tutorial",
+      "resource_title": "Sass/SCSS — PostCSS integration",
+      "quiz_ids": [
+        "sass_l5_010"
+      ],
+      "market_relevance": "PostCSS integration là key skill trong Sass/SCSS Frontend development"
+    }
+  ]
+}

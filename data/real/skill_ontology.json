@@ -1,0 +1,3474 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-06-12T00:35:06.390433",
+  "data_source": "ITviec, TopDev Vietnam IT Market Report 2025",
+  "description": "Skill ontology chuẩn hóa toàn bộ kỹ năng IT thị trường Việt Nam",
+  "total_skills": 92,
+  "skills": [
+    {
+      "canonical_name": "HTML/CSS",
+      "synonyms": [
+        "HTML",
+        "CSS",
+        "HTML5",
+        "CSS3",
+        "html",
+        "css",
+        "html/css",
+        "HTML & CSS"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Markup & Styling",
+      "parent": "Web Development",
+      "prerequisites": [],
+      "related_skills": [
+        "JavaScript",
+        "Tailwind CSS",
+        "Bootstrap",
+        "SASS"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 92,
+      "salary_impact": "low",
+      "description": "Nền tảng bắt buộc của mọi web developer. HTML cấu trúc, CSS tạo kiểu. Không thể bỏ qua.",
+      "common_interview_topics": [
+        "Semantic HTML",
+        "Box model",
+        "Flexbox",
+        "Grid",
+        "Responsive design",
+        "CSS specificity"
+      ]
+    },
+    {
+      "canonical_name": "JavaScript",
+      "synonyms": [
+        "JS",
+        "js",
+        "javascript",
+        "Javascript",
+        "ECMAScript",
+        "ES6",
+        "ES2015+"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Programming Language",
+      "parent": "Web Development",
+      "prerequisites": [
+        "HTML/CSS"
+      ],
+      "related_skills": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Vue.js",
+        "Angular"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 80,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 88,
+      "salary_impact": "high",
+      "description": "Ngôn ngữ của web. Bắt buộc cho cả frontend lẫn backend (Node.js). Hiểu sâu JS giúp debug và optimize code tốt hơn.",
+      "common_interview_topics": [
+        "Event loop",
+        "Closure",
+        "Prototype chain",
+        "async/await",
+        "Promise",
+        "this binding",
+        "ES6+"
+      ]
+    },
+    {
+      "canonical_name": "TypeScript",
+      "synonyms": [
+        "TS",
+        "ts",
+        "typescript",
+        "Typescript"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Programming Language",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "related_skills": [
+        "JavaScript",
+        "React",
+        "Angular",
+        "NestJS",
+        "Node.js"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 35,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 61,
+      "salary_impact": "medium",
+      "description": "JavaScript với static typing. Bắt buộc tại hầu hết công ty tech VN level trung-lớn. Giảm bug runtime đáng kể.",
+      "common_interview_topics": [
+        "Type vs Interface",
+        "Generics",
+        "Utility types",
+        "Strict mode",
+        "Declaration files",
+        "Narrowing"
+      ]
+    },
+    {
+      "canonical_name": "React",
+      "synonyms": [
+        "ReactJS",
+        "React.js",
+        "react",
+        "reactjs",
+        "React JS"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Framework",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript",
+        "HTML/CSS",
+        "ES6+"
+      ],
+      "related_skills": [
+        "Redux",
+        "Next.js",
+        "TypeScript",
+        "React Query",
+        "Zustand"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 65,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 74,
+      "salary_impact": "high",
+      "description": "Framework UI phổ biến nhất tại VN. Meta maintain, hệ sinh thái khổng lồ. 74% JD Frontend tại VN yêu cầu React.",
+      "common_interview_topics": [
+        "Hooks",
+        "Virtual DOM",
+        "Component lifecycle",
+        "State management",
+        "Context API",
+        "Performance (memo, useMemo, useCallback)",
+        "React 18 features"
+      ]
+    },
+    {
+      "canonical_name": "Vue.js",
+      "synonyms": [
+        "Vue",
+        "VueJS",
+        "Vue.js 3",
+        "Vuejs",
+        "vue",
+        "vuejs"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Framework",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "related_skills": [
+        "Nuxt.js",
+        "Pinia",
+        "Vuex",
+        "TypeScript"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 50,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 28,
+      "salary_impact": "medium",
+      "description": "Framework phổ biến thứ 2 VN. Dễ học hơn React, nhiều công ty outsource dùng Vue. Composition API (Vue 3) mạnh và clean.",
+      "common_interview_topics": [
+        "Composition API vs Options API",
+        "Reactivity system",
+        "ref vs reactive",
+        "Lifecycle hooks",
+        "Vuex/Pinia",
+        "v-model"
+      ]
+    },
+    {
+      "canonical_name": "Angular",
+      "synonyms": [
+        "AngularJS",
+        "Angular 2+",
+        "angular",
+        "angularjs",
+        "Angular JS"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Framework",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "TypeScript",
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "related_skills": [
+        "TypeScript",
+        "RxJS",
+        "NgRx",
+        "Angular Material"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 70,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 19,
+      "salary_impact": "medium",
+      "description": "Framework enterprise của Google. Phổ biến ở công ty outsource lớn, ngân hàng, bảo hiểm. Opinionated, có đủ mọi thứ built-in.",
+      "common_interview_topics": [
+        "Dependency Injection",
+        "NgModules",
+        "RxJS Observables",
+        "Change detection",
+        "Services",
+        "Angular router",
+        "Lazy loading"
+      ]
+    },
+    {
+      "canonical_name": "Next.js",
+      "synonyms": [
+        "NextJS",
+        "Next.js 14",
+        "Nextjs",
+        "next.js",
+        "nextjs"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Framework",
+      "parent": "React Ecosystem",
+      "prerequisites": [
+        "React",
+        "JavaScript"
+      ],
+      "related_skills": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Prisma",
+        "Vercel"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 40,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 35,
+      "salary_impact": "medium",
+      "description": "Full-stack React framework. SSR/SSG/ISR, App Router (Next 13+). Xu hướng mạnh nhất 2024-2025 cho full-stack JS.",
+      "common_interview_topics": [
+        "SSR vs SSG vs ISR",
+        "App Router vs Pages Router",
+        "Server Components",
+        "Data fetching",
+        "Image optimization",
+        "Middleware"
+      ]
+    },
+    {
+      "canonical_name": "Nuxt.js",
+      "synonyms": [
+        "Nuxt",
+        "NuxtJS",
+        "Nuxt 3",
+        "nuxt",
+        "nuxtjs"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Framework",
+      "parent": "Vue.js Ecosystem",
+      "prerequisites": [
+        "Vue.js",
+        "JavaScript"
+      ],
+      "related_skills": [
+        "Vue.js",
+        "TypeScript",
+        "Pinia"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 35,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 8,
+      "salary_impact": "low",
+      "description": "Next.js phiên bản cho Vue. SSR/SSG cho Vue apps. Ít phổ biến hơn Next.js nhưng vẫn dùng trong hệ sinh thái Vue.",
+      "common_interview_topics": [
+        "File-based routing",
+        "Server-side rendering",
+        "Auto-imports",
+        "Composables",
+        "Nitro server"
+      ]
+    },
+    {
+      "canonical_name": "Tailwind CSS",
+      "synonyms": [
+        "Tailwind",
+        "tailwind",
+        "tailwindcss",
+        "Tailwind CSS 3",
+        "TailwindCSS"
+      ],
+      "domain": "Frontend",
+      "subdomain": "CSS Framework",
+      "parent": "Web Development",
+      "prerequisites": [
+        "HTML/CSS"
+      ],
+      "related_skills": [
+        "HTML/CSS",
+        "React",
+        "Vue.js",
+        "shadcn/ui"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 42,
+      "salary_impact": "low",
+      "description": "Utility-first CSS framework. Cực kỳ phổ biến 2022+. Xây dựng UI nhanh mà không cần viết CSS custom. shadcn/ui dựa trên Tailwind.",
+      "common_interview_topics": [
+        "Utility classes",
+        "Responsive prefixes",
+        "Custom config",
+        "Purge/content paths",
+        "JIT mode"
+      ]
+    },
+    {
+      "canonical_name": "Redux",
+      "synonyms": [
+        "Redux Toolkit",
+        "RTK",
+        "Redux Saga",
+        "react-redux",
+        "redux"
+      ],
+      "domain": "Frontend",
+      "subdomain": "State Management",
+      "parent": "React Ecosystem",
+      "prerequisites": [
+        "React",
+        "JavaScript"
+      ],
+      "related_skills": [
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "Zustand",
+        "Jotai"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 31,
+      "salary_impact": "low",
+      "description": "Thư viện quản lý state global cho React. Redux Toolkit (RTK) là cách modern. Đang dần nhường chỗ cho Zustand/Jotai nhưng vẫn rất phổ biến ở legacy code.",
+      "common_interview_topics": [
+        "Store",
+        "Reducer",
+        "Action",
+        "createSlice",
+        "createAsyncThunk",
+        "RTK Query",
+        "Redux vs Context vs Zustand"
+      ]
+    },
+    {
+      "canonical_name": "GraphQL",
+      "synonyms": [
+        "graphql",
+        "Graph QL",
+        "GQL",
+        "Apollo GraphQL"
+      ],
+      "domain": "Frontend",
+      "subdomain": "API Technology",
+      "parent": "Web Development",
+      "prerequisites": [
+        "JavaScript",
+        "REST API"
+      ],
+      "related_skills": [
+        "Apollo Client",
+        "REST API",
+        "TypeScript",
+        "Node.js"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "medium",
+      "description": "Query language cho API. Cho phép client request chính xác data cần. Phổ biến ở startup, công ty product. Thay thế REST trong nhiều use case.",
+      "common_interview_topics": [
+        "Query vs Mutation vs Subscription",
+        "Schema design",
+        "Resolver",
+        "N+1 problem",
+        "DataLoader",
+        "Apollo vs urql"
+      ]
+    },
+    {
+      "canonical_name": "WebSocket",
+      "synonyms": [
+        "websocket",
+        "WebSockets",
+        "Socket.io",
+        "ws",
+        "socket"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Real-time Communication",
+      "parent": "Web Development",
+      "prerequisites": [
+        "JavaScript",
+        "HTTP basics"
+      ],
+      "related_skills": [
+        "Node.js",
+        "Socket.io",
+        "REST API"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 12,
+      "salary_impact": "low",
+      "description": "Giao thức real-time hai chiều. Dùng cho chat app, live notification, dashboard real-time. Socket.io là thư viện phổ biến nhất.",
+      "common_interview_topics": [
+        "WS vs HTTP",
+        "Handshake",
+        "Events",
+        "Rooms/Namespaces (Socket.io)",
+        "Scaling WebSocket"
+      ]
+    },
+    {
+      "canonical_name": "Webpack",
+      "synonyms": [
+        "webpack",
+        "webpack 5",
+        "module bundler"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Build Tool",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "related_skills": [
+        "Vite",
+        "Babel",
+        "ESBuild",
+        "JavaScript"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 15,
+      "salary_impact": "low",
+      "description": "Module bundler phổ biến nhất trong JS ecosystem. Đang dần nhường chỗ cho Vite nhưng vẫn là nền tảng của nhiều framework (CRA, Vue CLI).",
+      "common_interview_topics": [
+        "Entry/Output",
+        "Loaders",
+        "Plugins",
+        "Code splitting",
+        "Tree shaking",
+        "Webpack vs Vite"
+      ]
+    },
+    {
+      "canonical_name": "Vite",
+      "synonyms": [
+        "vite",
+        "Vitejs",
+        "vite.js"
+      ],
+      "domain": "Frontend",
+      "subdomain": "Build Tool",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript",
+        "Node.js"
+      ],
+      "related_skills": [
+        "React",
+        "Vue.js",
+        "TypeScript",
+        "Webpack"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 8,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 22,
+      "salary_impact": "low",
+      "description": "Build tool thế hệ mới, cực nhanh (ESBuild + Rollup). Default choice cho project React/Vue mới. Dev server HMR gần như instant.",
+      "common_interview_topics": [
+        "ESBuild vs Rollup",
+        "HMR",
+        "Import aliases",
+        "Environment variables",
+        "Plugin ecosystem"
+      ]
+    },
+    {
+      "canonical_name": "Node.js",
+      "synonyms": [
+        "NodeJS",
+        "Node",
+        "node",
+        "nodejs",
+        "Node.js"
+      ],
+      "domain": "Backend",
+      "subdomain": "Runtime",
+      "parent": "JavaScript Ecosystem",
+      "prerequisites": [
+        "JavaScript"
+      ],
+      "related_skills": [
+        "Express.js",
+        "NestJS",
+        "TypeScript",
+        "npm",
+        "PostgreSQL"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 52,
+      "salary_impact": "high",
+      "description": "JavaScript runtime cho server-side. V8 engine + libuv async I/O. Non-blocking, phù hợp I/O-heavy apps. Foundation của Express, NestJS.",
+      "common_interview_topics": [
+        "Event loop",
+        "Worker threads",
+        "Streams",
+        "process.nextTick vs setImmediate",
+        "npm ecosystem",
+        "package.json"
+      ]
+    },
+    {
+      "canonical_name": "Express.js",
+      "synonyms": [
+        "Express",
+        "expressjs",
+        "express",
+        "ExpressJS",
+        "Express JS"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Node.js Ecosystem",
+      "prerequisites": [
+        "Node.js",
+        "JavaScript"
+      ],
+      "related_skills": [
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "JWT",
+        "Middleware"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 38,
+      "salary_impact": "medium",
+      "description": "Minimal, unopinionated web framework cho Node.js. Dễ học, linh hoạt. Điểm khởi đầu tốt nhất cho Node.js backend. Nhiều legacy code dùng Express.",
+      "common_interview_topics": [
+        "Middleware",
+        "Routing",
+        "Error handling",
+        "Morgan/Helmet",
+        "cors",
+        "body-parser",
+        "Router module"
+      ]
+    },
+    {
+      "canonical_name": "NestJS",
+      "synonyms": [
+        "Nest",
+        "nestjs",
+        "NestJs",
+        "Nest.js",
+        "nest"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Node.js Ecosystem",
+      "prerequisites": [
+        "TypeScript",
+        "Node.js",
+        "OOP concepts"
+      ],
+      "related_skills": [
+        "TypeScript",
+        "TypeORM",
+        "Prisma",
+        "PostgreSQL",
+        "gRPC"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 45,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 22,
+      "salary_impact": "medium",
+      "description": "Enterprise Node.js framework. Heavily inspired by Angular. Decorator-based, module architecture, built-in DI. Xu hướng tăng mạnh 2023-2025.",
+      "common_interview_topics": [
+        "Modules",
+        "Providers",
+        "Decorators",
+        "DI system",
+        "Guards/Interceptors/Pipes",
+        "Microservices support"
+      ]
+    },
+    {
+      "canonical_name": "Python",
+      "synonyms": [
+        "python",
+        "Python 3",
+        "Python3",
+        "python3",
+        "py"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": "Software Development",
+      "prerequisites": [],
+      "related_skills": [
+        "FastAPI",
+        "Django",
+        "Flask",
+        "Pandas",
+        "TensorFlow",
+        "Docker"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 80,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 47,
+      "salary_impact": "high",
+      "description": "Ngôn ngữ đa năng nhất: backend, data, AI/ML, automation. Cú pháp đơn giản, hệ sinh thái khổng lồ. Python là ngôn ngữ tốt nhất để bắt đầu programming.",
+      "common_interview_topics": [
+        "GIL",
+        "Generators",
+        "Decorators",
+        "Context managers",
+        "List/dict comprehension",
+        "asyncio",
+        "Type hints"
+      ]
+    },
+    {
+      "canonical_name": "FastAPI",
+      "synonyms": [
+        "fastapi",
+        "Fast API",
+        "fast-api"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Python Ecosystem",
+      "prerequisites": [
+        "Python",
+        "Pydantic basics"
+      ],
+      "related_skills": [
+        "Python",
+        "Pydantic",
+        "SQLAlchemy",
+        "Uvicorn",
+        "Docker"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 29,
+      "salary_impact": "medium",
+      "description": "Modern Python web framework. Tự động generate OpenAPI docs. Async-first, type-safe với Pydantic. Nhanh nhất trong Python frameworks. Cực phổ biến cho AI/ML APIs.",
+      "common_interview_topics": [
+        "async/await",
+        "Pydantic models",
+        "Dependency injection",
+        "OpenAPI auto-docs",
+        "Background tasks",
+        "WebSockets"
+      ]
+    },
+    {
+      "canonical_name": "Django",
+      "synonyms": [
+        "django",
+        "Django REST Framework",
+        "DRF",
+        "Django REST"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Python Ecosystem",
+      "prerequisites": [
+        "Python",
+        "SQL basics"
+      ],
+      "related_skills": [
+        "Python",
+        "PostgreSQL",
+        "Celery",
+        "Redis",
+        "Docker"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 50,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "medium",
+      "description": "Batteries-included Python framework. Admin panel, ORM, auth built-in. Tốt cho monolith. Django REST Framework (DRF) cho API. Phổ biến ở các công ty fintech VN.",
+      "common_interview_topics": [
+        "MVT pattern",
+        "ORM",
+        "Admin interface",
+        "Middleware",
+        "DRF serializers",
+        "Celery integration",
+        "Class-based vs Function-based views"
+      ]
+    },
+    {
+      "canonical_name": "Flask",
+      "synonyms": [
+        "flask",
+        "Flask Python",
+        "Flask REST"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Python Ecosystem",
+      "prerequisites": [
+        "Python"
+      ],
+      "related_skills": [
+        "Python",
+        "SQLAlchemy",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 14,
+      "salary_impact": "low",
+      "description": "Micro web framework Python. Nhẹ và linh hoạt. Tốt cho prototype, nhỏ hơn Django. Thường dùng để build ML model APIs trước khi chuyển sang FastAPI.",
+      "common_interview_topics": [
+        "Blueprint",
+        "Application factory",
+        "Request context",
+        "Flask-SQLAlchemy",
+        "Flask-Migrate",
+        "Flask vs FastAPI vs Django"
+      ]
+    },
+    {
+      "canonical_name": "Java",
+      "synonyms": [
+        "java",
+        "Java 17",
+        "Java 21",
+        "Java SE",
+        "Java EE",
+        "jakarta"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": "Software Development",
+      "prerequisites": [],
+      "related_skills": [
+        "Spring Boot",
+        "Maven",
+        "Gradle",
+        "PostgreSQL",
+        "Docker",
+        "JUnit"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 90,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 55,
+      "salary_impact": "high",
+      "description": "Ngôn ngữ enterprise số 1 tại VN. Banking, fintech, outsource đều dùng Java. Spring Boot là framework đi kèm phổ biến nhất. Lương cao, nhiều việc.",
+      "common_interview_topics": [
+        "OOP principles",
+        "Generics",
+        "Stream API",
+        "Concurrency",
+        "JVM internals",
+        "GC",
+        "Memory model",
+        "Java 17+ features"
+      ]
+    },
+    {
+      "canonical_name": "Spring Boot",
+      "synonyms": [
+        "Spring",
+        "SpringBoot",
+        "spring-boot",
+        "spring boot",
+        "Spring Framework"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Java Ecosystem",
+      "prerequisites": [
+        "Java",
+        "OOP concepts",
+        "SQL"
+      ],
+      "related_skills": [
+        "Java",
+        "PostgreSQL",
+        "Docker",
+        "Hibernate/JPA",
+        "Maven",
+        "Redis"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 65,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 49,
+      "salary_impact": "very_high",
+      "description": "Framework Java phổ biến nhất VN. IoC/DI, auto-configuration, starter dependencies. Hầu hết công ty outsource và fintech dùng Spring Boot.",
+      "common_interview_topics": [
+        "IoC/DI",
+        "@Transactional",
+        "Spring Data JPA",
+        "Spring Security",
+        "Actuator",
+        "Microservices với Spring Cloud",
+        "Bean scopes"
+      ]
+    },
+    {
+      "canonical_name": "Go",
+      "synonyms": [
+        "Golang",
+        "golang",
+        "go",
+        "Go lang"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": "Software Development",
+      "prerequisites": [
+        "basic programming concepts"
+      ],
+      "related_skills": [
+        "Docker",
+        "Kubernetes",
+        "gRPC",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 60,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 16,
+      "salary_impact": "high",
+      "description": "Ngôn ngữ Google. Concurrent, compiled, fast. Phổ biến cho microservices, CLI tools, cloud-native apps. Xu hướng tăng mạnh tại các startup VN 2024-2025.",
+      "common_interview_topics": [
+        "Goroutines",
+        "Channels",
+        "Interfaces",
+        "Error handling",
+        "Garbage collection",
+        "go modules",
+        "Struct embedding"
+      ]
+    },
+    {
+      "canonical_name": "Rust",
+      "synonyms": [
+        "rust",
+        "Rust lang",
+        "rustlang"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": "Software Development",
+      "prerequisites": [
+        "C/C++ concepts",
+        "systems programming basics"
+      ],
+      "related_skills": [
+        "WebAssembly",
+        "Systems programming",
+        "Docker"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 100,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 4,
+      "salary_impact": "very_high",
+      "description": "Language memory-safe, zero-cost abstractions. High-performance systems. Ít JD ở VN nhưng lương cao. Trending globally cho systems/embedded programming.",
+      "common_interview_topics": [
+        "Ownership",
+        "Borrow checker",
+        "Lifetimes",
+        "Pattern matching",
+        "Traits",
+        "Async Rust",
+        "WebAssembly"
+      ]
+    },
+    {
+      "canonical_name": "PHP",
+      "synonyms": [
+        "php",
+        "PHP 8",
+        "PHP 7",
+        "php8"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": "Web Development",
+      "prerequisites": [
+        "HTML/CSS basics"
+      ],
+      "related_skills": [
+        "Laravel",
+        "MySQL",
+        "WordPress",
+        "Composer"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 40,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 21,
+      "salary_impact": "low",
+      "description": "Ngôn ngữ web cổ điển. 78% websites chạy PHP (qua WordPress). Nhiều legacy code ở VN. Laravel là framework hiện đại nhất. Lương thấp hơn Java/Python.",
+      "common_interview_topics": [
+        "OOP PHP",
+        "Composer",
+        "PSR standards",
+        "Laravel architecture",
+        "PHP 8 features",
+        "Static typing"
+      ]
+    },
+    {
+      "canonical_name": "Laravel",
+      "synonyms": [
+        "laravel",
+        "Laravel PHP",
+        "Laravel Framework"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "PHP Ecosystem",
+      "prerequisites": [
+        "PHP",
+        "SQL"
+      ],
+      "related_skills": [
+        "PHP",
+        "MySQL",
+        "Redis",
+        "Queue",
+        "Blade templating"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 45,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "medium",
+      "description": "PHP framework đẹp nhất. Eloquent ORM, Blade templates, Queue, Broadcasting. Phổ biến ở SME và outsource company VN. Cộng đồng Việt rất lớn.",
+      "common_interview_topics": [
+        "Eloquent ORM",
+        "Artisan CLI",
+        "Middleware",
+        "Service Provider",
+        "Facade",
+        "Queue/Job",
+        "Blade templates"
+      ]
+    },
+    {
+      "canonical_name": "C#",
+      "synonyms": [
+        "csharp",
+        "c sharp",
+        "C Sharp",
+        "C# .NET",
+        "dotnet",
+        ".NET C#"
+      ],
+      "domain": "Backend",
+      "subdomain": "Programming Language",
+      "parent": ".NET Ecosystem",
+      "prerequisites": [
+        "OOP concepts"
+      ],
+      "related_skills": [
+        ".NET",
+        "ASP.NET Core",
+        "Entity Framework",
+        "SQL Server",
+        "Azure"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 80,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 24,
+      "salary_impact": "high",
+      "description": "Ngôn ngữ Microsoft. Mạnh cho enterprise, gaming (Unity), Windows apps. ASP.NET Core là web framework. Phổ biến ở outsource company VN làm dự án cho đối tác Mỹ/Úc.",
+      "common_interview_topics": [
+        "LINQ",
+        "async/await",
+        "Generics",
+        "Records",
+        "Pattern matching",
+        "Nullable reference types",
+        "Dependency injection"
+      ]
+    },
+    {
+      "canonical_name": ".NET",
+      "synonyms": [
+        "dotnet",
+        ".NET Core",
+        ".NET 6",
+        ".NET 8",
+        "ASP.NET Core",
+        "ASP.NET"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": ".NET Ecosystem",
+      "prerequisites": [
+        "C#"
+      ],
+      "related_skills": [
+        "C#",
+        "SQL Server",
+        "PostgreSQL",
+        "Docker",
+        "Azure",
+        "Entity Framework"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 20,
+      "salary_impact": "high",
+      "description": "Microsoft's cross-platform framework. ASP.NET Core cho web APIs, Blazor cho web UI, MAUI cho mobile. Strong ecosystem, excellent performance.",
+      "common_interview_topics": [
+        "Middleware pipeline",
+        "DI container",
+        "Entity Framework Core",
+        "Minimal APIs",
+        "Health checks",
+        "gRPC",
+        "SignalR"
+      ]
+    },
+    {
+      "canonical_name": "Ruby on Rails",
+      "synonyms": [
+        "Rails",
+        "RoR",
+        "ruby on rails",
+        "ruby",
+        "Ruby",
+        "Ruby on Rails framework"
+      ],
+      "domain": "Backend",
+      "subdomain": "Framework",
+      "parent": "Ruby Ecosystem",
+      "prerequisites": [
+        "Ruby basics"
+      ],
+      "related_skills": [
+        "Ruby",
+        "PostgreSQL",
+        "Redis",
+        "Sidekiq",
+        "Heroku"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 5,
+      "salary_impact": "medium",
+      "description": "Convention over configuration. Phổ biến ở startup giai đoạn MVP. Ít JD ở VN nhưng lương tốt. Nhiều startup unicorn build trên Rails ban đầu (GitHub, Shopify, Airbnb).",
+      "common_interview_topics": [
+        "MVC pattern",
+        "ActiveRecord",
+        "Migrations",
+        "Routes",
+        "Gems",
+        "Bundler",
+        "Devise for auth"
+      ]
+    },
+    {
+      "canonical_name": "Microservices",
+      "synonyms": [
+        "microservice",
+        "micro-services",
+        "micro services",
+        "service-oriented architecture",
+        "SOA"
+      ],
+      "domain": "Backend",
+      "subdomain": "Architecture Pattern",
+      "parent": "Software Architecture",
+      "prerequisites": [
+        "REST API",
+        "Docker",
+        "basic backend development"
+      ],
+      "related_skills": [
+        "Docker",
+        "Kubernetes",
+        "Kafka",
+        "gRPC",
+        "API Gateway",
+        "Service Mesh"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 40,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 33,
+      "salary_impact": "very_high",
+      "description": "Kiến trúc phân tách services. Anti-pattern của monolith. Cần hiểu khi làm ở công ty tech scale-up. Kèm theo: service discovery, circuit breaker, distributed tracing.",
+      "common_interview_topics": [
+        "Monolith vs Microservices",
+        "Service discovery",
+        "API Gateway",
+        "Circuit breaker",
+        "Saga pattern",
+        "Event-driven",
+        "Distributed tracing"
+      ]
+    },
+    {
+      "canonical_name": "REST API",
+      "synonyms": [
+        "REST",
+        "RESTful API",
+        "RESTful",
+        "API REST",
+        "HTTP API",
+        "REST APIs"
+      ],
+      "domain": "Backend",
+      "subdomain": "API Design",
+      "parent": "Web Development",
+      "prerequisites": [
+        "HTTP basics"
+      ],
+      "related_skills": [
+        "HTTP",
+        "JSON",
+        "Authentication",
+        "OpenAPI/Swagger",
+        "Postman"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 78,
+      "salary_impact": "medium",
+      "description": "Tiêu chuẩn giao tiếp web API. Mọi backend developer phải biết. HTTP methods, status codes, resource naming, authentication (JWT, OAuth).",
+      "common_interview_topics": [
+        "HTTP methods",
+        "Status codes",
+        "Resource naming",
+        "Idempotency",
+        "REST vs GraphQL",
+        "API versioning",
+        "Authentication patterns"
+      ]
+    },
+    {
+      "canonical_name": "gRPC",
+      "synonyms": [
+        "grpc",
+        "gRPC protocol",
+        "Protocol Buffers",
+        "protobuf"
+      ],
+      "domain": "Backend",
+      "subdomain": "Communication Protocol",
+      "parent": "Distributed Systems",
+      "prerequisites": [
+        "REST API",
+        "Protocol Buffers basics"
+      ],
+      "related_skills": [
+        "Microservices",
+        "Kubernetes",
+        "Go",
+        "Protocol Buffers"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 9,
+      "salary_impact": "medium",
+      "description": "Google's RPC framework. Protocol Buffers cho serialization. Nhanh hơn REST, typed contracts, bidirectional streaming. Phổ biến cho inter-service communication.",
+      "common_interview_topics": [
+        "gRPC vs REST",
+        "Protobuf schema",
+        "Streaming types",
+        "Interceptors",
+        "Load balancing",
+        "Health checking"
+      ]
+    },
+    {
+      "canonical_name": "Flutter",
+      "synonyms": [
+        "flutter",
+        "Flutter SDK",
+        "Flutter/Dart"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Cross-platform Framework",
+      "parent": "Mobile Development",
+      "prerequisites": [
+        "Dart",
+        "OOP concepts"
+      ],
+      "related_skills": [
+        "Dart",
+        "Firebase",
+        "Bloc/Riverpod",
+        "REST API",
+        "GetX"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 60,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 38,
+      "salary_impact": "high",
+      "description": "Google's cross-platform UI framework. iOS + Android + Web từ 1 codebase. Dart language. Nhanh phát triển, hot reload. Top choice cho mobile startup VN.",
+      "common_interview_topics": [
+        "Widget tree",
+        "StatelessWidget vs StatefulWidget",
+        "Bloc/Riverpod",
+        "Dart null safety",
+        "Platform channels",
+        "State management comparison"
+      ]
+    },
+    {
+      "canonical_name": "Dart",
+      "synonyms": [
+        "dart",
+        "Dart language",
+        "Dart SDK"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Programming Language",
+      "parent": "Mobile Development",
+      "prerequisites": [
+        "basic programming concepts"
+      ],
+      "related_skills": [
+        "Flutter",
+        "Firebase"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 31,
+      "salary_impact": "medium",
+      "description": "Ngôn ngữ của Flutter. Học cùng Flutter, không cần học riêng. OOP, null safety, async/await. Cú pháp giống C#/Java nên dễ pick up.",
+      "common_interview_topics": [
+        "Null safety",
+        "Futures/Streams",
+        "Mixins",
+        "Extension methods",
+        "Isolates",
+        "const vs final"
+      ]
+    },
+    {
+      "canonical_name": "React Native",
+      "synonyms": [
+        "ReactNative",
+        "react-native",
+        "RN",
+        "react native"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Cross-platform Framework",
+      "parent": "Mobile Development",
+      "prerequisites": [
+        "React",
+        "JavaScript"
+      ],
+      "related_skills": [
+        "React",
+        "JavaScript",
+        "Expo",
+        "Redux",
+        "TypeScript"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 45,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 22,
+      "salary_impact": "medium",
+      "description": "Facebook's mobile framework. JavaScript để build native mobile apps. Tốt cho React developer muốn làm mobile. Expo giúp setup dễ hơn.",
+      "common_interview_topics": [
+        "Bridge architecture",
+        "Native modules",
+        "Expo vs bare workflow",
+        "StyleSheet",
+        "Flexbox",
+        "Navigation",
+        "Performance optimization"
+      ]
+    },
+    {
+      "canonical_name": "Swift",
+      "synonyms": [
+        "swift",
+        "Swift 5",
+        "SwiftUI",
+        "Swift language"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Programming Language",
+      "parent": "iOS Development",
+      "prerequisites": [
+        "OOP concepts",
+        "Mac/Xcode"
+      ],
+      "related_skills": [
+        "SwiftUI",
+        "UIKit",
+        "Xcode",
+        "Core Data",
+        "Combine"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 60,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 11,
+      "salary_impact": "high",
+      "description": "Apple's language cho iOS/macOS. Thay thế Objective-C. Ít JD ở VN nhưng lương cao vì ít người biết. SwiftUI là UI framework modern.",
+      "common_interview_topics": [
+        "Optionals",
+        "Protocol-oriented programming",
+        "Memory management (ARC)",
+        "Concurrency (async/await)",
+        "SwiftUI vs UIKit",
+        "Combine framework"
+      ]
+    },
+    {
+      "canonical_name": "Kotlin",
+      "synonyms": [
+        "kotlin",
+        "Kotlin Android",
+        "Kotlin lang"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Programming Language",
+      "parent": "Android Development",
+      "prerequisites": [
+        "Java basics",
+        "Android SDK"
+      ],
+      "related_skills": [
+        "Android",
+        "Jetpack Compose",
+        "Coroutines",
+        "Spring Boot",
+        "Gradle"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "high",
+      "description": "Modern JVM language. Thay thế Java cho Android. Null safety, coroutines, extension functions, data classes. Cũng dùng được cho backend (Ktor, Spring Boot).",
+      "common_interview_topics": [
+        "Null safety",
+        "Coroutines",
+        "Data classes",
+        "Sealed classes",
+        "Companion object",
+        "Extension functions",
+        "Kotlin vs Java"
+      ]
+    },
+    {
+      "canonical_name": "Android",
+      "synonyms": [
+        "android",
+        "Android Studio",
+        "Android SDK",
+        "Android Development"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Platform",
+      "parent": "Mobile Development",
+      "prerequisites": [
+        "Java or Kotlin",
+        "Android SDK"
+      ],
+      "related_skills": [
+        "Kotlin",
+        "Java",
+        "Jetpack Compose",
+        "SQLite",
+        "Firebase"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 70,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 20,
+      "salary_impact": "medium",
+      "description": "Nền tảng mobile Android. Jetpack Compose là UI framework modern. Room cho local DB, ViewModel, LiveData/Flow là Android architecture components.",
+      "common_interview_topics": [
+        "Activity/Fragment lifecycle",
+        "ViewModel",
+        "LiveData vs Flow",
+        "Room database",
+        "Dependency injection (Hilt)",
+        "RecyclerView"
+      ]
+    },
+    {
+      "canonical_name": "iOS",
+      "synonyms": [
+        "ios",
+        "iOS Development",
+        "iPhone development",
+        "iPad development"
+      ],
+      "domain": "Mobile",
+      "subdomain": "Platform",
+      "parent": "Mobile Development",
+      "prerequisites": [
+        "Swift",
+        "Xcode",
+        "Mac required"
+      ],
+      "related_skills": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Core Data",
+        "TestFlight"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 70,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 10,
+      "salary_impact": "very_high",
+      "description": "Apple's mobile platform. Ít JD hơn Android/Flutter ở VN nhưng lương rất cao. Cần Mac để phát triển. App Store review process chặt hơn Google Play.",
+      "common_interview_topics": [
+        "App Store guidelines",
+        "Push notifications (APNs)",
+        "Core Data",
+        "URLSession",
+        "Dispatch queues",
+        "TestFlight distribution"
+      ]
+    },
+    {
+      "canonical_name": "Jetpack Compose",
+      "synonyms": [
+        "Compose",
+        "Jetpack",
+        "compose",
+        "Android Compose",
+        "jetpack compose"
+      ],
+      "domain": "Mobile",
+      "subdomain": "UI Framework",
+      "parent": "Android Development",
+      "prerequisites": [
+        "Kotlin",
+        "Android basics"
+      ],
+      "related_skills": [
+        "Kotlin",
+        "Android",
+        "Material Design 3"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 14,
+      "salary_impact": "medium",
+      "description": "Android's modern declarative UI toolkit (tương tự SwiftUI/Flutter). Kotlin-first, no XML layouts. Google push mạnh từ 2021+. Xu hướng hiện tại cho Android mới.",
+      "common_interview_topics": [
+        "Composable functions",
+        "State hoisting",
+        "recomposition",
+        "Modifier",
+        "LazyColumn/LazyRow",
+        "Side effects (LaunchedEffect)"
+      ]
+    },
+    {
+      "canonical_name": "SwiftUI",
+      "synonyms": [
+        "swift ui",
+        "swiftui",
+        "SwiftUI framework"
+      ],
+      "domain": "Mobile",
+      "subdomain": "UI Framework",
+      "parent": "iOS Development",
+      "prerequisites": [
+        "Swift"
+      ],
+      "related_skills": [
+        "Swift",
+        "Combine",
+        "iOS"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "very_low",
+      "frequency_in_jds_percent": 6,
+      "salary_impact": "high",
+      "description": "Apple's declarative UI framework (tương tự Flutter/Compose). Cross-Apple-platform: iOS, macOS, watchOS, tvOS. Requires iOS 13+.",
+      "common_interview_topics": [
+        "View protocol",
+        "@State/@Binding/@ObservedObject",
+        "ViewBuilder",
+        "Environment",
+        "Combine integration",
+        "NavigationStack"
+      ]
+    },
+    {
+      "canonical_name": "MySQL",
+      "synonyms": [
+        "mysql",
+        "MySQL 8",
+        "MySQL DB",
+        "mySQL"
+      ],
+      "domain": "Database",
+      "subdomain": "Relational Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "SQL"
+      ],
+      "related_skills": [
+        "SQL",
+        "PHP",
+        "Laravel",
+        "JDBC",
+        "Workbench"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 58,
+      "salary_impact": "medium",
+      "description": "RDBMS phổ biến nhất thế giới. Free, widely used, community lớn. Phổ biến ở SME VN. InnoDB storage engine, ACID compliant. Nhiều tutorial/resources.",
+      "common_interview_topics": [
+        "Indexing",
+        "EXPLAIN",
+        "Transaction",
+        "JOIN types",
+        "Normalization",
+        "Stored procedures",
+        "InnoDB vs MyISAM",
+        "Query optimization"
+      ]
+    },
+    {
+      "canonical_name": "PostgreSQL",
+      "synonyms": [
+        "Postgres",
+        "postgres",
+        "postgresql",
+        "PostGres",
+        "PGSQL",
+        "pgsql"
+      ],
+      "domain": "Database",
+      "subdomain": "Relational Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "SQL"
+      ],
+      "related_skills": [
+        "SQL",
+        "Python",
+        "Node.js",
+        "pgAdmin",
+        "TimescaleDB"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 35,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 44,
+      "salary_impact": "medium",
+      "description": "Most advanced open-source RDBMS. JSONB, full-text search, extensions (PostGIS, pgvector). Preferred database của tech companies VN. Tốt hơn MySQL cho complex queries.",
+      "common_interview_topics": [
+        "MVCC",
+        "JSONB operators",
+        "Window functions",
+        "CTEs",
+        "Indexing (B-tree/GIN/GiST)",
+        "VACUUM",
+        "Partitioning",
+        "pgvector for AI"
+      ]
+    },
+    {
+      "canonical_name": "MongoDB",
+      "synonyms": [
+        "mongo",
+        "mongodb",
+        "Mongo",
+        "MongoDB Atlas",
+        "NoSQL MongoDB"
+      ],
+      "domain": "Database",
+      "subdomain": "Document Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "JSON basics"
+      ],
+      "related_skills": [
+        "Node.js",
+        "Mongoose",
+        "Atlas",
+        "JavaScript",
+        "Python"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 31,
+      "salary_impact": "medium",
+      "description": "Document-oriented NoSQL. JSON-like documents, flexible schema. Tốt cho rapidly-changing schema, hierarchical data. MERN/MEAN stack dùng MongoDB.",
+      "common_interview_topics": [
+        "Document model",
+        "CRUD operations",
+        "Aggregation pipeline",
+        "Indexing",
+        "Mongoose ODM",
+        "Sharding/Replication",
+        "ACID in MongoDB 4+"
+      ]
+    },
+    {
+      "canonical_name": "Redis",
+      "synonyms": [
+        "redis",
+        "Redis Cache",
+        "Redis cluster",
+        "Redis Pub/Sub"
+      ],
+      "domain": "Database",
+      "subdomain": "In-memory Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "basic database concepts"
+      ],
+      "related_skills": [
+        "Node.js",
+        "Python",
+        "Java",
+        "Docker",
+        "Caching patterns"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 39,
+      "salary_impact": "medium",
+      "description": "In-memory data store cực nhanh. Caching, session storage, pub/sub, rate limiting, leaderboards. Bắt buộc trong mọi production app có traffic cao.",
+      "common_interview_topics": [
+        "Data types (String/Hash/List/Set/ZSet)",
+        "Persistence (RDB/AOF)",
+        "Pub/Sub",
+        "Lua scripting",
+        "Cluster",
+        "Eviction policies",
+        "Redlock"
+      ]
+    },
+    {
+      "canonical_name": "Elasticsearch",
+      "synonyms": [
+        "elastic",
+        "ES",
+        "elasticsearch",
+        "Elastic Search",
+        "OpenSearch"
+      ],
+      "domain": "Database",
+      "subdomain": "Search Engine",
+      "parent": "Database Management",
+      "prerequisites": [
+        "REST API",
+        "JSON basics"
+      ],
+      "related_skills": [
+        "Kibana",
+        "Logstash",
+        "ELK Stack",
+        "Java",
+        "Python"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 17,
+      "salary_impact": "medium",
+      "description": "Distributed search and analytics engine. Full-text search, log analytics (ELK Stack). Shopee, Tiki VN dùng cho product search. Dựa trên Apache Lucene.",
+      "common_interview_topics": [
+        "Index vs Document",
+        "Inverted index",
+        "Query DSL",
+        "Aggregations",
+        "Mapping",
+        "Cluster/Shards/Replicas",
+        "Relevance scoring"
+      ]
+    },
+    {
+      "canonical_name": "SQLite",
+      "synonyms": [
+        "sqlite",
+        "SQLite3",
+        "sqlite3"
+      ],
+      "domain": "Database",
+      "subdomain": "Embedded Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "SQL"
+      ],
+      "related_skills": [
+        "Python",
+        "Android",
+        "Flutter",
+        "React Native"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 8,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 12,
+      "salary_impact": "very_low",
+      "description": "Serverless, file-based database. Tốt cho embedded apps, mobile (Android/iOS), desktop apps, development/testing. Không cần server setup.",
+      "common_interview_topics": [
+        "When to use SQLite",
+        "In-memory SQLite",
+        "WAL mode",
+        "SQLite vs PostgreSQL",
+        "Android Room",
+        "Python sqlite3 module"
+      ]
+    },
+    {
+      "canonical_name": "Firebase",
+      "synonyms": [
+        "firebase",
+        "Firebase Realtime DB",
+        "Firestore",
+        "Firebase Cloud Firestore"
+      ],
+      "domain": "Database",
+      "subdomain": "BaaS / NoSQL",
+      "parent": "Google Cloud",
+      "prerequisites": [
+        "JavaScript basics"
+      ],
+      "related_skills": [
+        "React",
+        "Flutter",
+        "Android",
+        "iOS",
+        "Google Cloud"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 25,
+      "salary_impact": "low",
+      "description": "Google's Backend-as-a-Service. Realtime database, auth, storage, hosting. Cực phổ biến cho startup và hackathon. Firestore là NoSQL document DB. No server needed.",
+      "common_interview_topics": [
+        "Realtime DB vs Firestore",
+        "Security rules",
+        "Authentication providers",
+        "Cloud Functions",
+        "Pricing model",
+        "Offline persistence"
+      ]
+    },
+    {
+      "canonical_name": "Supabase",
+      "synonyms": [
+        "supabase",
+        "Supabase DB",
+        "Supabase Auth"
+      ],
+      "domain": "Database",
+      "subdomain": "BaaS / PostgreSQL",
+      "parent": "Cloud Database",
+      "prerequisites": [
+        "SQL basics",
+        "PostgreSQL"
+      ],
+      "related_skills": [
+        "PostgreSQL",
+        "React",
+        "Next.js",
+        "TypeScript"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 8,
+      "salary_impact": "low",
+      "description": "Open-source Firebase alternative based on PostgreSQL. Auth, storage, realtime subscriptions, edge functions. Trending 2023-2025. Tốt cho indie developers và startup.",
+      "common_interview_topics": [
+        "PostgreSQL-based",
+        "Row Level Security",
+        "Edge Functions",
+        "Realtime",
+        "Auth providers",
+        "Supabase vs Firebase"
+      ]
+    },
+    {
+      "canonical_name": "Cassandra",
+      "synonyms": [
+        "Apache Cassandra",
+        "cassandra",
+        "CQL",
+        "DataStax"
+      ],
+      "domain": "Database",
+      "subdomain": "Wide-column Database",
+      "parent": "Database Management",
+      "prerequisites": [
+        "Distributed systems basics",
+        "SQL concepts"
+      ],
+      "related_skills": [
+        "Java",
+        "Python",
+        "Kafka",
+        "AWS DynamoDB"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 35,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 6,
+      "salary_impact": "high",
+      "description": "Distributed NoSQL database. Massive scale, high availability. Facebook, Netflix dùng Cassandra. Phù hợp time-series data, IoT. Rare ở VN nhưng high value.",
+      "common_interview_topics": [
+        "CAP theorem",
+        "Consistent hashing",
+        "Partition key design",
+        "Replication factor",
+        "Tunable consistency",
+        "CQL vs SQL differences"
+      ]
+    },
+    {
+      "canonical_name": "DynamoDB",
+      "synonyms": [
+        "dynamo",
+        "dynamodb",
+        "AWS DynamoDB",
+        "DynamoDB"
+      ],
+      "domain": "Database",
+      "subdomain": "Managed NoSQL",
+      "parent": "AWS",
+      "prerequisites": [
+        "AWS basics",
+        "NoSQL concepts"
+      ],
+      "related_skills": [
+        "AWS",
+        "Lambda",
+        "Java",
+        "Node.js",
+        "Python"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 8,
+      "salary_impact": "medium",
+      "description": "AWS's managed NoSQL database. Serverless, auto-scaling, single-digit millisecond latency. Tốt cho serverless architectures với AWS Lambda.",
+      "common_interview_topics": [
+        "Partition key vs Sort key",
+        "Read/Write capacity",
+        "Global Tables",
+        "DynamoDB Streams",
+        "Single-table design",
+        "On-demand vs Provisioned"
+      ]
+    },
+    {
+      "canonical_name": "Qdrant",
+      "synonyms": [
+        "qdrant",
+        "Qdrant Vector DB",
+        "vector database"
+      ],
+      "domain": "Database",
+      "subdomain": "Vector Database",
+      "parent": "AI/ML Infrastructure",
+      "prerequisites": [
+        "Python",
+        "Basic ML concepts"
+      ],
+      "related_skills": [
+        "Python",
+        "LangChain",
+        "OpenAI API",
+        "FastAPI",
+        "RAG"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 5,
+      "salary_impact": "high",
+      "description": "High-performance vector database. Dùng cho semantic search, RAG (Retrieval Augmented Generation), recommendation systems. Xu hướng bùng nổ 2024-2025.",
+      "common_interview_topics": [
+        "Vector embeddings",
+        "Similarity search (cosine/dot product)",
+        "Collections/Points",
+        "Filtering",
+        "Quantization",
+        "HNSW index"
+      ]
+    },
+    {
+      "canonical_name": "pgvector",
+      "synonyms": [
+        "pg_vector",
+        "postgres vector",
+        "pgVector",
+        "postgresql vector"
+      ],
+      "domain": "Database",
+      "subdomain": "Vector Extension",
+      "parent": "PostgreSQL Ecosystem",
+      "prerequisites": [
+        "PostgreSQL",
+        "Python/embeddings basics"
+      ],
+      "related_skills": [
+        "PostgreSQL",
+        "Python",
+        "LangChain",
+        "OpenAI API"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 10,
+      "market_demand_vn": "very_low",
+      "frequency_in_jds_percent": 3,
+      "salary_impact": "high",
+      "description": "PostgreSQL extension cho vector similarity search. Dùng PostgreSQL thông thường để làm vector search — không cần database riêng. Phổ biến trong RAG projects.",
+      "common_interview_topics": [
+        "Vector data type",
+        "IVFFlat vs HNSW index",
+        "Cosine similarity",
+        "Integration với LangChain",
+        "pgvector vs Qdrant/Pinecone"
+      ]
+    },
+    {
+      "canonical_name": "Docker",
+      "synonyms": [
+        "docker",
+        "Docker container",
+        "Docker Compose",
+        "Dockerfile",
+        "container"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Containerization",
+      "parent": "DevOps Tools",
+      "prerequisites": [
+        "Linux basics",
+        "CLI basics"
+      ],
+      "related_skills": [
+        "Kubernetes",
+        "CI/CD",
+        "Nginx",
+        "docker-compose",
+        "Container registry"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 61,
+      "salary_impact": "high",
+      "description": "Container platform. 'It works on my machine' → không còn. Bắt buộc tại mọi team có DevOps mindset. Docker Compose cho multi-container local dev.",
+      "common_interview_topics": [
+        "Container vs VM",
+        "Dockerfile best practices",
+        "Multi-stage builds",
+        "docker-compose",
+        "Volumes/Networks",
+        "Registry",
+        "Security (non-root user)"
+      ]
+    },
+    {
+      "canonical_name": "Kubernetes",
+      "synonyms": [
+        "K8s",
+        "k8s",
+        "kubernetes",
+        "Kube",
+        "kubectl"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Container Orchestration",
+      "parent": "Cloud Native",
+      "prerequisites": [
+        "Docker",
+        "Linux basics",
+        "YAML"
+      ],
+      "related_skills": [
+        "Docker",
+        "Helm",
+        "Istio",
+        "Prometheus",
+        "AWS EKS"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 45,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 28,
+      "salary_impact": "very_high",
+      "description": "Container orchestration at scale. Tự động deploy, scale, self-heal. Bắt buộc cho Senior DevOps/Backend. Managed K8s: EKS (AWS), GKE (GCP), AKS (Azure).",
+      "common_interview_topics": [
+        "Pod/Deployment/Service",
+        "Ingress",
+        "ConfigMap/Secret",
+        "HPA",
+        "PVC",
+        "RBAC",
+        "Helm charts",
+        "Rolling updates vs Canary"
+      ]
+    },
+    {
+      "canonical_name": "AWS",
+      "synonyms": [
+        "Amazon Web Services",
+        "amazon aws",
+        "aws",
+        "AWS Cloud"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Cloud Platform",
+      "parent": "Cloud Computing",
+      "prerequisites": [
+        "Linux basics",
+        "Networking basics"
+      ],
+      "related_skills": [
+        "EC2",
+        "S3",
+        "Lambda",
+        "RDS",
+        "ECS",
+        "IAM",
+        "CloudFormation"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 65,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 48,
+      "salary_impact": "very_high",
+      "description": "Cloud provider #1 tại VN. EC2, S3, RDS, Lambda là core services. AWS certification (SAA-C03) tăng lương đáng kể. Nhiều JD yêu cầu ít nhất AWS basics.",
+      "common_interview_topics": [
+        "Core services (EC2/S3/RDS/Lambda)",
+        "IAM policies",
+        "VPC networking",
+        "Auto Scaling",
+        "CloudWatch",
+        "Cost optimization",
+        "Well-Architected Framework"
+      ]
+    },
+    {
+      "canonical_name": "Azure",
+      "synonyms": [
+        "Microsoft Azure",
+        "azure",
+        "Azure Cloud",
+        "MS Azure"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Cloud Platform",
+      "parent": "Cloud Computing",
+      "prerequisites": [
+        "basic cloud concepts"
+      ],
+      "related_skills": [
+        "C#",
+        ".NET",
+        "AKS",
+        "Azure DevOps",
+        "Azure Functions"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 22,
+      "salary_impact": "high",
+      "description": "Microsoft's cloud. Phổ biến ở enterprise, công ty làm Windows ecosystem. AKS cho Kubernetes managed. Azure DevOps cho CI/CD. Outsource company cho đối tác EU dùng nhiều.",
+      "common_interview_topics": [
+        "Azure App Service",
+        "AKS",
+        "Azure Functions",
+        "Azure DevOps Pipelines",
+        "Blob Storage",
+        "Azure AD",
+        "ARM templates vs Bicep"
+      ]
+    },
+    {
+      "canonical_name": "GCP",
+      "synonyms": [
+        "Google Cloud",
+        "google cloud platform",
+        "gcp",
+        "Google Cloud Platform"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Cloud Platform",
+      "parent": "Cloud Computing",
+      "prerequisites": [
+        "basic cloud concepts"
+      ],
+      "related_skills": [
+        "BigQuery",
+        "GKE",
+        "Cloud Run",
+        "Pub/Sub",
+        "Dataflow"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 14,
+      "salary_impact": "high",
+      "description": "Google's cloud. Mạnh nhất cho AI/ML (Vertex AI, TPUs) và data analytics (BigQuery). GKE là managed Kubernetes. Cloud Run cho serverless containers.",
+      "common_interview_topics": [
+        "Cloud Run vs GCE",
+        "BigQuery",
+        "Pub/Sub",
+        "GKE",
+        "IAM",
+        "Cloud Functions",
+        "Vertex AI"
+      ]
+    },
+    {
+      "canonical_name": "CI/CD",
+      "synonyms": [
+        "CICD",
+        "Continuous Integration",
+        "Continuous Deployment",
+        "Continuous Delivery",
+        "CI CD pipeline"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Automation",
+      "parent": "DevOps Practices",
+      "prerequisites": [
+        "Git",
+        "Docker basics"
+      ],
+      "related_skills": [
+        "GitHub Actions",
+        "Jenkins",
+        "GitLab CI",
+        "Docker",
+        "Kubernetes"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 42,
+      "salary_impact": "high",
+      "description": "Tự động hóa build, test, deploy. CI: tự động test mỗi commit. CD: tự động deploy khi pass test. Bắt buộc trong team chuyên nghiệp. GitHub Actions phổ biến nhất.",
+      "common_interview_topics": [
+        "CI vs CD vs CD (Delivery vs Deployment)",
+        "Pipeline stages",
+        "Blue-green deployment",
+        "Canary release",
+        "Rollback strategies",
+        "Secrets management"
+      ]
+    },
+    {
+      "canonical_name": "GitHub Actions",
+      "synonyms": [
+        "GH Actions",
+        "github-actions",
+        "github actions",
+        "GitHub CI/CD"
+      ],
+      "domain": "DevOps",
+      "subdomain": "CI/CD Tool",
+      "parent": "CI/CD",
+      "prerequisites": [
+        "Git",
+        "GitHub",
+        "YAML basics"
+      ],
+      "related_skills": [
+        "Docker",
+        "AWS",
+        "Kubernetes",
+        "Git"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 35,
+      "salary_impact": "medium",
+      "description": "GitHub's native CI/CD. YAML-based workflows, marketplace actions, matrix builds. Free cho public repos. Phổ biến nhất cho open source và startup.",
+      "common_interview_topics": [
+        "Workflow/Job/Step structure",
+        "Triggers (push/PR/schedule)",
+        "Secrets management",
+        "Matrix strategy",
+        "Reusable workflows",
+        "Self-hosted runners"
+      ]
+    },
+    {
+      "canonical_name": "Jenkins",
+      "synonyms": [
+        "jenkins",
+        "Jenkins CI",
+        "Jenkins pipeline",
+        "Jenkinsfile"
+      ],
+      "domain": "DevOps",
+      "subdomain": "CI/CD Tool",
+      "parent": "CI/CD",
+      "prerequisites": [
+        "CI/CD concepts",
+        "Groovy basics (for Jenkinsfile)"
+      ],
+      "related_skills": [
+        "Docker",
+        "Maven",
+        "Gradle",
+        "Kubernetes",
+        "SonarQube"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 24,
+      "salary_impact": "medium",
+      "description": "Self-hosted CI/CD server. Phổ biến ở enterprise VN, ngân hàng, bảo hiểm. Plugin ecosystem khổng lồ. Declarative pipeline (Jenkinsfile) là best practice.",
+      "common_interview_topics": [
+        "Declarative vs Scripted pipeline",
+        "Jenkinsfile",
+        "Agents/Nodes",
+        "Plugins",
+        "Shared libraries",
+        "Blue Ocean UI",
+        "Security (credentials)"
+      ]
+    },
+    {
+      "canonical_name": "Nginx",
+      "synonyms": [
+        "nginx",
+        "NGINX",
+        "nginx server",
+        "web server nginx"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Web Server / Reverse Proxy",
+      "parent": "Infrastructure",
+      "prerequisites": [
+        "Linux basics",
+        "Networking basics"
+      ],
+      "related_skills": [
+        "Docker",
+        "Let's Encrypt",
+        "Load balancing",
+        "Certbot",
+        "Kubernetes Ingress"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 38,
+      "salary_impact": "medium",
+      "description": "Web server + reverse proxy + load balancer. Phổ biến nhất để serve static files và proxy pass tới backend. Bắt buộc cho DevOps và nhiều Backend positions.",
+      "common_interview_topics": [
+        "server block/location block",
+        "Reverse proxy",
+        "Load balancing algorithms",
+        "SSL/TLS termination",
+        "Rate limiting",
+        "Caching",
+        "Worker processes"
+      ]
+    },
+    {
+      "canonical_name": "Linux",
+      "synonyms": [
+        "linux",
+        "Unix",
+        "Bash",
+        "bash",
+        "Shell",
+        "command line",
+        "terminal",
+        "Ubuntu",
+        "CentOS"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Operating System",
+      "parent": "Infrastructure",
+      "prerequisites": [],
+      "related_skills": [
+        "Shell scripting",
+        "Docker",
+        "Nginx",
+        "SSH",
+        "Cron"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 52,
+      "salary_impact": "medium",
+      "description": "Mọi server production chạy Linux. Bắt buộc cho DevOps, Backend, và khuyến nghị cho Frontend. Cần biết: file system, permissions, processes, networking commands.",
+      "common_interview_topics": [
+        "File permissions (chmod/chown)",
+        "Process management (ps/kill/top)",
+        "Networking (netstat/ss/curl)",
+        "Cron jobs",
+        "systemd",
+        "Log analysis (grep/awk/sed)"
+      ]
+    },
+    {
+      "canonical_name": "Terraform",
+      "synonyms": [
+        "terraform",
+        "Terraform IaC",
+        "HCL",
+        "OpenTofu"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Infrastructure as Code",
+      "parent": "DevOps Tools",
+      "prerequisites": [
+        "Cloud basics (AWS/Azure/GCP)",
+        "YAML/JSON"
+      ],
+      "related_skills": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "Ansible",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "high",
+      "description": "HashiCorp's IaC tool. Provision infrastructure bằng code. Declarative HCL language. State management. Phổ biến cho AWS/multi-cloud. Module-based architecture.",
+      "common_interview_topics": [
+        "State file",
+        "plan/apply/destroy",
+        "Modules",
+        "Variables/Outputs",
+        "Backend (remote state)",
+        "Resource dependencies",
+        "Terraform vs CloudFormation vs Pulumi"
+      ]
+    },
+    {
+      "canonical_name": "Ansible",
+      "synonyms": [
+        "ansible",
+        "Ansible Playbook",
+        "ansible-playbook"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Configuration Management",
+      "parent": "DevOps Tools",
+      "prerequisites": [
+        "Linux",
+        "YAML",
+        "SSH basics"
+      ],
+      "related_skills": [
+        "Linux",
+        "Terraform",
+        "Docker",
+        "CI/CD"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 10,
+      "salary_impact": "medium",
+      "description": "Agentless configuration management. YAML-based playbooks. Provisioning servers, deploying apps, configuration management. Phổ biến ở enterprise và data centers.",
+      "common_interview_topics": [
+        "Playbook structure",
+        "Inventory",
+        "Roles",
+        "Variables",
+        "Handlers",
+        "Modules (file/service/package)",
+        "Ansible vs Chef vs Puppet"
+      ]
+    },
+    {
+      "canonical_name": "Prometheus",
+      "synonyms": [
+        "prometheus",
+        "Prometheus monitoring",
+        "PromQL"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Monitoring",
+      "parent": "Observability",
+      "prerequisites": [
+        "Linux basics",
+        "Docker basics"
+      ],
+      "related_skills": [
+        "Grafana",
+        "Alertmanager",
+        "Kubernetes",
+        "Node Exporter",
+        "PromQL"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 16,
+      "salary_impact": "medium",
+      "description": "Time-series metrics database. Pull-based scraping, PromQL query language. Chuẩn monitoring cho cloud-native. Dùng cùng Grafana cho dashboards.",
+      "common_interview_topics": [
+        "Pull vs Push model",
+        "PromQL",
+        "Labels",
+        "Alertmanager",
+        "Recording rules",
+        "Service discovery",
+        "Exporters"
+      ]
+    },
+    {
+      "canonical_name": "Grafana",
+      "synonyms": [
+        "grafana",
+        "Grafana Dashboard",
+        "Grafana Cloud"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Visualization",
+      "parent": "Observability",
+      "prerequisites": [
+        "Prometheus (or other data sources)"
+      ],
+      "related_skills": [
+        "Prometheus",
+        "Elasticsearch",
+        "InfluxDB",
+        "Kubernetes",
+        "AWS CloudWatch"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 10,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 14,
+      "salary_impact": "low",
+      "description": "Observability platform. Dashboards cho metrics từ Prometheus, Loki (logs), Tempo (traces). Alerting built-in. Grafana Cloud là managed version. Beautiful visualizations.",
+      "common_interview_topics": [
+        "Data sources",
+        "Dashboard panels",
+        "Variables",
+        "Alerting",
+        "Annotations",
+        "Grafana Loki for logs",
+        "Grafana vs Datadog"
+      ]
+    },
+    {
+      "canonical_name": "Git",
+      "synonyms": [
+        "git",
+        "version control",
+        "VCS",
+        "source control",
+        "git version control"
+      ],
+      "domain": "DevOps",
+      "subdomain": "Version Control",
+      "parent": "Development Tools",
+      "prerequisites": [],
+      "related_skills": [
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "GitHub Actions",
+        "CI/CD"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 95,
+      "salary_impact": "low",
+      "description": "Bắt buộc 100% cho mọi developer. Distributed version control system. Branch, merge, rebase, cherry-pick. GitHub/GitLab là remote repositories phổ biến.",
+      "common_interview_topics": [
+        "merge vs rebase",
+        "cherry-pick",
+        "stash",
+        "git flow",
+        "squash commits",
+        "conflict resolution",
+        "hooks",
+        "bisect",
+        "reflog"
+      ]
+    },
+    {
+      "canonical_name": "TensorFlow",
+      "synonyms": [
+        "tensorflow",
+        "TF",
+        "tf",
+        "TensorFlow 2",
+        "Keras"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Deep Learning Framework",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "NumPy",
+        "basic ML concepts"
+      ],
+      "related_skills": [
+        "Keras",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "CUDA",
+        "Docker"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 50,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 21,
+      "salary_impact": "very_high",
+      "description": "Google's deep learning framework. Production-ready, excellent for deployment (TF Serving, TFLite). Keras is high-level API. TF 2.x dùng eager execution.",
+      "common_interview_topics": [
+        "Eager vs Graph mode",
+        "Keras Model building",
+        "Custom training loops",
+        "tf.data pipeline",
+        "SavedModel format",
+        "TF Serving",
+        "Quantization"
+      ]
+    },
+    {
+      "canonical_name": "PyTorch",
+      "synonyms": [
+        "pytorch",
+        "torch",
+        "PyTorch Lightning",
+        "Torch"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Deep Learning Framework",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "NumPy",
+        "basic ML concepts"
+      ],
+      "related_skills": [
+        "Python",
+        "NumPy",
+        "CUDA",
+        "Hugging Face",
+        "Lightning"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 50,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 20,
+      "salary_impact": "very_high",
+      "description": "Facebook's deep learning framework. Dynamic computation graph, Pythonic. Preferred trong research (90%+ papers). Foundation của Hugging Face models.",
+      "common_interview_topics": [
+        "Autograd",
+        "nn.Module",
+        "Custom Dataset/DataLoader",
+        "Training loop",
+        "CUDA tensors",
+        "torch.save/load",
+        "Distributed training"
+      ]
+    },
+    {
+      "canonical_name": "Scikit-learn",
+      "synonyms": [
+        "sklearn",
+        "scikit learn",
+        "scikit-learn",
+        "sklearn library"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Machine Learning Library",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "basic statistics"
+      ],
+      "related_skills": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Jupyter"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 35,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "high",
+      "description": "Thư viện ML chuẩn cho Python. Classical ML algorithms (regression, classification, clustering), preprocessing, pipelines, model evaluation. Tốt cho tabular data.",
+      "common_interview_topics": [
+        "Pipeline",
+        "Cross-validation",
+        "GridSearchCV",
+        "Feature engineering",
+        "Preprocessing (StandardScaler, OneHotEncoder)",
+        "Metrics (F1, AUC-ROC)",
+        "Overfitting/Underfitting"
+      ]
+    },
+    {
+      "canonical_name": "Pandas",
+      "synonyms": [
+        "pandas",
+        "pd",
+        "python pandas",
+        "pandas dataframe"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Data Manipulation",
+      "parent": "Data Science",
+      "prerequisites": [
+        "Python"
+      ],
+      "related_skills": [
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Jupyter",
+        "Scikit-learn"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 29,
+      "salary_impact": "medium",
+      "description": "Data manipulation library cho Python. DataFrame operations, groupby, merge, pivot. Bắt buộc cho Data Engineer, Data Analyst, AI/ML Engineer. Đọc CSV/Excel/JSON dễ dàng.",
+      "common_interview_topics": [
+        "DataFrame vs Series",
+        "groupby",
+        "merge/join",
+        "apply/map/applymap",
+        "Handling NaN",
+        "Vectorized operations",
+        "Memory optimization",
+        "pd.read_sql"
+      ]
+    },
+    {
+      "canonical_name": "NumPy",
+      "synonyms": [
+        "numpy",
+        "np",
+        "python numpy"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Scientific Computing",
+      "parent": "Data Science",
+      "prerequisites": [
+        "Python"
+      ],
+      "related_skills": [
+        "Pandas",
+        "SciPy",
+        "Matplotlib",
+        "TensorFlow",
+        "PyTorch"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 27,
+      "salary_impact": "low",
+      "description": "Numerical computing với N-dimensional arrays. Foundation của mọi scientific Python library. Vectorized operations nhanh hơn Python loops nhiều lần.",
+      "common_interview_topics": [
+        "ndarray",
+        "Broadcasting",
+        "Vectorization vs loops",
+        "Reshaping",
+        "slicing/indexing",
+        "Linear algebra (dot/matmul)",
+        "Random module"
+      ]
+    },
+    {
+      "canonical_name": "LangChain",
+      "synonyms": [
+        "langchain",
+        "lang chain",
+        "LangGraph",
+        "LangSmith"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "LLM Framework",
+      "parent": "Generative AI",
+      "prerequisites": [
+        "Python",
+        "OpenAI API basics"
+      ],
+      "related_skills": [
+        "Python",
+        "OpenAI API",
+        "Vector Database",
+        "RAG",
+        "Hugging Face"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 15,
+      "salary_impact": "very_high",
+      "description": "Framework xây dựng LLM-powered applications. Chains, Agents, RAG pipelines. Xu hướng bùng nổ 2023-2025. Foundation của hầu hết AI chatbot ở VN hiện tại.",
+      "common_interview_topics": [
+        "Chain types",
+        "Agents và Tools",
+        "Memory",
+        "RAG pipeline (Retriever → LLM)",
+        "LangGraph for complex flows",
+        "LangSmith for observability"
+      ]
+    },
+    {
+      "canonical_name": "OpenAI API",
+      "synonyms": [
+        "OpenAI",
+        "GPT API",
+        "ChatGPT API",
+        "openai",
+        "GPT-4",
+        "GPT-4o"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "AI API",
+      "parent": "Generative AI",
+      "prerequisites": [
+        "Python or JavaScript"
+      ],
+      "related_skills": [
+        "Python",
+        "LangChain",
+        "FastAPI",
+        "Vector Database"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 10,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 22,
+      "salary_impact": "high",
+      "description": "GPT-4, DALL-E, Whisper APIs. Nhanh nhất để build AI-powered features. Chat completions, function calling, embeddings. Mọi startup VN đang integrate OpenAI 2024-2025.",
+      "common_interview_topics": [
+        "Chat completions vs Completions",
+        "Function calling/Tool use",
+        "Embeddings",
+        "System prompt engineering",
+        "Token limits",
+        "Fine-tuning vs RAG",
+        "Cost optimization"
+      ]
+    },
+    {
+      "canonical_name": "Hugging Face",
+      "synonyms": [
+        "huggingface",
+        "HuggingFace",
+        "transformers",
+        "hugging face",
+        "HF"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "ML Model Hub",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "PyTorch or TensorFlow basics"
+      ],
+      "related_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "Python"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 25,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 18,
+      "salary_impact": "very_high",
+      "description": "Model hub và transformers library. 500k+ pre-trained models. BERT, GPT, LLaMA đều có thể fine-tune. Inference API. Bắt buộc cho NLP/AI Engineer.",
+      "common_interview_topics": [
+        "pipeline() API",
+        "Tokenizer",
+        "Model loading/saving",
+        "Fine-tuning",
+        "PEFT/LoRA",
+        "Inference optimization",
+        "Spaces deployment"
+      ]
+    },
+    {
+      "canonical_name": "Computer Vision",
+      "synonyms": [
+        "CV",
+        "image processing",
+        "computer vision",
+        "OpenCV",
+        "image recognition"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Specialization",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "NumPy",
+        "basic ML",
+        "basic linear algebra"
+      ],
+      "related_skills": [
+        "PyTorch",
+        "TensorFlow",
+        "OpenCV",
+        "YOLO",
+        "Mediapipe"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 60,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 16,
+      "salary_impact": "very_high",
+      "description": "Machine learning với images/videos. Object detection (YOLO), segmentation, OCR, face recognition. Ứng dụng nhiều trong manufacturing VN (QC), retail (checkout), security.",
+      "common_interview_topics": [
+        "CNN architecture",
+        "Transfer learning",
+        "Object detection (YOLO/SSD)",
+        "Image augmentation",
+        "OpenCV basics",
+        "mAP metric",
+        "Real-time inference optimization"
+      ]
+    },
+    {
+      "canonical_name": "NLP",
+      "synonyms": [
+        "Natural Language Processing",
+        "nlp",
+        "Text processing",
+        "text mining"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "Specialization",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "Python",
+        "ML basics",
+        "statistics"
+      ],
+      "related_skills": [
+        "Hugging Face",
+        "spaCy",
+        "NLTK",
+        "PyTorch",
+        "Transformers"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 55,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 14,
+      "salary_impact": "very_high",
+      "description": "AI hiểu và xử lý ngôn ngữ tự nhiên. Sentiment analysis, chatbot, text classification, summarization, translation. Foundation của LLMs (GPT, BERT). Cộng đồng NLP tiếng Việt ngày càng phát triển.",
+      "common_interview_topics": [
+        "Tokenization",
+        "Word embeddings (Word2Vec/GloVe)",
+        "Transformer architecture",
+        "BERT/GPT differences",
+        "Fine-tuning for NLP tasks",
+        "Evaluation metrics (BLEU/ROUGE/F1)"
+      ]
+    },
+    {
+      "canonical_name": "MLOps",
+      "synonyms": [
+        "mlops",
+        "ML Ops",
+        "ML Operations",
+        "ML Platform",
+        "ModelOps"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "ML Engineering",
+      "parent": "Machine Learning",
+      "prerequisites": [
+        "ML basics",
+        "Docker",
+        "CI/CD",
+        "Python"
+      ],
+      "related_skills": [
+        "MLflow",
+        "Kubeflow",
+        "Docker",
+        "Kubernetes",
+        "AWS SageMaker"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 40,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 10,
+      "salary_impact": "very_high",
+      "description": "DevOps cho Machine Learning. Versioning models, monitoring, A/B testing, retraining pipelines. Bắt buộc khi ML đi vào production thật. Niche nhưng lương rất cao.",
+      "common_interview_topics": [
+        "Model versioning (MLflow)",
+        "Feature store",
+        "Data/model drift",
+        "Retraining triggers",
+        "A/B testing models",
+        "Containerizing ML models",
+        "Shadow deployment"
+      ]
+    },
+    {
+      "canonical_name": "RAG",
+      "synonyms": [
+        "Retrieval Augmented Generation",
+        "rag",
+        "retrieval augmented generation",
+        "RAG pipeline"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "LLM Architecture",
+      "parent": "Generative AI",
+      "prerequisites": [
+        "Python",
+        "LangChain or similar",
+        "Vector Database",
+        "OpenAI API"
+      ],
+      "related_skills": [
+        "LangChain",
+        "Qdrant",
+        "pgvector",
+        "OpenAI API",
+        "Hugging Face"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 12,
+      "salary_impact": "very_high",
+      "description": "Kỹ thuật kết hợp retrieval với generation để LLM trả lời dựa trên knowledge base riêng. Pattern: Document → Chunk → Embed → Store → Retrieve → LLM → Response.",
+      "common_interview_topics": [
+        "Chunking strategies",
+        "Embedding models",
+        "Vector similarity search",
+        "Reranking",
+        "HyDE",
+        "Evaluation (RAGAS)",
+        "RAG vs Fine-tuning tradeoffs"
+      ]
+    },
+    {
+      "canonical_name": "Vector Database",
+      "synonyms": [
+        "vector db",
+        "vectordb",
+        "vector store",
+        "embedding database"
+      ],
+      "domain": "AI/ML",
+      "subdomain": "AI Infrastructure",
+      "parent": "Database Management",
+      "prerequisites": [
+        "basic database concepts",
+        "embeddings basics"
+      ],
+      "related_skills": [
+        "Qdrant",
+        "Pinecone",
+        "Weaviate",
+        "pgvector",
+        "LangChain",
+        "RAG"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "low",
+      "frequency_in_jds_percent": 8,
+      "salary_impact": "high",
+      "description": "Database lưu và tìm kiếm vector embeddings. Core infrastructure cho RAG và semantic search. Options: Qdrant, Pinecone, Weaviate, pgvector. Xu hướng hot 2024-2025.",
+      "common_interview_topics": [
+        "What are embeddings",
+        "Similarity metrics (cosine/euclidean)",
+        "ANN algorithms (HNSW/IVF)",
+        "Filtering with vectors",
+        "Comparison of vector DBs"
+      ]
+    },
+    {
+      "canonical_name": "Data Structures & Algorithms",
+      "synonyms": [
+        "DSA",
+        "Algorithms",
+        "Data Structures",
+        "algo",
+        "coding interview",
+        "leetcode"
+      ],
+      "domain": "Computer Science",
+      "subdomain": "Core CS",
+      "parent": "Software Engineering",
+      "prerequisites": [
+        "basic programming in any language"
+      ],
+      "related_skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "System Design"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 120,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 65,
+      "salary_impact": "very_high",
+      "description": "Nền tảng CS. Bắt buộc cho coding interview tại tất cả công ty tech VN. Array, String, Tree, Graph, DP là phần hay gặp nhất. LeetCode 150 là đủ cho 90% interview.",
+      "common_interview_topics": [
+        "Array/String manipulation",
+        "Linked List",
+        "Stack/Queue",
+        "Binary Tree/BST",
+        "Graph (BFS/DFS)",
+        "Dynamic Programming",
+        "Sorting algorithms",
+        "Time/Space complexity"
+      ]
+    },
+    {
+      "canonical_name": "System Design",
+      "synonyms": [
+        "system design interview",
+        "HLD",
+        "High Level Design",
+        "distributed systems design",
+        "architecture"
+      ],
+      "domain": "Computer Science",
+      "subdomain": "Software Architecture",
+      "parent": "Software Engineering",
+      "prerequisites": [
+        "REST API",
+        "Database basics",
+        "basic networking",
+        "caching concepts"
+      ],
+      "related_skills": [
+        "Microservices",
+        "Kubernetes",
+        "Redis",
+        "Message Queue",
+        "CDN"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 80,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 40,
+      "salary_impact": "very_high",
+      "description": "Thiết kế hệ thống large-scale. Bắt buộc cho Senior interview. URL Shortener, Instagram, Twitter, WhatsApp là câu hỏi phổ biến. Cần hiểu scalability, availability, consistency.",
+      "common_interview_topics": [
+        "Load balancing",
+        "Caching",
+        "Database sharding",
+        "CAP theorem",
+        "Message queues",
+        "CDN",
+        "Rate limiting",
+        "API Gateway",
+        "Distributed transactions"
+      ]
+    },
+    {
+      "canonical_name": "Clean Code",
+      "synonyms": [
+        "clean code",
+        "code quality",
+        "SOLID principles",
+        "code review",
+        "refactoring",
+        "SOLID"
+      ],
+      "domain": "Software Engineering",
+      "subdomain": "Best Practices",
+      "parent": "Software Craftsmanship",
+      "prerequisites": [
+        "any programming language"
+      ],
+      "related_skills": [
+        "Design Patterns",
+        "Testing",
+        "Code Review",
+        "Refactoring"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 20,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 35,
+      "salary_impact": "high",
+      "description": "Viết code đọc được, maintainable, testable. SOLID principles, DRY, KISS, YAGNI. Code review. Bắt buộc tại công ty tech chuyên nghiệp. Robert C. Martin (Uncle Bob) là tác giả kinh điển.",
+      "common_interview_topics": [
+        "SOLID principles",
+        "DRY/KISS/YAGNI",
+        "Naming conventions",
+        "Function design",
+        "Code review best practices",
+        "Technical debt",
+        "Refactoring techniques"
+      ]
+    },
+    {
+      "canonical_name": "Design Patterns",
+      "synonyms": [
+        "design pattern",
+        "GoF patterns",
+        "OOP patterns",
+        "software patterns",
+        "architectural patterns"
+      ],
+      "domain": "Software Engineering",
+      "subdomain": "Best Practices",
+      "parent": "Software Craftsmanship",
+      "prerequisites": [
+        "OOP concepts",
+        "any programming language"
+      ],
+      "related_skills": [
+        "Clean Code",
+        "Java",
+        "C#",
+        "Python",
+        "System Design"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 28,
+      "salary_impact": "high",
+      "description": "23 GoF patterns + architectural patterns (MVC, MVVM, Repository, Factory, Observer, Strategy...). Hỏi nhiều ở interview Senior/Middle. Giúp code scalable và maintainable.",
+      "common_interview_topics": [
+        "Singleton",
+        "Factory",
+        "Observer",
+        "Strategy",
+        "Decorator",
+        "Repository pattern",
+        "MVC vs MVVM",
+        "Dependency Injection",
+        "When NOT to use patterns"
+      ]
+    },
+    {
+      "canonical_name": "Agile/Scrum",
+      "synonyms": [
+        "Agile",
+        "Scrum",
+        "agile",
+        "scrum",
+        "Kanban",
+        "Sprint",
+        "agile methodology"
+      ],
+      "domain": "Software Engineering",
+      "subdomain": "Project Management",
+      "parent": "Software Development Process",
+      "prerequisites": [],
+      "related_skills": [
+        "Jira",
+        "Confluence",
+        "Trello",
+        "Sprint planning",
+        "Retrospective"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 15,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 72,
+      "salary_impact": "low",
+      "description": "Phương pháp phát triển phần mềm iterative. Scrum: Sprint, Daily Standup, Retrospective, Backlog. Bắt buộc ở 90%+ công ty tech VN. Jira là tool phổ biến nhất.",
+      "common_interview_topics": [
+        "Scrum roles",
+        "Sprint ceremonies",
+        "User story",
+        "Definition of Done",
+        "Velocity",
+        "Kanban vs Scrum",
+        "Scrum vs Waterfall"
+      ]
+    },
+    {
+      "canonical_name": "Security Basics",
+      "synonyms": [
+        "cybersecurity basics",
+        "web security",
+        "application security",
+        "OWASP",
+        "security",
+        "AppSec"
+      ],
+      "domain": "Security",
+      "subdomain": "Application Security",
+      "parent": "Software Engineering",
+      "prerequisites": [
+        "REST API",
+        "HTTP basics"
+      ],
+      "related_skills": [
+        "OWASP",
+        "JWT",
+        "HTTPS/TLS",
+        "Authentication",
+        "Penetration testing"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 31,
+      "salary_impact": "high",
+      "description": "OWASP Top 10, JWT/OAuth2, HTTPS, input validation, SQL injection prevention. Bắt buộc cho Backend Developer. Fintech VN đặc biệt chú trọng bảo mật.",
+      "common_interview_topics": [
+        "OWASP Top 10",
+        "SQL Injection",
+        "XSS",
+        "CSRF",
+        "JWT security",
+        "OAuth2/OIDC",
+        "HTTPS/TLS",
+        "Password hashing (bcrypt/argon2)",
+        "CORS"
+      ]
+    },
+    {
+      "canonical_name": "Testing",
+      "synonyms": [
+        "Unit Testing",
+        "Integration Testing",
+        "E2E Testing",
+        "TDD",
+        "test automation",
+        "QA"
+      ],
+      "domain": "Software Engineering",
+      "subdomain": "Quality Assurance",
+      "parent": "Software Development Process",
+      "prerequisites": [
+        "any programming language"
+      ],
+      "related_skills": [
+        "Jest",
+        "pytest",
+        "JUnit",
+        "Selenium",
+        "Playwright",
+        "Cypress",
+        "Postman"
+      ],
+      "difficulty": "intermediate",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "high",
+      "frequency_in_jds_percent": 45,
+      "salary_impact": "medium",
+      "description": "Test pyramid: Unit > Integration > E2E. TDD, BDD. Jest (JS), pytest (Python), JUnit (Java). Không có test = technical debt. Bắt buộc ở team professional.",
+      "common_interview_topics": [
+        "Test pyramid",
+        "Unit vs Integration vs E2E",
+        "TDD cycle",
+        "Mocking/Stubbing",
+        "Code coverage",
+        "Playwright/Cypress for E2E",
+        "API testing (Postman/REST Assured)"
+      ]
+    },
+    {
+      "canonical_name": "Technical English",
+      "synonyms": [
+        "English",
+        "english",
+        "Business English",
+        "Communication",
+        "technical documentation",
+        "Tech English"
+      ],
+      "domain": "Soft Skills",
+      "subdomain": "Communication",
+      "parent": "Professional Skills",
+      "prerequisites": [],
+      "related_skills": [
+        "Documentation",
+        "API design",
+        "Code comments"
+      ],
+      "difficulty": "varies",
+      "avg_learning_hours": 0,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 68,
+      "salary_impact": "very_high",
+      "description": "Đọc tech docs, communicate với client nước ngoài, viết PR description, comment code, Stack Overflow. IELTS 6.0+ = tăng lương 20-30% tại nhiều công ty VN.",
+      "common_interview_topics": [
+        "Reading documentation",
+        "Writing commit messages",
+        "Explaining technical concepts",
+        "Client communication",
+        "Technical presentation"
+      ]
+    },
+    {
+      "canonical_name": "SQL",
+      "synonyms": [
+        "sql",
+        "SQL language",
+        "Structured Query Language",
+        "query language"
+      ],
+      "domain": "Database",
+      "subdomain": "Query Language",
+      "parent": "Database Management",
+      "prerequisites": [],
+      "related_skills": [
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "MS SQL",
+        "Oracle"
+      ],
+      "difficulty": "beginner",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "very_high",
+      "frequency_in_jds_percent": 71,
+      "salary_impact": "medium",
+      "description": "Ngôn ngữ query cơ sở dữ liệu quan hệ. SELECT, JOIN, GROUP BY, subqueries, window functions. Bắt buộc cho Backend, Data, QA. Nền tảng của mọi ứng dụng data.",
+      "common_interview_topics": [
+        "JOINs",
+        "GROUP BY/HAVING",
+        "Window functions",
+        "CTEs",
+        "Subqueries",
+        "Indexes",
+        "ACID",
+        "Normalization (1NF/2NF/3NF)"
+      ]
+    },
+    {
+      "canonical_name": "Kafka",
+      "synonyms": [
+        "Apache Kafka",
+        "kafka",
+        "Kafka Streams",
+        "Event streaming"
+      ],
+      "domain": "Backend",
+      "subdomain": "Message Broker",
+      "parent": "Distributed Systems",
+      "prerequisites": [
+        "basic distributed systems",
+        "Java or Python"
+      ],
+      "related_skills": [
+        "Microservices",
+        "Docker",
+        "Java",
+        "Python",
+        "Kubernetes",
+        "Zookeeper"
+      ],
+      "difficulty": "advanced",
+      "avg_learning_hours": 30,
+      "market_demand_vn": "medium",
+      "frequency_in_jds_percent": 19,
+      "salary_impact": "very_high",
+      "description": "Distributed event streaming platform. High-throughput, durable, scalable. VNG, Tiki, MoMo dùng Kafka cho event-driven architecture. Consumer groups, partitions, offsets.",
+      "common_interview_topics": [
+        "Topic/Partition/Offset",
+        "Consumer groups",
+        "Producer semantics (at-least-once/exactly-once)",
+        "Log compaction",
+        "Kafka vs RabbitMQ",
+        "Schema Registry",
+        "Kafka Streams"
+      ]
+    }
+  ]
+}

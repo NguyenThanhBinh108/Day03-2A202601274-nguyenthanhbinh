@@ -1,0 +1,127 @@
+{
+  "skill": "Node.js",
+  "market_frequency": "12.3% JDs yêu cầu Node.js",
+  "market_role": "Backend Developer, Full-stack Developer",
+  "total_learning_hours": 55,
+  "generated_at": "2026-06-12T00:05:36.343180",
+  "modules": [
+    {
+      "module_id": "node_01",
+      "title": "Node.js Core",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "node_01_01",
+          "title": "Event Loop, Streams, Core Modules",
+          "hours": 10,
+          "academic": {
+            "summary": "Event Loop phases, libuv, Non-blocking I/O, Streams (Readable/Writable/Transform), fs/path/http modules",
+            "resources": [
+              {
+                "title": "Node.js Official Docs",
+                "url": "https://nodejs.org/en/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "The Odin Project — NodeJS",
+                "url": "https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 960
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "CLI tool xử lý file CSV lớn (>1GB) với Node.js Streams — không load toàn bộ vào memory",
+            "resources": [
+              {
+                "title": "Node.js Streams Docs",
+                "url": "https://nodejs.org/api/stream.html",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "node_01_01_q1",
+                "level": 3,
+                "question": "Node.js Event Loop có bao nhiêu phases và process.nextTick() ưu tiên hơn setImmediate() tại sao?",
+                "options": {
+                  "A": "6 phases. nextTick: chạy sau current operation, TRƯỚC phase tiếp theo. setImmediate: phase check",
+                  "B": "3 phases. Chúng giống nhau",
+                  "C": "nextTick chậm hơn",
+                  "D": "setImmediate ưu tiên hơn"
+                },
+                "correct_answer": "A",
+                "explanation": "Phases: timers→pending→idle→poll→check(setImmediate)→close. nextTick: microtask, chạy ngay sau current operation trước khi vào phase tiếp. Tránh lạm dụng nextTick — có thể starve event loop."
+              },
+              {
+                "question_id": "node_01_01_q2",
+                "level": 4,
+                "question": "Worker Threads trong Node.js dùng để làm gì?",
+                "options": {
+                  "A": "CPU-intensive tasks — giải quyết giới hạn single-thread của main thread",
+                  "B": "Network requests song song",
+                  "C": "Database connections",
+                  "D": "File I/O async"
+                },
+                "correct_answer": "A",
+                "explanation": "Node.js single-threaded. Worker Threads: tạo thread mới với shared ArrayBuffer. Dùng cho CPU-heavy: image processing, crypto, ML inference. I/O: vẫn dùng async/await — libuv thread pool handle I/O ở dưới."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "node_01_02",
+          "title": "Express.js + Middleware Pattern",
+          "hours": 10,
+          "academic": {
+            "summary": "Router, middleware pipeline, error handling, helmet, cors, morgan, rate limiting",
+            "resources": [
+              {
+                "title": "Express.js Official Guide",
+                "url": "https://expressjs.com/en/guide/routing.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Blog REST API: Express + JWT + Prisma + PostgreSQL. Rate limiting, helmet security, Zod validation, centralized error handler",
+            "resources": [
+              {
+                "title": "Prisma Docs",
+                "url": "https://www.prisma.io/docs",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "node_01_02_q1",
+                "level": 3,
+                "question": "Express middleware signature `(err, req, res, next)` khi nào được gọi?",
+                "options": {
+                  "A": "Chỉ khi gọi next(error) hoặc throw trong middleware trước",
+                  "B": "Mỗi request",
+                  "C": "Khi response 500",
+                  "D": "Tự động không cần cấu hình"
+                },
+                "correct_answer": "A",
+                "explanation": "Error-handling middleware: 4 arguments (err, req, res, next). Được gọi khi: next(new Error()), throw Error trong async nếu wrapped với try/catch. Phải register sau tất cả routes."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Terraform",
+  "skill_key": "terraform",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.616644Z",
+  "checklist_items": [
+    {
+      "item_id": "terraform_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "HCL syntax",
+      "description": "Master HCL syntax trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Terraform+HCL+syntax+tutorial",
+      "resource_title": "Terraform — HCL syntax",
+      "quiz_ids": [
+        "terraform_l1_001"
+      ],
+      "market_relevance": "HCL syntax là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Resources/Data sources",
+      "description": "Master Resources/Data sources trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Terraform+Resources/Data+sources+tutorial",
+      "resource_title": "Terraform — Resources/Data sources",
+      "quiz_ids": [
+        "terraform_l2_002"
+      ],
+      "market_relevance": "Resources/Data sources là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Providers",
+      "description": "Master Providers trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Terraform+Providers+tutorial",
+      "resource_title": "Terraform — Providers",
+      "quiz_ids": [
+        "terraform_l3_003"
+      ],
+      "market_relevance": "Providers là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Variables/Outputs",
+      "description": "Master Variables/Outputs trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Terraform+Variables/Outputs+tutorial",
+      "resource_title": "Terraform — Variables/Outputs",
+      "quiz_ids": [
+        "terraform_l4_004"
+      ],
+      "market_relevance": "Variables/Outputs là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "State management",
+      "description": "Master State management trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Terraform+State+management+tutorial",
+      "resource_title": "Terraform — State management",
+      "quiz_ids": [
+        "terraform_l5_005"
+      ],
+      "market_relevance": "State management là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Modules",
+      "description": "Master Modules trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Terraform+Modules+tutorial",
+      "resource_title": "Terraform — Modules",
+      "quiz_ids": [
+        "terraform_l5_006"
+      ],
+      "market_relevance": "Modules là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Remote state",
+      "description": "Master Remote state trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Terraform+Remote+state+tutorial",
+      "resource_title": "Terraform — Remote state",
+      "quiz_ids": [
+        "terraform_l5_007"
+      ],
+      "market_relevance": "Remote state là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Terraform Cloud",
+      "description": "Master Terraform Cloud trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Terraform+Terraform+Cloud+tutorial",
+      "resource_title": "Terraform — Terraform Cloud",
+      "quiz_ids": [
+        "terraform_l5_008"
+      ],
+      "market_relevance": "Terraform Cloud là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Workspaces",
+      "description": "Master Workspaces trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Terraform+Workspaces+tutorial",
+      "resource_title": "Terraform — Workspaces",
+      "quiz_ids": [
+        "terraform_l5_009"
+      ],
+      "market_relevance": "Workspaces là key skill trong Terraform DevOps development"
+    },
+    {
+      "item_id": "terraform_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "CI/CD integration",
+      "description": "Master CI/CD integration trong Terraform — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Terraform+CI/CD+integration+tutorial",
+      "resource_title": "Terraform — CI/CD integration",
+      "quiz_ids": [
+        "terraform_l5_010"
+      ],
+      "market_relevance": "CI/CD integration là key skill trong Terraform DevOps development"
+    }
+  ]
+}

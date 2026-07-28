@@ -1,0 +1,436 @@
+{
+  "skill": "Next.js",
+  "skill_key": "nextjs",
+  "total_questions": 30,
+  "levels": { "1_beginner": 6, "2_understanding": 6, "3_application": 6, "4_debugging": 6, "5_production": 6 },
+  "generated_at": "2026-06-12T03:33:00.000000",
+  "source_references": [
+    "https://nextjs.org/docs",
+    "https://nextjs.org/learn",
+    "https://www.freecodecamp.org/news/tag/nextjs/",
+    "https://www.geeksforgeeks.org/nextjs/",
+    "https://vercel.com/blog"
+  ],
+  "questions": [
+    {
+      "question_id": "nextjs_l1_001", "level": 1, "category": "definition",
+      "question": "Next.js App Router và Pages Router khác nhau thế nào?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau",
+        "B": "App Router (app/): file-based routing mới, React Server Components mặc định, layouts, loading/error states, server actions. Pages Router (pages/): cách cũ, getServerSideProps/getStaticProps",
+        "C": "Pages Router chỉ dùng cho static sites",
+        "D": "App Router không support TypeScript"
+      },
+      "correct_answer": "B",
+      "explanation": "App Router (Next.js 13+, stable 14+): app/ directory. File conventions: page.tsx, layout.tsx, loading.tsx, error.tsx, not-found.tsx, route.ts (API). Server Components là default — fetch data trực tiếp, không gửi JS xuống client. Client components: 'use client' directive. Pages Router (legacy): pages/ directory. getServerSideProps (SSR), getStaticProps (SSG), getStaticPaths. API routes: pages/api/. Next.js 14+: khuyến nghị App Router cho new projects.",
+      "source": "https://nextjs.org/docs/app",
+      "tags": ["app-router", "pages-router", "routing", "nextjs14"]
+    },
+    {
+      "question_id": "nextjs_l1_002", "level": 1, "category": "definition",
+      "question": "React Server Components (RSC) trong Next.js là gì?",
+      "options": {
+        "A": "Components render ở server nhưng gửi toàn bộ code JS xuống client",
+        "B": "Components render hoàn toàn trên server — HTML được gửi xuống, KHÔNG gửi component JS xuống client, có thể fetch data trực tiếp, không có hooks hay browser APIs",
+        "C": "RSC giống getServerSideProps",
+        "D": "RSC chỉ dùng được với databases"
+      },
+      "correct_answer": "B",
+      "explanation": "Server Components (default trong App Router): render trên server, chỉ HTML được gửi xuống → smaller bundle size. Có thể: async/await trực tiếp, access databases, file system, env vars. KHÔNG thể: useState, useEffect, event listeners, browser APIs. Client Components ('use client'): render ở client, có đầy đủ React features. Pattern: fetch data trong server component, pass xuống client component làm props. Lợi ích: giảm JS bundle, tốt cho SEO, faster initial load.",
+      "source": "https://nextjs.org/docs/app/building-your-application/rendering/server-components",
+      "tags": ["RSC", "server-components", "client-components", "rendering"]
+    },
+    {
+      "question_id": "nextjs_l1_003", "level": 1, "category": "definition",
+      "question": "Next.js Image component (<Image />) lợi ích gì so với <img>?",
+      "options": {
+        "A": "Chỉ khác về syntax",
+        "B": "Tự động optimize: WebP/AVIF format, lazy loading, responsive srcset, prevent CLS (required width/height hoặc fill), on-demand resize",
+        "C": "<img> nhanh hơn <Image />",
+        "D": "Image component chỉ dùng cho external images"
+      },
+      "correct_answer": "B",
+      "explanation": "Next.js <Image>: (1) Format optimization: tự chuyển sang WebP/AVIF. (2) Responsive: srcset tự động theo sizes prop. (3) Lazy loading: loading='lazy' mặc định (dùng priority cho above-the-fold). (4) CLS prevention: width + height bắt buộc, hoặc fill=true với parent position:relative. (5) Blur placeholder: placeholder='blur' + blurDataURL. (6) Remote images: config remotePatterns trong next.config.js. (7) On-demand resizing: Vercel/custom image optimization server. Kết quả: LCP tốt hơn, CLS = 0, bundle nhỏ hơn.",
+      "source": "https://nextjs.org/docs/app/api-reference/components/image",
+      "tags": ["Image", "optimization", "CLS", "LCP", "performance"]
+    },
+    {
+      "question_id": "nextjs_l1_004", "level": 1, "category": "definition",
+      "question": "Next.js Route Handlers (app/api/) vs Pages API Routes (pages/api/) khác nhau?",
+      "options": {
+        "A": "Chúng giống nhau hoàn toàn",
+        "B": "Route Handlers (App Router): export GET/POST/PUT/DELETE functions, Web Request/Response API, có thể dùng Edge runtime. Pages API: export default handler function với req/res Node.js style",
+        "C": "Route Handlers không support POST method",
+        "D": "Pages API routes tốt hơn Route Handlers"
+      },
+      "correct_answer": "B",
+      "explanation": "App Router Route Handler (app/api/users/route.ts): export async function GET(request: Request) { const users = await db.users.findMany(); return Response.json(users); }. export async function POST(request: Request) { const body = await request.json(); ... }. Edge runtime: export const runtime = 'edge'. Có thể đọc cookies, headers. Pages API (pages/api/users.ts): export default async function handler(req, res) { if (req.method === 'GET') { res.json(users); } }. Route Handlers dùng Web Fetch API — portable hơn.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers",
+      "tags": ["route-handlers", "api", "REST", "edge-runtime"]
+    },
+    {
+      "question_id": "nextjs_l1_005", "level": 1, "category": "definition",
+      "question": "Next.js Metadata API dùng để làm gì?",
+      "options": {
+        "A": "Metadata chỉ để config database",
+        "B": "Export metadata object hoặc generateMetadata() từ page/layout để set title, description, Open Graph, Twitter Card, robots, canonical cho SEO",
+        "C": "Metadata chỉ hoạt động với Pages Router",
+        "D": "Chỉ có thể dùng <head> tag"
+      },
+      "correct_answer": "B",
+      "explanation": "Static metadata: export const metadata: Metadata = { title: 'My Page', description: 'Desc', openGraph: { images: '/og.png' } }. Dynamic: export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> { const product = await getProduct(params.id); return { title: product.name, description: product.description }; }. Template title: title: { template: '%s | My Site', default: 'My Site' }. Trong layout.tsx: metadata được inherited bởi pages. File-based: opengraph-image.png, robots.txt, sitemap.xml trong app/ directory.",
+      "source": "https://nextjs.org/docs/app/building-your-application/optimizing/metadata",
+      "tags": ["metadata", "SEO", "Open-Graph", "generateMetadata"]
+    },
+    {
+      "question_id": "nextjs_l1_006", "level": 1, "category": "definition",
+      "question": "Next.js caching strategies — có những tầng cache nào?",
+      "options": {
+        "A": "Next.js không cache gì cả",
+        "B": "Request Memoization (per-request), Data Cache (fetch với revalidate), Full Route Cache (HTML+RSC), Router Cache (client-side) — 4 tầng cache riêng biệt",
+        "C": "Chỉ có HTTP cache headers",
+        "D": "Cache chỉ hoạt động trên Vercel"
+      },
+      "correct_answer": "B",
+      "explanation": "Next.js 4 caching layers: (1) Request Memoization: duplicate fetch() calls trong 1 render → deduplicated (same URL + options). (2) Data Cache: fetch(url, { next: { revalidate: 3600 } }) — persist across requests, revalidate theo thời gian hoặc on-demand. (3) Full Route Cache: server-rendered routes được cache trên server (static generation). (4) Router Cache: client-side cache của prefetched RSC payloads — tránh refetch khi navigate back. Opt out: fetch(url, { cache: 'no-store' }) hoặc dynamic = 'force-dynamic'.",
+      "source": "https://nextjs.org/docs/app/building-your-application/caching",
+      "tags": ["caching", "revalidate", "data-cache", "full-route-cache"]
+    },
+    {
+      "question_id": "nextjs_l2_001", "level": 2, "category": "understanding",
+      "question": "Next.js Server Actions là gì và tại sao chúng thay đổi cách build web apps?",
+      "options": {
+        "A": "Server Actions là REST API endpoints",
+        "B": "Server Actions: async functions với 'use server' — gọi từ client nhưng chạy trên server, không cần API route, tích hợp với forms và mutations",
+        "C": "Server Actions chỉ dùng cho database writes",
+        "D": "Server Actions không type-safe"
+      },
+      "correct_answer": "B",
+      "explanation": "Server Actions: // actions.ts 'use server'; export async function createUser(formData: FormData) { const name = formData.get('name'); await db.user.create({ data: { name } }); revalidatePath('/users'); }. Form integration: <form action={createUser}>. Gọi từ client: const result = await createUser(formData). Benefits: (1) No API route boilerplate. (2) Type-safe end-to-end. (3) Progressive enhancement (hoạt động không cần JS). (4) Tích hợp với useFormState, useFormStatus. (5) Optimistic updates với useOptimistic. Trả về dữ liệu hoặc redirect().",
+      "source": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations",
+      "tags": ["server-actions", "mutations", "forms", "progressive-enhancement"]
+    },
+    {
+      "question_id": "nextjs_l2_002", "level": 2, "category": "understanding",
+      "question": "Static Site Generation (SSG) vs Server Side Rendering (SSR) vs ISR trong Next.js?",
+      "options": {
+        "A": "Chúng giống nhau",
+        "B": "SSG: build-time render → fast, CDN-able. SSR: per-request render → fresh data. ISR: SSG + background revalidation sau interval → best of both",
+        "C": "SSR luôn tốt hơn SSG",
+        "D": "ISR không tồn tại trong Next.js 14"
+      },
+      "correct_answer": "B",
+      "explanation": "App Router rendering: Static (SSG equivalent): no dynamic data, built at compile time, cached on CDN. Dynamic (SSR): export dynamic = 'force-dynamic' hoặc dùng headers()/cookies() — render per-request. ISR: fetch(url, { next: { revalidate: 60 } }) — static cho đến khi revalidate, sau đó background regenerate. On-demand revalidation: revalidatePath('/blog') hoặc revalidateTag('blog-posts') trong Server Action/Route Handler. Decision: static for content that doesn't change often (docs, blog), dynamic for user-specific or real-time data.",
+      "source": "https://nextjs.org/docs/app/building-your-application/rendering",
+      "tags": ["SSG", "SSR", "ISR", "rendering", "revalidate"]
+    },
+    {
+      "question_id": "nextjs_l2_003", "level": 2, "category": "understanding",
+      "question": "Next.js Middleware hoạt động thế nào và khi nào nên dùng?",
+      "options": {
+        "A": "Middleware chỉ dùng để log requests",
+        "B": "middleware.ts chạy trên Edge trước khi request đến route — dùng cho auth redirect, geolocation, A/B testing, rewriting URLs",
+        "C": "Middleware không thể đọc cookies",
+        "D": "Middleware chạy sau route handler"
+      },
+      "correct_answer": "B",
+      "explanation": "middleware.ts (root level): export function middleware(request: NextRequest) { const token = request.cookies.get('token'); if (!token && request.nextUrl.pathname.startsWith('/dashboard')) { return NextResponse.redirect(new URL('/login', request.url)); } return NextResponse.next(); }. export const config = { matcher: ['/dashboard/:path*', '/api/protected/:path*'] }. Use cases: (1) Auth protection ở edge (rất nhanh, không cần database). (2) Geolocation-based redirect. (3) A/B testing (rewrite đến variant). (4) Bot detection. (5) Custom headers. Edge runtime: V8 isolates, không full Node.js APIs.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/middleware",
+      "tags": ["middleware", "edge", "auth", "redirect", "NextRequest"]
+    },
+    {
+      "question_id": "nextjs_l2_004", "level": 2, "category": "understanding",
+      "question": "Next.js parallel routes và intercepting routes dùng để làm gì?",
+      "options": {
+        "A": "Chúng là cách khác để làm nested layouts",
+        "B": "Parallel routes (@folder): render nhiều pages cùng lúc trong 1 layout (dashboard với sidebar). Intercepting routes ((.folder)): show route trong modal, giữ URL đúng",
+        "C": "Parallel routes chỉ dùng cho mobile",
+        "D": "Intercepting routes deprecated trong Next.js 14"
+      },
+      "correct_answer": "B",
+      "explanation": "Parallel Routes: app/@analytics/page.tsx + app/@team/page.tsx → layout nhận { children, analytics, team } props. Dùng cho: complex dashboards, conditional content theo auth state. Intercepting Routes: app/(.)photo/[id]/page.tsx intercept navigation đến /photo/[id] khi navigate từ feed → show modal. Navigate trực tiếp đến URL → show full page. Pattern: Instagram-style photo modal. (.) same level, (..) one level up, (...) root. Kết hợp: parallel route cho modal slot + intercepting route cho modal content.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/parallel-routes",
+      "tags": ["parallel-routes", "intercepting-routes", "modal", "advanced-routing"]
+    },
+    {
+      "question_id": "nextjs_l2_005", "level": 2, "category": "understanding",
+      "question": "Streaming và Suspense trong Next.js App Router hoạt động thế nào?",
+      "options": {
+        "A": "Next.js không support streaming",
+        "B": "Streaming: server gửi HTML theo chunks, Suspense boundaries cho phép show loading UI trong khi data đang fetch — cải thiện TTFB và perceived performance",
+        "C": "Suspense chỉ dùng cho code splitting",
+        "D": "Streaming chỉ hoạt động trên Vercel"
+      },
+      "correct_answer": "B",
+      "explanation": "Streaming HTML: Next.js App Router gửi shell HTML ngay (header, layout), sau đó stream các Suspense boundaries khi data sẵn sàng. <Suspense fallback={<ProductSkeleton />}><ProductDetails id={id} /></Suspense>. ProductDetails là async Server Component — fetch data, render HTML, stream vào client. Multiple Suspense: parallel streaming của nhiều sections. loading.tsx = automatic Suspense boundary cho cả route segment. Lợi ích: TTFB nhanh hơn, progressive rendering, users thấy content sớm hơn.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming",
+      "tags": ["streaming", "Suspense", "loading", "TTFB", "performance"]
+    },
+    {
+      "question_id": "nextjs_l2_006", "level": 2, "category": "understanding",
+      "question": "Next.js và authentication — nên dùng approach nào?",
+      "options": {
+        "A": "Chỉ dùng localStorage cho tokens",
+        "B": "NextAuth.js (Auth.js) cho OAuth/credentials; session bằng HttpOnly cookies; middleware bảo vệ routes; Server Actions cho login/logout mutations",
+        "C": "JWT trong localStorage là đủ",
+        "D": "Auth không thể implement trong Next.js"
+      },
+      "correct_answer": "B",
+      "explanation": "Auth.js (NextAuth v5): auth.ts config providers (Google, GitHub, credentials). Middleware protection: import { auth } from '@/auth'; export default auth((req) => { if (!req.auth && req.nextUrl.pathname.startsWith('/dashboard')) { return redirect('/login'); } }). Session access: Server Component: const session = await auth(); Client: useSession() hook. Database session: PrismaAdapter. Server Action login: 'use server'; await signIn('credentials', { email, password }). HttpOnly cookies: bảo mật nhất, không XSS vulnerable. CSRF: Auth.js tự handle.",
+      "source": "https://authjs.dev/",
+      "tags": ["authentication", "NextAuth", "Auth.js", "session", "middleware"]
+    },
+    {
+      "question_id": "nextjs_l3_001", "level": 3, "category": "application",
+      "question": "Implement data fetching pattern trong Next.js App Router với error và loading states?",
+      "options": {
+        "A": "Dùng useEffect để fetch trong client components",
+        "B": "Server Component async/await cho data fetch + error.tsx cho error boundary + loading.tsx (Suspense) — không cần useState/useEffect cho server data",
+        "C": "Next.js không thể fetch data",
+        "D": "Phải dùng getServerSideProps"
+      },
+      "correct_answer": "B",
+      "explanation": "// app/products/page.tsx (Server Component) export default async function ProductsPage() { const products = await getProducts(); // không cần try/catch nếu error.tsx exist return <ProductList products={products} />; }. // app/products/error.tsx 'use client'; export default function Error({ error, reset }) { return <div><p>{error.message}</p><button onClick={reset}>Retry</button></div>; }. // app/products/loading.tsx export default function Loading() { return <ProductsSkeleton />; }. Wrap với Suspense cho granular loading: <Suspense fallback={<Spinner />}><SlowComponent /></Suspense>.",
+      "source": "https://nextjs.org/docs/app/building-your-application/data-fetching/fetching",
+      "tags": ["data-fetching", "server-component", "error-boundary", "loading", "Suspense"]
+    },
+    {
+      "question_id": "nextjs_l3_002", "level": 3, "category": "application",
+      "question": "Implement Next.js Server Action cho form mutation với optimistic updates?",
+      "options": {
+        "A": "Server Actions không hỗ trợ optimistic updates",
+        "B": "'use server' action + useOptimistic hook client-side + revalidatePath sau mutation — UI update ngay, rollback nếu server fail",
+        "C": "Cần API route riêng cho mutations",
+        "D": "Optimistic updates chỉ dùng với SWR"
+      },
+      "correct_answer": "B",
+      "explanation": "// actions.ts 'use server'; export async function addTodo(formData: FormData) { const text = formData.get('text') as string; const todo = await db.todo.create({ data: { text } }); revalidatePath('/todos'); return todo; }. // Client Component 'use client'; const [optimisticTodos, addOptimisticTodo] = useOptimistic(todos, (state, newTodo) => [...state, { ...newTodo, pending: true }]); async function handleSubmit(formData) { const newTodo = { text: formData.get('text'), id: crypto.randomUUID() }; addOptimisticTodo(newTodo); // immediate UI update await addTodo(formData); // server mutation }. Rollback: nếu server action throw error → optimistic state revert.",
+      "source": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations",
+      "tags": ["server-actions", "optimistic-updates", "useOptimistic", "forms"]
+    },
+    {
+      "question_id": "nextjs_l3_003", "level": 3, "category": "application",
+      "question": "Implement dynamic OG image với Next.js ImageResponse?",
+      "options": {
+        "A": "OG images phải tạo thủ công",
+        "B": "app/og/route.tsx với ImageResponse từ 'next/og' — render JSX thành PNG/JPG, dùng cho dynamic social sharing images",
+        "C": "Next.js không support OG images",
+        "D": "OG images chỉ có thể là static files"
+      },
+      "correct_answer": "B",
+      "explanation": "// app/opengraph-image.tsx (collocated với page): import { ImageResponse } from 'next/og'; export const runtime = 'edge'; export default async function OGImage({ params }) { const product = await getProduct(params.id); return new ImageResponse(<div style={{ display: 'flex', fontSize: 60, background: 'white', width: '100%', height: '100%' }}><img src={product.image} /><h1>{product.name}</h1><p>${product.price}</p></div>, { width: 1200, height: 630 }); }. Hỗ trợ: custom fonts (fetch TTF), dynamic content, Tailwind CSS classes. Cached automatically.",
+      "source": "https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image",
+      "tags": ["og-image", "ImageResponse", "social-sharing", "edge"]
+    },
+    {
+      "question_id": "nextjs_l3_004", "level": 3, "category": "application",
+      "question": "Next.js với database — pattern nào cho server components?",
+      "options": {
+        "A": "Phải qua API route khi access database",
+        "B": "Server Components có thể access database trực tiếp (Prisma, Drizzle); dùng request memoization để deduplicate; không expose database credentials xuống client",
+        "C": "Database access chỉ trong Route Handlers",
+        "D": "Next.js không hỗ trợ database access"
+      },
+      "correct_answer": "B",
+      "explanation": "Server Component database pattern: async function getUserOrders(userId: string) { return db.order.findMany({ where: { userId }, include: { items: true } }); }. export default async function OrdersPage({ params }) { const orders = await getUserOrders(params.userId); return <OrderList orders={orders} />; }. Request memoization: cache(getUserOrders) — wrap với React.cache() → multiple components gọi cùng function → chỉ 1 DB query. Prisma best practice: không import Prisma Client nhiều lần (global singleton pattern trong dev). Connection pooling: PgBouncer hoặc Prisma Accelerate cho serverless.",
+      "source": "https://nextjs.org/docs/app/building-your-application/data-fetching/fetching",
+      "tags": ["database", "prisma", "server-component", "caching", "memoization"]
+    },
+    {
+      "question_id": "nextjs_l3_005", "level": 3, "category": "application",
+      "question": "Next.js internationalization (i18n) setup?",
+      "options": {
+        "A": "Next.js không support i18n",
+        "B": "App Router: middleware detect locale, [lang] dynamic segment, getDictionary() để load translations, generateStaticParams cho all locales",
+        "C": "Chỉ dùng được với Pages Router",
+        "D": "i18n cần third-party CDN"
+      },
+      "correct_answer": "B",
+      "explanation": "App Router i18n: app/[lang]/page.tsx. Middleware: i18n routing detect từ Accept-Language header, cookies. Dictionary: // dictionaries/vi.json { 'home': { 'title': 'Trang chủ' } }. async function getDictionary(locale) { return import(`../dictionaries/${locale}.json`).then(m => m.default); }. export default async function Page({ params: { lang } }) { const dict = await getDictionary(lang); return <h1>{dict.home.title}</h1>; }. generateStaticParams: return ['en', 'vi', 'ja'].map(lang => ({ lang })). Libraries: next-intl (popular), next-i18next, next-translate.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/internationalization",
+      "tags": ["i18n", "internationalization", "localization", "middleware"]
+    },
+    {
+      "question_id": "nextjs_l3_006", "level": 3, "category": "application",
+      "question": "Next.js với Tailwind CSS — optimization cho production?",
+      "options": {
+        "A": "Tailwind CSS không tương thích với Next.js",
+        "B": "Tailwind auto purges unused CSS với content config, JIT mode generates on-demand, tw-merge cho conditional classes, class-variance-authority cho component variants",
+        "C": "Cần cấu hình thủ công để purge",
+        "D": "Tailwind không hoạt động với Server Components"
+      },
+      "correct_answer": "B",
+      "explanation": "Next.js + Tailwind setup: npx create-next-app --tailwind. tailwind.config.ts: content: ['./app/**/*.tsx', './components/**/*.tsx'] — JIT mode scan files, chỉ generate classes được dùng. Production: zero unused CSS, typically < 10KB. Patterns: clsx hoặc cn() helper: function cn(...classes) { return twMerge(clsx(classes)) }. class-variance-authority (CVA): const button = cva('rounded font-bold', { variants: { intent: { primary: 'bg-blue-500', danger: 'bg-red-500' } } }). Không conflict với Server Components — Tailwind là CSS, không JS.",
+      "source": "https://tailwindcss.com/docs/guides/nextjs",
+      "tags": ["tailwind", "purge", "JIT", "optimization", "clsx"]
+    },
+    {
+      "question_id": "nextjs_l4_001", "level": 4, "category": "debugging",
+      "question": "Hydration mismatch errors trong Next.js — nguyên nhân và fix?",
+      "options": {
+        "A": "Hydration errors chỉ xảy ra ở production",
+        "B": "Server-rendered HTML không match client HTML — do: random values, Date(), typeof window, browser extensions; Fix: suppressHydrationWarning, useEffect, dynamic với ssr:false",
+        "C": "Hydration không quan trọng với App Router",
+        "D": "Chỉ cần reload trang là fix"
+      },
+      "correct_answer": "B",
+      "explanation": "Hydration mismatch: React expect client HTML match server HTML. Causes: (1) Math.random(), new Date() trong render — different values server vs client. (2) typeof window checks — undefined on server. (3) Browser extensions inject DOM elements. (4) Third-party scripts modify DOM. Fix: (1) useEffect for browser-only code. (2) const ClientComp = dynamic(() => import('./ClientOnly'), { ssr: false }). (3) suppressHydrationWarning={true} on element khi mismatch là expected (timestamps). (4) 'use client' + useState initializer cho random/date. (5) useSyncExternalStore cho browser-only state.",
+      "source": "https://nextjs.org/docs/messages/react-hydration-error",
+      "tags": ["hydration", "SSR", "debugging", "mismatch"]
+    },
+    {
+      "question_id": "nextjs_l4_002", "level": 4, "category": "debugging",
+      "question": "Next.js build fails với 'Static generation failed'. Debug approach?",
+      "options": {
+        "A": "Chỉ cần chạy lại build",
+        "B": "Dynamic data (cookies/headers) dùng trong static route; fetch fail trong build time; generateStaticParams thiếu; database không accessible tại build time",
+        "C": "Chỉ xảy ra với Pages Router",
+        "D": "TypeScript errors gây ra lỗi này"
+      },
+      "correct_answer": "B",
+      "explanation": "Static generation failures: (1) Dùng cookies() hoặc headers() trong static route → Next.js force dynamic → conflict nếu route expect static. Fix: export dynamic = 'force-dynamic'. (2) Fetch external API fail tại build time → check NEXT_PUBLIC_API_URL env. (3) generateStaticParams cho dynamic routes: nếu thiếu → build fail hoặc 404. (4) Database not accessible tại build time (local DB trong CI). Fix: dùng mock data cho build, hoặc ISR thay SSG. (5) Missing required env vars. Debug: NEXT_DEBUG_BUILD=1 npm run build.",
+      "source": "https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config",
+      "tags": ["build", "static-generation", "debugging", "dynamic"]
+    },
+    {
+      "question_id": "nextjs_l4_003", "level": 4, "category": "debugging",
+      "question": "Next.js performance: Largest Contentful Paint (LCP) chậm. Cách debug?",
+      "options": {
+        "A": "LCP không liên quan đến Next.js code",
+        "B": "Dùng @next/bundle-analyzer, priority prop trên hero image, preload critical resources, eliminate render-blocking, font optimization",
+        "C": "Chỉ cần dùng Vercel để fix",
+        "D": "Giảm số routes"
+      },
+      "correct_answer": "B",
+      "explanation": "LCP optimization cho Next.js: (1) Hero image: <Image src='/hero.webp' priority alt='Hero' fill sizes='100vw' /> — priority adds preload. (2) Font: next/font → tự host fonts, eliminates FOUT, font-display:swap auto. (3) Bundle: @next/bundle-analyzer để tìm large deps. (4) Dynamic imports: const Heavy = dynamic(() => import('./Heavy')) cho non-critical components. (5) Prefetch: <Link prefetch={true}> cho critical navigation. (6) Streaming: Suspense boundaries để unblock HTML. (7) Server Components giảm JS bundle → faster parse. Measure: next build --profile + Lighthouse.",
+      "source": "https://nextjs.org/docs/app/building-your-application/optimizing",
+      "tags": ["LCP", "performance", "Image", "bundle", "optimization"]
+    },
+    {
+      "question_id": "nextjs_l4_004", "level": 4, "category": "debugging",
+      "question": "Next.js 'use client' và 'use server' — common mistakes?",
+      "options": {
+        "A": "Không có mistakes — chúng hoàn toàn tự động",
+        "B": "Import server component vào client component (illegal); pass non-serializable props từ server xuống client; missing 'use client' khi dùng hooks",
+        "C": "'use client' không cần thiết với App Router",
+        "D": "'use server' chỉ dùng trong API routes"
+      },
+      "correct_answer": "B",
+      "explanation": "Common mistakes: (1) Import server component vào 'use client' component → Error. Fix: pass server component như prop/children. (2) Non-serializable props: functions, class instances không thể pass qua server→client boundary. Fix: chỉ pass plain objects, strings, numbers. (3) Forgot 'use client' cho components dùng useState/useEffect/event handlers → Error: useState is not a function. (4) 'use server' trong component body (không phải file/function level). (5) Dùng cookies()/headers() trong client component — chỉ available trên server. (6) Accessing process.env sensitive vars trong client components — exposed trong bundle.",
+      "source": "https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns",
+      "tags": ["use-client", "use-server", "boundaries", "debugging", "mistakes"]
+    },
+    {
+      "question_id": "nextjs_l4_005", "level": 4, "category": "debugging",
+      "question": "Infinite redirect loop trong Next.js middleware. Nguyên nhân và fix?",
+      "options": {
+        "A": "Middleware không thể gây infinite redirect",
+        "B": "Middleware redirect đến URL bị chặn lại bởi chính middleware (ví dụ redirect /login → /login); thiếu matcher config; auth check middleware redirect cả login page",
+        "C": "Chỉ xảy ra ở development mode",
+        "D": "NextResponse.redirect không hoạt động"
+      },
+      "correct_answer": "B",
+      "explanation": "Infinite redirect causes: (1) Middleware check auth → redirect to /login → /login cũng bị middleware check → redirect to /login → loop. Fix: exclude /login từ matcher. (2) Matcher quá broad: matcher: '/:path*' — catch mọi path kể cả public paths. Fix: matcher: ['/dashboard/:path*', '/api/protected/:path*']. (3) NextResponse.redirect vs NextResponse.rewrite — rewrite giữ URL nhưng show content của URL khác (không redirect). (4) Check request.nextUrl.pathname trước khi redirect. Debug: console.log trong middleware + check Network tab cho redirect chain.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/middleware",
+      "tags": ["middleware", "redirect", "infinite-loop", "debugging"]
+    },
+    {
+      "question_id": "nextjs_l4_006", "level": 4, "category": "debugging",
+      "question": "Next.js API Route CORS errors — cách fix đúng?",
+      "options": {
+        "A": "CORS không thể fix trong Next.js",
+        "B": "Route Handler: return Response với Access-Control-Allow-Origin header; handle OPTIONS preflight; hoặc dùng next-cors library",
+        "C": "CORS chỉ là issue ở development",
+        "D": "Chỉ cần disable CORS trong browser"
+      },
+      "correct_answer": "B",
+      "explanation": "CORS trong Route Handler: export async function OPTIONS() { return new Response(null, { headers: { 'Access-Control-Allow-Origin': process.env.ALLOWED_ORIGIN || '*', 'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE,OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization' } }); }. export async function GET() { return Response.json(data, { headers: { 'Access-Control-Allow-Origin': allowedOrigin } }); }. Helper: const corsHeaders = { 'Access-Control-Allow-Origin': '*', ... }. Better: proxy qua Next.js để avoid CORS — frontend và API same origin. next.config.js: headers() để set global headers.",
+      "source": "https://nextjs.org/docs/app/building-your-application/routing/route-handlers",
+      "tags": ["CORS", "API", "route-handler", "headers", "debugging"]
+    },
+    {
+      "question_id": "nextjs_l5_001", "level": 5, "category": "production_scenario",
+      "question": "E-commerce với Next.js cần: product pages SEO, real-time inventory, shopping cart persist. Architecture?",
+      "options": {
+        "A": "Full SPA với client-side rendering",
+        "B": "ISR cho product pages (SEO + fresh data), Server Actions cho cart mutations, Redis cho session cart, on-demand revalidation khi inventory thay đổi",
+        "C": "SSR mọi thứ",
+        "D": "Static export, không cần server"
+      },
+      "correct_answer": "B",
+      "explanation": "Architecture: (1) Product pages: ISR với revalidate: 3600 — SEO-friendly, cached, nhưng revalidate. On-demand revalidate khi admin update product: revalidateTag('product-' + id). (2) Inventory: real-time với WebSocket hoặc Server-Sent Events — client subscribe, server push updates. (3) Cart: Server Actions cho add/remove, Redis với user session ID, cookies lưu session ID. (4) Checkout: Server-side với Stripe webhooks (Route Handler). (5) Search: Algolia hoặc Elasticsearch, client-side với instant search. (6) Images: Next.js Image với Cloudinary/S3 remote patterns. Deploy: Vercel với Edge Network cho global CDN.",
+      "source": "https://nextjs.org/docs/app/building-your-application/data-fetching",
+      "tags": ["e-commerce", "ISR", "Redis", "server-actions", "architecture"]
+    },
+    {
+      "question_id": "nextjs_l5_002", "level": 5, "category": "production_scenario",
+      "question": "Next.js app scale vấn đề: database connection pooling với serverless. Approach?",
+      "options": {
+        "A": "Serverless không thể dùng databases",
+        "B": "Prisma Accelerate/PgBouncer cho connection pooling; global Prisma singleton pattern trong dev; edge-compatible databases (PlanetScale, Neon, Turso)",
+        "C": "Chỉ dùng SQLite",
+        "D": "Tạo connection mới mỗi request"
+      },
+      "correct_answer": "B",
+      "explanation": "Serverless DB challenges: mỗi serverless function invocation có thể tạo new DB connection → connection pool exhaustion. Solutions: (1) Prisma Accelerate: connection pooling tầng edge, globally distributed. (2) PgBouncer (self-managed): pool transactions-mode. (3) Global singleton (dev): declare global { var prisma: PrismaClient }; const prisma = global.prisma || new PrismaClient(); if (process.env.NODE_ENV !== 'production') global.prisma = prisma. (4) Edge-compatible DBs: PlanetScale (MySQL over HTTP), Neon (PostgreSQL với HTTP), Turso (SQLite at edge). (5) Connection limit: DATABASE_URL với ?connection_limit=5&pool_timeout=20.",
+      "source": "https://www.prisma.io/docs/guides/performance-and-optimization/connection-management",
+      "tags": ["database", "serverless", "connection-pooling", "Prisma", "scale"]
+    },
+    {
+      "question_id": "nextjs_l5_003", "level": 5, "category": "production_scenario",
+      "question": "Next.js multi-tenant SaaS — mỗi customer có subdomain riêng. Architecture?",
+      "options": {
+        "A": "Deploy app riêng cho mỗi customer",
+        "B": "Middleware detect subdomain từ Host header, tenant-specific data loading, wildcard domain DNS, database tenant isolation, edge config cho tenant routing",
+        "C": "URL params thay vì subdomain",
+        "D": "Next.js không support multi-tenant"
+      },
+      "correct_answer": "B",
+      "explanation": "Multi-tenant với subdomains: (1) DNS: *.yourdomain.com CNAME → Vercel. Wildcard domain config trong vercel.json. (2) Middleware: const hostname = request.headers.get('host'); const subdomain = hostname.split('.')[0]; const tenant = await getTenantBySubdomain(subdomain); request.headers.set('x-tenant-id', tenant.id). (3) Layout/page: const tenantId = headers().get('x-tenant-id'); const tenantData = await getTenantData(tenantId). (4) Database isolation: tenant_id column mọi table + Row Level Security (Postgres). (5) Edge Config (Vercel): store tenant routing rules, phân phối global edge. (6) Custom domains: CNAME point của customer đến app.",
+      "source": "https://vercel.com/guides/nextjs-multi-tenant-application",
+      "tags": ["multi-tenant", "subdomain", "middleware", "SaaS", "architecture"]
+    },
+    {
+      "question_id": "nextjs_l5_004", "level": 5, "category": "production_scenario",
+      "question": "Next.js app cần giảm cold start trên Vercel serverless. Strategy?",
+      "options": {
+        "A": "Cold start không thể giải quyết",
+        "B": "Edge Runtime cho speed-critical routes, streaming responses, minimize bundle size per function, Vercel cron warmup, split functions theo size",
+        "C": "Chỉ deploy trên VPS",
+        "D": "Disable SSR"
+      },
+      "correct_answer": "B",
+      "explanation": "Cold start reduction: (1) Edge Runtime: export const runtime = 'edge' — V8 isolates, ~5ms cold start vs ~200ms Node.js. (2) Bundle size: tree-shake imports, dynamic() để split code. Vercel bundle size limit per function: 50MB. (3) Middleware luôn Edge — fast auth checks. (4) Warm strategies: Vercel Cron pings endpoints. (5) Streaming: start sending response immediately, stream rest → user sees content during 'warm-up'. (6) ISR: pre-render static pages, serverless chỉ cho truly dynamic. (7) Regional deployment: functions closer to users. (8) Database: Edge-compatible DB (Neon, PlanetScale) for edge functions.",
+      "source": "https://vercel.com/docs/functions/edge-functions/edge-runtime",
+      "tags": ["cold-start", "edge-runtime", "performance", "Vercel", "serverless"]
+    },
+    {
+      "question_id": "nextjs_l5_005", "level": 5, "category": "production_scenario",
+      "question": "Implement Next.js blog với MDX, syntax highlighting, và excellent SEO?",
+      "options": {
+        "A": "Next.js không support markdown",
+        "B": "@next/mdx hoặc contentlayer, generateStaticParams cho all posts, metadata API, sitemap.xml generation, structured data JSON-LD, RSS feed",
+        "C": "Dùng WordPress thay vì Next.js",
+        "D": "MDX không type-safe"
+      },
+      "correct_answer": "B",
+      "explanation": "Next.js MDX blog: (1) Contentlayer: type-safe MDX processing, define Document types với schema. (2) Or: @next/mdx với next.config.mjs (MDXComponents). (3) generateStaticParams: export async function generateStaticParams() { return allPosts.map(post => ({ slug: post.slug })); }. (4) Syntax highlighting: rehype-pretty-code với Shiki (server-side, no JS). (5) SEO: generateMetadata per post (title, description, OG image). (6) Sitemap: app/sitemap.ts export default function sitemap(): MetadataRoute.Sitemap {}. (7) RSS: app/feed.xml/route.ts return XML response. (8) JSON-LD: structured data article schema.",
+      "source": "https://nextjs.org/docs/app/building-your-application/configuring/mdx",
+      "tags": ["MDX", "blog", "SEO", "contentlayer", "static-generation"]
+    },
+    {
+      "question_id": "nextjs_l5_006", "level": 5, "category": "production_scenario",
+      "question": "Next.js app monitoring và observability cho production?",
+      "options": {
+        "A": "Chỉ cần console.log",
+        "B": "Vercel Analytics + Speed Insights, OpenTelemetry instrumentation, error tracking (Sentry), structured logging, custom metrics, alerting",
+        "C": "Monitoring chỉ cần ở infrastructure level",
+        "D": "Next.js không hỗ trợ custom metrics"
+      },
+      "correct_answer": "B",
+      "explanation": "Production observability stack: (1) Vercel Analytics: Web Vitals (LCP, FID, CLS) per page. Vercel Speed Insights: real user metrics. (2) OpenTelemetry: instrumentation.ts trong root. export async function register() { if (process.env.NEXT_RUNTIME === 'nodejs') { await import('./instrumentation-node'); } } — collect traces, send to Datadog/Jaeger. (3) Sentry: automatic error capture, source maps, performance. (4) Logging: Pino (structured JSON logs) → Datadog/Logtail. (5) Custom metrics: track business events (orders, signups) → Amplitude/Mixpanel. (6) Uptime: Better Uptime, PagerDuty alerts. (7) next/headers useReportWebVitals cho custom analytics.",
+      "source": "https://nextjs.org/docs/app/building-your-application/optimizing/instrumentation",
+      "tags": ["monitoring", "observability", "Sentry", "OpenTelemetry", "analytics"]
+    }
+  ]
+}

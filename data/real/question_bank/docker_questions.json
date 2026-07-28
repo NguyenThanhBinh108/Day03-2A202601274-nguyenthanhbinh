@@ -1,0 +1,582 @@
+{
+  "skill": "Docker",
+  "skill_key": "docker",
+  "total_questions": 27,
+  "levels": {
+    "1_beginner": 6,
+    "2_understanding": 6,
+    "3_application": 6,
+    "4_debugging": 6,
+    "5_production": 3
+  },
+  "generated_at": "2026-06-12T01:12:32.386766",
+  "source_references": [
+    "https://docs.docker.com/",
+    "https://www.geeksforgeeks.org/docker-tutorial/",
+    "https://www.freecodecamp.org/news/the-docker-handbook/"
+  ],
+  "questions": [
+    {
+      "question_id": "docker_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Docker container khác với Virtual Machine ở điểm cơ bản nào?",
+      "options": {
+        "A": "Container dùng chung OS kernel với host, VM có OS riêng",
+        "B": "Container nặng hơn VM",
+        "C": "VM bảo mật kém hơn Container",
+        "D": "Container không chạy được trên Windows"
+      },
+      "correct_answer": "A",
+      "explanation": "Container: share OS kernel với host → nhẹ (MB), khởi động nhanh (giây), ít overhead. VM: hypervisor (Type 1 hoặc 2) → OS riêng → nặng (GB), khởi động chậm (phút). Container vs VM: Container không phải là bảo mật tuyệt đối (share kernel → container escape attacks). Dùng cả hai: VM cho isolation (security), containers trong VM cho density.",
+      "source": "https://www.geeksforgeeks.org/docker-vs-virtual-machine/",
+      "tags": [
+        "container",
+        "VM",
+        "concept"
+      ]
+    },
+    {
+      "question_id": "docker_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Dockerfile, Image, và Container có mối quan hệ như thế nào?",
+      "options": {
+        "A": "Ba thứ giống nhau, chỉ khác tên",
+        "B": "Dockerfile → build → Image → run → Container (instance đang chạy)",
+        "C": "Container build ra Image",
+        "D": "Dockerfile chạy trực tiếp"
+      },
+      "correct_answer": "B",
+      "explanation": "Pipeline: Dockerfile (text blueprint với instructions) → docker build → Image (immutable snapshot, layered filesystem) → docker run → Container (running instance của Image). 1 Image có thể tạo nhiều Containers. Images được lưu trong Registry (Docker Hub, ECR, GCR). docker commit container → tạo Image từ container (không khuyến khích).",
+      "source": "https://www.geeksforgeeks.org/docker-tutorial/",
+      "tags": [
+        "dockerfile",
+        "image",
+        "container",
+        "pipeline"
+      ]
+    },
+    {
+      "question_id": "docker_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Lệnh nào chạy container nginx ở background, map port 8080 host vào 80 container, tự restart khi reboot?",
+      "options": {
+        "A": "docker run nginx -p 8080:80 --restart",
+        "B": "docker run -d -p 8080:80 --restart=always nginx",
+        "C": "docker start -d -p 8080:80 nginx",
+        "D": "docker run -p 80:8080 --daemon nginx"
+      },
+      "correct_answer": "B",
+      "explanation": "-d: detached (background). -p host:container: port mapping. --restart=always: restart khi Docker daemon restart (reboot). Restart policies: no (default), always, on-failure[:max-retries], unless-stopped (không restart nếu manually stopped). Đáp án D: port ngược (80:8080 = port 80 host → 8080 container). --daemon không phải flag hợp lệ.",
+      "source": "https://www.geeksforgeeks.org/docker-run-command/",
+      "tags": [
+        "run",
+        "port",
+        "restart",
+        "command"
+      ]
+    },
+    {
+      "question_id": "docker_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "docker-compose.yml dùng để làm gì?",
+      "options": {
+        "A": "Build Docker images",
+        "B": "Định nghĩa và chạy multi-container applications với network và volume tự động",
+        "C": "Deploy lên Kubernetes",
+        "D": "Monitor containers"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker Compose: định nghĩa services, networks, volumes trong YAML. docker compose up -d → khởi động tất cả services. Auto-create bridge network cho services giao tiếp bằng service name. depends_on: kiểm soát startup order (chú ý: không đợi service ready, chỉ đợi container started). v2 (docker-compose) deprecated, dùng v3 (docker compose).",
+      "source": "https://www.geeksforgeeks.org/docker-compose/",
+      "tags": [
+        "docker-compose",
+        "multi-container",
+        "yaml"
+      ]
+    },
+    {
+      "question_id": "docker_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Docker volume dùng để làm gì và tại sao cần thiết?",
+      "options": {
+        "A": "Tăng tốc độ container",
+        "B": "Persist data ngoài container lifecycle — data không mất khi container bị xóa/recreate",
+        "C": "Share code giữa containers",
+        "D": "Giới hạn memory của container"
+      },
+      "correct_answer": "B",
+      "explanation": "Container filesystem là ephemeral — mất khi container bị remove. Volume: persist data trên host. Types: (1) Named volume: docker volume create mydata → managed by Docker (recommended). (2) Bind mount: -v /host/path:/container/path → map host directory. (3) tmpfs mount: in-memory only. Dùng volume cho: database data, uploaded files, logs. Không dùng volume cho: code (dùng build context), secrets (dùng Docker secrets).",
+      "source": "https://www.geeksforgeeks.org/docker-volumes/",
+      "tags": [
+        "volume",
+        "persistence",
+        "bind-mount"
+      ]
+    },
+    {
+      "question_id": "docker_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": ".dockerignore file dùng để làm gì?",
+      "options": {
+        "A": "Ẩn Docker config khỏi team members",
+        "B": "Exclude files/directories khỏi build context — giúp image nhỏ hơn và build nhanh hơn",
+        "C": "Chỉ dùng với .gitignore",
+        "D": "Block container khỏi internet"
+      },
+      "correct_answer": "B",
+      "explanation": "Build context = tất cả files gửi đến Docker daemon khi build. .dockerignore: exclude node_modules/, .git/, *.log, .env, test/, docs/. Lợi ích: (1) Nhỏ build context → gửi ít data hơn → build nhanh hơn. (2) Không copy node_modules vào image (sẽ install lại trong Dockerfile). (3) Không leak secrets (.env). (4) Image nhỏ hơn. Cú pháp giống .gitignore.",
+      "source": "https://www.geeksforgeeks.org/what-is-dockerignore-and-how-to-use-it/",
+      "tags": [
+        "dockerignore",
+        "build-context",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "docker_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Docker image layer và layer caching hoạt động thế nào? Tại sao thứ tự Dockerfile instructions quan trọng?",
+      "options": {
+        "A": "Thứ tự không quan trọng, Docker build mọi thứ từ đầu",
+        "B": "Mỗi instruction tạo 1 layer; layer cache invalidate khi instruction hoặc context thay đổi; đặt thay đổi ít nhất lên trên để tận dụng cache",
+        "C": "Cache chỉ hoạt động cho RUN commands",
+        "D": "Layers không liên quan đến build speed"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker layers: mỗi RUN/COPY/ADD tạo 1 layer. Layer caching: nếu instruction và context không đổi → dùng cached layer. Invalidation: khi 1 layer invalidate, tất cả layers sau đó cũng bị rebuild. Pattern tốt: COPY package.json . → RUN npm install → COPY . . (code thay đổi không invalidate npm install layer). Pattern xấu: COPY . . → RUN npm install (mọi code change = reinstall packages).",
+      "source": "https://www.geeksforgeeks.org/docker-caching/",
+      "tags": [
+        "layers",
+        "caching",
+        "dockerfile-optimization"
+      ]
+    },
+    {
+      "question_id": "docker_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Multi-stage build trong Docker giải quyết vấn đề gì?",
+      "options": {
+        "A": "Chạy nhiều services trong 1 container",
+        "B": "Tách build environment (full toolchain) khỏi runtime image (chỉ binary/artifacts) → image production nhỏ hơn nhiều",
+        "C": "Build nhiều images song song",
+        "D": "Share code giữa services"
+      },
+      "correct_answer": "B",
+      "explanation": "Vấn đề: build tools (gcc, npm, maven) không cần cho runtime nhưng nếu trong image → image rất nặng. Multi-stage: FROM node:18 AS builder → RUN npm build. FROM node:18-alpine → COPY --from=builder /app/dist /app. Production image chỉ có output, không có source và build tools. Ví dụ Go app: builder stage ~1GB, final image ~10MB. Tương tự: Java (Maven build → JRE runtime), Python (pip install → chỉ site-packages).",
+      "source": "https://www.geeksforgeeks.org/multi-stage-build-in-docker/",
+      "tags": [
+        "multi-stage",
+        "image-size",
+        "build-optimization"
+      ]
+    },
+    {
+      "question_id": "docker_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Docker network types và khi nào dùng loại nào?",
+      "options": {
+        "A": "Docker chỉ có 1 loại network",
+        "B": "bridge (default, container-to-container local), host (share host network stack), overlay (Swarm/K8s multi-host), none (no network)",
+        "C": "Containers không thể giao tiếp với nhau",
+        "D": "Chỉ cần dùng --link flag"
+      },
+      "correct_answer": "B",
+      "explanation": "Bridge (default): tạo virtual bridge, containers communicate bằng IP hoặc service name (custom bridge). Host: container dùng host network stack — port 80 trong container = port 80 host (performance tốt hơn, ít isolation). Overlay: Swarm/Kubernetes — communicate giữa nodes khác nhau. Macvlan: container có MAC address riêng (advanced). --link deprecated, dùng custom bridge network thay thế. docker compose tự tạo custom bridge network → services communicate bằng service name.",
+      "source": "https://www.geeksforgeeks.org/docker-networking/",
+      "tags": [
+        "networking",
+        "bridge",
+        "overlay",
+        "host"
+      ]
+    },
+    {
+      "question_id": "docker_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Docker secret và environment variable khác nhau thế nào về bảo mật?",
+      "options": {
+        "A": "Cả hai đều an toàn như nhau",
+        "B": "ENV hiển thị trong docker inspect và image history; Docker secrets encrypted at rest, chỉ available in-memory cho authorized services",
+        "C": "ENV bảo mật hơn secrets",
+        "D": "Cả hai đều không nên dùng"
+      },
+      "correct_answer": "B",
+      "explanation": "ENV trong Dockerfile: baked vào image, hiển thị qua docker inspect và docker history → không dùng cho secrets. -e MY_SECRET=xxx: hiển thị trong docker inspect container. Docker Secrets (Swarm/K8s): encrypted at rest (Raft consensus), decrypted in-memory, available as /run/secrets/my_secret trong container, không hiển thị trong inspect. Alternative: .env files (không commit), Vault by HashiCorp, AWS Secrets Manager, K8s Secrets (base64 encoded, not encrypted by default — dùng Sealed Secrets hoặc External Secrets Operator).",
+      "source": "https://www.geeksforgeeks.org/how-to-use-docker-secrets/",
+      "tags": [
+        "secrets",
+        "security",
+        "env",
+        "Swarm"
+      ]
+    },
+    {
+      "question_id": "docker_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "Healthcheck trong Docker Compose/Dockerfile dùng như thế nào và tại sao quan trọng?",
+      "options": {
+        "A": "Healthcheck chỉ là optional, không cần trong production",
+        "B": "Healthcheck định kỳ test xem service ready chưa — depends_on với condition:service_healthy đảm bảo service A chờ B thực sự ready",
+        "C": "Healthcheck thay thế logging",
+        "D": "Chỉ Kubernetes có healthcheck"
+      },
+      "correct_answer": "B",
+      "explanation": "HEALTHCHECK CMD curl -f http://localhost:8080/health || exit 1. docker compose: healthcheck: test: ['CMD','pg_isready','-U','postgres']; interval: 10s; timeout: 5s; retries: 5. depends_on: db: condition: service_healthy → Service B chờ DB thực sự accept connections, không chỉ chờ container start. Health states: starting, healthy, unhealthy. Kubernetes: livenessProbe (restart nếu unhealthy), readinessProbe (remove từ load balancer nếu not ready), startupProbe.",
+      "source": "https://www.geeksforgeeks.org/docker-health-check/",
+      "tags": [
+        "healthcheck",
+        "depends_on",
+        "compose",
+        "production"
+      ]
+    },
+    {
+      "question_id": "docker_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "ENTRYPOINT và CMD trong Dockerfile khác nhau thế nào?",
+      "options": {
+        "A": "Cả hai đều giống nhau",
+        "B": "ENTRYPOINT: executable không thể override; CMD: default args, có thể override khi docker run; kết hợp: ENTRYPOINT executable + CMD default_args",
+        "C": "CMD chạy khi build, ENTRYPOINT chạy khi run",
+        "D": "Chỉ dùng 1 trong 2"
+      },
+      "correct_answer": "B",
+      "explanation": "CMD ['python', 'app.py']: default command, override bằng docker run image other_command. ENTRYPOINT ['python']: executable, không override được (dùng --entrypoint flag để override). Kết hợp thường dùng: ENTRYPOINT ['python'] + CMD ['app.py'] → docker run image → python app.py; docker run image test.py → python test.py. Shell form: CMD python app.py (chạy via /bin/sh -c, không nhận signals đúng). Exec form: CMD ['python', 'app.py'] (PID 1, nhận SIGTERM → graceful shutdown). Luôn dùng exec form.",
+      "source": "https://www.geeksforgeeks.org/difference-between-run-cmd-and-entrypoint-commands-in-a-dockerfile/",
+      "tags": [
+        "ENTRYPOINT",
+        "CMD",
+        "RUN",
+        "Dockerfile"
+      ]
+    },
+    {
+      "question_id": "docker_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Viết Dockerfile tối ưu cho Node.js Express app (package.json, src/, không dùng TypeScript)?",
+      "options": {
+        "A": "FROM node:latest\nCOPY . .\nRUN npm install\nCMD node src/index.js",
+        "B": "FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --only=production\nCOPY src/ ./src/\nUSER node\nCMD [\"node\",\"src/index.js\"]",
+        "C": "FROM node\nRUN npm install\nEXPOSE 3000",
+        "D": "FROM node:20\nCOPY . .\nRUN npm install\nEXPOSE 3000\nENTRYPOINT node"
+      },
+      "correct_answer": "B",
+      "explanation": "Best practices: (1) alpine tag: ~130MB vs 950MB (full node). (2) WORKDIR: tránh root filesystem pollution. (3) COPY package*.json trước: cache npm install layer, chỉ reinstall khi package.json đổi. (4) npm ci: deterministic install từ package-lock.json (vs npm install có thể update packages). (5) --only=production: không install devDependencies. (6) COPY src/ sau: code change không invalidate npm install layer. (7) USER node: non-root for security. (8) CMD exec form: nhận SIGTERM cho graceful shutdown.",
+      "source": "https://www.geeksforgeeks.org/how-to-dockerize-a-node-js-application/",
+      "tags": [
+        "nodejs",
+        "dockerfile",
+        "best-practices",
+        "alpine"
+      ]
+    },
+    {
+      "question_id": "docker_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Docker Compose file cho app gồm: FastAPI app, PostgreSQL, Redis. Cách config đúng?",
+      "options": {
+        "A": "Tất cả trong 1 service",
+        "B": "3 services với healthchecks, volumes cho DB data, custom network, depends_on với condition:service_healthy, environment từ .env file",
+        "C": "Chỉ cần services, không cần network",
+        "D": "Dùng host network cho tất cả"
+      },
+      "correct_answer": "B",
+      "explanation": "Cấu trúc chuẩn: services: api: build: .; depends_on: db: condition:service_healthy; redis: condition:service_healthy; env_file: .env. db: image:postgres:15-alpine; healthcheck: test:[pg_isready]; volumes:[pg_data:/var/lib/postgresql/data]. redis: image:redis:7-alpine; healthcheck: test:[redis-cli,ping]. volumes: pg_data:. networks: backend: để isolate. Không commit .env, có .env.example. Docker compose v2 (compose plugin) không cần docker-compose.yml version field.",
+      "source": "https://www.geeksforgeeks.org/docker-compose/",
+      "tags": [
+        "docker-compose",
+        "postgresql",
+        "redis",
+        "healthcheck"
+      ]
+    },
+    {
+      "question_id": "docker_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Giới hạn resources (CPU, Memory) cho container trong Docker Compose thế nào?",
+      "options": {
+        "A": "Không thể giới hạn resources trong Docker Compose",
+        "B": "deploy.resources.limits (memory, cpus) trong compose v3; hoặc --memory --cpus flags trong docker run",
+        "C": "Chỉ giới hạn được qua Kubernetes",
+        "D": "Dùng cgroups thủ công"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker Compose v3: deploy: resources: limits: cpus: '0.5'; memory: 512M; reservations: memory: 256M. docker run: --memory=512m --memory-swap=512m (swap = memory = no swap) --cpus=0.5. OOM Killer: khi container vượt memory limit, kernel kill process (OOM = Out Of Memory). Memory reservation: soft limit, không enforce cứng. CPU: 0.5 = 50% của 1 core, không phải 50% của tất cả cores. Quan trọng cho production để prevent noisy neighbor problem.",
+      "source": "https://www.geeksforgeeks.org/limit-memory-for-docker-containers/",
+      "tags": [
+        "resources",
+        "memory",
+        "CPU",
+        "limits"
+      ]
+    },
+    {
+      "question_id": "docker_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Cách push image lên Docker Hub và pull về trên server production?",
+      "options": {
+        "A": "docker send image username/app:v1",
+        "B": "docker tag local-image username/repo:tag → docker login → docker push; server: docker pull username/repo:tag",
+        "C": "Copy Dockerfile lên server rồi build lại",
+        "D": "Dùng FTP transfer image file"
+      },
+      "correct_answer": "B",
+      "explanation": "CI/CD workflow: (1) Build: docker build -t myapp:v1.2.3 . (2) Tag: docker tag myapp:v1.2.3 username/myapp:v1.2.3 và username/myapp:latest. (3) Login: docker login (hoặc dùng token trong CI). (4) Push: docker push username/myapp:v1.2.3. (5) Production: docker pull username/myapp:v1.2.3. Semver tags: major.minor.patch. Private registry: AWS ECR, GCR, GitLab Registry. docker save/load: export/import image as .tar (air-gapped environments). Best practice: tag với git commit SHA cho traceability.",
+      "source": "https://www.geeksforgeeks.org/pushing-and-pulling-docker-images-from-docker-hub/",
+      "tags": [
+        "registry",
+        "push",
+        "pull",
+        "CI-CD",
+        "Docker-Hub"
+      ]
+    },
+    {
+      "question_id": "docker_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Debugging container đang chạy — các lệnh quan trọng cần biết?",
+      "options": {
+        "A": "Chỉ check logs là đủ",
+        "B": "docker logs -f, docker exec -it /bin/sh, docker inspect, docker stats, docker top",
+        "C": "Phải restart container để debug",
+        "D": "Dùng docker debug command"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug toolkit: docker logs -f --tail=100 container_name (realtime logs, 100 dòng cuối). docker exec -it container_name /bin/sh (shell vào container đang chạy; dùng bash nếu có). docker inspect container_name (JSON: config, network, mounts). docker stats container_name (realtime CPU/Memory/Network/IO). docker top container_name (processes trong container). docker diff container_name (filesystem changes). docker cp file container:/path (copy file vào/ra). Alpine containers: không có bash, chỉ có sh. Thêm debug tools: docker exec container apk add --no-cache curl.",
+      "source": "https://www.geeksforgeeks.org/docker-exec-command/",
+      "tags": [
+        "debugging",
+        "exec",
+        "logs",
+        "inspect",
+        "stats"
+      ]
+    },
+    {
+      "question_id": "docker_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Cách setup CI/CD pipeline với Docker và GitHub Actions?",
+      "options": {
+        "A": "Docker không tích hợp được với GitHub Actions",
+        "B": "Workflow: on push → build image → run tests trong container → push to registry → deploy",
+        "C": "Chỉ Jenkins mới build được Docker image",
+        "D": "Cần Docker Desktop trên CI runner"
+      },
+      "correct_answer": "B",
+      "explanation": "GitHub Actions Docker workflow: on: push: branches: [main]. jobs: build: runs-on: ubuntu-latest. steps: - uses: actions/checkout@v4. - uses: docker/login-action@v3 with: registry:ghcr.io; username/password: secrets. - uses: docker/build-push-action@v5 with: push:true; tags: ghcr.io/org/app:${{github.sha}}. Test: run tests trong container: docker run --rm myapp pytest. Cache: actions/cache cho Docker layer cache. GitHub Container Registry (ghcr.io): free cho public repos, integrated với GitHub Actions.",
+      "source": "https://www.freecodecamp.org/news/docker-ci-cd-pipeline-github-actions/",
+      "tags": [
+        "GitHub-Actions",
+        "CI-CD",
+        "registry",
+        "automation"
+      ]
+    },
+    {
+      "question_id": "docker_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Docker image build thành công nhưng size 2GB dù app chỉ 50MB. Nguyên nhân và fix?",
+      "options": {
+        "A": "Hardware vấn đề",
+        "B": "Base image nặng, build tools không cleanup, package manager cache, COPY thừa files — dùng alpine + multi-stage + .dockerignore + --no-cache flag",
+        "C": "Cần SSD để image nhỏ hơn",
+        "D": "Đây là kích thước bình thường"
+      },
+      "correct_answer": "B",
+      "explanation": "Nguyên nhân image nặng: (1) Base image: node:latest ~950MB, dùng node:20-alpine ~130MB. (2) Build tools còn trong layer: apt-get install build-essential → không apt-get remove sau → layer vẫn chứa. Fix: apt-get install -y pkg && apt-get clean && rm -rf /var/lib/apt/lists/*. (3) Multi-stage: copy chỉ artifacts. (4) node_modules trong image: 300MB+, loại bằng .dockerignore + npm ci --only=production. (5) RUN cd /tmp && git clone large_repo && rm -rf /tmp/repo — git history vẫn trong lower layer. Analyze: docker image history myapp --no-trunc. Tool: dive (docker image analyzer).",
+      "source": "https://www.geeksforgeeks.org/how-to-reduce-docker-image-size/",
+      "tags": [
+        "image-size",
+        "optimization",
+        "multi-stage",
+        "alpine"
+      ]
+    },
+    {
+      "question_id": "docker_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Container liên tục restart với exit code 137. Nguyên nhân là gì?",
+      "options": {
+        "A": "Network configuration sai",
+        "B": "OOM Kill — container bị kernel kill vì dùng quá memory limit (exit code 137 = 128 + SIGKILL signal 9)",
+        "C": "Dockerfile syntax error",
+        "D": "Port conflict"
+      },
+      "correct_answer": "B",
+      "explanation": "Exit codes: 0 = success, 1 = app error, 137 = killed by signal 9 (SIGKILL, OOM), 139 = segfault. Exit 137 + container restart → OOM killer. Verify: docker inspect container → OOMKilled: true; dmesg | grep -i 'oom'. Debug: docker stats (track memory usage trend), xem application logs trước khi kill. Fix: (1) Tăng memory limit. (2) Fix memory leak trong app. (3) Tối ưu memory usage (ví dụ: Node.js heap với --max-old-space-size). (4) JVM: set -Xmx explicit để tránh JVM dùng vượt container limit.",
+      "source": "https://www.geeksforgeeks.org/docker-container-exit-codes/",
+      "tags": [
+        "OOM",
+        "exit-code",
+        "debugging",
+        "memory"
+      ]
+    },
+    {
+      "question_id": "docker_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "Docker container không thể connect đến database container dù cùng docker-compose. Checklist debug?",
+      "options": {
+        "A": "Dùng localhost thay vì service name",
+        "B": "Check: service name trong connection string, healthcheck, network, depends_on condition, env vars, logs của cả hai services",
+        "C": "Restart Docker daemon",
+        "D": "Dùng --link flag"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug steps: (1) Connection string: dùng SERVICE NAME không phải localhost hay IP. Sai: DB_HOST=localhost. Đúng: DB_HOST=db (tên service). (2) Health: docker compose ps — DB service có healthy chưa? (3) Network: docker network inspect network_name — cả hai services trong cùng network? (4) Env vars: docker compose exec api env | grep DB — env vars đã được load chưa? (5) Logs: docker compose logs db — DB có lỗi gì không? (6) Test connection: docker compose exec api ping db; docker compose exec api nc -zv db 5432. (7) depends_on: có condition: service_healthy không?",
+      "source": "https://www.geeksforgeeks.org/docker-compose/",
+      "tags": [
+        "networking",
+        "debugging",
+        "connection",
+        "compose"
+      ]
+    },
+    {
+      "question_id": "docker_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao graceful shutdown quan trọng trong Docker và cách implement?",
+      "options": {
+        "A": "Graceful shutdown chỉ cần trong Kubernetes",
+        "B": "PID 1 trong container phải handle SIGTERM; nếu dùng shell form CMD, SIGTERM bị ignore → force kill sau 10s → data corruption/incomplete requests",
+        "C": "Docker tự handle graceful shutdown",
+        "D": "Chỉ cần --stop-timeout là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "docker stop → gửi SIGTERM → chờ 10s (stop timeout) → gửi SIGKILL. Vấn đề: CMD python app.py chạy via /bin/sh -c → /bin/sh là PID 1, không forward SIGTERM. Fix: dùng exec form CMD ['python', 'app.py'] → python là PID 1, nhận SIGTERM. Node.js: process.on('SIGTERM', () => server.close(() => process.exit(0))). Tini hoặc dumb-init: tiny init system, đúng signal handling và zombie reaping. Kubernetes: terminationGracePeriodSeconds (default 30s). Tăng timeout: docker stop -t 30 container.",
+      "source": "https://www.geeksforgeeks.org/graceful-shutdown-docker-container/",
+      "tags": [
+        "graceful-shutdown",
+        "SIGTERM",
+        "PID1",
+        "production"
+      ]
+    },
+    {
+      "question_id": "docker_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Docker build context quá lớn (2GB) làm build chậm mặc dù code chỉ 10MB. Fix thế nào?",
+      "options": {
+        "A": "Dùng SSD nhanh hơn",
+        "B": "Tạo .dockerignore đúng cách: exclude node_modules, .git, data folders, build artifacts, logs",
+        "C": "Tăng Docker daemon memory",
+        "D": "Chia nhỏ Dockerfile"
+      },
+      "correct_answer": "B",
+      "explanation": "Build context = tất cả files gửi đến Docker daemon qua socket. Verify: docker build hiển thị 'Sending build context to Docker daemon Xmb'. .dockerignore content cần thiết: node_modules/ (npm install trong Dockerfile), .git/ (không cần git history), dist/ build/ (build artifacts), *.log, .env, data/ (large data files), __pycache__/ *.pyc (Python). Sau khi thêm .dockerignore: build context từ 2GB → 10MB → build nhanh hơn nhiều. Verify: docker build --no-cache . → xem output 'Sending build context'.",
+      "source": "https://www.geeksforgeeks.org/what-is-dockerignore-and-how-to-use-it/",
+      "tags": [
+        "build-context",
+        "dockerignore",
+        "performance"
+      ]
+    },
+    {
+      "question_id": "docker_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Container chạy với user root trong production — vấn đề bảo mật và cách fix?",
+      "options": {
+        "A": "Root trong container an toàn vì isolated",
+        "B": "Container escape attack có thể compromise host nếu chạy root; dùng USER instruction, non-root base images, read-only filesystem",
+        "C": "Chỉ Kubernetes cần non-root",
+        "D": "Dùng --privileged flag thay thế"
+      },
+      "correct_answer": "B",
+      "explanation": "Root trong container = risk: (1) Container escape vulnerabilities → attacker có root trên host. (2) File permissions: process create files owned by root → host volume files cũng owned by root. Fix: Dockerfile: RUN groupadd -r appuser && useradd -r -g appuser appuser; USER appuser. Hoặc dùng --user flag: docker run --user 1000:1000 myimage. Non-root base images: node:20-alpine đã có user node (uid 1000). Read-only filesystem: docker run --read-only --tmpfs /tmp myimage. Kubernetes: securityContext: runAsNonRoot: true; runAsUser: 1000; allowPrivilegeEscalation: false.",
+      "source": "https://www.geeksforgeeks.org/docker-security-best-practices/",
+      "tags": [
+        "security",
+        "non-root",
+        "container-escape",
+        "production"
+      ]
+    },
+    {
+      "question_id": "docker_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Service B thường xuyên crash 'Connection refused' 10-30s đầu dù dùng depends_on. Nguyên nhân và fix production?",
+      "options": {
+        "A": "depends_on bug, upgrade Docker",
+        "B": "depends_on chỉ đợi container started, không đợi service ready. Fix: healthcheck + condition:service_healthy + retry logic trong app",
+        "C": "Tăng timeout",
+        "D": "Chạy cùng container"
+      },
+      "correct_answer": "B",
+      "explanation": "depends_on mặc định: chỉ đợi container status = running, không đợi app bên trong ready nhận connections. Fix toàn diện: (1) Healthcheck cho DB: HEALTHCHECK CMD pg_isready -U postgres. (2) depends_on với condition: db: condition: service_healthy. (3) App-level retry (defense in depth): exponential backoff khi connect DB fail. (4) wait-for-it.sh script (nếu không muốn healthcheck). (5) K8s: initContainers để check dependency. Lỗi này cực phổ biến ở team mới dùng Docker Compose ở VN.",
+      "source": "https://www.geeksforgeeks.org/docker-compose-depends_on/",
+      "tags": [
+        "depends_on",
+        "healthcheck",
+        "production",
+        "startup-order"
+      ]
+    },
+    {
+      "question_id": "docker_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trên production, làm thế nào để update Docker image với zero downtime?",
+      "options": {
+        "A": "docker stop → pull → run (gây downtime)",
+        "B": "Blue-green deployment, hoặc rolling update với Docker Swarm/K8s, load balancer health check để route traffic gracefully",
+        "C": "Restart nhanh là đủ",
+        "D": "Chỉ update giờ thấp điểm"
+      },
+      "correct_answer": "B",
+      "explanation": "Zero-downtime strategies: (1) Blue-green: chạy 2 environments (blue=current, green=new). Nginx: upstream blue { server blue:8080 } → test green → switch upstream → green trở thành blue. (2) Rolling update: Docker Swarm: docker service update --update-parallelism 1 --update-delay 10s --image newimg service_name. (3) Kubernetes: RollingUpdate strategy (default), configure maxSurge và maxUnavailable. (4) Canary: 10% traffic → new version → monitor → 100%. Health checks là bắt buộc: load balancer chỉ route traffic đến healthy instances. Rollback: docker service rollback service_name.",
+      "source": "https://www.freecodecamp.org/news/docker-zero-downtime-deployment/",
+      "tags": [
+        "zero-downtime",
+        "blue-green",
+        "rolling-update",
+        "production"
+      ]
+    },
+    {
+      "question_id": "docker_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Docker Compose app trên VPS bị tấn công. Tìm thấy container đang mine cryptocurrency. Post-incident checklist?",
+      "options": {
+        "A": "Chỉ cần restart containers",
+        "B": "Isolate→ forensics → remediate: network isolation, kill malicious containers, audit all images, rotate secrets, patch vulnerabilities, implement image scanning",
+        "C": "Reinstall OS là đủ",
+        "D": "Chỉ update Docker"
+      },
+      "correct_answer": "B",
+      "explanation": "Incident response: (1) Isolate: docker network disconnect hoặc iptables DROP outbound để prevent data exfiltration. (2) Forensics: docker diff, docker history, check processes (docker top), network connections (ss -tulpn), crontab -l, /etc/cron.d. (3) Identify vector: CVE trong base image? Exposed Docker socket? Leaked secrets? Compromised image? (4) Remediate: pull từ trusted registries only, sign images (Docker Content Trust), scan images (Trivy, Grype), không expose Docker socket. (5) Hardening: AppArmor/seccomp profiles, rootless Docker, network policies. (6) Rotate tất cả secrets, tokens, passwords.",
+      "source": "https://www.freecodecamp.org/news/docker-security-best-practices/",
+      "tags": [
+        "security",
+        "incident-response",
+        "hardening",
+        "forensics"
+      ]
+    }
+  ]
+}

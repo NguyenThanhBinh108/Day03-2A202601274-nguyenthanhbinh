@@ -1,0 +1,92 @@
+{
+  "skill": "Node.js",
+  "skill_key": "nodejs",
+  "total_resources": 7,
+  "generated_at": "2026-06-12T01:31:37.815014",
+  "resources": [
+    {
+      "resource_id": "node_r001",
+      "title": "Node.js Official Documentation",
+      "url": "https://nodejs.org/en/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "all",
+      "rating": 5,
+      "description": "Tài liệu Node.js chính thức",
+      "best_for": "Complete reference"
+    },
+    {
+      "resource_id": "node_r002",
+      "title": "GeeksForGeeks Node.js Tutorial",
+      "url": "https://www.geeksforgeeks.org/node-js/",
+      "type": "tutorial",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner_to_intermediate",
+      "rating": 4,
+      "description": "Node.js tutorial toàn diện",
+      "best_for": "Learning Node.js step by step"
+    },
+    {
+      "resource_id": "node_r003",
+      "title": "freeCodeCamp Back End Development and APIs",
+      "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/",
+      "type": "course",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner",
+      "rating": 5,
+      "description": "Khóa học backend với Node.js certification",
+      "best_for": "Beginners, structured learning"
+    },
+    {
+      "resource_id": "node_r004",
+      "title": "Express.js Official Documentation",
+      "url": "https://expressjs.com/",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate",
+      "rating": 5,
+      "description": "Express.js official docs",
+      "best_for": "Express API development"
+    },
+    {
+      "resource_id": "node_r005",
+      "title": "Fastify — Fast Node.js Web Framework",
+      "url": "https://www.fastify.io/docs/latest/",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate",
+      "rating": 5,
+      "description": "Fastify docs — faster alternative to Express",
+      "best_for": "Performance-focused APIs"
+    },
+    {
+      "resource_id": "node_r006",
+      "title": "Node.js Best Practices (GitHub)",
+      "url": "https://github.com/goldbergyoni/nodebestpractices",
+      "type": "reference",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate_to_advanced",
+      "rating": 5,
+      "description": "100+ Node.js best practices với explanations",
+      "best_for": "Production-ready code"
+    },
+    {
+      "resource_id": "node_r007",
+      "title": "Viblo Node.js Articles",
+      "url": "https://viblo.asia/tags/nodejs",
+      "type": "community",
+      "is_free": true,
+      "language": "Vietnamese",
+      "level": "all",
+      "rating": 4,
+      "description": "Bài viết Node.js tiếng Việt",
+      "best_for": "Vietnamese learners"
+    }
+  ]
+}

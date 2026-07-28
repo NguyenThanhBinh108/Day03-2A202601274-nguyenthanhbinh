@@ -1,0 +1,154 @@
+{
+  "skill": "Firebase",
+  "skill_key": "firebase",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.588511Z",
+  "checklist_items": [
+    {
+      "item_id": "firebase_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Firestore data model",
+      "description": "Master Firestore data model trong Firebase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Firebase+Firestore+data+model+tutorial",
+      "resource_title": "Firebase — Firestore data model",
+      "quiz_ids": [
+        "firebase_l1_001"
+      ],
+      "market_relevance": "Firestore data model là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Real-time listeners",
+      "description": "Master Real-time listeners trong Firebase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Firebase+Real-time+listeners+tutorial",
+      "resource_title": "Firebase — Real-time listeners",
+      "quiz_ids": [
+        "firebase_l2_002"
+      ],
+      "market_relevance": "Real-time listeners là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Firebase Auth",
+      "description": "Master Firebase Auth trong Firebase — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Firebase+Firebase+Auth+tutorial",
+      "resource_title": "Firebase — Firebase Auth",
+      "quiz_ids": [
+        "firebase_l3_003"
+      ],
+      "market_relevance": "Firebase Auth là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Security rules",
+      "description": "Master Security rules trong Firebase — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Firebase+Security+rules+tutorial",
+      "resource_title": "Firebase — Security rules",
+      "quiz_ids": [
+        "firebase_l4_004"
+      ],
+      "market_relevance": "Security rules là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Cloud Functions",
+      "description": "Master Cloud Functions trong Firebase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Firebase+Cloud+Functions+tutorial",
+      "resource_title": "Firebase — Cloud Functions",
+      "quiz_ids": [
+        "firebase_l5_005"
+      ],
+      "market_relevance": "Cloud Functions là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Storage",
+      "description": "Master Storage trong Firebase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Firebase+Storage+tutorial",
+      "resource_title": "Firebase — Storage",
+      "quiz_ids": [
+        "firebase_l5_006"
+      ],
+      "market_relevance": "Storage là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "FCM notifications",
+      "description": "Master FCM notifications trong Firebase — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Firebase+FCM+notifications+tutorial",
+      "resource_title": "Firebase — FCM notifications",
+      "quiz_ids": [
+        "firebase_l5_007"
+      ],
+      "market_relevance": "FCM notifications là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Analytics",
+      "description": "Master Analytics trong Firebase — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Firebase+Analytics+tutorial",
+      "resource_title": "Firebase — Analytics",
+      "quiz_ids": [
+        "firebase_l5_008"
+      ],
+      "market_relevance": "Analytics là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Hosting",
+      "description": "Master Hosting trong Firebase — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Firebase+Hosting+tutorial",
+      "resource_title": "Firebase — Hosting",
+      "quiz_ids": [
+        "firebase_l5_009"
+      ],
+      "market_relevance": "Hosting là key skill trong Firebase Database development"
+    },
+    {
+      "item_id": "firebase_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Emulator suite",
+      "description": "Master Emulator suite trong Firebase — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Firebase+Emulator+suite+tutorial",
+      "resource_title": "Firebase — Emulator suite",
+      "quiz_ids": [
+        "firebase_l5_010"
+      ],
+      "market_relevance": "Emulator suite là key skill trong Firebase Database development"
+    }
+  ]
+}

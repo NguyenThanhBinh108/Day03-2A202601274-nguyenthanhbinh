@@ -1,0 +1,154 @@
+{
+  "skill": "Webpack",
+  "skill_key": "webpack",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.518595Z",
+  "checklist_items": [
+    {
+      "item_id": "webpack_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Entry/output config",
+      "description": "Master Entry/output config trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Webpack+Entry/output+config+tutorial",
+      "resource_title": "Webpack — Entry/output config",
+      "quiz_ids": [
+        "webpack_l1_001"
+      ],
+      "market_relevance": "Entry/output config là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Loaders",
+      "description": "Master Loaders trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Webpack+Loaders+tutorial",
+      "resource_title": "Webpack — Loaders",
+      "quiz_ids": [
+        "webpack_l2_002"
+      ],
+      "market_relevance": "Loaders là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Plugins",
+      "description": "Master Plugins trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Webpack+Plugins+tutorial",
+      "resource_title": "Webpack — Plugins",
+      "quiz_ids": [
+        "webpack_l3_003"
+      ],
+      "market_relevance": "Plugins là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Code splitting",
+      "description": "Master Code splitting trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Webpack+Code+splitting+tutorial",
+      "resource_title": "Webpack — Code splitting",
+      "quiz_ids": [
+        "webpack_l4_004"
+      ],
+      "market_relevance": "Code splitting là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Tree shaking",
+      "description": "Master Tree shaking trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Webpack+Tree+shaking+tutorial",
+      "resource_title": "Webpack — Tree shaking",
+      "quiz_ids": [
+        "webpack_l5_005"
+      ],
+      "market_relevance": "Tree shaking là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Optimization",
+      "description": "Master Optimization trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Webpack+Optimization+tutorial",
+      "resource_title": "Webpack — Optimization",
+      "quiz_ids": [
+        "webpack_l5_006"
+      ],
+      "market_relevance": "Optimization là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Dev server",
+      "description": "Master Dev server trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Webpack+Dev+server+tutorial",
+      "resource_title": "Webpack — Dev server",
+      "quiz_ids": [
+        "webpack_l5_007"
+      ],
+      "market_relevance": "Dev server là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Source maps",
+      "description": "Master Source maps trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Webpack+Source+maps+tutorial",
+      "resource_title": "Webpack — Source maps",
+      "quiz_ids": [
+        "webpack_l5_008"
+      ],
+      "market_relevance": "Source maps là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Module federation",
+      "description": "Master Module federation trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Webpack+Module+federation+tutorial",
+      "resource_title": "Webpack — Module federation",
+      "quiz_ids": [
+        "webpack_l5_009"
+      ],
+      "market_relevance": "Module federation là key skill trong Webpack Frontend development"
+    },
+    {
+      "item_id": "webpack_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Webpack 5 features",
+      "description": "Master Webpack 5 features trong Webpack — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Webpack+Webpack+5+features+tutorial",
+      "resource_title": "Webpack — Webpack 5 features",
+      "quiz_ids": [
+        "webpack_l5_010"
+      ],
+      "market_relevance": "Webpack 5 features là key skill trong Webpack Frontend development"
+    }
+  ]
+}

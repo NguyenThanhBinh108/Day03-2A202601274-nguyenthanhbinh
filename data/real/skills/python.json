@@ -1,0 +1,410 @@
+{
+  "skill": "Python",
+  "market_frequency": "20.6% JDs yêu cầu Python",
+  "market_role": "Backend Developer, Data Engineer, AI/ML Engineer",
+  "total_learning_hours": 80,
+  "generated_at": "2026-06-12T00:05:36.324721",
+  "modules": [
+    {
+      "module_id": "py_01",
+      "title": "Python Fundamentals",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "py_01_01",
+          "title": "Cú pháp, kiểu dữ liệu, vòng lặp",
+          "hours": 6,
+          "academic": {
+            "summary": "Variables, loops, conditionals, functions, list/dict/set/tuple, comprehensions",
+            "resources": [
+              {
+                "title": "Python Official Tutorial",
+                "url": "https://docs.python.org/3/tutorial/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "freeCodeCamp — Scientific Computing with Python",
+                "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              },
+              {
+                "title": "Real Python — Python Basics",
+                "url": "https://realpython.com/python-basics/",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết script đọc file CSV nhân sự, lọc nhân viên lương > 15tr, tính trung bình theo phòng ban, xuất JSON",
+            "resources": [
+              {
+                "title": "Real Python Tutorials",
+                "url": "https://realpython.com",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_01_01_q1",
+                "level": 1,
+                "question": "List comprehension nào tạo list bình phương các số chẵn từ 1-10?",
+                "options": {
+                  "A": "[x**2 for x in range(1,11) if x%2==0]",
+                  "B": "[x**2 for x in range(1,11)]",
+                  "C": "[x*2 for x in range(1,11) if x%2==0]",
+                  "D": "Không có đáp án đúng"
+                },
+                "correct_answer": "A",
+                "explanation": "if x%2==0 lọc số chẵn, x**2 tính bình phương. range(1,11) = [1..10]."
+              },
+              {
+                "question_id": "py_01_01_q2",
+                "level": 2,
+                "question": "Output của `print(type(1/2))` trong Python 3?",
+                "options": {
+                  "A": "<class 'int'>",
+                  "B": "<class 'float'>",
+                  "C": "<class 'double'>",
+                  "D": "Error"
+                },
+                "correct_answer": "B",
+                "explanation": "Python 3: 1/2 = 0.5 (float). Dùng // cho integer division: 1//2 = 0."
+              },
+              {
+                "question_id": "py_01_01_q3",
+                "level": 3,
+                "question": "Kết quả của `[1,2,3] + [4,5] * 2` là gì?",
+                "options": {
+                  "A": "[1,2,3,4,5,4,5]",
+                  "B": "[2,4,6,8,10]",
+                  "C": "[1,2,3,4,5]",
+                  "D": "[1,2,3,8,10]"
+                },
+                "correct_answer": "A",
+                "explanation": "* ưu tiên hơn +: [4,5]*2=[4,5,4,5], rồi [1,2,3]+[4,5,4,5]=[1,2,3,4,5,4,5]."
+              },
+              {
+                "question_id": "py_01_01_q4",
+                "level": 4,
+                "question": "Dict `d = {'a':1,'b':2}`. Cách nào KHÔNG copy dictionary?",
+                "options": {
+                  "A": "d.copy()",
+                  "B": "dict(d)",
+                  "C": "d2 = d",
+                  "D": "{**d}"
+                },
+                "correct_answer": "C",
+                "explanation": "d2=d chỉ copy reference. d2 và d trỏ cùng object. Modify d2 sẽ ảnh hưởng d. Các cách còn lại tạo shallow copy mới."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "py_01_02",
+          "title": "OOP, Decorators, Context Managers",
+          "hours": 8,
+          "academic": {
+            "summary": "Classes, inheritance, @property, @staticmethod, __dunder__ methods, with statement, generators",
+            "resources": [
+              {
+                "title": "Python OOP — Real Python",
+                "url": "https://realpython.com/python3-object-oriented-programming/",
+                "type": "article",
+                "is_free": true,
+                "duration_minutes": 60
+              },
+              {
+                "title": "Corey Schafer OOP YouTube Series",
+                "url": "https://www.youtube.com/c/Coreyms",
+                "type": "video",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng class BankAccount: deposit, withdraw, transaction history. Thêm @property balance, @staticmethod validate_amount",
+            "resources": [
+              {
+                "title": "Python Data Model",
+                "url": "https://docs.python.org/3/reference/datamodel.html",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_01_02_q1",
+                "level": 2,
+                "question": "@staticmethod trong Python dùng để làm gì?",
+                "options": {
+                  "A": "Phương thức không cần self/cls, gọi qua class hoặc instance",
+                  "B": "Phương thức chỉ gọi qua instance",
+                  "C": "Phương thức private",
+                  "D": "Phương thức abstract"
+                },
+                "correct_answer": "A",
+                "explanation": "@staticmethod không nhận self hay cls. @classmethod nhận cls. Instance method nhận self."
+              },
+              {
+                "question_id": "py_01_02_q2",
+                "level": 3,
+                "question": "Generator expression `(x**2 for x in range(5))` khác list comprehension `[x**2 for x in range(5)]` ở điểm gì?",
+                "options": {
+                  "A": "Generator lazy — tính từng phần tử khi cần, tiết kiệm memory",
+                  "B": "Generator chạy nhanh hơn trong mọi trường hợp",
+                  "C": "Không có khác biệt",
+                  "D": "List comprehension dùng ít RAM hơn"
+                },
+                "correct_answer": "A",
+                "explanation": "Generator: lazy evaluation, O(1) memory. List: eager evaluation, O(n) memory. Dùng generator cho dataset lớn hoặc pipeline xử lý streaming."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "py_01_03",
+          "title": "Error Handling, Testing, Packaging",
+          "hours": 6,
+          "academic": {
+            "summary": "try/except/finally, custom exceptions, pytest, unittest.mock, pip, virtualenv, pyproject.toml",
+            "resources": [
+              {
+                "title": "Python Exceptions — Real Python",
+                "url": "https://realpython.com/python-exceptions/",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 45
+              },
+              {
+                "title": "pytest Documentation",
+                "url": "https://docs.pytest.org/en/stable/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết test suite với pytest cho BankAccount: test deposit/withdraw/overdraft/negative amount. Coverage 100%",
+            "resources": [
+              {
+                "title": "Python Testing with pytest",
+                "url": "https://realpython.com/python-testing/",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_01_03_q1",
+                "level": 2,
+                "question": "Khi nào dùng `except Exception as e` vs `except BaseException`?",
+                "options": {
+                  "A": "Exception: bắt lỗi thông thường. BaseException: bắt cả SystemExit, KeyboardInterrupt (không nên dùng)",
+                  "B": "Chúng giống nhau hoàn toàn",
+                  "C": "BaseException chỉ cho syntax errors",
+                  "D": "Exception bắt tất cả mọi lỗi"
+                },
+                "correct_answer": "A",
+                "explanation": "BaseException là cha của mọi exception. Exception là subclass, bắt 'expected errors'. SystemExit và KeyboardInterrupt kế thừa BaseException nhưng không từ Exception → không bị bắt bởi except Exception."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "py_02",
+      "title": "Python Backend (FastAPI)",
+      "order": 2,
+      "hours": 30,
+      "topics": [
+        {
+          "topic_id": "py_02_01",
+          "title": "FastAPI: REST API, Pydantic, Async",
+          "hours": 12,
+          "academic": {
+            "summary": "HTTP methods, Pydantic models, dependency injection, async/await, middleware, OpenAPI docs tự động",
+            "resources": [
+              {
+                "title": "FastAPI Official Documentation",
+                "url": "https://fastapi.tiangolo.com",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "FastAPI Full Course — freeCodeCamp YouTube",
+                "url": "https://www.freecodecamp.org",
+                "type": "video",
+                "is_free": true,
+                "duration_minutes": 360
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng REST API CRUD Todo app: FastAPI + SQLite + Pydantic models + JWT auth. Deploy Railway",
+            "resources": [
+              {
+                "title": "FastAPI Tutorial — User Guide",
+                "url": "https://fastapi.tiangolo.com/tutorial/",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_02_01_q1",
+                "level": 3,
+                "question": "Trong FastAPI, `async def` vs `def` khác nhau như thế nào?",
+                "options": {
+                  "A": "async def cho phép chạy concurrent I/O không block thread",
+                  "B": "async def nhanh hơn trong mọi trường hợp",
+                  "C": "def không hoạt động trong FastAPI",
+                  "D": "Không có khác biệt"
+                },
+                "correct_answer": "A",
+                "explanation": "async def: I/O-bound tasks (DB, HTTP calls). CPU-bound: dùng def + Celery/Background Tasks. FastAPI hỗ trợ cả hai."
+              },
+              {
+                "question_id": "py_02_01_q2",
+                "level": 4,
+                "question": "Pydantic's `BaseModel` so với Python dataclasses khác gì?",
+                "options": {
+                  "A": "Pydantic: runtime validation + serialization. Dataclass: chỉ data container, không validate",
+                  "B": "Dataclass nhanh hơn Pydantic mọi trường hợp",
+                  "C": "Pydantic chỉ dùng được với FastAPI",
+                  "D": "Không có khác biệt"
+                },
+                "correct_answer": "A",
+                "explanation": "Pydantic v2 validate data at runtime, coerce types, generate JSON schema. Dataclass: struct-like container. Pydantic ~5-50x slower nhưng an toàn hơn cho API input validation."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "py_02_02",
+          "title": "SQLAlchemy ORM + Alembic Migrations",
+          "hours": 10,
+          "academic": {
+            "summary": "Models, relationships, sessions, lazy/eager loading, Alembic migration scripts",
+            "resources": [
+              {
+                "title": "SQLAlchemy ORM Tutorial",
+                "url": "https://docs.sqlalchemy.org/en/14/orm/tutorial.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng Blog API: User + Post + Comment với SQLAlchemy, foreign keys, Alembic migrations",
+            "resources": [
+              {
+                "title": "Alembic Tutorial",
+                "url": "https://alembic.sqlalchemy.org/en/latest/tutorial.html",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_02_02_q1",
+                "level": 3,
+                "question": "N+1 query problem trong SQLAlchemy xảy ra khi nào?",
+                "options": {
+                  "A": "Khi dùng lazy loading relationships trong vòng lặp — mỗi iteration tạo 1 query mới",
+                  "B": "Khi có N bảng trong schema",
+                  "C": "Khi session không được close",
+                  "D": "Khi dùng async session"
+                },
+                "correct_answer": "A",
+                "explanation": "N+1: 1 query lấy N objects, rồi N queries lấy related data. Fix: dùng joinedload() hoặc selectinload() để eager-load relationships."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "module_id": "py_03",
+      "title": "Python Data & AI",
+      "order": 3,
+      "hours": 30,
+      "topics": [
+        {
+          "topic_id": "py_03_01",
+          "title": "Pandas, NumPy, Matplotlib",
+          "hours": 15,
+          "academic": {
+            "summary": "DataFrame operations, groupby, merge, vectorized operations, plotting",
+            "resources": [
+              {
+                "title": "Pandas Official Docs",
+                "url": "https://pandas.pydata.org/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "Kaggle — Pandas Course",
+                "url": "https://www.kaggle.com/learn/pandas",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "EDA (Exploratory Data Analysis) cho Kaggle Titanic dataset: clean data, feature engineering, visualize survival patterns",
+            "resources": [
+              {
+                "title": "Kaggle Titanic Dataset",
+                "url": "https://www.kaggle.com/c/titanic",
+                "type": "practice",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "py_03_01_q1",
+                "level": 2,
+                "question": "df.groupby('dept')['salary'].mean() làm gì?",
+                "options": {
+                  "A": "Tính trung bình salary cho toàn bộ dataframe",
+                  "B": "Tính trung bình salary cho từng nhóm department",
+                  "C": "Tính tổng salary theo department",
+                  "D": "Filter rows có salary trung bình"
+                },
+                "correct_answer": "B",
+                "explanation": "groupby('dept') tạo groups theo dept, ['salary'].mean() áp dụng mean cho mỗi group → Series index=dept, values=mean_salary."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

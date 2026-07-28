@@ -1,0 +1,233 @@
+{
+  "skill": "Git",
+  "skill_key": "git",
+  "total_topics": 15,
+  "estimated_total_hours": 14.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T01:12:32.398200",
+  "checklist_items": [
+    {
+      "item_id": "git_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Cài Git và config ban đầu",
+      "description": "git config --global user.name/email, git init, git clone, hiểu local vs remote repo",
+      "estimated_minutes": 30,
+      "resource_url": "https://www.w3schools.com/git/git_intro.asp",
+      "resource_title": "W3Schools — Git Introduction",
+      "quiz_ids": [
+        "git_l1_001"
+      ],
+      "market_relevance": "Bước 0 của mọi developer"
+    },
+    {
+      "item_id": "git_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Basic Workflow — add, commit, push",
+      "description": "git add, git commit, git push, git status, git log --oneline, commit message tốt",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.w3schools.com/git/git_staging_environment.asp",
+      "resource_title": "W3Schools — Git Staging Environment",
+      "quiz_ids": [
+        "git_l1_002",
+        "git_l1_005"
+      ],
+      "market_relevance": "Workflow hàng ngày của mọi developer"
+    },
+    {
+      "item_id": "git_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Branching cơ bản",
+      "description": "git branch, git checkout/switch, git branch -d, git push origin branch, remote tracking branches",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/git/git_branch.asp",
+      "resource_title": "W3Schools — Git Branch",
+      "quiz_ids": [
+        "git_l1_003"
+      ],
+      "market_relevance": "Mọi team dùng branching"
+    },
+    {
+      "item_id": "git_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Remote Repositories và Collaboration",
+      "description": "git remote, git clone, git pull, git fetch, origin, upstream, fork workflow",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/git/git_pull.asp",
+      "resource_title": "W3Schools — Git Pull/Fetch",
+      "quiz_ids": [
+        "git_l1_004"
+      ],
+      "market_relevance": "Làm việc với GitHub/GitLab là hàng ngày"
+    },
+    {
+      "item_id": "git_c005",
+      "order": 5,
+      "phase": "foundation",
+      "title": ".gitignore và quản lý files",
+      "description": "Tạo .gitignore đúng cách, gitignore.io, git rm --cached, tracking changes",
+      "estimated_minutes": 30,
+      "resource_url": "https://www.w3schools.com/git/git_ignore.asp",
+      "resource_title": "W3Schools — Git Ignore",
+      "quiz_ids": [
+        "git_l1_006"
+      ],
+      "market_relevance": "Không commit node_modules hay .env lên repo"
+    },
+    {
+      "item_id": "git_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Merging và Conflict Resolution",
+      "description": "git merge, fast-forward vs 3-way merge, merge conflicts, conflict markers, resolve strategies",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/merge-conflicts-and-how-to-handle-them/",
+      "resource_title": "GeeksForGeeks — Merge Conflicts",
+      "quiz_ids": [
+        "git_l3_002"
+      ],
+      "hands_on_task": "Tạo conflict có chủ ý và practice resolve",
+      "market_relevance": "Hàng ngày khi làm việc nhóm"
+    },
+    {
+      "item_id": "git_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Rebasing — Keeping History Clean",
+      "description": "git rebase, rebase vs merge, interactive rebase (-i), squash commits, rebase onto",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/git-rebase/",
+      "resource_title": "GeeksForGeeks — Git Rebase",
+      "quiz_ids": [
+        "git_l2_001",
+        "git_l2_006",
+        "git_l4_004"
+      ],
+      "market_relevance": "Clean history — interviewer hay hỏi"
+    },
+    {
+      "item_id": "git_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "Git Stash và Context Switching",
+      "description": "git stash, stash pop/apply/list/drop/branch, stash specific files",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/git-stash/",
+      "resource_title": "GeeksForGeeks — Git Stash",
+      "quiz_ids": [
+        "git_l2_002"
+      ],
+      "market_relevance": "Switch task nhanh mà không mất work"
+    },
+    {
+      "item_id": "git_c009",
+      "order": 9,
+      "phase": "core",
+      "title": "Undoing Changes — reset, revert, restore",
+      "description": "git reset (--soft/--mixed/--hard), git revert, git restore, khi nào dùng cái nào",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/git-difference-between-git-revert-checkout-and-reset/",
+      "resource_title": "GeeksForGeeks — Git Reset vs Revert",
+      "quiz_ids": [
+        "git_l2_004"
+      ],
+      "market_relevance": "Sai thì phải biết undo đúng cách"
+    },
+    {
+      "item_id": "git_c010",
+      "order": 10,
+      "phase": "core",
+      "title": "Pull Request Workflow",
+      "description": "PR creation, review process, approvals, squash merge, conventional commits, PR templates",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/",
+      "resource_title": "freeCodeCamp — Better Git Commit Messages",
+      "quiz_ids": [
+        "git_l3_004",
+        "git_l2_005"
+      ],
+      "market_relevance": "Mọi công ty tech VN dùng PR workflow"
+    },
+    {
+      "item_id": "git_c011",
+      "order": 11,
+      "phase": "core",
+      "title": "Cherry-pick và Advanced Branch Management",
+      "description": "git cherry-pick, cherry-pick range, conflict trong cherry-pick",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/git-cherry-pick/",
+      "resource_title": "GeeksForGeeks — Git Cherry-pick",
+      "quiz_ids": [
+        "git_l2_003"
+      ],
+      "market_relevance": "Hotfix apply cho nhiều branches"
+    },
+    {
+      "item_id": "git_c012",
+      "order": 12,
+      "phase": "core",
+      "title": "Git Hooks và Automation",
+      "description": "pre-commit, commit-msg, pre-push hooks, Husky, lint-staged, commitlint",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/git-hooks/",
+      "resource_title": "GeeksForGeeks — Git Hooks",
+      "quiz_ids": [
+        "git_l3_001"
+      ],
+      "hands_on_task": "Setup Husky + lint-staged + commitlint cho project thực tế",
+      "market_relevance": "Team chuyên nghiệp đều dùng git hooks"
+    },
+    {
+      "item_id": "git_c013",
+      "order": 13,
+      "phase": "advanced",
+      "title": "Advanced Debugging với bisect và blame",
+      "description": "git bisect (binary search bug), git blame, git log -S pickaxe search, git log -G regex",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/git-bisect/",
+      "resource_title": "GeeksForGeeks — Git Bisect",
+      "quiz_ids": [
+        "git_l3_003",
+        "git_l4_003"
+      ],
+      "market_relevance": "Senior dev cần biết để debug regression nhanh"
+    },
+    {
+      "item_id": "git_c014",
+      "order": 14,
+      "phase": "advanced",
+      "title": "Recovery và Emergency Commands",
+      "description": "git reflog, recover lost commits, git fsck, recover từ bad merge, undo force push damage",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/git-reflog/",
+      "resource_title": "GeeksForGeeks — Git Reflog",
+      "quiz_ids": [
+        "git_l3_005",
+        "git_l4_001"
+      ],
+      "market_relevance": "Khi mắc lỗi nghiêm trọng cần recover nhanh"
+    },
+    {
+      "item_id": "git_c015",
+      "order": 15,
+      "phase": "advanced",
+      "title": "Git cho Large Codebases",
+      "description": "Git LFS, sparse-checkout, shallow clone, partial clone, git maintenance, monorepo strategies",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/git-lfs/",
+      "resource_title": "GeeksForGeeks — Git LFS",
+      "quiz_ids": [
+        "git_l3_006",
+        "git_l5_002"
+      ],
+      "market_relevance": "Công ty lớn làm việc với monorepo cần biết"
+    }
+  ]
+}

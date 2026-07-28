@@ -1,0 +1,600 @@
+{
+  "skill": "Node.js",
+  "skill_key": "nodejs",
+  "total_questions": 27,
+  "levels": {
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 3
+  },
+  "generated_at": "2026-06-12T01:31:37.812013",
+  "source_references": [
+    "https://nodejs.org/en/docs/",
+    "https://www.geeksforgeeks.org/node-js/",
+    "https://www.freecodecamp.org/news/tag/nodejs/"
+  ],
+  "questions": [
+    {
+      "question_id": "nodejs_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Node.js là gì và tại sao nó dùng single-threaded event loop?",
+      "options": {
+        "A": "Node.js là web browser JavaScript engine",
+        "B": "Node.js là runtime chạy JavaScript phía server, dùng V8 engine + event loop để xử lý I/O bất đồng bộ mà không cần multi-threading",
+        "C": "Node.js chỉ dùng cho frontend",
+        "D": "Node.js dùng đa luồng như Java"
+      },
+      "correct_answer": "B",
+      "explanation": "Node.js: Chrome V8 engine + libuv (event loop, I/O). Single-threaded nhưng non-blocking I/O: khi gọi file/network → giao cho OS/libuv, tiếp tục xử lý requests khác. Tốt cho: I/O-bound tasks (API servers, real-time apps). Không tốt cho: CPU-bound (hashing, image processing) — block event loop. Worker Threads (Node 12+): multi-threading cho CPU-bound.",
+      "source": "https://www.geeksforgeeks.org/introduction-to-node-js/",
+      "tags": [
+        "nodejs",
+        "event-loop",
+        "V8",
+        "runtime"
+      ]
+    },
+    {
+      "question_id": "nodejs_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "npm và package.json — cấu trúc và công dụng?",
+      "options": {
+        "A": "npm chỉ để install packages, không cần package.json",
+        "B": "package.json: metadata + dependencies + scripts. npm install: download từ registry vào node_modules. package-lock.json: exact versions",
+        "C": "package.json chỉ dùng cho production",
+        "D": "npm và yarn không thể dùng cùng project"
+      },
+      "correct_answer": "B",
+      "explanation": "package.json: name, version, main, scripts (start/build/test), dependencies (production), devDependencies (dev only). npm install: đọc package.json, download packages. --save-dev cho devDependencies. package-lock.json: lock exact versions (không commit bằng tay). npm run script-name: chạy custom scripts. npm scripts: pre/post hooks (prestart, postbuild). npx: chạy package mà không cần install globally.",
+      "source": "https://www.geeksforgeeks.org/node-js-npm-node-package-manager/",
+      "tags": [
+        "npm",
+        "package.json",
+        "dependencies",
+        "scripts"
+      ]
+    },
+    {
+      "question_id": "nodejs_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "CommonJS vs ES Modules trong Node.js — khi nào dùng cái nào?",
+      "options": {
+        "A": "Chỉ dùng được 1 trong 2 trong project",
+        "B": "CommonJS (require/exports): mặc định Node.js, synchronous. ES Modules (import/export): dùng với .mjs hoặc 'type':'module' trong package.json, future standard",
+        "C": "ES Modules chỉ cho browser",
+        "D": "CommonJS nhanh hơn ES Modules luôn"
+      },
+      "correct_answer": "B",
+      "explanation": "CommonJS: require('express'), module.exports = {}. Dynamic imports được. Synchronous — OK cho server startup. ES Modules: import express from 'express'; export default class. Static — tree shaking tốt hơn. Top-level await. Interop: import() dynamic trong CJS, createRequire() để dùng CJS trong ESM. Xu hướng: ESM là tương lai. Node.js 18+: ESM support tốt. TypeScript: compileOptions target chọn CJS hay ESM output.",
+      "source": "https://www.geeksforgeeks.org/commonjs-vs-ecmascript-modules/",
+      "tags": [
+        "CommonJS",
+        "ESM",
+        "require",
+        "import"
+      ]
+    },
+    {
+      "question_id": "nodejs_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "Express.js middleware là gì và hoạt động thế nào?",
+      "options": {
+        "A": "Middleware là database layer",
+        "B": "Middleware là function có access request, response, next — tạo pipeline để process request trước khi đến route handler",
+        "C": "Middleware chỉ cho authentication",
+        "D": "Express.js không có middleware"
+      },
+      "correct_answer": "B",
+      "explanation": "Middleware signature: (req, res, next) => {}. Pipeline: Request → middleware1 → middleware2 → route handler → Response. Gọi next() để pass sang middleware tiếp theo. next(error) để pass lỗi. Built-in: express.json(), express.static(). Third-party: cors, helmet, morgan. Application-level: app.use(). Route-level: router.use(). Error middleware: (err, req, res, next) — 4 params, phải đặt sau tất cả routes.",
+      "source": "https://www.geeksforgeeks.org/express-js-middleware/",
+      "tags": [
+        "middleware",
+        "Express",
+        "pipeline",
+        "next"
+      ]
+    },
+    {
+      "question_id": "nodejs_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Node.js streams dùng để làm gì?",
+      "options": {
+        "A": "Streams chỉ cho audio/video",
+        "B": "Streams: đọc/ghi data theo chunks thay vì load toàn bộ vào memory — tốt cho large files, real-time data processing, piping",
+        "C": "Streams chỉ hoạt động với HTTP",
+        "D": "Streams là deprecated trong Node 18+"
+      },
+      "correct_answer": "B",
+      "explanation": "4 loại streams: Readable (đọc), Writable (ghi), Duplex (đọc+ghi), Transform (transform data). Ví dụ: fs.createReadStream('large.csv').pipe(csvParser()).pipe(db.bulkInsert()). Lợi ích: xử lý file 10GB mà không cần 10GB RAM. Events: data, end, error, finish. Backpressure: stream tự động điều tiết speed. Stream pipeline (util.promisify(stream.pipeline)): xử lý lỗi tốt hơn .pipe().",
+      "source": "https://www.geeksforgeeks.org/node-js-streams/",
+      "tags": [
+        "streams",
+        "piping",
+        "memory",
+        "backpressure"
+      ]
+    },
+    {
+      "question_id": "nodejs_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "process.env và cách quản lý environment variables trong Node.js?",
+      "options": {
+        "A": "Hardcode credentials trong source code",
+        "B": "process.env.VAR_NAME để access env vars. dotenv package load .env file locally. .env không commit vào git. Có .env.example cho template",
+        "C": "Env vars chỉ có ở production",
+        "D": "Chỉ có thể set env vars trong Docker"
+      },
+      "correct_answer": "B",
+      "explanation": "require('dotenv').config() hoặc import 'dotenv/config' — load .env file vào process.env. process.env.PORT || 3000: fallback default. Validation: dùng joi hoặc zod để validate env vars khi startup (fail-fast). Không dùng: string coercion bị miss ('false' là truthy). Staging/Production: set env vars trực tiếp (không dùng .env file). Secret management: AWS Secrets Manager, HashiCorp Vault. Không commit .env (chứa secrets).",
+      "source": "https://www.geeksforgeeks.org/node-js-process-env/",
+      "tags": [
+        "dotenv",
+        "environment-variables",
+        "secrets",
+        "configuration"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Node.js Event Emitter pattern là gì?",
+      "options": {
+        "A": "Chỉ dùng cho DOM events",
+        "B": "EventEmitter: publish-subscribe pattern, emit events, on() để listen. Base class cho nhiều Node.js modules (streams, http, process)",
+        "C": "EventEmitter chỉ cho GUI apps",
+        "D": "Không liên quan đến event loop"
+      },
+      "correct_answer": "B",
+      "explanation": "const EventEmitter = require('events'); class MyEmitter extends EventEmitter {}. emitter.on('data', handler) — subscribe. emitter.emit('data', payload) — publish. emitter.once('connect', handler) — one-time listener. emitter.off('data', handler) — unsubscribe (quan trọng để tránh memory leak). Max listeners: mặc định 10 (warning nếu thêm). Ứng dụng: custom event systems, real-time notifications, file watching, streams internals.",
+      "source": "https://www.geeksforgeeks.org/node-js-eventemitter/",
+      "tags": [
+        "EventEmitter",
+        "pub-sub",
+        "events",
+        "memory-leak"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Node.js Cluster module và PM2 — cách tận dụng multiple CPU cores?",
+      "options": {
+        "A": "Node.js tự động dùng tất cả cores",
+        "B": "Cluster: fork worker processes (1 per core), master process phân phối connections. PM2: process manager, cluster mode tự động",
+        "C": "Multi-core chỉ cần Docker",
+        "D": "Node.js không support multi-core"
+      },
+      "correct_answer": "B",
+      "explanation": "Single Node.js process chỉ dùng 1 core. Cluster module: master fork os.cpus().length workers, chia sẻ same port. Worker crash → master restart. IPC để communicate. PM2 (production): pm2 start app.js -i max (i = instances = CPU count). PM2 features: auto-restart, log management, monitoring, graceful reload. Kubernetes alternative: horizontal pod scaling (nhiều containers). Health check endpoint cho load balancer.",
+      "source": "https://www.geeksforgeeks.org/node-js-cluster-module/",
+      "tags": [
+        "cluster",
+        "PM2",
+        "multi-core",
+        "production",
+        "scaling"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Express error handling — làm thế nào để handle errors properly?",
+      "options": {
+        "A": "try/catch trong mỗi route handler là đủ",
+        "B": "Error middleware (4 params), async wrapper để catch errors, centralized error handler, operational vs programmer errors",
+        "C": "Để errors crash server rồi restart",
+        "D": "Dùng process.on('uncaughtException') là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "Error types: Operational (expected: validation fail, DB down) vs Programmer (bugs: undefined.x). Express error middleware: app.use((err, req, res, next) => { res.status(err.status || 500).json({error: err.message}); }). Async errors: try { await asyncOp() } catch(err) { next(err) } hoặc dùng express-async-errors wrapper. Unhandled Promise rejections: process.on('unhandledRejection', ...). Graceful shutdown: khi nhận SIGTERM, close connections, finish pending requests. Không expose stack traces ở production.",
+      "source": "https://www.geeksforgeeks.org/error-handling-in-express/",
+      "tags": [
+        "error-handling",
+        "middleware",
+        "async",
+        "graceful-shutdown"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Node.js Buffer và binary data?",
+      "options": {
+        "A": "Node.js không thể xử lý binary data",
+        "B": "Buffer: fixed-size raw memory, dùng cho binary data (images, files, network packets) trước khi stream/fs operations",
+        "C": "Buffer chỉ dùng với streams",
+        "D": "Buffer giống Array thường"
+      },
+      "correct_answer": "B",
+      "explanation": "Buffer.alloc(10): create 10-byte buffer. Buffer.from('hello', 'utf8'): từ string. buffer.toString('hex'): convert sang hex. buffer.readUInt8(0): đọc byte đầu. Buffer.concat([buf1, buf2]): merge. Dùng khi: xử lý file upload (multipart form), crypto operations, TCP packets. Encoding: utf8, base64, hex, binary. Buffer.from vs Buffer.allocUnsafe: allocUnsafe nhanh hơn nhưng không initialized (security risk nếu dùng sai).",
+      "source": "https://www.geeksforgeeks.org/node-js-buffers/",
+      "tags": [
+        "Buffer",
+        "binary",
+        "encoding",
+        "memory"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "WebSocket real-time với Socket.io trong Node.js?",
+      "options": {
+        "A": "Socket.io chỉ cho chat apps",
+        "B": "Socket.io: abstraction trên WebSocket (với fallback polling), rooms, namespaces, broadcasting — bidirectional real-time communication",
+        "C": "Node.js không thể xử lý WebSocket",
+        "D": "Socket.io = WebSocket, không có gì thêm"
+      },
+      "correct_answer": "B",
+      "explanation": "Socket.io: io.on('connection', socket => { socket.on('message', data => io.emit('message', data)) }). Rooms: socket.join('room1'), io.to('room1').emit('event', data). Namespaces: /admin, /chat (isolate). Broadcast: socket.broadcast.emit (tất cả trừ sender). Scaling: Redis adapter để sync events across multiple Node.js instances. Alternative: ws (bare WebSocket library, nhẹ hơn). Server-Sent Events cho one-way streaming.",
+      "source": "https://www.geeksforgeeks.org/socket-io-in-node-js/",
+      "tags": [
+        "WebSocket",
+        "Socket.io",
+        "real-time",
+        "rooms",
+        "scaling"
+      ]
+    },
+    {
+      "question_id": "nodejs_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "Security trong Node.js/Express — checklist cơ bản?",
+      "options": {
+        "A": "HTTPS là đủ cho security",
+        "B": "Helmet (HTTP headers), rate limiting, input validation, SQL injection prevention, CORS config, secrets management, dependency audit",
+        "C": "Security chỉ cần ở firewall",
+        "D": "npm packages tự bảo mật"
+      },
+      "correct_answer": "B",
+      "explanation": "Security layers: (1) Helmet: set bảo mật HTTP headers (X-Frame-Options, HSTS, CSP). (2) Rate limiting: express-rate-limit (prevent brute force, DDoS). (3) Input validation: joi/zod — validate và sanitize tất cả user input. (4) SQL injection: parameterized queries (không string concatenation). (5) CORS: whitelist specific origins, không dùng '*' cho authenticated APIs. (6) npm audit: check vulnerabilities trong dependencies. (7) Environment: không log sensitive data, no debug info in production. (8) HTTPS: minimum cho production. (9) bcrypt cho password hashing.",
+      "source": "https://www.geeksforgeeks.org/nodejs-security-best-practices/",
+      "tags": [
+        "security",
+        "helmet",
+        "rate-limiting",
+        "validation",
+        "CORS"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Build REST API với Node.js/Express + authentication JWT?",
+      "options": {
+        "A": "Session-based auth là đủ",
+        "B": "jsonwebtoken sign/verify, middleware authenticate, refresh token pattern, httpOnly cookie cho security, token blacklisting",
+        "C": "JWT không cần refresh token",
+        "D": "Chỉ cần Basic Auth"
+      },
+      "correct_answer": "B",
+      "explanation": "JWT workflow: (1) Login: verify password → jwt.sign({userId, role}, secret, {expiresIn:'15m'}) → access token. (2) Refresh token: longer-lived (7d), stored in httpOnly cookie (no XSS access). (3) Middleware: bearer token from Authorization header → jwt.verify() → attach user to req. (4) Refresh: khi access token expire, dùng refresh token để get new access token. (5) Logout: blacklist refresh token (Redis), clear httpOnly cookie. Security: short expiry (15m) cho access token, httpOnly cookie cho refresh token.",
+      "source": "https://www.freecodecamp.org/news/how-to-secure-your-api-with-jwt/",
+      "tags": [
+        "JWT",
+        "authentication",
+        "refresh-token",
+        "httpOnly",
+        "security"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "File upload trong Node.js Express thế nào?",
+      "options": {
+        "A": "Express tự handle file upload",
+        "B": "multer middleware cho multipart/form-data, lưu memory hoặc disk, validate type/size, upload lên S3/CDN cho production",
+        "C": "Chỉ có thể upload text files",
+        "D": "File upload cần socket connection"
+      },
+      "correct_answer": "B",
+      "explanation": "multer: const upload = multer({storage: diskStorage({...}), limits: {fileSize: 5*1024*1024}, fileFilter: (req, file, cb) => {}}). Route: app.post('/upload', upload.single('avatar'), handler). File info: req.file (single) hoặc req.files (multiple). Production: không lưu trên server filesystem (stateless). Upload lên AWS S3: multer-s3 storage. Validate: MIME type (file.mimetype), file extension, virus scan (clamav). Presigned URL: client upload thẳng lên S3 (không qua server).",
+      "source": "https://www.geeksforgeeks.org/file-uploading-in-node-js/",
+      "tags": [
+        "multer",
+        "file-upload",
+        "S3",
+        "multipart"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Database connection trong Node.js — connection pooling với PostgreSQL?",
+      "options": {
+        "A": "Tạo connection mới cho mỗi request",
+        "B": "pg.Pool: pool of connections tái sử dụng. Cấu hình max, min, idle timeout. Dùng pool.query() hoặc client = await pool.connect()",
+        "C": "Prisma tự manage connections",
+        "D": "1 connection là đủ cho mọi requests"
+      },
+      "correct_answer": "B",
+      "explanation": "const pool = new Pool({host, port, database, user, password, max: 20, idleTimeoutMillis: 30000, connectionTimeoutMillis: 2000}). pool.query('SELECT...', [params]): tự checkout và release. Cho transactions: const client = await pool.connect(); try { await client.query('BEGIN'); ... await client.query('COMMIT') } finally { client.release() }. Max connections: 20 thường đủ. Prisma, Sequelize, Knex: đều dùng connection pool bên dưới. Monitor: pg_stat_activity.",
+      "source": "https://www.geeksforgeeks.org/node-js-postgresql/",
+      "tags": [
+        "connection-pool",
+        "PostgreSQL",
+        "pg",
+        "transactions"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Rate limiting và brute force protection trong Express?",
+      "options": {
+        "A": "HTTPS đã ngăn brute force",
+        "B": "express-rate-limit: giới hạn requests per IP, window, max. Thêm Captcha cho login. Redis store cho multi-instance. Account lockout",
+        "C": "Rate limiting làm app chậm",
+        "D": "Chỉ cần firewall"
+      },
+      "correct_answer": "B",
+      "explanation": "const limiter = rateLimit({windowMs: 15*60*1000, max: 100, standardHeaders: true}); app.use('/api', limiter). Login endpoint: strict limit (5 attempts/15min). Redis store: new RedisStore({client: redisClient}) — cho multi-instance apps (memory store chỉ works với 1 instance). Slow down: express-slow-down (tăng delay thay vì block). Account lockout: sau N failed attempts → lock account + notify email. CAPTCHA: Google reCAPTCHA v3 cho suspicious traffic.",
+      "source": "https://www.geeksforgeeks.org/rate-limiting-in-node-js-using-express-rate-limit/",
+      "tags": [
+        "rate-limiting",
+        "brute-force",
+        "security",
+        "Redis"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Logging production-grade trong Node.js?",
+      "options": {
+        "A": "console.log là đủ cho production",
+        "B": "winston hoặc pino logger: structured JSON logs, log levels, transport (file, Cloudwatch, Elasticsearch), request logging với morgan",
+        "C": "Chỉ log errors",
+        "D": "Dùng third-party service thay vì local logging"
+      },
+      "correct_answer": "B",
+      "explanation": "console.log: không có levels, không structured, không performant. Winston: levels (error/warn/info/debug), transports (Console, File, HTTP, DailyRotate), format (JSON, combine). Pino: fastest logger (low overhead), JSON output. Structured logging: {level, message, timestamp, requestId, userId, ...} — dễ query trong ELK/CloudWatch. morgan: HTTP request logging middleware (method, URL, status, response time). Sensitive data: không log passwords, tokens, PII. Log levels: ERROR (bugs), WARN (unexpected but handled), INFO (business events), DEBUG (dev only).",
+      "source": "https://www.freecodecamp.org/news/logging-in-nodejs/",
+      "tags": [
+        "logging",
+        "winston",
+        "pino",
+        "structured-logs",
+        "production"
+      ]
+    },
+    {
+      "question_id": "nodejs_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Graceful shutdown trong Node.js production app?",
+      "options": {
+        "A": "process.exit(0) là đủ",
+        "B": "Lắng nghe SIGTERM/SIGINT, stop accepting new requests, finish pending, close DB/Redis connections, exit với code 0",
+        "C": "Crash và restart nhanh là OK",
+        "D": "Graceful shutdown chỉ cần với databases"
+      },
+      "correct_answer": "B",
+      "explanation": "process.on('SIGTERM', async () => { server.close(async () => { await db.end(); await redis.quit(); process.exit(0); }); setTimeout(() => process.exit(1), 30000); // force exit after 30s }). Kubernetes gửi SIGTERM khi scaling down → app phải handle. PM2: graceful_timeout config. Express: server.close() ngừng nhận requests mới, xử lý xong requests hiện tại. Health check: /health endpoint return 503 khi đang shutdown → load balancer ngừng route traffic.",
+      "source": "https://www.geeksforgeeks.org/graceful-shutdown-in-nodejs/",
+      "tags": [
+        "graceful-shutdown",
+        "SIGTERM",
+        "Kubernetes",
+        "PM2"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Node.js memory leak — các nguyên nhân phổ biến trong production?",
+      "options": {
+        "A": "Chỉ xảy ra với circular references",
+        "B": "Event listener không remove, global cache grow unbounded, closure giữ references, Stream không close, timer không clear",
+        "C": "Node.js tự quản lý memory tốt",
+        "D": "Chỉ xảy ra với large datasets"
+      },
+      "correct_answer": "B",
+      "explanation": "Common Node.js memory leaks: (1) EventEmitter listeners không remove: emitter.on('event', handler) — nếu không removeListener, handler còn trong memory. Fix: once() hoặc removeListener. (2) Global cache: const cache = {}; không có eviction → grow vô hạn. Fix: LRU cache (lru-cache library). (3) Closure over large data. (4) setTimeout/setInterval không clearTimeout → callback và closures giữ trong memory. (5) Stream không destroy sau error. Debug: heapdump, clinic.js (flame graph, heap), node --inspect + Chrome DevTools Memory tab.",
+      "source": "https://www.geeksforgeeks.org/memory-management-in-node-js/",
+      "tags": [
+        "memory-leak",
+        "EventEmitter",
+        "GC",
+        "heap",
+        "debugging"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Node.js CPU profiling — tìm và fix performance bottleneck?",
+      "options": {
+        "A": "Chạy nhiều instances là đủ",
+        "B": "node --prof → v8 profiling log → node --prof-process để phân tích. Clinic.js, 0x flamegraph, async_hooks cho async bottlenecks",
+        "C": "CPU bottleneck không xảy ra với I/O-bound app",
+        "D": "Chỉ cần xem CPU % trên server"
+      },
+      "correct_answer": "B",
+      "explanation": "Profiling tools: (1) Built-in: node --prof app.js → isolate-xxx.log → node --prof-process isolate-xxx.log > output.txt. (2) clinic.js: clinic doctor/flame/bubbleprof — visual, dễ dùng. (3) 0x: flame graph generation. (4) Chrome DevTools: node --inspect app.js → chrome://inspect → Profiler. Hot code: ticks trong profiling log. async_hooks: track async operations (performance.timerify). Common bottlenecks: synchronous crypto (dùng async), heavy computation in request handler, Inefficient regex (backtracking).",
+      "source": "https://www.geeksforgeeks.org/node-js-performance/",
+      "tags": [
+        "profiling",
+        "CPU",
+        "flame-graph",
+        "clinic",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "CORS errors trong Express — nguyên nhân và fix đúng?",
+      "options": {
+        "A": "Thêm Access-Control-Allow-Origin: * là đủ cho mọi case",
+        "B": "cors middleware config: origin whitelist, methods, headers, credentials. Preflight (OPTIONS) phải handle. Credentials cần specific origin (không *)",
+        "C": "CORS chỉ ảnh hưởng frontend",
+        "D": "CORS chỉ fix được ở browser extension"
+      },
+      "correct_answer": "B",
+      "explanation": "CORS (Cross-Origin Resource Sharing): browser security, server phải declare origins được phép. app.use(cors({origin: ['https://app.com', 'http://localhost:3000'], methods: ['GET','POST','PUT','DELETE'], allowedHeaders: ['Content-Type', 'Authorization'], credentials: true})). credentials: true khi dùng cookies → origin KHÔNG thể là '*' (browser từ chối). Preflight: browser tự động gửi OPTIONS request cho 'non-simple' requests → server phải respond 200. Debugging: Network tab → response headers → Access-Control-Allow-Origin có đúng không?",
+      "source": "https://www.freecodecamp.org/news/cors-in-nodejs/",
+      "tags": [
+        "CORS",
+        "cors-middleware",
+        "preflight",
+        "credentials",
+        "security"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "unhandledRejection và uncaughtException trong Node.js — xử lý thế nào?",
+      "options": {
+        "A": "Ignore tất cả là OK",
+        "B": "process.on('unhandledRejection', handler) và process.on('uncaughtException', handler) — log error, graceful cleanup, exit(1) cho uncaughtException",
+        "C": "Try/catch tất cả mọi chỗ là đủ",
+        "D": "nodemon tự restart khi crash"
+      },
+      "correct_answer": "B",
+      "explanation": "unhandledRejection: Promise rejected mà không có .catch() hoặc try/catch. Từ Node 15+: crash process mặc định. Handler: process.on('unhandledRejection', (reason, promise) => { logger.error('Unhandled Rejection', {reason, promise}); process.exit(1); }). uncaughtException: synchronous exception không bị catch. NGUY HIỂM: app state unknown sau đó. Handler: log error, cleanup (close DB), exit. Không tiếp tục chạy sau uncaughtException — app state corrupted. Production: PM2/K8s tự restart sau exit.",
+      "source": "https://www.geeksforgeeks.org/node-js-handling-uncaught-exceptions/",
+      "tags": [
+        "unhandledRejection",
+        "uncaughtException",
+        "error-handling",
+        "process"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Node.js app bị 'ECONNREFUSED' lỗi khi connect database. Debug checklist?",
+      "options": {
+        "A": "Restart database là đủ",
+        "B": "Check: DB running, host/port đúng, firewall rules, connection string, max_connections, SSL, Docker network",
+        "C": "Tăng connection pool size",
+        "D": "Dùng SQLite thay thế"
+      },
+      "correct_answer": "B",
+      "explanation": "ECONNREFUSED debug: (1) DB running? docker ps, systemctl status postgresql. (2) Host/port đúng? process.env.DB_HOST, process.env.DB_PORT. (3) Network connectivity: nc -zv host port hoặc telnet host port. (4) Docker: service name (không localhost) khi cùng docker-compose network. (5) Firewall: iptables, security groups (AWS). (6) max_connections exhausted: check pg_stat_activity. (7) SSL: rejectUnauthorized: false cho self-signed certs (dev only!). (8) Credentials: username/password đúng không? (9) Database exists: pg_isready.",
+      "source": "https://www.geeksforgeeks.org/common-node-js-errors/",
+      "tags": [
+        "ECONNREFUSED",
+        "database-connection",
+        "debugging",
+        "Docker",
+        "networking"
+      ]
+    },
+    {
+      "question_id": "nodejs_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Node.js blocking event loop — nguyên nhân và cách detect?",
+      "options": {
+        "A": "Node.js event loop không thể bị block",
+        "B": "Synchronous heavy computation, large JSON.parse, synchronous crypto, long regex backtracking — block event loop, queue up other requests",
+        "C": "Chỉ database queries block event loop",
+        "D": "Event loop blocking chỉ ở browser"
+      },
+      "correct_answer": "B",
+      "explanation": "Event loop blocked = tất cả requests bị delay. Nguyên nhân: (1) JSON.parse large object (5MB+ JSON = vài giây sync). (2) crypto.pbkdf2Sync (dùng async version). (3) ReDoS: regex (a+)+ với long input → exponential backtracking. (4) fs.readFileSync trong request handler. (5) Heavy loop: for 10 million iterations. Detect: --max-old-space-size 512; clinic doctor; event loop lag metric (blocked > 100ms là problem). Fix: worker_threads cho CPU-intensive, stream JSON parsing (stream-json library), async crypto APIs.",
+      "source": "https://www.geeksforgeeks.org/node-js-blocking-vs-non-blocking/",
+      "tags": [
+        "event-loop-blocking",
+        "performance",
+        "worker-threads",
+        "regex",
+        "JSON"
+      ]
+    },
+    {
+      "question_id": "nodejs_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Node.js API serving 50k RPM. Response times tăng dần trong peak hours. Điều tra?",
+      "options": {
+        "A": "Tăng RAM server",
+        "B": "Profile với clinic.js/0x, check: event loop lag, GC pressure, DB connection pool, N+1 queries, memory trend, external API latencies",
+        "C": "Restart service mỗi giờ",
+        "D": "Giảm số endpoints"
+      },
+      "correct_answer": "B",
+      "explanation": "Systematic investigation: (1) Metrics: response time p50/p95/p99, error rate, throughput. (2) Event loop lag: blocked_event_loop metric (>100ms = problem). (3) GC: nếu GC time tăng → memory pressure (heap growth). (4) DB: pg_stat_activity, slow queries, connection pool wait time. (5) clinic doctor: tổng quan bottlenecks. (6) 0x flame graph: xem hot functions. (7) External APIs: nếu gọi external service trong request path → timeout/slow response. (8) Memory: heapdump tại peak → analyze với Chrome DevTools. (9) N+1: log SQL queries số lượng per request.",
+      "source": "https://www.freecodecamp.org/news/node-js-performance/",
+      "tags": [
+        "performance",
+        "profiling",
+        "production",
+        "scaling",
+        "bottleneck"
+      ]
+    },
+    {
+      "question_id": "nodejs_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Microservices với Node.js — communication patterns nào phù hợp?",
+      "options": {
+        "A": "HTTP REST cho mọi communication",
+        "B": "Sync: HTTP REST (CRUD, queries). Async: Message Queue (RabbitMQ/Kafka cho events, high throughput). gRPC cho internal high-performance. Service mesh cho complex scenarios",
+        "C": "Chỉ gRPC cho microservices",
+        "D": "Shared database giữa services"
+      },
+      "correct_answer": "B",
+      "explanation": "Communication patterns: (1) HTTP REST: đơn giản, dễ debug, phù hợp request/response. Vấn đề: tight coupling, cascade failures. (2) Message Queue (RabbitMQ/Bull/Kafka): async, decoupled, reliable delivery, retry. Tốt cho: order processing, notifications, event-driven. (3) gRPC: binary protocol, strongly-typed (Protobuf), streaming, tốt cho internal services cần performance. (4) GraphQL: flexible querying, API gateway pattern. (5) Event Sourcing + CQRS: command và query separation. Pattern tốt: Saga pattern cho distributed transactions, Circuit Breaker cho resilience.",
+      "source": "https://www.freecodecamp.org/news/nodejs-microservices/",
+      "tags": [
+        "microservices",
+        "gRPC",
+        "message-queue",
+        "REST",
+        "event-driven"
+      ]
+    },
+    {
+      "question_id": "nodejs_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Node.js app deployed trên K8s đang có 'out of memory killed' lỗi định kỳ. Approach?",
+      "options": {
+        "A": "Tăng memory limit vô hạn",
+        "B": "Profile memory (heapdump, clinic), identify leak (EventEmitters, caches, closures), fix leak, set appropriate limits, HPA, liveness probe",
+        "C": "Restart pods mỗi 1 giờ",
+        "D": "Dùng Nginx thay Node.js"
+      },
+      "correct_answer": "B",
+      "explanation": "Systematic approach: (1) Collect heapdump khi memory cao: node --heapsnapshot-signal=SIGUSR2, sau đó kill -USR2 <pid>. (2) Analyze với Chrome DevTools → find: Objects với growing count, Retained objects không cần. (3) Common leaks: cache không có max size (dùng lru-cache), EventEmitter listeners tích lũy. (4) Fix và deploy. (5) Set memory limits K8s: requests.memory, limits.memory (dựa trên actual usage + buffer). (6) HPA (Horizontal Pod Autoscaler): scale out khi memory/CPU cao. (7) Liveness probe: nếu process không responsive → K8s kill và restart.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-memory-management/",
+      "tags": [
+        "memory-leak",
+        "Kubernetes",
+        "heapdump",
+        "OOM",
+        "HPA"
+      ]
+    }
+  ]
+}

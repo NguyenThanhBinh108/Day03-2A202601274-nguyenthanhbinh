@@ -1,0 +1,154 @@
+{
+  "skill": "MySQL",
+  "skill_key": "mysql",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.577972Z",
+  "checklist_items": [
+    {
+      "item_id": "mysql_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "SQL queries",
+      "description": "Master SQL queries trong MySQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MySQL+SQL+queries+tutorial",
+      "resource_title": "MySQL — SQL queries",
+      "quiz_ids": [
+        "mysql_l1_001"
+      ],
+      "market_relevance": "SQL queries là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "JOINs",
+      "description": "Master JOINs trong MySQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MySQL+JOINs+tutorial",
+      "resource_title": "MySQL — JOINs",
+      "quiz_ids": [
+        "mysql_l2_002"
+      ],
+      "market_relevance": "JOINs là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Indexes",
+      "description": "Master Indexes trong MySQL — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=MySQL+Indexes+tutorial",
+      "resource_title": "MySQL — Indexes",
+      "quiz_ids": [
+        "mysql_l3_003"
+      ],
+      "market_relevance": "Indexes là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Transactions",
+      "description": "Master Transactions trong MySQL — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=MySQL+Transactions+tutorial",
+      "resource_title": "MySQL — Transactions",
+      "quiz_ids": [
+        "mysql_l4_004"
+      ],
+      "market_relevance": "Transactions là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Stored procedures",
+      "description": "Master Stored procedures trong MySQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MySQL+Stored+procedures+tutorial",
+      "resource_title": "MySQL — Stored procedures",
+      "quiz_ids": [
+        "mysql_l5_005"
+      ],
+      "market_relevance": "Stored procedures là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Views",
+      "description": "Master Views trong MySQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MySQL+Views+tutorial",
+      "resource_title": "MySQL — Views",
+      "quiz_ids": [
+        "mysql_l5_006"
+      ],
+      "market_relevance": "Views là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Replication",
+      "description": "Master Replication trong MySQL — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=MySQL+Replication+tutorial",
+      "resource_title": "MySQL — Replication",
+      "quiz_ids": [
+        "mysql_l5_007"
+      ],
+      "market_relevance": "Replication là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Partitioning",
+      "description": "Master Partitioning trong MySQL — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=MySQL+Partitioning+tutorial",
+      "resource_title": "MySQL — Partitioning",
+      "quiz_ids": [
+        "mysql_l5_008"
+      ],
+      "market_relevance": "Partitioning là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "EXPLAIN query plan",
+      "description": "Master EXPLAIN query plan trong MySQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=MySQL+EXPLAIN+query+plan+tutorial",
+      "resource_title": "MySQL — EXPLAIN query plan",
+      "quiz_ids": [
+        "mysql_l5_009"
+      ],
+      "market_relevance": "EXPLAIN query plan là key skill trong MySQL Database development"
+    },
+    {
+      "item_id": "mysql_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "MySQL 8 features",
+      "description": "Master MySQL 8 features trong MySQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=MySQL+MySQL+8+features+tutorial",
+      "resource_title": "MySQL — MySQL 8 features",
+      "quiz_ids": [
+        "mysql_l5_010"
+      ],
+      "market_relevance": "MySQL 8 features là key skill trong MySQL Database development"
+    }
+  ]
+}

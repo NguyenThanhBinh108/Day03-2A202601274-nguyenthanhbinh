@@ -1,0 +1,240 @@
+{
+  "skill": "System Design",
+  "skill_key": "system_design",
+  "total_questions": 10,
+  "levels": {
+    "1": 4,
+    "2": 3,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T01:37:31.872992",
+  "source_references": [
+    "https://www.geeksforgeeks.org/system-design/",
+    "https://www.freecodecamp.org/news/tag/system-design/",
+    "https://github.com/donnemartin/system-design-primer"
+  ],
+  "questions": [
+    {
+      "question_id": "sysdes_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Vertical scaling vs Horizontal scaling — khi nào dùng cái nào?",
+      "options": {
+        "A": "Vertical scaling luôn tốt hơn",
+        "B": "Vertical: nâng cấp server (RAM/CPU) — đơn giản, có giới hạn. Horizontal: thêm servers — phức tạp hơn nhưng theoretically vô hạn, better fault tolerance",
+        "C": "Cả hai đều kém, dùng serverless",
+        "D": "Horizontal scaling chỉ cho startup lớn"
+      },
+      "correct_answer": "B",
+      "explanation": "Vertical (Scale up): Nâng RAM từ 16GB → 64GB, CPU từ 8 core → 32 core. Ưu điểm: không cần code change. Nhược: giới hạn hardware, single point of failure, downtime khi upgrade. Horizontal (Scale out): Thêm servers, load balancer. Ưu: fault tolerance (1 server die không ảnh hưởng), cheaper commodity hardware, auto-scaling. Nhược: stateless requirement (sessions phải shared qua Redis), data consistency phức tạp hơn. Database: vertical (read replicas) + horizontal (sharding cho write scaling).",
+      "source": "https://www.geeksforgeeks.org/horizontal-and-vertical-scaling-in-databases/",
+      "tags": [
+        "scaling",
+        "vertical",
+        "horizontal",
+        "load-balancer"
+      ]
+    },
+    {
+      "question_id": "sysdes_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Load balancer là gì và các algorithms phổ biến?",
+      "options": {
+        "A": "Load balancer = reverse proxy đơn giản",
+        "B": "Load balancer phân phối traffic đến nhiều servers. Algorithms: Round Robin, Least Connections, IP Hash, Weighted, Random",
+        "C": "Chỉ cần 1 load balancer là đủ",
+        "D": "Load balancer chỉ dùng cho database"
+      },
+      "correct_answer": "B",
+      "explanation": "Load balancing algorithms: Round Robin: lần lượt. Least Connections: server ít connections nhất. IP Hash: cùng IP → cùng server (session persistence). Weighted: server mạnh hơn nhận nhiều requests hơn. Random: ngẫu nhiên. Layer 4 (transport): routing dựa trên IP/TCP, nhanh hơn. Layer 7 (application): routing dựa trên URL, headers, cookies — linh hoạt hơn. Tools: Nginx, HAProxy, AWS ALB/NLB, Cloudflare. Health checks: load balancer không route đến unhealthy servers.",
+      "source": "https://www.geeksforgeeks.org/load-balancing-algorithms/",
+      "tags": [
+        "load-balancer",
+        "round-robin",
+        "algorithm",
+        "nginx"
+      ]
+    },
+    {
+      "question_id": "sysdes_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Cache là gì và tại sao quan trọng trong system design?",
+      "options": {
+        "A": "Cache = database backup",
+        "B": "Cache: lưu trữ tạm thời để giảm latency và database load. Levels: browser, CDN, application (Redis), database query cache",
+        "C": "Cache chỉ cần cho static files",
+        "D": "Cache làm data inconsistent, không nên dùng"
+      },
+      "correct_answer": "B",
+      "explanation": "Cache layers: (1) Browser cache: CSS/JS/images không fetch lại nếu không expired. (2) CDN: static assets gần user nhất. (3) Application cache: Redis/Memcached — expensive computations, session data, frequently read data. (4) Database cache: query result cache (limited). Cache-aside (Lazy loading): app check cache trước, nếu miss mới query DB. Write-through: write cache và DB đồng thời. Write-back (Write-behind): write cache, async write DB (fast write, risk của data loss). TTL: tránh stale data. Cache invalidation là hard problem.",
+      "source": "https://www.geeksforgeeks.org/caching-in-system-design/",
+      "tags": [
+        "cache",
+        "Redis",
+        "CDN",
+        "TTL",
+        "invalidation"
+      ]
+    },
+    {
+      "question_id": "sysdes_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "CAP Theorem là gì?",
+      "options": {
+        "A": "CAP không áp dụng cho modern databases",
+        "B": "Consistency, Availability, Partition Tolerance — distributed system chỉ có thể đảm bảo 2 trong 3 cùng lúc",
+        "C": "Tất cả 3 đều đạt được với đủ hardware",
+        "D": "CAP chỉ cho NoSQL databases"
+      },
+      "correct_answer": "B",
+      "explanation": "CAP: C = Consistency (mọi node đọc cùng data tại cùng thời điểm), A = Availability (mọi request đều nhận response), P = Partition Tolerance (system tiếp tục hoạt động dù network partition). Network partition là thực tế (phải chấp nhận P). Chọn: CP (consistent, có thể unavailable khi partition): HBase, ZooKeeper, Etcd. AP (available, có thể inconsistent): Cassandra, DynamoDB, CouchDB. CA (không thực tế trong distributed systems). PACELC: extension của CAP — trade-off Even without partition.",
+      "source": "https://www.geeksforgeeks.org/cap-theorem-in-dbms/",
+      "tags": [
+        "CAP",
+        "consistency",
+        "availability",
+        "partition-tolerance",
+        "distributed"
+      ]
+    },
+    {
+      "question_id": "sysdes_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Design URL Shortener như bit.ly — các components cần thiết?",
+      "options": {
+        "A": "Chỉ cần database với short URLs",
+        "B": "Load balancer + App servers + Base62 encoding + DB (key-value store) + Cache (Redis) + Analytics + Rate limiting",
+        "C": "Chỉ cần 1 server là đủ",
+        "D": "URL shortener không cần cache"
+      },
+      "correct_answer": "B",
+      "explanation": "Design: (1) Encoding: MD5(URL) → lấy 7 ký tự base62 (a-z A-Z 0-9), collision check. Hoặc auto-increment ID → base62. (2) Storage: Redis (hot URLs cache), PostgreSQL/Cassandra (all mappings). (3) Scale: 100M URLs/day = 1200 writes/s, 10B reads/day = 115K reads/s → read-heavy. (4) Expiration: TTL trong Redis, soft delete trong DB. (5) Analytics: async (Kafka) để không slow down redirect. (6) Custom aliases: prefix check. Estimate: 1B URLs × 100 bytes = 100GB storage. Redirect: 301 (permanent, browser cache) vs 302 (temporary, analytics track mọi click).",
+      "source": "https://www.geeksforgeeks.org/design-url-shortener/",
+      "tags": [
+        "URL-shortener",
+        "system-design",
+        "base62",
+        "Redis",
+        "scale"
+      ]
+    },
+    {
+      "question_id": "sysdes_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Database sharding và khi nào cần thiết?",
+      "options": {
+        "A": "Sharding là cách tốt nhất luôn luôn",
+        "B": "Sharding: chia database thành multiple partitions (shards) trên nhiều servers — khi vertical scaling không đủ, thường > 100M rows",
+        "C": "Sharding chỉ cho NoSQL",
+        "D": "Sharding là deprecated, dùng cloud databases"
+      },
+      "correct_answer": "B",
+      "explanation": "Sharding strategies: (1) Range sharding: user IDs 1-1M → shard1, 1M-2M → shard2. Vấn đề: hot spots (user IDs mới → 1 shard). (2) Hash sharding: hash(user_id) % n_shards. Uniform distribution nhưng resharding khi thêm shard phức tạp. (3) Geographic: users VN → VN shard. (4) Directory-based: lookup table quyết định shard. Challenges: cross-shard queries (JOIN phức tạp), distributed transactions, rebalancing. Alternatives: vertical partitioning (tách columns), read replicas cho read scaling. Sharding thường là last resort sau tất cả optimizations khác.",
+      "source": "https://www.geeksforgeeks.org/database-sharding/",
+      "tags": [
+        "sharding",
+        "partitioning",
+        "horizontal-scaling",
+        "database",
+        "distribution"
+      ]
+    },
+    {
+      "question_id": "sysdes_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Message Queue (Kafka/RabbitMQ) tại sao cần trong microservices?",
+      "options": {
+        "A": "Message queue chỉ cho email sending",
+        "B": "Decoupling services, async processing, buffering traffic spikes, guaranteed delivery, event sourcing, fan-out patterns",
+        "C": "Chỉ cần direct HTTP calls giữa services",
+        "D": "Message queue chỉ dùng khi database bị chậm"
+      },
+      "correct_answer": "B",
+      "explanation": "Benefits: (1) Decoupling: producer không cần biết consumers. (2) Async: order confirmed → trigger (email, inventory, analytics) async, không block response. (3) Buffer: spike 100k req/s → queue absorbs → consumers process steady 10k/s. (4) Reliability: guaranteed delivery với acknowledgment + retry. (5) Fan-out: 1 message → nhiều consumers (Kafka consumer groups). Kafka vs RabbitMQ: Kafka: high throughput (1M msg/s), log retention, replay events, real-time analytics. RabbitMQ: complex routing (exchanges, bindings), TTL, priority queues, lower throughput. Redis Streams: lightweight alternative cho simple cases.",
+      "source": "https://www.geeksforgeeks.org/message-queues-in-system-design/",
+      "tags": [
+        "Kafka",
+        "RabbitMQ",
+        "message-queue",
+        "async",
+        "decoupling"
+      ]
+    },
+    {
+      "question_id": "sysdes_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Design chat application như Facebook Messenger — key decisions?",
+      "options": {
+        "A": "Simple database là đủ",
+        "B": "WebSocket/SSE cho real-time, message storage (Cassandra wide-column), fanout service, offline notifications, read receipts, Redis cho online status",
+        "C": "Polling mỗi giây là OK",
+        "D": "Chỉ cần 1 server với WebSocket"
+      },
+      "correct_answer": "B",
+      "explanation": "Design decisions: (1) Connection: WebSocket cho bidirectional real-time (Long polling fallback). (2) Message storage: Cassandra — high write throughput, time-series data, wide-column for chat history. (3) Fanout: khi A gửi tin → push đến tất cả devices của B (có thể nhiều devices). (4) Offline: push notifications (FCM/APNs) khi user offline. (5) Online status: Redis set với TTL (heartbeat). (6) Read receipts: delivery/read timestamps. (7) Scale: Service per concern (chat, notification, presence, storage). WhatsApp scale: 2B users, 100B messages/day với Erlang/Mnesia.",
+      "source": "https://www.geeksforgeeks.org/design-messaging-application/",
+      "tags": [
+        "chat",
+        "WebSocket",
+        "Cassandra",
+        "fanout",
+        "real-time",
+        "scale"
+      ]
+    },
+    {
+      "question_id": "sysdes_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "System bị slow khi có nhiều concurrent users. Bottleneck identification process?",
+      "options": {
+        "A": "Thêm server là đủ",
+        "B": "Systematic profiling: APM metrics (latency/throughput/errors), identify bottleneck (CPU/Memory/IO/Network/DB), trace individual requests, load test",
+        "C": "Restart tất cả services",
+        "D": "Giảm số features"
+      },
+      "correct_answer": "B",
+      "explanation": "Bottleneck identification: (1) APM: Datadog/New Relic/Prometheus — p95/p99 latency, error rate, throughput. (2) USE method: Utilization + Saturation + Errors cho mỗi resource. (3) Distributed tracing (Jaeger/Zipkin): trace 1 request qua nhiều services — tìm slow service. (4) Database: slow query log, pg_stat_statements, explain analyze. (5) Load test: k6/Locust/JMeter — simulate load, tìm breaking point. (6) Flame graph: CPU profiling per service. Common bottlenecks: N+1 queries, missing indexes, no caching, synchronous blocking calls, resource contention (connection pool, locks).",
+      "source": "https://www.geeksforgeeks.org/performance-testing-in-system-design/",
+      "tags": [
+        "bottleneck",
+        "APM",
+        "distributed-tracing",
+        "load-test",
+        "profiling"
+      ]
+    },
+    {
+      "question_id": "sysdes_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Tiki/Shopee VN: Flash sale 100k users mua cùng lúc, inventory chỉ còn 100 sản phẩm. Design?",
+      "options": {
+        "A": "Lock database table là đủ",
+        "B": "Redis atomic DECR cho inventory (prevent overselling), message queue cho orders, rate limiting, distributed locking, idempotent order API",
+        "C": "First come first served với DB lock",
+        "D": "Tắt tính năng nếu quá tải"
+      },
+      "correct_answer": "B",
+      "explanation": "Flash sale design: (1) Pre-load inventory vào Redis: SET item:123:qty 100. (2) Redis DECR qty (atomic): lua script: if current > 0 then DECR and return 1 else return 0. Không thể oversell vì atomic. (3) Rate limiting: giới hạn 1 order/user/minute. (4) Queue orders: accepted → Kafka → async processing (payment, DB write). (5) Idempotent: nếu retry, không tạo duplicate order (idempotency key). (6) Circuit breaker: nếu payment service down → không accept orders. (7) Warm up cache: trước flash sale load sản phẩm vào CDN/Redis. Scale: 100k RPM → need load balancer + nhiều app instances + Redis Cluster.",
+      "source": "https://www.geeksforgeeks.org/flash-sale-system-design/",
+      "tags": [
+        "flash-sale",
+        "Redis-atomic",
+        "distributed-lock",
+        "idempotent",
+        "queue",
+        "Vietnam-e-commerce"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "skill": "Microservices",
+  "skill_key": "microservices",
+  "total_topics": 6,
+  "estimated_total_hours": 8.0,
+  "generated_at": "2026-06-12T02:22:05.518391",
+  "checklist_items": [
+    {
+      "item_id": "micro_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Microservices concepts và when to use",
+      "description": "Microservices vs monolith, decomposition strategies, bounded context (DDD), trade-offs",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/microservices/",
+      "resource_title": "GeeksForGeeks — Microservices"
+    },
+    {
+      "item_id": "micro_c002",
+      "order": 2,
+      "phase": "core",
+      "title": "Service Communication — REST, gRPC, Message Queue",
+      "description": "Sync vs async, REST, gRPC (Protobuf), RabbitMQ/Kafka, event-driven architecture",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/microservices-communication/",
+      "resource_title": "GeeksForGeeks — Microservices Communication"
+    },
+    {
+      "item_id": "micro_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "API Gateway và Service Discovery",
+      "description": "Kong/nginx gateway, Eureka/Consul discovery, load balancing, BFF pattern",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/api-gateway-pattern/",
+      "resource_title": "GeeksForGeeks — API Gateway"
+    },
+    {
+      "item_id": "micro_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Resilience — Circuit Breaker, Retry, Bulkhead",
+      "description": "Resilience4j/Polly, Circuit Breaker states, Retry với backoff, Bulkhead, Timeout",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/circuit-breaker-design-pattern/",
+      "resource_title": "GeeksForGeeks — Circuit Breaker",
+      "hands_on_task": "Implement Circuit Breaker giữa Order Service và Payment Service"
+    },
+    {
+      "item_id": "micro_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Distributed Transactions — Saga Pattern",
+      "description": "Saga choreography vs orchestration, compensating transactions, outbox pattern",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/saga-pattern/",
+      "resource_title": "GeeksForGeeks — Saga Pattern"
+    },
+    {
+      "item_id": "micro_c006",
+      "order": 6,
+      "phase": "advanced",
+      "title": "Observability — Distributed Tracing, Logging",
+      "description": "OpenTelemetry, Jaeger/Zipkin tracing, structured logging, correlation IDs, Prometheus",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/observability-in-system-design/",
+      "resource_title": "GeeksForGeeks — Observability"
+    }
+  ]
+}

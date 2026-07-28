@@ -1,0 +1,233 @@
+{
+  "skill": "SQL",
+  "skill_key": "sql",
+  "total_topics": 15,
+  "estimated_total_hours": 20.5,
+  "generated_at": "2026-06-12T01:24:07.197741",
+  "checklist_items": [
+    {
+      "item_id": "sql_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "SQL cơ bản — SELECT, WHERE, ORDER BY",
+      "description": "SELECT, FROM, WHERE (operators), ORDER BY ASC/DESC, LIMIT/OFFSET, DISTINCT",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/sql/sql_select.asp",
+      "resource_title": "W3Schools — SQL SELECT",
+      "quiz_ids": [
+        "sql_l1_001"
+      ],
+      "hands_on_task": "Query database northwind/sakila: tìm customers, filter, sort",
+      "market_relevance": "Câu hỏi SQL đầu tiên trong mọi interview"
+    },
+    {
+      "item_id": "sql_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Aggregate Functions — COUNT, SUM, AVG, GROUP BY",
+      "description": "COUNT(*)/COUNT(col), SUM, AVG, MIN, MAX, GROUP BY, HAVING, NULL trong aggregates",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/sql/sql_count.asp",
+      "resource_title": "W3Schools — SQL Aggregate Functions",
+      "quiz_ids": [
+        "sql_l1_003"
+      ],
+      "market_relevance": "Báo cáo và analytics dùng aggregate hàng ngày"
+    },
+    {
+      "item_id": "sql_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "JOINs — kết hợp nhiều bảng",
+      "description": "INNER, LEFT, RIGHT, FULL OUTER JOIN, multiple joins, join conditions, self-join",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/sql/sql_join.asp",
+      "resource_title": "W3Schools — SQL JOINs",
+      "quiz_ids": [
+        "sql_l1_002"
+      ],
+      "hands_on_task": "Query: danh sách đơn hàng kèm thông tin khách hàng và sản phẩm — 3-way JOIN",
+      "market_relevance": "Hỏi trong 90%+ SQL interviews"
+    },
+    {
+      "item_id": "sql_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "DML — INSERT, UPDATE, DELETE an toàn",
+      "description": "INSERT single/multi-row, UPDATE với WHERE, DELETE với WHERE, TRUNCATE vs DELETE, transaction safety",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/sql/sql_insert.asp",
+      "resource_title": "W3Schools — SQL INSERT",
+      "quiz_ids": [
+        "sql_l1_004"
+      ],
+      "market_relevance": "Thao tác data hàng ngày"
+    },
+    {
+      "item_id": "sql_c005",
+      "order": 5,
+      "phase": "foundation",
+      "title": "NULL handling và COALESCE",
+      "description": "IS NULL, IS NOT NULL, COALESCE, NULLIF, NULL trong JOINs, NULL trong aggregates",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.w3schools.com/sql/sql_null_values.asp",
+      "resource_title": "W3Schools — SQL NULL Values",
+      "quiz_ids": [
+        "sql_l1_006"
+      ],
+      "market_relevance": "Bug phổ biến nhất: không xử lý NULL đúng cách"
+    },
+    {
+      "item_id": "sql_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Subqueries — IN, EXISTS, Correlated",
+      "description": "Scalar subquery, inline view, correlated subquery, IN vs EXISTS, ANY/ALL",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/sql/sql_subqueries.asp",
+      "resource_title": "W3Schools — SQL Subqueries",
+      "quiz_ids": [
+        "sql_l2_001"
+      ],
+      "market_relevance": "Interview middle hay hỏi subquery phức tạp"
+    },
+    {
+      "item_id": "sql_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Indexes — Tạo và tối ưu",
+      "description": "CREATE INDEX, composite index, partial index, unique index, EXPLAIN để verify, DROP INDEX",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/sql/sql_create_index.asp",
+      "resource_title": "W3Schools — SQL Indexes",
+      "quiz_ids": [
+        "sql_l1_005",
+        "sql_l4_003"
+      ],
+      "hands_on_task": "Identify slow queries trong project thực tế, thêm index phù hợp, verify với EXPLAIN",
+      "market_relevance": "Indexing là optimization quan trọng nhất"
+    },
+    {
+      "item_id": "sql_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "Window Functions — ROW_NUMBER, RANK, LAG",
+      "description": "OVER, PARTITION BY, ORDER BY trong window, ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, running SUM",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/window-functions-in-sql/",
+      "resource_title": "GeeksForGeeks — Window Functions",
+      "quiz_ids": [
+        "sql_l2_002",
+        "sql_l3_001"
+      ],
+      "hands_on_task": "Top 3 sản phẩm bán chạy theo category, month-over-month growth",
+      "market_relevance": "Senior SQL interview bắt buộc"
+    },
+    {
+      "item_id": "sql_c009",
+      "order": 9,
+      "phase": "core",
+      "title": "CTE — Common Table Expressions",
+      "description": "WITH clause, multiple CTEs, CTE vs subquery, recursive CTE cho hierarchical data",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/cte-in-sql/",
+      "resource_title": "GeeksForGeeks — CTE in SQL",
+      "quiz_ids": [
+        "sql_l2_003",
+        "sql_l3_003"
+      ],
+      "hands_on_task": "Rewrite complex nested subquery thành CTE, build org chart query với recursive CTE",
+      "market_relevance": "CTE = code readability tăng lên nhiều"
+    },
+    {
+      "item_id": "sql_c010",
+      "order": 10,
+      "phase": "core",
+      "title": "Transactions và ACID",
+      "description": "BEGIN/COMMIT/ROLLBACK, isolation levels, FOR UPDATE, SELECT ... LOCK, SAVEPOINT",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/acid-properties-in-dbms/",
+      "resource_title": "GeeksForGeeks — ACID Properties",
+      "quiz_ids": [
+        "sql_l2_004",
+        "sql_l3_004"
+      ],
+      "hands_on_task": "Implement banking transfer với proper transaction, test rollback on failure",
+      "market_relevance": "Fintech và e-commerce VN bắt buộc phải biết"
+    },
+    {
+      "item_id": "sql_c011",
+      "order": 11,
+      "phase": "core",
+      "title": "Database Design và Normalization",
+      "description": "ERD, primary/foreign keys, 1NF/2NF/3NF, denormalization, many-to-many junction tables",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/normal-forms-in-dbms/",
+      "resource_title": "GeeksForGeeks — Normal Forms",
+      "quiz_ids": [
+        "sql_l2_005"
+      ],
+      "hands_on_task": "Design schema cho e-commerce app: users, products, categories, orders, order_items",
+      "market_relevance": "Database design là skill quan trọng của Backend developer"
+    },
+    {
+      "item_id": "sql_c012",
+      "order": 12,
+      "phase": "core",
+      "title": "Upsert và Idempotent Operations",
+      "description": "ON CONFLICT DO UPDATE (PostgreSQL), ON DUPLICATE KEY UPDATE (MySQL), MERGE (SQL Server)",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/upsert-in-sql/",
+      "resource_title": "GeeksForGeeks — SQL Upsert",
+      "quiz_ids": [
+        "sql_l3_006"
+      ],
+      "market_relevance": "Sync operations và idempotent APIs cần upsert"
+    },
+    {
+      "item_id": "sql_c013",
+      "order": 13,
+      "phase": "advanced",
+      "title": "Query Optimization — EXPLAIN và Profiling",
+      "description": "EXPLAIN ANALYZE, query plan reading, Seq Scan vs Index Scan, N+1 problem, ORM optimization",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/query-optimization-techniques-in-sql-server/",
+      "resource_title": "GeeksForGeeks — Query Optimization",
+      "quiz_ids": [
+        "sql_l2_006",
+        "sql_l4_001",
+        "sql_l4_003"
+      ],
+      "hands_on_task": "Profile slow queries trong project, identify top 3 bottlenecks, optimize với indexes",
+      "market_relevance": "Senior Backend dev phải biết optimize queries"
+    },
+    {
+      "item_id": "sql_c014",
+      "order": 14,
+      "phase": "advanced",
+      "title": "Deadlock Prevention và Concurrency",
+      "description": "Deadlock scenarios, lock ordering, timeout, optimistic vs pessimistic locking, FOR UPDATE SKIP LOCKED",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/deadlock-in-sql/",
+      "resource_title": "GeeksForGeeks — SQL Deadlock",
+      "quiz_ids": [
+        "sql_l4_002"
+      ],
+      "market_relevance": "Production app với high concurrency cần biết"
+    },
+    {
+      "item_id": "sql_c015",
+      "order": 15,
+      "phase": "advanced",
+      "title": "Schema Migration — Zero Downtime",
+      "description": "Expand-contract pattern, ALTER TABLE risks, CREATE INDEX CONCURRENTLY, Flyway/Alembic/Liquibase",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/database-migration-strategies/",
+      "resource_title": "GeeksForGeeks — Database Migration",
+      "quiz_ids": [
+        "sql_l4_006"
+      ],
+      "market_relevance": "Deploy production không gây downtime — critical skill"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Microsoft Azure",
+  "skill_key": "azure",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.598369Z",
+  "source_references": [
+    "https://www.google.com/search?q=Microsoft+Azure+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "azure_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Microsoft Azure, Azure App Service có vai trò gì?",
+      "options": {
+        "A": "Azure App Service là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure App Service là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure App Service đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure App Service là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure App Service trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure App Service là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure App Service giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+App+Service+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-app-service"
+      ]
+    },
+    {
+      "question_id": "azure_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Microsoft Azure, Azure Functions có vai trò gì?",
+      "options": {
+        "A": "Azure Functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure Functions là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure Functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure Functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure Functions trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure Functions là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure Functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+Functions+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-functions"
+      ]
+    },
+    {
+      "question_id": "azure_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Microsoft Azure, AKS có vai trò gì?",
+      "options": {
+        "A": "AKS là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "AKS là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "AKS đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên AKS là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "AKS trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và AKS là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ AKS giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+AKS+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "aks"
+      ]
+    },
+    {
+      "question_id": "azure_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Microsoft Azure, Azure DevOps có vai trò gì?",
+      "options": {
+        "A": "Azure DevOps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure DevOps là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure DevOps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure DevOps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure DevOps trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure DevOps là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure DevOps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+DevOps+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-devops"
+      ]
+    },
+    {
+      "question_id": "azure_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Microsoft Azure, Azure AD có vai trò gì?",
+      "options": {
+        "A": "Azure AD là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure AD là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure AD đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure AD là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure AD trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure AD là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure AD giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+AD+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-ad"
+      ]
+    },
+    {
+      "question_id": "azure_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Microsoft Azure, Azure Storage có vai trò gì?",
+      "options": {
+        "A": "Azure Storage là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure Storage là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure Storage đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure Storage là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure Storage trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure Storage là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure Storage giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+Storage+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-storage"
+      ]
+    },
+    {
+      "question_id": "azure_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Microsoft Azure, Azure SQL có vai trò gì?",
+      "options": {
+        "A": "Azure SQL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure SQL là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure SQL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure SQL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure SQL trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure SQL là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure SQL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+SQL+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-sql"
+      ]
+    },
+    {
+      "question_id": "azure_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Microsoft Azure, Azure Monitor có vai trò gì?",
+      "options": {
+        "A": "Azure Monitor là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure Monitor là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure Monitor đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure Monitor là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure Monitor trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure Monitor là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure Monitor giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+Monitor+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-monitor"
+      ]
+    },
+    {
+      "question_id": "azure_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Microsoft Azure, Azure CDN có vai trò gì?",
+      "options": {
+        "A": "Azure CDN là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Azure CDN là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Azure CDN đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Azure CDN là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Azure CDN trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Azure CDN là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Azure CDN giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Azure+CDN+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "azure-cdn"
+      ]
+    },
+    {
+      "question_id": "azure_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Microsoft Azure, Bicep templates có vai trò gì?",
+      "options": {
+        "A": "Bicep templates là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Bicep templates là core concept trong Microsoft Azure — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Bicep templates đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Bicep templates là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Bicep templates trong Microsoft Azure: Đây là một trong những concepts quan trọng nhất. Microsoft Azure được sử dụng rộng rãi trong industry và Bicep templates là phần không thể thiếu. Khi làm việc với Microsoft Azure trong production, hiểu rõ Bicep templates giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Microsoft+Azure+Bicep+templates+tutorial",
+      "tags": [
+        "azure",
+        "devops",
+        "bicep-templates"
+      ]
+    }
+  ]
+}

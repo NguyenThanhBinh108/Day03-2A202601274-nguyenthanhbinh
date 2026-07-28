@@ -1,0 +1,218 @@
+{
+  "skill": "Kotlin Android",
+  "skill_key": "kotlin_android",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.564934Z",
+  "source_references": [
+    "https://www.google.com/search?q=Kotlin+Android+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "kotlin_android_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Kotlin Android, Android MVVM có vai trò gì?",
+      "options": {
+        "A": "Android MVVM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Android MVVM là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Android MVVM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Android MVVM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Android MVVM trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Android MVVM là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Android MVVM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Android+MVVM+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "android-mvvm"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Kotlin Android, Jetpack Compose có vai trò gì?",
+      "options": {
+        "A": "Jetpack Compose là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Jetpack Compose là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Jetpack Compose đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Jetpack Compose là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Jetpack Compose trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Jetpack Compose là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Jetpack Compose giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Jetpack+Compose+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "jetpack-compose"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Kotlin Android, Coroutines/Flow có vai trò gì?",
+      "options": {
+        "A": "Coroutines/Flow là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Coroutines/Flow là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Coroutines/Flow đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Coroutines/Flow là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Coroutines/Flow trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Coroutines/Flow là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Coroutines/Flow giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Coroutines/Flow+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "coroutines-flow"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Kotlin Android, Room database có vai trò gì?",
+      "options": {
+        "A": "Room database là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Room database là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Room database đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Room database là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Room database trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Room database là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Room database giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Room+database+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "room-database"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Kotlin Android, Navigation component có vai trò gì?",
+      "options": {
+        "A": "Navigation component là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Navigation component là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Navigation component đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Navigation component là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Navigation component trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Navigation component là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Navigation component giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Navigation+component+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "navigation-component"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Kotlin Android, Retrofit/OkHttp có vai trò gì?",
+      "options": {
+        "A": "Retrofit/OkHttp là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Retrofit/OkHttp là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Retrofit/OkHttp đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Retrofit/OkHttp là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Retrofit/OkHttp trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Retrofit/OkHttp là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Retrofit/OkHttp giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Retrofit/OkHttp+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "retrofit-okhttp"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Kotlin Android, Hilt DI có vai trò gì?",
+      "options": {
+        "A": "Hilt DI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Hilt DI là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Hilt DI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Hilt DI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Hilt DI trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Hilt DI là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Hilt DI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Hilt+DI+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "hilt-di"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Kotlin Android, WorkManager có vai trò gì?",
+      "options": {
+        "A": "WorkManager là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "WorkManager là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "WorkManager đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên WorkManager là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "WorkManager trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và WorkManager là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ WorkManager giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+WorkManager+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "workmanager"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Kotlin Android, Firebase có vai trò gì?",
+      "options": {
+        "A": "Firebase là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Firebase là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Firebase đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Firebase là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Firebase trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Firebase là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Firebase giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Firebase+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "firebase"
+      ]
+    },
+    {
+      "question_id": "kotlin_android_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Kotlin Android, Play Store có vai trò gì?",
+      "options": {
+        "A": "Play Store là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Play Store là core concept trong Kotlin Android — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Play Store đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Play Store là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Play Store trong Kotlin Android: Đây là một trong những concepts quan trọng nhất. Kotlin Android được sử dụng rộng rãi trong industry và Play Store là phần không thể thiếu. Khi làm việc với Kotlin Android trong production, hiểu rõ Play Store giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Kotlin+Android+Play+Store+tutorial",
+      "tags": [
+        "kotlin_android",
+        "mobile",
+        "play-store"
+      ]
+    }
+  ]
+}

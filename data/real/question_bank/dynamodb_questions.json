@@ -1,0 +1,218 @@
+{
+  "skill": "AWS DynamoDB",
+  "skill_key": "dynamodb",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.596020Z",
+  "source_references": [
+    "https://www.google.com/search?q=AWS+DynamoDB+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "dynamodb_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong AWS DynamoDB, Table design có vai trò gì?",
+      "options": {
+        "A": "Table design là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Table design là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Table design đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Table design là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Table design trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và Table design là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ Table design giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+Table+design+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "table-design"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong AWS DynamoDB, Single table design có vai trò gì?",
+      "options": {
+        "A": "Single table design là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Single table design là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Single table design đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Single table design là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Single table design trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và Single table design là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ Single table design giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+Single+table+design+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "single-table-design"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong AWS DynamoDB, GSI/LSI có vai trò gì?",
+      "options": {
+        "A": "GSI/LSI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GSI/LSI là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GSI/LSI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GSI/LSI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GSI/LSI trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và GSI/LSI là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ GSI/LSI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+GSI/LSI+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "gsi-lsi"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong AWS DynamoDB, DynamoDB Streams có vai trò gì?",
+      "options": {
+        "A": "DynamoDB Streams là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DynamoDB Streams là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DynamoDB Streams đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DynamoDB Streams là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DynamoDB Streams trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và DynamoDB Streams là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ DynamoDB Streams giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+DynamoDB+Streams+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "dynamodb-streams"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong AWS DynamoDB, Capacity modes có vai trò gì?",
+      "options": {
+        "A": "Capacity modes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Capacity modes là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Capacity modes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Capacity modes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Capacity modes trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và Capacity modes là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ Capacity modes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+Capacity+modes+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "capacity-modes"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong AWS DynamoDB, DynamoDB DAX có vai trò gì?",
+      "options": {
+        "A": "DynamoDB DAX là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DynamoDB DAX là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DynamoDB DAX đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DynamoDB DAX là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DynamoDB DAX trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và DynamoDB DAX là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ DynamoDB DAX giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+DynamoDB+DAX+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "dynamodb-dax"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong AWS DynamoDB, Transactions có vai trò gì?",
+      "options": {
+        "A": "Transactions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transactions là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transactions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transactions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transactions trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và Transactions là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ Transactions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+Transactions+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "transactions"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong AWS DynamoDB, TTL có vai trò gì?",
+      "options": {
+        "A": "TTL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "TTL là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "TTL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên TTL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "TTL trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và TTL là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ TTL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+TTL+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "ttl"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong AWS DynamoDB, Backup/restore có vai trò gì?",
+      "options": {
+        "A": "Backup/restore là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Backup/restore là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Backup/restore đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Backup/restore là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Backup/restore trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và Backup/restore là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ Backup/restore giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+Backup/restore+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "backup-restore"
+      ]
+    },
+    {
+      "question_id": "dynamodb_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong AWS DynamoDB, SDK patterns có vai trò gì?",
+      "options": {
+        "A": "SDK patterns là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SDK patterns là core concept trong AWS DynamoDB — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SDK patterns đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SDK patterns là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SDK patterns trong AWS DynamoDB: Đây là một trong những concepts quan trọng nhất. AWS DynamoDB được sử dụng rộng rãi trong industry và SDK patterns là phần không thể thiếu. Khi làm việc với AWS DynamoDB trong production, hiểu rõ SDK patterns giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=AWS+DynamoDB+SDK+patterns+tutorial",
+      "tags": [
+        "dynamodb",
+        "database",
+        "sdk-patterns"
+      ]
+    }
+  ]
+}

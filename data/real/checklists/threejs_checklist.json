@@ -1,0 +1,154 @@
+{
+  "skill": "Three.js",
+  "skill_key": "threejs",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.523261Z",
+  "checklist_items": [
+    {
+      "item_id": "threejs_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Scene/Camera/Renderer",
+      "description": "Master Scene/Camera/Renderer trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Three.js+Scene/Camera/Renderer+tutorial",
+      "resource_title": "Three.js — Scene/Camera/Renderer",
+      "quiz_ids": [
+        "threejs_l1_001"
+      ],
+      "market_relevance": "Scene/Camera/Renderer là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Geometries",
+      "description": "Master Geometries trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Three.js+Geometries+tutorial",
+      "resource_title": "Three.js — Geometries",
+      "quiz_ids": [
+        "threejs_l2_002"
+      ],
+      "market_relevance": "Geometries là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Materials",
+      "description": "Master Materials trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Three.js+Materials+tutorial",
+      "resource_title": "Three.js — Materials",
+      "quiz_ids": [
+        "threejs_l3_003"
+      ],
+      "market_relevance": "Materials là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Lighting",
+      "description": "Master Lighting trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Three.js+Lighting+tutorial",
+      "resource_title": "Three.js — Lighting",
+      "quiz_ids": [
+        "threejs_l4_004"
+      ],
+      "market_relevance": "Lighting là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Textures",
+      "description": "Master Textures trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Three.js+Textures+tutorial",
+      "resource_title": "Three.js — Textures",
+      "quiz_ids": [
+        "threejs_l5_005"
+      ],
+      "market_relevance": "Textures là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Animations",
+      "description": "Master Animations trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Three.js+Animations+tutorial",
+      "resource_title": "Three.js — Animations",
+      "quiz_ids": [
+        "threejs_l5_006"
+      ],
+      "market_relevance": "Animations là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Raycasting",
+      "description": "Master Raycasting trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Three.js+Raycasting+tutorial",
+      "resource_title": "Three.js — Raycasting",
+      "quiz_ids": [
+        "threejs_l5_007"
+      ],
+      "market_relevance": "Raycasting là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Post-processing",
+      "description": "Master Post-processing trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Three.js+Post-processing+tutorial",
+      "resource_title": "Three.js — Post-processing",
+      "quiz_ids": [
+        "threejs_l5_008"
+      ],
+      "market_relevance": "Post-processing là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "GLTF models",
+      "description": "Master GLTF models trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Three.js+GLTF+models+tutorial",
+      "resource_title": "Three.js — GLTF models",
+      "quiz_ids": [
+        "threejs_l5_009"
+      ],
+      "market_relevance": "GLTF models là key skill trong Three.js Frontend development"
+    },
+    {
+      "item_id": "threejs_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Performance optimization",
+      "description": "Master Performance optimization trong Three.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Three.js+Performance+optimization+tutorial",
+      "resource_title": "Three.js — Performance optimization",
+      "quiz_ids": [
+        "threejs_l5_010"
+      ],
+      "market_relevance": "Performance optimization là key skill trong Three.js Frontend development"
+    }
+  ]
+}

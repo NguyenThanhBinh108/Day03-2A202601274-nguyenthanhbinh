@@ -1,0 +1,218 @@
+{
+  "skill": "Scala",
+  "skill_key": "scala",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.554410Z",
+  "source_references": [
+    "https://www.google.com/search?q=Scala+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "scala_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Scala, Functional programming có vai trò gì?",
+      "options": {
+        "A": "Functional programming là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Functional programming là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Functional programming đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Functional programming là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Functional programming trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Functional programming là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Functional programming giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Functional+programming+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "functional-programming"
+      ]
+    },
+    {
+      "question_id": "scala_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Scala, Case classes có vai trò gì?",
+      "options": {
+        "A": "Case classes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Case classes là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Case classes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Case classes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Case classes trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Case classes là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Case classes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Case+classes+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "case-classes"
+      ]
+    },
+    {
+      "question_id": "scala_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Scala, Pattern matching có vai trò gì?",
+      "options": {
+        "A": "Pattern matching là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Pattern matching là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Pattern matching đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Pattern matching là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Pattern matching trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Pattern matching là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Pattern matching giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Pattern+matching+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "pattern-matching"
+      ]
+    },
+    {
+      "question_id": "scala_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Scala, Akka HTTP có vai trò gì?",
+      "options": {
+        "A": "Akka HTTP là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Akka HTTP là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Akka HTTP đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Akka HTTP là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Akka HTTP trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Akka HTTP là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Akka HTTP giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Akka+HTTP+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "akka-http"
+      ]
+    },
+    {
+      "question_id": "scala_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Scala, Play Framework có vai trò gì?",
+      "options": {
+        "A": "Play Framework là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Play Framework là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Play Framework đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Play Framework là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Play Framework trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Play Framework là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Play Framework giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Play+Framework+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "play-framework"
+      ]
+    },
+    {
+      "question_id": "scala_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Scala, Cats/ZIO có vai trò gì?",
+      "options": {
+        "A": "Cats/ZIO là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cats/ZIO là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cats/ZIO đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cats/ZIO là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cats/ZIO trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Cats/ZIO là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Cats/ZIO giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Cats/ZIO+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "cats-zio"
+      ]
+    },
+    {
+      "question_id": "scala_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Scala, Slick ORM có vai trò gì?",
+      "options": {
+        "A": "Slick ORM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Slick ORM là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Slick ORM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Slick ORM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Slick ORM trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Slick ORM là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Slick ORM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Slick+ORM+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "slick-orm"
+      ]
+    },
+    {
+      "question_id": "scala_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Scala, SBT có vai trò gì?",
+      "options": {
+        "A": "SBT là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SBT là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SBT đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SBT là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SBT trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và SBT là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ SBT giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+SBT+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "sbt"
+      ]
+    },
+    {
+      "question_id": "scala_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Scala, Kafka integration có vai trò gì?",
+      "options": {
+        "A": "Kafka integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Kafka integration là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Kafka integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Kafka integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Kafka integration trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Kafka integration là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Kafka integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Kafka+integration+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "kafka-integration"
+      ]
+    },
+    {
+      "question_id": "scala_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Scala, Deployment có vai trò gì?",
+      "options": {
+        "A": "Deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Deployment là core concept trong Scala — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Deployment trong Scala: Đây là một trong những concepts quan trọng nhất. Scala được sử dụng rộng rãi trong industry và Deployment là phần không thể thiếu. Khi làm việc với Scala trong production, hiểu rõ Deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Scala+Deployment+tutorial",
+      "tags": [
+        "scala",
+        "backend",
+        "deployment"
+      ]
+    }
+  ]
+}

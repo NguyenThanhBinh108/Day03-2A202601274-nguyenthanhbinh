@@ -1,0 +1,218 @@
+{
+  "skill": "Firebase",
+  "skill_key": "firebase",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.587497Z",
+  "source_references": [
+    "https://www.google.com/search?q=Firebase+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "firebase_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Firebase, Firestore data model có vai trò gì?",
+      "options": {
+        "A": "Firestore data model là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Firestore data model là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Firestore data model đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Firestore data model là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Firestore data model trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Firestore data model là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Firestore data model giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Firestore+data+model+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "firestore-data-model"
+      ]
+    },
+    {
+      "question_id": "firebase_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Firebase, Real-time listeners có vai trò gì?",
+      "options": {
+        "A": "Real-time listeners là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Real-time listeners là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Real-time listeners đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Real-time listeners là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Real-time listeners trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Real-time listeners là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Real-time listeners giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Real-time+listeners+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "real-time-listeners"
+      ]
+    },
+    {
+      "question_id": "firebase_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Firebase, Firebase Auth có vai trò gì?",
+      "options": {
+        "A": "Firebase Auth là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Firebase Auth là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Firebase Auth đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Firebase Auth là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Firebase Auth trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Firebase Auth là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Firebase Auth giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Firebase+Auth+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "firebase-auth"
+      ]
+    },
+    {
+      "question_id": "firebase_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Firebase, Security rules có vai trò gì?",
+      "options": {
+        "A": "Security rules là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security rules là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security rules đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security rules là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security rules trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Security rules là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Security rules giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Security+rules+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "security-rules"
+      ]
+    },
+    {
+      "question_id": "firebase_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Firebase, Cloud Functions có vai trò gì?",
+      "options": {
+        "A": "Cloud Functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cloud Functions là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cloud Functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cloud Functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cloud Functions trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Cloud Functions là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Cloud Functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Cloud+Functions+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "cloud-functions"
+      ]
+    },
+    {
+      "question_id": "firebase_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Firebase, Storage có vai trò gì?",
+      "options": {
+        "A": "Storage là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Storage là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Storage đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Storage là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Storage trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Storage là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Storage giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Storage+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "storage"
+      ]
+    },
+    {
+      "question_id": "firebase_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Firebase, FCM notifications có vai trò gì?",
+      "options": {
+        "A": "FCM notifications là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "FCM notifications là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "FCM notifications đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên FCM notifications là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "FCM notifications trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và FCM notifications là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ FCM notifications giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+FCM+notifications+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "fcm-notifications"
+      ]
+    },
+    {
+      "question_id": "firebase_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Firebase, Analytics có vai trò gì?",
+      "options": {
+        "A": "Analytics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Analytics là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Analytics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Analytics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Analytics trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Analytics là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Analytics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Analytics+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "analytics"
+      ]
+    },
+    {
+      "question_id": "firebase_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Firebase, Hosting có vai trò gì?",
+      "options": {
+        "A": "Hosting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Hosting là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Hosting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Hosting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Hosting trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Hosting là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Hosting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Hosting+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "hosting"
+      ]
+    },
+    {
+      "question_id": "firebase_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Firebase, Emulator suite có vai trò gì?",
+      "options": {
+        "A": "Emulator suite là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Emulator suite là core concept trong Firebase — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Emulator suite đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Emulator suite là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Emulator suite trong Firebase: Đây là một trong những concepts quan trọng nhất. Firebase được sử dụng rộng rãi trong industry và Emulator suite là phần không thể thiếu. Khi làm việc với Firebase trong production, hiểu rõ Emulator suite giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Firebase+Emulator+suite+tutorial",
+      "tags": [
+        "firebase",
+        "database",
+        "emulator-suite"
+      ]
+    }
+  ]
+}

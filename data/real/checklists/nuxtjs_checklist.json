@@ -1,0 +1,182 @@
+{
+  "skill": "Nuxt.js",
+  "skill_key": "nuxtjs",
+  "total_topics": 12,
+  "estimated_total_hours": 16.5,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.498702Z",
+  "checklist_items": [
+    {
+      "item_id": "nuxtjs_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "SSR/SSG/SPA modes",
+      "description": "Master SSR/SSG/SPA modes trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+SSR/SSG/SPA+modes+tutorial",
+      "resource_title": "Nuxt.js — SSR/SSG/SPA modes",
+      "quiz_ids": [
+        "nuxtjs_l1_001"
+      ],
+      "market_relevance": "SSR/SSG/SPA modes là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "File-based routing",
+      "description": "Master File-based routing trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+File-based+routing+tutorial",
+      "resource_title": "Nuxt.js — File-based routing",
+      "quiz_ids": [
+        "nuxtjs_l2_002"
+      ],
+      "market_relevance": "File-based routing là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Auto-imports",
+      "description": "Master Auto-imports trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Auto-imports+tutorial",
+      "resource_title": "Nuxt.js — Auto-imports",
+      "quiz_ids": [
+        "nuxtjs_l3_003"
+      ],
+      "market_relevance": "Auto-imports là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Nuxt modules",
+      "description": "Master Nuxt modules trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Nuxt+modules+tutorial",
+      "resource_title": "Nuxt.js — Nuxt modules",
+      "quiz_ids": [
+        "nuxtjs_l4_004"
+      ],
+      "market_relevance": "Nuxt modules là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Composables",
+      "description": "Master Composables trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Composables+tutorial",
+      "resource_title": "Nuxt.js — Composables",
+      "quiz_ids": [
+        "nuxtjs_l5_005"
+      ],
+      "market_relevance": "Composables là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "useFetch/useAsyncData",
+      "description": "Master useFetch/useAsyncData trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+useFetch/useAsyncData+tutorial",
+      "resource_title": "Nuxt.js — useFetch/useAsyncData",
+      "quiz_ids": [
+        "nuxtjs_l5_006"
+      ],
+      "market_relevance": "useFetch/useAsyncData là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Middleware",
+      "description": "Master Middleware trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Middleware+tutorial",
+      "resource_title": "Nuxt.js — Middleware",
+      "quiz_ids": [
+        "nuxtjs_l5_007"
+      ],
+      "market_relevance": "Middleware là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "Server routes (Nitro)",
+      "description": "Master Server routes (Nitro) trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Server+routes+(Nitro)+tutorial",
+      "resource_title": "Nuxt.js — Server routes (Nitro)",
+      "quiz_ids": [
+        "nuxtjs_l5_008"
+      ],
+      "market_relevance": "Server routes (Nitro) là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "State management (Pinia)",
+      "description": "Master State management (Pinia) trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+State+management+(Pinia)+tutorial",
+      "resource_title": "Nuxt.js — State management (Pinia)",
+      "quiz_ids": [
+        "nuxtjs_l5_009"
+      ],
+      "market_relevance": "State management (Pinia) là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Nuxt UI",
+      "description": "Master Nuxt UI trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Nuxt+UI+tutorial",
+      "resource_title": "Nuxt.js — Nuxt UI",
+      "quiz_ids": [
+        "nuxtjs_l5_010"
+      ],
+      "market_relevance": "Nuxt UI là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c011",
+      "order": 11,
+      "phase": "advanced",
+      "title": "Deployment",
+      "description": "Master Deployment trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Deployment+tutorial",
+      "resource_title": "Nuxt.js — Deployment",
+      "quiz_ids": [
+        "nuxtjs_l5_011"
+      ],
+      "market_relevance": "Deployment là key skill trong Nuxt.js Frontend development"
+    },
+    {
+      "item_id": "nuxtjs_c012",
+      "order": 12,
+      "phase": "advanced",
+      "title": "Performance",
+      "description": "Master Performance trong Nuxt.js — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Nuxt.js+Performance+tutorial",
+      "resource_title": "Nuxt.js — Performance",
+      "quiz_ids": [
+        "nuxtjs_l5_012"
+      ],
+      "market_relevance": "Performance là key skill trong Nuxt.js Frontend development"
+    }
+  ]
+}

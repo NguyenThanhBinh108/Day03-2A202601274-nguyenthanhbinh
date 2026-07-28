@@ -1,0 +1,81 @@
+{
+  "skill": "Redis",
+  "skill_key": "redis",
+  "total_topics": 7,
+  "estimated_total_hours": 8.2,
+  "generated_at": "2026-06-12T02:22:05.496302",
+  "checklist_items": [
+    {
+      "item_id": "redis_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Redis cơ bản — data types và commands",
+      "description": "String/Hash/List/Set/SortedSet commands, TTL, EXPIRE, keys pattern",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/redis-data-types/",
+      "resource_title": "GeeksForGeeks — Redis Data Types"
+    },
+    {
+      "item_id": "redis_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Caching với Redis",
+      "description": "Cache-aside pattern, TTL strategy, cache invalidation, JSON caching",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/caching-patterns-in-system-design/",
+      "resource_title": "GeeksForGeeks — Caching Patterns"
+    },
+    {
+      "item_id": "redis_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "Redis với Node.js (ioredis) hoặc Java (Jedis/Lettuce)",
+      "description": "Connect, CRUD, pipeline, pub/sub, error handling, connection pooling",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/redis-with-node-js/",
+      "resource_title": "GeeksForGeeks — Redis with Node.js"
+    },
+    {
+      "item_id": "redis_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Session Management với Redis",
+      "description": "Store sessions in Redis (express-session), session expiry, distributed sessions across instances",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/node-js-session-management-using-express-session-and-mongoose/",
+      "resource_title": "GeeksForGeeks — Session Management"
+    },
+    {
+      "item_id": "redis_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Rate Limiting và Distributed Locking",
+      "description": "Rate limiter với INCR+EXPIRE, sliding window, Redis Redlock distributed lock",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/rate-limiting-in-system-design/",
+      "resource_title": "GeeksForGeeks — Rate Limiting",
+      "hands_on_task": "Implement API rate limiter: 100 requests/minute per IP với Redis"
+    },
+    {
+      "item_id": "redis_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Job Queue với Bull/BullMQ",
+      "description": "Queue, jobs, workers, retry, dead-letter queue, monitoring với Bull Board",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/node-js-bull-module/",
+      "resource_title": "GeeksForGeeks — Node.js Bull Module",
+      "hands_on_task": "Build email queue với retry và dead-letter handling"
+    },
+    {
+      "item_id": "redis_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Redis Cluster và High Availability",
+      "description": "Cluster setup, hash slots, hash tags, Sentinel vs Cluster, Redis Streams",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/redis-cluster/",
+      "resource_title": "GeeksForGeeks — Redis Cluster"
+    }
+  ]
+}

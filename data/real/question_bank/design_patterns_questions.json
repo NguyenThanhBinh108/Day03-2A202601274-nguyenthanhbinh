@@ -1,0 +1,218 @@
+{
+  "skill": "Design Patterns",
+  "skill_key": "design_patterns",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.661235Z",
+  "source_references": [
+    "https://www.google.com/search?q=Design+Patterns+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "design_patterns_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Design Patterns, Singleton có vai trò gì?",
+      "options": {
+        "A": "Singleton là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Singleton là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Singleton đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Singleton là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Singleton trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Singleton là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Singleton giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Singleton+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "singleton"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Design Patterns, Factory/Abstract Factory có vai trò gì?",
+      "options": {
+        "A": "Factory/Abstract Factory là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Factory/Abstract Factory là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Factory/Abstract Factory đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Factory/Abstract Factory là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Factory/Abstract Factory trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Factory/Abstract Factory là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Factory/Abstract Factory giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Factory/Abstract+Factory+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "factory-abstract-factory"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Design Patterns, Builder có vai trò gì?",
+      "options": {
+        "A": "Builder là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Builder là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Builder đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Builder là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Builder trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Builder là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Builder giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Builder+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "builder"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Design Patterns, Observer có vai trò gì?",
+      "options": {
+        "A": "Observer là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Observer là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Observer đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Observer là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Observer trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Observer là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Observer giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Observer+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "observer"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Design Patterns, Strategy có vai trò gì?",
+      "options": {
+        "A": "Strategy là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Strategy là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Strategy đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Strategy là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Strategy trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Strategy là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Strategy giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Strategy+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "strategy"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Design Patterns, Decorator có vai trò gì?",
+      "options": {
+        "A": "Decorator là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Decorator là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Decorator đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Decorator là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Decorator trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Decorator là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Decorator giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Decorator+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "decorator"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Design Patterns, Command có vai trò gì?",
+      "options": {
+        "A": "Command là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Command là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Command đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Command là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Command trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Command là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Command giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Command+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "command"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Design Patterns, Repository có vai trò gì?",
+      "options": {
+        "A": "Repository là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Repository là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Repository đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Repository là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Repository trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Repository là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Repository giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Repository+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "repository"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Design Patterns, Adapter/Facade có vai trò gì?",
+      "options": {
+        "A": "Adapter/Facade là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Adapter/Facade là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Adapter/Facade đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Adapter/Facade là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Adapter/Facade trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Adapter/Facade là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Adapter/Facade giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Adapter/Facade+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "adapter-facade"
+      ]
+    },
+    {
+      "question_id": "design_patterns_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Design Patterns, Template Method có vai trò gì?",
+      "options": {
+        "A": "Template Method là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Template Method là core concept trong Design Patterns — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Template Method đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Template Method là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Template Method trong Design Patterns: Đây là một trong những concepts quan trọng nhất. Design Patterns được sử dụng rộng rãi trong industry và Template Method là phần không thể thiếu. Khi làm việc với Design Patterns trong production, hiểu rõ Template Method giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Design+Patterns+Template+Method+tutorial",
+      "tags": [
+        "design_patterns",
+        "fundamentals",
+        "template-method"
+      ]
+    }
+  ]
+}

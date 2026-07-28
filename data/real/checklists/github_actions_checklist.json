@@ -1,0 +1,154 @@
+{
+  "skill": "GitHub Actions",
+  "skill_key": "github_actions",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.607049Z",
+  "checklist_items": [
+    {
+      "item_id": "github_actions_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Workflow syntax",
+      "description": "Master Workflow syntax trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Workflow+syntax+tutorial",
+      "resource_title": "GitHub Actions — Workflow syntax",
+      "quiz_ids": [
+        "github_actions_l1_001"
+      ],
+      "market_relevance": "Workflow syntax là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Triggers",
+      "description": "Master Triggers trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Triggers+tutorial",
+      "resource_title": "GitHub Actions — Triggers",
+      "quiz_ids": [
+        "github_actions_l2_002"
+      ],
+      "market_relevance": "Triggers là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Jobs/Steps",
+      "description": "Master Jobs/Steps trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Jobs/Steps+tutorial",
+      "resource_title": "GitHub Actions — Jobs/Steps",
+      "quiz_ids": [
+        "github_actions_l3_003"
+      ],
+      "market_relevance": "Jobs/Steps là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Actions marketplace",
+      "description": "Master Actions marketplace trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Actions+marketplace+tutorial",
+      "resource_title": "GitHub Actions — Actions marketplace",
+      "quiz_ids": [
+        "github_actions_l4_004"
+      ],
+      "market_relevance": "Actions marketplace là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Secrets/Environments",
+      "description": "Master Secrets/Environments trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Secrets/Environments+tutorial",
+      "resource_title": "GitHub Actions — Secrets/Environments",
+      "quiz_ids": [
+        "github_actions_l5_005"
+      ],
+      "market_relevance": "Secrets/Environments là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Matrix strategy",
+      "description": "Master Matrix strategy trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Matrix+strategy+tutorial",
+      "resource_title": "GitHub Actions — Matrix strategy",
+      "quiz_ids": [
+        "github_actions_l5_006"
+      ],
+      "market_relevance": "Matrix strategy là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Caching",
+      "description": "Master Caching trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Caching+tutorial",
+      "resource_title": "GitHub Actions — Caching",
+      "quiz_ids": [
+        "github_actions_l5_007"
+      ],
+      "market_relevance": "Caching là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Docker build/push",
+      "description": "Master Docker build/push trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Docker+build/push+tutorial",
+      "resource_title": "GitHub Actions — Docker build/push",
+      "quiz_ids": [
+        "github_actions_l5_008"
+      ],
+      "market_relevance": "Docker build/push là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "CD to cloud",
+      "description": "Master CD to cloud trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+CD+to+cloud+tutorial",
+      "resource_title": "GitHub Actions — CD to cloud",
+      "quiz_ids": [
+        "github_actions_l5_009"
+      ],
+      "market_relevance": "CD to cloud là key skill trong GitHub Actions DevOps development"
+    },
+    {
+      "item_id": "github_actions_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Security scanning",
+      "description": "Master Security scanning trong GitHub Actions — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=GitHub+Actions+Security+scanning+tutorial",
+      "resource_title": "GitHub Actions — Security scanning",
+      "quiz_ids": [
+        "github_actions_l5_010"
+      ],
+      "market_relevance": "Security scanning là key skill trong GitHub Actions DevOps development"
+    }
+  ]
+}

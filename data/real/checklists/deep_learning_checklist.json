@@ -1,0 +1,154 @@
+{
+  "skill": "Deep Learning",
+  "skill_key": "deep_learning",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.635721Z",
+  "checklist_items": [
+    {
+      "item_id": "deep_learning_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Neural networks basics",
+      "description": "Master Neural networks basics trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Neural+networks+basics+tutorial",
+      "resource_title": "Deep Learning — Neural networks basics",
+      "quiz_ids": [
+        "deep_learning_l1_001"
+      ],
+      "market_relevance": "Neural networks basics là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "CNN",
+      "description": "Master CNN trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+CNN+tutorial",
+      "resource_title": "Deep Learning — CNN",
+      "quiz_ids": [
+        "deep_learning_l2_002"
+      ],
+      "market_relevance": "CNN là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "RNN/LSTM",
+      "description": "Master RNN/LSTM trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+RNN/LSTM+tutorial",
+      "resource_title": "Deep Learning — RNN/LSTM",
+      "quiz_ids": [
+        "deep_learning_l3_003"
+      ],
+      "market_relevance": "RNN/LSTM là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Transformers",
+      "description": "Master Transformers trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Transformers+tutorial",
+      "resource_title": "Deep Learning — Transformers",
+      "quiz_ids": [
+        "deep_learning_l4_004"
+      ],
+      "market_relevance": "Transformers là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Backpropagation",
+      "description": "Master Backpropagation trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Backpropagation+tutorial",
+      "resource_title": "Deep Learning — Backpropagation",
+      "quiz_ids": [
+        "deep_learning_l5_005"
+      ],
+      "market_relevance": "Backpropagation là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Optimizers (Adam)",
+      "description": "Master Optimizers (Adam) trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Optimizers+(Adam)+tutorial",
+      "resource_title": "Deep Learning — Optimizers (Adam)",
+      "quiz_ids": [
+        "deep_learning_l5_006"
+      ],
+      "market_relevance": "Optimizers (Adam) là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Batch normalization",
+      "description": "Master Batch normalization trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Batch+normalization+tutorial",
+      "resource_title": "Deep Learning — Batch normalization",
+      "quiz_ids": [
+        "deep_learning_l5_007"
+      ],
+      "market_relevance": "Batch normalization là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Dropout",
+      "description": "Master Dropout trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Dropout+tutorial",
+      "resource_title": "Deep Learning — Dropout",
+      "quiz_ids": [
+        "deep_learning_l5_008"
+      ],
+      "market_relevance": "Dropout là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Transfer learning",
+      "description": "Master Transfer learning trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+Transfer+learning+tutorial",
+      "resource_title": "Deep Learning — Transfer learning",
+      "quiz_ids": [
+        "deep_learning_l5_009"
+      ],
+      "market_relevance": "Transfer learning là key skill trong Deep Learning AI/ML development"
+    },
+    {
+      "item_id": "deep_learning_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "PyTorch/TensorFlow",
+      "description": "Master PyTorch/TensorFlow trong Deep Learning — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Deep+Learning+PyTorch/TensorFlow+tutorial",
+      "resource_title": "Deep Learning — PyTorch/TensorFlow",
+      "quiz_ids": [
+        "deep_learning_l5_010"
+      ],
+      "market_relevance": "PyTorch/TensorFlow là key skill trong Deep Learning AI/ML development"
+    }
+  ]
+}

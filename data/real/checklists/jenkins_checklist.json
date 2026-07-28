@@ -1,0 +1,154 @@
+{
+  "skill": "Jenkins",
+  "skill_key": "jenkins",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.610634Z",
+  "checklist_items": [
+    {
+      "item_id": "jenkins_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Jenkinsfile Pipeline",
+      "description": "Master Jenkinsfile Pipeline trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Jenkinsfile+Pipeline+tutorial",
+      "resource_title": "Jenkins — Jenkinsfile Pipeline",
+      "quiz_ids": [
+        "jenkins_l1_001"
+      ],
+      "market_relevance": "Jenkinsfile Pipeline là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Stages/Steps",
+      "description": "Master Stages/Steps trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Stages/Steps+tutorial",
+      "resource_title": "Jenkins — Stages/Steps",
+      "quiz_ids": [
+        "jenkins_l2_002"
+      ],
+      "market_relevance": "Stages/Steps là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Agents",
+      "description": "Master Agents trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Agents+tutorial",
+      "resource_title": "Jenkins — Agents",
+      "quiz_ids": [
+        "jenkins_l3_003"
+      ],
+      "market_relevance": "Agents là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Plugins",
+      "description": "Master Plugins trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Plugins+tutorial",
+      "resource_title": "Jenkins — Plugins",
+      "quiz_ids": [
+        "jenkins_l4_004"
+      ],
+      "market_relevance": "Plugins là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Shared libraries",
+      "description": "Master Shared libraries trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Shared+libraries+tutorial",
+      "resource_title": "Jenkins — Shared libraries",
+      "quiz_ids": [
+        "jenkins_l5_005"
+      ],
+      "market_relevance": "Shared libraries là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Blue Ocean",
+      "description": "Master Blue Ocean trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Blue+Ocean+tutorial",
+      "resource_title": "Jenkins — Blue Ocean",
+      "quiz_ids": [
+        "jenkins_l5_006"
+      ],
+      "market_relevance": "Blue Ocean là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Webhooks",
+      "description": "Master Webhooks trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Webhooks+tutorial",
+      "resource_title": "Jenkins — Webhooks",
+      "quiz_ids": [
+        "jenkins_l5_007"
+      ],
+      "market_relevance": "Webhooks là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Docker integration",
+      "description": "Master Docker integration trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Docker+integration+tutorial",
+      "resource_title": "Jenkins — Docker integration",
+      "quiz_ids": [
+        "jenkins_l5_008"
+      ],
+      "market_relevance": "Docker integration là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Security",
+      "description": "Master Security trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Security+tutorial",
+      "resource_title": "Jenkins — Security",
+      "quiz_ids": [
+        "jenkins_l5_009"
+      ],
+      "market_relevance": "Security là key skill trong Jenkins DevOps development"
+    },
+    {
+      "item_id": "jenkins_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Distributed builds",
+      "description": "Master Distributed builds trong Jenkins — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Jenkins+Distributed+builds+tutorial",
+      "resource_title": "Jenkins — Distributed builds",
+      "quiz_ids": [
+        "jenkins_l5_010"
+      ],
+      "market_relevance": "Distributed builds là key skill trong Jenkins DevOps development"
+    }
+  ]
+}

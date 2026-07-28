@@ -1,0 +1,130 @@
+{
+  "skill": "GraphQL",
+  "skill_key": "graphql",
+  "total_questions": 5,
+  "levels": {
+    "1": 2,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 0
+  },
+  "generated_at": "2026-06-12T02:22:05.514393",
+  "source_references": [
+    "https://graphql.org/learn/",
+    "https://www.geeksforgeeks.org/graphql/"
+  ],
+  "questions": [
+    {
+      "question_id": "gql_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "GraphQL vs REST — khi nào chọn GraphQL?",
+      "options": {
+        "A": "GraphQL luôn tốt hơn REST",
+        "B": "GraphQL: client specify exactly what data needed (no over/under-fetching), single endpoint, strongly typed schema. Best cho: complex data, multiple clients, rapid iteration",
+        "C": "GraphQL thay thế REST hoàn toàn",
+        "D": "GraphQL chỉ cho Facebook"
+      },
+      "correct_answer": "B",
+      "explanation": "REST issues: Over-fetching (GET /users returns all fields even if need only name). Under-fetching: cần nhiều endpoints (GET /user/1 + GET /user/1/posts). GraphQL: single endpoint (/graphql), client requests exactly what needs, schema as contract. When GraphQL wins: complex data graphs, multiple clients (mobile/web/3rd party) need different data shapes, rapid iteration on frontend. When REST wins: simple CRUD, caching (HTTP cache tốt hơn), file uploads, public APIs. REST + GraphQL: dùng cả hai cho different use cases.",
+      "source": "https://www.freecodecamp.org/news/graphql-vs-rest-apis/",
+      "tags": [
+        "GraphQL",
+        "REST",
+        "over-fetching",
+        "under-fetching",
+        "schema"
+      ]
+    },
+    {
+      "question_id": "gql_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "GraphQL Schema, Query, Mutation, Subscription?",
+      "options": {
+        "A": "GraphQL chỉ có Query",
+        "B": "Schema: type definitions (SDL). Query: read data (like GET). Mutation: write data (like POST/PUT/DELETE). Subscription: real-time updates via WebSocket",
+        "C": "Schema không cần thiết",
+        "D": "Subscription thay thế Query"
+      },
+      "correct_answer": "B",
+      "explanation": "Schema Definition Language (SDL): type User { id: ID!, name: String!, email: String }. Query: query { users { id name } }. Mutation: mutation { createUser(input: {name:'Alice'}) { id } }. Subscription: subscription { onNewMessage(chatId: 1) { content author } }. Resolvers: functions that fetch data for each field. GraphQL server: Apollo Server, Hasura, Strawberry (Python), Ariadne. Introspection: query the schema itself ({__schema { types { name }}}). Playground/Explorer: built-in documentation.",
+      "source": "https://www.geeksforgeeks.org/graphql/",
+      "tags": [
+        "schema",
+        "Query",
+        "Mutation",
+        "Subscription",
+        "resolver",
+        "SDL"
+      ]
+    },
+    {
+      "question_id": "gql_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "N+1 problem trong GraphQL và DataLoader?",
+      "options": {
+        "A": "GraphQL tự fix N+1",
+        "B": "N+1: resolver for each user's posts fires separate DB query. DataLoader: batch nhiều requests thành 1 DB query, cache per request",
+        "C": "N+1 chỉ trong REST",
+        "D": "DataLoader chỉ cho Node.js"
+      },
+      "correct_answer": "B",
+      "explanation": "N+1 in GraphQL: query { users { posts { title } } } → 1 query users + N queries cho mỗi user's posts. DataLoader (Facebook): (1) Batch: collect all post IDs trong 1 tick → 1 query SELECT * FROM posts WHERE userId IN (1,2,3,...). (2) Cache: same ID trong 1 request → return cached value. Usage: const postLoader = new DataLoader(async (userIds) => { const posts = await Post.findAll({where:{userId:userIds}}); return userIds.map(id => posts.filter(p => p.userId === id)); }). Per-request instantiation (không reuse across requests).",
+      "source": "https://www.geeksforgeeks.org/dataloader-in-graphql/",
+      "tags": [
+        "N+1",
+        "DataLoader",
+        "batching",
+        "caching",
+        "resolver"
+      ]
+    },
+    {
+      "question_id": "gql_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "GraphQL authentication và authorization best practices?",
+      "options": {
+        "A": "Không cần auth trong GraphQL",
+        "B": "JWT trong HTTP header. Auth trong context (không trong resolver). Authorization: directive (@auth), field-level với shield, query complexity limits",
+        "C": "GraphQL schema public hoàn toàn",
+        "D": "Mỗi resolver handle auth riêng"
+      },
+      "correct_answer": "B",
+      "explanation": "Authentication: HTTP header Authorization: Bearer <token> → middleware validate → attach user to context. Authorization patterns: (1) Resolver-level: if (!context.user) throw AuthenticationError. (2) Directive: @auth(requires:ADMIN) trên field/type. (3) graphql-shield: rule-based authorization middleware (can combine rules with and/or/not). Security: disable introspection in production (không expose schema). Query depth limiting: prevent deeply nested queries. Query complexity: limit max complexity per query (prevent expensive queries). Rate limiting per user.",
+      "source": "https://www.freecodecamp.org/news/graphql-security/",
+      "tags": [
+        "JWT",
+        "context",
+        "graphql-shield",
+        "complexity-limit",
+        "introspection"
+      ]
+    },
+    {
+      "question_id": "gql_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "GraphQL performance — identify và fix slow queries?",
+      "options": {
+        "A": "GraphQL tự optimize",
+        "B": "Apollo Studio tracing, persisted queries, caching (APQ, Redis), DataLoader, @cacheControl directive, query complexity analysis",
+        "C": "Tăng server resources",
+        "D": "Dùng REST thay thế"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance tools: (1) Apollo Studio: field-level tracing, resolver timing. (2) graphql-query-complexity: reject expensive queries. (3) apollo-tracing: timing data per resolver. Fix strategies: (1) DataLoader: batch DB queries (xem trên). (2) Persisted queries: hash → query string, smaller requests, CDN cacheable. (3) @cacheControl(maxAge:60): HTTP cache cho queries. (4) Redis caching: cache expensive resolver results. (5) Federation: split schema across services, each service owns its resolvers. (6) Avoid N+1 với eager loading (DataLoader). (7) Subscription batching: không emit individual events.",
+      "source": "https://www.geeksforgeeks.org/graphql-performance/",
+      "tags": [
+        "performance",
+        "DataLoader",
+        "persisted-queries",
+        "caching",
+        "Apollo-Studio"
+      ]
+    }
+  ]
+}

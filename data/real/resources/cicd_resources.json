@@ -1,0 +1,68 @@
+{
+  "skill": "CI/CD",
+  "skill_key": "cicd",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T01:37:31.888614",
+  "resources": [
+    {
+      "resource_id": "cicd_r001",
+      "title": "GitHub Actions Official Documentation",
+      "url": "https://docs.github.com/en/actions",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "all",
+      "rating": 5,
+      "description": "Tài liệu GitHub Actions chính thức và đầy đủ nhất",
+      "best_for": "Complete reference"
+    },
+    {
+      "resource_id": "cicd_r002",
+      "title": "freeCodeCamp — What is CI/CD",
+      "url": "https://www.freecodecamp.org/news/what-is-ci-cd/",
+      "type": "article",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner",
+      "rating": 5,
+      "description": "CI/CD explained clearly",
+      "best_for": "Getting started"
+    },
+    {
+      "resource_id": "cicd_r003",
+      "title": "GeeksForGeeks GitHub Actions Tutorial",
+      "url": "https://www.geeksforgeeks.org/github-actions/",
+      "type": "tutorial",
+      "is_free": true,
+      "language": "English",
+      "level": "beginner_to_intermediate",
+      "rating": 4,
+      "description": "GitHub Actions từ cơ bản",
+      "best_for": "Learning GitHub Actions"
+    },
+    {
+      "resource_id": "cicd_r004",
+      "title": "GitLab CI/CD Documentation",
+      "url": "https://docs.gitlab.com/ee/ci/",
+      "type": "official_docs",
+      "is_free": true,
+      "language": "English",
+      "level": "intermediate",
+      "rating": 5,
+      "description": "GitLab CI/CD comprehensive docs",
+      "best_for": "GitLab users"
+    },
+    {
+      "resource_id": "cicd_r005",
+      "title": "Viblo CI/CD Articles",
+      "url": "https://viblo.asia/tags/cicd",
+      "type": "community",
+      "is_free": true,
+      "language": "Vietnamese",
+      "level": "all",
+      "rating": 4,
+      "description": "CI/CD articles tiếng Việt",
+      "best_for": "Vietnamese context"
+    }
+  ]
+}

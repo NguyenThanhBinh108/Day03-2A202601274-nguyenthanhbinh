@@ -1,0 +1,218 @@
+{
+  "skill": "Nuxt.js",
+  "skill_key": "nuxtjs",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:16:30.021385Z",
+  "source_references": [
+    "https://www.google.com/search?q=Nuxt.js+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "nuxtjs_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Nuxt.js, SSR/SSG/SPA modes có vai trò gì?",
+      "options": {
+        "A": "SSR/SSG/SPA modes là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SSR/SSG/SPA modes là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SSR/SSG/SPA modes đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SSR/SSG/SPA modes là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SSR/SSG/SPA modes trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và SSR/SSG/SPA modes là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ SSR/SSG/SPA modes giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+SSR/SSG/SPA+modes+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "ssr-ssg-spa-modes"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Nuxt.js, File-based routing có vai trò gì?",
+      "options": {
+        "A": "File-based routing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "File-based routing là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "File-based routing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên File-based routing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "File-based routing trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và File-based routing là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ File-based routing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+File-based+routing+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "file-based-routing"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Nuxt.js, Auto-imports có vai trò gì?",
+      "options": {
+        "A": "Auto-imports là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Auto-imports là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Auto-imports đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Auto-imports là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Auto-imports trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Auto-imports là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Auto-imports giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Auto-imports+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "auto-imports"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Nuxt.js, Nuxt modules có vai trò gì?",
+      "options": {
+        "A": "Nuxt modules là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Nuxt modules là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Nuxt modules đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Nuxt modules là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Nuxt modules trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Nuxt modules là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Nuxt modules giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Nuxt+modules+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "nuxt-modules"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Nuxt.js, Composables có vai trò gì?",
+      "options": {
+        "A": "Composables là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Composables là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Composables đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Composables là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Composables trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Composables là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Composables giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Composables+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "composables"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Nuxt.js, useFetch/useAsyncData có vai trò gì?",
+      "options": {
+        "A": "useFetch/useAsyncData là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "useFetch/useAsyncData là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "useFetch/useAsyncData đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên useFetch/useAsyncData là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "useFetch/useAsyncData trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và useFetch/useAsyncData là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ useFetch/useAsyncData giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+useFetch/useAsyncData+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "usefetch-useasyncdata"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Nuxt.js, Middleware có vai trò gì?",
+      "options": {
+        "A": "Middleware là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Middleware là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Middleware đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Middleware là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Middleware trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Middleware là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Middleware giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Middleware+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "middleware"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Nuxt.js, Server routes (Nitro) có vai trò gì?",
+      "options": {
+        "A": "Server routes (Nitro) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Server routes (Nitro) là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Server routes (Nitro) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Server routes (Nitro) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Server routes (Nitro) trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Server routes (Nitro) là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Server routes (Nitro) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Server+routes+(Nitro)+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "server-routes-nitro"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Nuxt.js, State management (Pinia) có vai trò gì?",
+      "options": {
+        "A": "State management (Pinia) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "State management (Pinia) là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "State management (Pinia) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên State management (Pinia) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "State management (Pinia) trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và State management (Pinia) là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ State management (Pinia) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+State+management+(Pinia)+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "state-management-pinia"
+      ]
+    },
+    {
+      "question_id": "nuxtjs_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Nuxt.js, Nuxt UI có vai trò gì?",
+      "options": {
+        "A": "Nuxt UI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Nuxt UI là core concept trong Nuxt.js — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Nuxt UI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Nuxt UI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Nuxt UI trong Nuxt.js: Đây là một trong những concepts quan trọng nhất. Nuxt.js được sử dụng rộng rãi trong industry và Nuxt UI là phần không thể thiếu. Khi làm việc với Nuxt.js trong production, hiểu rõ Nuxt UI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nuxt.js+Nuxt+UI+tutorial",
+      "tags": [
+        "nuxtjs",
+        "frontend",
+        "nuxt-ui"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "skill": "TypeScript",
+  "market_frequency": "12.8% JDs yêu cầu TypeScript",
+  "market_role": "Frontend Developer, Full-stack Developer, Backend Developer",
+  "total_learning_hours": 35,
+  "generated_at": "2026-06-12T00:05:36.328726",
+  "modules": [
+    {
+      "module_id": "ts_01",
+      "title": "TypeScript Type System",
+      "order": 1,
+      "hours": 18,
+      "topics": [
+        {
+          "topic_id": "ts_01_01",
+          "title": "Types, Interfaces, Generics",
+          "hours": 8,
+          "academic": {
+            "summary": "type vs interface, union/intersection, generics, keyof, typeof, conditional types",
+            "resources": [
+              {
+                "title": "TypeScript Official Handbook",
+                "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Total TypeScript — Matt Pocock",
+                "url": "https://www.totaltypescript.com",
+                "type": "course",
+                "is_free": false,
+                "duration_minutes": 600
+              },
+              {
+                "title": "TypeScript Deep Dive (free book)",
+                "url": "https://basarat.gitbook.io/typescript/",
+                "type": "book",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Migrate một React JS project sang TypeScript strict mode. Thêm type guards, generic fetch<T>() utility",
+            "resources": [
+              {
+                "title": "React TypeScript Cheatsheet",
+                "url": "https://react-typescript-cheatsheet.netlify.app",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ts_01_01_q1",
+                "level": 2,
+                "question": "Sự khác biệt giữa `type` và `interface` trong TypeScript?",
+                "options": {
+                  "A": "interface: có thể extend và declaration merge. type: union, intersection, mapped types",
+                  "B": "Chúng hoàn toàn giống nhau",
+                  "C": "type nhanh hơn interface",
+                  "D": "interface chỉ dùng cho classes"
+                },
+                "correct_answer": "A",
+                "explanation": "Interface: declaration merging (2 interface cùng tên tự merge), extends. Type: union (A|B), intersection (A&B), mapped types. Best practice: interface cho objects/classes, type cho complex compositions."
+              },
+              {
+                "question_id": "ts_01_01_q2",
+                "level": 3,
+                "question": "Generic constraint `<T extends object>` nghĩa là gì?",
+                "options": {
+                  "A": "T phải là một object (không phải primitive)",
+                  "B": "T phải là class",
+                  "C": "T phải có key 'object'",
+                  "D": "T là optional"
+                },
+                "correct_answer": "A",
+                "explanation": "extends trong generic là constraint, không phải inheritance. <T extends {id: number}> nghĩa là T phải có ít nhất property id: number."
+              },
+              {
+                "question_id": "ts_01_01_q3",
+                "level": 4,
+                "question": "Utility type `Partial<User>` làm gì?",
+                "options": {
+                  "A": "Tạo type mới với tất cả properties của User optional",
+                  "B": "Tạo type mới với tất cả properties required",
+                  "C": "Lấy một phần properties của User",
+                  "D": "Tạo union type"
+                },
+                "correct_answer": "A",
+                "explanation": "Partial<T> = {[K in keyof T]?: T[K]}. Tất cả properties trở thành optional. Ngược lại là Required<T>. Pick<T, 'a'|'b'> chỉ lấy một số properties."
+              },
+              {
+                "question_id": "ts_01_01_q4",
+                "level": 5,
+                "question": "`type IsString<T> = T extends string ? 'yes' : 'no'` — kết quả của `IsString<'hello'>` và `IsString<number>`?",
+                "options": {
+                  "A": "'yes' và 'no'",
+                  "B": "boolean và boolean",
+                  "C": "Error",
+                  "D": "'yes' và 'yes'"
+                },
+                "correct_answer": "A",
+                "explanation": "Conditional types: T extends string ? A : B. 'hello' extends string → 'yes'. number không extends string → 'no'. Cực kỳ powerful cho type-level programming."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "ts_01_02",
+          "title": "Strict Mode, Declaration Files, tsconfig",
+          "hours": 6,
+          "academic": {
+            "summary": "strictNullChecks, noImplicitAny, .d.ts files, paths alias, module resolution",
+            "resources": [
+              {
+                "title": "TSConfig Reference",
+                "url": "https://www.typescriptlang.org/tsconfig",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết .d.ts declaration file cho một JS library không có types. Cấu hình paths alias @/components trong tsconfig",
+            "resources": [
+              {
+                "title": "Writing Declaration Files",
+                "url": "https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ts_01_02_q1",
+                "level": 3,
+                "question": "`strictNullChecks: true` thay đổi điều gì?",
+                "options": {
+                  "A": "null và undefined không còn assignable cho các types khác — phải explicit handle",
+                  "B": "TypeScript reject tất cả null values",
+                  "C": "Biến phải được khai báo trước",
+                  "D": "Không có khác biệt"
+                },
+                "correct_answer": "A",
+                "explanation": "Không có strictNullChecks: string có thể là null. Với strictNullChecks: string | null | undefined là 3 types khác nhau. Buộc developer xử lý null cases explicitly."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "ts_01_03",
+          "title": "Advanced Patterns: Decorators, Zod, tRPC",
+          "hours": 4,
+          "academic": {
+            "summary": "Decorators proposal, Zod runtime validation, tRPC type-safe APIs, runtime type checking",
+            "resources": [
+              {
+                "title": "Zod Documentation",
+                "url": "https://zod.dev",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng API validation layer với Zod schema, tự động infer TypeScript types từ schema",
+            "resources": [
+              {
+                "title": "tRPC Documentation",
+                "url": "https://trpc.io/docs",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ts_01_03_q1",
+                "level": 4,
+                "question": "Lợi ích của Zod so với TypeScript types thuần túy?",
+                "options": {
+                  "A": "Zod validate at RUNTIME, TypeScript types chỉ compile-time — không tồn tại ở runtime",
+                  "B": "Zod nhanh hơn TypeScript",
+                  "C": "TypeScript validate runtime, Zod compile-time",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "TypeScript types bị erase sau compile. Zod chạy runtime validation cho data từ API, user input, etc. TypeScript type của Zod schema được infer automatically với z.infer<typeof schema>."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

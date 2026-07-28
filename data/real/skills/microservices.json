@@ -1,0 +1,134 @@
+{
+  "skill": "Microservices",
+  "market_frequency": "10.6% JDs yêu cầu Microservices",
+  "market_role": "Backend Developer, Software Architect",
+  "total_learning_hours": 35,
+  "generated_at": "2026-06-12T00:05:36.366863",
+  "modules": [
+    {
+      "module_id": "ms_01",
+      "title": "Microservices Architecture",
+      "order": 1,
+      "hours": 35,
+      "topics": [
+        {
+          "topic_id": "ms_01_01",
+          "title": "Service Design, API Gateway, Service Mesh",
+          "hours": 12,
+          "academic": {
+            "summary": "Domain-driven design, bounded contexts, API Gateway (Kong/Nginx), Istio service mesh, gRPC",
+            "resources": [
+              {
+                "title": "Microservices.io — Chris Richardson",
+                "url": "https://microservices.io",
+                "type": "reference",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Martin Fowler Microservices",
+                "url": "https://martinfowler.com/microservices/",
+                "type": "article",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Decompose monolith: identify bounded contexts, extract User service + Order service + Notification service, API Gateway với Kong",
+            "resources": [
+              {
+                "title": "Kong API Gateway",
+                "url": "https://docs.konghq.com",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ms_01_01_q1",
+                "level": 4,
+                "question": "Saga pattern trong microservices giải quyết vấn đề gì?",
+                "options": {
+                  "A": "Distributed transactions: chuỗi local transactions với compensating transactions khi fail",
+                  "B": "API routing",
+                  "C": "Service discovery",
+                  "D": "Load balancing"
+                },
+                "correct_answer": "A",
+                "explanation": "Saga: không có distributed 2PC → dùng chuỗi local transactions. Choreography: events trigger next steps. Orchestration: central saga orchestrator. Compensating transactions: undo completed steps khi failure."
+              },
+              {
+                "question_id": "ms_01_01_q2",
+                "level": 5,
+                "question": "Circuit Breaker pattern trong microservices?",
+                "options": {
+                  "A": "Detect failures, open circuit khi failure threshold reached → fast fail, prevent cascade. Auto reset sau timeout",
+                  "B": "Load balancing",
+                  "C": "Authentication",
+                  "D": "Database connection pooling"
+                },
+                "correct_answer": "A",
+                "explanation": "Circuit Breaker states: Closed (normal) → Open (failing, fast fail) → Half-Open (probe). Resilience4j/Hystrix implement. Prevent cascade failures: 1 slow service không kéo chết toàn bộ system."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "ms_01_02",
+          "title": "Message Queues: Kafka, RabbitMQ",
+          "hours": 12,
+          "academic": {
+            "summary": "Topic/partition/consumer groups (Kafka), exchange/queue/binding (RabbitMQ), at-least-once delivery, idempotency",
+            "resources": [
+              {
+                "title": "Apache Kafka Docs",
+                "url": "https://kafka.apache.org/documentation/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 360
+              },
+              {
+                "title": "RabbitMQ Tutorials",
+                "url": "https://www.rabbitmq.com/getstarted.html",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Event-driven order processing: OrderCreated event → Kafka → Inventory service (reserve stock) + Notification service (email)",
+            "resources": [
+              {
+                "title": "Confluent Kafka Platform",
+                "url": "https://docs.confluent.io",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "ms_01_02_q1",
+                "level": 4,
+                "question": "Kafka vs RabbitMQ — khi nào chọn cái nào?",
+                "options": {
+                  "A": "Kafka: high throughput, event log, replay events, stream processing. RabbitMQ: complex routing, task queues, request-reply",
+                  "B": "Kafka luôn tốt hơn",
+                  "C": "Chúng giống nhau",
+                  "D": "RabbitMQ cho events, Kafka cho tasks"
+                },
+                "correct_answer": "A",
+                "explanation": "Kafka: append-only log, consumer groups, replay, millions/sec. RabbitMQ: AMQP, exchanges (direct/fanout/topic), flexible routing, TTL, dead-letter queue. Kafka: event sourcing, audit log. RabbitMQ: work queues, microservice messaging."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
