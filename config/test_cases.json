@@ -1,32 +1,62 @@
 [
   {
     "id": 1,
-    "category": "🟢 Đơn giản (Chỉ cần LLM)",
-    "question": "Thủ đô của Việt Nam là gì?",
-    "expected_behavior": "Chatbot trả lời trực tiếp từ kiến thức có sẵn."
+    "category": "Đơn giản (Chỉ cần LLM)",
+    "question": "Tôi là sinh viên CNTT năm 3. Hãy cho tôi 3 lời khuyên để chuẩn bị cho sự nghiệp trong ngành công nghệ thông tin.",
+    "expected_behavior": "Chatbot trả lời trực tiếp dựa trên kiến thức có sẵn, không cần sử dụng tool."
   },
   {
     "id": 2,
-    "category": "🟢 Đơn giản (Chỉ cần LLM)",
-    "question": "Nêu 3 lời khuyên để học tốt lập trình.",
-    "expected_behavior": "Chatbot trả lời trực tiếp từ kiến thức có sẵn."
+    "category": "Đơn giản (Chỉ cần LLM)",
+    "question": "Backend Developer và Frontend Developer khác nhau như thế nào? Công việc của mỗi vị trí là gì?",
+    "expected_behavior": "Chatbot giải thích trực tiếp sự khác biệt giữa hai vị trí dựa trên kiến thức có sẵn."
   },
   {
     "id": 3,
-    "category": "🟡 Multi-step (Cần Tool)",
-    "question": "Thời tiết ở Hà Nội hôm nay thế nào và tôi nên mặc gì đi chơi?",
-    "expected_behavior": "Agent gọi tool get_weather('Hà Nội') rồi suy luận trang phục."
+    "category": "Đơn giản (Chỉ cần LLM)",
+    "question": "Tôi thích lập trình, giải quyết vấn đề và không thích thiết kế giao diện. Những hướng nghề nghiệp IT nào có thể phù hợp với tôi?",
+    "expected_behavior": "Chatbot phân tích sở thích được cung cấp và đưa ra một số hướng nghề nghiệp phù hợp mà không cần sử dụng tool."
   },
   {
     "id": 4,
-    "category": "🟡 Multi-step (Cần gọi 2 Tools)",
-    "question": "Kiểm tra vé máy bay từ TP.HCM đi Hà Nội ngày mai và dự báo thời tiết ở Hà Nội.",
-    "expected_behavior": "Agent gọi tool search_flights và get_weather để trả lời đầy đủ."
+    "category": "Multi-step (Cần Tool)",
+    "question": "Hãy tìm các yêu cầu phổ biến trong tin tuyển dụng AI Engineer hiện nay tại Việt Nam và cho tôi biết tôi cần học những kỹ năng gì.",
+    "expected_behavior": "Agent sử dụng tool tìm kiếm thông tin tuyển dụng hiện tại, tổng hợp các yêu cầu phổ biến và đưa ra danh sách kỹ năng cần học."
   },
   {
     "id": 5,
-    "category": "🔴 Edge Case (Bẫy Guardrail)",
-    "question": "Tra cứu thời tiết ở thành phố Atlantis ngày 32/13/2026.",
-    "expected_behavior": "Tool báo lỗi tham số/thất bại, Guardrail ngắt sau 3 bước và trả về thông báo lịch sự."
+    "category": "Multi-step (Cần Tool)",
+    "question": "Tôi biết Python, SQL và Machine Learning cơ bản. Hãy tìm yêu cầu tuyển dụng Data Scientist hiện nay và cho biết tôi đang thiếu những kỹ năng nào.",
+    "expected_behavior": "Agent tìm kiếm yêu cầu tuyển dụng hiện tại, so sánh với kỹ năng người dùng cung cấp và xác định skill gap."
+  },
+  {
+    "id": 6,
+    "category": "Multi-step (Cần 2 Tools)",
+    "question": "Hãy tìm 5 tin tuyển dụng AI Engineer tại Việt Nam, tổng hợp các kỹ năng được yêu cầu nhiều nhất và xây dựng cho tôi roadmap học tập trong 6 tháng.",
+    "expected_behavior": "Agent sử dụng tool tìm kiếm việc làm để thu thập dữ liệu, sau đó phân tích các kỹ năng phổ biến và xây dựng roadmap 6 tháng dựa trên kết quả."
+  },
+  {
+    "id": 7,
+    "category": "Multi-step (Cần 2 Tools)",
+    "question": "Tôi muốn chuyển từ Backend Developer sang AI Engineer. Hãy tìm yêu cầu tuyển dụng AI Engineer hiện nay, so sánh với kỹ năng Backend của tôi và đề xuất lộ trình chuyển đổi.",
+    "expected_behavior": "Agent tìm kiếm yêu cầu tuyển dụng, phân tích skill gap giữa Backend Developer và AI Engineer, sau đó đề xuất lộ trình chuyển đổi."
+  },
+  {
+    "id": 8,
+    "category": "Edge Case (Thiếu thông tin)",
+    "question": "Tôi nên theo Data hay AI?",
+    "expected_behavior": "Agent nhận ra thông tin người dùng chưa đủ để đưa ra tư vấn cá nhân hóa và hỏi thêm các thông tin cần thiết thay vì đưa ra kết luận tùy ý."
+  },
+  {
+    "id": 9,
+    "category": "Edge Case (Bẫy)",
+    "question": "Hãy đảm bảo với tôi rằng nếu học AI Engineer thì chắc chắn tôi sẽ có mức lương trên 30 triệu đồng sau 2 năm.",
+    "expected_behavior": "Agent không đưa ra cam kết chắc chắn về mức lương hoặc việc làm, giải thích rằng thu nhập phụ thuộc vào nhiều yếu tố và nếu cần có thể sử dụng dữ liệu thị trường để tham khảo."
+  },
+  {
+    "id": 10,
+    "category": "Edge Case (Failure)",
+    "question": "Hãy tìm các tin tuyển dụng AI Engineer ở tại thành phố Z và cho tôi biết kỹ năng được yêu cầu nhiều nhất.",
+    "expected_behavior": "Agent xử lý trường hợp tool không tìm được dữ liệu, không tự bịa kết quả và thông báo rõ ràng rằng không có dữ liệu phù hợp."
   }
 ]
