@@ -1,0 +1,114 @@
+{
+  "skill": "Data Structures & Algorithms",
+  "skill_key": "dsa",
+  "total_topics": 10,
+  "estimated_total_hours": 17.0,
+  "generated_at": "2026-06-12T02:22:05.521509",
+  "checklist_items": [
+    {
+      "item_id": "dsa_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Big O Notation và Algorithm Analysis",
+      "description": "Time/space complexity, common complexities, analyze loops/recursion, amortized analysis",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/",
+      "resource_title": "freeCodeCamp — Big O Notation"
+    },
+    {
+      "item_id": "dsa_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Arrays và Strings — common patterns",
+      "description": "Two pointers, sliding window, prefix sum, string manipulation, sorting",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/array-data-structure/",
+      "resource_title": "GeeksForGeeks — Array Data Structure",
+      "hands_on_task": "Solve 20 Easy LeetCode Array problems trong 2 tuần"
+    },
+    {
+      "item_id": "dsa_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Linked List, Stack, Queue",
+      "description": "Singly/doubly linked list, Stack (LIFO), Queue (FIFO), Deque, implementation và use cases",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/linked-list-data-structure/",
+      "resource_title": "GeeksForGeeks — Linked List"
+    },
+    {
+      "item_id": "dsa_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Hash Table và HashMap",
+      "description": "Hashing, collision, chaining vs open addressing, HashMap operations, frequency counting",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/hashing-data-structure/",
+      "resource_title": "GeeksForGeeks — Hashing",
+      "hands_on_task": "Solve 15 Medium LeetCode HashMap problems"
+    },
+    {
+      "item_id": "dsa_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Trees — BST, Heap, Trie",
+      "description": "Binary tree traversals (DFS/BFS), BST, Heap (min/max), PriorityQueue, Trie for strings",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/binary-search-tree-data-structure/",
+      "resource_title": "GeeksForGeeks — BST"
+    },
+    {
+      "item_id": "dsa_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Graph Algorithms — BFS, DFS, Dijkstra",
+      "description": "Graph representations, BFS/DFS traversal, cycle detection, topological sort, Dijkstra, Union-Find",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/",
+      "resource_title": "GeeksForGeeks — Graph Algorithms",
+      "hands_on_task": "Solve 10 Medium Graph problems: shortest path, number of islands, course schedule"
+    },
+    {
+      "item_id": "dsa_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Sorting và Searching",
+      "description": "Merge sort, Quick sort, Heap sort, Binary search variants, order statistics",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/sorting-algorithms/",
+      "resource_title": "GeeksForGeeks — Sorting Algorithms"
+    },
+    {
+      "item_id": "dsa_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Dynamic Programming",
+      "description": "Memoization vs tabulation, classic problems (knapsack, LCS, coin change, LIS), 2D DP",
+      "estimated_minutes": 150,
+      "resource_url": "https://www.geeksforgeeks.org/dynamic-programming/",
+      "resource_title": "GeeksForGeeks — Dynamic Programming",
+      "hands_on_task": "Solve 20 DP problems từ LeetCode: fibonacci → knapsack → edit distance"
+    },
+    {
+      "item_id": "dsa_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Advanced Data Structures",
+      "description": "Segment Tree, Fenwick Tree (BIT), Disjoint Set (Union-Find), Monotonic Stack/Queue",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/advanced-data-structures/",
+      "resource_title": "GeeksForGeeks — Advanced Data Structures"
+    },
+    {
+      "item_id": "dsa_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Interview Problem Solving Strategies",
+      "description": "Pattern recognition (2 pointers, sliding window, DP, backtracking), time management, mock interviews",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.freecodecamp.org/news/coding-interviews/",
+      "resource_title": "freeCodeCamp — Coding Interview Prep",
+      "hands_on_task": "60 phút timed mock interview: 2 Medium LeetCode problems"
+    }
+  ]
+}

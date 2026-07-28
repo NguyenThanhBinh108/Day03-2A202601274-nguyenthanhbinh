@@ -1,0 +1,436 @@
+{
+  "skill": "Angular",
+  "skill_key": "angular",
+  "total_questions": 30,
+  "levels": { "1_beginner": 6, "2_understanding": 6, "3_application": 6, "4_debugging": 6, "5_production": 6 },
+  "generated_at": "2026-06-12T03:32:00.000000",
+  "source_references": [
+    "https://angular.dev/",
+    "https://angular.io/docs",
+    "https://www.freecodecamp.org/news/tag/angular/",
+    "https://www.geeksforgeeks.org/angularjs/",
+    "https://blog.angular.io/"
+  ],
+  "questions": [
+    {
+      "question_id": "angular_l1_001", "level": 1, "category": "definition",
+      "question": "Angular Components là gì và cấu trúc cơ bản?",
+      "options": {
+        "A": "Angular components chỉ là HTML templates",
+        "B": "@Component decorator gắn với class TypeScript, có template (HTML), styles (CSS), selector (tag name) — building block của Angular app",
+        "C": "Components không cần decorator",
+        "D": "Angular không dùng TypeScript"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular Component: @Component({ selector: 'app-hello', template: '<h1>Hello {{name}}</h1>', styles: ['h1 { color: blue }'] }) export class HelloComponent { name = 'Angular'; }. Dùng trong HTML: <app-hello />. Standalone components (Angular 17+): standalone: true — không cần NgModule. Input: @Input() title: string. Output: @Output() clicked = new EventEmitter(). Angular CLI: ng generate component hello.",
+      "source": "https://angular.dev/guide/components",
+      "tags": ["component", "decorator", "typescript", "angular"]
+    },
+    {
+      "question_id": "angular_l1_002", "level": 1, "category": "definition",
+      "question": "Angular Dependency Injection (DI) hoạt động thế nào?",
+      "options": {
+        "A": "Angular không hỗ trợ Dependency Injection",
+        "B": "@Injectable() service được registered trong providers; Angular injector tự inject vào constructor — loose coupling, testability",
+        "C": "DI phải implement thủ công",
+        "D": "Constructor injection không hoạt động trong Angular"
+      },
+      "correct_answer": "B",
+      "explanation": "@Injectable({ providedIn: 'root' }) class UserService { getUsers() {...} }. Inject vào component: constructor(private userService: UserService) {}. providedIn: 'root': singleton toàn app (tree-shakable). providedIn: 'any': instance mới mỗi lazy module. providers trong component: scoped instance chỉ cho component và children. inject() function (Angular 14+): private userService = inject(UserService) — có thể dùng ngoài constructor. InjectionToken cho non-class dependencies.",
+      "source": "https://angular.dev/guide/di",
+      "tags": ["DI", "injectable", "service", "providers"]
+    },
+    {
+      "question_id": "angular_l1_003", "level": 1, "category": "definition",
+      "question": "Angular Modules (NgModule) vs Standalone Components — sự khác biệt?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau",
+        "B": "NgModule: nhóm components/directives/pipes/services vào modules; Standalone (Angular 14+): component tự import dependencies, không cần NgModule — recommended từ Angular 17",
+        "C": "Standalone components không support trong Angular 16",
+        "D": "NgModule vẫn là cách duy nhất"
+      },
+      "correct_answer": "B",
+      "explanation": "NgModule pattern (traditional): @NgModule({ declarations: [MyComp], imports: [CommonModule], exports: [MyComp] }) — cần khai báo rõ ràng. Standalone (modern): @Component({ standalone: true, imports: [CommonModule, RouterModule], ... }) — component tự quản lý dependencies. Angular 17+: Standalone là default. bootstrapApplication(AppComponent, { providers: [...] }) thay vì platformBrowserDynamic().bootstrapModule(AppModule). Lợi ích: less boilerplate, tree-shakable, dễ hiểu hơn.",
+      "source": "https://angular.dev/guide/standalone-components",
+      "tags": ["NgModule", "standalone", "angular17", "architecture"]
+    },
+    {
+      "question_id": "angular_l1_004", "level": 1, "category": "definition",
+      "question": "Angular Template binding syntax — phân biệt các loại binding?",
+      "options": {
+        "A": "Angular chỉ có 1 loại binding",
+        "B": "Interpolation {{expr}}, Property binding [prop]='expr', Event binding (event)='handler', Two-way [(ngModel)]='value', Attribute binding [attr.xxx]",
+        "C": "Chỉ có two-way binding [()] là đủ",
+        "D": "Angular dùng v-bind như Vue"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular binding types: {{ expression }}: interpolation, one-way data → view. [property]='expression': property binding, set DOM property. (event)='handler($event)': event binding, listen to DOM events. [(ngModel)]='value': two-way binding (banana-in-a-box). [attr.aria-label]='value': attribute binding (khi không có property equivalent). [class.active]='isActive': class binding. [style.color]='color': style binding. Template reference: #inputRef → <input #inputRef> → inputRef.value.",
+      "source": "https://angular.dev/guide/templates",
+      "tags": ["binding", "interpolation", "event-binding", "property-binding"]
+    },
+    {
+      "question_id": "angular_l1_005", "level": 1, "category": "definition",
+      "question": "Angular Services và khi nào nên dùng?",
+      "options": {
+        "A": "Services chỉ dùng cho HTTP calls",
+        "B": "@Injectable() class chứa business logic, shared data, HTTP calls — tách khỏi component để tái sử dụng và testability",
+        "C": "Mỗi component phải có service riêng",
+        "D": "Services không thể inject vào nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "Service là class với @Injectable() chứa: (1) HTTP calls (DataService). (2) Business logic. (3) Shared state giữa components. (4) Utilities. Tại sao: Single Responsibility — component chỉ handle UI, không handle logic. Reusability — nhiều components dùng cùng service. Testability — mock service dễ hơn mock component logic. Singleton với providedIn: 'root' — 1 instance cho toàn app. Best practice: UserService cho user data, AuthService cho auth, ProductService cho products.",
+      "source": "https://angular.dev/guide/services",
+      "tags": ["service", "injectable", "business-logic", "DI"]
+    },
+    {
+      "question_id": "angular_l1_006", "level": 1, "category": "definition",
+      "question": "Angular Lifecycle Hooks quan trọng nhất?",
+      "options": {
+        "A": "Angular không có lifecycle hooks",
+        "B": "ngOnInit (sau init, fetch data), ngOnChanges (khi @Input thay đổi), ngOnDestroy (cleanup), ngAfterViewInit (sau khi view init)",
+        "C": "Chỉ có constructor và ngOnInit",
+        "D": "Lifecycle hooks chỉ trong class components"
+      },
+      "correct_answer": "B",
+      "explanation": "Lifecycle order: constructor() → ngOnChanges() → ngOnInit() → ngDoCheck() → ngAfterContentInit() → ngAfterContentChecked() → ngAfterViewInit() → ngAfterViewChecked() → ngOnDestroy(). Dùng nhiều nhất: ngOnInit(): fetch data, setup subscriptions (không trong constructor vì @Input chưa set). ngOnChanges(changes: SimpleChanges): react to @Input changes. ngOnDestroy(): unsubscribe Observables, clearInterval. ngAfterViewInit(): access @ViewChild. Interface: implements OnInit, OnDestroy — TypeScript type safety.",
+      "source": "https://angular.dev/guide/lifecycle-hooks",
+      "tags": ["lifecycle", "ngOnInit", "ngOnDestroy", "hooks"]
+    },
+    {
+      "question_id": "angular_l2_001", "level": 2, "category": "understanding",
+      "question": "RxJS Observables trong Angular — tại sao Angular dùng nhiều Observables hơn Promises?",
+      "options": {
+        "A": "Promises tốt hơn Observables",
+        "B": "Observables: cancellable, multiple values over time, powerful operators (map, filter, switchMap, combineLatest), lazy, retry; Promises: single value, eager, không cancellable",
+        "C": "Angular không dùng RxJS",
+        "D": "Observables chỉ dùng cho HTTP"
+      },
+      "correct_answer": "B",
+      "explanation": "Observable advantages: (1) Lazy: không execute cho đến khi subscribe. (2) Cancellable: unsubscribe() để cancel. (3) Multiple values: streams (WebSocket, interval). (4) Operators: pipe(map(), filter(), switchMap(), debounceTime(), distinctUntilChanged()). (5) Composable: combineLatest, merge, zip. Angular dùng Observables: HttpClient.get(), Router.events, ActivatedRoute.params, FormControl.valueChanges, EventEmitter. Pattern: takeUntilDestroyed() hoặc async pipe để tự động unsubscribe.",
+      "source": "https://rxjs.dev/guide/observable",
+      "tags": ["RxJS", "Observable", "operators", "streams"]
+    },
+    {
+      "question_id": "angular_l2_002", "level": 2, "category": "understanding",
+      "question": "Angular Change Detection — Default vs OnPush strategy?",
+      "options": {
+        "A": "Angular luôn re-render toàn bộ app",
+        "B": "Default: check mọi component mỗi event. OnPush: chỉ check khi @Input reference thay đổi, Observable emit, hoặc manual markForCheck() — tối ưu performance",
+        "C": "OnPush không hỗ trợ Observables",
+        "D": "Default strategy tốt hơn OnPush"
+      },
+      "correct_answer": "B",
+      "explanation": "Change Detection Cycle: Angular chạy CD sau mỗi async event (click, timeout, HTTP). Default strategy: check toàn bộ component tree từ top → bottom. OnPush strategy: @Component({ changeDetection: ChangeDetectionStrategy.OnPush }). Chỉ check khi: @Input reference thay đổi (không mutation), Observable (async pipe), ChangeDetectorRef.markForCheck() hoặc detectChanges(). Kết hợp với Signals (Angular 17+): automatic fine-grained reactivity, không cần CD strategy. Best practice: dùng OnPush + async pipe + Signals cho performance tối ưu.",
+      "source": "https://angular.dev/guide/change-detection",
+      "tags": ["change-detection", "OnPush", "performance", "signals"]
+    },
+    {
+      "question_id": "angular_l2_003", "level": 2, "category": "understanding",
+      "question": "Angular Signals (Angular 17+) là gì và thay thế gì?",
+      "options": {
+        "A": "Signals là tên khác của Observables",
+        "B": "Signals là reactive primitives (signal(), computed(), effect()) — fine-grained reactivity, không cần OnPush, đơn giản hơn RxJS cho simple cases",
+        "C": "Signals chỉ dùng cho forms",
+        "D": "Signals thay thế hoàn toàn RxJS"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular Signals: const count = signal(0); count(); // read: 0. count.set(1); count.update(c => c + 1). computed: const double = computed(() => count() * 2). effect: effect(() => console.log(count())). Lợi ích: (1) Fine-grained updates — không cần CD strategy. (2) Simple syntax vs RxJS operators. (3) Synchronous — dễ debug hơn async Observables. (4) toSignal(observable$), toObservable(signal) để interop. Angular 17+ input signal: @Input() title = input<string>(). Signals không THAY THẾ RxJS — RxJS vẫn tốt hơn cho complex async streams.",
+      "source": "https://angular.dev/guide/signals",
+      "tags": ["signals", "angular17", "reactivity", "computed", "effect"]
+    },
+    {
+      "question_id": "angular_l2_004", "level": 2, "category": "understanding",
+      "question": "Angular Forms — Template-driven vs Reactive Forms?",
+      "options": {
+        "A": "Chúng giống nhau hoàn toàn",
+        "B": "Template-driven: đơn giản, dùng ngModel; Reactive: FormControl/FormGroup/FormBuilder trong TypeScript, more control, testable, dynamic forms",
+        "C": "Reactive Forms chỉ dùng cho complex forms",
+        "D": "Template-driven deprecated"
+      },
+      "correct_answer": "B",
+      "explanation": "Template-driven: <input [(ngModel)]='name' required #nameInput='ngModel'> — logic trong template, ít code TypeScript. Dùng cho simple forms. Reactive Forms: FormBuilder, FormGroup, FormControl, FormArray. this.form = this.fb.group({ name: ['', [Validators.required, Validators.minLength(3)]], email: ['', [Validators.required, Validators.email]] }). Lợi ích: programmatic control, dynamic add/remove fields, custom validators, easier testing, valueChanges Observable. Dùng cho: complex forms, dynamic fields, unit tests.",
+      "source": "https://angular.dev/guide/forms/reactive-forms",
+      "tags": ["forms", "reactive-forms", "FormControl", "validators"]
+    },
+    {
+      "question_id": "angular_l2_005", "level": 2, "category": "understanding",
+      "question": "Angular HttpClient và interceptors hoạt động thế nào?",
+      "options": {
+        "A": "Angular dùng fetch() trực tiếp",
+        "B": "HttpClient trả về Observables; interceptors (HttpInterceptorFn) intercept request/response để add auth headers, logging, error handling",
+        "C": "Interceptors chỉ xử lý responses",
+        "D": "HttpClient không hỗ trợ TypeScript generics"
+      },
+      "correct_answer": "B",
+      "explanation": "HttpClient: this.http.get<User[]>('/api/users').pipe(catchError(this.handleError)). Interceptor (functional, Angular 15+): export const authInterceptor: HttpInterceptorFn = (req, next) => { const token = inject(AuthService).token; const authReq = req.clone({ headers: req.headers.set('Authorization', `Bearer ${token}`) }); return next(authReq).pipe(catchError(err => { if (err.status === 401) inject(Router).navigate(['/login']); return throwError(() => err); })); }. Register: provideHttpClient(withInterceptors([authInterceptor])). Retry: .pipe(retry(3)).",
+      "source": "https://angular.dev/guide/http",
+      "tags": ["HttpClient", "interceptors", "Observable", "HTTP"]
+    },
+    {
+      "question_id": "angular_l2_006", "level": 2, "category": "understanding",
+      "question": "Angular Router — lazy loading modules và route guards?",
+      "options": {
+        "A": "Angular Router không hỗ trợ lazy loading",
+        "B": "loadComponent/loadChildren cho lazy loading; canActivate, canDeactivate, canMatch guards cho route protection",
+        "C": "Route guards chỉ dùng với NgModules",
+        "D": "Lazy loading chỉ hoạt động với NgModules"
+      },
+      "correct_answer": "B",
+      "explanation": "Lazy loading (Standalone): { path: 'dashboard', loadComponent: () => import('./dashboard.component').then(m => m.DashboardComponent) }. loadChildren cho feature routes: loadChildren: () => import('./admin/admin.routes'). Guards (functional, Angular 15+): canActivate: [() => inject(AuthService).isLoggedIn() ? true : inject(Router).createUrlTree(['/login'])]. canDeactivate: kiểm tra dirty form trước khi leave. Resolve: prefetch data trước khi activate route. canMatch: quyết định xem route có match không (feature flags, permissions).",
+      "source": "https://angular.dev/guide/router",
+      "tags": ["lazy-loading", "guards", "router", "canActivate"]
+    },
+    {
+      "question_id": "angular_l3_001", "level": 3, "category": "application",
+      "question": "Implement Angular Reactive Form với custom validator và async validator?",
+      "options": {
+        "A": "Angular không hỗ trợ custom validators",
+        "B": "ValidatorFn trả về null (valid) hoặc {errorKey: true} (invalid); AsyncValidatorFn trả về Observable<ValidationErrors|null>",
+        "C": "Custom validators chỉ dùng được với template-driven forms",
+        "D": "Async validators không thể cancel"
+      },
+      "correct_answer": "B",
+      "explanation": "Custom sync validator: export function noSpaces(): ValidatorFn { return (ctrl) => ctrl.value?.includes(' ') ? { noSpaces: true } : null; }. Async validator: export function uniqueEmail(userService: UserService): AsyncValidatorFn { return (ctrl) => ctrl.value ? userService.checkEmail(ctrl.value).pipe(map(exists => exists ? { emailTaken: true } : null), catchError(() => of(null))) : of(null); }. Form: this.fb.group({ username: ['', [Validators.required, noSpaces()]], email: ['', Validators.required, [uniqueEmail(this.userService)]] }). Template: *ngIf='form.get(\"email\").errors?.emailTaken'.",
+      "source": "https://angular.dev/guide/forms/form-validation",
+      "tags": ["validators", "reactive-forms", "async-validator", "custom"]
+    },
+    {
+      "question_id": "angular_l3_002", "level": 3, "category": "application",
+      "question": "Implement Angular State Management với NgRx hoặc Signal-based approach?",
+      "options": {
+        "A": "Angular không cần state management",
+        "B": "NgRx: Actions→Reducer→Store→Selectors→Effects pattern cho complex state; Signals: signal()/computed() cho simpler cases; service-based cho small apps",
+        "C": "Chỉ dùng localStorage cho state",
+        "D": "NgRx là bắt buộc cho mọi Angular app"
+      },
+      "correct_answer": "B",
+      "explanation": "NgRx (Redux pattern): Action: createAction('[User] Load Users'). Reducer: createReducer(initialState, on(loadUsers, state => ({...state, loading: true}))). Effect: loadUsers$ = createEffect(() => this.actions$.pipe(ofType(loadUsers), switchMap(() => this.http.get<User[]>('/api/users').pipe(map(users => loadUsersSuccess({users})), catchError(error => of(loadUsersFailure({error})))))). Selector: selectActiveUsers = createSelector(selectUsers, users => users.filter(u => u.active)). Signals alternative (simpler): private usersSignal = signal<User[]>([]); readonly users = computed(() => this.usersSignal()). Dùng NgRx khi: complex interactions, time-travel debugging, large team.",
+      "source": "https://ngrx.io/guide/store",
+      "tags": ["NgRx", "state-management", "signals", "Redux"]
+    },
+    {
+      "question_id": "angular_l3_003", "level": 3, "category": "application",
+      "question": "Angular HTTP Interceptor cho authentication token refresh?",
+      "options": {
+        "A": "Token refresh phải handle trong mỗi service riêng biệt",
+        "B": "Intercept 401 response → call refresh endpoint → retry original request với new token; dùng BehaviorSubject để queue concurrent requests",
+        "C": "Interceptors không thể retry requests",
+        "D": "Angular không hỗ trợ token refresh"
+      },
+      "correct_answer": "B",
+      "explanation": "Token refresh interceptor pattern: let isRefreshing = false; let refreshTokenSubject = new BehaviorSubject<string|null>(null). catchError handler: if (err.status === 401 && !request.url.includes('/auth/refresh')) { if (!isRefreshing) { isRefreshing = true; refreshTokenSubject.next(null); return authService.refreshToken().pipe(switchMap(token => { isRefreshing = false; refreshTokenSubject.next(token); return next(addToken(request, token)); })); } else { return refreshTokenSubject.pipe(filter(t => t !== null), take(1), switchMap(t => next(addToken(request, t)))); } }. Queue pattern: concurrent requests chờ refresh xong rồi retry cùng lúc.",
+      "source": "https://angular.dev/guide/http/interceptors",
+      "tags": ["interceptor", "token-refresh", "authentication", "RxJS"]
+    },
+    {
+      "question_id": "angular_l3_004", "level": 3, "category": "application",
+      "question": "Angular Testing — Unit test Service và Component với Jest/Jasmine?",
+      "options": {
+        "A": "Angular apps không thể unit test",
+        "B": "TestBed.configureTestingModule() cho component tests; inject mock services; async/fakeAsync/tick() cho async; ComponentFixture để interact với DOM",
+        "C": "Chỉ cần E2E testing là đủ",
+        "D": "Angular chỉ support Jasmine"
+      },
+      "correct_answer": "B",
+      "explanation": "Service test: const userService = TestBed.inject(UserService); const httpMock = TestBed.inject(HttpTestingController); service.getUsers().subscribe(users => expect(users).toEqual(mockUsers)); const req = httpMock.expectOne('/api/users'); req.flush(mockUsers). Component test: TestBed.configureTestingModule({ declarations: [UserComponent], providers: [{ provide: UserService, useValue: mockUserService }] }); fixture = TestBed.createComponent(UserComponent); const comp = fixture.componentInstance; fixture.detectChanges(); const h1 = fixture.nativeElement.querySelector('h1'); expect(h1.textContent).toContain('Users'). fakeAsync: fakeAsync(() => { service.load(); tick(1000); expect(comp.data).toBeDefined(); }).",
+      "source": "https://angular.dev/guide/testing",
+      "tags": ["testing", "TestBed", "jest", "jasmine", "unit-test"]
+    },
+    {
+      "question_id": "angular_l3_005", "level": 3, "category": "application",
+      "question": "Implement Angular custom pipe với memoization?",
+      "options": {
+        "A": "Pipes không thể memoize results",
+        "B": "@Pipe({ name: 'filter', pure: true }): pure pipe tự động memoize (Angular re-compute chỉ khi input thay đổi). Impure: chạy mỗi CD cycle",
+        "C": "Custom pipes chỉ dùng cho formatting",
+        "D": "Pipes không thể inject services"
+      },
+      "correct_answer": "B",
+      "explanation": "@Pipe({ name: 'truncate', pure: true, standalone: true }) export class TruncatePipe implements PipeTransform { transform(value: string, limit = 100, ellipsis = '...'): string { if (!value || value.length <= limit) return value; return value.slice(0, limit) + ellipsis; } }. Pure pipe: Angular cache kết quả — chỉ re-compute khi input reference thay đổi (default). Impure: pure: false — chạy mỗi change detection cycle (tránh dùng khi không cần vì performance). Inject service: constructor(private service: MyService) {}. Dùng trong template: {{ 'text' | truncate:50 }}.",
+      "source": "https://angular.dev/guide/pipes",
+      "tags": ["pipe", "transform", "pure", "memoization"]
+    },
+    {
+      "question_id": "angular_l3_006", "level": 3, "category": "application",
+      "question": "Angular i18n — implement internationalization?",
+      "options": {
+        "A": "Angular không có i18n support",
+        "B": "Dùng i18n attribute hoặc $localize tag, ng extract-i18n để extract messages, multiple build với ng build --localize",
+        "C": "Chỉ cần dùng JSON files cho translations",
+        "D": "i18n chỉ hoạt động với NgModules"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular built-in i18n: <h1 i18n='@@pageTitle'>Hello</h1>. Extract: ng extract-i18n → messages.xlf. Translate: copy thành messages.vi.xlf, add translations. Build: ng build --localize. Serve specific locale: ng serve --configuration=vi. Dynamic i18n với ngx-translate (alternative, runtime): TranslateModule.forRoot(), translate.instant('TITLE'), {{ 'NAV.HOME' | translate }}. $localize tag (built-in): $localize`Hello ${name}` trong TypeScript. Angular i18n: compile-time (multiple bundles), ngx-translate: runtime (1 bundle, switch language without reload).",
+      "source": "https://angular.dev/guide/i18n",
+      "tags": ["i18n", "internationalization", "localization", "ngx-translate"]
+    },
+    {
+      "question_id": "angular_l4_001", "level": 4, "category": "debugging",
+      "question": "ExpressionChangedAfterItHasBeenCheckedError — nguyên nhân và fix?",
+      "options": {
+        "A": "Lỗi này không thể fix",
+        "B": "Angular phát hiện binding value thay đổi sau CD cycle — thường do thay đổi state trong lifecycle hooks sau khi view đã check. Fix: setTimeout, async pipe, hoặc refactor logic",
+        "C": "Chỉ xảy ra trong production mode",
+        "D": "Lỗi do TypeScript types"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular chạy CD → render → verify (dev only). Nếu value thay đổi giữa hai lần: Error. Nguyên nhân: thay đổi state trong ngAfterViewInit/ngAfterContentInit → parent component detect sau. Fix patterns: (1) setTimeout(() => { this.value = newValue; }): defer change. (2) ChangeDetectorRef.detectChanges(): trigger CD ngay trong ngAfterViewInit. (3) Async pipe: Observable tự manage timing. (4) Refactor: move logic vào ngOnInit thay ngAfterViewInit. (5) Signals: tự động handle timing. Development only — không xảy ra production mode (enableProdMode()).",
+      "source": "https://angular.dev/errors/NG0100",
+      "tags": ["ExpressionChanged", "change-detection", "debugging", "lifecycle"]
+    },
+    {
+      "question_id": "angular_l4_002", "level": 4, "category": "debugging",
+      "question": "Memory leaks trong Angular — nguyên nhân và patterns để tránh?",
+      "options": {
+        "A": "Angular tự manage tất cả subscriptions",
+        "B": "Observable subscriptions không unsubscribe, Subject không complete; Fix: takeUntilDestroyed(), async pipe, destroy$ Subject, DestroyRef",
+        "C": "Memory leaks không thể xảy ra trong Angular",
+        "D": "Chỉ cần OnPush là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "Patterns để tránh leaks: (1) async pipe (best): <div>{{ data$ | async }}</div> — tự unsubscribe khi component destroy. (2) takeUntilDestroyed() (Angular 16+): this.service.data$.pipe(takeUntilDestroyed()).subscribe(). (3) DestroyRef: constructor(destroyRef: DestroyRef) { destroyRef.onDestroy(() => subscription.unsubscribe()); }. (4) destroy$ pattern: private destroy$ = new Subject<void>(); ngOnDestroy() { this.destroy$.next(); this.destroy$.complete(); }. data$.pipe(takeUntil(this.destroy$)).subscribe(). (5) interval/timer: clearInterval trong ngOnDestroy.",
+      "source": "https://angular.dev/guide/rxjs-interop",
+      "tags": ["memory-leak", "subscription", "takeUntilDestroyed", "async-pipe"]
+    },
+    {
+      "question_id": "angular_l4_003", "level": 4, "category": "debugging",
+      "question": "Angular performance bottleneck — component re-renders quá nhiều. Debug approach?",
+      "options": {
+        "A": "Không thể debug Angular performance",
+        "B": "Angular DevTools → Profiler để trace CD cycles; chuyển sang OnPush; dùng async pipe; avoid function calls trong templates; track signals",
+        "C": "Chỉ cần upgrade Angular version",
+        "D": "Reduce số components"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug: Angular DevTools → Profiler tab → record → xem component nào re-render nhiều nhất và lý do. Common culprits: (1) Function calls trong template: {{getFullName()}} — gọi mỗi CD. Fix: dùng property hoặc pipe. (2) Default CD strategy: mọi event trigger check toàn bộ tree. Fix: ChangeDetectionStrategy.OnPush. (3) Mutable objects với OnPush: thay đổi property không trigger CD. Fix: immutable updates {...state, prop: newVal}. (4) trackBy trong *ngFor: trackBy: (i, item) => item.id — tránh re-create DOM. (5) Signals tự động track dependencies — fine-grained updates.",
+      "source": "https://angular.dev/guide/change-detection/skipping-component-subtrees",
+      "tags": ["performance", "profiler", "OnPush", "debugging", "trackBy"]
+    },
+    {
+      "question_id": "angular_l4_004", "level": 4, "category": "debugging",
+      "question": "NullInjectorError: No provider for Service — nguyên nhân phổ biến?",
+      "options": {
+        "A": "Lỗi này nghĩa là service không tồn tại",
+        "B": "Service chưa được provide: thiếu providedIn trong @Injectable, chưa add vào providers array, hoặc typo trong import",
+        "C": "Tất cả services đều tự động available",
+        "D": "Lỗi do TypeScript compiler"
+      },
+      "correct_answer": "B",
+      "explanation": "NullInjectorError causes: (1) Thiếu providedIn: 'root' trong @Injectable. (2) Service chưa add vào providers: [] trong component/module. (3) Import sai service (ví dụ import từ barrel file sai). (4) Lazy-loaded module cần service không có trong module providers. (5) Test: chưa provide mock service trong TestBed.configureTestingModule. Fix checklist: (1) Thêm providedIn: 'root' vào @Injectable. (2) Hoặc add vào providers trong component/module. (3) Check import path. (4) For tests: provide mock. Angular error sẽ chỉ ra component nào đang request service.",
+      "source": "https://angular.dev/errors/NG0201",
+      "tags": ["NullInjectorError", "DI", "providers", "debugging"]
+    },
+    {
+      "question_id": "angular_l4_005", "level": 4, "category": "debugging",
+      "question": "Angular form validation không hiển thị error messages đúng lúc. Debugging approach?",
+      "options": {
+        "A": "Angular forms luôn hiển thị errors ngay lập tức",
+        "B": "Control states: dirty (user typed), touched (blurred), invalid; hiển thị error khi (dirty || touched) && invalid — tránh show error khi chưa interact",
+        "C": "Chỉ cần check invalid là đủ",
+        "D": "Validation chỉ hoạt động khi submit"
+      },
+      "correct_answer": "B",
+      "explanation": "Form Control states: pristine/dirty (chưa/đã thay đổi value), untouched/touched (chưa/đã blur), valid/invalid/pending. Show error pattern: <div *ngIf='nameCtrl.invalid && (nameCtrl.dirty || nameCtrl.touched)'>. Specific error: *ngIf='nameCtrl.errors?.required'. updateOn option: FormControl({ updateOn: 'blur' }) — chỉ validate khi blur, không mỗi keystroke. markAllAsTouched() khi submit để show tất cả errors. FormGroup status: form.valid, form.dirty. Cross-field validation: trong FormGroup validator, trả về error nếu không match.",
+      "source": "https://angular.dev/guide/forms/form-validation",
+      "tags": ["forms", "validation", "dirty", "touched", "errors"]
+    },
+    {
+      "question_id": "angular_l4_006", "level": 4, "category": "debugging",
+      "question": "RxJS switchMap vs mergeMap vs concatMap vs exhaustMap — khi nào dùng cái nào?",
+      "options": {
+        "A": "Chúng đều giống nhau",
+        "B": "switchMap: cancel prev (search), mergeMap: parallel (uploads), concatMap: sequential (queue), exhaustMap: ignore new while busy (login button)",
+        "C": "switchMap là tốt nhất cho mọi trường hợp",
+        "D": "Chỉ dùng mergeMap"
+      },
+      "correct_answer": "B",
+      "explanation": "Higher-order mapping operators: switchMap: cancel previous inner Observable khi có outer emit mới. Dùng: search (type-ahead), navigation. mergeMap: subscribe tất cả inner Observables concurrently. Dùng: file uploads, multiple independent API calls. concatMap: queue — đợi previous inner complete, rồi subscribe next. Dùng: sequential operations, retry queue. exhaustMap: ignore outer emits khi inner Observable đang active. Dùng: form submit (ignore double-click), login button. Example: searchInput$.pipe(debounceTime(300), distinctUntilChanged(), switchMap(q => this.http.get(`/api/search?q=${q}`))).",
+      "source": "https://rxjs.dev/api/operators/switchMap",
+      "tags": ["RxJS", "switchMap", "mergeMap", "operators", "debugging"]
+    },
+    {
+      "question_id": "angular_l5_001", "level": 5, "category": "production_scenario",
+      "question": "Angular enterprise app bị slow (8s initial load). Strategy tối ưu toàn diện?",
+      "options": {
+        "A": "Nâng cấp server",
+        "B": "Lazy loading routes, deferred loading (@defer), preload strategies, SSR với Angular Universal, bundle analysis, OnPush, virtual scroll",
+        "C": "Reduce số components",
+        "D": "Disable TypeScript strict mode"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular performance toolkit: (1) Route lazy loading: loadComponent/loadChildren. (2) @defer (Angular 17+): @defer (on viewport) { <HeavyComponent/> } @loading { <Spinner/> } — defer rendering until visible. (3) Preloading strategy: PreloadAllModules hoặc custom strategy (PreloadSelectedModules). (4) SSR: Angular Universal / SSR builder → fast FCP, SEO. (5) Bundle: ng build --stats-json + webpack-bundle-analyzer. (6) OnPush + trackBy + async pipe. (7) CDK Virtual Scroll cho long lists. (8) Lazy images: loading='lazy'. (9) HTTP/2 server push. Target: First Contentful Paint < 1.5s.",
+      "source": "https://angular.dev/guide/defer",
+      "tags": ["performance", "lazy-loading", "defer", "SSR", "production"]
+    },
+    {
+      "question_id": "angular_l5_002", "level": 5, "category": "production_scenario",
+      "question": "Migrate Angular app từ NgModules sang Standalone Components — strategy?",
+      "options": {
+        "A": "Không thể migrate một phần — phải migrate toàn bộ cùng lúc",
+        "B": "Dùng ng generate @angular/core:standalone migration schematic; migrate từ leaf components lên, hoặc từ root xuống; giữ NgModules và standalone cùng tồn tại",
+        "C": "Migration chỉ có thể làm thủ công",
+        "D": "NgModules không cần migrate"
+      },
+      "correct_answer": "B",
+      "explanation": "Migration strategy: (1) Automated: ng generate @angular/core:standalone -- --mode=convert-to-standalone (leaf components), --mode=prune-ng-modules, --mode=standalone-bootstrap. (2) Incremental manual: thêm standalone: true vào @Component, add imports array, remove từ NgModule declarations. Components có thể mix: standalone và NgModule-based tồn tại cùng nhau (standalone import NgModule; NgModule include standalone component trong imports). (3) Test sau mỗi bước. (4) Lợi ích: better tree-shaking, simpler architecture, easier lazy loading.",
+      "source": "https://angular.dev/guide/standalone-migration",
+      "tags": ["migration", "standalone", "NgModule", "angular17"]
+    },
+    {
+      "question_id": "angular_l5_003", "level": 5, "category": "production_scenario",
+      "question": "Angular micro-frontend với Module Federation. Architecture cho large enterprise?",
+      "options": {
+        "A": "Micro-frontend không khả thi với Angular",
+        "B": "Webpack Module Federation: host app load remote Angular apps dynamically; @angular-architects/module-federation plugin; shared Angular singleton để tránh multiple instances",
+        "C": "Chỉ dùng iframes cho micro-frontend",
+        "D": "Angular không support Module Federation"
+      },
+      "correct_answer": "B",
+      "explanation": "@angular-architects/module-federation: Remote app: exposes: { './Module': './src/app/feature/feature.module.ts' }; Host app: loadRemoteModule({ remoteEntry: 'http://team-a:4201/remoteEntry.js', remoteName: 'teamA', exposedModule: './Module' }).then(m => m.FeatureModule). Shared: Angular, RxJS — singleton để tránh multiple Angular instances (version mismatch issues). Challenges: CSS isolation (shadow DOM hoặc CSS prefix), routing (host manages top-level, remotes manage sub-routes), authentication (shared token via localStorage or event). Native Federation (Vite/Rollup): @angular-architects/native-federation cho Vite-based builds.",
+      "source": "https://github.com/angular-architects/module-federation-plugin",
+      "tags": ["micro-frontend", "module-federation", "enterprise", "architecture"]
+    },
+    {
+      "question_id": "angular_l5_004", "level": 5, "category": "production_scenario",
+      "question": "Angular app security best practices cho production?",
+      "options": {
+        "A": "HTTPS là đủ cho security",
+        "B": "Angular DomSanitizer tránh XSS; strict CSP headers; CSRF protection; dependency audit; environment-specific configs; HttpOnly cookies",
+        "C": "Angular tự handle tất cả security",
+        "D": "Chỉ cần validate form là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular security layers: (1) XSS: Angular auto-escapes interpolation {{ }}. Tránh bypassSecurityTrust* functions trừ khi thực sự cần. DomSanitizer.sanitize(SecurityContext.HTML, html). (2) CSP: Content-Security-Policy header: script-src 'self' — nonce-based cho inline scripts. (3) CSRF: Angular HttpClient tự đọc XSRF-TOKEN cookie và gửi X-XSRF-TOKEN header. (4) npm audit: scan dependencies. (5) Environment configs: không commit API keys. (6) HttpOnly, SameSite=Strict cookies cho auth tokens. (7) HTTPS: Strict-Transport-Security header. (8) Trusted Types API: bảo vệ DOM sinks.",
+      "source": "https://angular.dev/best-practices/security",
+      "tags": ["security", "XSS", "CSP", "CSRF", "production"]
+    },
+    {
+      "question_id": "angular_l5_005", "level": 5, "category": "production_scenario",
+      "question": "Angular Universal (SSR) — implement và các gotchas khi deploy?",
+      "options": {
+        "A": "Angular không support SSR",
+        "B": "ng add @angular/ssr; isPlatformBrowser checks cho browser-only APIs; TransferState để share data client/server; deployment trên Node.js server",
+        "C": "SSR chỉ cần setup một lần, không cần code changes",
+        "D": "Angular Universal chỉ cho Angular 12"
+      },
+      "correct_answer": "B",
+      "explanation": "Angular SSR setup: ng add @angular/ssr. Gotchas: (1) Window/Document/localStorage không tồn tại trên server: isPlatformBrowser(this.platformId) checks. (2) setTimeout/setInterval: cần isPlatformBrowser. (3) TransferState: USERS_KEY = makeStateKey<User[]>('users'); server: transferState.set(USERS_KEY, users); client: if (transferState.hasKey(USERS_KEY)) { const cached = transferState.get(USERS_KEY, []); transferState.remove(USERS_KEY); }. (4) Memory leaks: mỗi request tạo instance mới, subscriptions phải complete. (5) Deploy: Node.js server runs dist/server/main.js. Hybrid rendering: Angular 17 cho prerender static + SSR dynamic routes.",
+      "source": "https://angular.dev/guide/ssr",
+      "tags": ["SSR", "Angular-Universal", "production", "TransferState"]
+    },
+    {
+      "question_id": "angular_l5_006", "level": 5, "category": "production_scenario",
+      "question": "Angular CI/CD pipeline và deployment strategy cho enterprise?",
+      "options": {
+        "A": "Chỉ cần ng build và copy files",
+        "B": "GitHub Actions/GitLab CI: lint, test, build, e2e; Docker containerization; Blue-green deployment; environment configs; cache busting; CDN",
+        "C": "Enterprise chỉ dùng manual deployment",
+        "D": "Angular không support Docker"
+      },
+      "correct_answer": "B",
+      "explanation": "CI/CD pipeline: (1) Lint: ng lint. (2) Unit tests: ng test --no-watch --code-coverage. (3) Build: ng build --configuration=production. (4) E2E: ng e2e (Cypress/Playwright). (5) Docker: multi-stage build — builder stage (node:18), production stage (nginx:alpine). NGINX config: try_files $uri $uri/ /index.html (SPA routing). (6) Environment: fileReplacements in angular.json cho environment-specific configs. (7) Cache busting: Angular output hashing — main.[hash].js. (8) CDN: CloudFront/Cloudflare với long cache for hashed files. (9) Blue-green: deploy new version, switch traffic, rollback nếu cần.",
+      "source": "https://angular.dev/tools/cli/deployment",
+      "tags": ["CI/CD", "Docker", "deployment", "production", "pipeline"]
+    }
+  ]
+}

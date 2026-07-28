@@ -1,0 +1,82 @@
+{
+  "skill": "MongoDB",
+  "market_frequency": "11.2% JDs yêu cầu MongoDB",
+  "market_role": "Backend Developer, Full-stack Developer",
+  "total_learning_hours": 25,
+  "generated_at": "2026-06-12T00:05:36.359829",
+  "modules": [
+    {
+      "module_id": "mongo_01",
+      "title": "MongoDB NoSQL",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "mongo_01_01",
+          "title": "Document Model, CRUD, Aggregation Pipeline",
+          "hours": 10,
+          "academic": {
+            "summary": "BSON, collections, CRUD operators, $lookup, $unwind, $group, $project, indexes",
+            "resources": [
+              {
+                "title": "MongoDB Official Docs",
+                "url": "https://www.mongodb.com/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "MongoDB University — Free Courses",
+                "url": "https://learn.mongodb.com",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Product catalog với MongoDB: flexible attributes với JSONB-like structure, text search, aggregation cho analytics",
+            "resources": [
+              {
+                "title": "MongoDB Compass GUI",
+                "url": "https://www.mongodb.com/products/compass",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "mongo_01_01_q1",
+                "level": 2,
+                "question": "MongoDB khi nào phù hợp hơn PostgreSQL?",
+                "options": {
+                  "A": "Schema linh hoạt, document-centric data, horizontal scaling, rapidly changing schema",
+                  "B": "Luôn tốt hơn PostgreSQL",
+                  "C": "Khi cần ACID transactions",
+                  "D": "Khi cần complex JOINs"
+                },
+                "correct_answer": "A",
+                "explanation": "MongoDB: flexible schema (products với attributes khác nhau), high write throughput, scale-out. PostgreSQL: ACID, complex queries, JOINs, data integrity. MongoDB 4.0+ có ACID multi-document transactions nhưng JOINs ($lookup) không efficient như SQL."
+              },
+              {
+                "question_id": "mongo_01_01_q2",
+                "level": 4,
+                "question": "MongoDB Aggregation Pipeline $lookup hoạt động như thế nào?",
+                "options": {
+                  "A": "Left outer join với collection khác, giống SQL LEFT JOIN — nhưng phải embed result trong array",
+                  "B": "Inner join như SQL",
+                  "C": "Không thể join trong MongoDB",
+                  "D": "$lookup thay thế indexes"
+                },
+                "correct_answer": "A",
+                "explanation": "$lookup: {from: 'orders', localField: '_id', foreignField: 'userId', as: 'userOrders'}. Kết quả embed như array. Không efficient như SQL JOIN — consider embedding documents hoặc application-level join cho performance."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

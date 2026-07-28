@@ -1,0 +1,218 @@
+{
+  "skill": "Fastify",
+  "skill_key": "fastify",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.527781Z",
+  "source_references": [
+    "https://www.google.com/search?q=Fastify+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "fastify_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Fastify, Plugin system có vai trò gì?",
+      "options": {
+        "A": "Plugin system là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Plugin system là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Plugin system đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Plugin system là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Plugin system trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Plugin system là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Plugin system giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Plugin+system+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "plugin-system"
+      ]
+    },
+    {
+      "question_id": "fastify_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Fastify, Schema validation có vai trò gì?",
+      "options": {
+        "A": "Schema validation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Schema validation là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Schema validation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Schema validation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Schema validation trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Schema validation là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Schema validation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Schema+validation+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "schema-validation"
+      ]
+    },
+    {
+      "question_id": "fastify_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Fastify, Decorators có vai trò gì?",
+      "options": {
+        "A": "Decorators là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Decorators là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Decorators đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Decorators là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Decorators trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Decorators là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Decorators giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Decorators+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "decorators"
+      ]
+    },
+    {
+      "question_id": "fastify_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Fastify, Hooks lifecycle có vai trò gì?",
+      "options": {
+        "A": "Hooks lifecycle là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Hooks lifecycle là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Hooks lifecycle đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Hooks lifecycle là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Hooks lifecycle trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Hooks lifecycle là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Hooks lifecycle giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Hooks+lifecycle+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "hooks-lifecycle"
+      ]
+    },
+    {
+      "question_id": "fastify_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Fastify, TypeScript support có vai trò gì?",
+      "options": {
+        "A": "TypeScript support là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "TypeScript support là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "TypeScript support đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên TypeScript support là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "TypeScript support trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và TypeScript support là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ TypeScript support giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+TypeScript+support+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "typescript-support"
+      ]
+    },
+    {
+      "question_id": "fastify_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Fastify, Pino logging có vai trò gì?",
+      "options": {
+        "A": "Pino logging là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Pino logging là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Pino logging đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Pino logging là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Pino logging trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Pino logging là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Pino logging giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Pino+logging+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "pino-logging"
+      ]
+    },
+    {
+      "question_id": "fastify_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Fastify, Auth plugins có vai trò gì?",
+      "options": {
+        "A": "Auth plugins là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Auth plugins là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Auth plugins đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Auth plugins là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Auth plugins trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Auth plugins là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Auth plugins giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Auth+plugins+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "auth-plugins"
+      ]
+    },
+    {
+      "question_id": "fastify_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Fastify, Database integration có vai trò gì?",
+      "options": {
+        "A": "Database integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Database integration là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Database integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Database integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Database integration trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Database integration là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Database integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Database+integration+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "database-integration"
+      ]
+    },
+    {
+      "question_id": "fastify_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Fastify, Testing có vai trò gì?",
+      "options": {
+        "A": "Testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Testing là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Testing trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Testing là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Testing+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "testing"
+      ]
+    },
+    {
+      "question_id": "fastify_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Fastify, Performance có vai trò gì?",
+      "options": {
+        "A": "Performance là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Performance là core concept trong Fastify — cần master để build production-grade Backend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Performance đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Performance là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance trong Fastify: Đây là một trong những concepts quan trọng nhất. Fastify được sử dụng rộng rãi trong industry và Performance là phần không thể thiếu. Khi làm việc với Fastify trong production, hiểu rõ Performance giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Fastify+Performance+tutorial",
+      "tags": [
+        "fastify",
+        "backend",
+        "performance"
+      ]
+    }
+  ]
+}

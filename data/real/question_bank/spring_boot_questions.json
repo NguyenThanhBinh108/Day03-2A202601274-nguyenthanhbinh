@@ -1,0 +1,262 @@
+{
+  "skill": "Spring Boot",
+  "skill_key": "spring_boot",
+  "total_questions": 11,
+  "levels": {
+    "1": 6,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.486838",
+  "source_references": [
+    "https://spring.io/guides",
+    "https://www.geeksforgeeks.org/spring-boot-tutorial/",
+    "https://www.baeldung.com/"
+  ],
+  "questions": [
+    {
+      "question_id": "spring_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Spring Boot là gì và tại sao phổ biến hơn Spring Framework thuần?",
+      "options": {
+        "A": "Spring Boot thay thế hoàn toàn Java",
+        "B": "Spring Boot: opinionated auto-configuration, embedded server (Tomcat), starter dependencies — không cần XML config, chạy được ngay",
+        "C": "Spring Boot chỉ cho microservices",
+        "D": "Spring Boot và Spring Framework giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "Spring Framework: powerful nhưng cần nhiều config (XML hoặc Java-based). Spring Boot: (1) Auto-configuration: scan classpath, cấu hình beans tự động. (2) Starters: spring-boot-starter-web, spring-boot-starter-data-jpa — gộp dependencies liên quan. (3) Embedded Tomcat/Jetty: đóng gói vào JAR, java -jar app.jar. (4) Actuator: health, metrics endpoints. (5) Spring Initializr: generate project structure. Convention over configuration.",
+      "source": "https://www.geeksforgeeks.org/introduction-to-spring-boot/",
+      "tags": [
+        "Spring-Boot",
+        "auto-configuration",
+        "starter",
+        "embedded-tomcat"
+      ]
+    },
+    {
+      "question_id": "spring_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Dependency Injection (DI) và IoC Container trong Spring?",
+      "options": {
+        "A": "DI = tạo objects thủ công",
+        "B": "IoC Container quản lý bean lifecycle. DI: @Autowired/@RequiredArgsConstructor inject dependencies tự động. Constructor injection được recommend",
+        "C": "@Autowired là duy nhất cách inject",
+        "D": "Spring chỉ hỗ trợ singleton beans"
+      },
+      "correct_answer": "B",
+      "explanation": "IoC (Inversion of Control): framework quản lý objects thay vì code. Spring ApplicationContext = IoC container. Bean: object managed bởi Spring. DI types: (1) Constructor injection (recommended — immutable, testable). (2) Setter injection. (3) Field injection (@Autowired trực tiếp — khó test). @Component, @Service, @Repository, @Controller: stereotype annotations, auto-detected. @Bean trong @Configuration: explicit bean definition. @Qualifier: khi có nhiều implementations.",
+      "source": "https://www.geeksforgeeks.org/spring-dependency-injection-with-example/",
+      "tags": [
+        "DI",
+        "IoC",
+        "@Autowired",
+        "constructor-injection",
+        "Spring-Bean"
+      ]
+    },
+    {
+      "question_id": "spring_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Spring Boot REST API — @RestController, @GetMapping, @RequestBody?",
+      "options": {
+        "A": "Spring Boot không hỗ trợ REST",
+        "B": "@RestController = @Controller + @ResponseBody. @GetMapping/@PostMapping cho routes. @RequestBody deserialize JSON. @PathVariable/@RequestParam cho params",
+        "C": "Chỉ có @RequestMapping là đủ",
+        "D": "REST API cần XML config trong Spring"
+      },
+      "correct_answer": "B",
+      "explanation": "@RestController: auto serialize return value thành JSON. Mapping annotations: @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PatchMapping. @PathVariable: /users/{id}. @RequestParam: /users?page=1. @RequestBody: POST body → Java object (Jackson deserialize). @ResponseStatus: set HTTP status. ResponseEntity<T>: full control over response (status, headers, body). @Valid + BindingResult: request validation. HTTP status codes: 200, 201, 400, 401, 403, 404, 500.",
+      "source": "https://www.geeksforgeeks.org/spring-restcontroller-annotation-in-spring-boot/",
+      "tags": [
+        "REST",
+        "@RestController",
+        "@GetMapping",
+        "@RequestBody",
+        "ResponseEntity"
+      ]
+    },
+    {
+      "question_id": "spring_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "Spring Data JPA — Repository pattern?",
+      "options": {
+        "A": "Spring Data JPA thay thế SQL hoàn toàn",
+        "B": "JpaRepository<Entity, ID>: cung cấp CRUD methods sẵn có. Derived queries: findByName(), findByAgeGreaterThan(). @Query cho custom JPQL/SQL",
+        "C": "JPA chỉ dùng được với MySQL",
+        "D": "@Entity không cần thiết với Spring Data"
+      },
+      "correct_answer": "B",
+      "explanation": "@Entity: map class to table. @Id + @GeneratedValue: primary key. @Column: column mapping. JpaRepository methods: findById, findAll, save, delete, count. Derived queries: findByEmailAndActive(String email, boolean active) → Spring tự generate query từ method name. @Query('SELECT u FROM User u WHERE u.email = :email'): JPQL. @Query(value='...', nativeQuery=true): native SQL. Pagination: findAll(Pageable pageable). @Transactional: transaction management.",
+      "source": "https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/",
+      "tags": [
+        "JPA",
+        "@Entity",
+        "JpaRepository",
+        "derived-query",
+        "@Transactional"
+      ]
+    },
+    {
+      "question_id": "spring_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Spring Boot application.properties vs application.yml?",
+      "options": {
+        "A": "Cả hai giống nhau, chỉ khác syntax",
+        "B": "Cùng chức năng, YAML (yml) dễ đọc hơn với nested config. Profiles: application-dev.yml, application-prod.yml. @Value và @ConfigurationProperties để inject",
+        "C": "application.properties bị deprecated",
+        "D": "YAML không hỗ trợ trong Spring Boot"
+      },
+      "correct_answer": "B",
+      "explanation": "application.properties: spring.datasource.url=jdbc:postgresql://localhost/mydb. application.yml: spring: datasource: url: jdbc:postgresql://localhost/mydb. YAML: less repetition, supports lists và maps natively. Profiles: @Profile('dev'), spring.profiles.active=dev. @Value('${spring.datasource.url}'): inject property. @ConfigurationProperties(prefix='app'): bind config class. Override với env vars: SPRING_DATASOURCE_URL. Spring Cloud Config: external config server.",
+      "source": "https://www.geeksforgeeks.org/spring-boot-application-properties/",
+      "tags": [
+        "application.properties",
+        "YAML",
+        "profiles",
+        "@ConfigurationProperties",
+        "@Value"
+      ]
+    },
+    {
+      "question_id": "spring_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Spring Security cơ bản — authentication và authorization?",
+      "options": {
+        "A": "Spring Security chỉ cho login form",
+        "B": "SecurityFilterChain: configure HTTP security. UserDetailsService: load user. BCryptPasswordEncoder. JWT filter chain. Method security: @PreAuthorize",
+        "C": "Spring Security thay thế HTTPS",
+        "D": "Spring Security không hỗ trợ JWT"
+      },
+      "correct_answer": "B",
+      "explanation": "Spring Security filter chain intercepts mọi request. Authentication: verify identity (password, JWT, OAuth2). Authorization: verify permissions. BCryptPasswordEncoder: hash passwords. SecurityFilterChain: .authorizeHttpRequests().requestMatchers('/api/public').permitAll().anyRequest().authenticated(). JWT: OncePerRequestFilter để validate JWT, set SecurityContext. Method security: @EnableMethodSecurity + @PreAuthorize('hasRole(\"ADMIN\")'). OAuth2: spring-boot-starter-oauth2-resource-server, spring-boot-starter-oauth2-client.",
+      "source": "https://www.geeksforgeeks.org/spring-security-tutorial/",
+      "tags": [
+        "Spring-Security",
+        "JWT",
+        "BCrypt",
+        "authentication",
+        "authorization"
+      ]
+    },
+    {
+      "question_id": "spring_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Spring AOP (Aspect-Oriented Programming) — use cases?",
+      "options": {
+        "A": "AOP chỉ cho logging",
+        "B": "AOP: cross-cutting concerns (logging, transaction, security, caching, metrics) tách khỏi business logic. @Aspect, @Before, @After, @Around, @Pointcut",
+        "C": "AOP thay thế OOP",
+        "D": "Spring Boot không hỗ trợ AOP"
+      },
+      "correct_answer": "B",
+      "explanation": "Cross-cutting concerns = functionality dùng nhiều nơi nhưng không thuộc business logic: logging, transaction management (@Transactional dùng AOP), security (@PreAuthorize), caching (@Cacheable), retry (@Retryable). @Around advice: ProceedingJoinPoint.proceed() để wrap method execution. @Pointcut: define where to apply: execution(* com.example.service.*.*(..)). Spring AOP: proxy-based (JDK dynamic proxy hoặc CGLIB). Limitation: chỉ work với Spring-managed beans, không work với private methods.",
+      "source": "https://www.geeksforgeeks.org/spring-aop/",
+      "tags": [
+        "AOP",
+        "@Aspect",
+        "@Around",
+        "cross-cutting",
+        "@Transactional"
+      ]
+    },
+    {
+      "question_id": "spring_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Spring Boot testing — @SpringBootTest vs @WebMvcTest vs @DataJpaTest?",
+      "options": {
+        "A": "Chỉ cần @SpringBootTest cho mọi test",
+        "B": "@SpringBootTest: full context (integration). @WebMvcTest: chỉ web layer (nhanh hơn). @DataJpaTest: chỉ JPA layer với in-memory DB. MockMvc cho HTTP testing",
+        "C": "Spring Boot không hỗ trợ unit testing",
+        "D": "@WebMvcTest không cần MockMvc"
+      },
+      "correct_answer": "B",
+      "explanation": "Test pyramid: Unit > Integration > E2E. @WebMvcTest(UserController.class): chỉ load web layer, mock service layer. MockMvc: mockMvc.perform(get('/users').andExpect(status().isOk()).andExpect(jsonPath('$.name').value('Alice')). @DataJpaTest: embedded H2 DB, test repositories. @SpringBootTest: full application context, slow nhưng realistic. @MockBean: mock Spring beans. @Testcontainers: real PostgreSQL trong Docker cho tests. TestRestTemplate: integration tests với real HTTP.",
+      "source": "https://www.geeksforgeeks.org/spring-boot-testing/",
+      "tags": [
+        "testing",
+        "@SpringBootTest",
+        "@WebMvcTest",
+        "MockMvc",
+        "@DataJpaTest"
+      ]
+    },
+    {
+      "question_id": "spring_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Spring Boot microservice với service discovery (Eureka/Consul)?",
+      "options": {
+        "A": "Microservices không cần service discovery",
+        "B": "Eureka Server: service registry. Eureka Client: register và discover services. Feign Client: declarative HTTP client. Load balancing với Spring Cloud LoadBalancer",
+        "C": "Hardcode IP addresses là đủ",
+        "D": "Kubernetes thay thế service discovery"
+      },
+      "correct_answer": "B",
+      "explanation": "Service discovery: services register vào registry (Eureka/Consul) với tên, dynamic IP. Other services discover bằng name thay vì hardcoded IP. Spring Cloud: @EnableEurekaServer, @EnableEurekaClient. Feign: @FeignClient(name='user-service') interface UserServiceClient. Ribbon (deprecated) → Spring Cloud LoadBalancer: client-side load balancing. Circuit Breaker: Resilience4j @CircuitBreaker(name='service', fallbackMethod='fallback'). Config Server: centralized configuration.",
+      "source": "https://www.geeksforgeeks.org/spring-cloud-eureka/",
+      "tags": [
+        "Eureka",
+        "service-discovery",
+        "Feign",
+        "Spring-Cloud",
+        "Circuit-Breaker"
+      ]
+    },
+    {
+      "question_id": "spring_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Spring Boot N+1 query problem với JPA — detect và fix?",
+      "options": {
+        "A": "JPA tự optimize queries",
+        "B": "N+1: fetch entity rồi lazy load associations → N queries. Fix: @EntityGraph, JOIN FETCH trong @Query, Hibernate.initialize(), hoặc DTO projection",
+        "C": "Chỉ cần tăng connection pool",
+        "D": "Dùng native SQL thay JPA"
+      },
+      "correct_answer": "B",
+      "explanation": "N+1 example: orders = orderRepo.findAll() (1 query) → orders.forEach(o -> o.getUser().getName()) (N queries). Fix: (1) @EntityGraph(attributePaths={'user'}): eager load trên query. (2) JOIN FETCH: @Query('SELECT o FROM Order o JOIN FETCH o.user'). (3) Batch size: @BatchSize(size=10) trên association → IN query. (4) DTO projection: interface-based hoặc class-based projection lấy chỉ columns cần. (5) Hibernate statistics: spring.jpa.properties.hibernate.generate_statistics=true → log queries. (6) p6spy hoặc datasource-proxy để log SQL với parameters.",
+      "source": "https://www.geeksforgeeks.org/spring-boot-jpa-n-plus-1-problem/",
+      "tags": [
+        "N+1",
+        "JPA",
+        "@EntityGraph",
+        "JOIN-FETCH",
+        "Hibernate"
+      ]
+    },
+    {
+      "question_id": "spring_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Spring Boot app trên K8s bị slow startup (60s). Cách optimize?",
+      "options": {
+        "A": "Tăng readiness probe timeout",
+        "B": "AOT compilation (GraalVM native image), lazy initialization, component scan optimization, Spring Boot 3 CDS (Class Data Sharing)",
+        "C": "Tăng CPU limit",
+        "D": "Dùng Tomcat thay Netty"
+      },
+      "correct_answer": "B",
+      "explanation": "Slow startup causes: component scanning, bean initialization, Hibernate schema validation. Optimizations: (1) spring.main.lazy-initialization=true: beans initialized on first request (faster startup, slower first request). (2) GraalVM native image (Spring Boot 3 + Spring Native): compile to native binary, sub-second startup, lower memory. Tradeoff: longer build time. (3) spring.jpa.hibernate.ddl-auto=none in production (no schema validation). (4) Spring Boot 3.3+ CDS: Class Data Sharing, cache JVM class loading. (5) Reduce @ComponentScan scope. (6) Profile startup với -Dspring.aot.enabled=true.",
+      "source": "https://www.geeksforgeeks.org/spring-boot-performance-tuning/",
+      "tags": [
+        "Spring-Boot",
+        "startup",
+        "GraalVM",
+        "native-image",
+        "lazy-initialization",
+        "production"
+      ]
+    }
+  ]
+}

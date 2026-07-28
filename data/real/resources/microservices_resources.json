@@ -1,0 +1,48 @@
+{
+  "skill": "Microservices",
+  "skill_key": "microservices",
+  "total_resources": 4,
+  "generated_at": "2026-06-12T02:22:05.518391",
+  "resources": [
+    {
+      "resource_id": "micro_r001",
+      "title": "GeeksForGeeks Microservices Tutorial",
+      "url": "https://www.geeksforgeeks.org/microservices/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "Microservices từ cơ bản"
+    },
+    {
+      "resource_id": "micro_r002",
+      "title": "freeCodeCamp Microservices Articles",
+      "url": "https://www.freecodecamp.org/news/tag/microservices/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "Microservices articles"
+    },
+    {
+      "resource_id": "micro_r003",
+      "title": "Martin Fowler Microservices Article",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "type": "article",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 5,
+      "description": "The original microservices article"
+    },
+    {
+      "resource_id": "micro_r004",
+      "title": "Viblo Microservices Articles",
+      "url": "https://viblo.asia/tags/microservices",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "Microservices tiếng Việt"
+    }
+  ]
+}

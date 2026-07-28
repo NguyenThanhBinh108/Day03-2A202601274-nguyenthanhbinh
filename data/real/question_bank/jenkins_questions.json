@@ -1,0 +1,218 @@
+{
+  "skill": "Jenkins",
+  "skill_key": "jenkins",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.609071Z",
+  "source_references": [
+    "https://www.google.com/search?q=Jenkins+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "jenkins_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Jenkins, Jenkinsfile Pipeline có vai trò gì?",
+      "options": {
+        "A": "Jenkinsfile Pipeline là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Jenkinsfile Pipeline là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Jenkinsfile Pipeline đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Jenkinsfile Pipeline là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Jenkinsfile Pipeline trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Jenkinsfile Pipeline là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Jenkinsfile Pipeline giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Jenkinsfile+Pipeline+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "jenkinsfile-pipeline"
+      ]
+    },
+    {
+      "question_id": "jenkins_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Jenkins, Stages/Steps có vai trò gì?",
+      "options": {
+        "A": "Stages/Steps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Stages/Steps là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Stages/Steps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Stages/Steps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Stages/Steps trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Stages/Steps là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Stages/Steps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Stages/Steps+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "stages-steps"
+      ]
+    },
+    {
+      "question_id": "jenkins_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Jenkins, Agents có vai trò gì?",
+      "options": {
+        "A": "Agents là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Agents là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Agents đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Agents là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Agents trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Agents là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Agents giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Agents+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "agents"
+      ]
+    },
+    {
+      "question_id": "jenkins_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Jenkins, Plugins có vai trò gì?",
+      "options": {
+        "A": "Plugins là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Plugins là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Plugins đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Plugins là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Plugins trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Plugins là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Plugins giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Plugins+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "plugins"
+      ]
+    },
+    {
+      "question_id": "jenkins_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Jenkins, Shared libraries có vai trò gì?",
+      "options": {
+        "A": "Shared libraries là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Shared libraries là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Shared libraries đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Shared libraries là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Shared libraries trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Shared libraries là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Shared libraries giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Shared+libraries+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "shared-libraries"
+      ]
+    },
+    {
+      "question_id": "jenkins_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Jenkins, Blue Ocean có vai trò gì?",
+      "options": {
+        "A": "Blue Ocean là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Blue Ocean là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Blue Ocean đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Blue Ocean là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Blue Ocean trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Blue Ocean là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Blue Ocean giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Blue+Ocean+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "blue-ocean"
+      ]
+    },
+    {
+      "question_id": "jenkins_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Jenkins, Webhooks có vai trò gì?",
+      "options": {
+        "A": "Webhooks là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Webhooks là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Webhooks đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Webhooks là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Webhooks trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Webhooks là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Webhooks giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Webhooks+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "webhooks"
+      ]
+    },
+    {
+      "question_id": "jenkins_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Jenkins, Docker integration có vai trò gì?",
+      "options": {
+        "A": "Docker integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Docker integration là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Docker integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Docker integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Docker integration trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Docker integration là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Docker integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Docker+integration+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "docker-integration"
+      ]
+    },
+    {
+      "question_id": "jenkins_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Jenkins, Security có vai trò gì?",
+      "options": {
+        "A": "Security là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Security là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Security giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Security+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "security"
+      ]
+    },
+    {
+      "question_id": "jenkins_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Jenkins, Distributed builds có vai trò gì?",
+      "options": {
+        "A": "Distributed builds là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Distributed builds là core concept trong Jenkins — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Distributed builds đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Distributed builds là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Distributed builds trong Jenkins: Đây là một trong những concepts quan trọng nhất. Jenkins được sử dụng rộng rãi trong industry và Distributed builds là phần không thể thiếu. Khi làm việc với Jenkins trong production, hiểu rõ Distributed builds giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Jenkins+Distributed+builds+tutorial",
+      "tags": [
+        "jenkins",
+        "devops",
+        "distributed-builds"
+      ]
+    }
+  ]
+}

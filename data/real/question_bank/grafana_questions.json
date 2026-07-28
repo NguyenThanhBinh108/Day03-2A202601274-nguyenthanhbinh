@@ -1,0 +1,218 @@
+{
+  "skill": "Grafana",
+  "skill_key": "grafana",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.629376Z",
+  "source_references": [
+    "https://www.google.com/search?q=Grafana+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "grafana_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Grafana, Dashboard creation có vai trò gì?",
+      "options": {
+        "A": "Dashboard creation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dashboard creation là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dashboard creation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dashboard creation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dashboard creation trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Dashboard creation là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Dashboard creation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Dashboard+creation+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "dashboard-creation"
+      ]
+    },
+    {
+      "question_id": "grafana_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Grafana, Panels có vai trò gì?",
+      "options": {
+        "A": "Panels là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Panels là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Panels đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Panels là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Panels trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Panels là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Panels giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Panels+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "panels"
+      ]
+    },
+    {
+      "question_id": "grafana_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Grafana, Data sources có vai trò gì?",
+      "options": {
+        "A": "Data sources là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data sources là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data sources đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data sources là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data sources trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Data sources là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Data sources giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Data+sources+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "data-sources"
+      ]
+    },
+    {
+      "question_id": "grafana_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Grafana, Variables có vai trò gì?",
+      "options": {
+        "A": "Variables là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Variables là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Variables đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Variables là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Variables trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Variables là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Variables giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Variables+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "variables"
+      ]
+    },
+    {
+      "question_id": "grafana_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Grafana, Alerting có vai trò gì?",
+      "options": {
+        "A": "Alerting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Alerting là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Alerting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Alerting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Alerting trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Alerting là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Alerting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Alerting+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "alerting"
+      ]
+    },
+    {
+      "question_id": "grafana_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Grafana, Annotations có vai trò gì?",
+      "options": {
+        "A": "Annotations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Annotations là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Annotations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Annotations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Annotations trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Annotations là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Annotations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Annotations+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "annotations"
+      ]
+    },
+    {
+      "question_id": "grafana_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Grafana, Grafana Loki có vai trò gì?",
+      "options": {
+        "A": "Grafana Loki là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Grafana Loki là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Grafana Loki đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Grafana Loki là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Grafana Loki trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Grafana Loki là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Grafana Loki giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Grafana+Loki+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "grafana-loki"
+      ]
+    },
+    {
+      "question_id": "grafana_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Grafana, Grafana Tempo có vai trò gì?",
+      "options": {
+        "A": "Grafana Tempo là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Grafana Tempo là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Grafana Tempo đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Grafana Tempo là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Grafana Tempo trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Grafana Tempo là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Grafana Tempo giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Grafana+Tempo+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "grafana-tempo"
+      ]
+    },
+    {
+      "question_id": "grafana_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Grafana, RBAC có vai trò gì?",
+      "options": {
+        "A": "RBAC là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "RBAC là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "RBAC đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên RBAC là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "RBAC trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và RBAC là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ RBAC giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+RBAC+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "rbac"
+      ]
+    },
+    {
+      "question_id": "grafana_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Grafana, Provisioning có vai trò gì?",
+      "options": {
+        "A": "Provisioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Provisioning là core concept trong Grafana — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Provisioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Provisioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Provisioning trong Grafana: Đây là một trong những concepts quan trọng nhất. Grafana được sử dụng rộng rãi trong industry và Provisioning là phần không thể thiếu. Khi làm việc với Grafana trong production, hiểu rõ Provisioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Grafana+Provisioning+tutorial",
+      "tags": [
+        "grafana",
+        "devops",
+        "provisioning"
+      ]
+    }
+  ]
+}

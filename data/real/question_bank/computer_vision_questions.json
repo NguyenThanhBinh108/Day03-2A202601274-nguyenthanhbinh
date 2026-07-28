@@ -1,0 +1,218 @@
+{
+  "skill": "Computer Vision",
+  "skill_key": "computer_vision",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.645246Z",
+  "source_references": [
+    "https://www.google.com/search?q=Computer+Vision+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "computer_vision_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Computer Vision, OpenCV basics có vai trò gì?",
+      "options": {
+        "A": "OpenCV basics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "OpenCV basics là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "OpenCV basics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên OpenCV basics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "OpenCV basics trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và OpenCV basics là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ OpenCV basics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+OpenCV+basics+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "opencv-basics"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Computer Vision, Object detection (YOLO) có vai trò gì?",
+      "options": {
+        "A": "Object detection (YOLO) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Object detection (YOLO) là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Object detection (YOLO) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Object detection (YOLO) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Object detection (YOLO) trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Object detection (YOLO) là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Object detection (YOLO) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Object+detection+(YOLO)+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "object-detection-yolo"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Computer Vision, Image classification có vai trò gì?",
+      "options": {
+        "A": "Image classification là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Image classification là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Image classification đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Image classification là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Image classification trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Image classification là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Image classification giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Image+classification+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "image-classification"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Computer Vision, Semantic segmentation có vai trò gì?",
+      "options": {
+        "A": "Semantic segmentation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Semantic segmentation là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Semantic segmentation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Semantic segmentation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Semantic segmentation trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Semantic segmentation là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Semantic segmentation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Semantic+segmentation+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "semantic-segmentation"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Computer Vision, Feature extraction có vai trò gì?",
+      "options": {
+        "A": "Feature extraction là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Feature extraction là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Feature extraction đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Feature extraction là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Feature extraction trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Feature extraction là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Feature extraction giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Feature+extraction+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "feature-extraction"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Computer Vision, CNN architectures có vai trò gì?",
+      "options": {
+        "A": "CNN architectures là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CNN architectures là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CNN architectures đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CNN architectures là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CNN architectures trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và CNN architectures là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ CNN architectures giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+CNN+architectures+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "cnn-architectures"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Computer Vision, Data augmentation có vai trò gì?",
+      "options": {
+        "A": "Data augmentation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Data augmentation là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Data augmentation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Data augmentation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Data augmentation trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Data augmentation là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Data augmentation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Data+augmentation+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "data-augmentation"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Computer Vision, Transfer learning có vai trò gì?",
+      "options": {
+        "A": "Transfer learning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transfer learning là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transfer learning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transfer learning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transfer learning trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Transfer learning là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Transfer learning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Transfer+learning+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "transfer-learning"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Computer Vision, Model deployment có vai trò gì?",
+      "options": {
+        "A": "Model deployment là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model deployment là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model deployment đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model deployment là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model deployment trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Model deployment là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Model deployment giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Model+deployment+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "model-deployment"
+      ]
+    },
+    {
+      "question_id": "computer_vision_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Computer Vision, Edge inference có vai trò gì?",
+      "options": {
+        "A": "Edge inference là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Edge inference là core concept trong Computer Vision — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Edge inference đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Edge inference là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Edge inference trong Computer Vision: Đây là một trong những concepts quan trọng nhất. Computer Vision được sử dụng rộng rãi trong industry và Edge inference là phần không thể thiếu. Khi làm việc với Computer Vision trong production, hiểu rõ Edge inference giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Computer+Vision+Edge+inference+tutorial",
+      "tags": [
+        "computer_vision",
+        "ai/ml",
+        "edge-inference"
+      ]
+    }
+  ]
+}

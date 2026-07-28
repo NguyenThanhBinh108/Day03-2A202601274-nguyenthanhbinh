@@ -1,0 +1,140 @@
+{
+  "skill": "C#",
+  "market_frequency": "11.5% JDs yêu cầu C#",
+  "market_role": "Backend Developer, Game Developer (.NET/Unity)",
+  "total_learning_hours": 80,
+  "generated_at": "2026-06-12T00:05:36.331722",
+  "modules": [
+    {
+      "module_id": "cs_01",
+      "title": "C# & .NET Core",
+      "order": 1,
+      "hours": 35,
+      "topics": [
+        {
+          "topic_id": "cs_01_01",
+          "title": "C# Language Fundamentals",
+          "hours": 10,
+          "academic": {
+            "summary": "Types, nullability, pattern matching, records, LINQ, async/await, delegates, events",
+            "resources": [
+              {
+                "title": "Microsoft C# Docs",
+                "url": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "C# Tutorial — freeCodeCamp",
+                "url": "https://www.freecodecamp.org/news/learn-c-sharp/",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 300
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng task manager với C# records, LINQ queries, async file I/O, và pattern matching switches",
+            "resources": [
+              {
+                "title": "C# Playground",
+                "url": "https://dotnetfiddle.net",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "cs_01_01_q1",
+                "level": 2,
+                "question": "C# `record` type khác `class` ở điểm nào?",
+                "options": {
+                  "A": "record: value-based equality, immutable by default, với-expression. class: reference equality",
+                  "B": "record nhanh hơn class",
+                  "C": "Chúng giống nhau hoàn toàn",
+                  "D": "class không thể có methods"
+                },
+                "correct_answer": "A",
+                "explanation": "record: Equals() so sánh property values (không phải reference). Immutable: init-only properties. with-expression: tạo copy với một số properties thay đổi. Lý tưởng cho DTOs, value objects."
+              },
+              {
+                "question_id": "cs_01_01_q2",
+                "level": 3,
+                "question": "LINQ `IEnumerable<T>` vs `IQueryable<T>` khác nhau thế nào?",
+                "options": {
+                  "A": "IEnumerable: LINQ to Objects (in-memory). IQueryable: translated to SQL/provider query (lazy)",
+                  "B": "Chúng giống nhau",
+                  "C": "IQueryable chỉ cho Arrays",
+                  "D": "IEnumerable chỉ cho Databases"
+                },
+                "correct_answer": "A",
+                "explanation": "IEnumerable: execute query in-memory. IQueryable: expression tree → translate to SQL (EF Core). Dùng IQueryable để push filtering/ordering xuống DB, tránh load toàn bộ data."
+              },
+              {
+                "question_id": "cs_01_01_q3",
+                "level": 4,
+                "question": "`async Task` vs `async void` trong C#?",
+                "options": {
+                  "A": "Task: awaitable, exception propagation. void: fire-and-forget, exceptions swallowed",
+                  "B": "Chúng giống nhau",
+                  "C": "void nhanh hơn",
+                  "D": "Task không thể return value"
+                },
+                "correct_answer": "A",
+                "explanation": "async void: không awaitable, exceptions không thể catch từ caller → crash app. Chỉ dùng async void cho event handlers (Button_Click). Mọi trường hợp khác: async Task/Task<T>."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "cs_01_02",
+          "title": "ASP.NET Core Web API",
+          "hours": 15,
+          "academic": {
+            "summary": "Controllers, Minimal APIs, Middleware, DI container, EF Core, Identity, JWT",
+            "resources": [
+              {
+                "title": "ASP.NET Core Web API Docs",
+                "url": "https://docs.microsoft.com/en-us/aspnet/core/web-api/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng e-commerce API: Products/Orders/Users với EF Core + SQL Server, JWT auth, FluentValidation",
+            "resources": [
+              {
+                "title": "Entity Framework Core Docs",
+                "url": "https://docs.microsoft.com/en-us/ef/core/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "cs_01_02_q1",
+                "level": 3,
+                "question": "Middleware pipeline trong ASP.NET Core hoạt động như thế nào?",
+                "options": {
+                  "A": "Request đi qua chain của middlewares theo thứ tự Use/Run/Map. Response đi ngược lại",
+                  "B": "Tất cả middleware chạy song song",
+                  "C": "Middleware chỉ cho authentication",
+                  "D": "Chỉ có 1 middleware/request"
+                },
+                "correct_answer": "A",
+                "explanation": "Request: middleware 1 → 2 → 3 → endpoint. Response: 3 → 2 → 1. app.Use() = passthrough, app.Run() = terminal. Thứ tự register quan trọng: Auth trước Authorization, CORS trước Routing."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

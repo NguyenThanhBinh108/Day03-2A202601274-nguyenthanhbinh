@@ -1,0 +1,218 @@
+{
+  "skill": "Terraform",
+  "skill_key": "terraform",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.614646Z",
+  "source_references": [
+    "https://www.google.com/search?q=Terraform+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "terraform_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Terraform, HCL syntax có vai trò gì?",
+      "options": {
+        "A": "HCL syntax là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HCL syntax là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HCL syntax đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HCL syntax là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HCL syntax trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và HCL syntax là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ HCL syntax giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+HCL+syntax+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "hcl-syntax"
+      ]
+    },
+    {
+      "question_id": "terraform_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Terraform, Resources/Data sources có vai trò gì?",
+      "options": {
+        "A": "Resources/Data sources là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Resources/Data sources là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Resources/Data sources đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Resources/Data sources là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Resources/Data sources trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Resources/Data sources là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Resources/Data sources giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Resources/Data+sources+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "resources-data-sources"
+      ]
+    },
+    {
+      "question_id": "terraform_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Terraform, Providers có vai trò gì?",
+      "options": {
+        "A": "Providers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Providers là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Providers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Providers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Providers trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Providers là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Providers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Providers+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "providers"
+      ]
+    },
+    {
+      "question_id": "terraform_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Terraform, Variables/Outputs có vai trò gì?",
+      "options": {
+        "A": "Variables/Outputs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Variables/Outputs là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Variables/Outputs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Variables/Outputs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Variables/Outputs trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Variables/Outputs là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Variables/Outputs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Variables/Outputs+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "variables-outputs"
+      ]
+    },
+    {
+      "question_id": "terraform_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Terraform, State management có vai trò gì?",
+      "options": {
+        "A": "State management là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "State management là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "State management đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên State management là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "State management trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và State management là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ State management giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+State+management+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "state-management"
+      ]
+    },
+    {
+      "question_id": "terraform_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Terraform, Modules có vai trò gì?",
+      "options": {
+        "A": "Modules là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Modules là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Modules đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Modules là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Modules trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Modules là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Modules giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Modules+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "modules"
+      ]
+    },
+    {
+      "question_id": "terraform_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Terraform, Remote state có vai trò gì?",
+      "options": {
+        "A": "Remote state là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Remote state là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Remote state đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Remote state là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Remote state trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Remote state là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Remote state giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Remote+state+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "remote-state"
+      ]
+    },
+    {
+      "question_id": "terraform_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Terraform, Terraform Cloud có vai trò gì?",
+      "options": {
+        "A": "Terraform Cloud là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Terraform Cloud là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Terraform Cloud đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Terraform Cloud là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Terraform Cloud trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Terraform Cloud là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Terraform Cloud giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Terraform+Cloud+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "terraform-cloud"
+      ]
+    },
+    {
+      "question_id": "terraform_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Terraform, Workspaces có vai trò gì?",
+      "options": {
+        "A": "Workspaces là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Workspaces là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Workspaces đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Workspaces là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Workspaces trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và Workspaces là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ Workspaces giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+Workspaces+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "workspaces"
+      ]
+    },
+    {
+      "question_id": "terraform_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Terraform, CI/CD integration có vai trò gì?",
+      "options": {
+        "A": "CI/CD integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CI/CD integration là core concept trong Terraform — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CI/CD integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CI/CD integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CI/CD integration trong Terraform: Đây là một trong những concepts quan trọng nhất. Terraform được sử dụng rộng rãi trong industry và CI/CD integration là phần không thể thiếu. Khi làm việc với Terraform trong production, hiểu rõ CI/CD integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Terraform+CI/CD+integration+tutorial",
+      "tags": [
+        "terraform",
+        "devops",
+        "ci-cd-integration"
+      ]
+    }
+  ]
+}

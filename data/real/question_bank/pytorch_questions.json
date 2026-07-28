@@ -1,0 +1,218 @@
+{
+  "skill": "PyTorch",
+  "skill_key": "pytorch",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.637232Z",
+  "source_references": [
+    "https://www.google.com/search?q=PyTorch+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "pytorch_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PyTorch, Tensors có vai trò gì?",
+      "options": {
+        "A": "Tensors là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Tensors là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Tensors đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Tensors là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Tensors trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Tensors là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Tensors giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Tensors+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "tensors"
+      ]
+    },
+    {
+      "question_id": "pytorch_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PyTorch, Autograd có vai trò gì?",
+      "options": {
+        "A": "Autograd là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Autograd là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Autograd đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Autograd là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Autograd trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Autograd là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Autograd giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Autograd+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "autograd"
+      ]
+    },
+    {
+      "question_id": "pytorch_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PyTorch, nn.Module có vai trò gì?",
+      "options": {
+        "A": "nn.Module là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "nn.Module là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "nn.Module đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên nn.Module là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "nn.Module trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và nn.Module là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ nn.Module giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+nn.Module+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "nn.module"
+      ]
+    },
+    {
+      "question_id": "pytorch_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PyTorch, DataLoader/Dataset có vai trò gì?",
+      "options": {
+        "A": "DataLoader/Dataset là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DataLoader/Dataset là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DataLoader/Dataset đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DataLoader/Dataset là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DataLoader/Dataset trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và DataLoader/Dataset là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ DataLoader/Dataset giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+DataLoader/Dataset+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "dataloader-dataset"
+      ]
+    },
+    {
+      "question_id": "pytorch_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PyTorch, Training loop có vai trò gì?",
+      "options": {
+        "A": "Training loop là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Training loop là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Training loop đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Training loop là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Training loop trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Training loop là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Training loop giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Training+loop+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "training-loop"
+      ]
+    },
+    {
+      "question_id": "pytorch_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PyTorch, Loss functions có vai trò gì?",
+      "options": {
+        "A": "Loss functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Loss functions là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Loss functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Loss functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Loss functions trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Loss functions là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Loss functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Loss+functions+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "loss-functions"
+      ]
+    },
+    {
+      "question_id": "pytorch_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PyTorch, Optimizers có vai trò gì?",
+      "options": {
+        "A": "Optimizers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Optimizers là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Optimizers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Optimizers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Optimizers trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Optimizers là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Optimizers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Optimizers+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "optimizers"
+      ]
+    },
+    {
+      "question_id": "pytorch_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PyTorch, GPU training có vai trò gì?",
+      "options": {
+        "A": "GPU training là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "GPU training là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "GPU training đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên GPU training là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "GPU training trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và GPU training là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ GPU training giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+GPU+training+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "gpu-training"
+      ]
+    },
+    {
+      "question_id": "pytorch_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PyTorch, Model saving có vai trò gì?",
+      "options": {
+        "A": "Model saving là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model saving là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model saving đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model saving là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model saving trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và Model saving là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ Model saving giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+Model+saving+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "model-saving"
+      ]
+    },
+    {
+      "question_id": "pytorch_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PyTorch, TorchScript/ONNX có vai trò gì?",
+      "options": {
+        "A": "TorchScript/ONNX là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "TorchScript/ONNX là core concept trong PyTorch — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "TorchScript/ONNX đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên TorchScript/ONNX là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "TorchScript/ONNX trong PyTorch: Đây là một trong những concepts quan trọng nhất. PyTorch được sử dụng rộng rãi trong industry và TorchScript/ONNX là phần không thể thiếu. Khi làm việc với PyTorch trong production, hiểu rõ TorchScript/ONNX giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PyTorch+TorchScript/ONNX+tutorial",
+      "tags": [
+        "pytorch",
+        "ai/ml",
+        "torchscript-onnx"
+      ]
+    }
+  ]
+}

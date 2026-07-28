@@ -1,0 +1,101 @@
+{
+  "skill": "Spring Boot",
+  "skill_key": "spring_boot",
+  "total_topics": 9,
+  "estimated_total_hours": 12.8,
+  "generated_at": "2026-06-12T02:22:05.486838",
+  "checklist_items": [
+    {
+      "item_id": "spring_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Spring Boot project setup",
+      "description": "Spring Initializr, project structure, main class, application.yml, Actuator",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/introduction-to-spring-boot/",
+      "resource_title": "GeeksForGeeks — Spring Boot Introduction"
+    },
+    {
+      "item_id": "spring_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Dependency Injection và IoC",
+      "description": "@Component, @Service, @Repository, @Autowired, constructor injection, @Configuration, @Bean",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/spring-dependency-injection-with-example/",
+      "resource_title": "GeeksForGeeks — Spring DI"
+    },
+    {
+      "item_id": "spring_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Build REST API với Spring Boot",
+      "description": "@RestController, @GetMapping/@PostMapping, @RequestBody, @PathVariable, ResponseEntity, validation",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/spring-restcontroller-annotation-in-spring-boot/",
+      "resource_title": "GeeksForGeeks — Spring RestController",
+      "hands_on_task": "Build CRUD API cho Product entity với validation và error handling"
+    },
+    {
+      "item_id": "spring_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Spring Data JPA và Database",
+      "description": "@Entity, JpaRepository, derived queries, @Query, @Transactional, pagination",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/",
+      "resource_title": "GeeksForGeeks — Spring Data JPA"
+    },
+    {
+      "item_id": "spring_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Spring Security — JWT Authentication",
+      "description": "SecurityFilterChain, UserDetailsService, JWT filter, BCrypt, @PreAuthorize",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/spring-security-tutorial/",
+      "resource_title": "GeeksForGeeks — Spring Security",
+      "hands_on_task": "Implement JWT auth: register, login, protected endpoints, refresh token"
+    },
+    {
+      "item_id": "spring_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Testing Spring Boot Applications",
+      "description": "@WebMvcTest, @DataJpaTest, @SpringBootTest, MockMvc, @MockBean, Testcontainers",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/spring-boot-testing/",
+      "resource_title": "GeeksForGeeks — Spring Boot Testing"
+    },
+    {
+      "item_id": "spring_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Exception Handling và Validation",
+      "description": "@ControllerAdvice, @ExceptionHandler, @Valid, BindingResult, custom exceptions, ProblemDetail",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/spring-boot-exception-handling/",
+      "resource_title": "GeeksForGeeks — Spring Boot Exception Handling"
+    },
+    {
+      "item_id": "spring_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Spring Boot Microservices",
+      "description": "Spring Cloud, Eureka, Feign Client, Circuit Breaker (Resilience4j), Config Server",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/spring-cloud-eureka/",
+      "resource_title": "GeeksForGeeks — Spring Cloud Eureka"
+    },
+    {
+      "item_id": "spring_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Performance Optimization",
+      "description": "N+1 fix, connection pool (HikariCP), caching (@Cacheable với Redis), lazy init, GraalVM native",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/spring-boot-performance-tuning/",
+      "resource_title": "GeeksForGeeks — Spring Boot Performance"
+    }
+  ]
+}

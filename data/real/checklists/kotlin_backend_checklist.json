@@ -1,0 +1,154 @@
+{
+  "skill": "Kotlin Backend",
+  "skill_key": "kotlin_backend",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.548389Z",
+  "checklist_items": [
+    {
+      "item_id": "kotlin_backend_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Kotlin coroutines",
+      "description": "Master Kotlin coroutines trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Kotlin+coroutines+tutorial",
+      "resource_title": "Kotlin Backend — Kotlin coroutines",
+      "quiz_ids": [
+        "kotlin_backend_l1_001"
+      ],
+      "market_relevance": "Kotlin coroutines là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Ktor framework",
+      "description": "Master Ktor framework trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Ktor+framework+tutorial",
+      "resource_title": "Kotlin Backend — Ktor framework",
+      "quiz_ids": [
+        "kotlin_backend_l2_002"
+      ],
+      "market_relevance": "Ktor framework là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Spring Boot + Kotlin",
+      "description": "Master Spring Boot + Kotlin trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Spring+Boot+++Kotlin+tutorial",
+      "resource_title": "Kotlin Backend — Spring Boot + Kotlin",
+      "quiz_ids": [
+        "kotlin_backend_l3_003"
+      ],
+      "market_relevance": "Spring Boot + Kotlin là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Exposed ORM",
+      "description": "Master Exposed ORM trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Exposed+ORM+tutorial",
+      "resource_title": "Kotlin Backend — Exposed ORM",
+      "quiz_ids": [
+        "kotlin_backend_l4_004"
+      ],
+      "market_relevance": "Exposed ORM là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Data classes",
+      "description": "Master Data classes trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Data+classes+tutorial",
+      "resource_title": "Kotlin Backend — Data classes",
+      "quiz_ids": [
+        "kotlin_backend_l5_005"
+      ],
+      "market_relevance": "Data classes là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Extension functions",
+      "description": "Master Extension functions trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Extension+functions+tutorial",
+      "resource_title": "Kotlin Backend — Extension functions",
+      "quiz_ids": [
+        "kotlin_backend_l5_006"
+      ],
+      "market_relevance": "Extension functions là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Null safety",
+      "description": "Master Null safety trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Null+safety+tutorial",
+      "resource_title": "Kotlin Backend — Null safety",
+      "quiz_ids": [
+        "kotlin_backend_l5_007"
+      ],
+      "market_relevance": "Null safety là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Kotest",
+      "description": "Master Kotest trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Kotest+tutorial",
+      "resource_title": "Kotlin Backend — Kotest",
+      "quiz_ids": [
+        "kotlin_backend_l5_008"
+      ],
+      "market_relevance": "Kotest là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Docker",
+      "description": "Master Docker trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+Docker+tutorial",
+      "resource_title": "Kotlin Backend — Docker",
+      "quiz_ids": [
+        "kotlin_backend_l5_009"
+      ],
+      "market_relevance": "Docker là key skill trong Kotlin Backend Backend development"
+    },
+    {
+      "item_id": "kotlin_backend_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "gRPC",
+      "description": "Master gRPC trong Kotlin Backend — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Backend+gRPC+tutorial",
+      "resource_title": "Kotlin Backend — gRPC",
+      "quiz_ids": [
+        "kotlin_backend_l5_010"
+      ],
+      "market_relevance": "gRPC là key skill trong Kotlin Backend Backend development"
+    }
+  ]
+}

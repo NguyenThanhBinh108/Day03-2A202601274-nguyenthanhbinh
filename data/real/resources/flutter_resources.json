@@ -1,0 +1,58 @@
+{
+  "skill": "Flutter",
+  "skill_key": "flutter",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.508096",
+  "resources": [
+    {
+      "resource_id": "flutter_r001",
+      "title": "Flutter Official Documentation",
+      "url": "https://docs.flutter.dev/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Flutter official docs với excellent cookbook"
+    },
+    {
+      "resource_id": "flutter_r002",
+      "title": "GeeksForGeeks Flutter Tutorial",
+      "url": "https://www.geeksforgeeks.org/google-flutter/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "beginner_to_intermediate",
+      "rating": 4,
+      "description": "Flutter từ cơ bản"
+    },
+    {
+      "resource_id": "flutter_r003",
+      "title": "Flutter Codelabs (Free)",
+      "url": "https://codelabs.developers.google.com/?product=flutter",
+      "type": "lab",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Interactive Flutter labs từ Google"
+    },
+    {
+      "resource_id": "flutter_r004",
+      "title": "freeCodeCamp Flutter Articles",
+      "url": "https://www.freecodecamp.org/news/tag/flutter/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "Flutter articles"
+    },
+    {
+      "resource_id": "flutter_r005",
+      "title": "Viblo Flutter Articles",
+      "url": "https://viblo.asia/tags/flutter",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "Flutter tiếng Việt"
+    }
+  ]
+}

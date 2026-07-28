@@ -1,0 +1,218 @@
+{
+  "skill": "Algorithms & DSA",
+  "skill_key": "algorithms",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.655079Z",
+  "source_references": [
+    "https://www.google.com/search?q=Algorithms+&+DSA+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "algorithms_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Algorithms & DSA, Array/String có vai trò gì?",
+      "options": {
+        "A": "Array/String là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Array/String là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Array/String đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Array/String là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Array/String trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Array/String là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Array/String giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Array/String+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "array-string"
+      ]
+    },
+    {
+      "question_id": "algorithms_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Algorithms & DSA, Linked Lists có vai trò gì?",
+      "options": {
+        "A": "Linked Lists là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Linked Lists là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Linked Lists đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Linked Lists là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Linked Lists trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Linked Lists là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Linked Lists giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Linked+Lists+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "linked-lists"
+      ]
+    },
+    {
+      "question_id": "algorithms_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Algorithms & DSA, Stacks/Queues có vai trò gì?",
+      "options": {
+        "A": "Stacks/Queues là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Stacks/Queues là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Stacks/Queues đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Stacks/Queues là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Stacks/Queues trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Stacks/Queues là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Stacks/Queues giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Stacks/Queues+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "stacks-queues"
+      ]
+    },
+    {
+      "question_id": "algorithms_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Algorithms & DSA, Trees/Graphs có vai trò gì?",
+      "options": {
+        "A": "Trees/Graphs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Trees/Graphs là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Trees/Graphs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Trees/Graphs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Trees/Graphs trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Trees/Graphs là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Trees/Graphs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Trees/Graphs+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "trees-graphs"
+      ]
+    },
+    {
+      "question_id": "algorithms_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Algorithms & DSA, Dynamic programming có vai trò gì?",
+      "options": {
+        "A": "Dynamic programming là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dynamic programming là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dynamic programming đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dynamic programming là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dynamic programming trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Dynamic programming là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Dynamic programming giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Dynamic+programming+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "dynamic-programming"
+      ]
+    },
+    {
+      "question_id": "algorithms_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Algorithms & DSA, Binary search có vai trò gì?",
+      "options": {
+        "A": "Binary search là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Binary search là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Binary search đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Binary search là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Binary search trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Binary search là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Binary search giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Binary+search+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "binary-search"
+      ]
+    },
+    {
+      "question_id": "algorithms_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Algorithms & DSA, Sorting algorithms có vai trò gì?",
+      "options": {
+        "A": "Sorting algorithms là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Sorting algorithms là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Sorting algorithms đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Sorting algorithms là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Sorting algorithms trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Sorting algorithms là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Sorting algorithms giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Sorting+algorithms+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "sorting-algorithms"
+      ]
+    },
+    {
+      "question_id": "algorithms_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Algorithms & DSA, Hashing có vai trò gì?",
+      "options": {
+        "A": "Hashing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Hashing là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Hashing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Hashing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Hashing trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Hashing là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Hashing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Hashing+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "hashing"
+      ]
+    },
+    {
+      "question_id": "algorithms_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Algorithms & DSA, Recursion/Backtracking có vai trò gì?",
+      "options": {
+        "A": "Recursion/Backtracking là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Recursion/Backtracking là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Recursion/Backtracking đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Recursion/Backtracking là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Recursion/Backtracking trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Recursion/Backtracking là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Recursion/Backtracking giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Recursion/Backtracking+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "recursion-backtracking"
+      ]
+    },
+    {
+      "question_id": "algorithms_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Algorithms & DSA, Big-O complexity có vai trò gì?",
+      "options": {
+        "A": "Big-O complexity là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Big-O complexity là core concept trong Algorithms & DSA — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Big-O complexity đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Big-O complexity là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Big-O complexity trong Algorithms & DSA: Đây là một trong những concepts quan trọng nhất. Algorithms & DSA được sử dụng rộng rãi trong industry và Big-O complexity là phần không thể thiếu. Khi làm việc với Algorithms & DSA trong production, hiểu rõ Big-O complexity giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Algorithms+&+DSA+Big-O+complexity+tutorial",
+      "tags": [
+        "algorithms",
+        "fundamentals",
+        "big-o-complexity"
+      ]
+    }
+  ]
+}

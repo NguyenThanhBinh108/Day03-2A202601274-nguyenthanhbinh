@@ -1,0 +1,102 @@
+{
+  "role_id": "product_manager",
+  "role_name": "Product Manager / Product Owner",
+  "market_overview": "Thị trường IT Việt Nam đang chuyển dịch mạnh từ Outsourcing thuần túy sang xây dựng Product (SaaS, Fintech, E-commerce). Nhu cầu tuyển dụng Product Manager (PM) tăng vọt. Khác với BA chỉ phân tích yêu cầu từ khách hàng, PM là 'mini-CEO' của sản phẩm, chịu trách nhiệm về tầm nhìn, chiến lược, và các chỉ số kinh doanh (ROI, Retention, Conversion).",
+  "salary_range_vnd": "25-70 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_product_discovery_strategy",
+      "title": "Nghiên Cứu & Hoạch Định Chiến Lược (Product Discovery)",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Định hình Tầm nhìn sản phẩm (Product Vision) và Mục tiêu (OKRs)",
+        "Nghiên cứu thị trường và Phân tích đối thủ cạnh tranh (Competitor Analysis)",
+        "Khám phá vấn đề cốt lõi của người dùng qua User Interviews & Surveys",
+        "Định giá sản phẩm (Pricing Strategy) và Lập mô hình kinh doanh (Business Model Canvas)"
+      ],
+      "toolchains": [
+        "Amplitude / Mixpanel (Data Analytics)",
+        "Miro / FigJam",
+        "Typeform / Qualtrics"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Xây dựng Product Roadmap cho tính năng 'Mua trước trả sau' (BNPL)",
+          "business_context": "Ví điện tử muốn tích hợp BNPL để tăng giá trị trung bình trên mỗi đơn hàng (AOV). Cần xác định các phase phát triển MVP để thử nghiệm phản ứng thị trường sớm nhất.",
+          "tech_stack_used": [
+            "Miro",
+            "Jira Advanced Roadmaps"
+          ],
+          "key_challenges": [
+            "Cân đối nguồn lực kỹ thuật hạn hẹp với áp lực phải launch trước đối thủ.",
+            "Lựa chọn tập người dùng 'Whitelist' phù hợp để thử nghiệm rủi ro tín dụng ban đầu."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Nếu CEO yêu cầu bạn làm tính năng A, nhưng dữ liệu (Data) và phản hồi từ người dùng (User feedback) lại chỉ ra rằng nên làm tính năng B, bạn sẽ thuyết phục CEO như thế nào?",
+          "expected_answer_points": [
+            "Tuyệt đối không dùng cảm tính để cãi lại CEO. Sử dụng Data-driven approach.",
+            "Đề xuất chạy A/B Testing hoặc tạo một bản Prototype/Fake Door Test với chi phí rẻ để lấy số liệu thực tế chứng minh tính năng B mang lại ROI cao hơn."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Feature Factory (Nhà máy sản xuất tính năng)",
+          "why_its_bad": "PM nhồi nhét mọi yêu cầu của Stakeholders vào sản phẩm mà không đánh giá giá trị cốt lõi. Sản phẩm trở thành một mớ hỗn độn (Bloated), nhiều tính năng nhưng không ai dùng, làm tăng Technical Debt.",
+          "better_approach": "Áp dụng framework ưu tiên (RICE, Kano Model). Học cách nói 'Không' một cách có cơ sở với những tính năng không phục vụ cho North Star Metric (Chỉ số cốt lõi)."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_agile_execution_delivery",
+      "title": "Quản Trị Vận Hành & Phát Triển (Agile Execution)",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Quản lý Product Backlog (Sàng lọc, Ưu tiên, Đánh giá effort)",
+        "Viết PRD (Product Requirements Document) và User Stories sắc bén",
+        "Điều phối luồng công việc giữa UI/UX Designer, Developers và QA",
+        "Quản trị Rủi ro (Risk Management) và Xử lý nút thắt cổ chai (Bottlenecks)"
+      ],
+      "toolchains": [
+        "Jira / Linear / Asana",
+        "Confluence",
+        "Slack / Microsoft Teams (Communication)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Điều phối Launch Campaign cho Ứng dụng giao hàng mới",
+          "business_context": "Dự án đã code xong, chuẩn bị đưa lên App Store/Google Play. PM cần điều phối các team Marketing, Operations, Legal và Dev để đảm bảo Launch thành công.",
+          "tech_stack_used": [
+            "Jira",
+            "Confluence"
+          ],
+          "key_challenges": [
+            "Xử lý lỗi Critical (Blocker) xuất hiện ngay sát ngày Go-live.",
+            "Lập kế hoạch Rollback (Kế hoạch lùi) nếu hệ thống sập khi người dùng ùa vào."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Làm thế nào để phân biệt một User Story tốt và một User Story tệ?",
+          "expected_answer_points": [
+            "User Story tốt tuân thủ nguyên tắc INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable).",
+            "Story tệ thường mô tả 'Cách làm' (How) thay vì 'Vấn đề cần giải quyết' (What & Why), giới hạn sự sáng tạo của Developer."
+          ],
+          "difficulty": "Fresher"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Micromanagement (Quản lý vi mô team Dev)",
+          "why_its_bad": "PM can thiệp quá sâu vào kiến trúc kỹ thuật hoặc bắt ép Dev phải code theo một cách cụ thể, phá hỏng sự tự chủ và động lực của team kỹ thuật.",
+          "better_approach": "Giao tiếp rõ ràng về mặt 'Vấn đề kinh doanh'. Để Tech Lead và team Dev toàn quyền quyết định 'Giải pháp kỹ thuật'."
+        }
+      ]
+    }
+  ]
+}

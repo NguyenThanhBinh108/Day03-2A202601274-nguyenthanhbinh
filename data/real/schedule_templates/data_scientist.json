@@ -1,0 +1,106 @@
+{
+  "role_id": "data_scientist",
+  "role_name": "Data Scientist",
+  "market_overview": "Thị trường Data Science tại Việt Nam đang bùng nổ trong các lĩnh vực Fintech, E-commerce và Retail. Các doanh nghiệp không chỉ cần báo cáo mà cần những mô hình dự báo hành vi người dùng, tối ưu hóa giá cả (Dynamic Pricing) và phân cụm khách hàng. Mức độ cạnh tranh cao, đòi hỏi nền tảng Toán thống kê vững chắc kết hợp với tư duy giải quyết bài toán kinh doanh (Business Domain Knowledge).",
+  "salary_range_vnd": "20-55 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_applied_statistics_eda",
+      "title": "Thống Kê Ứng Dụng & Khai Phá Dữ Liệu (EDA)",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Thống kê suy diễn (Inferential Statistics) và Kiểm định giả thuyết (A/B Testing)",
+        "Khai phá dữ liệu (Exploratory Data Analysis) để tìm ra insights ẩn",
+        "Trực quan hóa dữ liệu (Data Visualization) để báo cáo cho C-level",
+        "Truy xuất dữ liệu phức tạp từ Data Warehouse"
+      ],
+      "toolchains": [
+        "Python (Pandas, SciPy, Statsmodels)",
+        "SQL (PostgreSQL / BigQuery)",
+        "Tableau / PowerBI",
+        "Matplotlib / Seaborn / Plotly"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Thiết kế và Phân tích A/B Test cho tính năng Checkout",
+          "business_context": "Sàn thương mại điện tử muốn đổi màu và vị trí nút 'Thanh toán' để tăng tỷ lệ chuyển đổi (Conversion Rate).",
+          "tech_stack_used": [
+            "SQL",
+            "Python (SciPy)",
+            "PowerBI"
+          ],
+          "key_challenges": [
+            "Tính toán cỡ mẫu tối thiểu (Minimum Sample Size) trước khi chạy test",
+            "Xử lý nhiễu (Noise) do các yếu tố mùa vụ (Seasonality) tác động lên kết quả test"
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "P-value là gì? Nếu P-value = 0.04 thì có ý nghĩa thực tế như thế nào đối với quyết định kinh doanh?",
+          "expected_answer_points": [
+            "P-value là xác suất quan sát được kết quả hiện tại nếu giả thuyết không (Null Hypothesis) đúng.",
+            "P-value < 0.05 mang ý nghĩa thống kê, nhưng phải kết hợp với Practical Significance (Ý nghĩa thực tiễn) về mặt doanh thu để chốt phương án."
+          ],
+          "difficulty": "Junior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Nhầm lẫn giữa Tương quan (Correlation) và Nhân quả (Causation)",
+          "why_its_bad": "Đưa ra lời khuyên sai lầm cho CEO. Ví dụ: Thấy người mua kem nhiều vào mùa hè và doanh số bán kem tương quan với tỷ lệ đuối nước, rồi kết luận bán kem gây ra đuối nước.",
+          "better_approach": "Phải thiết lập các thí nghiệm đối chứng ngẫu nhiên (Randomized Controlled Trials) hoặc dùng phương pháp Causal Inference để xác định nhân quả."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_predictive_modeling",
+      "title": "Mô Hình Dự Báo & Machine Learning",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Xây dựng mô hình phân loại (Classification) và hồi quy (Regression)",
+        "Feature Engineering: Tạo ra các biến mới có sức mạnh dự báo cao",
+        "Tối ưu hóa siêu tham số (Hyperparameter Tuning)",
+        "Phân tích chuỗi thời gian (Time Series Forecasting)"
+      ],
+      "toolchains": [
+        "Scikit-learn",
+        "XGBoost / CatBoost",
+        "Optuna / MLflow",
+        "Prophet / ARIMA"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Mô hình dự báo khách hàng rời bỏ (Customer Churn Prediction)",
+          "business_context": "Công ty viễn thông cần nhận diện trước khách hàng nào chuẩn bị cắt dịch vụ để có chiến dịch tặng voucher giữ chân kịp thời.",
+          "tech_stack_used": [
+            "Python",
+            "CatBoost",
+            "MLflow"
+          ],
+          "key_challenges": [
+            "Feature Engineering các biến hành vi theo thời gian (VD: Số lần gọi tổng đài trong 7 ngày qua so với 30 ngày qua)",
+            "Xử lý tập dữ liệu mất cân bằng cao (Chỉ 2% khách hàng thực sự rời bỏ)"
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "ROC-AUC là gì? Tại sao trong bài toán Churn Prediction lại dùng F1-Score/ROC-AUC thay vì Accuracy?",
+          "expected_answer_points": [
+            "Accuracy bị đánh lừa bởi Imbalanced Data (Dự báo tất cả không rời bỏ thì vẫn đúng 98%).",
+            "ROC-AUC đánh giá khả năng phân tách giữa hai lớp, F1-Score cân bằng giữa Precision và Recall."
+          ],
+          "difficulty": "Junior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Sử dụng biến tương lai (Future Leakage) làm Feature",
+          "why_its_bad": "Đưa thông tin chỉ có sau khi sự kiện xảy ra vào mô hình (VD: Dùng biến 'lý do hủy hợp đồng' để dự báo việc hủy hợp đồng). Model sẽ đúng 100% khi test nhưng vô dụng ở thực tế.",
+          "better_approach": "Loại bỏ hoàn toàn các biến sinh ra trong hoặc sau khoảng thời gian cần dự báo. Chỉ dùng dữ liệu lịch sử tính đến thời điểm T."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "role_id": "cloud_engineer",
+  "role_name": "Cloud Engineer / Cloud Solutions Architect",
+  "market_overview": "Xu hướng dịch chuyển lên mây (Cloud Migration) đang diễn ra mạnh mẽ tại Việt Nam. Các kỹ sư Cloud có chứng chỉ AWS, GCP hoặc Azure được trả mức lương vô cùng hậu hĩnh. Công việc không chỉ là 'tạo server' mà là thiết kế kiến trúc có khả năng tự mở rộng (Auto-scaling), tối ưu chi phí (FinOps) và đảm bảo tính sẵn sàng cao (High Availability).",
+  "salary_range_vnd": "25-60 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_cloud_foundations_networking",
+      "title": "Nền Tảng Đám Mây & Kiến Trúc Mạng (Networking)",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Thiết kế Virtual Private Cloud (VPC), Subnets (Public/Private), Route Tables, Internet Gateways",
+        "Quản trị Phân quyền (IAM - Identity and Access Management) theo nguyên tắc Least Privilege",
+        "Triển khai Load Balancers (ALB/NLB) và Auto Scaling Groups",
+        "Quản trị lưu trữ: Object Storage (S3), Block Storage (EBS)"
+      ],
+      "toolchains": [
+        "AWS Console / CLI",
+        "GCP / Azure (Tùy chọn)",
+        "Linux Bash Scripting"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Thiết kế kiến trúc 3-Tier Architecture High Availability",
+          "business_context": "Hệ thống web thương mại điện tử cần chịu tải tốt trong các ngày sale 11/11, không được phép sập (Downtime).",
+          "tech_stack_used": [
+            "AWS VPC",
+            "EC2 Auto Scaling",
+            "RDS Multi-AZ"
+          ],
+          "key_challenges": [
+            "Cấu hình NAT Gateway để Private Subnet có thể tải update an toàn mà không lộ ra Internet.",
+            "Đảm bảo cơ sở dữ liệu (Database) tự động failover sang Zone khác khi có sự cố phần cứng."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Sự khác biệt giữa Stateless và Stateful architecture? Tại sao Cloud lại ưu tiên Stateless?",
+          "expected_answer_points": [
+            "Stateful lưu session trên server, nếu server chết, user mất phiên đăng nhập.",
+            "Stateless lưu session trên client (JWT) hoặc external cache (Redis), giúp Auto Scaling dễ dàng diệt/tạo server mà không ảnh hưởng tới user."
+          ],
+          "difficulty": "Junior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Hardcode AWS Access Keys trong Source Code",
+          "why_its_bad": "Code đẩy lên Github bị bot quét được, Hacker dùng key để đào Bitcoin, công ty mất hàng chục ngàn USD chỉ trong một đêm.",
+          "better_approach": "Tuyệt đối sử dụng IAM Roles gắn vào EC2/ECS để cấp quyền. Nếu ở local, dùng AWS CLI Profiles hoặc AWS Vault."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_iac_serverless_finops",
+      "title": "Infrastructure as Code (IaC) & Serverless",
+      "duration_weeks": 7,
+      "core_skills": [
+        "Lập trình hạ tầng (IaC) để tự động hóa việc tạo/xóa tài nguyên",
+        "Triển khai kiến trúc Serverless (Event-driven Architecture)",
+        "Tối ưu hóa chi phí đám mây (FinOps - Cloud Cost Management)",
+        "Theo dõi và Cảnh báo (CloudWatch, Datadog)"
+      ],
+      "toolchains": [
+        "Terraform",
+        "AWS Lambda, API Gateway, DynamoDB",
+        "AWS Cost Explorer"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Hệ thống xử lý ảnh tự động (Event-driven)",
+          "business_context": "User upload hàng ngàn ảnh lên Web. Cần tự động nén, tạo thumbnail và đóng dấu bản quyền mà không cần duy trì một server chạy 24/7 gây lãng phí.",
+          "tech_stack_used": [
+            "AWS S3 Events",
+            "AWS Lambda",
+            "Terraform"
+          ],
+          "key_challenges": [
+            "Viết code Terraform để thiết lập quyền S3 trigger Lambda function một cách an toàn.",
+            "Xử lý lỗi (Dead-letter queues - DLQ) khi Lambda bị timeout do ảnh dung lượng quá lớn."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Terraform State là gì? Tại sao không được lưu file terraform.tfstate trong local hoặc Github chung với code?",
+          "expected_answer_points": [
+            "State file chứa mapping giữa cấu hình code và tài nguyên thực tế trên Cloud.",
+            "Nó có thể chứa thông tin nhạy cảm (Passwords, DB secrets) dưới dạng plain-text. Phải lưu ở Remote Storage (như S3) có mã hóa và bật tính năng State Locking (qua DynamoDB) để làm việc nhóm an toàn."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "ClickOps (Khởi tạo tài nguyên bằng tay trên giao diện Console)",
+          "why_its_bad": "Khi hạ tầng phình to hoặc cần copy môi trường từ Staging sang Production, làm tay rất dễ sai sót, mất dấu tài nguyên và không có lịch sử thay đổi (Version Control).",
+          "better_approach": "Mọi thay đổi trên hạ tầng ĐỀU PHẢI được định nghĩa bằng mã (Terraform/CloudFormation) và đi qua quy trình Review Code (CI/CD)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "REST API Design",
+  "skill_key": "rest_api",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.670078Z",
+  "checklist_items": [
+    {
+      "item_id": "rest_api_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "HTTP methods",
+      "description": "Master HTTP methods trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+HTTP+methods+tutorial",
+      "resource_title": "REST API Design — HTTP methods",
+      "quiz_ids": [
+        "rest_api_l1_001"
+      ],
+      "market_relevance": "HTTP methods là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Status codes",
+      "description": "Master Status codes trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Status+codes+tutorial",
+      "resource_title": "REST API Design — Status codes",
+      "quiz_ids": [
+        "rest_api_l2_002"
+      ],
+      "market_relevance": "Status codes là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "URL design",
+      "description": "Master URL design trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+URL+design+tutorial",
+      "resource_title": "REST API Design — URL design",
+      "quiz_ids": [
+        "rest_api_l3_003"
+      ],
+      "market_relevance": "URL design là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Versioning",
+      "description": "Master Versioning trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Versioning+tutorial",
+      "resource_title": "REST API Design — Versioning",
+      "quiz_ids": [
+        "rest_api_l4_004"
+      ],
+      "market_relevance": "Versioning là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Pagination",
+      "description": "Master Pagination trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Pagination+tutorial",
+      "resource_title": "REST API Design — Pagination",
+      "quiz_ids": [
+        "rest_api_l5_005"
+      ],
+      "market_relevance": "Pagination là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Filtering/Sorting",
+      "description": "Master Filtering/Sorting trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Filtering/Sorting+tutorial",
+      "resource_title": "REST API Design — Filtering/Sorting",
+      "quiz_ids": [
+        "rest_api_l5_006"
+      ],
+      "market_relevance": "Filtering/Sorting là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "HATEOAS",
+      "description": "Master HATEOAS trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+HATEOAS+tutorial",
+      "resource_title": "REST API Design — HATEOAS",
+      "quiz_ids": [
+        "rest_api_l5_007"
+      ],
+      "market_relevance": "HATEOAS là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Error format",
+      "description": "Master Error format trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Error+format+tutorial",
+      "resource_title": "REST API Design — Error format",
+      "quiz_ids": [
+        "rest_api_l5_008"
+      ],
+      "market_relevance": "Error format là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Auth patterns",
+      "description": "Master Auth patterns trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+Auth+patterns+tutorial",
+      "resource_title": "REST API Design — Auth patterns",
+      "quiz_ids": [
+        "rest_api_l5_009"
+      ],
+      "market_relevance": "Auth patterns là key skill trong REST API Design Fundamentals development"
+    },
+    {
+      "item_id": "rest_api_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "OpenAPI/Swagger",
+      "description": "Master OpenAPI/Swagger trong REST API Design — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=REST+API+Design+OpenAPI/Swagger+tutorial",
+      "resource_title": "REST API Design — OpenAPI/Swagger",
+      "quiz_ids": [
+        "rest_api_l5_010"
+      ],
+      "market_relevance": "OpenAPI/Swagger là key skill trong REST API Design Fundamentals development"
+    }
+  ]
+}

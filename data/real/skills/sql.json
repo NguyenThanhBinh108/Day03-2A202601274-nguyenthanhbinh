@@ -1,0 +1,193 @@
+{
+  "skill": "SQL",
+  "market_frequency": "14.8% JDs yêu cầu SQL",
+  "market_role": "Data Analyst, Data Engineer, Backend Developer",
+  "total_learning_hours": 45,
+  "generated_at": "2026-06-12T00:05:36.343981",
+  "modules": [
+    {
+      "module_id": "sql_01",
+      "title": "SQL Fundamentals",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "sql_01_01",
+          "title": "SELECT, JOINs, GROUP BY, Subqueries",
+          "hours": 8,
+          "academic": {
+            "summary": "INNER/LEFT/RIGHT/FULL JOIN, GROUP BY + HAVING, subqueries, IN/EXISTS, UNION",
+            "resources": [
+              {
+                "title": "SQLZoo Interactive Tutorial",
+                "url": "https://sqlzoo.net",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Mode Analytics SQL Tutorial",
+                "url": "https://mode.com/sql-tutorial/",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "PostgreSQL Official Docs",
+                "url": "https://www.postgresql.org/docs/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết query tìm top 3 nhân viên lương cao nhất mỗi department, department nào không có nhân viên, nhân viên làm nhiều dự án nhất",
+            "resources": [
+              {
+                "title": "LeetCode SQL Problems",
+                "url": "https://leetcode.com/problemset/database/",
+                "type": "practice",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "sql_01_01_q1",
+                "level": 1,
+                "question": "LEFT JOIN trả về gì khi không có match ở bảng phải?",
+                "options": {
+                  "A": "Không trả về row",
+                  "B": "NULL cho tất cả cột của bảng phải",
+                  "C": "Lỗi",
+                  "D": "0 cho numeric columns"
+                },
+                "correct_answer": "B",
+                "explanation": "LEFT JOIN giữ tất cả rows bảng trái. Không match: columns bảng phải = NULL. WHERE right.id IS NULL → Anti-JOIN pattern."
+              },
+              {
+                "question_id": "sql_01_01_q2",
+                "level": 2,
+                "question": "HAVING khác WHERE ở điểm nào?",
+                "options": {
+                  "A": "WHERE filter trước GROUP BY. HAVING filter sau GROUP BY (trên aggregated results)",
+                  "B": "Chúng giống nhau",
+                  "C": "HAVING chỉ cho COUNT",
+                  "D": "WHERE chậm hơn"
+                },
+                "correct_answer": "A",
+                "explanation": "WHERE: filter individual rows. HAVING: filter groups sau GROUP BY. Không thể dùng alias trong WHERE (chưa compute), có thể trong HAVING (ở một số DB)."
+              },
+              {
+                "question_id": "sql_01_01_q3",
+                "level": 3,
+                "question": "EXISTS vs IN — khi nào dùng EXISTS hiệu quả hơn?",
+                "options": {
+                  "A": "EXISTS: correlated subquery, dừng ngay khi tìm thấy match đầu tiên — tốt với large subquery. IN: phải compute toàn bộ subquery",
+                  "B": "IN luôn nhanh hơn",
+                  "C": "Chúng luôn giống nhau về performance",
+                  "D": "EXISTS chỉ cho NULL"
+                },
+                "correct_answer": "A",
+                "explanation": "EXISTS: short-circuits, không cần kết quả subquery. IN: phải expand toàn bộ list. Với nullable columns: IN không match NULL, EXISTS có thể. Modern optimizers thường tối ưu như nhau."
+              },
+              {
+                "question_id": "sql_01_01_q4",
+                "level": 4,
+                "question": "INNER JOIN vs CROSS JOIN khác nhau thế nào?",
+                "options": {
+                  "A": "INNER JOIN: chỉ match rows theo condition. CROSS JOIN: tích Descartes (mọi combination)",
+                  "B": "Chúng giống nhau",
+                  "C": "CROSS JOIN chỉ cho 2 bảng",
+                  "D": "INNER JOIN không cần ON clause"
+                },
+                "correct_answer": "A",
+                "explanation": "CROSS JOIN: m × n rows (không cần ON). Dùng cho: generate combinations, calendar dates, test data. INNER JOIN: match theo ON condition. CROSS JOIN = INNER JOIN ON 1=1."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "sql_01_02",
+          "title": "Window Functions, CTEs, Performance",
+          "hours": 10,
+          "academic": {
+            "summary": "ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, OVER(PARTITION BY ORDER BY), CTEs, EXPLAIN ANALYZE",
+            "resources": [
+              {
+                "title": "PostgreSQL Window Functions",
+                "url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 90
+              },
+              {
+                "title": "Use The Index Luke",
+                "url": "https://use-the-index-luke.com",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 300
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Viết query tính 7-day retention, month-over-month growth, running total với Window functions và CTEs",
+            "resources": [
+              {
+                "title": "Postgres Exercises",
+                "url": "https://pgexercises.com",
+                "type": "practice",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "sql_01_02_q1",
+                "level": 3,
+                "question": "ROW_NUMBER() OVER (PARTITION BY dept ORDER BY salary DESC) dùng để làm gì?",
+                "options": {
+                  "A": "Đánh số thứ tự trong từng department theo salary giảm dần",
+                  "B": "Đánh số toàn bộ bảng",
+                  "C": "Tính tổng salary",
+                  "D": "Lọc department"
+                },
+                "correct_answer": "A",
+                "explanation": "PARTITION BY dept: tạo window riêng mỗi dept. ORDER BY salary DESC: sắp xếp trong window. ROW_NUMBER(): đánh 1,2,3... trong mỗi partition. WHERE rn=1 → top earner mỗi dept."
+              },
+              {
+                "question_id": "sql_01_02_q2",
+                "level": 4,
+                "question": "CTE (WITH clause) vs Subquery — ưu điểm của CTE?",
+                "options": {
+                  "A": "CTE: readable, reusable trong same query, recursive queries. Subquery: inline, không reuse",
+                  "B": "CTE luôn nhanh hơn",
+                  "C": "Subquery không thể dùng với JOINs",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "CTE: named, readable, có thể reference nhiều lần. Recursive CTE (WITH RECURSIVE): traversal hierarchy (org chart, BOM). Performance: modern DB optimize tương đương subquery, không phải luôn tốt hơn."
+              },
+              {
+                "question_id": "sql_01_02_q3",
+                "level": 5,
+                "question": "Index B-Tree không hiệu quả trong trường hợp nào?",
+                "options": {
+                  "A": "Low cardinality columns (gender='M'/'F'), full-text search, wildcard LIKE '%keyword'",
+                  "B": "Primary key lookup",
+                  "C": "Range queries (BETWEEN)",
+                  "D": "Sorted output (ORDER BY)"
+                },
+                "correct_answer": "A",
+                "explanation": "B-Tree tốt cho: equality, range, sort. Không tốt: low cardinality (ít distinct values → index useless), LIKE '%prefix' (không dùng được index prefix), full-text (dùng GIN/GiST), JSON fields (dùng GIN)."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

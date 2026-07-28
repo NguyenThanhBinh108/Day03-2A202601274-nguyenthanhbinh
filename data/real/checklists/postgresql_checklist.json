@@ -1,0 +1,154 @@
+{
+  "skill": "PostgreSQL",
+  "skill_key": "postgresql",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.581983Z",
+  "checklist_items": [
+    {
+      "item_id": "postgresql_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Advanced SQL",
+      "description": "Master Advanced SQL trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Advanced+SQL+tutorial",
+      "resource_title": "PostgreSQL — Advanced SQL",
+      "quiz_ids": [
+        "postgresql_l1_001"
+      ],
+      "market_relevance": "Advanced SQL là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "JSONB",
+      "description": "Master JSONB trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+JSONB+tutorial",
+      "resource_title": "PostgreSQL — JSONB",
+      "quiz_ids": [
+        "postgresql_l2_002"
+      ],
+      "market_relevance": "JSONB là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Full-text search",
+      "description": "Master Full-text search trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Full-text+search+tutorial",
+      "resource_title": "PostgreSQL — Full-text search",
+      "quiz_ids": [
+        "postgresql_l3_003"
+      ],
+      "market_relevance": "Full-text search là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Window functions",
+      "description": "Master Window functions trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Window+functions+tutorial",
+      "resource_title": "PostgreSQL — Window functions",
+      "quiz_ids": [
+        "postgresql_l4_004"
+      ],
+      "market_relevance": "Window functions là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "CTEs",
+      "description": "Master CTEs trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+CTEs+tutorial",
+      "resource_title": "PostgreSQL — CTEs",
+      "quiz_ids": [
+        "postgresql_l5_005"
+      ],
+      "market_relevance": "CTEs là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Indexes (GIN, GiST)",
+      "description": "Master Indexes (GIN, GiST) trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Indexes+(GIN,+GiST)+tutorial",
+      "resource_title": "PostgreSQL — Indexes (GIN, GiST)",
+      "quiz_ids": [
+        "postgresql_l5_006"
+      ],
+      "market_relevance": "Indexes (GIN, GiST) là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Partitioning",
+      "description": "Master Partitioning trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Partitioning+tutorial",
+      "resource_title": "PostgreSQL — Partitioning",
+      "quiz_ids": [
+        "postgresql_l5_007"
+      ],
+      "market_relevance": "Partitioning là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Replication",
+      "description": "Master Replication trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+Replication+tutorial",
+      "resource_title": "PostgreSQL — Replication",
+      "quiz_ids": [
+        "postgresql_l5_008"
+      ],
+      "market_relevance": "Replication là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "pg_stat monitoring",
+      "description": "Master pg_stat monitoring trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+pg_stat+monitoring+tutorial",
+      "resource_title": "PostgreSQL — pg_stat monitoring",
+      "quiz_ids": [
+        "postgresql_l5_009"
+      ],
+      "market_relevance": "pg_stat monitoring là key skill trong PostgreSQL Database development"
+    },
+    {
+      "item_id": "postgresql_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "pgBouncer",
+      "description": "Master pgBouncer trong PostgreSQL — essential cho Database developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PostgreSQL+pgBouncer+tutorial",
+      "resource_title": "PostgreSQL — pgBouncer",
+      "quiz_ids": [
+        "postgresql_l5_010"
+      ],
+      "market_relevance": "pgBouncer là key skill trong PostgreSQL Database development"
+    }
+  ]
+}

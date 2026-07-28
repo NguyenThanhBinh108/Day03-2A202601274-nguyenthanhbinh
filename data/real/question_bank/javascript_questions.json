@@ -1,0 +1,634 @@
+{
+  "skill": "JavaScript",
+  "skill_key": "javascript",
+  "total_questions": 30,
+  "levels": {
+    "1_beginner": 6,
+    "2_understanding": 6,
+    "3_application": 6,
+    "4_debugging": 6,
+    "5_production": 6
+  },
+  "generated_at": "2026-06-12T01:12:32.370271",
+  "source_references": [
+    "https://www.w3schools.com/js/",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "https://www.freecodecamp.org/news/tag/javascript/",
+    "https://www.geeksforgeeks.org/javascript/",
+    "https://javascript.info/"
+  ],
+  "questions": [
+    {
+      "question_id": "js_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "var, let, và const khác nhau điểm cơ bản nào?",
+      "options": {
+        "A": "var có block scope, let/const có function scope",
+        "B": "var có function scope và bị hoisting, let/const có block scope và không bị hoisting theo cách cũ",
+        "C": "Cả ba đều giống nhau, chỉ khác tên",
+        "D": "const không thể dùng trong vòng lặp"
+      },
+      "correct_answer": "B",
+      "explanation": "var: function-scoped, hoisted (giá trị undefined), có thể re-declare. let: block-scoped, hoisted nhưng ở Temporal Dead Zone (TDZ). const: block-scoped, phải gán giá trị ngay, không thể reassign (nhưng object/array bên trong vẫn mutable).",
+      "source": "https://www.w3schools.com/js/js_let.asp",
+      "tags": [
+        "var",
+        "let",
+        "const",
+        "scope",
+        "hoisting"
+      ]
+    },
+    {
+      "question_id": "js_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Kết quả của typeof null trong JavaScript là gì?",
+      "options": {
+        "A": "\"null\"",
+        "B": "\"undefined\"",
+        "C": "\"object\"",
+        "D": "\"boolean\""
+      },
+      "correct_answer": "C",
+      "explanation": "typeof null === 'object' là một bug nổi tiếng trong JS từ phiên bản đầu tiên (1995) và được giữ nguyên để tránh break backward compatibility. Cách check null đúng: value === null.",
+      "source": "https://www.w3schools.com/jsref/jsref_typeof.asp",
+      "tags": [
+        "typeof",
+        "null",
+        "quirks"
+      ]
+    },
+    {
+      "question_id": "js_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "== và === khác nhau thế nào trong JavaScript?",
+      "options": {
+        "A": "== so sánh giá trị và kiểu dữ liệu, === chỉ so sánh giá trị",
+        "B": "== thực hiện type coercion trước khi so sánh, === so sánh cả giá trị lẫn kiểu dữ liệu",
+        "C": "Cả hai đều giống nhau",
+        "D": "=== chậm hơn =="
+      },
+      "correct_answer": "B",
+      "explanation": "== (loose equality): JS tự chuyển kiểu trước khi so sánh. Ví dụ: 0 == false → true, '' == false → true, null == undefined → true. === (strict equality): không coerce, phải cùng kiểu và cùng giá trị. Best practice: luôn dùng === để tránh bug khó tìm.",
+      "source": "https://www.w3schools.com/js/js_comparisons.asp",
+      "tags": [
+        "equality",
+        "coercion",
+        "operators"
+      ]
+    },
+    {
+      "question_id": "js_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "Array method nào KHÔNG thay đổi array gốc (non-mutating)?",
+      "options": {
+        "A": "push()",
+        "B": "splice()",
+        "C": "map()",
+        "D": "sort()"
+      },
+      "correct_answer": "C",
+      "explanation": "map(), filter(), reduce(), slice(), concat() là non-mutating — trả về array mới. push(), pop(), shift(), unshift(), splice(), sort(), reverse() là mutating — thay đổi array gốc. Trong React, luôn dùng non-mutating để trigger re-render đúng cách.",
+      "source": "https://www.w3schools.com/jsref/jsref_map.asp",
+      "tags": [
+        "array",
+        "methods",
+        "mutation"
+      ]
+    },
+    {
+      "question_id": "js_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "Arrow function khác function thường ở điểm quan trọng nào?",
+      "options": {
+        "A": "Arrow function không có tham số",
+        "B": "Arrow function không bind 'this' của riêng nó, kế thừa 'this' từ scope bao quanh",
+        "C": "Arrow function không thể dùng làm callback",
+        "D": "Arrow function luôn chạy async"
+      },
+      "correct_answer": "B",
+      "explanation": "Arrow function không có 'this' binding riêng — nó dùng 'this' của lexical scope bao quanh. Vì vậy không thể dùng arrow function làm: constructor (new), object method cần 'this', event handler cần 'this'. Nhưng cực tiện cho callback trong array methods và Promise chains.",
+      "source": "https://www.w3schools.com/js/js_arrow_function.asp",
+      "tags": [
+        "arrow-function",
+        "this",
+        "binding"
+      ]
+    },
+    {
+      "question_id": "js_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Spread operator (...) dùng để làm gì?",
+      "options": {
+        "A": "Chỉ dùng để copy array",
+        "B": "Dùng để expand iterable (array/object/string) vào nơi cần nhiều arguments/elements",
+        "C": "Chỉ dùng trong function parameters",
+        "D": "Dùng để xóa phần tử khỏi array"
+      },
+      "correct_answer": "B",
+      "explanation": "Spread operator (...) dùng: (1) Copy array: [...arr], (2) Merge arrays: [...a, ...b], (3) Copy object: {...obj}, (4) Merge objects: {...a, ...b}, (5) Truyền array làm arguments: Math.max(...nums). Rest parameter (...) trông giống nhưng làm ngược lại — gom nhiều arguments thành array.",
+      "source": "https://www.w3schools.com/js/js_es6.asp",
+      "tags": [
+        "spread",
+        "rest",
+        "ES6"
+      ]
+    },
+    {
+      "question_id": "js_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Closure trong JavaScript là gì và tại sao nó hữu ích?",
+      "options": {
+        "A": "Một cách đóng gói function để không ai gọi được",
+        "B": "Function có thể ghi nhớ và truy cập variables từ outer scope ngay cả sau khi outer function đã return",
+        "C": "Một loại loop đặc biệt trong JS",
+        "D": "Method để close HTTP connection"
+      },
+      "correct_answer": "B",
+      "explanation": "Closure = function + lexical environment của nó. Ví dụ: function makeCounter() { let count=0; return function() { return ++count; } } — hàm inner vẫn nhớ 'count' dù makeCounter đã return. Ứng dụng: data privacy, factory functions, currying, memoization, module pattern. Mọi function trong JS đều là closure.",
+      "source": "https://www.geeksforgeeks.org/closure-in-javascript/",
+      "tags": [
+        "closure",
+        "scope",
+        "lexical-environment"
+      ]
+    },
+    {
+      "question_id": "js_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Event loop trong JavaScript hoạt động thế nào?",
+      "options": {
+        "A": "JS chạy đa luồng nên xử lý nhiều task cùng lúc",
+        "B": "Call Stack xử lý synchronous code; khi async task xong, callback vào Queue; Event Loop đẩy callback vào Stack khi Stack rỗng",
+        "C": "setTimeout luôn chạy chính xác sau đúng số ms được chỉ định",
+        "D": "Event loop chỉ xử lý DOM events"
+      },
+      "correct_answer": "B",
+      "explanation": "JS là single-threaded. Event Loop: (1) Call Stack chạy sync code. (2) Web APIs (setTimeout, fetch, addEventListener) nhận async tasks. (3) Khi async xong, callback vào Task Queue (macrotask) hoặc Microtask Queue (Promise.then). (4) Event Loop: khi Call Stack rỗng, chạy hết microtasks, rồi lấy 1 macrotask. Thứ tự ưu tiên: sync > microtask > macrotask.",
+      "source": "https://www.freecodecamp.org/news/javascript-event-loop-explained/",
+      "tags": [
+        "event-loop",
+        "async",
+        "call-stack",
+        "promise"
+      ]
+    },
+    {
+      "question_id": "js_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Promise.all() và Promise.allSettled() khác nhau thế nào?",
+      "options": {
+        "A": "Cả hai đều giống nhau",
+        "B": "Promise.all() fail-fast (reject ngay khi 1 promise reject), Promise.allSettled() chờ tất cả xong dù có lỗi",
+        "C": "Promise.allSettled() nhanh hơn Promise.all()",
+        "D": "Promise.all() không hỗ trợ async/await"
+      },
+      "correct_answer": "B",
+      "explanation": "Promise.all([p1,p2,p3]): nếu bất kỳ promise nào reject → all reject ngay, không chờ các promise còn lại. Promise.allSettled(): chờ tất cả settle (fulfilled hoặc rejected), trả về array [{status:'fulfilled',value:...} hoặc {status:'rejected',reason:...}]. Dùng allSettled khi muốn kết quả của TẤT CẢ promises kể cả khi có lỗi.",
+      "source": "https://www.geeksforgeeks.org/promise-all-and-promise-allsettled-in-javascript/",
+      "tags": [
+        "promise",
+        "async",
+        "error-handling"
+      ]
+    },
+    {
+      "question_id": "js_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Prototype chain trong JavaScript hoạt động thế nào?",
+      "options": {
+        "A": "Tất cả objects trong JS đều độc lập, không liên quan nhau",
+        "B": "Khi access property trên object, JS tìm trong object trước, nếu không thấy thì leo lên [[Prototype]] cho đến null",
+        "C": "Prototype chain chỉ áp dụng cho class, không áp dụng cho object literal",
+        "D": "Prototype giống inheritance trong Java/C++"
+      },
+      "correct_answer": "B",
+      "explanation": "Mọi JS object có [[Prototype]] (internal slot). Property lookup: obj.x → tìm trong obj → nếu không thấy → tìm trong obj.__proto__ → tìm trong obj.__proto__.__proto__ → ... cho đến null. Object.create(proto) tạo object với [[Prototype]] = proto. class trong JS chỉ là syntactic sugar trên prototype chain.",
+      "source": "https://www.freecodecamp.org/news/javascript-prototype-explained/",
+      "tags": [
+        "prototype",
+        "inheritance",
+        "OOP"
+      ]
+    },
+    {
+      "question_id": "js_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "Destructuring assignment trong JavaScript dùng như thế nào?",
+      "options": {
+        "A": "Chỉ dùng với array",
+        "B": "Cho phép unpack values từ array hoặc properties từ object vào các biến riêng biệt",
+        "C": "Phá hủy object, không dùng được nữa sau đó",
+        "D": "Chỉ hoạt động với ES5"
+      },
+      "correct_answer": "B",
+      "explanation": "Array destructuring: const [a, b, ...rest] = [1, 2, 3, 4]. Object destructuring: const {name, age, address: {city} = {}} = user. Default values: const {x = 10} = obj. Rename: const {name: fullName} = user. Function params: function({id, title}) {...}. Cực hữu ích khi làm việc với API response và props trong React.",
+      "source": "https://www.w3schools.com/js/js_destructuring.asp",
+      "tags": [
+        "destructuring",
+        "ES6",
+        "syntax"
+      ]
+    },
+    {
+      "question_id": "js_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "Sự khác biệt giữa synchronous và asynchronous JavaScript là gì?",
+      "options": {
+        "A": "Synchronous chạy nhanh hơn asynchronous trong mọi trường hợp",
+        "B": "Synchronous: blocking - chờ xong rồi mới chạy tiếp. Asynchronous: non-blocking - giao task cho Web API, tiếp tục chạy code khác",
+        "C": "Asynchronous cần multi-threading",
+        "D": "Không có sự khác biệt trong JS"
+      },
+      "correct_answer": "B",
+      "explanation": "Synchronous: mỗi line đợi line trước xong. Ví dụ: console.log, vòng lặp, tính toán. Asynchronous: không block, dùng callback/Promise/async-await. Ví dụ: fetch(), setTimeout(), file I/O (Node.js). Tại sao quan trọng: nếu fetch() là sync, browser sẽ bị freeze trong khi chờ response. Async = UX tốt hơn.",
+      "source": "https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/",
+      "tags": [
+        "async",
+        "sync",
+        "non-blocking"
+      ]
+    },
+    {
+      "question_id": "js_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Implement debounce function để delay việc gọi API search khi user đang gõ. Code nào đúng?",
+      "options": {
+        "A": "function debounce(fn, delay) { fn(); }",
+        "B": "function debounce(fn, delay) { let timer; return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), delay); }; }",
+        "C": "function debounce(fn, delay) { return setTimeout(fn, delay); }",
+        "D": "function debounce(fn, delay) { setInterval(fn, delay); }"
+      },
+      "correct_answer": "B",
+      "explanation": "Debounce: chỉ gọi fn sau khi user NGỪNG gõ 'delay' ms. Pattern: mỗi lần gọi → clear timer cũ → set timer mới. Khi timer không bị clear (user đã dừng gõ) → fn được gọi. Ứng dụng: search input, resize handler, form validation. Throttle khác debounce: throttle gọi fn tối đa 1 lần/interval.",
+      "source": "https://www.freecodecamp.org/news/javascript-debounce-example/",
+      "tags": [
+        "debounce",
+        "performance",
+        "closure"
+      ]
+    },
+    {
+      "question_id": "js_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Cách tốt nhất để deep clone một object phức tạp (có nested objects, arrays) trong JavaScript?",
+      "options": {
+        "A": "let clone = obj; // gán biến",
+        "B": "let clone = Object.assign({}, obj); // shallow copy",
+        "C": "let clone = JSON.parse(JSON.stringify(obj)); // cho objects đơn giản, hoặc structuredClone(obj) cho modern JS",
+        "D": "let clone = {...obj}; // spread"
+      },
+      "correct_answer": "C",
+      "explanation": "(A) gán biến: chỉ copy reference, cùng trỏ vào 1 object. (B) Object.assign và (D) spread: shallow copy — nested objects vẫn share reference. (C) JSON.parse(JSON.stringify()): deep clone nhưng mất: functions, undefined, Date objects, RegExp, circular refs. structuredClone(obj) (Node 17+, modern browsers): deep clone đúng cách, giữ Date, Set, Map, circular refs.",
+      "source": "https://www.geeksforgeeks.org/how-to-deep-clone-in-javascript/",
+      "tags": [
+        "clone",
+        "object",
+        "reference"
+      ]
+    },
+    {
+      "question_id": "js_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Fetch API xử lý lỗi HTTP (404, 500) thế nào? Code nào xử lý đúng?",
+      "options": {
+        "A": "fetch() tự throw error khi gặp 4xx/5xx",
+        "B": "fetch() chỉ reject khi lỗi network; cần check response.ok để bắt HTTP errors",
+        "C": "response.json() sẽ throw error nếu status là 404",
+        "D": "Dùng .catch() là đủ để bắt mọi lỗi"
+      },
+      "correct_answer": "B",
+      "explanation": "fetch() chỉ reject Promise khi: network error, DNS failure, CORS block. 404, 500 vẫn là fulfilled Promise với response.ok = false. Đúng cách: const res = await fetch(url); if (!res.ok) throw new Error(`HTTP ${res.status}`); const data = await res.json(); Sau đó .catch() bắt cả network errors và thrown errors.",
+      "source": "https://www.freecodecamp.org/news/how-to-use-fetch-api/",
+      "tags": [
+        "fetch",
+        "error-handling",
+        "HTTP"
+      ]
+    },
+    {
+      "question_id": "js_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Cách nào để tránh 'callback hell' khi có nhiều async operations phụ thuộc nhau?",
+      "options": {
+        "A": "Dùng nhiều setTimeout lồng nhau",
+        "B": "Chain Promises với .then() hoặc dùng async/await với try/catch",
+        "C": "Chuyển tất cả sang synchronous code",
+        "D": "Dùng global variables để lưu kết quả"
+      },
+      "correct_answer": "B",
+      "explanation": "Callback hell: nhiều callback lồng nhau khó đọc, khó debug. Giải pháp: (1) Promise chaining: fetch().then(r=>r.json()).then(data=>process(data)).catch(handleError). (2) async/await: try { const res = await fetch(url); const data = await res.json(); } catch(e) { handleError(e); }. async/await dễ đọc nhất, trông như sync code. Dùng Promise.all() cho parallel async ops.",
+      "source": "https://www.freecodecamp.org/news/javascript-callback-hell/",
+      "tags": [
+        "promise",
+        "async-await",
+        "callback-hell"
+      ]
+    },
+    {
+      "question_id": "js_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "localStorage và sessionStorage khác nhau ở điểm nào quan trọng nhất?",
+      "options": {
+        "A": "localStorage nhanh hơn sessionStorage",
+        "B": "sessionStorage bị xóa khi đóng tab/browser, localStorage tồn tại cho đến khi manually xóa",
+        "C": "localStorage chỉ lưu được string",
+        "D": "sessionStorage bảo mật hơn localStorage"
+      },
+      "correct_answer": "B",
+      "explanation": "localStorage: persist sau khi close browser, shared across tabs cùng origin (5-10MB). sessionStorage: chỉ tồn tại trong session tab hiện tại, không share giữa các tabs, xóa khi close tab (5MB). Cả hai: chỉ lưu string (dùng JSON.stringify/parse cho objects), đồng bộ (blocking), không access được từ Web Workers. Nhạy cảm: không lưu token/password vì dễ bị XSS.",
+      "source": "https://www.w3schools.com/jsref/prop_win_localstorage.asp",
+      "tags": [
+        "storage",
+        "browser",
+        "web-api"
+      ]
+    },
+    {
+      "question_id": "js_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Module system trong JavaScript (ES Modules) hoạt động thế nào?",
+      "options": {
+        "A": "ES Modules giống CommonJS (require/module.exports)",
+        "B": "ES Modules dùng import/export, static analysis, live bindings, luôn strict mode",
+        "C": "ES Modules chỉ hoạt động trong Node.js",
+        "D": "import và require có thể dùng thay thế nhau thoải mái"
+      },
+      "correct_answer": "B",
+      "explanation": "ES Modules (ESM): import/export keywords, static (không dynamic như require), live bindings (export thay đổi thì import thấy thay đổi), luôn strict mode, browser support native. CommonJS: require/module.exports, dynamic imports, synchronous. Trong Node.js: .mjs hoặc 'type': 'module' trong package.json để dùng ESM. Dynamic import(): import('./module.js').then() cho lazy loading.",
+      "source": "https://www.freecodecamp.org/news/javascript-modules-explained-with-examples/",
+      "tags": [
+        "modules",
+        "import",
+        "export",
+        "ESM"
+      ]
+    },
+    {
+      "question_id": "js_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Code này có bug gì? for(var i=0;i<3;i++){setTimeout(()=>console.log(i), 100)} — in ra 3,3,3 thay vì 0,1,2",
+      "options": {
+        "A": "setTimeout bị sai delay",
+        "B": "var có function scope nên tất cả closures share cùng 'i', sau loop i=3. Fix: dùng let (block scope) hoặc IIFE",
+        "C": "Arrow function không hoạt động trong for loop",
+        "D": "setTimeout cần callback thông thường, không phải arrow function"
+      },
+      "correct_answer": "B",
+      "explanation": "Bug kinh điển! var i là function-scoped, các setTimeout callbacks đều closure over cùng 1 biến 'i'. Khi callbacks chạy (sau 100ms), loop đã xong, i=3. Fix 1 (dễ nhất): dùng let — block-scoped, mỗi iteration có 'i' riêng. Fix 2 (IIFE): (function(j){setTimeout(()=>console.log(j), 100)})(i). Fix 3: setTimeout(console.log, 100, i) — pass i như argument.",
+      "source": "https://www.geeksforgeeks.org/why-does-settimeout-not-work-properly-inside-a-for-loop/",
+      "tags": [
+        "closure",
+        "var",
+        "setTimeout",
+        "bug"
+      ]
+    },
+    {
+      "question_id": "js_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Memory leak thường xảy ra trong JavaScript do nguyên nhân nào?",
+      "options": {
+        "A": "Dùng let thay vì var",
+        "B": "Event listeners không được remove, global variables tích lũy, closures giữ reference không cần thiết",
+        "C": "Dùng quá nhiều arrow functions",
+        "D": "Khai báo quá nhiều const"
+      },
+      "correct_answer": "B",
+      "explanation": "Common memory leaks: (1) Event listeners không remove: element.addEventListener → element bị remove khỏi DOM nhưng listener vẫn giữ reference. Fix: removeEventListener hoặc AbortController. (2) Global variables: window.bigData = largeArray — không bao giờ bị GC. (3) Closures giữ references: callback giữ reference đến large object không cần. (4) Timers không clear: setInterval không clearInterval. (5) Detached DOM nodes: element bị remove khỏi DOM nhưng JS vẫn giữ reference.",
+      "source": "https://www.freecodecamp.org/news/javascript-memory-management-avoid-memory-leaks/",
+      "tags": [
+        "memory-leak",
+        "performance",
+        "GC"
+      ]
+    },
+    {
+      "question_id": "js_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "'this' trong JavaScript bị mất context trong trường hợp nào và cách fix?",
+      "options": {
+        "A": "'this' luôn trỏ đến global object",
+        "B": "'this' phụ thuộc vào cách function được gọi; bị mất khi dùng callback, detached method; fix bằng bind/arrow function",
+        "C": "'this' chỉ hoạt động trong class",
+        "D": "Arrow function fix được mọi vấn đề 'this'"
+      },
+      "correct_answer": "B",
+      "explanation": "'this' binding rules (ưu tiên giảm dần): (1) new binding: new Foo() → this = instance mới. (2) Explicit: .call(thisArg), .apply(thisArg), .bind(thisArg). (3) Implicit: obj.method() → this = obj. (4) Default: function() trong non-strict → window; strict → undefined. Mất context khi: setTimeout(obj.method, 100) → method được gọi không có context. Fix: bind, arrow function, hoặc const self = this.",
+      "source": "https://www.freecodecamp.org/news/javascript-this-keyword-binding-rules/",
+      "tags": [
+        "this",
+        "binding",
+        "context"
+      ]
+    },
+    {
+      "question_id": "js_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "Code: console.log([] + []); console.log([] + {}); console.log({} + []); — Kết quả là gì?",
+      "options": {
+        "A": "\"\", \"[object Object]\", 0",
+        "B": "\"\", \"[object Object]\", \"[object Object]\"",
+        "C": "Tất cả đều throw TypeError",
+        "D": "\"[]\", \"{}[]\", \"{}[]\""
+      },
+      "correct_answer": "B",
+      "explanation": "Type coercion rules: [] + [] → '' + '' = ''. [] + {} → '' + '[object Object]' = '[object Object]'. {} + [] → tùy context: nếu là statement, {} bị parse là empty block → +[] = +0 = 0; nếu là expression (trong console hoặc grouping), ({}) + [] = '[object Object]'. Đây là lý do LUÔN dùng === và tránh type coercion. Lesson: JS type coercion có thể rất bất ngờ.",
+      "source": "https://www.geeksforgeeks.org/type-coercion-in-javascript/",
+      "tags": [
+        "coercion",
+        "type",
+        "quirks"
+      ]
+    },
+    {
+      "question_id": "js_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao 0.1 + 0.2 !== 0.3 trong JavaScript?",
+      "options": {
+        "A": "JavaScript có bug trong phép tính",
+        "B": "Floating point representation không chính xác tuyệt đối theo chuẩn IEEE 754 binary64",
+        "C": "Cần dùng Math.add() thay vì + operator",
+        "D": "Chỉ xảy ra trong JavaScript, không xảy ra ở ngôn ngữ khác"
+      },
+      "correct_answer": "B",
+      "explanation": "0.1 trong binary là 0.00011001100110011... (vô hạn tuần hoàn). Máy tính lưu xấp xỉ theo IEEE 754. 0.1 + 0.2 = 0.30000000000000004. Đây không phải bug JS — mọi ngôn ngữ dùng IEEE 754 đều gặp (Python, Java...). Fix: dùng toFixed(2) cho display, hoặc so sánh với epsilon: Math.abs(a-b) < Number.EPSILON. Cho tiền tệ: dùng integers (cent/satoshi) hoặc library như decimal.js.",
+      "source": "https://www.geeksforgeeks.org/why-0-1-0-2-is-not-equal-to-0-3-in-most-of-the-programming-language/",
+      "tags": [
+        "floating-point",
+        "IEEE-754",
+        "precision"
+      ]
+    },
+    {
+      "question_id": "js_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Giải thích Temporal Dead Zone (TDZ) và tại sao nó quan trọng?",
+      "options": {
+        "A": "Vùng thời gian giữa khai báo và sử dụng var",
+        "B": "Giai đoạn từ đầu block đến dòng khai báo let/const, access trong TDZ throw ReferenceError",
+        "C": "Trạng thái của Promise đang pending",
+        "D": "Thời gian setTimeout đang chờ"
+      },
+      "correct_answer": "B",
+      "explanation": "TDZ: let/const được 'hoisted' lên đầu block nhưng KHÔNG được initialized (khác var được init = undefined). Access trước dòng khai báo → ReferenceError: Cannot access 'x' before initialization. Ví dụ: { console.log(x); // ReferenceError! let x = 1; }. Tại sao tốt: bắt bug sớm hơn, code predictable hơn. var thì chỉ undefined (silent bug nguy hiểm hơn).",
+      "source": "https://www.freecodecamp.org/news/what-is-the-temporal-dead-zone/",
+      "tags": [
+        "TDZ",
+        "hoisting",
+        "let",
+        "const"
+      ]
+    },
+    {
+      "question_id": "js_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "App React của bạn bị lag khi render danh sách 10,000 items. Network tab cho thấy response nhanh (100ms) nhưng UI freeze 3-5 giây. Nguyên nhân và cách fix?",
+      "options": {
+        "A": "Tăng RAM server để response nhanh hơn",
+        "B": "Virtualization (react-window/react-virtual) + pagination hoặc infinite scroll + useMemo để tránh unnecessary re-renders",
+        "C": "Dùng CSS animation thay vì JS",
+        "D": "Convert sang class components"
+      },
+      "correct_answer": "B",
+      "explanation": "Vấn đề: render 10k DOM nodes cùng lúc. Fix theo thứ tự ưu tiên: (1) Virtualization: react-window hoặc @tanstack/react-virtual — chỉ render các items visible trong viewport (~20-30 items), scroll tạo illusion. (2) Pagination/infinite scroll: giới hạn data trên UI. (3) useMemo: tránh tính toán lại expensive data. (4) useCallback: tránh tạo function mới mỗi render. (5) React.memo: tránh child re-render không cần. Thêm: web workers cho heavy computation.",
+      "source": "https://www.freecodecamp.org/news/react-performance-optimization/",
+      "tags": [
+        "performance",
+        "virtualization",
+        "react",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "js_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Frontend app của bạn gọi nhiều API cùng lúc khi load trang. Cách nào tối ưu nhất cho production?",
+      "options": {
+        "A": "Gọi từng API một theo thứ tự",
+        "B": "Promise.all() cho parallel calls, lazy loading với dynamic import(), caching với stale-while-revalidate pattern, và CDN cho static assets",
+        "C": "Gọi tất cả API ở component cha rồi pass props xuống",
+        "D": "Tạo 1 API endpoint duy nhất gộp tất cả data"
+      },
+      "correct_answer": "B",
+      "explanation": "Production optimization checklist: (1) Parallel fetching: Promise.all([fetch(A), fetch(B)]) — không đợi A xong mới gọi B. (2) Code splitting: React.lazy + Suspense, dynamic import() — chỉ load code khi cần. (3) Caching: React Query / SWR với stale-while-revalidate — show cached data ngay, refetch background. (4) Request deduplication: nhiều component cùng gọi 1 endpoint → chỉ 1 request. (5) Prefetching: load data trước khi user navigate. (6) CDN: static assets (images, JS bundles).",
+      "source": "https://www.freecodecamp.org/news/frontend-performance-optimization/",
+      "tags": [
+        "optimization",
+        "caching",
+        "parallel",
+        "lazy-loading"
+      ]
+    },
+    {
+      "question_id": "js_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Bạn cần implement real-time notifications cho app có 50,000 concurrent users. Approach nào phù hợp nhất?",
+      "options": {
+        "A": "Polling mỗi 1 giây: setInterval(() => fetch('/notifications'), 1000)",
+        "B": "Server-Sent Events (SSE) cho one-way stream, WebSocket cho bidirectional — với Redis Pub/Sub để scale horizontally",
+        "C": "Long polling là đủ cho mọi use case",
+        "D": "Dùng WebRTC"
+      },
+      "correct_answer": "B",
+      "explanation": "50k concurrent users → scale vấn đề. Comparison: Polling (1s): 50k req/s → server chết. Long polling: tốt hơn nhưng vẫn nhiều connections. SSE: browser support tốt, HTTP/2 multiplexing, auto-reconnect, dùng khi chỉ cần server→client push (notifications, live updates). WebSocket: bidirectional, tốt cho chat, gaming, collaborative editing. Scale: mỗi Node.js instance xử lý ~10k connections → dùng Redis Pub/Sub để sync messages giữa các instances. Load balancer cần sticky sessions hoặc Redis adapter.",
+      "source": "https://www.freecodecamp.org/news/server-sent-events-vs-websockets/",
+      "tags": [
+        "real-time",
+        "WebSocket",
+        "SSE",
+        "scale"
+      ]
+    },
+    {
+      "question_id": "js_l5_004",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Bundle size của React app là 3MB. User ở vùng nông thôn VN (3G) load trang mất 15 giây. Cách giảm xuống dưới 2 giây?",
+      "options": {
+        "A": "Nâng cấp hosting lên server mạnh hơn",
+        "B": "Code splitting, tree shaking, lazy loading images, CDN, HTTP/2, bỏ unused dependencies",
+        "C": "Chuyển sang Vanilla JS",
+        "D": "Giảm số lượng components"
+      },
+      "correct_answer": "B",
+      "explanation": "3MB bundle analysis (Chrome DevTools → Coverage tab): (1) Code splitting: React.lazy + Suspense cho routes, dynamic import cho heavy libraries. (2) Tree shaking: import {specific} from 'lib' thay vì import lib from 'lib'. (3) Replace heavy libs: moment.js (72KB) → dayjs (2KB), lodash → lodash-es + tree shaking. (4) Image optimization: WebP format, lazy loading (loading='lazy'), srcset cho responsive. (5) CDN: Cloudflare, jsDelivr cho static assets. (6) Gzip/Brotli compression trên server. (7) HTTP/2: multiplexing parallel asset loading. Target: < 170KB initial JS (Google guideline).",
+      "source": "https://www.freecodecamp.org/news/web-performance-optimization/",
+      "tags": [
+        "bundle-size",
+        "performance",
+        "code-splitting",
+        "CDN"
+      ]
+    },
+    {
+      "question_id": "js_l5_005",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "JavaScript app của bạn bị reported crash với lỗi 'Maximum call stack size exceeded'. Làm thế nào debug và fix?",
+      "options": {
+        "A": "Tăng RAM của server",
+        "B": "Tìm và fix infinite recursion, hoặc convert recursive algorithm sang iterative + explicit stack",
+        "C": "Dùng try/catch để bắt lỗi",
+        "D": "Reload trang để clear stack"
+      },
+      "correct_answer": "B",
+      "explanation": "Stack overflow: call stack đầy do đệ quy vô hạn hoặc đệ quy quá sâu. Debug: (1) Chrome DevTools → Call Stack panel → tìm function lặp lại. (2) console.trace() để xem call path. Fix: (1) Tìm điều kiện dừng đệ quy bị thiếu/sai. (2) Convert recursive → iterative với explicit stack (array). (3) Tail call optimization (chỉ strict mode, limited browser support). (4) Trampolining pattern cho deep recursion. Ví dụ thực: Tree traversal, JSON deep parse, event handler gọi lại chính nó.",
+      "source": "https://www.geeksforgeeks.org/maximum-call-stack-size-exceeded-error-in-javascript/",
+      "tags": [
+        "recursion",
+        "stack-overflow",
+        "debugging",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "js_l5_006",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Bạn phát hiện XSS vulnerability trong app. User có thể inject script qua comment field. Cách phòng chống toàn diện?",
+      "options": {
+        "A": "Chỉ cần dùng HTTPS là đủ",
+        "B": "Sanitize input (DOMPurify), CSP headers, escape output, HttpOnly cookies, không dùng innerHTML với user data",
+        "C": "Dùng alert() để detect XSS",
+        "D": "Disable JavaScript trong browser"
+      },
+      "correct_answer": "B",
+      "explanation": "XSS prevention layers: (1) Input sanitization: DOMPurify.sanitize(userInput) trước khi lưu/render. (2) Output escaping: React tự escape trong JSX ({userText}), nguy hiểm là dangerouslySetInnerHTML. (3) CSP (Content Security Policy) headers: script-src 'self' — block inline scripts và external scripts. (4) HttpOnly cookies: token không access được qua JS → mitigate XSS impact. (5) SameSite cookies: prevent CSRF. (6) Avoid: innerHTML, document.write, eval() với user data. OWASP XSS Prevention Cheat Sheet là tài liệu chuẩn.",
+      "source": "https://www.freecodecamp.org/news/xss-cross-site-scripting-explained/",
+      "tags": [
+        "XSS",
+        "security",
+        "OWASP",
+        "CSP"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Elasticsearch",
+  "skill_key": "elasticsearch",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.582995Z",
+  "source_references": [
+    "https://www.google.com/search?q=Elasticsearch+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "elasticsearch_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Elasticsearch, Index/Document/Shard có vai trò gì?",
+      "options": {
+        "A": "Index/Document/Shard là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Index/Document/Shard là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Index/Document/Shard đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Index/Document/Shard là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Index/Document/Shard trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Index/Document/Shard là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Index/Document/Shard giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Index/Document/Shard+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "index-document-shard"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Elasticsearch, Mappings có vai trò gì?",
+      "options": {
+        "A": "Mappings là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Mappings là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Mappings đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Mappings là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Mappings trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Mappings là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Mappings giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Mappings+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "mappings"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Elasticsearch, Analyzers có vai trò gì?",
+      "options": {
+        "A": "Analyzers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Analyzers là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Analyzers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Analyzers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Analyzers trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Analyzers là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Analyzers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Analyzers+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "analyzers"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Elasticsearch, Query DSL có vai trò gì?",
+      "options": {
+        "A": "Query DSL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Query DSL là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Query DSL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Query DSL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Query DSL trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Query DSL là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Query DSL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Query+DSL+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "query-dsl"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Elasticsearch, Aggregations có vai trò gì?",
+      "options": {
+        "A": "Aggregations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Aggregations là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Aggregations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Aggregations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Aggregations trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Aggregations là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Aggregations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Aggregations+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "aggregations"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Elasticsearch, Full-text search có vai trò gì?",
+      "options": {
+        "A": "Full-text search là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Full-text search là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Full-text search đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Full-text search là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Full-text search trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Full-text search là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Full-text search giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Full-text+search+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "full-text-search"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Elasticsearch, Kibana có vai trò gì?",
+      "options": {
+        "A": "Kibana là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Kibana là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Kibana đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Kibana là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Kibana trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Kibana là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Kibana giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Kibana+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "kibana"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Elasticsearch, ELK Stack có vai trò gì?",
+      "options": {
+        "A": "ELK Stack là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "ELK Stack là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "ELK Stack đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên ELK Stack là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "ELK Stack trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và ELK Stack là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ ELK Stack giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+ELK+Stack+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "elk-stack"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Elasticsearch, Cluster management có vai trò gì?",
+      "options": {
+        "A": "Cluster management là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Cluster management là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Cluster management đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Cluster management là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Cluster management trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Cluster management là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Cluster management giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Cluster+management+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "cluster-management"
+      ]
+    },
+    {
+      "question_id": "elasticsearch_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Elasticsearch, Performance tuning có vai trò gì?",
+      "options": {
+        "A": "Performance tuning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Performance tuning là core concept trong Elasticsearch — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Performance tuning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Performance tuning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Performance tuning trong Elasticsearch: Đây là một trong những concepts quan trọng nhất. Elasticsearch được sử dụng rộng rãi trong industry và Performance tuning là phần không thể thiếu. Khi làm việc với Elasticsearch trong production, hiểu rõ Performance tuning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Elasticsearch+Performance+tuning+tutorial",
+      "tags": [
+        "elasticsearch",
+        "database",
+        "performance-tuning"
+      ]
+    }
+  ]
+}

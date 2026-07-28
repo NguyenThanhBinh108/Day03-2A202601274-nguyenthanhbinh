@@ -1,0 +1,154 @@
+{
+  "skill": "Clean Code",
+  "skill_key": "clean_code",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.660235Z",
+  "checklist_items": [
+    {
+      "item_id": "clean_code_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Naming conventions",
+      "description": "Master Naming conventions trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Naming+conventions+tutorial",
+      "resource_title": "Clean Code — Naming conventions",
+      "quiz_ids": [
+        "clean_code_l1_001"
+      ],
+      "market_relevance": "Naming conventions là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Function design",
+      "description": "Master Function design trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Function+design+tutorial",
+      "resource_title": "Clean Code — Function design",
+      "quiz_ids": [
+        "clean_code_l2_002"
+      ],
+      "market_relevance": "Function design là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Comments",
+      "description": "Master Comments trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Comments+tutorial",
+      "resource_title": "Clean Code — Comments",
+      "quiz_ids": [
+        "clean_code_l3_003"
+      ],
+      "market_relevance": "Comments là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Error handling",
+      "description": "Master Error handling trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Error+handling+tutorial",
+      "resource_title": "Clean Code — Error handling",
+      "quiz_ids": [
+        "clean_code_l4_004"
+      ],
+      "market_relevance": "Error handling là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "SOLID principles",
+      "description": "Master SOLID principles trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+SOLID+principles+tutorial",
+      "resource_title": "Clean Code — SOLID principles",
+      "quiz_ids": [
+        "clean_code_l5_005"
+      ],
+      "market_relevance": "SOLID principles là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "DRY/KISS/YAGNI",
+      "description": "Master DRY/KISS/YAGNI trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+DRY/KISS/YAGNI+tutorial",
+      "resource_title": "Clean Code — DRY/KISS/YAGNI",
+      "quiz_ids": [
+        "clean_code_l5_006"
+      ],
+      "market_relevance": "DRY/KISS/YAGNI là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Code reviews",
+      "description": "Master Code reviews trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Code+reviews+tutorial",
+      "resource_title": "Clean Code — Code reviews",
+      "quiz_ids": [
+        "clean_code_l5_007"
+      ],
+      "market_relevance": "Code reviews là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Refactoring",
+      "description": "Master Refactoring trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Refactoring+tutorial",
+      "resource_title": "Clean Code — Refactoring",
+      "quiz_ids": [
+        "clean_code_l5_008"
+      ],
+      "market_relevance": "Refactoring là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Code smells",
+      "description": "Master Code smells trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Code+smells+tutorial",
+      "resource_title": "Clean Code — Code smells",
+      "quiz_ids": [
+        "clean_code_l5_009"
+      ],
+      "market_relevance": "Code smells là key skill trong Clean Code Fundamentals development"
+    },
+    {
+      "item_id": "clean_code_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Boy Scout Rule",
+      "description": "Master Boy Scout Rule trong Clean Code — essential cho Fundamentals developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Clean+Code+Boy+Scout+Rule+tutorial",
+      "resource_title": "Clean Code — Boy Scout Rule",
+      "quiz_ids": [
+        "clean_code_l5_010"
+      ],
+      "market_relevance": "Boy Scout Rule là key skill trong Clean Code Fundamentals development"
+    }
+  ]
+}

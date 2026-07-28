@@ -1,0 +1,218 @@
+{
+  "skill": "Prometheus",
+  "skill_key": "prometheus",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.625832Z",
+  "source_references": [
+    "https://www.google.com/search?q=Prometheus+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "prometheus_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Prometheus, Metrics types có vai trò gì?",
+      "options": {
+        "A": "Metrics types là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Metrics types là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Metrics types đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Metrics types là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Metrics types trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Metrics types là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Metrics types giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Metrics+types+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "metrics-types"
+      ]
+    },
+    {
+      "question_id": "prometheus_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Prometheus, PromQL có vai trò gì?",
+      "options": {
+        "A": "PromQL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "PromQL là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "PromQL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên PromQL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "PromQL trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và PromQL là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ PromQL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+PromQL+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "promql"
+      ]
+    },
+    {
+      "question_id": "prometheus_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Prometheus, Scrape configuration có vai trò gì?",
+      "options": {
+        "A": "Scrape configuration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Scrape configuration là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Scrape configuration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Scrape configuration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Scrape configuration trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Scrape configuration là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Scrape configuration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Scrape+configuration+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "scrape-configuration"
+      ]
+    },
+    {
+      "question_id": "prometheus_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Prometheus, Alertmanager có vai trò gì?",
+      "options": {
+        "A": "Alertmanager là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Alertmanager là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Alertmanager đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Alertmanager là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Alertmanager trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Alertmanager là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Alertmanager giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Alertmanager+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "alertmanager"
+      ]
+    },
+    {
+      "question_id": "prometheus_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Prometheus, Recording rules có vai trò gì?",
+      "options": {
+        "A": "Recording rules là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Recording rules là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Recording rules đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Recording rules là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Recording rules trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Recording rules là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Recording rules giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Recording+rules+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "recording-rules"
+      ]
+    },
+    {
+      "question_id": "prometheus_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Prometheus, Service discovery có vai trò gì?",
+      "options": {
+        "A": "Service discovery là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Service discovery là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Service discovery đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Service discovery là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Service discovery trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Service discovery là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Service discovery giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Service+discovery+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "service-discovery"
+      ]
+    },
+    {
+      "question_id": "prometheus_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Prometheus, Exporters có vai trò gì?",
+      "options": {
+        "A": "Exporters là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Exporters là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Exporters đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Exporters là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Exporters trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Exporters là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Exporters giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Exporters+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "exporters"
+      ]
+    },
+    {
+      "question_id": "prometheus_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Prometheus, Grafana integration có vai trò gì?",
+      "options": {
+        "A": "Grafana integration là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Grafana integration là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Grafana integration đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Grafana integration là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Grafana integration trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Grafana integration là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Grafana integration giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Grafana+integration+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "grafana-integration"
+      ]
+    },
+    {
+      "question_id": "prometheus_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Prometheus, Retention có vai trò gì?",
+      "options": {
+        "A": "Retention là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Retention là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Retention đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Retention là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Retention trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và Retention là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ Retention giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+Retention+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "retention"
+      ]
+    },
+    {
+      "question_id": "prometheus_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Prometheus, High availability có vai trò gì?",
+      "options": {
+        "A": "High availability là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "High availability là core concept trong Prometheus — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "High availability đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên High availability là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "High availability trong Prometheus: Đây là một trong những concepts quan trọng nhất. Prometheus được sử dụng rộng rãi trong industry và High availability là phần không thể thiếu. Khi làm việc với Prometheus trong production, hiểu rõ High availability giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Prometheus+High+availability+tutorial",
+      "tags": [
+        "prometheus",
+        "devops",
+        "high-availability"
+      ]
+    }
+  ]
+}

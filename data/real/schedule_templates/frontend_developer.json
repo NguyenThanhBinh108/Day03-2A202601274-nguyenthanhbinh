@@ -1,0 +1,182 @@
+{
+  "role_id": "frontend_developer",
+  "role_name": "Frontend Developer (React.js / TypeScript)",
+  "market_overview": "Frontend Developer là vị trí có nhu cầu cao ổn định tại Việt Nam với 321+ JD từ ITviec/TopDev năm 2025. React.js chiếm 72% JD, TypeScript đang nổi lên mạnh mẽ (58%). Xu hướng 2025: Next.js và Server Components, Web Performance (Core Web Vitals là tiêu chí ranking Google), và micro-frontend cho các hệ thống lớn. Mức lương hấp dẫn và cơ hội remote/freelance rất cao vì kỹ năng có thể làm việc với khách hàng quốc tế.",
+  "salary_range_vnd": "12-35 triệu/tháng (Junior: 8-15tr | Middle: 15-25tr | Senior: 25-35tr+)",
+  "milestones": [
+    {
+      "milestone_id": "m1_frontend_foundation",
+      "title": "Nền Tảng HTML/CSS/JavaScript Chuyên Sâu",
+      "duration_weeks": 6,
+      "core_skills": [
+        "HTML5 Semantic: Article, Section, Nav, Aside, Figure — quan trọng cho SEO và Accessibility (a11y)",
+        "CSS3 nâng cao: Flexbox, CSS Grid, Custom Properties (CSS Variables), BEM naming convention, Responsive Design với Media Queries",
+        "JavaScript ES6+ thực chiến: Destructuring, Spread/Rest, Modules (import/export), Promise chain, async/await, Array methods (map/filter/reduce)",
+        "JavaScript DOM API: Event delegation, Event bubbling, querySelectorAll, custom events",
+        "Browser DevTools thành thạo: Network tab (xem API call), Performance tab, Lighthouse (measure Core Web Vitals)",
+        "Web Performance cơ bản: Critical Rendering Path, Lazy Loading images, Code Splitting concepts"
+      ],
+      "toolchains": [
+        "VS Code + ESLint + Prettier",
+        "Chrome DevTools",
+        "Git + GitHub",
+        "Figma (đọc design)",
+        "Lighthouse (Performance audit)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Clone giao diện Shopee/Tiki hoàn chỉnh bằng HTML/CSS/JS thuần",
+          "business_context": "Mục tiêu không phải là copy pixel-perfect mà là hiểu tại sao Shopee thiết kế như vậy: Layout grid sản phẩm, sticky header, sidebar filter, lazy load hình ảnh, và responsive trên mobile.",
+          "tech_stack_used": ["HTML5", "CSS3 Grid/Flexbox", "Vanilla JavaScript", "Fetch API"],
+          "key_challenges": [
+            "Implement Infinite Scroll: Load thêm sản phẩm khi user scroll xuống cuối trang dùng Intersection Observer API (thay thế scroll event handler tốn performance).",
+            "Responsive Design cho 3 breakpoint: Mobile (< 768px), Tablet (768-1024px), Desktop (> 1024px) mà không dùng framework.",
+            "Đo Lighthouse score và tối ưu đến đạt Performance > 90, Accessibility > 95."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích Event Bubbling và Event Delegation. Tại sao Event Delegation quan trọng về mặt performance?",
+          "expected_answer_points": [
+            "Event Bubbling: Event lan từ element con lên các element cha trong DOM tree (target → document).",
+            "Event Delegation: Thay vì gắn event listener cho 1000 item, chỉ gắn 1 listener ở parent và kiểm tra e.target để biết element nào được click.",
+            "Lợi ích: Tiết kiệm memory (1 listener thay vì 1000), tự động hoạt động với dynamic elements được thêm vào sau."
+          ],
+          "difficulty": "Junior"
+        },
+        {
+          "question": "Sự khác nhau giữa null, undefined, và không khai báo biến trong JavaScript?",
+          "expected_answer_points": [
+            "undefined: Biến đã khai báo nhưng chưa gán giá trị, hoặc function không return, hoặc property không tồn tại.",
+            "null: Giá trị rỗng được gán có chủ ý — developer nói rõ 'biến này có giá trị nhưng là rỗng'.",
+            "Không khai báo: Truy cập biến chưa khai báo sẽ throw ReferenceError (strict mode) hoặc tạo global variable (non-strict — cực kỳ nguy hiểm)."
+          ],
+          "difficulty": "Junior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Dùng div cho tất cả mọi thứ (Div Soup)",
+          "why_its_bad": "Screen reader (công cụ cho người khiếm thị) không hiểu cấu trúc trang. Google bot không biết đâu là header, nav, main content. SEO bị ảnh hưởng nghiêm trọng. Code khó đọc và maintain.",
+          "better_approach": "Dùng semantic HTML: <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>. Dùng <button> cho interactive elements, <a> cho navigation. Thêm aria-label cho accessibility."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_frontend_react",
+      "title": "React.js & TypeScript Thực Chiến",
+      "duration_weeks": 10,
+      "core_skills": [
+        "React core: JSX, Component lifecycle (functional với Hooks), Props vs State, Virtual DOM và Reconciliation algorithm",
+        "React Hooks thành thạo: useState, useEffect (cleanup, dependencies), useCallback, useMemo (performance optimization), useRef, Custom Hooks",
+        "State Management: Context API (nhỏ), Zustand (trung bình), Redux Toolkit (lớn) — biết khi nào dùng cái nào",
+        "TypeScript với React: Interface vs Type, Generic components, Event typing, API response typing với Zod/Yup",
+        "React Router v6: Nested routes, Protected routes, URL params, useNavigate, useLocation",
+        "Data Fetching: React Query / SWR — caching, background refetch, optimistic updates, loading/error states"
+      ],
+      "toolchains": [
+        "React 18 + Vite",
+        "TypeScript 5.x",
+        "React Query (TanStack Query)",
+        "Zustand / Redux Toolkit",
+        "Tailwind CSS / shadcn/ui",
+        "React Testing Library + Vitest"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Dashboard quản lý công việc (Trello clone) với React + TypeScript",
+          "business_context": "Xây dựng Kanban board với Drag & Drop: tạo column, tạo card, di chuyển card giữa các column, assign member, set deadline. Đây là bài test thực tế của nhiều công ty product Việt Nam.",
+          "tech_stack_used": ["React 18", "TypeScript", "React Query", "Zustand", "dnd-kit (Drag & Drop)"],
+          "key_challenges": [
+            "Drag & Drop với Optimistic Update: Di chuyển card phải ngay lập tức update UI (không chờ API), sau đó nếu API fail thì rollback về vị trí cũ.",
+            "Performance với nhiều items: Dùng React.memo, useMemo để tránh re-render toàn bộ board khi chỉ 1 card thay đổi. Virtualization cho column có nhiều items.",
+            "Type-safe toàn bộ: Định nghĩa Zod schema cho API response, tự động infer TypeScript types — không dùng 'any'."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích tại sao React không nên mutate state trực tiếp? Cơ chế re-render hoạt động thế nào?",
+          "expected_answer_points": [
+            "React so sánh state cũ và mới bằng Object.is (shallow comparison). Nếu mutate trực tiếp: reference không đổi → React nghĩ state chưa thay đổi → không re-render.",
+            "Luôn tạo object/array mới: setState([...oldArray, newItem]) thay vì oldArray.push(newItem).",
+            "React batches multiple setState calls trong 1 event handler thành 1 re-render duy nhất (React 18 auto-batching)."
+          ],
+          "difficulty": "Junior-Middle"
+        },
+        {
+          "question": "useCallback và useMemo khác nhau thế nào? Khi nào thực sự cần dùng chúng?",
+          "expected_answer_points": [
+            "useMemo: Cache kết quả của một tính toán nặng. useMemo(() => computeHeavyValue(data), [data]).",
+            "useCallback: Cache một function reference để tránh re-render child component nhận function đó qua props.",
+            "Quan trọng: Đừng over-optimize. Chỉ dùng khi đo được performance problem thực sự bằng React DevTools Profiler."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "useEffect spaghetti — nhét mọi thứ vào 1 useEffect",
+          "why_its_bad": "1 useEffect với 10 dependencies và 50 dòng code bên trong. Impossible để predict khi nào nó chạy, side effects không được cleanup, memory leak với event listeners và timers.",
+          "better_approach": "Tách thành nhiều useEffect nhỏ, mỗi effect 1 mục đích. Luôn có cleanup function (return () => cleanup()). Nếu logic phức tạp, extract ra Custom Hook."
+        },
+        {
+          "pattern_name": "Prop Drilling quá nhiều tầng",
+          "why_its_bad": "Truyền props qua 5-6 tầng component chỉ để tầng cuối dùng. Mỗi khi props thay đổi, tất cả component trung gian đều re-render dù chúng không dùng props đó.",
+          "better_approach": "Context API cho shared state trong một feature. Zustand/Redux cho global state. Composition pattern (children props) để tránh truyền props không cần thiết."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m3_frontend_nextjs_production",
+      "title": "Next.js, Performance & Production",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Next.js 14 App Router: Server Components vs Client Components, Server Actions, Streaming, Suspense boundaries",
+        "Rendering strategies: SSR (Server Side Rendering), SSG (Static Site Generation), ISR (Incremental Static Regeneration) — khi nào dùng cái nào",
+        "Web Performance: Core Web Vitals (LCP, INP, CLS), Bundle analysis, Tree shaking, Image optimization, Font optimization",
+        "SEO kỹ thuật: metadata API, Open Graph, Sitemap, Robots.txt, Structured Data (JSON-LD)",
+        "Testing: Unit test (Vitest + React Testing Library), Integration test, E2E test (Playwright)",
+        "CI/CD Frontend: GitHub Actions, Vercel/Cloudflare Pages deployment, Preview deployments"
+      ],
+      "toolchains": [
+        "Next.js 14",
+        "Vercel / Cloudflare Pages",
+        "Playwright (E2E)",
+        "Bundle Analyzer",
+        "Sentry (Error Monitoring)"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Xây dựng blog/portfolio cá nhân với Next.js tối ưu SEO và performance",
+          "business_context": "Tạo một blog kỹ thuật dùng MDX, tối ưu cho Google Search ranking. Đây cũng là project bạn dùng để showcase với nhà tuyển dụng.",
+          "tech_stack_used": ["Next.js 14 App Router", "MDX", "Tailwind CSS", "Vercel"],
+          "key_challenges": [
+            "Đạt Lighthouse Score 100/100 về Performance, SEO, Accessibility — đây là tiêu chuẩn bạn nên tự set và đạt được.",
+            "Implement Dark Mode đúng cách: Không flash white khi load trang, persist preference vào localStorage, respect prefers-color-scheme.",
+            "Optimize fonts: Dùng next/font để self-host Google Fonts, tránh layout shift (CLS) khi font load."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích sự khác biệt giữa Server Component và Client Component trong Next.js App Router?",
+          "expected_answer_points": [
+            "Server Component: Render trên server, không có JavaScript ở client, có thể async/await trực tiếp, không dùng được useState/useEffect/browser APIs. Tốt cho: fetch data, truy cập DB, giữ bí mật API keys.",
+            "Client Component: Render ở client (và hydrate từ server), có thể dùng hooks và browser APIs. Thêm 'use client' directive.",
+            "Best practice: Đẩy Client Component xuống cây component càng thấp càng tốt để giảm JavaScript bundle."
+          ],
+          "difficulty": "Middle"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Đánh dấu 'use client' cho toàn bộ app",
+          "why_its_bad": "Mất hoàn toàn lợi ích của Server Components: tất cả code gửi xuống client, bundle size tăng, không cache được ở server, SEO kém hơn.",
+          "better_approach": "Default là Server Component. Chỉ thêm 'use client' khi thực sự cần interactivity (event handlers, hooks). Tách component: server component bao ngoài, client component nhỏ bên trong."
+        }
+      ]
+    }
+  ]
+}

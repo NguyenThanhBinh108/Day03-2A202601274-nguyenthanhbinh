@@ -1,0 +1,195 @@
+{
+  "skill": "Kubernetes",
+  "skill_key": "kubernetes",
+  "total_questions": 8,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "source_references": [
+    "https://kubernetes.io/docs/",
+    "https://www.geeksforgeeks.org/kubernetes-tutorial/"
+  ],
+  "questions": [
+    {
+      "question_id": "k8s_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Kubernetes là gì và tại sao cần thiết?",
+      "options": {
+        "A": "Kubernetes = Docker",
+        "B": "K8s: container orchestration platform — tự động deploy, scale, self-heal, load balance containers",
+        "C": "K8s chỉ cho Google Cloud",
+        "D": "K8s thay thế Docker"
+      },
+      "correct_answer": "B",
+      "explanation": "Kubernetes: orchestrate containers at scale. Problems it solves: (1) Deployment: rolling updates, rollbacks. (2) Scaling: horizontal pod autoscaling. (3) Self-healing: restart failed containers, reschedule on node failure. (4) Service discovery & load balancing. (5) Config & secrets management. (6) Storage orchestration. K8s objects: Pod, Deployment, Service, ConfigMap, Secret, PersistentVolume, Ingress, HorizontalPodAutoscaler. kubectl: CLI tool.",
+      "source": "https://www.geeksforgeeks.org/introduction-to-kubernetes/",
+      "tags": [
+        "Kubernetes",
+        "orchestration",
+        "auto-scaling",
+        "self-healing",
+        "kubectl"
+      ]
+    },
+    {
+      "question_id": "k8s_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Pod, Deployment, Service — mối quan hệ?",
+      "options": {
+        "A": "Cả ba giống nhau",
+        "B": "Pod: smallest deployable unit (1+ containers). Deployment: manage Pod replicas (desired state). Service: stable network endpoint cho Pod set (load balancer)",
+        "C": "Service tạo ra Pods",
+        "D": "Deployment là 1 Pod"
+      },
+      "correct_answer": "B",
+      "explanation": "Pod: 1 hoặc nhiều containers share network (localhost) và storage. Ephemeral — có thể bị killed. Deployment: declare desired state (replicas: 3), K8s ensure actual = desired. Rolling update, rollback. ReplicaSet: Deployment manage. Service types: ClusterIP (internal), NodePort (external via node IP:port), LoadBalancer (cloud LB), ExternalName. Service selector: match Pod labels. Endpoints: list of Pod IPs behind Service.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-pods/",
+      "tags": [
+        "Pod",
+        "Deployment",
+        "Service",
+        "replicas",
+        "selector"
+      ]
+    },
+    {
+      "question_id": "k8s_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "ConfigMap và Secret trong Kubernetes?",
+      "options": {
+        "A": "ConfigMap và Secret giống nhau",
+        "B": "ConfigMap: non-sensitive config (env vars, config files). Secret: sensitive data (passwords, tokens) — base64 encoded, not encrypted by default",
+        "C": "ConfigMap chỉ cho environment variables",
+        "D": "Secret tự động encrypt"
+      },
+      "correct_answer": "B",
+      "explanation": "ConfigMap: kubectl create configmap app-config --from-literal=DB_HOST=postgres. Mount as env vars hoặc volume. Secret: kubectl create secret generic db-secret --from-literal=password=secret123 — base64 encoded (không phải encrypted!). Encrypt secrets at rest: EncryptionConfiguration. External Secrets Operator: sync từ AWS Secrets Manager/Vault vào K8s Secrets. envFrom: configMapRef/secretRef để inject tất cả keys. secretKeyRef: inject specific key.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-configmap/",
+      "tags": [
+        "ConfigMap",
+        "Secret",
+        "base64",
+        "External-Secrets",
+        "encryption"
+      ]
+    },
+    {
+      "question_id": "k8s_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Kubernetes resource requests và limits?",
+      "options": {
+        "A": "Không cần set requests/limits",
+        "B": "requests: minimum guaranteed resources (scheduling). limits: maximum allowed (enforce). Set để prevent noisy neighbor, enable proper scheduling",
+        "C": "Limits thay thế requests",
+        "D": "Chỉ cần limits"
+      },
+      "correct_answer": "B",
+      "explanation": "resources: requests: memory:'256Mi'; cpu:'250m'. limits: memory:'512Mi'; cpu:'500m'. Requests: dùng cho scheduling (scheduler tìm node có enough resources). Guaranteed QoS: requests == limits. Burstable: limits > requests. BestEffort: no requests/limits (evicted first). 250m = 0.25 CPU core. OOMKilled: container vượt memory limit → killed. CPU throttled: vượt CPU limit → throttled, không killed. LimitRange: default limits per namespace. ResourceQuota: total limits per namespace.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-resource-limits/",
+      "tags": [
+        "requests",
+        "limits",
+        "QoS",
+        "OOMKilled",
+        "scheduling"
+      ]
+    },
+    {
+      "question_id": "k8s_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Kubernetes Health checks — liveness, readiness, startup probes?",
+      "options": {
+        "A": "Chỉ cần liveness probe",
+        "B": "Liveness: nếu fail → restart container. Readiness: nếu fail → remove từ Service endpoints (no traffic). Startup: cho slow-starting apps, disable liveness/readiness until ready",
+        "C": "Probes chỉ cho HTTP endpoints",
+        "D": "Probes làm app chậm hơn"
+      },
+      "correct_answer": "B",
+      "explanation": "Liveness probe: là container còn alive không? Fail → restart. HTTP GET, TCP socket, exec command. readinessProbe: là container ready nhận traffic không? Fail → remove từ Service endpoints (no LB traffic). startupProbe: cho apps khởi động chậm (60s+) — disable liveness/readiness cho đến khi startup probe succeed. Config: initialDelaySeconds, periodSeconds, failureThreshold. Ví dụ: livenessProbe: httpGet: path: /health; port: 8080; initialDelaySeconds: 30; periodSeconds: 10.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-health-checks/",
+      "tags": [
+        "liveness",
+        "readiness",
+        "startup",
+        "health-check",
+        "probes"
+      ]
+    },
+    {
+      "question_id": "k8s_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Kubernetes Ingress và SSL termination?",
+      "options": {
+        "A": "NodePort là đủ cho production",
+        "B": "Ingress: L7 routing (host/path-based) → Service. Ingress Controller (Nginx/Traefik): implement Ingress rules. cert-manager: tự động SSL từ Let's Encrypt",
+        "C": "Ingress thay thế Service",
+        "D": "SSL chỉ cần ở code level"
+      },
+      "correct_answer": "B",
+      "explanation": "Ingress resource: rules - host: api.example.com → paths: /users → serviceName: user-service. Ingress Controller phải được deploy (Nginx Ingress, Traefik, Kong). cert-manager: CertificateRequest → Let's Encrypt ACME → TLS Secret → Ingress tls: field. Wildcard cert: *.example.com với DNS challenge. TLS termination tại Ingress: pod không cần HTTPS. Annotations: nginx.ingress.kubernetes.io/rewrite-target, rate limiting, CORS. MetalLB: LoadBalancer cho bare-metal clusters.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-ingress/",
+      "tags": [
+        "Ingress",
+        "SSL",
+        "cert-manager",
+        "Let's-Encrypt",
+        "Nginx-Ingress"
+      ]
+    },
+    {
+      "question_id": "k8s_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Pod ở trạng thái CrashLoopBackOff — debug thế nào?",
+      "options": {
+        "A": "Xóa và tạo lại Pod",
+        "B": "kubectl logs pod-name --previous, kubectl describe pod, check liveness probe, resource limits, config/secrets, image pull errors",
+        "C": "Restart cluster",
+        "D": "Tăng replica count"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug steps: (1) kubectl get pods: thấy CrashLoopBackOff. (2) kubectl logs pod-name (hoặc --previous cho last crash). (3) kubectl describe pod pod-name: Events section — image pull error? OOMKilled? Liveness probe failed? (4) kubectl exec -it pod-name -- /bin/sh: nếu pod còn running. (5) Common causes: app crash on startup (check logs), OOMKilled (increase memory limits), liveness probe failing before app ready (use startupProbe), missing env vars/secrets, wrong image tag, readOnly filesystem. kubectl events --namespace: tất cả events trong namespace.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-debugging/",
+      "tags": [
+        "CrashLoopBackOff",
+        "debugging",
+        "kubectl-logs",
+        "kubectl-describe",
+        "OOMKilled"
+      ]
+    },
+    {
+      "question_id": "k8s_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "HPA (Horizontal Pod Autoscaler) setup cho Spring Boot app?",
+      "options": {
+        "A": "Manual scaling là đủ",
+        "B": "HPA: scale pods dựa trên CPU/memory/custom metrics. Metrics Server cần thiết. Target CPU 70%. Kubernetes Event-driven Autoscaling (KEDA) cho advanced metrics",
+        "C": "Chỉ cần Cluster Autoscaler",
+        "D": "HPA chỉ cho stateless apps"
+      },
+      "correct_answer": "B",
+      "explanation": "Prerequisites: Metrics Server deployed (kubectl top pods). HPA: kubectl autoscale deployment api-deployment --cpu-percent=70 --min=2 --max=10. Manifest: spec: scaleTargetRef, minReplicas, maxReplicas, metrics: type:Resource, resource: name:cpu, target: averageUtilization:70. KEDA: scale to zero, custom metrics (Kafka lag, queue depth, HTTP requests). VPA (Vertical Pod Autoscaler): tự điều chỉnh requests/limits. Cluster Autoscaler: add/remove nodes khi Pods pending. Combination: HPA + Cluster Autoscaler = full autoscaling stack.",
+      "source": "https://www.geeksforgeeks.org/kubernetes-horizontal-pod-autoscaling/",
+      "tags": [
+        "HPA",
+        "autoscaling",
+        "Metrics-Server",
+        "KEDA",
+        "Cluster-Autoscaler"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "Nginx",
+  "skill_key": "nginx",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.621829Z",
+  "source_references": [
+    "https://www.google.com/search?q=Nginx+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "nginx_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Nginx, Virtual hosts có vai trò gì?",
+      "options": {
+        "A": "Virtual hosts là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Virtual hosts là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Virtual hosts đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Virtual hosts là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Virtual hosts trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Virtual hosts là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Virtual hosts giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Virtual+hosts+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "virtual-hosts"
+      ]
+    },
+    {
+      "question_id": "nginx_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Nginx, Reverse proxy có vai trò gì?",
+      "options": {
+        "A": "Reverse proxy là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Reverse proxy là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Reverse proxy đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Reverse proxy là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Reverse proxy trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Reverse proxy là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Reverse proxy giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Reverse+proxy+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "reverse-proxy"
+      ]
+    },
+    {
+      "question_id": "nginx_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Nginx, Load balancing có vai trò gì?",
+      "options": {
+        "A": "Load balancing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Load balancing là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Load balancing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Load balancing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Load balancing trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Load balancing là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Load balancing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Load+balancing+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "load-balancing"
+      ]
+    },
+    {
+      "question_id": "nginx_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Nginx, SSL/TLS termination có vai trò gì?",
+      "options": {
+        "A": "SSL/TLS termination là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SSL/TLS termination là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SSL/TLS termination đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SSL/TLS termination là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SSL/TLS termination trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và SSL/TLS termination là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ SSL/TLS termination giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+SSL/TLS+termination+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "ssl-tls-termination"
+      ]
+    },
+    {
+      "question_id": "nginx_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Nginx, Static file serving có vai trò gì?",
+      "options": {
+        "A": "Static file serving là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Static file serving là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Static file serving đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Static file serving là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Static file serving trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Static file serving là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Static file serving giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Static+file+serving+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "static-file-serving"
+      ]
+    },
+    {
+      "question_id": "nginx_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Nginx, Caching có vai trò gì?",
+      "options": {
+        "A": "Caching là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Caching là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Caching đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Caching là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Caching trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Caching là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Caching giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Caching+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "caching"
+      ]
+    },
+    {
+      "question_id": "nginx_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Nginx, Rate limiting có vai trò gì?",
+      "options": {
+        "A": "Rate limiting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Rate limiting là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Rate limiting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Rate limiting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Rate limiting trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Rate limiting là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Rate limiting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Rate+limiting+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "rate-limiting"
+      ]
+    },
+    {
+      "question_id": "nginx_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Nginx, HTTP/2 có vai trò gì?",
+      "options": {
+        "A": "HTTP/2 là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "HTTP/2 là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "HTTP/2 đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên HTTP/2 là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "HTTP/2 trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và HTTP/2 là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ HTTP/2 giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+HTTP/2+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "http-2"
+      ]
+    },
+    {
+      "question_id": "nginx_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Nginx, Security headers có vai trò gì?",
+      "options": {
+        "A": "Security headers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security headers là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security headers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security headers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security headers trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Security headers là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Security headers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Security+headers+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "security-headers"
+      ]
+    },
+    {
+      "question_id": "nginx_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Nginx, Nginx Plus có vai trò gì?",
+      "options": {
+        "A": "Nginx Plus là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Nginx Plus là core concept trong Nginx — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Nginx Plus đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Nginx Plus là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Nginx Plus trong Nginx: Đây là một trong những concepts quan trọng nhất. Nginx được sử dụng rộng rãi trong industry và Nginx Plus là phần không thể thiếu. Khi làm việc với Nginx trong production, hiểu rõ Nginx Plus giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Nginx+Nginx+Plus+tutorial",
+      "tags": [
+        "nginx",
+        "devops",
+        "nginx-plus"
+      ]
+    }
+  ]
+}

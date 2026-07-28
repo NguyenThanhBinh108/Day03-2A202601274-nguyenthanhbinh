@@ -1,0 +1,218 @@
+{
+  "skill": "Clean Code",
+  "skill_key": "clean_code",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.658220Z",
+  "source_references": [
+    "https://www.google.com/search?q=Clean+Code+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "clean_code_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Clean Code, Naming conventions có vai trò gì?",
+      "options": {
+        "A": "Naming conventions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Naming conventions là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Naming conventions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Naming conventions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Naming conventions trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Naming conventions là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Naming conventions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Naming+conventions+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "naming-conventions"
+      ]
+    },
+    {
+      "question_id": "clean_code_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Clean Code, Function design có vai trò gì?",
+      "options": {
+        "A": "Function design là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Function design là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Function design đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Function design là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Function design trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Function design là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Function design giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Function+design+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "function-design"
+      ]
+    },
+    {
+      "question_id": "clean_code_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Clean Code, Comments có vai trò gì?",
+      "options": {
+        "A": "Comments là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Comments là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Comments đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Comments là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Comments trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Comments là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Comments giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Comments+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "comments"
+      ]
+    },
+    {
+      "question_id": "clean_code_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Clean Code, Error handling có vai trò gì?",
+      "options": {
+        "A": "Error handling là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Error handling là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Error handling đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Error handling là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Error handling trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Error handling là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Error handling giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Error+handling+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "error-handling"
+      ]
+    },
+    {
+      "question_id": "clean_code_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Clean Code, SOLID principles có vai trò gì?",
+      "options": {
+        "A": "SOLID principles là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SOLID principles là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SOLID principles đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SOLID principles là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SOLID principles trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và SOLID principles là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ SOLID principles giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+SOLID+principles+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "solid-principles"
+      ]
+    },
+    {
+      "question_id": "clean_code_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Clean Code, DRY/KISS/YAGNI có vai trò gì?",
+      "options": {
+        "A": "DRY/KISS/YAGNI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DRY/KISS/YAGNI là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DRY/KISS/YAGNI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DRY/KISS/YAGNI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DRY/KISS/YAGNI trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và DRY/KISS/YAGNI là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ DRY/KISS/YAGNI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+DRY/KISS/YAGNI+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "dry-kiss-yagni"
+      ]
+    },
+    {
+      "question_id": "clean_code_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Clean Code, Code reviews có vai trò gì?",
+      "options": {
+        "A": "Code reviews là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Code reviews là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Code reviews đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Code reviews là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Code reviews trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Code reviews là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Code reviews giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Code+reviews+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "code-reviews"
+      ]
+    },
+    {
+      "question_id": "clean_code_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Clean Code, Refactoring có vai trò gì?",
+      "options": {
+        "A": "Refactoring là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Refactoring là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Refactoring đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Refactoring là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Refactoring trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Refactoring là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Refactoring giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Refactoring+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "refactoring"
+      ]
+    },
+    {
+      "question_id": "clean_code_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Clean Code, Code smells có vai trò gì?",
+      "options": {
+        "A": "Code smells là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Code smells là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Code smells đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Code smells là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Code smells trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Code smells là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Code smells giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Code+smells+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "code-smells"
+      ]
+    },
+    {
+      "question_id": "clean_code_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Clean Code, Boy Scout Rule có vai trò gì?",
+      "options": {
+        "A": "Boy Scout Rule là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Boy Scout Rule là core concept trong Clean Code — cần master để build production-grade Fundamentals solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Boy Scout Rule đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Boy Scout Rule là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Boy Scout Rule trong Clean Code: Đây là một trong những concepts quan trọng nhất. Clean Code được sử dụng rộng rãi trong industry và Boy Scout Rule là phần không thể thiếu. Khi làm việc với Clean Code trong production, hiểu rõ Boy Scout Rule giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Clean+Code+Boy+Scout+Rule+tutorial",
+      "tags": [
+        "clean_code",
+        "fundamentals",
+        "boy-scout-rule"
+      ]
+    }
+  ]
+}

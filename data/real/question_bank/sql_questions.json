@@ -1,0 +1,579 @@
+{
+  "skill": "SQL",
+  "skill_key": "sql",
+  "total_questions": 26,
+  "levels": {
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 2
+  },
+  "generated_at": "2026-06-12T01:24:07.193001",
+  "source_references": [
+    "https://www.w3schools.com/sql/",
+    "https://www.geeksforgeeks.org/sql-tutorial/",
+    "https://www.postgresql.org/docs/"
+  ],
+  "questions": [
+    {
+      "question_id": "sql_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "SELECT, WHERE, ORDER BY, LIMIT dùng thế nào?",
+      "options": {
+        "A": "Chỉ SELECT và WHERE là đủ",
+        "B": "SELECT columns FROM table WHERE condition ORDER BY col [ASC/DESC] LIMIT n — cú pháp cơ bản nhất",
+        "C": "ORDER BY phải đứng trước WHERE",
+        "D": "LIMIT không tồn tại trong SQL"
+      },
+      "correct_answer": "B",
+      "explanation": "SELECT name, age FROM users WHERE age > 18 ORDER BY age DESC LIMIT 10. Thứ tự clauses: SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY → LIMIT. Thứ tự execution: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT. * là wildcard cho tất cả columns (tránh trong production — explicit columns tốt hơn). OFFSET: LIMIT 10 OFFSET 20 (pagination trang 3 với 10 items/trang).",
+      "source": "https://www.w3schools.com/sql/sql_select.asp",
+      "tags": [
+        "SELECT",
+        "WHERE",
+        "ORDER-BY",
+        "LIMIT"
+      ]
+    },
+    {
+      "question_id": "sql_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Các loại JOIN trong SQL — khi nào dùng loại nào?",
+      "options": {
+        "A": "Chỉ có INNER JOIN",
+        "B": "INNER JOIN (matching rows), LEFT JOIN (all left + matching right), RIGHT JOIN, FULL OUTER JOIN (all rows), CROSS JOIN (cartesian product)",
+        "C": "JOIN và INNER JOIN là khác nhau",
+        "D": "LEFT JOIN và RIGHT JOIN giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "INNER JOIN: chỉ rows có match ở cả hai tables. LEFT JOIN (LEFT OUTER): tất cả rows từ left table, NULL cho right nếu không match. RIGHT JOIN: ngược lại. FULL OUTER JOIN (không có trong MySQL, dùng UNION). CROSS JOIN: mỗi row left × mỗi row right. Phổ biến nhất: INNER và LEFT. Ví dụ: users LEFT JOIN orders ON users.id = orders.user_id → thấy cả users chưa có orders.",
+      "source": "https://www.w3schools.com/sql/sql_join.asp",
+      "tags": [
+        "JOIN",
+        "INNER",
+        "LEFT",
+        "RIGHT",
+        "OUTER"
+      ]
+    },
+    {
+      "question_id": "sql_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "GROUP BY và HAVING dùng thế nào? Tại sao HAVING thay vì WHERE?",
+      "options": {
+        "A": "HAVING và WHERE giống nhau",
+        "B": "GROUP BY nhóm rows theo column, aggregate functions (COUNT/SUM/AVG). HAVING filter AFTER grouping; WHERE filter BEFORE grouping",
+        "C": "GROUP BY chỉ dùng với COUNT",
+        "D": "HAVING không tồn tại trong MySQL"
+      },
+      "correct_answer": "B",
+      "explanation": "SELECT department, COUNT(*), AVG(salary) FROM employees GROUP BY department HAVING COUNT(*) > 5 ORDER BY AVG(salary) DESC. WHERE: filter individual rows trước khi group. HAVING: filter groups sau khi aggregate. Không thể dùng WHERE với aggregate functions (vì chưa có kết quả aggregate). HAVING có thể dùng không cần GROUP BY (filter single group = toàn table).",
+      "source": "https://www.w3schools.com/sql/sql_groupby.asp",
+      "tags": [
+        "GROUP-BY",
+        "HAVING",
+        "aggregate",
+        "WHERE"
+      ]
+    },
+    {
+      "question_id": "sql_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "INSERT, UPDATE, DELETE — cú pháp và lỗi phổ biến?",
+      "options": {
+        "A": "Cả ba đều giống nhau",
+        "B": "INSERT INTO tbl (cols) VALUES (...); UPDATE tbl SET col=val WHERE cond; DELETE FROM tbl WHERE cond — LUÔN có WHERE trong UPDATE/DELETE",
+        "C": "UPDATE không cần WHERE",
+        "D": "DELETE và TRUNCATE giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "INSERT: INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com') hoặc INSERT INTO ... SELECT ... FROM .... UPDATE: UPDATE users SET name='Bob', email='bob@example.com' WHERE id=1. DELETE: DELETE FROM users WHERE id=1. DANGER: UPDATE/DELETE không có WHERE → ảnh hưởng TẤT CẢ rows. TRUNCATE: xóa tất cả rows nhanh hơn DELETE (không log mỗi row), không thể WHERE. DROP: xóa cả bảng. Luôn BEGIN TRANSACTION trước UPDATE/DELETE quan trọng.",
+      "source": "https://www.w3schools.com/sql/sql_insert.asp",
+      "tags": [
+        "INSERT",
+        "UPDATE",
+        "DELETE",
+        "DML"
+      ]
+    },
+    {
+      "question_id": "sql_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "SQL Indexes dùng để làm gì và trade-offs là gì?",
+      "options": {
+        "A": "Index chỉ dùng cho PRIMARY KEY",
+        "B": "Index tăng tốc READ queries (lookup, sort, join) nhưng làm chậm WRITE (insert/update/delete) và tốn disk space",
+        "C": "Thêm càng nhiều index càng tốt",
+        "D": "Index không ảnh hưởng performance"
+      },
+      "correct_answer": "B",
+      "explanation": "Index = B-tree structure (thường) cho phép database tìm rows mà không cần scan toàn bảng. Full table scan O(n) → index lookup O(log n). CREATE INDEX idx_name ON users(email). Composite index: (last_name, first_name) — leftmost prefix rule. Trade-offs: mỗi index = thêm disk space, thêm overhead cho INSERT/UPDATE/DELETE (phải update index). Selective columns nên index: WHERE, JOIN ON, ORDER BY. Không nên: boolean columns, columns ít unique values. EXPLAIN để xem query plan.",
+      "source": "https://www.w3schools.com/sql/sql_create_index.asp",
+      "tags": [
+        "index",
+        "performance",
+        "B-tree",
+        "trade-offs"
+      ]
+    },
+    {
+      "question_id": "sql_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "NULL trong SQL — tại sao đặc biệt và cách xử lý đúng?",
+      "options": {
+        "A": "NULL = 0 hoặc empty string",
+        "B": "NULL = unknown/missing value; không thể compare bằng = hay !=; phải dùng IS NULL / IS NOT NULL; NULL trong arithmetic = NULL",
+        "C": "NULL và 0 giống nhau trong aggregate",
+        "D": "NULL được ignore trong mọi operation"
+      },
+      "correct_answer": "B",
+      "explanation": "NULL = unknown, không phải giá trị. NULL = NULL → không phải TRUE, mà là NULL! Phải dùng IS NULL. SQL Three-valued logic: TRUE, FALSE, NULL. WHERE col != 'value' → không include rows có col IS NULL. COALESCE(col, 'default'): trả về giá trị đầu tiên không NULL. NULLIF(a, b): return NULL nếu a=b. Aggregate functions (COUNT, SUM, AVG): ignore NULLs ngoại trừ COUNT(*). COUNT(col) ≠ COUNT(*) khi col có NULLs.",
+      "source": "https://www.w3schools.com/sql/sql_null_values.asp",
+      "tags": [
+        "NULL",
+        "three-valued-logic",
+        "IS-NULL",
+        "COALESCE"
+      ]
+    },
+    {
+      "question_id": "sql_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Subquery và JOIN — khi nào dùng cái nào?",
+      "options": {
+        "A": "Subquery luôn tốt hơn JOIN",
+        "B": "JOIN thường hiệu quả hơn (optimizer tốt hơn); Subquery (correlated) đôi khi chậm hơn; EXISTS thường nhanh hơn IN với large datasets",
+        "C": "Chỉ có thể dùng một trong hai",
+        "D": "Subquery và JOIN cho kết quả khác nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "Subquery types: (1) Scalar: return 1 value — SELECT name, (SELECT MAX(score) FROM exams WHERE user_id=u.id) FROM users u. (2) Inline view (derived table): SELECT * FROM (SELECT ...) AS sub. (3) Correlated: reference outer query — chạy 1 lần cho mỗi row outer. EXISTS vs IN: SELECT * FROM users WHERE EXISTS (SELECT 1 FROM orders WHERE orders.user_id = users.id) — EXISTS thường nhanh hơn IN khi subquery trả về nhiều rows (short-circuit evaluation).",
+      "source": "https://www.w3schools.com/sql/sql_subqueries.asp",
+      "tags": [
+        "subquery",
+        "JOIN",
+        "EXISTS",
+        "IN",
+        "correlated"
+      ]
+    },
+    {
+      "question_id": "sql_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Window Functions trong SQL — frame của chúng là gì?",
+      "options": {
+        "A": "Window functions chỉ có trong PostgreSQL",
+        "B": "Window functions tính toán trên một 'window' (tập rows liên quan) mà không collapse rows như GROUP BY — ROW_NUMBER, RANK, LAG, LEAD, SUM OVER",
+        "C": "Window = chỉ toàn bộ table",
+        "D": "Window functions thay thế GROUP BY"
+      },
+      "correct_answer": "B",
+      "explanation": "Cú pháp: function() OVER (PARTITION BY col ORDER BY col2 ROWS BETWEEN ...). ROW_NUMBER(): số thứ tự unique mỗi row. RANK(): như ROW_NUMBER nhưng ties có cùng rank, next rank skip. DENSE_RANK(): ties cùng rank, không skip. LAG(col, n)/LEAD(col, n): giá trị n rows trước/sau. SUM/AVG OVER(): running total/moving average. Ứng dụng: top N per group, compare với previous/next record, running totals. PostgreSQL, SQL Server, MySQL 8+, SQLite 3.25+ support.",
+      "source": "https://www.geeksforgeeks.org/window-functions-in-sql/",
+      "tags": [
+        "window-functions",
+        "ROW_NUMBER",
+        "RANK",
+        "LAG",
+        "PARTITION-BY"
+      ]
+    },
+    {
+      "question_id": "sql_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "CTE (Common Table Expression) và khi nào dùng?",
+      "options": {
+        "A": "CTE chỉ là alias cho subquery",
+        "B": "CTE định nghĩa named temporary result set bằng WITH clause — dễ đọc, reusable trong query, hỗ trợ recursive queries",
+        "C": "CTE nhanh hơn subquery trong mọi trường hợp",
+        "D": "CTE persist data vào disk"
+      },
+      "correct_answer": "B",
+      "explanation": "WITH cte_name AS (SELECT ...) SELECT * FROM cte_name. Lợi ích: (1) Readable — thay thế deeply nested subqueries. (2) Reusable — dùng cùng CTE nhiều lần trong query. (3) Recursive CTE: tính hierarchy (org chart, bill of materials). Recursive: WITH RECURSIVE cte AS (base_case UNION ALL recursive_case). MySQL, PostgreSQL, SQL Server, SQLite hỗ trợ. Multiple CTEs: WITH cte1 AS (...), cte2 AS (...) SELECT ... Một số DB materialized CTEs (tính 1 lần), một số không (inline như subquery).",
+      "source": "https://www.geeksforgeeks.org/cte-in-sql/",
+      "tags": [
+        "CTE",
+        "WITH",
+        "recursive",
+        "readability"
+      ]
+    },
+    {
+      "question_id": "sql_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "ACID properties trong database transaction là gì?",
+      "options": {
+        "A": "ACID chỉ áp dụng cho NoSQL",
+        "B": "Atomicity (all or nothing), Consistency (valid state), Isolation (concurrent transactions), Durability (committed data survives crash)",
+        "C": "ACID chỉ quan trọng cho financial apps",
+        "D": "NoSQL ACID tốt hơn SQL"
+      },
+      "correct_answer": "B",
+      "explanation": "Atomicity: transfer tiền — debit A và credit B phải là 1 unit; nếu 1 fail → rollback cả hai. Consistency: foreign key constraints, check constraints, triggers đảm bảo data luôn valid. Isolation: concurrent transactions không ảnh hưởng nhau. Isolation levels: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE (cao nhất). Durability: commit → persist dù server crash (WAL logging). Isolation levels vs anomalies: dirty read, non-repeatable read, phantom read.",
+      "source": "https://www.geeksforgeeks.org/acid-properties-in-dbms/",
+      "tags": [
+        "ACID",
+        "transaction",
+        "isolation",
+        "atomicity"
+      ]
+    },
+    {
+      "question_id": "sql_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "Database Normalization — 1NF, 2NF, 3NF là gì và tại sao quan trọng?",
+      "options": {
+        "A": "Normalization chỉ cần cho exam, không thực tế",
+        "B": "Normalize giảm data redundancy và anomalies. 1NF: atomic values, no repeating groups. 2NF: no partial dependency. 3NF: no transitive dependency",
+        "C": "Càng nhiều normalization càng tốt",
+        "D": "NoSQL không cần normalization"
+      },
+      "correct_answer": "B",
+      "explanation": "1NF: mỗi column chứa atomic values (không phải list), không có duplicate columns. 2NF: 1NF + mọi non-key column phụ thuộc vào toàn bộ primary key (không partial). 3NF: 2NF + không có transitive dependencies (A→B→C: C chỉ phụ thuộc B, không phải A trực tiếp). Ví dụ: order_items(order_id, product_id, product_name, price) — product_name phụ thuộc product_id (partial) → vi phạm 2NF → tách bảng products. Denormalization: đôi khi intentional để performance — analytical queries, OLAP. BCNF (Boyce-Codd NF): 3.5NF.",
+      "source": "https://www.geeksforgeeks.org/normal-forms-in-dbms/",
+      "tags": [
+        "normalization",
+        "1NF",
+        "2NF",
+        "3NF",
+        "database-design"
+      ]
+    },
+    {
+      "question_id": "sql_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "EXPLAIN / EXPLAIN ANALYZE dùng để làm gì trong database optimization?",
+      "options": {
+        "A": "EXPLAIN hiển thị SQL code sau khi optimize",
+        "B": "EXPLAIN hiển thị query execution plan — cách database tìm data, indexes được dùng, estimated/actual costs — giúp identify slow queries",
+        "C": "Chỉ dùng cho DBA, developer không cần",
+        "D": "EXPLAIN thay đổi cách query chạy"
+      },
+      "correct_answer": "B",
+      "explanation": "EXPLAIN SELECT * FROM users WHERE email='x@x.com': hiển thị execution plan. EXPLAIN ANALYZE: thực sự chạy query, show actual times. Đọc plan: Seq Scan = full table scan (có thể cần index), Index Scan = dùng index, Nested Loop/Hash Join/Merge Join (join algorithms). Cần quan tâm: rows (estimated vs actual), cost, loops count. PostgreSQL: EXPLAIN ANALYZE BUFFERS. MySQL: EXPLAIN FORMAT=JSON. Dấu hiệu cần optimize: Seq Scan trên large table, high loops count, type='ALL' trong MySQL.",
+      "source": "https://www.geeksforgeeks.org/sql-explain-statement/",
+      "tags": [
+        "EXPLAIN",
+        "query-plan",
+        "optimization",
+        "indexing"
+      ]
+    },
+    {
+      "question_id": "sql_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Viết query tìm top 3 sản phẩm bán chạy nhất trong từng danh mục?",
+      "options": {
+        "A": "Không thể làm với 1 query",
+        "B": "Window function: RANK() hoặc ROW_NUMBER() OVER (PARTITION BY category ORDER BY sales DESC), rồi filter WHERE rank <= 3",
+        "C": "GROUP BY category LIMIT 3",
+        "D": "3 separate queries với UNION"
+      },
+      "correct_answer": "B",
+      "explanation": "WITH ranked AS (SELECT category, product_name, sales, ROW_NUMBER() OVER (PARTITION BY category ORDER BY sales DESC) as rn FROM products) SELECT * FROM ranked WHERE rn <= 3. Dùng RANK() nếu muốn include ties (có thể trả về > 3 rows per category). DENSE_RANK() cho gaps không bị skip. Đây là classic top-N per group problem, cực phổ biến trong data analysis và interview.",
+      "source": "https://www.geeksforgeeks.org/sql-query-to-find-the-top-n-items/",
+      "tags": [
+        "window-function",
+        "top-N",
+        "PARTITION-BY",
+        "RANK"
+      ]
+    },
+    {
+      "question_id": "sql_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Pagination với OFFSET và LIMIT — vấn đề gì và alternative?",
+      "options": {
+        "A": "OFFSET/LIMIT là tối ưu nhất",
+        "B": "OFFSET N quét và bỏ N rows đầu → chậm với large offset (page 1000). Keyset pagination (cursor-based) hiệu quả hơn cho large datasets",
+        "C": "Pagination không cần thiết",
+        "D": "Chỉ dùng được với MySQL"
+      },
+      "correct_answer": "B",
+      "explanation": "LIMIT 10 OFFSET 9990 (page 1000): database phải đọc 10000 rows rồi bỏ 9990. Chậm với large tables. Keyset pagination: SELECT * FROM orders WHERE created_at < :cursor ORDER BY created_at DESC LIMIT 10. Dùng last item của current page làm cursor cho next page. Nhanh hơn vì dùng index. Không thể jump to arbitrary page nhưng tốt cho infinite scroll (social feed, chat). Count(*) tránh trên large tables: dùng pg_class.reltuples (PostgreSQL) hoặc information_schema.tables cho approximate count.",
+      "source": "https://www.geeksforgeeks.org/sql-pagination/",
+      "tags": [
+        "pagination",
+        "OFFSET",
+        "cursor",
+        "keyset",
+        "performance"
+      ]
+    },
+    {
+      "question_id": "sql_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Hierarchical data trong SQL — ví dụ org chart hoặc comment threads?",
+      "options": {
+        "A": "SQL không thể lưu hierarchical data",
+        "B": "Adjacency list (parent_id), Recursive CTE để traverse, Materialized Path, Nested Sets — chọn tuỳ use case",
+        "C": "Chỉ NoSQL mới lưu được hierarchy",
+        "D": "Dùng stored procedures là cách duy nhất"
+      },
+      "correct_answer": "B",
+      "explanation": "Adjacency list: categories(id, name, parent_id). Simple nhưng traverse chậm. Recursive CTE (best for most cases): WITH RECURSIVE tree AS (SELECT * FROM categories WHERE id=1 UNION ALL SELECT c.* FROM categories c JOIN tree t ON c.parent_id=t.id) SELECT * FROM tree. Materialized Path: path='1/5/12' — fast read, complex write. Nested Sets: left/right values — fast tree read, complex insert/update. PostgreSQL: ltree extension cho path-based hierarchy. Use case: comments with replies, product categories, org chart.",
+      "source": "https://www.geeksforgeeks.org/adjacency-list-in-sql/",
+      "tags": [
+        "hierarchy",
+        "recursive-CTE",
+        "adjacency-list",
+        "tree-structure"
+      ]
+    },
+    {
+      "question_id": "sql_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Database transaction isolation trong concurrent environment — ví dụ banking?",
+      "options": {
+        "A": "Không cần transaction cho web app",
+        "B": "BEGIN; UPDATE acc SET bal=bal-100 WHERE id=1; UPDATE acc SET bal=bal+100 WHERE id=2; COMMIT; — với isolation level phù hợp để tránh race conditions",
+        "C": "Lock toàn bộ bảng là đủ",
+        "D": "Chỉ 1 user dùng database cùng lúc"
+      },
+      "correct_answer": "B",
+      "explanation": "Banking transfer: BEGIN; SELECT balance FROM accounts WHERE id=1 FOR UPDATE (lock row); nếu balance >= 100: UPDATE SET balance = balance - 100; UPDATE account 2 SET balance = balance + 100; COMMIT. FOR UPDATE: pessimistic locking — lock row cho đến cuối transaction. Optimistic locking: version column, retry nếu conflict. Isolation issues: dirty read (thấy uncommitted), non-repeatable read (row thay đổi trong transaction), phantom read (new rows xuất hiện). READ COMMITTED (default PostgreSQL) ngăn dirty read. SERIALIZABLE ngăn tất cả.",
+      "source": "https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/",
+      "tags": [
+        "transaction",
+        "isolation",
+        "locking",
+        "banking",
+        "ACID"
+      ]
+    },
+    {
+      "question_id": "sql_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Pivot data trong SQL — chuyển rows thành columns?",
+      "options": {
+        "A": "SQL không thể pivot data",
+        "B": "Conditional aggregation: SUM(CASE WHEN month='Jan' THEN amount END) AS jan_amount hoặc PIVOT syntax (SQL Server), crosstab (PostgreSQL)",
+        "C": "Chỉ có thể làm trong Excel",
+        "D": "Dùng stored procedures"
+      },
+      "correct_answer": "B",
+      "explanation": "Pivot với CASE: SELECT product, SUM(CASE WHEN quarter='Q1' THEN sales END) AS q1, SUM(CASE WHEN quarter='Q2' THEN sales END) AS q2 FROM sales GROUP BY product. PostgreSQL: crosstab() function từ tablefunc extension. SQL Server/Oracle: PIVOT keyword. Dynamic pivot (unknown columns): phải dùng dynamic SQL. Use case: sales report theo tháng, user activity heatmap, inventory by location.",
+      "source": "https://www.geeksforgeeks.org/pivot-in-sql/",
+      "tags": [
+        "pivot",
+        "CASE-WHEN",
+        "conditional-aggregation",
+        "reporting"
+      ]
+    },
+    {
+      "question_id": "sql_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Upsert — insert hoặc update nếu đã tồn tại — implement thế nào?",
+      "options": {
+        "A": "Phải query rồi mới quyết định INSERT hay UPDATE",
+        "B": "PostgreSQL: INSERT ... ON CONFLICT DO UPDATE; MySQL: INSERT ... ON DUPLICATE KEY UPDATE; SQL Server: MERGE",
+        "C": "Upsert không tồn tại trong SQL",
+        "D": "Dùng stored procedure"
+      },
+      "correct_answer": "B",
+      "explanation": "PostgreSQL: INSERT INTO users (email, name, updated_at) VALUES ('x@x.com', 'Alice', NOW()) ON CONFLICT (email) DO UPDATE SET name = EXCLUDED.name, updated_at = EXCLUDED.updated_at. ON CONFLICT DO NOTHING: bỏ qua nếu conflict. MySQL: INSERT INTO ... ON DUPLICATE KEY UPDATE col = VALUES(col). SQL Server: MERGE (upsert + delete trong 1 statement — powerful nhưng phức tạp). Use cases: sync data, idempotent APIs, leaderboards, cache invalidation. EXCLUDED: refers to the row that failed to insert (PostgreSQL).",
+      "source": "https://www.geeksforgeeks.org/upsert-in-sql/",
+      "tags": [
+        "upsert",
+        "ON-CONFLICT",
+        "INSERT-OR-UPDATE",
+        "PostgreSQL",
+        "MySQL"
+      ]
+    },
+    {
+      "question_id": "sql_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Slow query với N+1 problem — nguyên nhân và fix?",
+      "options": {
+        "A": "Thêm index là đủ",
+        "B": "N+1: fetch N records rồi làm N queries nữa trong loop. Fix: JOIN hoặc IN clause để fetch tất cả trong 1-2 queries; ORM eager loading",
+        "C": "N+1 chỉ xảy ra với NoSQL",
+        "D": "Tăng database RAM"
+      },
+      "correct_answer": "B",
+      "explanation": "N+1 example (ORM): orders = Order.all → 1 query; orders.each { |o| puts o.user.name } → N queries (1 per order). Fix: Order.includes(:user).all → 2 queries total (eager loading). SQL equivalent: SELECT orders.*, users.* FROM orders JOIN users ON orders.user_id = users.id. Detect: rack-mini-profiler (Rails), Django Debug Toolbar, EF Core logging. N+1 là common performance killer ở production VN — ORM đẹp nhưng có pitfalls.",
+      "source": "https://www.geeksforgeeks.org/n-1-problem-in-sql/",
+      "tags": [
+        "N+1",
+        "eager-loading",
+        "ORM",
+        "performance",
+        "JOIN"
+      ]
+    },
+    {
+      "question_id": "sql_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Database deadlock — khi nào xảy ra và cách phòng chống?",
+      "options": {
+        "A": "Deadlock chỉ xảy ra khi 1 user",
+        "B": "Deadlock: T1 lock A rồi cần B; T2 lock B rồi cần A → wait vòng tròn. Fix: consistent lock order, timeout, shorter transactions, optimistic locking",
+        "C": "Tăng số connections fix deadlock",
+        "D": "Deadlock chỉ xảy ra với MySQL"
+      },
+      "correct_answer": "B",
+      "explanation": "Deadlock example: T1: BEGIN; UPDATE accounts SET bal=bal-100 WHERE id=1; UPDATE accounts WHERE id=2. T2: BEGIN; UPDATE accounts WHERE id=2; UPDATE accounts WHERE id=1. → deadlock. Database auto-detect và rollback 1 transaction (victim). Prevention: (1) Lock resources theo thứ tự nhất quán (luôn lock id nhỏ hơn trước). (2) Short transactions (giảm lock duration). (3) Optimistic locking (version column, no locks). (4) Use SELECT FOR UPDATE thay vì implicit locks. (5) Retry logic trong application. Monitor: PostgreSQL pg_locks view.",
+      "source": "https://www.geeksforgeeks.org/deadlock-in-sql/",
+      "tags": [
+        "deadlock",
+        "locking",
+        "concurrency",
+        "prevention"
+      ]
+    },
+    {
+      "question_id": "sql_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "Query chạy nhanh (1s) với 100k rows nhưng chậm (60s) với 10M rows. Nguyên nhân và fix?",
+      "options": {
+        "A": "Tăng server RAM",
+        "B": "Sequential scan không scale — cần index phù hợp; join strategy thay đổi; statistics outdated; consider partitioning",
+        "C": "Giảm số rows bằng DELETE",
+        "D": "Chuyển sang NoSQL"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug steps: (1) EXPLAIN ANALYZE: Seq Scan → full scan, Index Scan → index dùng. (2) Check index: CREATE INDEX CONCURRENTLY idx_users_email ON users(email) — non-blocking. (3) Statistics: ANALYZE table_name (cập nhật statistics cho query planner). (4) Join order: query planner có thể chọn sai với stale statistics. (5) Composite index: nếu WHERE a=1 AND b=2, composite (a,b) index tốt hơn 2 separate indexes. (6) Partial index: CREATE INDEX ON users(email) WHERE active=true (chỉ index rows cần). (7) Partitioning: range/hash partition cho table > 100M rows.",
+      "source": "https://www.geeksforgeeks.org/query-optimization-techniques-in-sql-server/",
+      "tags": [
+        "performance",
+        "indexing",
+        "EXPLAIN",
+        "partitioning",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "sql_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "ORM-generated SQL gây vấn đề performance — làm thế nào để kiểm soát?",
+      "options": {
+        "A": "Dùng raw SQL thay hoàn toàn ORM",
+        "B": "Log và analyze ORM-generated queries, dùng eager loading, select() để chọn columns, raw SQL cho complex queries, bulk operations",
+        "C": "ORM luôn tối ưu tự động",
+        "D": "Disable ORM cho queries phức tạp"
+      },
+      "correct_answer": "B",
+      "explanation": "ORM pitfalls: (1) N+1 (xem trên). (2) SELECT * (không cần tất cả columns). (3) Loading toàn bộ model để chỉ đếm: User.all.count → SELECT * (tệ); User.count → SELECT COUNT(*) (tốt). (4) ORM không support complex queries → dùng raw SQL hoặc query builder. Fix: Logging: Django: LOGGING, Rails: bullet gem, TypeORM: logging:true. Optimization: select specific columns, batch processing (chunk/each_slice), bulk insert. Production rule: đọc ORM-generated SQL, optimize những query chạy nhiều nhất (hot paths).",
+      "source": "https://www.geeksforgeeks.org/orm-vs-raw-sql/",
+      "tags": [
+        "ORM",
+        "N+1",
+        "eager-loading",
+        "bulk-operations",
+        "logging"
+      ]
+    },
+    {
+      "question_id": "sql_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Database connection pool exhaustion — triệu chứng và fix?",
+      "options": {
+        "A": "Restart database",
+        "B": "Connections chờ → timeout → errors. Fix: tune pool size, identify connection leaks, reduce transaction duration, use PgBouncer/connection pooler",
+        "C": "Tăng max_connections không giới hạn",
+        "D": "Dùng 1 connection global"
+      },
+      "correct_answer": "B",
+      "explanation": "Connection pool exhausted: 'too many clients', timeouts tăng. Nguyên nhân: (1) Pool quá nhỏ. (2) Connection leak (không release sau dùng, missing finally). (3) Long-running transactions giữ connections. (4) N+1 queries → nhiều connections cùng lúc. Fix: (1) Tăng pool size (max_connections PostgreSQL mặc định 100; mỗi connection ~5-10MB RAM). (2) PgBouncer: connection pooler, session/transaction/statement mode. (3) Fix leaks: always close connections, use connection managers (context managers, using statements). (4) Monitor: pg_stat_activity. (5) Shorter transactions.",
+      "source": "https://www.geeksforgeeks.org/connection-pooling-in-sql/",
+      "tags": [
+        "connection-pool",
+        "PgBouncer",
+        "connection-leak",
+        "production"
+      ]
+    },
+    {
+      "question_id": "sql_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Schema migration trong production — zero-downtime approach?",
+      "options": {
+        "A": "ALTER TABLE trực tiếp trên production",
+        "B": "Expand-contract pattern: thêm column nullable → deploy code hỗ trợ cả cũ và mới → backfill → add NOT NULL → xóa code cũ",
+        "C": "Dừng app, migrate, restart",
+        "D": "Chỉ migrate khi ít user"
+      },
+      "correct_answer": "B",
+      "explanation": "Zero-downtime migration: (1) Expand: ALTER TABLE ADD COLUMN new_col (nullable, no default initially — tránh lock toàn bảng). (2) Deploy code: đọc và ghi cả 2 columns. (3) Backfill: UPDATE users SET new_col = ... WHERE new_col IS NULL LIMIT 1000 (từng batch, tránh lock table). (4) Add constraint: ALTER TABLE ALTER COLUMN SET NOT NULL (sau khi backfill xong). (5) Contract: xóa old column (ALTER TABLE DROP COLUMN). Tools: Flyway, Liquibase (Java), Alembic (Python), Rails migrations, Prisma migrate. PostgreSQL: một số DDL không block (add nullable column), một số block (add NOT NULL, add index không CONCURRENTLY).",
+      "source": "https://www.geeksforgeeks.org/database-migration-strategies/",
+      "tags": [
+        "migration",
+        "zero-downtime",
+        "ALTER-TABLE",
+        "schema",
+        "production"
+      ]
+    },
+    {
+      "question_id": "sql_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "PostgreSQL database bị lag 10-30s sau khi team thêm feature mới. EXPLAIN ANALYZE cho thấy Seq Scan trên bảng 50M rows. Quy trình fix?",
+      "options": {
+        "A": "Upgrade server",
+        "B": "CREATE INDEX CONCURRENTLY → ANALYZE → verify EXPLAIN dùng index → monitor performance; nếu chưa đủ: partial index, composite index, query rewrite",
+        "C": "VACUUM FULL database",
+        "D": "Chia thành nhiều database nhỏ"
+      },
+      "correct_answer": "B",
+      "explanation": "Step by step: (1) EXPLAIN ANALYZE query → xác nhận Seq Scan. (2) Identify column trong WHERE clause: WHERE status='active' AND created_at > NOW()-'30 days'. (3) CREATE INDEX CONCURRENTLY idx_orders_status_created ON orders(status, created_at) — CONCURRENTLY không lock production table. (4) ANALYZE orders — update statistics. (5) EXPLAIN ANALYZE lại → Index Scan. (6) Monitor pg_stat_user_indexes để xem index usage. (7) Nếu vẫn chậm: partial index (WHERE status='active'), BRIN index cho time-series, partition by created_at. (8) Set pg_stat_statements.track = all để monitor slow queries continuously.",
+      "source": "https://www.geeksforgeeks.org/postgresql-performance-tuning/",
+      "tags": [
+        "PostgreSQL",
+        "performance",
+        "CONCURRENTLY",
+        "index",
+        "production"
+      ]
+    },
+    {
+      "question_id": "sql_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Data inconsistency report: tổng tiền trong bảng transactions không khớp với balance trong bảng accounts. Điều tra và fix?",
+      "options": {
+        "A": "Xóa dữ liệu bị lỗi",
+        "B": "Audit trail: tìm missing transactions, race conditions không dùng transaction, xác định window time của inconsistency, reconcile với idempotent replay",
+        "C": "Tăng isolation level toàn database",
+        "D": "Rebuild từ backup"
+      },
+      "correct_answer": "B",
+      "explanation": "Investigation: (1) Query để tìm discrepancies: SELECT a.id, a.balance, COALESCE(SUM(t.amount),0) as calculated FROM accounts a LEFT JOIN transactions t ON a.id=t.account_id GROUP BY a.id HAVING a.balance != COALESCE(SUM(t.amount),0). (2) Check transaction logs/audit table (nếu có). (3) Look at timestamps: khi nào inconsistency bắt đầu? (4) Code review: tìm UPDATE accounts mà không có INSERT transactions (race condition?). Fix: (1) Idempotent replay: replay missing transactions. (2) Add proper transaction + foreign key constraints. (3) Add trigger để auto-validate balance. (4) Event sourcing: tính balance từ events, không lưu trực tiếp.",
+      "source": "https://www.geeksforgeeks.org/data-consistency-in-sql/",
+      "tags": [
+        "data-consistency",
+        "audit",
+        "race-condition",
+        "reconciliation",
+        "production"
+      ]
+    }
+  ]
+}

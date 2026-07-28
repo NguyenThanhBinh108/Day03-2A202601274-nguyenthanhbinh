@@ -1,0 +1,104 @@
+{
+  "role_id": "cybersecurity_engineer",
+  "role_name": "Cybersecurity Engineer / Penetration Tester",
+  "market_overview": "An toàn thông tin đang là sống còn. Các ngân hàng, chứng khoán và công ty công nghệ tại Việt Nam đang trả lương rất cao cho kỹ sư có khả năng 'hack để phòng thủ' (Red Team/Pentester) hoặc xây dựng rào chắn (Blue Team). Yêu cầu bắt buộc là chứng chỉ quốc tế (CEH, OSCP, CISSP) và tư duy liên tục cập nhật lỗ hổng Zero-day.",
+  "salary_range_vnd": "20-65 triệu/tháng",
+  "milestones": [
+    {
+      "milestone_id": "m1_network_system_security",
+      "title": "Bảo Mật Hạ Tầng & Hệ Thống",
+      "duration_weeks": 6,
+      "core_skills": [
+        "Phân tích Giao thức mạng (TCP/IP, DNS, HTTP/S) và dò quét hệ thống",
+        "Thiết lập và quản trị Firewall (WAF, NGFW), IDS/IPS (Phát hiện & Ngăn chặn xâm nhập)",
+        "Hardening Hệ điều hành (Linux/Windows Server) & Active Directory",
+        "Phân tích mã độc cơ bản (Malware Analysis) & Incident Response (Phản ứng sự cố)"
+      ],
+      "toolchains": [
+        "Wireshark / Nmap",
+        "Splunk / ELK Stack (SIEM)",
+        "Suricata / Snort"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Xây dựng hệ thống giám sát và cảnh báo tấn công (SIEM)",
+          "business_context": "Doanh nghiệp cần thu thập log từ mọi server, firewall để phát hiện sớm dấu hiệu Hacker đang dò quét cổng hoặc Bruteforce mật khẩu.",
+          "tech_stack_used": [
+            "Wazuh / ELK Stack",
+            "Sysmon (Windows)",
+            "Linux Auditd"
+          ],
+          "key_challenges": [
+            "Viết các Rule cảnh báo chính xác, tránh hiện tượng Alert Fatigue (Cảnh báo giả quá nhiều khiến Admin bỏ qua cảnh báo thật).",
+            "Xử lý và lưu trữ khối lượng log khổng lồ (hàng trăm GB mỗi ngày)."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Giải thích sự khác biệt giữa XSS (Cross-Site Scripting) và CSRF (Cross-Site Request Forgery)?",
+          "expected_answer_points": [
+            "XSS: Hacker chèn mã Javascript độc hại vào trang web, script này chạy trên trình duyệt của nạn nhân để ăn cắp cookie.",
+            "CSRF: Hacker lừa nạn nhân nhấn vào một link đã được thiết kế sẵn để mượn quyền/phiên đăng nhập của họ thực hiện một hành động trái phép (như chuyển tiền)."
+          ],
+          "difficulty": "Fresher"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Security by Obscurity (Bảo mật bằng sự che giấu)",
+          "why_its_bad": "Cho rằng việc đổi cổng SSH từ 22 sang 2222, hoặc ẩn tên phiên bản Nginx là an toàn. Hacker với công cụ Nmap có thể quét ra trong 5 giây.",
+          "better_approach": "Phải áp dụng Defense in Depth (Phòng thủ nhiều lớp): Tắt password login, chỉ dùng SSH Key, chặn IP tại Firewall, thiết lập Fail2ban."
+        }
+      ]
+    },
+    {
+      "milestone_id": "m2_web_app_pentesting",
+      "title": "Kiểm Thử Xâm Nhập Ứng Dụng Web (Pentesting)",
+      "duration_weeks": 8,
+      "core_skills": [
+        "Đánh giá lỗ hổng theo chuẩn OWASP Top 10 (Injection, Broken Auth, BOLA...)",
+        "Khai thác lỗ hổng (Exploitation) và leo thang đặc quyền (Privilege Escalation)",
+        "Viết báo cáo đánh giá bảo mật (VAPT Report) chuẩn chuyên nghiệp",
+        "Kỹ thuật Phishing và Social Engineering"
+      ],
+      "toolchains": [
+        "Burp Suite Pro",
+        "Metasploit Framework",
+        "SQLmap / DirBuster",
+        "Kali Linux"
+      ],
+      "real_world_projects": [
+        {
+          "name": "Pentest hộp đen (Black-box) cho ứng dụng Fintech nội bộ",
+          "business_context": "Mô phỏng một hacker thực sự cố gắng tấn công vào hệ thống ứng dụng tài chính từ bên ngoài Internet (không có source code, không có tài khoản).",
+          "tech_stack_used": [
+            "Burp Suite",
+            "Python (viết exploit script)"
+          ],
+          "key_challenges": [
+            "Vượt qua WAF (Web Application Firewall) của Cloudflare chặn các payload độc hại.",
+            "Khai thác lỗ hổng BOLA (IDOR) để xem được thông tin số dư tài khoản của người dùng khác."
+          ]
+        }
+      ],
+      "common_interview_questions": [
+        {
+          "question": "Nếu hệ thống bị tấn công SQL Injection ở hàm Login, bạn sẽ tư vấn cho team Dev cách fix triệt để như thế nào?",
+          "expected_answer_points": [
+            "Việc filter các ký tự như (', OR, UNION) bằng regex là không triệt để (dễ bị bypass).",
+            "Bắt buộc phải sử dụng Prepared Statements (Parameterized Queries) hoặc các ORM chuẩn để tách bạch hoàn toàn Cấu trúc câu lệnh (Query) và Dữ liệu đầu vào (Data)."
+          ],
+          "difficulty": "Junior"
+        }
+      ],
+      "anti_patterns": [
+        {
+          "pattern_name": "Chạy Tool quét tự động rồi xuất Report thẳng cho khách hàng",
+          "why_its_bad": "Các công cụ tự động (như Nessus, Acunetix) tạo ra rất nhiều False Positives (Dương tính giả). Khách hàng trả tiền cho chuyên môn của Pentester để xác thực rủi ro, không phải trả tiền để thuê người bấm nút Run.",
+          "better_approach": "Chỉ dùng tool làm bước Reconnaissance (Trinh sát ban đầu). Mọi lỗ hổng phải được xác thực bằng tay (Manual Verify), tạo Proof of Concept (PoC) rõ ràng và đánh giá mức độ rủi ro theo nghiệp vụ (Business Impact)."
+        }
+      ]
+    }
+  ]
+}

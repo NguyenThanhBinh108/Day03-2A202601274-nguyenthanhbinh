@@ -1,0 +1,60 @@
+{
+  "skill": "GraphQL",
+  "skill_key": "graphql",
+  "total_topics": 5,
+  "estimated_total_hours": 6.0,
+  "generated_at": "2026-06-12T02:22:05.514393",
+  "checklist_items": [
+    {
+      "item_id": "gql_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "GraphQL vs REST — khi nào dùng",
+      "description": "Core concepts, schema, query/mutation/subscription, introspection, playground",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/graphql-vs-rest-apis/",
+      "resource_title": "freeCodeCamp — GraphQL vs REST"
+    },
+    {
+      "item_id": "gql_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Build GraphQL API với Apollo Server",
+      "description": "Type definitions, resolvers, context, Apollo Server setup, introspection, testing",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/graphql/",
+      "resource_title": "GeeksForGeeks — GraphQL Tutorial",
+      "hands_on_task": "Build GraphQL API cho blog: users, posts, comments với CRUD"
+    },
+    {
+      "item_id": "gql_c003",
+      "order": 3,
+      "phase": "core",
+      "title": "DataLoader và N+1 Prevention",
+      "description": "DataLoader batching, per-request instantiation, caching, nested resolvers",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/dataloader-in-graphql/",
+      "resource_title": "GeeksForGeeks — DataLoader in GraphQL"
+    },
+    {
+      "item_id": "gql_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "GraphQL Auth và Security",
+      "description": "JWT in context, graphql-shield, query depth/complexity limiting, disable introspection prod",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/graphql-security/",
+      "resource_title": "freeCodeCamp — GraphQL Security"
+    },
+    {
+      "item_id": "gql_c005",
+      "order": 5,
+      "phase": "advanced",
+      "title": "GraphQL Federation và Microservices",
+      "description": "Apollo Federation, subgraphs, gateway, @key directive, distributed graph",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/graphql-federation/",
+      "resource_title": "GeeksForGeeks — GraphQL Federation"
+    }
+  ]
+}

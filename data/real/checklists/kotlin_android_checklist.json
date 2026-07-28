@@ -1,0 +1,154 @@
+{
+  "skill": "Kotlin Android",
+  "skill_key": "kotlin_android",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.566942Z",
+  "checklist_items": [
+    {
+      "item_id": "kotlin_android_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Android MVVM",
+      "description": "Master Android MVVM trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Android+MVVM+tutorial",
+      "resource_title": "Kotlin Android — Android MVVM",
+      "quiz_ids": [
+        "kotlin_android_l1_001"
+      ],
+      "market_relevance": "Android MVVM là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Jetpack Compose",
+      "description": "Master Jetpack Compose trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Jetpack+Compose+tutorial",
+      "resource_title": "Kotlin Android — Jetpack Compose",
+      "quiz_ids": [
+        "kotlin_android_l2_002"
+      ],
+      "market_relevance": "Jetpack Compose là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Coroutines/Flow",
+      "description": "Master Coroutines/Flow trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Coroutines/Flow+tutorial",
+      "resource_title": "Kotlin Android — Coroutines/Flow",
+      "quiz_ids": [
+        "kotlin_android_l3_003"
+      ],
+      "market_relevance": "Coroutines/Flow là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Room database",
+      "description": "Master Room database trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Room+database+tutorial",
+      "resource_title": "Kotlin Android — Room database",
+      "quiz_ids": [
+        "kotlin_android_l4_004"
+      ],
+      "market_relevance": "Room database là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Navigation component",
+      "description": "Master Navigation component trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Navigation+component+tutorial",
+      "resource_title": "Kotlin Android — Navigation component",
+      "quiz_ids": [
+        "kotlin_android_l5_005"
+      ],
+      "market_relevance": "Navigation component là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Retrofit/OkHttp",
+      "description": "Master Retrofit/OkHttp trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Retrofit/OkHttp+tutorial",
+      "resource_title": "Kotlin Android — Retrofit/OkHttp",
+      "quiz_ids": [
+        "kotlin_android_l5_006"
+      ],
+      "market_relevance": "Retrofit/OkHttp là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Hilt DI",
+      "description": "Master Hilt DI trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Hilt+DI+tutorial",
+      "resource_title": "Kotlin Android — Hilt DI",
+      "quiz_ids": [
+        "kotlin_android_l5_007"
+      ],
+      "market_relevance": "Hilt DI là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "WorkManager",
+      "description": "Master WorkManager trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+WorkManager+tutorial",
+      "resource_title": "Kotlin Android — WorkManager",
+      "quiz_ids": [
+        "kotlin_android_l5_008"
+      ],
+      "market_relevance": "WorkManager là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Firebase",
+      "description": "Master Firebase trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Firebase+tutorial",
+      "resource_title": "Kotlin Android — Firebase",
+      "quiz_ids": [
+        "kotlin_android_l5_009"
+      ],
+      "market_relevance": "Firebase là key skill trong Kotlin Android Mobile development"
+    },
+    {
+      "item_id": "kotlin_android_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Play Store",
+      "description": "Master Play Store trong Kotlin Android — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Kotlin+Android+Play+Store+tutorial",
+      "resource_title": "Kotlin Android — Play Store",
+      "quiz_ids": [
+        "kotlin_android_l5_010"
+      ],
+      "market_relevance": "Play Store là key skill trong Kotlin Android Mobile development"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "skill": "Dart",
+  "skill_key": "dart",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.571448Z",
+  "checklist_items": [
+    {
+      "item_id": "dart_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Dart basics",
+      "description": "Master Dart basics trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Dart+Dart+basics+tutorial",
+      "resource_title": "Dart — Dart basics",
+      "quiz_ids": [
+        "dart_l1_001"
+      ],
+      "market_relevance": "Dart basics là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Async/await/Futures",
+      "description": "Master Async/await/Futures trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Dart+Async/await/Futures+tutorial",
+      "resource_title": "Dart — Async/await/Futures",
+      "quiz_ids": [
+        "dart_l2_002"
+      ],
+      "market_relevance": "Async/await/Futures là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Streams",
+      "description": "Master Streams trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Dart+Streams+tutorial",
+      "resource_title": "Dart — Streams",
+      "quiz_ids": [
+        "dart_l3_003"
+      ],
+      "market_relevance": "Streams là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Null safety",
+      "description": "Master Null safety trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Dart+Null+safety+tutorial",
+      "resource_title": "Dart — Null safety",
+      "quiz_ids": [
+        "dart_l4_004"
+      ],
+      "market_relevance": "Null safety là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Classes/Mixins",
+      "description": "Master Classes/Mixins trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Dart+Classes/Mixins+tutorial",
+      "resource_title": "Dart — Classes/Mixins",
+      "quiz_ids": [
+        "dart_l5_005"
+      ],
+      "market_relevance": "Classes/Mixins là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Generics",
+      "description": "Master Generics trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Dart+Generics+tutorial",
+      "resource_title": "Dart — Generics",
+      "quiz_ids": [
+        "dart_l5_006"
+      ],
+      "market_relevance": "Generics là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Collections",
+      "description": "Master Collections trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Dart+Collections+tutorial",
+      "resource_title": "Dart — Collections",
+      "quiz_ids": [
+        "dart_l5_007"
+      ],
+      "market_relevance": "Collections là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "dart:io",
+      "description": "Master dart:io trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Dart+dart:io+tutorial",
+      "resource_title": "Dart — dart:io",
+      "quiz_ids": [
+        "dart_l5_008"
+      ],
+      "market_relevance": "dart:io là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "dart:convert",
+      "description": "Master dart:convert trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Dart+dart:convert+tutorial",
+      "resource_title": "Dart — dart:convert",
+      "quiz_ids": [
+        "dart_l5_009"
+      ],
+      "market_relevance": "dart:convert là key skill trong Dart Mobile development"
+    },
+    {
+      "item_id": "dart_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Testing",
+      "description": "Master Testing trong Dart — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Dart+Testing+tutorial",
+      "resource_title": "Dart — Testing",
+      "quiz_ids": [
+        "dart_l5_010"
+      ],
+      "market_relevance": "Testing là key skill trong Dart Mobile development"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "skill": "PostgreSQL",
+  "skill_key": "postgresql",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.579984Z",
+  "source_references": [
+    "https://www.google.com/search?q=PostgreSQL+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "postgresql_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PostgreSQL, Advanced SQL có vai trò gì?",
+      "options": {
+        "A": "Advanced SQL là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Advanced SQL là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Advanced SQL đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Advanced SQL là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Advanced SQL trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Advanced SQL là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Advanced SQL giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Advanced+SQL+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "advanced-sql"
+      ]
+    },
+    {
+      "question_id": "postgresql_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong PostgreSQL, JSONB có vai trò gì?",
+      "options": {
+        "A": "JSONB là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "JSONB là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "JSONB đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên JSONB là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "JSONB trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và JSONB là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ JSONB giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+JSONB+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "jsonb"
+      ]
+    },
+    {
+      "question_id": "postgresql_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PostgreSQL, Full-text search có vai trò gì?",
+      "options": {
+        "A": "Full-text search là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Full-text search là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Full-text search đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Full-text search là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Full-text search trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Full-text search là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Full-text search giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Full-text+search+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "full-text-search"
+      ]
+    },
+    {
+      "question_id": "postgresql_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong PostgreSQL, Window functions có vai trò gì?",
+      "options": {
+        "A": "Window functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Window functions là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Window functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Window functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Window functions trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Window functions là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Window functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Window+functions+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "window-functions"
+      ]
+    },
+    {
+      "question_id": "postgresql_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PostgreSQL, CTEs có vai trò gì?",
+      "options": {
+        "A": "CTEs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CTEs là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CTEs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CTEs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CTEs trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và CTEs là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ CTEs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+CTEs+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "ctes"
+      ]
+    },
+    {
+      "question_id": "postgresql_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong PostgreSQL, Indexes (GIN, GiST) có vai trò gì?",
+      "options": {
+        "A": "Indexes (GIN, GiST) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Indexes (GIN, GiST) là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Indexes (GIN, GiST) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Indexes (GIN, GiST) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Indexes (GIN, GiST) trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Indexes (GIN, GiST) là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Indexes (GIN, GiST) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Indexes+(GIN,+GiST)+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "indexes-gin,-gist"
+      ]
+    },
+    {
+      "question_id": "postgresql_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PostgreSQL, Partitioning có vai trò gì?",
+      "options": {
+        "A": "Partitioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Partitioning là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Partitioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Partitioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Partitioning trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Partitioning là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Partitioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Partitioning+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "partitioning"
+      ]
+    },
+    {
+      "question_id": "postgresql_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong PostgreSQL, Replication có vai trò gì?",
+      "options": {
+        "A": "Replication là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Replication là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Replication đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Replication là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Replication trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và Replication là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ Replication giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+Replication+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "replication"
+      ]
+    },
+    {
+      "question_id": "postgresql_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PostgreSQL, pg_stat monitoring có vai trò gì?",
+      "options": {
+        "A": "pg_stat monitoring là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "pg_stat monitoring là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "pg_stat monitoring đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên pg_stat monitoring là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "pg_stat monitoring trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và pg_stat monitoring là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ pg_stat monitoring giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+pg_stat+monitoring+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "pg_stat-monitoring"
+      ]
+    },
+    {
+      "question_id": "postgresql_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong PostgreSQL, pgBouncer có vai trò gì?",
+      "options": {
+        "A": "pgBouncer là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "pgBouncer là core concept trong PostgreSQL — cần master để build production-grade Database solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "pgBouncer đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên pgBouncer là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "pgBouncer trong PostgreSQL: Đây là một trong những concepts quan trọng nhất. PostgreSQL được sử dụng rộng rãi trong industry và pgBouncer là phần không thể thiếu. Khi làm việc với PostgreSQL trong production, hiểu rõ pgBouncer giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=PostgreSQL+pgBouncer+tutorial",
+      "tags": [
+        "postgresql",
+        "database",
+        "pgbouncer"
+      ]
+    }
+  ]
+}

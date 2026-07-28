@@ -1,0 +1,154 @@
+{
+  "skill": "Android Development",
+  "skill_key": "android",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.574446Z",
+  "checklist_items": [
+    {
+      "item_id": "android_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Activity lifecycle",
+      "description": "Master Activity lifecycle trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Activity+lifecycle+tutorial",
+      "resource_title": "Android Development — Activity lifecycle",
+      "quiz_ids": [
+        "android_l1_001"
+      ],
+      "market_relevance": "Activity lifecycle là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Fragments",
+      "description": "Master Fragments trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Fragments+tutorial",
+      "resource_title": "Android Development — Fragments",
+      "quiz_ids": [
+        "android_l2_002"
+      ],
+      "market_relevance": "Fragments là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Intents",
+      "description": "Master Intents trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Intents+tutorial",
+      "resource_title": "Android Development — Intents",
+      "quiz_ids": [
+        "android_l3_003"
+      ],
+      "market_relevance": "Intents là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Services",
+      "description": "Master Services trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Services+tutorial",
+      "resource_title": "Android Development — Services",
+      "quiz_ids": [
+        "android_l4_004"
+      ],
+      "market_relevance": "Services là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Broadcast receivers",
+      "description": "Master Broadcast receivers trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Broadcast+receivers+tutorial",
+      "resource_title": "Android Development — Broadcast receivers",
+      "quiz_ids": [
+        "android_l5_005"
+      ],
+      "market_relevance": "Broadcast receivers là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Content providers",
+      "description": "Master Content providers trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Content+providers+tutorial",
+      "resource_title": "Android Development — Content providers",
+      "quiz_ids": [
+        "android_l5_006"
+      ],
+      "market_relevance": "Content providers là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "RecyclerView",
+      "description": "Master RecyclerView trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Android+Development+RecyclerView+tutorial",
+      "resource_title": "Android Development — RecyclerView",
+      "quiz_ids": [
+        "android_l5_007"
+      ],
+      "market_relevance": "RecyclerView là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Material Design",
+      "description": "Master Material Design trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Material+Design+tutorial",
+      "resource_title": "Android Development — Material Design",
+      "quiz_ids": [
+        "android_l5_008"
+      ],
+      "market_relevance": "Material Design là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Permissions",
+      "description": "Master Permissions trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Permissions+tutorial",
+      "resource_title": "Android Development — Permissions",
+      "quiz_ids": [
+        "android_l5_009"
+      ],
+      "market_relevance": "Permissions là key skill trong Android Development Mobile development"
+    },
+    {
+      "item_id": "android_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Publishing",
+      "description": "Master Publishing trong Android Development — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Android+Development+Publishing+tutorial",
+      "resource_title": "Android Development — Publishing",
+      "quiz_ids": [
+        "android_l5_010"
+      ],
+      "market_relevance": "Publishing là key skill trong Android Development Mobile development"
+    }
+  ]
+}

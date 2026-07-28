@@ -1,0 +1,240 @@
+{
+  "skill": "Docker",
+  "skill_key": "docker",
+  "total_topics": 15,
+  "estimated_total_hours": 14.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T01:12:32.390619",
+  "checklist_items": [
+    {
+      "item_id": "docker_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Cài Docker Desktop và hiểu kiến trúc",
+      "description": "Cài Docker Desktop (Windows/Mac) hoặc Docker Engine (Linux), hiểu Docker daemon, client, registry",
+      "estimated_minutes": 30,
+      "resource_url": "https://www.geeksforgeeks.org/docker-tutorial/",
+      "resource_title": "GeeksForGeeks — Docker Tutorial",
+      "quiz_ids": [
+        "docker_l1_001",
+        "docker_l1_002"
+      ],
+      "market_relevance": "Bước 0 không thể bỏ qua"
+    },
+    {
+      "item_id": "docker_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Chạy container đầu tiên — docker run",
+      "description": "docker run hello-world, docker run -it ubuntu /bin/bash, docker ps, docker ps -a, docker stop, docker rm, docker images",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/docker-run-command/",
+      "resource_title": "GeeksForGeeks — Docker Run Command",
+      "quiz_ids": [
+        "docker_l1_003"
+      ],
+      "market_relevance": "Kỹ năng đầu tiên mọi team dùng Docker cần"
+    },
+    {
+      "item_id": "docker_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Viết Dockerfile cơ bản",
+      "description": "FROM, WORKDIR, COPY, RUN, EXPOSE, CMD, ENV — xây dựng Dockerfile cho app Node.js hoặc Python",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/docker-tutorial/",
+      "resource_title": "GeeksForGeeks — Docker Tutorial",
+      "quiz_ids": [
+        "docker_l1_002",
+        "docker_l3_001"
+      ],
+      "hands_on_task": "Viết Dockerfile cho Express app đơn giản, build và chạy được",
+      "market_relevance": "Bắt buộc để containerize app"
+    },
+    {
+      "item_id": "docker_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": ".dockerignore và tối ưu build context",
+      "description": "Tạo .dockerignore, hiểu build context, exclude node_modules/.git/.env",
+      "estimated_minutes": 30,
+      "resource_url": "https://www.geeksforgeeks.org/what-is-dockerignore-and-how-to-use-it/",
+      "resource_title": "GeeksForGeeks — .dockerignore Guide",
+      "quiz_ids": [
+        "docker_l1_006",
+        "docker_l4_005"
+      ],
+      "market_relevance": "Giảm build time và image size đáng kể"
+    },
+    {
+      "item_id": "docker_c005",
+      "order": 5,
+      "phase": "foundation",
+      "title": "Docker Volumes và Persistent Data",
+      "description": "Named volumes, bind mounts, docker volume create/ls/rm, persist database data",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/docker-volumes/",
+      "resource_title": "GeeksForGeeks — Docker Volumes",
+      "quiz_ids": [
+        "docker_l1_005"
+      ],
+      "hands_on_task": "Chạy PostgreSQL với volume, verify data persist sau khi container restart",
+      "market_relevance": "Database không thể thiếu volumes"
+    },
+    {
+      "item_id": "docker_c006",
+      "order": 6,
+      "phase": "foundation",
+      "title": "Docker Networking cơ bản",
+      "description": "Bridge network, custom network, container DNS, port mapping, docker network create/inspect",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/docker-networking/",
+      "resource_title": "GeeksForGeeks — Docker Networking",
+      "quiz_ids": [
+        "docker_l2_003"
+      ],
+      "market_relevance": "Containers cần giao tiếp với nhau"
+    },
+    {
+      "item_id": "docker_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Docker Compose — Multi-Container Applications",
+      "description": "docker-compose.yml structure, services/volumes/networks, docker compose up/down/logs, env_file",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/docker-compose/",
+      "resource_title": "GeeksForGeeks — Docker Compose",
+      "quiz_ids": [
+        "docker_l1_004",
+        "docker_l3_002"
+      ],
+      "hands_on_task": "Viết docker-compose.yml cho app + PostgreSQL + Redis, chạy được local",
+      "market_relevance": "Mọi team IT VN dùng Docker Compose cho local dev"
+    },
+    {
+      "item_id": "docker_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "Healthcheck và depends_on đúng cách",
+      "description": "HEALTHCHECK instruction, depends_on condition:service_healthy, service startup ordering",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/docker-health-check/",
+      "resource_title": "GeeksForGeeks — Docker Health Check",
+      "quiz_ids": [
+        "docker_l2_005",
+        "docker_l5_001"
+      ],
+      "market_relevance": "Lỗi phổ biến nhất khi dùng Docker Compose ở VN"
+    },
+    {
+      "item_id": "docker_c009",
+      "order": 9,
+      "phase": "core",
+      "title": "Layer Caching và Dockerfile Best Practices",
+      "description": "Layer caching, thứ tự instructions, COPY package.json trước, CMD exec form vs shell form",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/docker-caching/",
+      "resource_title": "GeeksForGeeks — Docker Caching",
+      "quiz_ids": [
+        "docker_l2_001",
+        "docker_l2_006"
+      ],
+      "market_relevance": "Build pipeline CI/CD nhanh hơn 10x khi cache đúng"
+    },
+    {
+      "item_id": "docker_c010",
+      "order": 10,
+      "phase": "core",
+      "title": "Multi-stage Build",
+      "description": "Multiple FROM stages, COPY --from=builder, tách build environment khỏi runtime",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/multi-stage-build-in-docker/",
+      "resource_title": "GeeksForGeeks — Multi-stage Build",
+      "quiz_ids": [
+        "docker_l2_002",
+        "docker_l4_001"
+      ],
+      "hands_on_task": "Viết multi-stage Dockerfile cho Go app: builder stage + alpine runtime stage, so sánh size",
+      "market_relevance": "Giảm image từ 1GB xuống 20MB — bắt buộc cho production"
+    },
+    {
+      "item_id": "docker_c011",
+      "order": 11,
+      "phase": "core",
+      "title": "Debug Container đang chạy",
+      "description": "docker logs, docker exec -it, docker inspect, docker stats, docker top, docker cp",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/docker-exec-command/",
+      "resource_title": "GeeksForGeeks — Docker Exec Command",
+      "quiz_ids": [
+        "docker_l3_005"
+      ],
+      "market_relevance": "On-call engineer phải biết debug container nhanh"
+    },
+    {
+      "item_id": "docker_c012",
+      "order": 12,
+      "phase": "core",
+      "title": "Docker Registry — Push và Pull Images",
+      "description": "docker tag, docker login, docker push/pull, Docker Hub, private registries (ECR, GCR, GitLab)",
+      "estimated_minutes": 45,
+      "resource_url": "https://www.geeksforgeeks.org/pushing-and-pulling-docker-images-from-docker-hub/",
+      "resource_title": "GeeksForGeeks — Docker Hub Guide",
+      "quiz_ids": [
+        "docker_l3_004"
+      ],
+      "hands_on_task": "Build image, tag với version, push lên Docker Hub, pull về trên VPS khác",
+      "market_relevance": "CI/CD pipeline cần push/pull images"
+    },
+    {
+      "item_id": "docker_c013",
+      "order": 13,
+      "phase": "core",
+      "title": "Resource Limits và Container Security",
+      "description": "--memory, --cpus, USER instruction non-root, read-only filesystem, Docker secrets",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/docker-security-best-practices/",
+      "resource_title": "GeeksForGeeks — Docker Security",
+      "quiz_ids": [
+        "docker_l3_003",
+        "docker_l4_002",
+        "docker_l4_006"
+      ],
+      "market_relevance": "Production không thể thiếu resource limits và security"
+    },
+    {
+      "item_id": "docker_c014",
+      "order": 14,
+      "phase": "advanced",
+      "title": "CI/CD với Docker và GitHub Actions",
+      "description": "Build image trong CI, layer cache trong Actions, push to registry, deploy trigger",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/docker-ci-cd-pipeline-github-actions/",
+      "resource_title": "freeCodeCamp — Docker CI/CD GitHub Actions",
+      "quiz_ids": [
+        "docker_l3_006"
+      ],
+      "hands_on_task": "Setup GitHub Actions: test → build → push → deploy trên mỗi push to main",
+      "market_relevance": "CI/CD với Docker là kỹ năng tuyển dụng hot nhất"
+    },
+    {
+      "item_id": "docker_c015",
+      "order": 15,
+      "phase": "advanced",
+      "title": "Zero-downtime Deployment và Production Patterns",
+      "description": "Blue-green deployment, rolling update, Docker Swarm basics, graceful shutdown",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/docker-zero-downtime-deployment/",
+      "resource_title": "freeCodeCamp — Docker Zero Downtime Deployment",
+      "quiz_ids": [
+        "docker_l4_004",
+        "docker_l5_002"
+      ],
+      "market_relevance": "Senior DevOps và Backend dev cần biết để không làm gián đoạn service"
+    }
+  ]
+}

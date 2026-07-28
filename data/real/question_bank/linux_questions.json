@@ -1,0 +1,218 @@
+{
+  "skill": "Linux",
+  "skill_key": "linux",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.611646Z",
+  "source_references": [
+    "https://www.google.com/search?q=Linux+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "linux_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Linux, File system có vai trò gì?",
+      "options": {
+        "A": "File system là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "File system là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "File system đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên File system là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "File system trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và File system là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ File system giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+File+system+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "file-system"
+      ]
+    },
+    {
+      "question_id": "linux_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Linux, Process management có vai trò gì?",
+      "options": {
+        "A": "Process management là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Process management là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Process management đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Process management là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Process management trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Process management là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Process management giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Process+management+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "process-management"
+      ]
+    },
+    {
+      "question_id": "linux_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Linux, User/permissions có vai trò gì?",
+      "options": {
+        "A": "User/permissions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "User/permissions là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "User/permissions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên User/permissions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "User/permissions trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và User/permissions là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ User/permissions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+User/permissions+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "user-permissions"
+      ]
+    },
+    {
+      "question_id": "linux_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Linux, Bash scripting có vai trò gì?",
+      "options": {
+        "A": "Bash scripting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Bash scripting là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Bash scripting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Bash scripting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Bash scripting trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Bash scripting là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Bash scripting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Bash+scripting+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "bash-scripting"
+      ]
+    },
+    {
+      "question_id": "linux_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Linux, Networking (netstat/ssh) có vai trò gì?",
+      "options": {
+        "A": "Networking (netstat/ssh) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Networking (netstat/ssh) là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Networking (netstat/ssh) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Networking (netstat/ssh) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Networking (netstat/ssh) trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Networking (netstat/ssh) là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Networking (netstat/ssh) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Networking+(netstat/ssh)+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "networking-netstat-ssh"
+      ]
+    },
+    {
+      "question_id": "linux_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Linux, Package managers có vai trò gì?",
+      "options": {
+        "A": "Package managers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Package managers là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Package managers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Package managers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Package managers trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Package managers là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Package managers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Package+managers+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "package-managers"
+      ]
+    },
+    {
+      "question_id": "linux_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Linux, systemd services có vai trò gì?",
+      "options": {
+        "A": "systemd services là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "systemd services là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "systemd services đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên systemd services là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "systemd services trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và systemd services là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ systemd services giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+systemd+services+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "systemd-services"
+      ]
+    },
+    {
+      "question_id": "linux_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Linux, cron jobs có vai trò gì?",
+      "options": {
+        "A": "cron jobs là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "cron jobs là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "cron jobs đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên cron jobs là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "cron jobs trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và cron jobs là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ cron jobs giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+cron+jobs+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "cron-jobs"
+      ]
+    },
+    {
+      "question_id": "linux_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Linux, Log management có vai trò gì?",
+      "options": {
+        "A": "Log management là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Log management là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Log management đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Log management là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Log management trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Log management là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Log management giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Log+management+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "log-management"
+      ]
+    },
+    {
+      "question_id": "linux_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Linux, Security (firewall) có vai trò gì?",
+      "options": {
+        "A": "Security (firewall) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Security (firewall) là core concept trong Linux — cần master để build production-grade DevOps solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Security (firewall) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Security (firewall) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Security (firewall) trong Linux: Đây là một trong những concepts quan trọng nhất. Linux được sử dụng rộng rãi trong industry và Security (firewall) là phần không thể thiếu. Khi làm việc với Linux trong production, hiểu rõ Security (firewall) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Linux+Security+(firewall)+tutorial",
+      "tags": [
+        "linux",
+        "devops",
+        "security-firewall"
+      ]
+    }
+  ]
+}

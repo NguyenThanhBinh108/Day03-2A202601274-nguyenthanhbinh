@@ -1,0 +1,48 @@
+{
+  "skill": "GraphQL",
+  "skill_key": "graphql",
+  "total_resources": 4,
+  "generated_at": "2026-06-12T02:22:05.515390",
+  "resources": [
+    {
+      "resource_id": "gql_r001",
+      "title": "GraphQL Official Documentation",
+      "url": "https://graphql.org/learn/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Official GraphQL docs"
+    },
+    {
+      "resource_id": "gql_r002",
+      "title": "GeeksForGeeks GraphQL Tutorial",
+      "url": "https://www.geeksforgeeks.org/graphql/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "GraphQL tutorial toàn diện"
+    },
+    {
+      "resource_id": "gql_r003",
+      "title": "freeCodeCamp GraphQL Articles",
+      "url": "https://www.freecodecamp.org/news/tag/graphql/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "GraphQL articles"
+    },
+    {
+      "resource_id": "gql_r004",
+      "title": "Apollo GraphQL Documentation",
+      "url": "https://www.apollographql.com/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 5,
+      "description": "Apollo Server + Apollo Client docs"
+    }
+  ]
+}

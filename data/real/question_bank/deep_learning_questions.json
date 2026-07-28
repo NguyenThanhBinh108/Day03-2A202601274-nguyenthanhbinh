@@ -1,0 +1,218 @@
+{
+  "skill": "Deep Learning",
+  "skill_key": "deep_learning",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.634726Z",
+  "source_references": [
+    "https://www.google.com/search?q=Deep+Learning+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "deep_learning_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Deep Learning, Neural networks basics có vai trò gì?",
+      "options": {
+        "A": "Neural networks basics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Neural networks basics là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Neural networks basics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Neural networks basics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Neural networks basics trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Neural networks basics là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Neural networks basics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Neural+networks+basics+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "neural-networks-basics"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Deep Learning, CNN có vai trò gì?",
+      "options": {
+        "A": "CNN là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CNN là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CNN đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CNN là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CNN trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và CNN là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ CNN giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+CNN+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "cnn"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Deep Learning, RNN/LSTM có vai trò gì?",
+      "options": {
+        "A": "RNN/LSTM là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "RNN/LSTM là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "RNN/LSTM đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên RNN/LSTM là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "RNN/LSTM trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và RNN/LSTM là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ RNN/LSTM giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+RNN/LSTM+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "rnn-lstm"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Deep Learning, Transformers có vai trò gì?",
+      "options": {
+        "A": "Transformers là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transformers là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transformers đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transformers là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transformers trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Transformers là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Transformers giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Transformers+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "transformers"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Deep Learning, Backpropagation có vai trò gì?",
+      "options": {
+        "A": "Backpropagation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Backpropagation là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Backpropagation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Backpropagation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Backpropagation trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Backpropagation là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Backpropagation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Backpropagation+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "backpropagation"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Deep Learning, Optimizers (Adam) có vai trò gì?",
+      "options": {
+        "A": "Optimizers (Adam) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Optimizers (Adam) là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Optimizers (Adam) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Optimizers (Adam) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Optimizers (Adam) trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Optimizers (Adam) là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Optimizers (Adam) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Optimizers+(Adam)+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "optimizers-adam"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Deep Learning, Batch normalization có vai trò gì?",
+      "options": {
+        "A": "Batch normalization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Batch normalization là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Batch normalization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Batch normalization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Batch normalization trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Batch normalization là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Batch normalization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Batch+normalization+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "batch-normalization"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Deep Learning, Dropout có vai trò gì?",
+      "options": {
+        "A": "Dropout là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dropout là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dropout đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dropout là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dropout trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Dropout là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Dropout giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Dropout+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "dropout"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Deep Learning, Transfer learning có vai trò gì?",
+      "options": {
+        "A": "Transfer learning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Transfer learning là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Transfer learning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Transfer learning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Transfer learning trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và Transfer learning là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ Transfer learning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+Transfer+learning+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "transfer-learning"
+      ]
+    },
+    {
+      "question_id": "deep_learning_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Deep Learning, PyTorch/TensorFlow có vai trò gì?",
+      "options": {
+        "A": "PyTorch/TensorFlow là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "PyTorch/TensorFlow là core concept trong Deep Learning — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "PyTorch/TensorFlow đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên PyTorch/TensorFlow là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "PyTorch/TensorFlow trong Deep Learning: Đây là một trong những concepts quan trọng nhất. Deep Learning được sử dụng rộng rãi trong industry và PyTorch/TensorFlow là phần không thể thiếu. Khi làm việc với Deep Learning trong production, hiểu rõ PyTorch/TensorFlow giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Deep+Learning+PyTorch/TensorFlow+tutorial",
+      "tags": [
+        "deep_learning",
+        "ai/ml",
+        "pytorch-tensorflow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "skill": "AWS",
+  "skill_key": "aws",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "resources": [
+    {
+      "resource_id": "aws_r001",
+      "title": "AWS Official Documentation",
+      "url": "https://docs.aws.amazon.com/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "AWS official docs"
+    },
+    {
+      "resource_id": "aws_r002",
+      "title": "GeeksForGeeks AWS Tutorial",
+      "url": "https://www.geeksforgeeks.org/amazon-web-services/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "beginner_to_advanced",
+      "rating": 4,
+      "description": "AWS comprehensive tutorial"
+    },
+    {
+      "resource_id": "aws_r003",
+      "title": "freeCodeCamp AWS Articles",
+      "url": "https://www.freecodecamp.org/news/tag/aws/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "AWS articles"
+    },
+    {
+      "resource_id": "aws_r004",
+      "title": "AWS Free Tier",
+      "url": "https://aws.amazon.com/free/",
+      "type": "lab",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "12 months free AWS services"
+    },
+    {
+      "resource_id": "aws_r005",
+      "title": "Viblo AWS Articles",
+      "url": "https://viblo.asia/tags/aws",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "AWS tiếng Việt"
+    }
+  ]
+}

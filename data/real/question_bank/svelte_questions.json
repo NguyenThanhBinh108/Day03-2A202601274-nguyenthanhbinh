@@ -1,0 +1,218 @@
+{
+  "skill": "Svelte",
+  "skill_key": "svelte",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.509483Z",
+  "source_references": [
+    "https://www.google.com/search?q=Svelte+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "svelte_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Svelte, Svelte compiler có vai trò gì?",
+      "options": {
+        "A": "Svelte compiler là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Svelte compiler là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Svelte compiler đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Svelte compiler là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Svelte compiler trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Svelte compiler là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Svelte compiler giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Svelte+compiler+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "svelte-compiler"
+      ]
+    },
+    {
+      "question_id": "svelte_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Svelte, Reactive declarations có vai trò gì?",
+      "options": {
+        "A": "Reactive declarations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Reactive declarations là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Reactive declarations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Reactive declarations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Reactive declarations trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Reactive declarations là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Reactive declarations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Reactive+declarations+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "reactive-declarations"
+      ]
+    },
+    {
+      "question_id": "svelte_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Svelte, Component syntax có vai trò gì?",
+      "options": {
+        "A": "Component syntax là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Component syntax là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Component syntax đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Component syntax là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Component syntax trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Component syntax là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Component syntax giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Component+syntax+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "component-syntax"
+      ]
+    },
+    {
+      "question_id": "svelte_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Svelte, Stores có vai trò gì?",
+      "options": {
+        "A": "Stores là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Stores là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Stores đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Stores là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Stores trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Stores là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Stores giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Stores+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "stores"
+      ]
+    },
+    {
+      "question_id": "svelte_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Svelte, SvelteKit routing có vai trò gì?",
+      "options": {
+        "A": "SvelteKit routing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SvelteKit routing là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SvelteKit routing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SvelteKit routing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SvelteKit routing trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và SvelteKit routing là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ SvelteKit routing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+SvelteKit+routing+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "sveltekit-routing"
+      ]
+    },
+    {
+      "question_id": "svelte_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Svelte, Load functions có vai trò gì?",
+      "options": {
+        "A": "Load functions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Load functions là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Load functions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Load functions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Load functions trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Load functions là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Load functions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Load+functions+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "load-functions"
+      ]
+    },
+    {
+      "question_id": "svelte_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Svelte, Form actions có vai trò gì?",
+      "options": {
+        "A": "Form actions là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Form actions là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Form actions đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Form actions là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Form actions trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Form actions là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Form actions giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Form+actions+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "form-actions"
+      ]
+    },
+    {
+      "question_id": "svelte_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Svelte, Svelte animations có vai trò gì?",
+      "options": {
+        "A": "Svelte animations là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Svelte animations là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Svelte animations đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Svelte animations là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Svelte animations trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Svelte animations là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Svelte animations giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Svelte+animations+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "svelte-animations"
+      ]
+    },
+    {
+      "question_id": "svelte_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Svelte, Runes (Svelte 5) có vai trò gì?",
+      "options": {
+        "A": "Runes (Svelte 5) là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Runes (Svelte 5) là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Runes (Svelte 5) đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Runes (Svelte 5) là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Runes (Svelte 5) trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và Runes (Svelte 5) là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ Runes (Svelte 5) giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+Runes+(Svelte+5)+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "runes-svelte-5"
+      ]
+    },
+    {
+      "question_id": "svelte_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Svelte, SSR có vai trò gì?",
+      "options": {
+        "A": "SSR là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SSR là core concept trong Svelte — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SSR đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SSR là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SSR trong Svelte: Đây là một trong những concepts quan trọng nhất. Svelte được sử dụng rộng rãi trong industry và SSR là phần không thể thiếu. Khi làm việc với Svelte trong production, hiểu rõ SSR giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Svelte+SSR+tutorial",
+      "tags": [
+        "svelte",
+        "frontend",
+        "ssr"
+      ]
+    }
+  ]
+}

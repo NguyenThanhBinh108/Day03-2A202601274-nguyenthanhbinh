@@ -1,0 +1,195 @@
+{
+  "skill": "CI/CD",
+  "skill_key": "cicd",
+  "total_questions": 8,
+  "levels": {
+    "1": 3,
+    "2": 2,
+    "3": 1,
+    "4": 1,
+    "5": 1
+  },
+  "generated_at": "2026-06-12T01:37:31.885618",
+  "source_references": [
+    "https://www.freecodecamp.org/news/what-is-ci-cd/",
+    "https://www.geeksforgeeks.org/github-actions/",
+    "https://docs.github.com/en/actions"
+  ],
+  "questions": [
+    {
+      "question_id": "cicd_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "CI/CD là gì và tại sao quan trọng?",
+      "options": {
+        "A": "CI/CD = chỉ là automation testing",
+        "B": "CI: tự động build/test khi push code. CD: tự động deploy. Giảm manual errors, faster feedback, reliable releases",
+        "C": "CI/CD chỉ dùng cho large teams",
+        "D": "CD = Continuous Development, không phải Deployment"
+      },
+      "correct_answer": "B",
+      "explanation": "CI (Continuous Integration): developer push code → pipeline tự động chạy: build, unit tests, integration tests, code quality. CD (Continuous Delivery): build artifact sẵn sàng deploy bất cứ lúc nào, cần manual approval. CD (Continuous Deployment): tự động deploy lên production sau khi CI pass. Lợi ích: (1) Phát hiện bugs sớm (khi code còn fresh). (2) Smaller releases (ít risk). (3) Faster time to market. (4) No manual deploy errors.",
+      "source": "https://www.freecodecamp.org/news/what-is-ci-cd/",
+      "tags": [
+        "CI",
+        "CD",
+        "automation",
+        "pipeline",
+        "DevOps"
+      ]
+    },
+    {
+      "question_id": "cicd_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "GitHub Actions workflow file có cấu trúc thế nào?",
+      "options": {
+        "A": "Chỉ cần script bash là đủ",
+        "B": "YAML file trong .github/workflows/: on (triggers), jobs (runners), steps (checkout, run, uses actions)",
+        "C": "GitHub Actions chỉ cho Node.js",
+        "D": "Workflow file viết bằng Python"
+      },
+      "correct_answer": "B",
+      "explanation": "on: push: branches: [main]. on: pull_request: types: [opened, synchronize]. on: schedule: cron. jobs: build: runs-on: ubuntu-latest. steps: - uses: actions/checkout@v4. - name: Setup Node; uses: actions/setup-node@v4; with: node-version: 20. - name: Install; run: npm ci. - name: Test; run: npm test. Secrets: ${{ secrets.MY_SECRET }}. Context: ${{ github.sha }}, ${{ github.ref_name }}. Reusable workflows: call with workflow_call.",
+      "source": "https://www.geeksforgeeks.org/github-actions/",
+      "tags": [
+        "GitHub-Actions",
+        "YAML",
+        "workflow",
+        "jobs",
+        "steps"
+      ]
+    },
+    {
+      "question_id": "cicd_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "Deployment environments thông thường là gì?",
+      "options": {
+        "A": "Chỉ cần 2 environments: dev và production",
+        "B": "Development (local) → Staging (production-like, testing) → Production. Một số thêm QA, UAT, pre-prod",
+        "C": "Nhiều environment hơn luôn tốt hơn",
+        "D": "Staging và production có thể share database"
+      },
+      "correct_answer": "B",
+      "explanation": "Environments: (1) Local/Development: developer's machine, mock services. (2) Staging/Pre-production: production-like environment, real integrations, end-to-end testing, load testing. (3) Production: real users, real data. Một số teams thêm: QA (quality assurance), UAT (User Acceptance Testing), Canary (small % of traffic). Staging phải giống production nhất có thể (same config, same size). Không share database giữa staging và production (data isolation).",
+      "source": "https://www.freecodecamp.org/news/deployment-environments/",
+      "tags": [
+        "environments",
+        "staging",
+        "production",
+        "deployment-strategy"
+      ]
+    },
+    {
+      "question_id": "cicd_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Blue-Green deployment và Canary deployment — khác nhau thế nào?",
+      "options": {
+        "A": "Cả hai giống nhau",
+        "B": "Blue-Green: 2 identical environments, instant switch. Canary: gradual rollout (1% → 10% → 100%), monitor metrics",
+        "C": "Canary chỉ cho mobile apps",
+        "D": "Blue-Green không support rollback"
+      },
+      "correct_answer": "B",
+      "explanation": "Blue-Green: 2 environments (blue=current, green=new). Switch load balancer. Instant rollback: switch back. Tốn: gấp đôi infrastructure. Canary: release mới cho 1-10% users trước. Monitor: error rate, latency. Nếu tốt → tăng dần. Nếu lỗi → rollback subset. Kubernetes: canary với traffic splitting (Istio, Argo Rollouts). Feature flags (LaunchDarkly): canary không cần deploy lại. A/B testing khác canary: A/B test business metrics (conversion rate), canary test technical metrics (error rate).",
+      "source": "https://www.freecodecamp.org/news/blue-green-vs-canary-deployment/",
+      "tags": [
+        "blue-green",
+        "canary",
+        "deployment-strategy",
+        "rollback"
+      ]
+    },
+    {
+      "question_id": "cicd_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "Secrets management trong CI/CD — best practices?",
+      "options": {
+        "A": "Hardcode secrets trong workflow file",
+        "B": "GitHub Secrets/GitLab Variables/Vault cho secrets. Không commit secrets vào repo. OIDC cho cloud provider auth (no long-lived credentials)",
+        "C": "Encrypt secrets trong code",
+        "D": "Chỉ cần HTTPS là đủ để bảo vệ secrets"
+      },
+      "correct_answer": "B",
+      "explanation": "Never commit secrets: API keys, passwords, tokens. Tools: (1) GitHub Secrets: repository/environment secrets, masked in logs. (2) HashiCorp Vault: dynamic secrets (short-lived), secret rotation. (3) AWS Secrets Manager / Parameter Store. (4) OIDC (OpenID Connect): CI runner assume IAM role mà không cần long-lived credentials (best practice cho AWS). Rotate secrets regularly. Audit access. Secret scanning: GitHub secret scanning, truffleHog — tìm secrets bị commit nhầm. .env.example không chứa real values.",
+      "source": "https://www.freecodecamp.org/news/secrets-management-ci-cd/",
+      "tags": [
+        "secrets",
+        "GitHub-Secrets",
+        "Vault",
+        "OIDC",
+        "security"
+      ]
+    },
+    {
+      "question_id": "cicd_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Setup CI pipeline cho Node.js project với GitHub Actions — các steps cần có?",
+      "options": {
+        "A": "Chỉ cần run tests",
+        "B": "Checkout → Install (npm ci, cache) → Lint → Type check → Test (coverage) → Build → Security audit → Notify",
+        "C": "1 step duy nhất: npm test",
+        "D": "Pipeline chỉ cần khi merge lên main"
+      },
+      "correct_answer": "B",
+      "explanation": "Complete CI pipeline: (1) Checkout: actions/checkout@v4. (2) Setup Node: actions/setup-node@v4 với cache: npm. (3) npm ci: deterministic install (faster than npm install). (4) npm run lint: ESLint (catch code issues). (5) npm run type-check: tsc --noEmit. (6) npm test -- --coverage: unit + integration tests. (7) npm run build: verify build works. (8) npm audit --audit-level=moderate: check vulnerabilities. (9) Upload artifacts: test coverage report. Parallel jobs: lint/type-check và tests cùng lúc. Matrix testing: multiple Node versions.",
+      "source": "https://www.freecodecamp.org/news/nodejs-ci-cd-pipeline/",
+      "tags": [
+        "GitHub-Actions",
+        "Node.js",
+        "npm",
+        "lint",
+        "testing",
+        "pipeline"
+      ]
+    },
+    {
+      "question_id": "cicd_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "CI pipeline fail intermittently (flaky tests). Cách xử lý?",
+      "options": {
+        "A": "Retry pipeline cho đến khi pass",
+        "B": "Identify flaky tests (random failures), fix root cause (timing issues, shared state, external dependencies), quarantine flaky tests, monitor flakiness rate",
+        "C": "Ignore failures vì chỉ là CI",
+        "D": "Xóa tests hay fail"
+      },
+      "correct_answer": "B",
+      "explanation": "Flaky tests: pass/fail không deterministic với cùng code. Nguyên nhân: (1) Timing/async: test không đợi async ops xong (dùng explicit wait, not setTimeout). (2) Shared state: tests không isolate, affect nhau (dùng beforeEach cleanup). (3) External dependencies: network calls, filesystem, time (mock external deps, deterministic time). (4) Race conditions: concurrent tests. (5) Environment: different OS/Node version. Fix: Quarantine → tag flaky tests, không block PR. Monitor: track flakiness rate qua thời gian. Auto-retry: pytest-rerunfailures, jest.retryTimes (last resort). Root cause fix là ưu tiên.",
+      "source": "https://www.freecodecamp.org/news/flaky-tests/",
+      "tags": [
+        "flaky-tests",
+        "CI",
+        "debugging",
+        "test-isolation",
+        "async"
+      ]
+    },
+    {
+      "question_id": "cicd_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Deploy Kubernetes app với GitOps và ArgoCD — workflow?",
+      "options": {
+        "A": "kubectl apply thủ công",
+        "B": "Code push → CI build/push image → update image tag trong Git manifest repo → ArgoCD detect và sync to K8s cluster",
+        "C": "CI/CD không tương thích K8s",
+        "D": "Chỉ dùng Helm"
+      },
+      "correct_answer": "B",
+      "explanation": "GitOps workflow: (1) Dev push code → GitHub. (2) CI (GitHub Actions): test → build Docker image → push to ECR/GCR với tag = git SHA. (3) CI update image tag trong K8s manifests repo (separate repo hoặc subfolder). (4) ArgoCD: watch manifests repo, detect change → sync to K8s cluster (apply manifests). (5) K8s rolling update: new pods → health check → old pods terminated. Benefits: Git as source of truth, audit trail, rollback = revert git commit, no kubectl on CI (security). ArgoCD sync: auto hoặc manual approval. Helm + ArgoCD: manage Helm values in Git.",
+      "source": "https://www.freecodecamp.org/news/gitops-argocd/",
+      "tags": [
+        "GitOps",
+        "ArgoCD",
+        "Kubernetes",
+        "Helm",
+        "deployment"
+      ]
+    }
+  ]
+}

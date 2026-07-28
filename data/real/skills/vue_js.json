@@ -1,0 +1,82 @@
+{
+  "skill": "Vue.js",
+  "market_frequency": "7.3% JDs yêu cầu Vue.js",
+  "market_role": "Frontend Developer, Full-stack Developer",
+  "total_learning_hours": 50,
+  "generated_at": "2026-06-12T00:05:36.356831",
+  "modules": [
+    {
+      "module_id": "vue_01",
+      "title": "Vue 3 Core",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "vue_01_01",
+          "title": "Composition API, Reactivity, Directives",
+          "hours": 10,
+          "academic": {
+            "summary": "ref, reactive, computed, watch, lifecycle hooks, v-if/v-for/v-model, slots, teleport",
+            "resources": [
+              {
+                "title": "Vue 3 Official Docs",
+                "url": "https://vuejs.org/guide/introduction.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Vue Mastery — Free Courses",
+                "url": "https://www.vuemastery.com/courses-path/beginner",
+                "type": "course",
+                "is_free": false,
+                "duration_minutes": 360
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Build Task Manager với Vue 3 + TypeScript + Pinia + Vue Router. Drag & drop với Composable",
+            "resources": [
+              {
+                "title": "Vue 3 Playground",
+                "url": "https://play.vuejs.org",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "vue_01_01_q1",
+                "level": 2,
+                "question": "ref() vs reactive() trong Vue 3 Composition API?",
+                "options": {
+                  "A": "ref: any value (primitive+object), access với .value. reactive: objects only, direct access",
+                  "B": "Chúng giống nhau",
+                  "C": "reactive nhanh hơn ref",
+                  "D": "ref chỉ cho primitives"
+                },
+                "correct_answer": "A",
+                "explanation": "ref(0): wraps in {value: 0}. Template auto-unwrap → không cần .value. reactive({count:0}): cannot reassign root object, lose reactivity khi destructure. Prefer ref for most cases (simpler, consistent)."
+              },
+              {
+                "question_id": "vue_01_01_q2",
+                "level": 3,
+                "question": "v-if vs v-show trong Vue?",
+                "options": {
+                  "A": "v-if: conditionally render/remove DOM element. v-show: always render, toggle CSS display",
+                  "B": "Chúng giống nhau",
+                  "C": "v-show nhanh hơn v-if trong mọi trường hợp",
+                  "D": "v-if không unmount component"
+                },
+                "correct_answer": "A",
+                "explanation": "v-if: destroy/recreate DOM → lifecycle hooks run. v-show: CSS display toggle → element always in DOM. v-if: tốt khi rarely toggle. v-show: tốt khi frequently toggle. v-if với v-for: v-if ưu tiên cao hơn (Vue 3)."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

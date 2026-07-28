@@ -1,0 +1,147 @@
+{
+  "skill": "Kotlin",
+  "market_frequency": "3.4% JDs yêu cầu Kotlin",
+  "market_role": "Android Developer, Backend Developer",
+  "total_learning_hours": 55,
+  "generated_at": "2026-06-12T00:05:36.351664",
+  "modules": [
+    {
+      "module_id": "kotlin_01",
+      "title": "Kotlin Language",
+      "order": 1,
+      "hours": 20,
+      "topics": [
+        {
+          "topic_id": "kotlin_01_01",
+          "title": "Kotlin Core: Null Safety, Extensions, Coroutines",
+          "hours": 10,
+          "academic": {
+            "summary": "Null safety, data classes, sealed classes, extension functions, scope functions, coroutines",
+            "resources": [
+              {
+                "title": "Kotlin Official Docs",
+                "url": "https://kotlinlang.org/docs/home.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Kotlin Koans — Interactive",
+                "url": "https://play.kotlinlang.org/koans/overview",
+                "type": "interactive",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Convert Java project sang Kotlin, dùng data classes, sealed classes cho Result, coroutines cho async",
+            "resources": [
+              {
+                "title": "Kotlin by Example",
+                "url": "https://play.kotlinlang.org/byExample/overview",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "kotlin_01_01_q1",
+                "level": 2,
+                "question": "Kotlin `data class` khác `regular class` ở điểm nào?",
+                "options": {
+                  "A": "Auto-generate equals/hashCode/toString/copy/componentN dựa trên primary constructor properties",
+                  "B": "data class không thể kế thừa",
+                  "C": "Chúng giống nhau",
+                  "D": "data class immutable hoàn toàn"
+                },
+                "correct_answer": "A",
+                "explanation": "data class: compiler generates equals() so sánh values, hashCode, toString, copy() với named args, destructuring. Lý tưởng cho DTOs, value objects. Không phù hợp cho mutable entities."
+              },
+              {
+                "question_id": "kotlin_01_01_q2",
+                "level": 3,
+                "question": "Kotlin coroutines `suspend fun` là gì?",
+                "options": {
+                  "A": "Function có thể suspend execution mà không block thread — resume sau khi async operation hoàn tất",
+                  "B": "Function chạy trong thread riêng",
+                  "C": "Function không thể throw exception",
+                  "D": "Giống thread.sleep()"
+                },
+                "correct_answer": "A",
+                "explanation": "Coroutines: lightweight cooperative multitasking. suspend fun: có thể suspend ở suspension points (delay, withContext, network call). Không tạo thread mới. Structured concurrency với CoroutineScope, Job, Dispatcher."
+              },
+              {
+                "question_id": "kotlin_01_01_q3",
+                "level": 4,
+                "question": "Kotlin sealed class dùng để làm gì?",
+                "options": {
+                  "A": "Represent restricted class hierarchies — khi exhaustive when() needed, như Result, State",
+                  "B": "Prevent subclassing hoàn toàn",
+                  "C": "Chỉ cho enums",
+                  "D": "Data storage"
+                },
+                "correct_answer": "A",
+                "explanation": "sealed: subclasses phải trong cùng package/file. when(sealedObj) exhaustive → compiler yêu cầu handle mọi case → không cần else. Pattern: Result = Success | Error, UIState = Loading | Success | Error."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "kotlin_01_02",
+          "title": "Android Development với Jetpack Compose",
+          "hours": 10,
+          "academic": {
+            "summary": "Composable functions, State hoisting, LazyColumn, ViewModel, Navigation Compose, Hilt DI",
+            "resources": [
+              {
+                "title": "Android Developers — Jetpack Compose",
+                "url": "https://developer.android.com/jetpack/compose",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 360
+              },
+              {
+                "title": "Compose Pathway — Android Developers",
+                "url": "https://developer.android.com/courses/pathways/compose",
+                "type": "course",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Android app: NewsReader với Retrofit + Room + Hilt + ViewModel + Compose. Offline-first với database caching",
+            "resources": [
+              {
+                "title": "Now in Android App",
+                "url": "https://github.com/android/nowinandroid",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "kotlin_01_02_q1",
+                "level": 3,
+                "question": "State hoisting trong Compose là gì?",
+                "options": {
+                  "A": "Di chuyển state lên parent composable — stateless child nhận value + callback",
+                  "B": "Lưu state trong database",
+                  "C": "Cache state trong memory",
+                  "D": "Không dùng state"
+                },
+                "correct_answer": "A",
+                "explanation": "State hoisting: move state lên caller. Child composable stateless (nhận value+onValueChange). Lợi ích: reusable, testable, single source of truth. Pattern: ViewModel → composable screen → child components."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

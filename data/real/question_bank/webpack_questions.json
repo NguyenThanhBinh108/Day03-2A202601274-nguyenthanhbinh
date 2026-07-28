@@ -1,0 +1,218 @@
+{
+  "skill": "Webpack",
+  "skill_key": "webpack",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.517006Z",
+  "source_references": [
+    "https://www.google.com/search?q=Webpack+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "webpack_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Webpack, Entry/output config có vai trò gì?",
+      "options": {
+        "A": "Entry/output config là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Entry/output config là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Entry/output config đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Entry/output config là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Entry/output config trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Entry/output config là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Entry/output config giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Entry/output+config+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "entry-output-config"
+      ]
+    },
+    {
+      "question_id": "webpack_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Webpack, Loaders có vai trò gì?",
+      "options": {
+        "A": "Loaders là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Loaders là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Loaders đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Loaders là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Loaders trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Loaders là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Loaders giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Loaders+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "loaders"
+      ]
+    },
+    {
+      "question_id": "webpack_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Webpack, Plugins có vai trò gì?",
+      "options": {
+        "A": "Plugins là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Plugins là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Plugins đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Plugins là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Plugins trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Plugins là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Plugins giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Plugins+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "plugins"
+      ]
+    },
+    {
+      "question_id": "webpack_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Webpack, Code splitting có vai trò gì?",
+      "options": {
+        "A": "Code splitting là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Code splitting là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Code splitting đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Code splitting là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Code splitting trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Code splitting là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Code splitting giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Code+splitting+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "code-splitting"
+      ]
+    },
+    {
+      "question_id": "webpack_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Webpack, Tree shaking có vai trò gì?",
+      "options": {
+        "A": "Tree shaking là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Tree shaking là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Tree shaking đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Tree shaking là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Tree shaking trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Tree shaking là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Tree shaking giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Tree+shaking+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "tree-shaking"
+      ]
+    },
+    {
+      "question_id": "webpack_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Webpack, Optimization có vai trò gì?",
+      "options": {
+        "A": "Optimization là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Optimization là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Optimization đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Optimization là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Optimization trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Optimization là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Optimization giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Optimization+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "optimization"
+      ]
+    },
+    {
+      "question_id": "webpack_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Webpack, Dev server có vai trò gì?",
+      "options": {
+        "A": "Dev server là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Dev server là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Dev server đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Dev server là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Dev server trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Dev server là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Dev server giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Dev+server+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "dev-server"
+      ]
+    },
+    {
+      "question_id": "webpack_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Webpack, Source maps có vai trò gì?",
+      "options": {
+        "A": "Source maps là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Source maps là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Source maps đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Source maps là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Source maps trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Source maps là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Source maps giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Source+maps+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "source-maps"
+      ]
+    },
+    {
+      "question_id": "webpack_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Webpack, Module federation có vai trò gì?",
+      "options": {
+        "A": "Module federation là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Module federation là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Module federation đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Module federation là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Module federation trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Module federation là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Module federation giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Module+federation+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "module-federation"
+      ]
+    },
+    {
+      "question_id": "webpack_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Webpack, Webpack 5 features có vai trò gì?",
+      "options": {
+        "A": "Webpack 5 features là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Webpack 5 features là core concept trong Webpack — cần master để build production-grade Frontend solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Webpack 5 features đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Webpack 5 features là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Webpack 5 features trong Webpack: Đây là một trong những concepts quan trọng nhất. Webpack được sử dụng rộng rãi trong industry và Webpack 5 features là phần không thể thiếu. Khi làm việc với Webpack trong production, hiểu rõ Webpack 5 features giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Webpack+Webpack+5+features+tutorial",
+      "tags": [
+        "webpack",
+        "frontend",
+        "webpack-5-features"
+      ]
+    }
+  ]
+}

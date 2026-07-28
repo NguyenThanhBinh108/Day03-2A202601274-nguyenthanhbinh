@@ -1,0 +1,217 @@
+{
+  "skill": "PostgreSQL",
+  "market_frequency": "16.2% JDs yêu cầu PostgreSQL",
+  "market_role": "Backend Developer, Data Engineer, DBA",
+  "total_learning_hours": 35,
+  "generated_at": "2026-06-12T00:05:36.352674",
+  "modules": [
+    {
+      "module_id": "pgsql_01",
+      "title": "PostgreSQL Advanced",
+      "order": 1,
+      "hours": 35,
+      "topics": [
+        {
+          "topic_id": "pgsql_01_01",
+          "title": "Indexing Strategy & Query Optimization",
+          "hours": 12,
+          "academic": {
+            "summary": "B-Tree, GIN, GiST, BRIN indexes, EXPLAIN ANALYZE, query planner, partial indexes, covering indexes",
+            "resources": [
+              {
+                "title": "PostgreSQL Docs — Indexes",
+                "url": "https://www.postgresql.org/docs/current/indexes.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              },
+              {
+                "title": "Use The Index Luke",
+                "url": "https://use-the-index-luke.com",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 300
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Optimize slow query: EXPLAIN ANALYZE → identify seq scan → thêm index → verify cost reduction. VACUUM ANALYZE",
+            "resources": [
+              {
+                "title": "pgAdmin Tool",
+                "url": "https://www.pgadmin.org",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "pgsql_01_01_q1",
+                "level": 4,
+                "question": "Khi nào dùng GIN index thay vì B-Tree?",
+                "options": {
+                  "A": "Full-text search, JSONB queries, array containment operators. B-Tree tốt hơn cho equality/range",
+                  "B": "GIN luôn tốt hơn B-Tree",
+                  "C": "GIN chỉ cho numeric",
+                  "D": "B-Tree không hỗ trợ NULL"
+                },
+                "correct_answer": "A",
+                "explanation": "GIN (Generalized Inverted Index): tốt cho composite values (arrays, JSONB, tsvector). B-Tree: equality/range/sort. GiST: geometry, range types. BRIN: very large tables với natural sort (timestamps)."
+              },
+              {
+                "question_id": "pgsql_01_01_q2",
+                "level": 5,
+                "question": "Seq Scan vs Index Scan — khi nào planner chọn Seq Scan dù có index?",
+                "options": {
+                  "A": "Khi selectivity thấp (filter nhiều rows), bảng nhỏ, hoặc sau VACUUM stats lỗi thời",
+                  "B": "Luôn dùng Index Scan nếu có",
+                  "C": "Seq Scan chỉ cho bảng lớn",
+                  "D": "Index Scan luôn nhanh hơn"
+                },
+                "correct_answer": "A",
+                "explanation": "Planner chọn Seq Scan khi: 1) filter returns >10-20% rows (Index Scan + random I/O đắt hơn), 2) bảng fit trong shared_buffers, 3) stats không chính xác. ANALYZE update stats, SET enable_seqscan=off để force index."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "pgsql_01_02",
+          "title": "Transactions, Isolation Levels, MVCC",
+          "hours": 10,
+          "academic": {
+            "summary": "ACID, MVCC, isolation levels (READ COMMITTED/REPEATABLE READ/SERIALIZABLE), deadlocks, advisory locks",
+            "resources": [
+              {
+                "title": "PostgreSQL MVCC Docs",
+                "url": "https://www.postgresql.org/docs/current/mvcc.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 90
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Demo phantom read với REPEATABLE READ. Implement optimistic locking với version column. Handle deadlock với retry logic",
+            "resources": [
+              {
+                "title": "PostgreSQL Transactions",
+                "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "pgsql_01_02_q1",
+                "level": 5,
+                "question": "MVCC (Multi-Version Concurrency Control) trong PostgreSQL hoạt động thế nào?",
+                "options": {
+                  "A": "Mỗi transaction thấy snapshot riêng của data — không block reads/writes nhau. Old versions (dead tuples) cần VACUUM",
+                  "B": "Lock toàn bộ table khi write",
+                  "C": "Copy data vào temp table",
+                  "D": "Read blocks write"
+                },
+                "correct_answer": "A",
+                "explanation": "MVCC: mỗi row có xmin/xmax transaction IDs. Reader thấy version consistent với transaction start. Writer tạo row version mới. Dead tuples (old versions) tích lũy → VACUUM reclaim. Giải thích tại sao PostgreSQL tốt cho OLTP concurrency."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "pgsql_01_03",
+          "title": "Replication, Partitioning, High Availability",
+          "hours": 8,
+          "academic": {
+            "summary": "Streaming replication, logical replication, table partitioning, connection pooling (PgBouncer), Patroni",
+            "resources": [
+              {
+                "title": "PostgreSQL High Availability",
+                "url": "https://www.postgresql.org/docs/current/high-availability.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 120
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Setup streaming replication: primary + 2 replicas. Test failover với Patroni. Implement table range partitioning cho time-series data",
+            "resources": [
+              {
+                "title": "Patroni — PostgreSQL HA",
+                "url": "https://github.com/zalando/patroni",
+                "type": "reference",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "pgsql_01_03_q1",
+                "level": 5,
+                "question": "Tại sao cần PgBouncer khi đã có connection pool trong application?",
+                "options": {
+                  "A": "PostgreSQL mỗi connection = 1 process (~5-10MB). PgBouncer multiplex nhiều app connections → ít Postgres processes hơn → ít RAM, ít context switch",
+                  "B": "PgBouncer tốt hơn về security",
+                  "C": "Application pool không hoạt động",
+                  "D": "Chỉ cần PgBouncer, không cần app pool"
+                },
+                "correct_answer": "A",
+                "explanation": "PostgreSQL: process-per-connection model. 500 connections = 500 processes = nhiều GB RAM. PgBouncer: transaction pooling — 500 app connections → 20-30 Postgres connections. Giảm drastically Postgres overhead."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "pgsql_01_04",
+          "title": "JSONB, Full-Text Search, PostGIS",
+          "hours": 5,
+          "academic": {
+            "summary": "JSONB operators (@>, ?, #>>), tsvector/tsquery full-text, GIN index on JSONB, PostGIS basics",
+            "resources": [
+              {
+                "title": "PostgreSQL JSONB Docs",
+                "url": "https://www.postgresql.org/docs/current/functions-json.html",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement product catalog với JSONB metadata, full-text search với tsvector + ts_rank, GIN indexes",
+            "resources": [
+              {
+                "title": "PostgreSQL Full Text Search",
+                "url": "https://www.postgresql.org/docs/current/textsearch.html",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "pgsql_01_04_q1",
+                "level": 4,
+                "question": "JSON vs JSONB trong PostgreSQL?",
+                "options": {
+                  "A": "JSON: text storage, exact preservation. JSONB: binary, indexed, faster queries, whitespace stripped",
+                  "B": "Chúng giống nhau",
+                  "C": "JSONB không hỗ trợ GIN",
+                  "D": "JSON nhanh hơn query"
+                },
+                "correct_answer": "A",
+                "explanation": "JSON: store text as-is, parse each query. JSONB: binary decomposed, deduplicates keys, can be GIN indexed. JSONB: write slightly slower, read much faster. Use JSONB almost always."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

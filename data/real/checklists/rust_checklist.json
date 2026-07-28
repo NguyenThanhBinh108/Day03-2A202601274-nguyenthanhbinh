@@ -1,0 +1,154 @@
+{
+  "skill": "Rust",
+  "skill_key": "rust",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.537790Z",
+  "checklist_items": [
+    {
+      "item_id": "rust_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Ownership/Borrowing",
+      "description": "Master Ownership/Borrowing trong Rust — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Rust+Ownership/Borrowing+tutorial",
+      "resource_title": "Rust — Ownership/Borrowing",
+      "quiz_ids": [
+        "rust_l1_001"
+      ],
+      "market_relevance": "Ownership/Borrowing là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Lifetimes",
+      "description": "Master Lifetimes trong Rust — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Rust+Lifetimes+tutorial",
+      "resource_title": "Rust — Lifetimes",
+      "quiz_ids": [
+        "rust_l2_002"
+      ],
+      "market_relevance": "Lifetimes là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Traits",
+      "description": "Master Traits trong Rust — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Rust+Traits+tutorial",
+      "resource_title": "Rust — Traits",
+      "quiz_ids": [
+        "rust_l3_003"
+      ],
+      "market_relevance": "Traits là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Enums/Pattern matching",
+      "description": "Master Enums/Pattern matching trong Rust — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Rust+Enums/Pattern+matching+tutorial",
+      "resource_title": "Rust — Enums/Pattern matching",
+      "quiz_ids": [
+        "rust_l4_004"
+      ],
+      "market_relevance": "Enums/Pattern matching là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Error handling",
+      "description": "Master Error handling trong Rust — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Rust+Error+handling+tutorial",
+      "resource_title": "Rust — Error handling",
+      "quiz_ids": [
+        "rust_l5_005"
+      ],
+      "market_relevance": "Error handling là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Cargo",
+      "description": "Master Cargo trong Rust — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Rust+Cargo+tutorial",
+      "resource_title": "Rust — Cargo",
+      "quiz_ids": [
+        "rust_l5_006"
+      ],
+      "market_relevance": "Cargo là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Async (Tokio)",
+      "description": "Master Async (Tokio) trong Rust — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Rust+Async+(Tokio)+tutorial",
+      "resource_title": "Rust — Async (Tokio)",
+      "quiz_ids": [
+        "rust_l5_007"
+      ],
+      "market_relevance": "Async (Tokio) là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Actix-web/Axum",
+      "description": "Master Actix-web/Axum trong Rust — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Rust+Actix-web/Axum+tutorial",
+      "resource_title": "Rust — Actix-web/Axum",
+      "quiz_ids": [
+        "rust_l5_008"
+      ],
+      "market_relevance": "Actix-web/Axum là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Serde",
+      "description": "Master Serde trong Rust — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Rust+Serde+tutorial",
+      "resource_title": "Rust — Serde",
+      "quiz_ids": [
+        "rust_l5_009"
+      ],
+      "market_relevance": "Serde là key skill trong Rust Backend development"
+    },
+    {
+      "item_id": "rust_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Testing",
+      "description": "Master Testing trong Rust — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Rust+Testing+tutorial",
+      "resource_title": "Rust — Testing",
+      "quiz_ids": [
+        "rust_l5_010"
+      ],
+      "market_relevance": "Testing là key skill trong Rust Backend development"
+    }
+  ]
+}

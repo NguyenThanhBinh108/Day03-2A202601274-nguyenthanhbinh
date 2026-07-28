@@ -1,0 +1,154 @@
+{
+  "skill": "Microsoft Azure",
+  "skill_key": "azure",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.600370Z",
+  "checklist_items": [
+    {
+      "item_id": "azure_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Azure App Service",
+      "description": "Master Azure App Service trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+App+Service+tutorial",
+      "resource_title": "Microsoft Azure — Azure App Service",
+      "quiz_ids": [
+        "azure_l1_001"
+      ],
+      "market_relevance": "Azure App Service là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Azure Functions",
+      "description": "Master Azure Functions trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+Functions+tutorial",
+      "resource_title": "Microsoft Azure — Azure Functions",
+      "quiz_ids": [
+        "azure_l2_002"
+      ],
+      "market_relevance": "Azure Functions là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "AKS",
+      "description": "Master AKS trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+AKS+tutorial",
+      "resource_title": "Microsoft Azure — AKS",
+      "quiz_ids": [
+        "azure_l3_003"
+      ],
+      "market_relevance": "AKS là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Azure DevOps",
+      "description": "Master Azure DevOps trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+DevOps+tutorial",
+      "resource_title": "Microsoft Azure — Azure DevOps",
+      "quiz_ids": [
+        "azure_l4_004"
+      ],
+      "market_relevance": "Azure DevOps là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Azure AD",
+      "description": "Master Azure AD trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+AD+tutorial",
+      "resource_title": "Microsoft Azure — Azure AD",
+      "quiz_ids": [
+        "azure_l5_005"
+      ],
+      "market_relevance": "Azure AD là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Azure Storage",
+      "description": "Master Azure Storage trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+Storage+tutorial",
+      "resource_title": "Microsoft Azure — Azure Storage",
+      "quiz_ids": [
+        "azure_l5_006"
+      ],
+      "market_relevance": "Azure Storage là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Azure SQL",
+      "description": "Master Azure SQL trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+SQL+tutorial",
+      "resource_title": "Microsoft Azure — Azure SQL",
+      "quiz_ids": [
+        "azure_l5_007"
+      ],
+      "market_relevance": "Azure SQL là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Azure Monitor",
+      "description": "Master Azure Monitor trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+Monitor+tutorial",
+      "resource_title": "Microsoft Azure — Azure Monitor",
+      "quiz_ids": [
+        "azure_l5_008"
+      ],
+      "market_relevance": "Azure Monitor là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Azure CDN",
+      "description": "Master Azure CDN trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Azure+CDN+tutorial",
+      "resource_title": "Microsoft Azure — Azure CDN",
+      "quiz_ids": [
+        "azure_l5_009"
+      ],
+      "market_relevance": "Azure CDN là key skill trong Microsoft Azure DevOps development"
+    },
+    {
+      "item_id": "azure_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Bicep templates",
+      "description": "Master Bicep templates trong Microsoft Azure — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Microsoft+Azure+Bicep+templates+tutorial",
+      "resource_title": "Microsoft Azure — Bicep templates",
+      "quiz_ids": [
+        "azure_l5_010"
+      ],
+      "market_relevance": "Bicep templates là key skill trong Microsoft Azure DevOps development"
+    }
+  ]
+}

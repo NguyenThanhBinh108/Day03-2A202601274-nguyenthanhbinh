@@ -1,0 +1,154 @@
+{
+  "skill": "C# / .NET",
+  "skill_key": "csharp_dotnet",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.545314Z",
+  "checklist_items": [
+    {
+      "item_id": "csharp_dotnet_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "ASP.NET Core",
+      "description": "Master ASP.NET Core trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+ASP.NET+Core+tutorial",
+      "resource_title": "C# / .NET — ASP.NET Core",
+      "quiz_ids": [
+        "csharp_dotnet_l1_001"
+      ],
+      "market_relevance": "ASP.NET Core là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "LINQ",
+      "description": "Master LINQ trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+LINQ+tutorial",
+      "resource_title": "C# / .NET — LINQ",
+      "quiz_ids": [
+        "csharp_dotnet_l2_002"
+      ],
+      "market_relevance": "LINQ là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Entity Framework Core",
+      "description": "Master Entity Framework Core trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+Entity+Framework+Core+tutorial",
+      "resource_title": "C# / .NET — Entity Framework Core",
+      "quiz_ids": [
+        "csharp_dotnet_l3_003"
+      ],
+      "market_relevance": "Entity Framework Core là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Dependency Injection",
+      "description": "Master Dependency Injection trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+Dependency+Injection+tutorial",
+      "resource_title": "C# / .NET — Dependency Injection",
+      "quiz_ids": [
+        "csharp_dotnet_l4_004"
+      ],
+      "market_relevance": "Dependency Injection là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Middleware",
+      "description": "Master Middleware trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+Middleware+tutorial",
+      "resource_title": "C# / .NET — Middleware",
+      "quiz_ids": [
+        "csharp_dotnet_l5_005"
+      ],
+      "market_relevance": "Middleware là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "JWT Authentication",
+      "description": "Master JWT Authentication trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+JWT+Authentication+tutorial",
+      "resource_title": "C# / .NET — JWT Authentication",
+      "quiz_ids": [
+        "csharp_dotnet_l5_006"
+      ],
+      "market_relevance": "JWT Authentication là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "SignalR",
+      "description": "Master SignalR trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+SignalR+tutorial",
+      "resource_title": "C# / .NET — SignalR",
+      "quiz_ids": [
+        "csharp_dotnet_l5_007"
+      ],
+      "market_relevance": "SignalR là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Background Services",
+      "description": "Master Background Services trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+Background+Services+tutorial",
+      "resource_title": "C# / .NET — Background Services",
+      "quiz_ids": [
+        "csharp_dotnet_l5_008"
+      ],
+      "market_relevance": "Background Services là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "xUnit Testing",
+      "description": "Master xUnit Testing trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+xUnit+Testing+tutorial",
+      "resource_title": "C# / .NET — xUnit Testing",
+      "quiz_ids": [
+        "csharp_dotnet_l5_009"
+      ],
+      "market_relevance": "xUnit Testing là key skill trong C# / .NET Backend development"
+    },
+    {
+      "item_id": "csharp_dotnet_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Docker deployment",
+      "description": "Master Docker deployment trong C# / .NET — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=C#+/+.NET+Docker+deployment+tutorial",
+      "resource_title": "C# / .NET — Docker deployment",
+      "quiz_ids": [
+        "csharp_dotnet_l5_010"
+      ],
+      "market_relevance": "Docker deployment là key skill trong C# / .NET Backend development"
+    }
+  ]
+}

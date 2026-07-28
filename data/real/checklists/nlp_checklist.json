@@ -1,0 +1,154 @@
+{
+  "skill": "NLP",
+  "skill_key": "nlp",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.651077Z",
+  "checklist_items": [
+    {
+      "item_id": "nlp_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Tokenization",
+      "description": "Master Tokenization trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=NLP+Tokenization+tutorial",
+      "resource_title": "NLP — Tokenization",
+      "quiz_ids": [
+        "nlp_l1_001"
+      ],
+      "market_relevance": "Tokenization là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Word embeddings",
+      "description": "Master Word embeddings trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=NLP+Word+embeddings+tutorial",
+      "resource_title": "NLP — Word embeddings",
+      "quiz_ids": [
+        "nlp_l2_002"
+      ],
+      "market_relevance": "Word embeddings là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Transformers (BERT/GPT)",
+      "description": "Master Transformers (BERT/GPT) trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=NLP+Transformers+(BERT/GPT)+tutorial",
+      "resource_title": "NLP — Transformers (BERT/GPT)",
+      "quiz_ids": [
+        "nlp_l3_003"
+      ],
+      "market_relevance": "Transformers (BERT/GPT) là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Text classification",
+      "description": "Master Text classification trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=NLP+Text+classification+tutorial",
+      "resource_title": "NLP — Text classification",
+      "quiz_ids": [
+        "nlp_l4_004"
+      ],
+      "market_relevance": "Text classification là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "NER",
+      "description": "Master NER trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=NLP+NER+tutorial",
+      "resource_title": "NLP — NER",
+      "quiz_ids": [
+        "nlp_l5_005"
+      ],
+      "market_relevance": "NER là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Sentiment analysis",
+      "description": "Master Sentiment analysis trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=NLP+Sentiment+analysis+tutorial",
+      "resource_title": "NLP — Sentiment analysis",
+      "quiz_ids": [
+        "nlp_l5_006"
+      ],
+      "market_relevance": "Sentiment analysis là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Question answering",
+      "description": "Master Question answering trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=NLP+Question+answering+tutorial",
+      "resource_title": "NLP — Question answering",
+      "quiz_ids": [
+        "nlp_l5_007"
+      ],
+      "market_relevance": "Question answering là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "HuggingFace",
+      "description": "Master HuggingFace trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=NLP+HuggingFace+tutorial",
+      "resource_title": "NLP — HuggingFace",
+      "quiz_ids": [
+        "nlp_l5_008"
+      ],
+      "market_relevance": "HuggingFace là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Fine-tuning",
+      "description": "Master Fine-tuning trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=NLP+Fine-tuning+tutorial",
+      "resource_title": "NLP — Fine-tuning",
+      "quiz_ids": [
+        "nlp_l5_009"
+      ],
+      "market_relevance": "Fine-tuning là key skill trong NLP AI/ML development"
+    },
+    {
+      "item_id": "nlp_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Evaluation metrics",
+      "description": "Master Evaluation metrics trong NLP — essential cho AI/ML developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=NLP+Evaluation+metrics+tutorial",
+      "resource_title": "NLP — Evaluation metrics",
+      "quiz_ids": [
+        "nlp_l5_010"
+      ],
+      "market_relevance": "Evaluation metrics là key skill trong NLP AI/ML development"
+    }
+  ]
+}

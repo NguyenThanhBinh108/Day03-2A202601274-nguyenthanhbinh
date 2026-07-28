@@ -1,0 +1,502 @@
+{
+  "skill": "HTML & CSS",
+  "skill_key": "html_css",
+  "total_questions": 30,
+  "levels": {
+    "1_beginner": 6,
+    "2_understanding": 6,
+    "3_application": 6,
+    "4_debugging": 6,
+    "5_production": 6
+  },
+  "generated_at": "2026-06-12T03:30:00.000000",
+  "source_references": [
+    "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "https://www.w3schools.com/html/",
+    "https://www.w3schools.com/css/",
+    "https://css-tricks.com/"
+  ],
+  "questions": [
+    {
+      "question_id": "html_css_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Sự khác biệt giữa HTML elements và HTML attributes là gì?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau",
+        "B": "Elements là các thẻ HTML (<div>, <p>...), attributes là thông tin bổ sung bên trong opening tag (<div class='...' id='...'/>)",
+        "C": "Attributes là các thẻ HTML, elements là thông tin bên trong",
+        "D": "Elements chỉ dùng trong HTML5"
+      },
+      "correct_answer": "B",
+      "explanation": "HTML Elements: là các building block của trang web, được đánh dấu bởi tags (<p>, <div>, <img>). Attributes: cung cấp thêm thông tin về element, luôn nằm trong opening tag. Ví dụ: <a href='https://google.com' target='_blank'>Link</a> — <a> là element, href và target là attributes.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "tags": ["elements", "attributes", "basics"]
+    },
+    {
+      "question_id": "html_css_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Semantic HTML là gì và tại sao nó quan trọng?",
+      "options": {
+        "A": "HTML được viết đẹp và có indent",
+        "B": "Sử dụng các thẻ HTML có ý nghĩa mô tả nội dung (<header>, <nav>, <article>) thay vì chỉ dùng <div>",
+        "C": "HTML chạy nhanh hơn do tối ưu",
+        "D": "HTML không có CSS"
+      },
+      "correct_answer": "B",
+      "explanation": "Semantic HTML dùng elements có ý nghĩa: <header> (phần đầu trang), <nav> (navigation), <main> (nội dung chính), <article> (bài viết độc lập), <section> (phần nội dung), <aside> (sidebar), <footer> (phần cuối). Lợi ích: SEO tốt hơn (search engines hiểu cấu trúc), Accessibility (screen readers), code dễ đọc, maintain.",
+      "source": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+      "tags": ["semantic", "accessibility", "SEO"]
+    },
+    {
+      "question_id": "html_css_l1_003",
+      "level": 1,
+      "category": "definition",
+      "question": "CSS Box Model bao gồm những phần nào?",
+      "options": {
+        "A": "Width và Height",
+        "B": "Content, Padding, Border, Margin — từ trong ra ngoài",
+        "C": "Color, Font, Size, Position",
+        "D": "Header, Body, Footer"
+      },
+      "correct_answer": "B",
+      "explanation": "CSS Box Model: Content (nội dung thực) → Padding (khoảng cách bên trong, giữa content và border) → Border (đường viền) → Margin (khoảng cách bên ngoài, giữa element và elements xung quanh). box-sizing: border-box (recommended) → width/height bao gồm cả padding và border. box-sizing: content-box (default) → width/height chỉ tính content.",
+      "source": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model",
+      "tags": ["box-model", "layout", "padding", "margin"]
+    },
+    {
+      "question_id": "html_css_l1_004",
+      "level": 1,
+      "category": "definition",
+      "question": "Sự khác biệt giữa display: block, inline, và inline-block?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau",
+        "B": "block: chiếm toàn bộ dòng, có width/height; inline: không xuống dòng, không width/height; inline-block: không xuống dòng nhưng có width/height",
+        "C": "Chỉ block có thể có CSS styles",
+        "D": "inline-block không tồn tại trong CSS"
+      },
+      "correct_answer": "B",
+      "explanation": "block: chiếm 100% width dòng, xuống dòng mới, có thể set width/height (div, p, h1-h6, section). inline: chỉ chiếm đúng không gian nội dung, không xuống dòng, KHÔNG set được width/height (span, a, strong, em). inline-block: không xuống dòng (như inline) nhưng CÓ set được width/height (như block). Dùng cho: buttons, nav items.",
+      "source": "https://www.w3schools.com/css/css_display_visibility.asp",
+      "tags": ["display", "block", "inline", "layout"]
+    },
+    {
+      "question_id": "html_css_l1_005",
+      "level": 1,
+      "category": "definition",
+      "question": "CSS Specificity (độ ưu tiên) được tính như thế nào?",
+      "options": {
+        "A": "CSS viết sau luôn thắng",
+        "B": "Inline styles > ID selector > Class/Attribute selector > Element selector; !important override tất cả",
+        "C": "Class selector luôn thắng Element selector",
+        "D": "Không có quy tắc cụ thể"
+      },
+      "correct_answer": "B",
+      "explanation": "Specificity (từ cao xuống thấp): !important (tránh dùng) → Inline styles (style='') (1000) → ID selector (#id) (100) → Class (.class), attribute ([type]), pseudo-class (:hover) (10) → Element (div, p), pseudo-element (::before) (1). Khi bằng nhau → rule viết sau thắng. Ví dụ: div.active#main: 1+10+100=111.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",
+      "tags": ["specificity", "selectors", "cascade"]
+    },
+    {
+      "question_id": "html_css_l1_006",
+      "level": 1,
+      "category": "definition",
+      "question": "Position property trong CSS có những giá trị nào và khác nhau thế nào?",
+      "options": {
+        "A": "Chỉ có static và absolute",
+        "B": "static (default), relative (offset từ vị trí bình thường), absolute (offset so với ancestor có position), fixed (so với viewport), sticky (kết hợp relative và fixed)",
+        "C": "Position chỉ dùng để căn giữa element",
+        "D": "Tất cả position đều giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "static: default, không bị ảnh hưởng bởi top/right/bottom/left. relative: vẫn trong flow, top/left offset từ vị trí bình thường. absolute: ra khỏi flow, offset so với nearest positioned ancestor (không static). fixed: như absolute nhưng so với viewport (sticky header/footer). sticky: relative cho đến khi scroll qua threshold → fixed. Lưu ý: absolute cần parent có position: relative/absolute/fixed.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+      "tags": ["position", "layout", "absolute", "fixed", "sticky"]
+    },
+    {
+      "question_id": "html_css_l2_001",
+      "level": 2,
+      "category": "understanding",
+      "question": "Flexbox và CSS Grid khác nhau thế nào và khi nào nên dùng cái nào?",
+      "options": {
+        "A": "Chúng giống nhau, dùng cái nào cũng được",
+        "B": "Flexbox: 1 chiều (row hoặc column), dùng cho components. Grid: 2 chiều (rows + columns), dùng cho layout toàn trang",
+        "C": "Grid chỉ dùng cho bảng, Flexbox dùng cho mọi thứ",
+        "D": "Flexbox mới hơn và thay thế Grid"
+      },
+      "correct_answer": "B",
+      "explanation": "Flexbox: 1D layout system, items theo 1 chiều (row hoặc column). Tốt cho: nav bars, button groups, centering content, card layouts (1 row/column). Grid: 2D layout system, kiểm soát cả rows và columns cùng lúc. Tốt cho: page layouts, magazine layouts, dashboard grids. Best practice: dùng Grid cho outer layout của trang, Flexbox cho inner component layout. Chúng thường được dùng kết hợp nhau.",
+      "source": "https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/",
+      "tags": ["flexbox", "grid", "layout", "responsive"]
+    },
+    {
+      "question_id": "html_css_l2_002",
+      "level": 2,
+      "category": "understanding",
+      "question": "CSS Custom Properties (CSS Variables) là gì và lợi ích so với SASS variables?",
+      "options": {
+        "A": "CSS Variables chậm hơn SASS variables",
+        "B": "CSS Variables (--color: red; var(--color)) có thể thay đổi runtime qua JS, cascade theo DOM, SASS variables là compile-time",
+        "C": "SASS variables mạnh hơn hoàn toàn",
+        "D": "Chúng giống nhau hoàn toàn"
+      },
+      "correct_answer": "B",
+      "explanation": "CSS Custom Properties: khai báo --primary: #3498db; trong :root {}; dùng: color: var(--primary, fallback). Ưu điểm so với SASS: (1) Runtime — có thể thay đổi bằng JS (dark mode!): el.style.setProperty('--primary', '#000'). (2) Cascade theo DOM — override trong component scope. (3) Không cần preprocessor. SASS variables: compile-time, không thể thay đổi sau khi compile, không cascade. Best practice: dùng CSS vars cho design tokens (colors, spacing), SASS cho logic.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+      "tags": ["css-variables", "custom-properties", "theming"]
+    },
+    {
+      "question_id": "html_css_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Responsive design với CSS Media Queries hoạt động thế nào?",
+      "options": {
+        "A": "Media queries tự động thay đổi HTML khi resize",
+        "B": "@media (max-width: 768px) {} áp dụng CSS khi điều kiện về viewport/device match; mobile-first dùng min-width",
+        "C": "Media queries chỉ dùng cho print",
+        "D": "Responsive design không cần media queries nếu dùng Flexbox"
+      },
+      "correct_answer": "B",
+      "explanation": "Media queries: @media [media-type] and (condition) { CSS rules }. Breakpoints phổ biến: 480px (mobile), 768px (tablet), 1024px (laptop), 1200px+ (desktop). Mobile-first (recommended): bắt đầu với mobile CSS, dùng min-width để mở rộng. Desktop-first: bắt đầu với desktop, dùng max-width để thu nhỏ. Ngoài ra: @media (prefers-color-scheme: dark), @media (prefers-reduced-motion), @media print.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries",
+      "tags": ["responsive", "media-queries", "mobile-first"]
+    },
+    {
+      "question_id": "html_css_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "CSS Cascade và Inheritance hoạt động như thế nào?",
+      "options": {
+        "A": "Mọi properties đều được kế thừa từ parent",
+        "B": "Cascade: quy tắc xác định style nào thắng (origin, specificity, order). Inheritance: một số properties (color, font) kế thừa từ parent, phần khác (margin, border) không kế thừa",
+        "C": "Inheritance chỉ hoạt động với font-size",
+        "D": "Cascade và Inheritance giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "Cascade xác định style nào áp dụng khi có conflict: Origin (user-agent < author < user) → Specificity → Source order. Inheritance: properties liên quan đến text thường kế thừa (color, font-size, font-family, line-height). Layout properties không kế thừa (width, height, margin, padding, border). Dùng inherit keyword để force inheritance: border: inherit. Dùng initial để reset về default. Dùng unset để kế thừa nếu có, hoặc initial nếu không.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade",
+      "tags": ["cascade", "inheritance", "specificity"]
+    },
+    {
+      "question_id": "html_css_l2_005",
+      "level": 2,
+      "category": "understanding",
+      "question": "CSS Pseudo-classes và Pseudo-elements khác nhau thế nào?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau, chỉ khác cách viết",
+        "B": "Pseudo-classes (:hover, :focus, :nth-child) select element ở state cụ thể. Pseudo-elements (::before, ::after, ::first-line) select phần cụ thể của element",
+        "C": "Pseudo-elements không tồn tại trong CSS3",
+        "D": "Pseudo-classes chỉ dùng với links"
+      },
+      "correct_answer": "B",
+      "explanation": "Pseudo-classes (1 dấu :): element ở trạng thái/điều kiện. Phổ biến: :hover, :focus, :active, :visited, :disabled, :checked, :nth-child(n), :first-child, :last-child, :not(), :is(), :where(), :has(). Pseudo-elements (2 dấu ::): tạo hoặc style phần của element. Phổ biến: ::before (tạo content trước), ::after (tạo content sau), ::first-line, ::first-letter, ::placeholder, ::selection. ::before và ::after cần content property.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
+      "tags": ["pseudo-classes", "pseudo-elements", "selectors"]
+    },
+    {
+      "question_id": "html_css_l2_006",
+      "level": 2,
+      "category": "understanding",
+      "question": "CSS Animations và Transitions khác nhau thế nào?",
+      "options": {
+        "A": "Chúng giống nhau, chỉ khác cách viết",
+        "B": "Transition: animation đơn giản từ state A→B khi triggered bởi event. Animation: phức tạp hơn, dùng @keyframes, có thể loop, không cần trigger",
+        "C": "Animation chỉ dùng cho JavaScript",
+        "D": "Transition mạnh hơn Animation"
+      },
+      "correct_answer": "B",
+      "explanation": "Transition: chuyển từ state A sang B khi có trigger (hover, class change). Properties: transition-property, transition-duration, transition-timing-function, transition-delay. Shorthand: transition: all 0.3s ease. Animation: phức tạp hơn, dùng @keyframes để define các bước. Properties: animation-name, duration, timing-function, delay, iteration-count (infinite), direction, fill-mode. Shorthand: animation: slide 1s ease infinite. Dùng animation khi cần: nhiều bước, loop, không cần trigger.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations",
+      "tags": ["animation", "transition", "keyframes", "performance"]
+    },
+    {
+      "question_id": "html_css_l3_001",
+      "level": 3,
+      "category": "application",
+      "question": "Cách center một element cả ngang lẫn dọc trong CSS? Liệt kê các phương pháp hiện đại.",
+      "options": {
+        "A": "Chỉ có thể dùng margin: auto",
+        "B": "Flexbox: display:flex; justify-content:center; align-items:center. Grid: display:grid; place-items:center. Position: top:50%; transform:translate(-50%,-50%)",
+        "C": "Dùng text-align:center và vertical-align:middle",
+        "D": "Không thể center cả ngang lẫn dọc với CSS"
+      },
+      "correct_answer": "B",
+      "explanation": "Phương pháp centering: (1) Flexbox (phổ biến nhất): .parent { display:flex; justify-content:center; align-items:center; }. (2) Grid: .parent { display:grid; place-items:center; }. (3) Position + Transform: .child { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }. (4) Position + margin auto (cần biết kích thước): top:0;left:0;right:0;bottom:0; margin:auto;. (5) margin: auto (chỉ horizontal, cho block elements với width). Best practice: dùng Flexbox hoặc Grid.",
+      "source": "https://css-tricks.com/centering-css-complete-guide/",
+      "tags": ["centering", "flexbox", "grid", "position"]
+    },
+    {
+      "question_id": "html_css_l3_002",
+      "level": 3,
+      "category": "application",
+      "question": "Implement responsive navigation: desktop = horizontal menu, mobile = hamburger menu. Approach CSS nào?",
+      "options": {
+        "A": "Tạo 2 nav riêng biệt rồi hide/show bằng display:none",
+        "B": "Dùng Flexbox cho nav, media query để thay đổi layout, checkbox hack hoặc JS để toggle mobile menu",
+        "C": "Chỉ dùng float: left cho các nav items",
+        "D": "Responsive nav không thể làm với CSS thuần"
+      },
+      "correct_answer": "B",
+      "explanation": "Pattern: nav { display:flex; gap:1rem } .hamburger { display:none }. @media (max-width:768px) { .hamburger { display:block } nav ul { display:none; flex-direction:column } nav ul.open { display:flex } }. Toggle 'open' class bằng JS onclick. CSS-only alternative: input[type=checkbox]:checked ~ ul { display:flex }. Nên dùng JS cho accessibility (keyboard navigation, aria-expanded, aria-label). Thêm transition cho smooth open/close animation.",
+      "source": "https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/",
+      "tags": ["responsive", "navigation", "hamburger", "media-query"]
+    },
+    {
+      "question_id": "html_css_l3_003",
+      "level": 3,
+      "category": "application",
+      "question": "Cách implement CSS dark mode toggle?",
+      "options": {
+        "A": "Chỉ có thể dùng JavaScript để thay đổi màu sắc",
+        "B": "CSS Variables + class toggle (.dark-mode) hoặc @media (prefers-color-scheme: dark) cho automatic dark mode",
+        "C": "Dark mode cần framework",
+        "D": "Dùng filter: invert(1) cho toàn bộ trang"
+      },
+      "correct_answer": "B",
+      "explanation": "Cách 1 - Auto dark mode: @media (prefers-color-scheme: dark) { :root { --bg: #000; --text: #fff; } }. Cách 2 - Manual toggle: :root { --bg: #fff; --text: #000; } .dark { --bg: #000; --text: #fff; }. Toggle class 'dark' lên <html> bằng JS: document.documentElement.classList.toggle('dark'). Lưu preference vào localStorage. Cách 3 - data attribute: [data-theme='dark'] { ... }. Best practice: kết hợp: auto detect system preference + cho phép user override.",
+      "source": "https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/",
+      "tags": ["dark-mode", "css-variables", "media-query", "theming"]
+    },
+    {
+      "question_id": "html_css_l3_004",
+      "level": 3,
+      "category": "application",
+      "question": "Cách làm CSS layout cho card grid responsive không cần media query?",
+      "options": {
+        "A": "Phải dùng media query để responsive",
+        "B": "CSS Grid với auto-fill/auto-fit: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))",
+        "C": "Chỉ dùng Flexbox với flex-wrap",
+        "D": "Dùng float và clearfix"
+      },
+      "correct_answer": "B",
+      "explanation": "CSS Grid auto-fill/auto-fit trick: .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }. auto-fit: collapse empty tracks (các column không có content). auto-fill: giữ empty tracks. minmax(250px, 1fr): card tối thiểu 250px, tối đa 1fr (chia đều). Kết quả: tự động điều chỉnh số cột dựa theo viewport width — hoàn toàn responsive không cần media query! Flexbox alternative: flex-wrap: wrap + flex: 1 1 250px.",
+      "source": "https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/",
+      "tags": ["grid", "responsive", "auto-fit", "minmax"]
+    },
+    {
+      "question_id": "html_css_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "CSS performance best practices nào quan trọng nhất?",
+      "options": {
+        "A": "Dùng !important nhiều để chắc chắn styles được áp dụng",
+        "B": "Tránh deep selector nesting, dùng transform/opacity cho animation, tránh layout thrashing, critical CSS inline",
+        "C": "Tất cả CSS đều có performance giống nhau",
+        "D": "Chỉ cần minify CSS là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "CSS Performance: (1) Selector efficiency: tránh * selector, tránh quá nhiều nesting (.a .b .c .d → chậm). (2) Animation: dùng transform và opacity — chúng không trigger layout, chỉ trigger composite layer (GPU accelerated). Tránh animating: width, height, margin, padding (trigger layout reflow). (3) Critical CSS: inline CSS cần cho above-the-fold content vào <style> trong <head>, lazy load rest. (4) Contain property: contain: layout style paint — isolated rendering. (5) will-change: transform cho phần tử sắp animate.",
+      "source": "https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS",
+      "tags": ["performance", "animation", "critical-css", "optimization"]
+    },
+    {
+      "question_id": "html_css_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "HTML Accessibility (a11y) — những nguyên tắc cơ bản cần implement?",
+      "options": {
+        "A": "Accessibility chỉ quan trọng cho ứng dụng chính phủ",
+        "B": "Semantic HTML, ARIA attributes (aria-label, role), keyboard navigation, color contrast, alt text cho images",
+        "C": "Chỉ cần tăng font-size là đủ",
+        "D": "Screen readers tự xử lý mọi thứ"
+      },
+      "correct_answer": "B",
+      "explanation": "WCAG 2.1 guidelines: (1) Semantic HTML: dùng <button> (không <div>) cho clickable, <input type='email'> cho validation. (2) ARIA: aria-label cho icons, aria-expanded cho dropdowns, role='alert' cho thông báo. (3) Keyboard navigation: mọi interactive elements phải dùng được bằng Tab/Enter/Space/Esc. (4) Color contrast: tối thiểu 4.5:1 cho text, 3:1 cho large text. (5) Alt text: <img alt='mô tả ảnh'>, alt='' cho decorative images. (6) Skip links: 'Skip to main content' cho keyboard users. Tools: axe DevTools, Lighthouse audit.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
+      "tags": ["accessibility", "ARIA", "a11y", "WCAG"]
+    },
+    {
+      "question_id": "html_css_l4_001",
+      "level": 4,
+      "category": "debugging",
+      "question": "Element có display:none vs visibility:hidden vs opacity:0 — điểm khác biệt quan trọng trong debugging?",
+      "options": {
+        "A": "Chúng đều giống nhau, chỉ khác cú pháp",
+        "B": "display:none: không render, không chiếm space, không interact. visibility:hidden: chiếm space nhưng không thấy. opacity:0: chiếm space, không thấy nhưng VẪN có thể click/interact",
+        "C": "visibility:hidden là cách tốt nhất để ẩn element",
+        "D": "opacity:0 không thể tương tác"
+      },
+      "correct_answer": "B",
+      "explanation": "display:none: element bị remove khỏi flow, không chiếm space, không accessible cho screen readers, không thể interact, reflow khi change. visibility:hidden: vẫn chiếm space trong layout, không visible, không tương tác, accessible. opacity:0: visually transparent, VẪN chiếm space, VẪN nhận events (click, hover) — đây là bug nguy hiểm! Transitions: chỉ opacity và visibility có thể animate với transition (display:none không animate được). Pattern đúng để ẩn+animate: opacity:0; visibility:hidden; transition: opacity 0.3s, visibility 0.3s.",
+      "source": "https://css-tricks.com/css-hiding-techniques/",
+      "tags": ["display", "visibility", "opacity", "debugging"]
+    },
+    {
+      "question_id": "html_css_l4_002",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao margin collapsing xảy ra và cách fix?",
+      "options": {
+        "A": "Margin collapsing là bug của browser",
+        "B": "Margin collapsing: margins vertical của adjacent block elements merge thành margin lớn nhất. Fix: dùng padding thay margin, overflow:hidden, hay flexbox/grid",
+        "C": "Margin collapsing chỉ xảy ra với horizontal margins",
+        "D": "Margin collapsing không tồn tại trong CSS hiện đại"
+      },
+      "correct_answer": "B",
+      "explanation": "Margin collapsing xảy ra khi: (1) Adjacent siblings: div margin-bottom: 20px + div margin-top: 30px → không cộng = 50px mà merge = 30px (lớn nhất). (2) Parent-child: parent không có border/padding → margin-top của child 'collapse' lên parent. (3) Empty block: element không có content, border, padding → margin top và bottom collapse. KHÔNG xảy ra với: Flexbox/Grid children, absolute/fixed positioned, inline-block, floats, elements có overflow ≠ visible. Fix: thêm padding vào parent, overflow:hidden, border, hoặc dùng Flexbox/Grid.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/Mastering_margin_collapsing",
+      "tags": ["margin-collapsing", "debugging", "layout"]
+    },
+    {
+      "question_id": "html_css_l4_003",
+      "level": 4,
+      "category": "debugging",
+      "question": "CSS z-index không hoạt động như mong đợi — nguyên nhân phổ biến nhất?",
+      "options": {
+        "A": "z-index chỉ hoạt động với position:absolute",
+        "B": "z-index chỉ hoạt động khi element có position ≠ static; và stacking context mới được tạo bởi transform, opacity, filter... khiến z-index bị giới hạn trong context đó",
+        "C": "z-index tối đa là 9999",
+        "D": "z-index không hoạt động với Flexbox"
+      },
+      "correct_answer": "B",
+      "explanation": "z-index issues: (1) position: static không hiểu z-index → phải có position: relative/absolute/fixed/sticky. (2) Stacking context: nhiều properties tạo stacking context mới (transform, opacity < 1, filter, will-change, isolation:isolate). Elements trong stacking context khác nhau không compare z-index với nhau trực tiếp. (3) Parent z-index giới hạn children. Debug: Chrome DevTools → Layers panel. Fix: tạo stacking context ở đúng level, dùng isolation:isolate để tạo context mới.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index",
+      "tags": ["z-index", "stacking-context", "positioning", "debugging"]
+    },
+    {
+      "question_id": "html_css_l4_004",
+      "level": 4,
+      "category": "debugging",
+      "question": "Flexbox children không align đúng — các nguyên nhân thường gặp là gì?",
+      "options": {
+        "A": "Flexbox không hỗ trợ alignment",
+        "B": "Nhầm justify-content (main axis) và align-items (cross axis); flex-direction thay đổi axes; không set height cho container",
+        "C": "Cần thêm !important vào flex properties",
+        "D": "Flexbox chỉ hoạt động với 2 children"
+      },
+      "correct_answer": "B",
+      "explanation": "Flexbox debug checklist: (1) justify-content: căn theo main axis (default: horizontal). align-items: căn theo cross axis (default: vertical). Khi flex-direction:column, main axis là vertical — justify-content căn dọc, align-items căn ngang. (2) Container cần height để align-items hoạt động theo chiều dọc. (3) align-self trên child override align-items của parent. (4) flex-wrap: wrap tạo multiple lines — dùng align-content (không align-items) để căn các lines. (5) margin: auto trong flex item chiếm hết available space.",
+      "source": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+      "tags": ["flexbox", "alignment", "debugging", "layout"]
+    },
+    {
+      "question_id": "html_css_l4_005",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao fonts không hiển thị đúng trên một số browsers/devices?",
+      "options": {
+        "A": "Fonts luôn hiển thị giống nhau trên mọi thiết bị",
+        "B": "Font stacking/fallbacks không đúng, @font-face src format thiếu, font-display chưa set, CORS issues với external fonts",
+        "C": "Chỉ cần dùng Google Fonts là an toàn",
+        "D": "Font rendering do OS quyết định, không can thiệp được"
+      },
+      "correct_answer": "B",
+      "explanation": "Font issues: (1) Font stack sai: font-family: 'NonExistentFont', Arial, sans-serif — phải có system font fallback. (2) @font-face: cần nhiều format: src: url('.woff2') format('woff2'), url('.woff') format('woff'). (3) font-display: swap — ngăn FOIT (Flash of Invisible Text), hiện fallback ngay. (4) Google Fonts CORS: dùng preconnect link. (5) Variable fonts: font-variation-settings cho fine-tuning. (6) System font stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif — load nhanh nhất, không external request. (7) Font smoothing: -webkit-font-smoothing: antialiased.",
+      "source": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts",
+      "tags": ["fonts", "FOIT", "font-display", "debugging"]
+    },
+    {
+      "question_id": "html_css_l4_006",
+      "level": 4,
+      "category": "debugging",
+      "question": "Tại sao có lúc click vào button không hoạt động dù button visible?",
+      "options": {
+        "A": "Button bị CSS ẩn đi",
+        "B": "Element khác có z-index cao hơn đang overlay lên button (pointer-events:none không được set), hoặc button có pointer-events:none",
+        "C": "Button cần JavaScript để click",
+        "D": "CSS transition ngăn click event"
+      },
+      "correct_answer": "B",
+      "explanation": "Click không hoạt động thường do: (1) Invisible overlay: element trong suốt (opacity:0 hoặc ::after pseudo-element) đang đè lên button. Debug: Chrome DevTools → Elements → hover để thấy overlay. (2) pointer-events: none trên button. (3) z-index: button bị ẩn sau element khác về mặt event capture. (4) Disabled attribute trên form element. (5) Touch events: trên mobile, thêm touch-action: manipulation tránh 300ms delay. Fix: kiểm tra Layers panel, thêm outline: 1px solid red để debug boundaries, hoặc dùng document.elementsFromPoint(x,y) trong console.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events",
+      "tags": ["pointer-events", "z-index", "debugging", "click"]
+    },
+    {
+      "question_id": "html_css_l5_001",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Website của bạn có CLS (Cumulative Layout Shift) score xấu. Core Web Vitals bị ảnh hưởng. Nguyên nhân HTML/CSS phổ biến và cách fix?",
+      "options": {
+        "A": "CLS chỉ do JavaScript gây ra",
+        "B": "Images/videos không có width/height attribute, web fonts gây FOUT, dynamic content inject không có reserved space, ads không có container",
+        "C": "Tăng server speed là giải pháp",
+        "D": "CLS không ảnh hưởng đến SEO"
+      },
+      "correct_answer": "B",
+      "explanation": "CLS (layout shift score) ảnh hưởng SEO và UX. Nguyên nhân: (1) Images không có dimensions: <img> không có width/height → browser không biết reserve space. Fix: luôn thêm width và height attributes, hoặc dùng aspect-ratio CSS. (2) Web fonts: FOUT/FOIT gây shift. Fix: font-display: optional (không shift) hoặc preload font. (3) Dynamic content (ads, banners, cookie banners): inject sau khi page load. Fix: reserve space với min-height. (4) Animations: chỉ dùng transform, không dùng top/left/width/height. Target CLS < 0.1 (Google thresholds).",
+      "source": "https://web.dev/cls/",
+      "tags": ["CLS", "core-web-vitals", "performance", "SEO", "layout-shift"]
+    },
+    {
+      "question_id": "html_css_l5_002",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Design system của team có nhiều developers cùng viết CSS. Sau 1 năm, CSS trở thành 'spaghetti'. Cách tổ chức CSS có thể scale?",
+      "options": {
+        "A": "Thêm !important khi có conflict",
+        "B": "BEM naming convention, CSS Modules hoặc CSS-in-JS, design tokens, style guide, code review cho CSS",
+        "C": "Xóa tất cả CSS cũ và viết lại",
+        "D": "Dùng inline styles để tránh conflict"
+      },
+      "correct_answer": "B",
+      "explanation": "Scalable CSS architecture: (1) Naming convention — BEM: .block__element--modifier (ví dụ: .card__title--highlighted) → zero specificity conflicts. (2) CSS Modules (Vite/Next.js): import styles from './Card.module.css' — scoped class names tự động. (3) CSS-in-JS (Styled Components, Emotion): complete isolation. (4) Design tokens: --color-primary, --spacing-4 → consistency. (5) Structure: tách files theo component, không global mega CSS. (6) Style guide: Storybook document components. (7) Linting: stylelint để enforce conventions. (8) Purging: PurgeCSS/Tailwind built-in để remove unused CSS.",
+      "source": "https://css-tricks.com/css-at-scale-tailwind-css/",
+      "tags": ["scalability", "BEM", "CSS-modules", "design-system", "team"]
+    },
+    {
+      "question_id": "html_css_l5_003",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "E-commerce site cần hiển thị perfect trên mọi thiết bị (mobile, tablet, desktop, TV, print). Strategy CSS nào toàn diện nhất?",
+      "options": {
+        "A": "Tạo 4 website riêng biệt cho 4 loại thiết bị",
+        "B": "Mobile-first responsive design + CSS Grid/Flexbox fluid layouts + container queries + print stylesheet + prefers-reduced-motion",
+        "C": "Dùng JavaScript để detect device và apply CSS khác nhau",
+        "D": "Fixed width 1200px cho tất cả"
+      },
+      "correct_answer": "B",
+      "explanation": "Production strategy: (1) Mobile-first: bắt đầu từ 320px, scale up. (2) Fluid typography: clamp(1rem, 2.5vw, 2rem) — tự scale theo viewport. (3) Container queries (@container): components responsive theo container size, không viewport. (4) CSS Grid + auto-fit/minmax: layout tự điều chỉnh. (5) Print stylesheet: @media print { .no-print { display:none } } — ẩn nav, ads, print-friendly layout. (6) @media (prefers-reduced-motion): tắt animations cho users có motion sensitivity. (7) @media (prefers-contrast: high): tăng contrast. (8) Testing: BrowserStack cho cross-browser, Lighthouse cho accessibility.",
+      "source": "https://web.dev/responsive-web-design-basics/",
+      "tags": ["responsive", "mobile-first", "container-queries", "cross-device", "print"]
+    },
+    {
+      "question_id": "html_css_l5_004",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Landing page của bạn có LCP (Largest Contentful Paint) > 4 giây. Ảnh hero là LCP element. Cách tối ưu HTML/CSS để đạt < 2.5 giây?",
+      "options": {
+        "A": "Giảm kích thước font chữ",
+        "B": "Preload hero image, dùng WebP format, srcset cho responsive, lazy load các ảnh khác, critical CSS inline",
+        "C": "Dùng CSS background-image thay <img>",
+        "D": "LCP không thể cải thiện bằng HTML/CSS"
+      },
+      "correct_answer": "B",
+      "explanation": "LCP optimization cho hero image: (1) Preload: <link rel='preload' as='image' href='hero.webp' fetchpriority='high'> — browser load sớm nhất. (2) fetchpriority='high' trên <img> element. (3) Format: WebP (30-50% nhỏ hơn JPEG), AVIF (50-60% nhỏ hơn). (4) Responsive images: srcset + sizes attribute — load đúng kích thước cho từng device. (5) Không lazy load LCP element (<img loading='eager'>). (6) Critical CSS inline trong <head> — không chờ external CSS. (7) CDN với edge caching gần user. (8) Image dimensions đúng (không scale bằng CSS). Target LCP < 2.5s.",
+      "source": "https://web.dev/lcp/",
+      "tags": ["LCP", "core-web-vitals", "image-optimization", "preload", "performance"]
+    },
+    {
+      "question_id": "html_css_l5_005",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Bạn cần implement dark mode cho toàn bộ app với 200+ components. Approach CSS nào để maintain tốt nhất?",
+      "options": {
+        "A": "Tạo 2 CSS file hoàn toàn riêng biệt cho light và dark mode",
+        "B": "Design token system với CSS Variables, tất cả components dùng semantic tokens (--color-surface, --color-text-primary), @media prefers-color-scheme để detect + class override để toggle",
+        "C": "Dùng JavaScript để thay đổi style trực tiếp",
+        "D": "filter: invert(1) cho toàn bộ <body>"
+      },
+      "correct_answer": "B",
+      "explanation": "Scalable dark mode với 200+ components: (1) Design token layer: không dùng --color-blue-500 trực tiếp, dùng semantic tokens: --color-background, --color-text-primary, --color-border. (2) Token definition: :root { --color-background: #fff; --color-text-primary: #000; } .dark, [data-theme='dark'] { --color-background: #0a0a0a; --color-text-primary: #f0f0f0; }. (3) @media prefers-color-scheme: dark { :root { ... } } để auto-detect. (4) Toggle bằng class 'dark' trên <html> + localStorage để persist. (5) Components KHÔNG biết về dark mode — chỉ dùng semantic tokens. (6) Smooth transition: *, *::before { transition: background-color 0.3s, color 0.3s; }",
+      "source": "https://web.dev/prefers-color-scheme/",
+      "tags": ["dark-mode", "design-tokens", "scalability", "CSS-variables", "maintenance"]
+    },
+    {
+      "question_id": "html_css_l5_006",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "App React của bạn cần SEO tốt. Những HTML meta tags và structured data nào quan trọng nhất?",
+      "options": {
+        "A": "Chỉ cần title tag là đủ cho SEO",
+        "B": "Title, meta description, Open Graph tags, Twitter Card, canonical URL, JSON-LD structured data, hreflang cho i18n",
+        "C": "SEO chỉ do nội dung quyết định",
+        "D": "React apps không thể SEO tốt"
+      },
+      "correct_answer": "B",
+      "explanation": "SEO HTML checklist: (1) <title>: unique, dưới 60 chars, include keyword. (2) <meta name='description'>: 120-160 chars. (3) Open Graph: og:title, og:description, og:image (1200x630px), og:url — cho social sharing. (4) Twitter Card: twitter:card, twitter:image. (5) <link rel='canonical'> — tránh duplicate content. (6) JSON-LD: <script type='application/ld+json'>{ '@type': 'Product', name: '...', price: '...' }</script> — Google rich results. (7) hreflang: <link rel='alternate' hreflang='vi'> cho multiple languages. (8) robots meta: <meta name='robots' content='index,follow'>. (9) Heading hierarchy: 1 H1 per page, proper H2-H6 structure.",
+      "source": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML",
+      "tags": ["SEO", "meta-tags", "structured-data", "Open-Graph", "JSON-LD"]
+    }
+  ]
+}

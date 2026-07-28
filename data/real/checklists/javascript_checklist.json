@@ -1,0 +1,304 @@
+{
+  "skill": "JavaScript",
+  "skill_key": "javascript",
+  "total_topics": 20,
+  "estimated_total_hours": 30.5,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T01:12:32.376051",
+  "checklist_items": [
+    {
+      "item_id": "js_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Biến và Kiểu dữ liệu",
+      "description": "var/let/const, 8 kiểu dữ liệu cơ bản (String, Number, Boolean, null, undefined, Symbol, BigInt, Object), type coercion",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/js/js_datatypes.asp",
+      "resource_title": "W3Schools — JavaScript Data Types",
+      "quiz_ids": [
+        "js_l1_001",
+        "js_l1_002",
+        "js_l1_003"
+      ],
+      "market_relevance": "Câu hỏi đầu tiên trong mọi JS interview"
+    },
+    {
+      "item_id": "js_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Operators và Control Flow",
+      "description": "Toán tử số học, so sánh (== vs ===), logical, if/else, switch, ternary, nullish coalescing (??)",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/js/js_operators.asp",
+      "resource_title": "W3Schools — JavaScript Operators",
+      "quiz_ids": [
+        "js_l1_003"
+      ],
+      "market_relevance": "Foundation, phải biết trước khi học bất cứ thứ gì khác"
+    },
+    {
+      "item_id": "js_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Functions — khai báo, biểu thức, arrow",
+      "description": "Function declaration vs expression vs arrow, parameters, return, default params, rest params, hoisting behavior",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/js/js_functions.asp",
+      "resource_title": "W3Schools — JavaScript Functions",
+      "quiz_ids": [
+        "js_l1_005"
+      ],
+      "market_relevance": "Không có hàm không làm được gì"
+    },
+    {
+      "item_id": "js_c004",
+      "order": 4,
+      "phase": "foundation",
+      "title": "Arrays và Array Methods",
+      "description": "Tạo, access, mutating (push/pop/splice/sort) vs non-mutating (map/filter/reduce/slice), spread operator, destructuring",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/js/js_array_methods.asp",
+      "resource_title": "W3Schools — JavaScript Array Methods",
+      "quiz_ids": [
+        "js_l1_004",
+        "js_l1_006"
+      ],
+      "hands_on_task": "Viết function nhận mảng số, return mảng chỉ chứa số chẵn, nhân đôi, sorted",
+      "market_relevance": "map/filter/reduce hỏi ở 80%+ JS interviews"
+    },
+    {
+      "item_id": "js_c005",
+      "order": 5,
+      "phase": "foundation",
+      "title": "Objects và JSON",
+      "description": "Object literal, property access, methods, this keyword cơ bản, Object methods (keys/values/entries/assign), JSON.parse/stringify",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/js/js_objects.asp",
+      "resource_title": "W3Schools — JavaScript Objects",
+      "quiz_ids": [
+        "js_l1_002"
+      ],
+      "market_relevance": "Mọi API response đều là JSON objects"
+    },
+    {
+      "item_id": "js_c006",
+      "order": 6,
+      "phase": "foundation",
+      "title": "Loops và Iteration",
+      "description": "for, while, do-while, for...of, for...in, forEach, break/continue, iterating arrays và objects",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.w3schools.com/js/js_loop_for.asp",
+      "resource_title": "W3Schools — JavaScript Loops",
+      "quiz_ids": [],
+      "market_relevance": "Xử lý danh sách data trong mọi app"
+    },
+    {
+      "item_id": "js_c007",
+      "order": 7,
+      "phase": "foundation",
+      "title": "DOM Manipulation cơ bản",
+      "description": "querySelector, getElementById, innerHTML vs textContent, addEventListener, event object, classList manipulation",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/html-dom-html-object/",
+      "resource_title": "GeeksForGeeks — JavaScript DOM",
+      "quiz_ids": [],
+      "hands_on_task": "Build Todo List thuần JS: thêm/xóa/tick item, không dùng framework",
+      "market_relevance": "Hiểu DOM giúp debug React/Vue tốt hơn"
+    },
+    {
+      "item_id": "js_c008",
+      "order": 8,
+      "phase": "core",
+      "title": "Scope, Hoisting, và Closure",
+      "description": "Function scope vs block scope, var hoisting, TDZ (let/const), lexical scope, closure pattern, IIFE",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-closures-explained-with-examples/",
+      "resource_title": "freeCodeCamp — JavaScript Closures Explained",
+      "quiz_ids": [
+        "js_l2_001",
+        "js_l4_001",
+        "js_l4_006"
+      ],
+      "market_relevance": "Hỏi ở 95% interview JS trung-cao cấp"
+    },
+    {
+      "item_id": "js_c009",
+      "order": 9,
+      "phase": "core",
+      "title": "Prototype và Inheritance",
+      "description": "[[Prototype]], prototype chain, Object.create(), __proto__ vs prototype, class syntax (ES6), extends/super",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-prototype-explained/",
+      "resource_title": "freeCodeCamp — JavaScript Prototype Explained",
+      "quiz_ids": [
+        "js_l2_004"
+      ],
+      "market_relevance": "Senior interview hay hỏi để check hiểu JS sâu"
+    },
+    {
+      "item_id": "js_c010",
+      "order": 10,
+      "phase": "core",
+      "title": "Asynchronous JS — Callbacks và Promises",
+      "description": "Callback pattern, callback hell, Promise (then/catch/finally), Promise.all/race/allSettled/any, error handling",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-promises-explained/",
+      "resource_title": "freeCodeCamp — JavaScript Promises Explained",
+      "quiz_ids": [
+        "js_l2_003",
+        "js_l2_006"
+      ],
+      "hands_on_task": "Build hàm fetch nhiều URLs song song, xử lý lỗi từng URL riêng lẻ",
+      "market_relevance": "Bắt buộc khi làm bất kỳ app nào gọi API"
+    },
+    {
+      "item_id": "js_c011",
+      "order": 11,
+      "phase": "core",
+      "title": "Async/Await và Error Handling",
+      "description": "async function, await, try/catch/finally, Error types, tạo custom Error, xử lý lỗi trong async code",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/js/js_async.asp",
+      "resource_title": "W3Schools — JavaScript Async/Await",
+      "quiz_ids": [
+        "js_l3_003",
+        "js_l3_004"
+      ],
+      "market_relevance": "Modern JS chuẩn, mọi React/Node project đều dùng"
+    },
+    {
+      "item_id": "js_c012",
+      "order": 12,
+      "phase": "core",
+      "title": "Event Loop và Concurrency Model",
+      "description": "Call Stack, Web APIs, Task Queue, Microtask Queue (Promise), Event Loop order, macrotask vs microtask",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-event-loop-explained/",
+      "resource_title": "freeCodeCamp — JavaScript Event Loop",
+      "quiz_ids": [
+        "js_l2_002"
+      ],
+      "market_relevance": "Hỏi ở interview middle-senior để check hiểu JS runtime"
+    },
+    {
+      "item_id": "js_c013",
+      "order": 13,
+      "phase": "core",
+      "title": "ES6+ Features thực chiến",
+      "description": "Destructuring, spread/rest, template literals, Map/Set, optional chaining (?.), nullish coalescing (??), logical assignment operators",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.w3schools.com/js/js_es6.asp",
+      "resource_title": "W3Schools — JavaScript ES6",
+      "quiz_ids": [
+        "js_l1_006",
+        "js_l2_005"
+      ],
+      "market_relevance": "Code hiện đại phải biết, không biết bị đánh giá thấp"
+    },
+    {
+      "item_id": "js_c014",
+      "order": 14,
+      "phase": "core",
+      "title": "Fetch API và HTTP Requests",
+      "description": "fetch(), Request/Response objects, Headers, HTTP methods, status codes, xử lý JSON response, error handling patterns",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/how-to-use-fetch-api/",
+      "resource_title": "freeCodeCamp — Fetch API Guide",
+      "quiz_ids": [
+        "js_l3_003"
+      ],
+      "hands_on_task": "Build weather app dùng OpenWeatherMap API free tier",
+      "market_relevance": "Mọi frontend app đều gọi API"
+    },
+    {
+      "item_id": "js_c015",
+      "order": 15,
+      "phase": "core",
+      "title": "Modules — Import/Export",
+      "description": "Named export, default export, import syntax, dynamic import(), ES Modules vs CommonJS, tree shaking concept",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-modules-explained-with-examples/",
+      "resource_title": "freeCodeCamp — JavaScript Modules",
+      "quiz_ids": [
+        "js_l3_006"
+      ],
+      "market_relevance": "Codebase thực tế đều dùng modules"
+    },
+    {
+      "item_id": "js_c016",
+      "order": 16,
+      "phase": "advanced",
+      "title": "Performance Patterns — Debounce và Throttle",
+      "description": "Implement debounce từ đầu, throttle từ đầu, use cases (search input, scroll, resize), requestAnimationFrame",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-debounce-example/",
+      "resource_title": "freeCodeCamp — Debounce Example",
+      "quiz_ids": [
+        "js_l3_001"
+      ],
+      "hands_on_task": "Thêm debounce vào search input, throttle vào scroll handler",
+      "market_relevance": "Câu hỏi implement debounce cực phổ biến ở interview middle"
+    },
+    {
+      "item_id": "js_c017",
+      "order": 17,
+      "phase": "advanced",
+      "title": "Memory Management và Garbage Collection",
+      "description": "GC trong V8, mark-and-sweep, reference counting, common memory leaks (event listeners, closures, timers), WeakMap/WeakRef",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/javascript-memory-management-avoid-memory-leaks/",
+      "resource_title": "freeCodeCamp — JavaScript Memory Management",
+      "quiz_ids": [
+        "js_l4_002"
+      ],
+      "market_relevance": "Senior interview và khi build long-running SPA"
+    },
+    {
+      "item_id": "js_c018",
+      "order": 18,
+      "phase": "advanced",
+      "title": "Design Patterns trong JavaScript",
+      "description": "Module pattern, Observer/EventEmitter, Factory, Singleton, Strategy, Command pattern trong JS context",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/javascript-design-patterns/",
+      "resource_title": "GeeksForGeeks — JavaScript Design Patterns",
+      "quiz_ids": [],
+      "market_relevance": "Phân biệt junior và senior developer"
+    },
+    {
+      "item_id": "js_c019",
+      "order": 19,
+      "phase": "advanced",
+      "title": "Security — XSS, CSRF, Content Security Policy",
+      "description": "XSS attack vectors, sanitize với DOMPurify, CSP headers, CSRF tokens, SameSite cookies, eval() dangers",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/xss-cross-site-scripting-explained/",
+      "resource_title": "freeCodeCamp — XSS Explained",
+      "quiz_ids": [
+        "js_l5_006"
+      ],
+      "market_relevance": "Bắt buộc cho developer làm fintech, e-commerce"
+    },
+    {
+      "item_id": "js_c020",
+      "order": 20,
+      "phase": "advanced",
+      "title": "Performance Optimization tổng thể",
+      "description": "Profiling với Chrome DevTools, bundle analysis, code splitting, lazy loading, virtualization, web workers",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.freecodecamp.org/news/web-performance-optimization/",
+      "resource_title": "freeCodeCamp — Web Performance Optimization",
+      "quiz_ids": [
+        "js_l5_001",
+        "js_l5_002",
+        "js_l5_004"
+      ],
+      "hands_on_task": "Audit một app thực tế với Lighthouse, implement ít nhất 3 optimizations",
+      "market_relevance": "Senior và Lead developer phải biết"
+    }
+  ]
+}

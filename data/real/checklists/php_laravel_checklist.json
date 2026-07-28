@@ -1,0 +1,154 @@
+{
+  "skill": "PHP/Laravel",
+  "skill_key": "php_laravel",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.540790Z",
+  "checklist_items": [
+    {
+      "item_id": "php_laravel_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "MVC Architecture",
+      "description": "Master MVC Architecture trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+MVC+Architecture+tutorial",
+      "resource_title": "PHP/Laravel — MVC Architecture",
+      "quiz_ids": [
+        "php_laravel_l1_001"
+      ],
+      "market_relevance": "MVC Architecture là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Eloquent ORM",
+      "description": "Master Eloquent ORM trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Eloquent+ORM+tutorial",
+      "resource_title": "PHP/Laravel — Eloquent ORM",
+      "quiz_ids": [
+        "php_laravel_l2_002"
+      ],
+      "market_relevance": "Eloquent ORM là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Blade templates",
+      "description": "Master Blade templates trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Blade+templates+tutorial",
+      "resource_title": "PHP/Laravel — Blade templates",
+      "quiz_ids": [
+        "php_laravel_l3_003"
+      ],
+      "market_relevance": "Blade templates là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Artisan CLI",
+      "description": "Master Artisan CLI trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Artisan+CLI+tutorial",
+      "resource_title": "PHP/Laravel — Artisan CLI",
+      "quiz_ids": [
+        "php_laravel_l4_004"
+      ],
+      "market_relevance": "Artisan CLI là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Migrations/Seeders",
+      "description": "Master Migrations/Seeders trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Migrations/Seeders+tutorial",
+      "resource_title": "PHP/Laravel — Migrations/Seeders",
+      "quiz_ids": [
+        "php_laravel_l5_005"
+      ],
+      "market_relevance": "Migrations/Seeders là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Authentication",
+      "description": "Master Authentication trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Authentication+tutorial",
+      "resource_title": "PHP/Laravel — Authentication",
+      "quiz_ids": [
+        "php_laravel_l5_006"
+      ],
+      "market_relevance": "Authentication là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Queue/Jobs",
+      "description": "Master Queue/Jobs trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Queue/Jobs+tutorial",
+      "resource_title": "PHP/Laravel — Queue/Jobs",
+      "quiz_ids": [
+        "php_laravel_l5_007"
+      ],
+      "market_relevance": "Queue/Jobs là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Events/Listeners",
+      "description": "Master Events/Listeners trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Events/Listeners+tutorial",
+      "resource_title": "PHP/Laravel — Events/Listeners",
+      "quiz_ids": [
+        "php_laravel_l5_008"
+      ],
+      "market_relevance": "Events/Listeners là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "PHPUnit Testing",
+      "description": "Master PHPUnit Testing trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+PHPUnit+Testing+tutorial",
+      "resource_title": "PHP/Laravel — PHPUnit Testing",
+      "quiz_ids": [
+        "php_laravel_l5_009"
+      ],
+      "market_relevance": "PHPUnit Testing là key skill trong PHP/Laravel Backend development"
+    },
+    {
+      "item_id": "php_laravel_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Deployment",
+      "description": "Master Deployment trong PHP/Laravel — essential cho Backend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=PHP/Laravel+Deployment+tutorial",
+      "resource_title": "PHP/Laravel — Deployment",
+      "quiz_ids": [
+        "php_laravel_l5_010"
+      ],
+      "market_relevance": "Deployment là key skill trong PHP/Laravel Backend development"
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "skill": "Vue.js",
+  "skill_key": "vue",
+  "total_questions": 30,
+  "levels": { "1_beginner": 6, "2_understanding": 6, "3_application": 6, "4_debugging": 6, "5_production": 6 },
+  "generated_at": "2026-06-12T03:31:00.000000",
+  "source_references": [
+    "https://vuejs.org/guide/introduction.html",
+    "https://vuejs.org/api/",
+    "https://www.vuemastery.com/",
+    "https://www.freecodecamp.org/news/tag/vue/",
+    "https://www.geeksforgeeks.org/vue-js/"
+  ],
+  "questions": [
+    {
+      "question_id": "vue_l1_001", "level": 1, "category": "definition",
+      "question": "Vue 3 Composition API khác Options API ở điểm cơ bản nào?",
+      "options": {
+        "A": "Composition API chỉ dùng cho TypeScript",
+        "B": "Options API tổ chức code theo loại (data, methods, computed); Composition API tổ chức code theo logic feature dùng setup() hoặc <script setup>",
+        "C": "Options API không còn được support trong Vue 3",
+        "D": "Chúng giống nhau hoàn toàn"
+      },
+      "correct_answer": "B",
+      "explanation": "Options API: { data(), methods:{}, computed:{}, mounted(){} } — dễ học nhưng logic phân tán. Composition API: toàn bộ logic của 1 feature nằm gần nhau trong setup(), composables tái sử dụng dễ hơn. <script setup> là syntactic sugar của Composition API — không cần return, cleaner code. Vue 3 vẫn support Options API — không deprecated.",
+      "source": "https://vuejs.org/guide/introduction.html#api-styles",
+      "tags": ["composition-api", "options-api", "setup", "vue3"]
+    },
+    {
+      "question_id": "vue_l1_002", "level": 1, "category": "definition",
+      "question": "ref() và reactive() trong Vue 3 khác nhau thế nào?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau",
+        "B": "ref(): wrap primitive/any value, access qua .value; reactive(): chỉ cho objects/arrays, access trực tiếp không cần .value",
+        "C": "reactive() không hỗ trợ TypeScript",
+        "D": "ref() chỉ dùng cho numbers"
+      },
+      "correct_answer": "B",
+      "explanation": "ref(initialValue): wrap bất kỳ value nào (string, number, object) thành reactive. Trong JS cần .value, trong template tự unwrap. reactive(object): chỉ dùng cho objects, arrays — trả về Proxy, không cần .value. Destructure reactive mất reactivity (dùng toRefs() để fix). Best practice: dùng ref() cho tất cả để nhất quán, hoặc ref() cho primitives và reactive() cho complex state.",
+      "source": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html",
+      "tags": ["ref", "reactive", "reactivity", "composition-api"]
+    },
+    {
+      "question_id": "vue_l1_003", "level": 1, "category": "definition",
+      "question": "computed() trong Vue 3 khác gì với method thông thường?",
+      "options": {
+        "A": "Không có sự khác biệt",
+        "B": "computed() được cache dựa trên reactive dependencies — chỉ re-compute khi dependencies thay đổi; method luôn chạy lại khi component re-render",
+        "C": "Method có thể có side effects, computed thì không",
+        "D": "computed() chỉ dùng trong Options API"
+      },
+      "correct_answer": "B",
+      "explanation": "computed: const full = computed(() => firstName.value + ' ' + lastName.value). Cache: nếu firstName và lastName không đổi, full.value trả về cached value ngay lập tức — không tính lại. Method: mỗi lần template render đều gọi lại. Dùng computed khi: derived state từ reactive data, expensive calculations. Dùng method khi: cần fresh value mỗi lần, hoặc cần arguments. computed writable: computed({ get: () => ..., set: (val) => ... }).",
+      "source": "https://vuejs.org/guide/essentials/computed.html",
+      "tags": ["computed", "cache", "performance", "reactivity"]
+    },
+    {
+      "question_id": "vue_l1_004", "level": 1, "category": "definition",
+      "question": "Vue directives v-if và v-show khác nhau thế nào?",
+      "options": {
+        "A": "Chúng giống nhau",
+        "B": "v-if: remove/add element khỏi DOM hoàn toàn; v-show: toggle display:none, element vẫn trong DOM",
+        "C": "v-show xóa element khỏi DOM",
+        "D": "v-if không hỗ trợ else"
+      },
+      "correct_answer": "B",
+      "explanation": "v-if: conditional rendering — element bị unmount và mount lại. Lifecycle hooks chạy. Tốt khi: condition ít thay đổi, hoặc muốn lazy render. v-else và v-else-if phải theo ngay sau v-if. v-show: luôn render và trong DOM, chỉ toggle CSS display. Không có lifecycle unmount. Tốt khi: condition thay đổi thường xuyên (tab switching, dropdown). Performance: v-if có higher toggle cost, v-show có higher initial render cost.",
+      "source": "https://vuejs.org/guide/essentials/conditional.html",
+      "tags": ["v-if", "v-show", "conditional", "rendering"]
+    },
+    {
+      "question_id": "vue_l1_005", "level": 1, "category": "definition",
+      "question": "v-model trong Vue 3 là gì và hoạt động như thế nào?",
+      "options": {
+        "A": "v-model chỉ dùng cho <input>",
+        "B": "v-model là two-way binding: bind value và update khi input event — shorthand của :modelValue + @update:modelValue",
+        "C": "v-model giống :value nhưng viết ngắn hơn",
+        "D": "v-model không thể dùng trên custom components"
+      },
+      "correct_answer": "B",
+      "explanation": "v-model = :modelValue + @update:modelValue emit. Trên native input: <input v-model='text'> = <input :value='text' @input='text = $event.target.value'>. Trên component: emit('update:modelValue', newValue) trong child. Multiple v-model: v-model:firstName='...' v-model:lastName='...'. Modifiers: v-model.trim, v-model.number, v-model.lazy (update on change instead of input). Vue 3 thay đổi: prop tên là modelValue (không phải value như Vue 2), emit là update:modelValue.",
+      "source": "https://vuejs.org/guide/components/v-model.html",
+      "tags": ["v-model", "two-way-binding", "forms", "component"]
+    },
+    {
+      "question_id": "vue_l1_006", "level": 1, "category": "definition",
+      "question": "Vue component lifecycle hooks quan trọng nhất là gì?",
+      "options": {
+        "A": "Chỉ có mounted() và destroyed()",
+        "B": "onMounted (DOM ready), onUpdated (sau re-render), onUnmounted (cleanup), onBeforeMount, onBeforeUpdate — Composition API dùng on prefix",
+        "C": "Lifecycle hooks không còn trong Vue 3",
+        "D": "Vue 3 chỉ có setup() không có lifecycle hooks"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue 3 Composition API lifecycle: onBeforeMount(), onMounted() (DOM ready — fetch data, setup DOM events), onBeforeUpdate(), onUpdated() (sau khi DOM updated), onBeforeUnmount(), onUnmounted() (cleanup timers, event listeners, subscriptions), onErrorCaptured() (catch errors from child), onActivated/onDeactivated (với <KeepAlive>). setup() chạy trước tất cả — tương đương beforeCreate và created. Dùng nhiều nhất: onMounted (data fetching) và onUnmounted (cleanup).",
+      "source": "https://vuejs.org/guide/essentials/lifecycle.html",
+      "tags": ["lifecycle", "hooks", "onMounted", "composition-api"]
+    },
+    {
+      "question_id": "vue_l2_001", "level": 2, "category": "understanding",
+      "question": "Vuex vs Pinia — tại sao Vue 3 khuyến nghị Pinia?",
+      "options": {
+        "A": "Pinia và Vuex giống nhau hoàn toàn",
+        "B": "Pinia: không cần mutations, TypeScript native, devtools support, composable-friendly, lightweight; Vuex: verbose với mutations pattern",
+        "C": "Vuex tốt hơn Pinia cho large projects",
+        "D": "Pinia không support Vue DevTools"
+      },
+      "correct_answer": "B",
+      "explanation": "Pinia advantages: (1) Không cần mutations — chỉ state, getters, actions. (2) TypeScript out-of-the-box, full type inference. (3) Modular by default — mỗi store là 1 file, không cần modules config. (4) Composable trong setup(): const store = useProductStore(). (5) Nhẹ hơn (~1KB). (6) Devtools support, time-travel debugging. Pinia là official state manager cho Vue 3. Vuex 5 không được phát triển — team Vue đầu tư vào Pinia. Migration: dễ hơn từ Vuex 4.",
+      "source": "https://pinia.vuejs.org/introduction.html",
+      "tags": ["pinia", "vuex", "state-management", "vue3"]
+    },
+    {
+      "question_id": "vue_l2_002", "level": 2, "category": "understanding",
+      "question": "Vue 3 Reactivity system hoạt động như thế nào (Proxy-based)?",
+      "options": {
+        "A": "Vue dùng Object.defineProperty như Vue 2",
+        "B": "Vue 3 dùng JavaScript Proxy để intercept get/set — tự động track dependencies khi access, trigger updates khi set",
+        "C": "Vue 3 dùng polling để detect changes",
+        "D": "Developer phải manually notify Vue khi state thay đổi"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue 3 Reactivity: dùng Proxy thay Object.defineProperty (Vue 2). Khi reactive(obj) được tạo — Proxy wrap obj. get trap: track dependency (ghi nhận computed/watcher đang access). set trap: trigger effects (re-render, watchers) khi value thay đổi. Lợi ích so với Vue 2: detect thêm property mới (Vue 2 không detect được), detect array mutations đúng cách, index assignment (arr[0] = 1), delete operator. reactive() dùng Proxy, ref() wrap trong object {value: Proxy}.",
+      "source": "https://vuejs.org/guide/extras/reactivity-in-depth.html",
+      "tags": ["reactivity", "proxy", "vue3", "internals"]
+    },
+    {
+      "question_id": "vue_l2_003", "level": 2, "category": "understanding",
+      "question": "Vue composables là gì và tại sao nó tốt hơn mixins?",
+      "options": {
+        "A": "Composables và mixins giống nhau",
+        "B": "Composables là functions dùng Composition API để tái sử dụng stateful logic — rõ ràng về source of data, không naming conflicts, TypeScript-friendly",
+        "C": "Composables chỉ dùng cho global state",
+        "D": "Mixins là pattern tốt hơn composables"
+      },
+      "correct_answer": "B",
+      "explanation": "Composable: function bắt đầu bằng 'use': function useFetch(url) { const data = ref(null); const error = ref(null); ... return { data, error, loading } }. Dùng: const { data, error } = useFetch('/api/users'). Lợi thế vs Mixin: (1) Source rõ ràng — biết data từ composable nào. (2) Không naming conflicts (mixin gặp naming collision). (3) Không có implicit property injection. (4) TypeScript type inference hoàn hảo. (5) Dễ test độc lập. Patterns: useLocalStorage, useMouse, useIntersectionObserver, useQuery (VueUse library).",
+      "source": "https://vuejs.org/guide/reusability/composables.html",
+      "tags": ["composables", "mixins", "reusability", "composition-api"]
+    },
+    {
+      "question_id": "vue_l2_004", "level": 2, "category": "understanding",
+      "question": "Vue Router — sự khác biệt giữa <RouterLink> và programmatic navigation?",
+      "options": {
+        "A": "Chúng hoàn toàn giống nhau về chức năng",
+        "B": "<RouterLink>: declarative navigation trong template, có active class tự động; router.push/replace: programmatic trong setup/methods, dùng sau async operations",
+        "C": "Programmatic navigation không support params",
+        "D": "<RouterLink> không support query params"
+      },
+      "correct_answer": "B",
+      "explanation": "<RouterLink to='/about'>: render <a> tag, tự add router-link-active và router-link-exact-active classes, native app feel (không full-page reload). router.push('/about') hoặc router.push({ name: 'User', params: { id: 123 } }): dùng sau login thành công, sau form submit, conditional navigation. router.replace: như push nhưng không thêm vào history. router.go(-1): back. Navigation guards: beforeEach, beforeRouteEnter, beforeRouteLeave cho auth, dirty check. Hash mode vs History mode.",
+      "source": "https://router.vuejs.org/guide/essentials/navigation.html",
+      "tags": ["vue-router", "navigation", "RouterLink", "programmatic"]
+    },
+    {
+      "question_id": "vue_l2_005", "level": 2, "category": "understanding",
+      "question": "Vue 3 Teleport component dùng để làm gì?",
+      "options": {
+        "A": "Teleport giúp navigate giữa các routes",
+        "B": "<Teleport to='body'>: render component's HTML ở DOM node khác (ngoài component tree), giữ Vue reactivity — dùng cho modals, tooltips, notifications",
+        "C": "Teleport dùng để lazy load components",
+        "D": "Teleport chỉ dùng trong server-side rendering"
+      },
+      "correct_answer": "B",
+      "explanation": "<Teleport to='#modals'><Modal v-if='show'/></Teleport>: Vue render Modal vào #modals node (thường là body) nhưng state/events vẫn trong component. Lý do: modal cần position:fixed so với viewport → tránh bị clip bởi parent overflow:hidden. Tooltip, dropdown overflow issues. Portal pattern từ React. to prop có thể là CSS selector hoặc DOM element. disabled prop để tắt teleport (conditional teleport). Vẫn giữ parent component's reactivity và context.",
+      "source": "https://vuejs.org/guide/built-ins/teleport.html",
+      "tags": ["teleport", "portal", "modal", "DOM"]
+    },
+    {
+      "question_id": "vue_l2_006", "level": 2, "category": "understanding",
+      "question": "Vue 3 provide/inject pattern dùng để làm gì?",
+      "options": {
+        "A": "Chỉ dùng để inject CSS vào component",
+        "B": "provide/inject: ancestor component cung cấp data/function, descendant bất kỳ có thể inject — giải quyết prop drilling",
+        "C": "inject chỉ hoạt động với direct children",
+        "D": "provide/inject không hỗ trợ reactive values"
+      },
+      "correct_answer": "B",
+      "explanation": "provide/inject thay thế prop drilling qua nhiều cấp. Parent: provide('theme', ref('dark')). Child (bất kỳ cấp): const theme = inject('theme', 'light' /* default */). Inject reactive value: dùng computed() hoặc ref() trong provide để child phản ứng với changes. Readonly: provide('count', readonly(count)) — ngăn child modify. Symbol keys: dùng Symbol làm key để tránh naming collision. Use cases: theme, locale, user authentication, form validation. Khác global state: provide/inject scoped theo component subtree.",
+      "source": "https://vuejs.org/guide/components/provide-inject.html",
+      "tags": ["provide", "inject", "prop-drilling", "component-communication"]
+    },
+    {
+      "question_id": "vue_l3_001", "level": 3, "category": "application",
+      "question": "Implement Pinia store cho authentication với TypeScript. Approach đúng?",
+      "options": {
+        "A": "Dùng global variables thay vì Pinia",
+        "B": "defineStore('auth', () => { const user = ref<User|null>(null); const isLoggedIn = computed(() => !!user.value); async function login(creds) {...}; return { user, isLoggedIn, login } })",
+        "C": "Pinia không hỗ trợ TypeScript",
+        "D": "Dùng Vuex cho authentication"
+      },
+      "correct_answer": "B",
+      "explanation": "Pinia setup store (Composition API style): defineStore('auth', () => { const user = ref<User | null>(null); const token = ref<string | null>(localStorage.getItem('token')); const isLoggedIn = computed(() => !!user.value && !!token.value); async function login(credentials: Credentials) { const res = await api.post('/auth/login', credentials); user.value = res.data.user; token.value = res.data.token; localStorage.setItem('token', token.value); }; function logout() { user.value = null; token.value = null; localStorage.removeItem('token'); }; return { user, token, isLoggedIn, login, logout }; }). Dùng: const authStore = useAuthStore(); authStore.login(...).",
+      "source": "https://pinia.vuejs.org/core-concepts/",
+      "tags": ["pinia", "authentication", "typescript", "store"]
+    },
+    {
+      "question_id": "vue_l3_002", "level": 3, "category": "application",
+      "question": "Implement reusable useFetch composable với loading, error, và abort support?",
+      "options": {
+        "A": "Đặt fetch logic trực tiếp trong component",
+        "B": "function useFetch(url) { const data=ref(null); const loading=ref(true); const error=ref(null); const controller=new AbortController(); onMounted(async()=>{try{...}catch{}}); onUnmounted(()=>controller.abort()); return {data,loading,error} }",
+        "C": "Composables không thể handle async operations",
+        "D": "Dùng axios plugin thay vì composable"
+      },
+      "correct_answer": "B",
+      "explanation": "export function useFetch<T>(url: MaybeRef<string>) { const data = ref<T | null>(null); const loading = ref(true); const error = ref<Error | null>(null); const controller = new AbortController(); const execute = async () => { loading.value = true; error.value = null; try { const res = await fetch(toValue(url), { signal: controller.signal }); if (!res.ok) throw new Error(`HTTP ${res.status}`); data.value = await res.json(); } catch (e) { if (e.name !== 'AbortError') error.value = e; } finally { loading.value = false; } }; onMounted(execute); onUnmounted(() => controller.abort()); return { data, loading, error, refetch: execute }; }",
+      "source": "https://vuejs.org/guide/reusability/composables.html",
+      "tags": ["composables", "fetch", "abort", "loading", "error-handling"]
+    },
+    {
+      "question_id": "vue_l3_003", "level": 3, "category": "application",
+      "question": "Vue Router navigation guards — cách protect routes cần authentication?",
+      "options": {
+        "A": "Dùng v-if để ẩn protected content",
+        "B": "router.beforeEach((to, from) => { if (to.meta.requiresAuth && !authStore.isLoggedIn) return { name: 'Login', query: { redirect: to.fullPath } } })",
+        "C": "Navigation guards không thể async",
+        "D": "Chỉ cần check trong component mounted()"
+      },
+      "correct_answer": "B",
+      "explanation": "Route meta: { path: '/dashboard', component: Dashboard, meta: { requiresAuth: true } }. Global guard: router.beforeEach(async (to, from) => { const authStore = useAuthStore(); if (to.meta.requiresAuth) { if (!authStore.isLoggedIn) { return { name: 'Login', query: { redirect: to.fullPath } }; } if (to.meta.requiresAdmin && !authStore.isAdmin) { return { name: 'Forbidden' }; } } }). Sau login: router.push(route.query.redirect as string || '/'). Per-route guard: beforeEnter. Component guard: onBeforeRouteLeave (dirty form check).",
+      "source": "https://router.vuejs.org/guide/advanced/navigation-guards.html",
+      "tags": ["vue-router", "navigation-guards", "authentication", "route-protection"]
+    },
+    {
+      "question_id": "vue_l3_004", "level": 3, "category": "application",
+      "question": "Implement Vue 3 custom directive cho auto-focus và click-outside detection?",
+      "options": {
+        "A": "Custom directives không còn trong Vue 3",
+        "B": "app.directive('focus', { mounted: (el) => el.focus() }). vClickOutside: { mounted(el, binding) { el._clickOutside = (e) => { if (!el.contains(e.target)) binding.value(e) }; document.addEventListener('click', el._clickOutside) }, unmounted(el) { document.removeEventListener('click', el._clickOutside) } }",
+        "C": "Custom directives không hỗ trợ cleanup",
+        "D": "Chỉ dùng được directives với native HTML elements"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue 3 directive lifecycle hooks: created, beforeMount, mounted, beforeUpdate, updated, beforeUnmount, unmounted. Auto-focus: app.directive('focus', { mounted: (el) => el.focus() }). Dùng: <input v-focus>. Click-outside (pattern phổ biến cho dropdowns/modals): mounted(el, binding) { el._handler = (e) => { !el.contains(e.target) && binding.value(e) }; document.addEventListener('click', el._handler) }; unmounted(el) { document.removeEventListener('click', el._handler) }. Dùng: <div v-click-outside='closeMenu'>.",
+      "source": "https://vuejs.org/guide/reusability/custom-directives.html",
+      "tags": ["custom-directive", "v-focus", "click-outside", "vue3"]
+    },
+    {
+      "question_id": "vue_l3_005", "level": 3, "category": "application",
+      "question": "Vue 3 defineEmits và defineProps với TypeScript — cách type đúng?",
+      "options": {
+        "A": "Vue 3 không hỗ trợ TypeScript cho props",
+        "B": "const props = defineProps<{ title: string; count?: number }>(); const emit = defineEmits<{ change: [value: string]; submit: [id: number, data: FormData] }>()",
+        "C": "defineProps chỉ nhận object config, không nhận generic types",
+        "D": "Dùng PropType từ Vue 2"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue 3 với TypeScript trong <script setup>: Props: const props = defineProps<{ modelValue: string; label?: string; disabled?: boolean }>(); withDefaults(defineProps<Props>(), { label: 'Default', disabled: false }). Emits: const emit = defineEmits<{ 'update:modelValue': [value: string]; change: [oldVal: string, newVal: string]; }>(); emit('update:modelValue', newValue). Expose: defineExpose({ focus, reset }). defineModel() (Vue 3.4+): const model = defineModel<string>(); — tự tạo modelValue prop và update:modelValue emit.",
+      "source": "https://vuejs.org/guide/typescript/composition-api.html",
+      "tags": ["typescript", "defineProps", "defineEmits", "generics"]
+    },
+    {
+      "question_id": "vue_l3_006", "level": 3, "category": "application",
+      "question": "Vue <KeepAlive> component dùng khi nào và cách implement?",
+      "options": {
+        "A": "<KeepAlive> giống v-show nhưng cho components",
+        "B": "<KeepAlive> cache component instances khi switching — giữ state, tránh re-fetch; dùng cho tabs, wizard steps; include/exclude để control cache",
+        "C": "<KeepAlive> không thể kết hợp với Vue Router",
+        "D": "<KeepAlive> increase bundle size đáng kể"
+      },
+      "correct_answer": "B",
+      "explanation": "<KeepAlive include='TabA,TabB' :max='5'><component :is='currentTab'/></KeepAlive>. Lifecycle với KeepAlive: onActivated() (khi component được activated), onDeactivated() (khi deactivated). Use cases: tab switching giữ form data, back/forward trong wizard, list → detail → back to list (giữ scroll position và data). max prop: LRU cache — khi đủ max, oldest instance bị destroy. Với Vue Router: <RouterView v-slot='{ Component }'><KeepAlive><component :is='Component'/></KeepAlive></RouterView>.",
+      "source": "https://vuejs.org/guide/built-ins/keep-alive.html",
+      "tags": ["keepalive", "caching", "performance", "tabs"]
+    },
+    {
+      "question_id": "vue_l4_001", "level": 4, "category": "debugging",
+      "question": "Vue component không re-render dù reactive data đã thay đổi. Nguyên nhân phổ biến nhất?",
+      "options": {
+        "A": "Vue Reactivity luôn hoạt động đúng",
+        "B": "Destructure reactive() mất reactivity; modify nested property không track được; replace toàn bộ reactive object",
+        "C": "Chỉ ref() mới có reactivity",
+        "D": "Template phải gọi force update"
+      },
+      "correct_answer": "B",
+      "explanation": "Reactivity pitfalls: (1) Destructure reactive: const { count } = reactive({count: 0}); count++ — KHÔNG reactive. Fix: const state = reactive({count: 0}); state.count++. Hoặc: const {count} = toRefs(state). (2) Replace reactive object: state = reactive({...}) — mất reference. Fix: Object.assign(state, newData). (3) ref trong reactive: Vue auto-unwrap nested refs trong reactive. (4) Primitive trong reactive: reactive không wrap primitives. (5) Array: reactive array — set index trực tiếp arr[0] = x hoạt động trong Vue 3 (không phải Vue 2). Debug: Vue DevTools → check reactivity.",
+      "source": "https://vuejs.org/guide/essentials/reactivity-fundamentals.html#limitations-of-reactive",
+      "tags": ["debugging", "reactivity", "reactive", "pitfalls"]
+    },
+    {
+      "question_id": "vue_l4_002", "level": 4, "category": "debugging",
+      "question": "Vue app bị memory leak sau khi navigate giữa các routes. Cách debug và fix?",
+      "options": {
+        "A": "Memory leak không thể xảy ra trong Vue",
+        "B": "Event listeners, timers, subscriptions không được cleanup trong onUnmounted(); Vue DevTools → Performance tab để detect",
+        "C": "Chỉ cần dùng v-if thay v-show",
+        "D": "Memory leak do Vue Router gây ra"
+      },
+      "correct_answer": "B",
+      "explanation": "Memory leaks trong Vue: (1) Global event listeners không remove: window.addEventListener('resize', handler) trong onMounted → phải removeEventListener trong onUnmounted. (2) setInterval không clear: clearInterval(id) trong onUnmounted. (3) Third-party subscriptions (WebSocket, Rxjs) không unsubscribe. (4) Watchers: unwatch() function được return từ watch(). (5) Third-party libraries không destroy. Fix pattern: const cleanup = []; onMounted(() => { cleanup.push(window.addEventListener(...))}); onUnmounted(() => { cleanup.forEach(fn => fn()) }). Hoặc dùng useEventListener từ VueUse.",
+      "source": "https://vuejs.org/guide/best-practices/performance.html",
+      "tags": ["memory-leak", "onUnmounted", "cleanup", "debugging"]
+    },
+    {
+      "question_id": "vue_l4_003", "level": 4, "category": "debugging",
+      "question": "watch() vs watchEffect() — khi nào dùng cái nào và pitfalls?",
+      "options": {
+        "A": "Chúng giống nhau hoàn toàn",
+        "B": "watch(): lazy, explicit source, access old/new values; watchEffect(): eager, auto-track dependencies, không có old value; cả hai cần cleanup để tránh memory leak",
+        "C": "watchEffect() không thể async",
+        "D": "watch() không hỗ trợ deep watching"
+      },
+      "correct_answer": "B",
+      "explanation": "watch(source, callback, options): lazy (không chạy ngay), explicit about watched source, có oldValue và newValue. Options: immediate: true (chạy ngay), deep: true (deep watch object), once: true. watchEffect(effect): auto-track mọi reactive dependencies dùng trong effect, chạy ngay lập tức. Cleanup: watchEffect((onCleanup) => { const controller = new AbortController(); fetch(url, {signal: controller.signal}); onCleanup(() => controller.abort()) }). Stop: const stop = watchEffect(...); stop() khi không cần. Pitfall: watch object bằng reference không detect property changes — cần deep:true hoặc getter.",
+      "source": "https://vuejs.org/guide/essentials/watchers.html",
+      "tags": ["watch", "watchEffect", "watcher", "debugging"]
+    },
+    {
+      "question_id": "vue_l4_004", "level": 4, "category": "debugging",
+      "question": "Vue performance: component render quá nhiều lần không cần thiết. Cách diagnose và fix?",
+      "options": {
+        "A": "Vue tự optimize, không cần lo về re-renders",
+        "B": "Vue DevTools → Performance tab để track renders; dùng v-memo, shallowRef, shallowReactive, markRaw cho data không cần reactive",
+        "C": "Chuyển sang class components để optimize",
+        "D": "Chỉ cần tăng RAM"
+      },
+      "correct_answer": "B",
+      "explanation": "Debug: Vue DevTools → Highlight component updates. Performance issues: (1) Props thay đổi liên tục (passing object literals làm prop mỗi render). (2) Computed không được memo đúng cách. (3) v-for không có :key. Fix: (1) v-memo='[dependency]' — skip re-render nếu dep không đổi. (2) shallowRef/shallowReactive — không deep-watch nested objects (performance). (3) markRaw(largeObject) — Vue không track reactivity cho object này. (4) Object.freeze() cho static data. (5) <component :is='AsyncComp'> với defineAsyncComponent cho lazy loading. (6) Virtual scrolling cho lists dài.",
+      "source": "https://vuejs.org/guide/best-practices/performance.html",
+      "tags": ["performance", "re-render", "v-memo", "shallowRef"]
+    },
+    {
+      "question_id": "vue_l4_005", "level": 4, "category": "debugging",
+      "question": "Vue component không nhận props update từ parent. Nguyên nhân và cách fix?",
+      "options": {
+        "A": "Props luôn reactive, không bao giờ có vấn đề",
+        "B": "Mutating props trực tiếp trong child (anti-pattern); sử dụng local copy của prop không watch update; v-model không đúng cách",
+        "C": "Chỉ cần dùng $forceUpdate()",
+        "D": "Props không reactive trong Vue 3"
+      },
+      "correct_answer": "B",
+      "explanation": "Props pitfalls: (1) Mutate props trực tiếp — props.count++ → Vue warning + parent không update. Fix: emit event để parent update. (2) Local copy không sync: const localCount = ref(props.count) — chỉ copy giá trị ban đầu. Fix: watch(() => props.count, (newVal) => { localCount.value = newVal }). (3) Destructure props: const { count } = props — mất reactivity. Fix: const { count } = toRefs(props) hoặc dùng props.count trong template. (4) v-model trên component: phải implement modelValue + emit('update:modelValue'). Pattern: defineModel() shortcut trong Vue 3.4+.",
+      "source": "https://vuejs.org/guide/components/props.html",
+      "tags": ["props", "debugging", "mutation", "reactivity"]
+    },
+    {
+      "question_id": "vue_l4_006", "level": 4, "category": "debugging",
+      "question": "async setup() và Suspense trong Vue 3 hoạt động thế nào?",
+      "options": {
+        "A": "setup() không thể async",
+        "B": "async setup() được support với <Suspense> wrapper — hiển thị #fallback slot trong khi await; multiple async setup() components trong cùng Suspense chạy concurrent",
+        "C": "Suspense chỉ dùng cho code splitting",
+        "D": "Suspense gây performance issues"
+      },
+      "correct_answer": "B",
+      "explanation": "<Suspense><template #default><AsyncComponent /></template><template #fallback><LoadingSpinner /></template></Suspense>. AsyncComponent có thể dùng await trực tiếp trong <script setup>: const data = await fetch('/api/data').then(r => r.json()). Suspense wait cho tất cả async deps resolve. onErrorCaptured trong parent để catch errors. Nested Suspense: inner Suspense resolves independently. Kết hợp với defineAsyncComponent: defineAsyncComponent({ loader: () => import('./Heavy.vue'), loadingComponent: Spinner, errorComponent: ErrorView, delay: 200, timeout: 3000 }).",
+      "source": "https://vuejs.org/guide/built-ins/suspense.html",
+      "tags": ["suspense", "async", "setup", "loading"]
+    },
+    {
+      "question_id": "vue_l5_001", "level": 5, "category": "production_scenario",
+      "question": "Vue app bị slow initial load (5 giây). Bundle size 4MB. Strategy tối ưu cho production?",
+      "options": {
+        "A": "Dùng server mạnh hơn",
+        "B": "Code splitting với defineAsyncComponent, route-level lazy loading, tree shaking, Vite bundle analysis, CDN",
+        "C": "Chuyển sang Nuxt.js",
+        "D": "Giảm số components"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue production optimization: (1) Route lazy loading: component: () => import('./views/Dashboard.vue') — mỗi route là chunk riêng. (2) Component lazy: defineAsyncComponent(() => import('./Heavy.vue')). (3) Bundle analysis: npx vite-bundle-analyzer — identify heavy deps. (4) Tree shaking: import { ref } from 'vue' (không import * from 'vue'). (5) Replace heavy libs: moment → dayjs, lodash → lodash-es. (6) Image optimization: <img loading='lazy'>, WebP. (7) CDN: externalize Vue (không bundle) nếu có CDN. (8) SSR/SSG với Nuxt cho critical pages. (9) Prefetch: <link rel='prefetch'> cho likely-to-visit routes.",
+      "source": "https://vuejs.org/guide/best-practices/performance.html",
+      "tags": ["performance", "bundle", "lazy-loading", "production"]
+    },
+    {
+      "question_id": "vue_l5_002", "level": 5, "category": "production_scenario",
+      "question": "Implement real-time data dashboard với Vue 3 và WebSocket. Approach cho large-scale?",
+      "options": {
+        "A": "Polling mỗi giây với setInterval",
+        "B": "Pinia store manage WebSocket connection, composable useWebSocket, reactive data updates, reconnection logic, cleanup khi unmount",
+        "C": "WebSocket chỉ dùng được với Vue 2",
+        "D": "Dùng axios thay WebSocket"
+      },
+      "correct_answer": "B",
+      "explanation": "Architecture: (1) Pinia store: const useWebSocketStore = defineStore('ws', () => { const socket = ref<WebSocket|null>(null); const dashboardData = ref<DashboardData>({}); function connect() { socket.value = new WebSocket(WS_URL); socket.value.onmessage = (e) => { const msg = JSON.parse(e.data); dashboardData.value = { ...dashboardData.value, ...msg }; }; socket.value.onclose = () => setTimeout(connect, 3000) }; ... }). (2) composable useRealtimeDashboard wrap Pinia store. (3) Reconnection: exponential backoff. (4) Cleanup: socket.close() trong onUnmounted(). (5) Computed để derive metrics từ raw data. (6) markRaw cho large data objects không cần deep reactivity.",
+      "source": "https://vuejs.org/guide/scaling-up/state-management.html",
+      "tags": ["websocket", "pinia", "real-time", "dashboard", "production"]
+    },
+    {
+      "question_id": "vue_l5_003", "level": 5, "category": "production_scenario",
+      "question": "Vue 3 app cần SEO và fast initial load. Nuxt.js SSR vs SSG vs SPA — chọn approach nào?",
+      "options": {
+        "A": "SPA luôn đủ cho mọi use case",
+        "B": "SSG cho static content (blog/docs), SSR cho dynamic content (e-commerce/dashboard), SPA cho private apps không cần SEO",
+        "C": "SSR luôn tốt hơn SSG",
+        "D": "Nuxt.js không cần thiết nếu có Vue Router"
+      },
+      "correct_answer": "B",
+      "explanation": "Decision framework: SPA (Vue default): private apps (dashboards, admin), sau login, không cần SEO. SSG (Nuxt generate): marketing pages, blogs, documentation, landing pages — pre-built HTML, cực nhanh, CDN. SSR (Nuxt server): e-commerce product pages, news sites, user-specific public pages cần SEO + fresh data. Hybrid (Nuxt 3 Island Architecture): SSG default + SSR cho specific pages. Nuxt 3 features: auto-imports, file-based routing, server routes (api/), useFetch/useAsyncData, Nitro server. useHead() cho dynamic meta tags.",
+      "source": "https://nuxt.com/docs/guide/concepts/rendering",
+      "tags": ["SSR", "SSG", "Nuxt", "SEO", "rendering"]
+    },
+    {
+      "question_id": "vue_l5_004", "level": 5, "category": "production_scenario",
+      "question": "Large Vue 3 application với 50+ developers. Cách tổ chức code và state management có thể scale?",
+      "options": {
+        "A": "Một Pinia store duy nhất cho toàn bộ app",
+        "B": "Feature-based folder structure, domain-specific Pinia stores, composable library, design system, automated testing",
+        "C": "Dùng Vuex thay Pinia cho large apps",
+        "D": "Monolith Vue file cho đơn giản"
+      },
+      "correct_answer": "B",
+      "explanation": "Scalable Vue architecture: (1) Feature-based folders: src/features/auth/, src/features/products/ — mỗi feature có components, composables, stores, types, api. (2) Pinia stores per domain: useAuthStore, useCartStore, useProductStore — không mega store. (3) Shared composables library: src/composables/ — useForm, useDebounce, usePagination. (4) API layer: src/api/ — tách fetch calls khỏi components và stores. (5) Design system: src/components/ui/ — Button, Input, Modal. (6) TypeScript strict mode + Zod cho API validation. (7) Vitest + Vue Testing Library. (8) Storybook cho component documentation.",
+      "source": "https://vuejs.org/guide/scaling-up/tooling.html",
+      "tags": ["architecture", "scalability", "pinia", "team", "structure"]
+    },
+    {
+      "question_id": "vue_l5_005", "level": 5, "category": "production_scenario",
+      "question": "Vue app gặp lỗi 'Maximum recursive updates exceeded'. Nguyên nhân và cách fix trong production?",
+      "options": {
+        "A": "Lỗi do Vue có bug",
+        "B": "Watcher hoặc computed trigger update → update trigger watcher lại → infinite loop; thường do modify reactive data trong watcher mà watch chính data đó",
+        "C": "Tăng recursion limit của Vue",
+        "D": "Chỉ xảy ra trong development mode"
+      },
+      "correct_answer": "B",
+      "explanation": "Infinite update loop patterns: (1) watch(data, () => { data.value = newValue }) — modify watched source trong callback. (2) computed() có side effects: computed(() => { store.count++; return store.count }) — computed không được có side effects. (3) v-model + immediate watcher: watch(model, (val) => { emit('update:modelValue', val) }, { immediate: true }) với parent cũng watching. Debug: Vue warning sẽ chỉ ra component và watcher. Fix: (1) Đặt condition trong watcher để tránh modify khi không cần. (2) nextTick(): await nextTick() trước khi access updated DOM. (3) flush: 'post' cho watchers access DOM sau update.",
+      "source": "https://vuejs.org/guide/essentials/watchers.html",
+      "tags": ["infinite-loop", "watcher", "debugging", "production"]
+    },
+    {
+      "question_id": "vue_l5_006", "level": 5, "category": "production_scenario",
+      "question": "Implement Vue 3 micro-frontend architecture cho enterprise app với multiple teams?",
+      "options": {
+        "A": "Micro-frontends không khả thi với Vue",
+        "B": "Module Federation (Vite/Webpack), iframe isolation, Web Components wrapper, shared design system, event bus cross-MFE communication",
+        "C": "Chỉ cần chia thành nhiều Vue components",
+        "D": "Dùng Vue Router với lazy loading là đủ"
+      },
+      "correct_answer": "B",
+      "explanation": "Vue Micro-Frontend patterns: (1) Module Federation: @originjs/vite-plugin-federation — mỗi team build Vue app riêng, expose components, host app consume. (2) iframe: isolation hoàn toàn, performance overhead, communication qua postMessage. (3) Web Components: Vue component wrapped bằng defineCustomElement() — dùng được trong bất kỳ framework nào. (4) Shared: design system npm package, shared state qua CustomEvents hoặc import store module. (5) Routing: shell app handle top-level routing, mỗi MFE handle sub-routes. (6) Versioning: semantic versioning cho shared components. Challenges: CSS isolation, auth, performance, testing.",
+      "source": "https://vuejs.org/guide/extras/web-components.html",
+      "tags": ["micro-frontend", "module-federation", "web-components", "enterprise"]
+    }
+  ]
+}

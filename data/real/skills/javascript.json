@@ -1,0 +1,212 @@
+{
+  "skill": "JavaScript",
+  "market_frequency": "34.5% JDs yêu cầu JavaScript",
+  "market_role": "Frontend Developer, Full-stack Developer",
+  "total_learning_hours": 70,
+  "generated_at": "2026-06-12T00:05:36.326721",
+  "modules": [
+    {
+      "module_id": "js_01",
+      "title": "JavaScript Core ES6+",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "js_01_01",
+          "title": "Scope, Closure, Prototype Chain",
+          "hours": 8,
+          "academic": {
+            "summary": "var/let/const hoisting, closure, prototype, __proto__, this binding, arrow functions",
+            "resources": [
+              {
+                "title": "JavaScript.info — Modern JS Tutorial",
+                "url": "https://javascript.info",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "MDN JavaScript Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              },
+              {
+                "title": "Eloquent JavaScript (free book)",
+                "url": "https://eloquentjavascript.net",
+                "type": "book",
+                "is_free": true,
+                "duration_minutes": 600
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement Promise.all từ đầu không dùng library. Fetch 5 GitHub APIs song song và merge kết quả",
+            "resources": [
+              {
+                "title": "javascript.info — Promises",
+                "url": "https://javascript.info/promise-basics",
+                "type": "article",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "js_01_01_q1",
+                "level": 1,
+                "question": "Output của `console.log(typeof null)`?",
+                "options": {
+                  "A": "'null'",
+                  "B": "'object'",
+                  "C": "'undefined'",
+                  "D": "'number'"
+                },
+                "correct_answer": "B",
+                "explanation": "typeof null === 'object' là bug từ JS 1.0, giữ lại vì backward compatibility."
+              },
+              {
+                "question_id": "js_01_01_q2",
+                "level": 3,
+                "question": "Event loop xử lý setTimeout(fn, 0) như thế nào?",
+                "options": {
+                  "A": "fn chạy ngay lập tức",
+                  "B": "fn vào Web API → callback queue → chờ call stack rỗng",
+                  "C": "fn chạy song song",
+                  "D": "fn không bao giờ chạy"
+                },
+                "correct_answer": "B",
+                "explanation": "Dù timeout=0, fn vẫn async. Luôn chạy SAU code sync hiện tại nhờ event loop."
+              },
+              {
+                "question_id": "js_01_01_q3",
+                "level": 4,
+                "question": "Closure nào có memory leak risk?",
+                "options": {
+                  "A": "const fn = () => { let x=1; return () => x; }",
+                  "B": "const fn = () => { const el = document.getElementById('x'); return () => el.textContent; }",
+                  "C": "const fn = (x) => () => x*2",
+                  "D": "Không có closure nào"
+                },
+                "correct_answer": "B",
+                "explanation": "B capture DOM reference. Nếu element xóa khỏi DOM nhưng closure còn sống → element không được GC. Fix: dùng WeakRef hoặc cleanup explicitly."
+              },
+              {
+                "question_id": "js_01_01_q4",
+                "level": 5,
+                "question": "`const obj = { a: 1 }; Object.freeze(obj); obj.a = 2;` — giá trị của obj.a?",
+                "options": {
+                  "A": "2",
+                  "B": "1",
+                  "C": "undefined",
+                  "D": "TypeError thrown"
+                },
+                "correct_answer": "B",
+                "explanation": "Object.freeze(): shallow freeze — không thể add/delete/modify properties ở first level. obj.a vẫn là 1. Không throw trong non-strict mode."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "js_01_02",
+          "title": "Async: Promise, async/await, Fetch API",
+          "hours": 8,
+          "academic": {
+            "summary": "Promise chaining, Promise.all/race/allSettled, async/await, AbortController, fetch",
+            "resources": [
+              {
+                "title": "MDN — Using Promises",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 60
+              },
+              {
+                "title": "JavaScript.info — Async/Await",
+                "url": "https://javascript.info/async-await",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 45
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Xây dựng Weather Dashboard: fetch OpenWeatherMap API, xử lý loading/error states, cache responses 5 phút",
+            "resources": [
+              {
+                "title": "OpenWeatherMap API Docs",
+                "url": "https://openweathermap.org/api",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "js_01_02_q1",
+                "level": 3,
+                "question": "Promise.all vs Promise.allSettled khác nhau thế nào?",
+                "options": {
+                  "A": "all: reject ngay khi có 1 promise fail. allSettled: chờ tất cả settle, trả về array results",
+                  "B": "Chúng giống nhau",
+                  "C": "allSettled nhanh hơn",
+                  "D": "all chờ tất cả, allSettled dừng khi fail"
+                },
+                "correct_answer": "A",
+                "explanation": "Promise.all: fail-fast, reject khi bất kỳ promise nào reject. Promise.allSettled: luôn resolve sau khi tất cả settle, trả [{status, value/reason}]."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "js_01_03",
+          "title": "DOM, Events, Modules (ESM)",
+          "hours": 9,
+          "academic": {
+            "summary": "querySelector, Event delegation, CustomEvent, import/export, dynamic import(), Vite",
+            "resources": [
+              {
+                "title": "MDN — DOM Events",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 90
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Build infinite scroll list: IntersectionObserver, debounced search, event delegation cho dynamic content",
+            "resources": [
+              {
+                "title": "MDN IntersectionObserver",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "js_01_03_q1",
+                "level": 2,
+                "question": "Event delegation là gì và tại sao dùng nó?",
+                "options": {
+                  "A": "Gán listener cho parent thay vì mỗi child — hiệu quả hơn cho dynamic content",
+                  "B": "Gán nhiều listeners cho cùng element",
+                  "C": "Xóa listeners khi không dùng",
+                  "D": "Chặn event bubbling"
+                },
+                "correct_answer": "A",
+                "explanation": "Event delegation dựa vào event bubbling. Gán 1 listener cho parent thay vì N listeners cho N children. Hoạt động với dynamic elements được add sau."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

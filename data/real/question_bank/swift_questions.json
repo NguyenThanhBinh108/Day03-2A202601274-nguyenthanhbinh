@@ -1,0 +1,218 @@
+{
+  "skill": "Swift iOS",
+  "skill_key": "swift",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.560933Z",
+  "source_references": [
+    "https://www.google.com/search?q=Swift+iOS+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "swift_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Swift iOS, Swift basics có vai trò gì?",
+      "options": {
+        "A": "Swift basics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Swift basics là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Swift basics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Swift basics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Swift basics trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và Swift basics là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ Swift basics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+Swift+basics+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "swift-basics"
+      ]
+    },
+    {
+      "question_id": "swift_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong Swift iOS, SwiftUI có vai trò gì?",
+      "options": {
+        "A": "SwiftUI là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "SwiftUI là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "SwiftUI đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên SwiftUI là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "SwiftUI trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và SwiftUI là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ SwiftUI giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+SwiftUI+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "swiftui"
+      ]
+    },
+    {
+      "question_id": "swift_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Swift iOS, UIKit basics có vai trò gì?",
+      "options": {
+        "A": "UIKit basics là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "UIKit basics là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "UIKit basics đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên UIKit basics là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "UIKit basics trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và UIKit basics là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ UIKit basics giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+UIKit+basics+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "uikit-basics"
+      ]
+    },
+    {
+      "question_id": "swift_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong Swift iOS, Combine framework có vai trò gì?",
+      "options": {
+        "A": "Combine framework là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Combine framework là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Combine framework đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Combine framework là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Combine framework trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và Combine framework là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ Combine framework giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+Combine+framework+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "combine-framework"
+      ]
+    },
+    {
+      "question_id": "swift_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Swift iOS, Core Data có vai trò gì?",
+      "options": {
+        "A": "Core Data là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Core Data là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Core Data đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Core Data là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Core Data trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và Core Data là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ Core Data giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+Core+Data+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "core-data"
+      ]
+    },
+    {
+      "question_id": "swift_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong Swift iOS, URLSession networking có vai trò gì?",
+      "options": {
+        "A": "URLSession networking là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "URLSession networking là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "URLSession networking đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên URLSession networking là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "URLSession networking trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và URLSession networking là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ URLSession networking giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+URLSession+networking+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "urlsession-networking"
+      ]
+    },
+    {
+      "question_id": "swift_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Swift iOS, Authentication có vai trò gì?",
+      "options": {
+        "A": "Authentication là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Authentication là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Authentication đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Authentication là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Authentication trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và Authentication là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ Authentication giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+Authentication+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "authentication"
+      ]
+    },
+    {
+      "question_id": "swift_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong Swift iOS, APNs notifications có vai trò gì?",
+      "options": {
+        "A": "APNs notifications là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "APNs notifications là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "APNs notifications đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên APNs notifications là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "APNs notifications trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và APNs notifications là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ APNs notifications giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+APNs+notifications+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "apns-notifications"
+      ]
+    },
+    {
+      "question_id": "swift_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Swift iOS, App Store submission có vai trò gì?",
+      "options": {
+        "A": "App Store submission là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "App Store submission là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "App Store submission đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên App Store submission là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "App Store submission trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và App Store submission là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ App Store submission giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+App+Store+submission+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "app-store-submission"
+      ]
+    },
+    {
+      "question_id": "swift_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong Swift iOS, Xcode tools có vai trò gì?",
+      "options": {
+        "A": "Xcode tools là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Xcode tools là core concept trong Swift iOS — cần master để build production-grade Mobile solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Xcode tools đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Xcode tools là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Xcode tools trong Swift iOS: Đây là một trong những concepts quan trọng nhất. Swift iOS được sử dụng rộng rãi trong industry và Xcode tools là phần không thể thiếu. Khi làm việc với Swift iOS trong production, hiểu rõ Xcode tools giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=Swift+iOS+Xcode+tools+tutorial",
+      "tags": [
+        "swift",
+        "mobile",
+        "xcode-tools"
+      ]
+    }
+  ]
+}

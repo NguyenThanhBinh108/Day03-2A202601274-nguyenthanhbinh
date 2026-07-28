@@ -1,0 +1,154 @@
+{
+  "skill": "Svelte",
+  "skill_key": "svelte",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.512002Z",
+  "checklist_items": [
+    {
+      "item_id": "svelte_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Svelte compiler",
+      "description": "Master Svelte compiler trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Svelte+Svelte+compiler+tutorial",
+      "resource_title": "Svelte — Svelte compiler",
+      "quiz_ids": [
+        "svelte_l1_001"
+      ],
+      "market_relevance": "Svelte compiler là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Reactive declarations",
+      "description": "Master Reactive declarations trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Svelte+Reactive+declarations+tutorial",
+      "resource_title": "Svelte — Reactive declarations",
+      "quiz_ids": [
+        "svelte_l2_002"
+      ],
+      "market_relevance": "Reactive declarations là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Component syntax",
+      "description": "Master Component syntax trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Svelte+Component+syntax+tutorial",
+      "resource_title": "Svelte — Component syntax",
+      "quiz_ids": [
+        "svelte_l3_003"
+      ],
+      "market_relevance": "Component syntax là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Stores",
+      "description": "Master Stores trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Svelte+Stores+tutorial",
+      "resource_title": "Svelte — Stores",
+      "quiz_ids": [
+        "svelte_l4_004"
+      ],
+      "market_relevance": "Stores là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "SvelteKit routing",
+      "description": "Master SvelteKit routing trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Svelte+SvelteKit+routing+tutorial",
+      "resource_title": "Svelte — SvelteKit routing",
+      "quiz_ids": [
+        "svelte_l5_005"
+      ],
+      "market_relevance": "SvelteKit routing là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Load functions",
+      "description": "Master Load functions trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Svelte+Load+functions+tutorial",
+      "resource_title": "Svelte — Load functions",
+      "quiz_ids": [
+        "svelte_l5_006"
+      ],
+      "market_relevance": "Load functions là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Form actions",
+      "description": "Master Form actions trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Svelte+Form+actions+tutorial",
+      "resource_title": "Svelte — Form actions",
+      "quiz_ids": [
+        "svelte_l5_007"
+      ],
+      "market_relevance": "Form actions là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Svelte animations",
+      "description": "Master Svelte animations trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Svelte+Svelte+animations+tutorial",
+      "resource_title": "Svelte — Svelte animations",
+      "quiz_ids": [
+        "svelte_l5_008"
+      ],
+      "market_relevance": "Svelte animations là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "Runes (Svelte 5)",
+      "description": "Master Runes (Svelte 5) trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Svelte+Runes+(Svelte+5)+tutorial",
+      "resource_title": "Svelte — Runes (Svelte 5)",
+      "quiz_ids": [
+        "svelte_l5_009"
+      ],
+      "market_relevance": "Runes (Svelte 5) là key skill trong Svelte Frontend development"
+    },
+    {
+      "item_id": "svelte_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "SSR",
+      "description": "Master SSR trong Svelte — essential cho Frontend developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Svelte+SSR+tutorial",
+      "resource_title": "Svelte — SSR",
+      "quiz_ids": [
+        "svelte_l5_010"
+      ],
+      "market_relevance": "SSR là key skill trong Svelte Frontend development"
+    }
+  ]
+}

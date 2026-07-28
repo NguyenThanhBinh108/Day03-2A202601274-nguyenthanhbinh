@@ -1,0 +1,58 @@
+{
+  "skill": "Redis",
+  "skill_key": "redis",
+  "total_resources": 5,
+  "generated_at": "2026-06-12T02:22:05.497313",
+  "resources": [
+    {
+      "resource_id": "redis_r001",
+      "title": "Redis Official Documentation",
+      "url": "https://redis.io/docs/",
+      "type": "official_docs",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Redis official docs với command reference"
+    },
+    {
+      "resource_id": "redis_r002",
+      "title": "GeeksForGeeks Redis Tutorial",
+      "url": "https://www.geeksforgeeks.org/redis-tutorial/",
+      "type": "tutorial",
+      "is_free": true,
+      "level": "all",
+      "rating": 4,
+      "description": "Redis tutorial comprehensive"
+    },
+    {
+      "resource_id": "redis_r003",
+      "title": "freeCodeCamp Redis Articles",
+      "url": "https://www.freecodecamp.org/news/tag/redis/",
+      "type": "articles",
+      "is_free": true,
+      "level": "intermediate",
+      "rating": 4,
+      "description": "Redis articles"
+    },
+    {
+      "resource_id": "redis_r004",
+      "title": "Redis University (Free)",
+      "url": "https://university.redis.com/",
+      "type": "course",
+      "is_free": true,
+      "level": "all",
+      "rating": 5,
+      "description": "Free Redis courses"
+    },
+    {
+      "resource_id": "redis_r005",
+      "title": "Viblo Redis Articles",
+      "url": "https://viblo.asia/tags/redis",
+      "is_free": true,
+      "level": "all",
+      "language": "Vietnamese",
+      "rating": 4,
+      "description": "Redis tiếng Việt"
+    }
+  ]
+}

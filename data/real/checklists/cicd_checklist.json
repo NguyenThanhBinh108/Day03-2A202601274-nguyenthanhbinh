@@ -1,0 +1,112 @@
+{
+  "skill": "CI/CD",
+  "skill_key": "cicd",
+  "total_topics": 8,
+  "estimated_total_hours": 11.5,
+  "generated_at": "2026-06-12T01:37:31.887614",
+  "checklist_items": [
+    {
+      "item_id": "cicd_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Git workflow và branch strategy",
+      "description": "GitHub Flow, conventional commits, PR process, branch protection rules",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/what-is-ci-cd/",
+      "resource_title": "freeCodeCamp — What is CI/CD",
+      "quiz_ids": [
+        "cicd_l1_001"
+      ]
+    },
+    {
+      "item_id": "cicd_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "GitHub Actions cơ bản",
+      "description": "Workflow YAML syntax, triggers, jobs, steps, secrets, context expressions",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/github-actions/",
+      "resource_title": "GeeksForGeeks — GitHub Actions",
+      "quiz_ids": [
+        "cicd_l1_002"
+      ],
+      "hands_on_task": "Setup CI pipeline đơn giản: push → install → test → notify"
+    },
+    {
+      "item_id": "cicd_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Automated Testing trong CI",
+      "description": "Unit tests, integration tests, coverage reports, test parallelization, matrix testing",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/nodejs-ci-cd-pipeline/",
+      "resource_title": "freeCodeCamp — Node.js CI/CD Pipeline",
+      "quiz_ids": [
+        "cicd_l3_001"
+      ]
+    },
+    {
+      "item_id": "cicd_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Docker trong CI/CD",
+      "description": "Build image trong CI, layer caching, push to registry, multi-stage builds, image scanning",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/docker-ci-cd-pipeline-github-actions/",
+      "resource_title": "freeCodeCamp — Docker CI/CD",
+      "quiz_ids": [],
+      "hands_on_task": "Setup CI pipeline: build Docker image → scan với Trivy → push to GitHub Container Registry"
+    },
+    {
+      "item_id": "cicd_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Deployment Strategies",
+      "description": "Blue-green, canary, rolling update, feature flags, rollback procedures",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.freecodecamp.org/news/blue-green-vs-canary-deployment/",
+      "resource_title": "freeCodeCamp — Deployment Strategies",
+      "quiz_ids": [
+        "cicd_l2_001"
+      ]
+    },
+    {
+      "item_id": "cicd_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Secrets và Security trong CI/CD",
+      "description": "GitHub Secrets, OIDC auth, secret scanning, rotate secrets, security scanning (Snyk/Trivy)",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.freecodecamp.org/news/secrets-management-ci-cd/",
+      "resource_title": "freeCodeCamp — Secrets in CI/CD",
+      "quiz_ids": [
+        "cicd_l2_002"
+      ]
+    },
+    {
+      "item_id": "cicd_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Deploy lên VPS/Cloud với CI/CD",
+      "description": "SSH deploy qua Actions, Ansible, deploy to AWS ECS/EC2, environment promotion",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.geeksforgeeks.org/github-actions/",
+      "resource_title": "GeeksForGeeks — GitHub Actions",
+      "quiz_ids": [],
+      "hands_on_task": "Auto-deploy Node.js app lên VPS khi merge PR lên main"
+    },
+    {
+      "item_id": "cicd_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Kubernetes và GitOps với ArgoCD",
+      "description": "K8s manifests, Helm charts, ArgoCD setup, GitOps workflow, rollback với git revert",
+      "estimated_minutes": 120,
+      "resource_url": "https://www.freecodecamp.org/news/gitops-argocd/",
+      "resource_title": "freeCodeCamp — GitOps ArgoCD",
+      "quiz_ids": [
+        "cicd_l5_001"
+      ]
+    }
+  ]
+}

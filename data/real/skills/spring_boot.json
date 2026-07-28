@@ -1,0 +1,172 @@
+{
+  "skill": "Spring Boot",
+  "market_frequency": "9.3% JDs yêu cầu Spring Boot",
+  "market_role": "Backend Developer (Java)",
+  "total_learning_hours": 65,
+  "generated_at": "2026-06-12T00:05:36.348508",
+  "modules": [
+    {
+      "module_id": "sb_01",
+      "title": "Spring Boot Core",
+      "order": 1,
+      "hours": 30,
+      "topics": [
+        {
+          "topic_id": "sb_01_01",
+          "title": "IoC Container, DI, AOP",
+          "hours": 10,
+          "academic": {
+            "summary": "@Component/@Service/@Repository/@Controller, @Autowired, @Bean, @Aspect, pointcuts",
+            "resources": [
+              {
+                "title": "Spring.io Official Guides",
+                "url": "https://spring.io/guides",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 300
+              },
+              {
+                "title": "Baeldung Spring Tutorials",
+                "url": "https://www.baeldung.com/spring-tutorial",
+                "type": "tutorial",
+                "is_free": true,
+                "duration_minutes": 480
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Blog REST API: Spring Boot + PostgreSQL + JWT + Swagger. CRUD posts/comments với phân trang, full-text search",
+            "resources": [
+              {
+                "title": "Spring Boot Reference",
+                "url": "https://docs.spring.io/spring-boot/docs/current/reference/html/",
+                "type": "official_docs",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "sb_01_01_q1",
+                "level": 3,
+                "question": "@Transactional Spring hoạt động như thế nào?",
+                "options": {
+                  "A": "Proxy AOP: wrap method trong DB transaction, auto rollback nếu RuntimeException",
+                  "B": "Lock DB table",
+                  "C": "Thread riêng",
+                  "D": "Auto commit mỗi SQL"
+                },
+                "correct_answer": "A",
+                "explanation": "@Transactional: proxy-based AOP. Self-invocation không hoạt động. Dùng propagation: REQUIRED (default), REQUIRES_NEW, NESTED."
+              },
+              {
+                "question_id": "sb_01_01_q2",
+                "level": 4,
+                "question": "@Bean vs @Component khác nhau?",
+                "options": {
+                  "A": "@Bean: define trong @Configuration class cho third-party objects. @Component: annotate your own class",
+                  "B": "Chúng giống nhau",
+                  "C": "@Component chỉ cho Services",
+                  "D": "@Bean không thể autowired"
+                },
+                "correct_answer": "A",
+                "explanation": "@Component/@Service/@Repository: stereotype annotations cho class bạn viết. @Bean: trong @Configuration method, dùng khi configure third-party libraries (DataSource, RestTemplate)."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "sb_01_02",
+          "title": "Spring Data JPA & Query Optimization",
+          "hours": 12,
+          "academic": {
+            "summary": "@Entity, @OneToMany, @ManyToMany, JPQL, @Query, specifications, N+1 problem, lazy/eager loading",
+            "resources": [
+              {
+                "title": "Spring Data JPA Reference",
+                "url": "https://docs.spring.io/spring-data/jpa/docs/current/reference/html/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Fix N+1 problem trong entity với @OneToMany relationships. Implement dynamic queries với JPA Specifications",
+            "resources": [
+              {
+                "title": "Spring Data JPA Tutorial",
+                "url": "https://www.baeldung.com/the-persistence-layer-with-spring-and-jpa",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "sb_01_02_q1",
+                "level": 4,
+                "question": "N+1 problem trong JPA xảy ra thế nào và fix ra sao?",
+                "options": {
+                  "A": "Lazy load relationships trong vòng lặp → N queries. Fix: @EntityGraph, JOIN FETCH, @BatchSize",
+                  "B": "Query trả về N+1 rows",
+                  "C": "N bảng trong schema",
+                  "D": "JPA connection pool hết"
+                },
+                "correct_answer": "A",
+                "explanation": "1 query lấy N entities. Trong vòng lặp access lazy relation → N queries. Fix: @EntityGraph(attributePaths={'comments'}) hoặc JPQL: SELECT p FROM Post p JOIN FETCH p.comments."
+              }
+            ]
+          }
+        },
+        {
+          "topic_id": "sb_01_03",
+          "title": "Spring Security + JWT",
+          "hours": 8,
+          "academic": {
+            "summary": "SecurityFilterChain, UserDetailsService, JWT filter, RBAC, method security @PreAuthorize, OAuth2",
+            "resources": [
+              {
+                "title": "Spring Security Docs",
+                "url": "https://docs.spring.io/spring-security/reference/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Implement JWT auth trong Spring Boot: register/login, access+refresh tokens, role-based access (@PreAuthorize), token blacklisting",
+            "resources": [
+              {
+                "title": "Spring Security JWT Guide",
+                "url": "https://www.baeldung.com/security-spring",
+                "type": "tutorial",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "sb_01_03_q1",
+                "level": 4,
+                "question": "Spring Security filter chain hoạt động như thế nào?",
+                "options": {
+                  "A": "Request đi qua chain filters, mỗi filter có thể reject hoặc pass. Authentication filter extract token, Authorization filter check permissions",
+                  "B": "1 filter duy nhất",
+                  "C": "Filters chạy song song",
+                  "D": "Chỉ authenticated request mới vào"
+                },
+                "correct_answer": "A",
+                "explanation": "DelegatingFilterProxy → FilterChainProxy → SecurityFilterChain (ordered list). Key filters: CorsFilter, JwtAuthenticationFilter (custom), UsernamePasswordAuthenticationFilter, ExceptionTranslationFilter, FilterSecurityInterceptor."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1498 @@
+{
+  "generated_at": "2026-06-11T22:52:34.325015",
+  "pipeline_version": "2.0.0",
+  "description": "EduPath AI — Real Data Pipeline Index",
+  "files": {
+    "skill_frequency_by_role": {
+      "path": "data/real/processed/skill_frequency_by_role.json",
+      "exists": true,
+      "size_bytes": 427432,
+      "last_modified": "2026-06-11T22:52:33.845214"
+    },
+    "career_maps": {
+      "path": "data/real/career_maps/all_roles.json",
+      "exists": true,
+      "size_bytes": 338863,
+      "last_modified": "2026-06-11T22:52:33.979172"
+    }
+  },
+  "stats": {
+    "total_roles": 77,
+    "total_jds_analyzed": 2795,
+    "total_skill_files": 11,
+    "total_quiz_questions": 24,
+    "total_schedule_templates": 5,
+    "pipeline_steps_completed": 4,
+    "pipeline_steps_total": 4
+  },
+  "roles": [
+    {
+      "role": "Backend Developer",
+      "total_jds": 552,
+      "top_skills": [
+        "Java",
+        "Docker",
+        "MySQL",
+        "PostgreSQL",
+        "Git"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Full-stack Developer",
+      "total_jds": 321,
+      "top_skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Frontend Developer",
+      "total_jds": 290,
+      "top_skills": [
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "Git",
+        "RESTful APIs"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Software Engineer",
+      "total_jds": 252,
+      "top_skills": [
+        "Java",
+        "JavaScript",
+        "C#",
+        "SQL",
+        "Git"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Other IT Role",
+      "total_jds": 217,
+      "top_skills": [
+        "Not Specified",
+        "Python",
+        "JavaScript",
+        "Java",
+        "Mastercam"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Mobile Developer",
+      "total_jds": 196,
+      "top_skills": [
+        "Swift",
+        "Kotlin",
+        "Flutter",
+        "Git",
+        "Dart"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "QA Engineer",
+      "total_jds": 134,
+      "top_skills": [
+        "Agile",
+        "Not Specified",
+        "Jira",
+        "Selenium",
+        "Postman"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "AI Engineer",
+      "total_jds": 67,
+      "top_skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "AWS",
+        "Azure"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Java Developer",
+      "total_jds": 60,
+      "top_skills": [
+        "Java",
+        "Spring Boot",
+        "SQL",
+        "Git",
+        "RESTful APIs"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Game Developer",
+      "total_jds": 59,
+      "top_skills": [
+        "Unity",
+        "C#",
+        "Git",
+        "JavaScript",
+        "C++"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Embedded Engineer",
+      "total_jds": 53,
+      "top_skills": [
+        "C++",
+        "C",
+        "Python",
+        "Linux",
+        "Git"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Business Analyst",
+      "total_jds": 47,
+      "top_skills": [
+        "Not Specified",
+        "Agile",
+        "Jira",
+        "Confluence",
+        "Figma"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Software Developer",
+      "total_jds": 39,
+      "top_skills": [
+        "JavaScript",
+        "Java",
+        "C#",
+        "Python",
+        "AI"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Data Engineer",
+      "total_jds": 38,
+      "top_skills": [
+        "Python",
+        "SQL",
+        "AWS",
+        "Airflow",
+        "Azure"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "DevOps Engineer",
+      "total_jds": 37,
+      "top_skills": [
+        "Docker",
+        "AWS",
+        "Python",
+        "Kubernetes",
+        "CI/CD"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Not Specified",
+      "total_jds": 33,
+      "top_skills": [
+        "Not Specified",
+        "JavaScript",
+        "Java",
+        "HTML",
+        "Ruby"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "IT Project Manager",
+      "total_jds": 30,
+      "top_skills": [
+        "Not Specified",
+        "Agile",
+        "AWS",
+        "Java",
+        "Azure"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Tech Lead",
+      "total_jds": 21,
+      "top_skills": [
+        "Java",
+        "Docker",
+        "CI/CD",
+        "Kubernetes",
+        "MySQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Cybersecurity Specialist",
+      "total_jds": 18,
+      "top_skills": [
+        "SIEM",
+        "Not Specified",
+        "Python",
+        "AWS",
+        "Azure"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Bridge Software Engineer",
+      "total_jds": 14,
+      "top_skills": [
+        "Java",
+        "JavaScript",
+        "React",
+        "Angular",
+        "AWS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Web Developer",
+      "total_jds": 14,
+      "top_skills": [
+        "JavaScript",
+        "Git",
+        "PHP",
+        "MySQL",
+        "SQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Solution Architect",
+      "total_jds": 12,
+      "top_skills": [
+        "Java",
+        "JavaScript",
+        "Python",
+        "PHP",
+        "Kubernetes"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "IT Manager",
+      "total_jds": 11,
+      "top_skills": [
+        "Not Specified",
+        "Java",
+        "JavaScript",
+        "React",
+        "Python"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Java Engineer",
+      "total_jds": 11,
+      "top_skills": [
+        "Java",
+        "Spring Boot",
+        "AWS",
+        "Docker",
+        "Kubernetes"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "System Engineer",
+      "total_jds": 10,
+      "top_skills": [
+        "Python",
+        "Linux",
+        "Docker",
+        "AWS",
+        "Not Specified"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Cloud Engineer",
+      "total_jds": 9,
+      "top_skills": [
+        "Python",
+        "Terraform",
+        "CI/CD",
+        "PowerShell",
+        "Microsoft 365"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Database Engineer",
+      "total_jds": 9,
+      "top_skills": [
+        "SQL",
+        "Oracle",
+        "PostgreSQL",
+        "SQL Server",
+        "MySQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Data Analyst",
+      "total_jds": 9,
+      "top_skills": [
+        "SQL",
+        "Python",
+        "Tableau",
+        "MongoDB",
+        "Power BI"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Blockchain Developer",
+      "total_jds": 9,
+      "top_skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Rust",
+        "Solidity"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Unity Developer",
+      "total_jds": 8,
+      "top_skills": [
+        "C#",
+        "Unity",
+        "C++",
+        "C",
+        ".NET Core"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "C++ Developer",
+      "total_jds": 8,
+      "top_skills": [
+        "C++",
+        "Git",
+        "Java",
+        "CI/CD",
+        "Confluence"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Blockchain Engineer",
+      "total_jds": 8,
+      "top_skills": [
+        "Solidity",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "Java"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Backend Engineer",
+      "total_jds": 7,
+      "top_skills": [
+        "Java",
+        "Python",
+        "Go",
+        "AWS",
+        "Docker"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Data Scientist",
+      "total_jds": 7,
+      "top_skills": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "GCP",
+        "Deep Learning"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Technical Leader",
+      "total_jds": 7,
+      "top_skills": [
+        "JavaScript",
+        "Java",
+        "React",
+        "AWS",
+        "TypeScript"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "C/C++ Developer",
+      "total_jds": 7,
+      "top_skills": [
+        "C++",
+        "Git",
+        "Linux",
+        "C",
+        "C#"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Java Software Engineer",
+      "total_jds": 7,
+      "top_skills": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Hibernate",
+        "SQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": ".NET Developer",
+      "total_jds": 7,
+      "top_skills": [
+        "C#",
+        "Redis",
+        "SQL",
+        "Entity Framework",
+        "RabbitMQ"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Flutter Developer",
+      "total_jds": 6,
+      "top_skills": [
+        "Dart",
+        "Flutter",
+        "Git",
+        "Firebase",
+        "Swift"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Product Manager",
+      "total_jds": 6,
+      "top_skills": [
+        "Agile",
+        "Not Specified",
+        "Scrum",
+        "Jira",
+        "Confluence"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Odoo Developer",
+      "total_jds": 6,
+      "top_skills": [
+        "Python",
+        "Odoo",
+        "PostgreSQL",
+        "Git",
+        "AWS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Automation Tester",
+      "total_jds": 6,
+      "top_skills": [
+        "Selenium",
+        "Python",
+        "Java",
+        "Postman",
+        "Jenkins"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Technical Lead",
+      "total_jds": 6,
+      "top_skills": [
+        "Java",
+        "Python",
+        "Not Specified",
+        "AWS",
+        "CI/CD"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Developer",
+      "total_jds": 6,
+      "top_skills": [
+        "Python",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Git"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Engineering Manager",
+      "total_jds": 5,
+      "top_skills": [
+        "Golang",
+        "Python",
+        "Java",
+        "Microservices",
+        "AWS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Product Owner",
+      "total_jds": 5,
+      "top_skills": [
+        "Agile",
+        "Scrum",
+        "Not Specified",
+        "AI",
+        "SaaS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "BrSE",
+      "total_jds": 5,
+      "top_skills": [
+        "Java",
+        "PHP",
+        "Not Specified",
+        "C#",
+        ".Net"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Junior Developer",
+      "total_jds": 5,
+      "top_skills": [
+        "Python",
+        "JavaScript",
+        "PostgreSQL",
+        "Java",
+        "MySQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Senior Developer",
+      "total_jds": 5,
+      "top_skills": [
+        "Java",
+        "Oracle",
+        "SQL",
+        "CentOS",
+        "Docker"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Technical Project Manager",
+      "total_jds": 4,
+      "top_skills": [
+        "Agile",
+        "Scrum",
+        "Jira",
+        "Not Specified",
+        "AWS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "System Administrator",
+      "total_jds": 4,
+      "top_skills": [
+        "Active Directory",
+        "AI",
+        "PowerShell",
+        "Not Specified",
+        "Linux"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Senior Software Engineer",
+      "total_jds": 4,
+      "top_skills": [
+        "JavaScript",
+        "AWS",
+        "PHP",
+        "Node.js",
+        "React"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Python Developer",
+      "total_jds": 4,
+      "top_skills": [
+        "Python",
+        "CI/CD",
+        "Git",
+        "Django",
+        "SQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Salesforce Developer",
+      "total_jds": 4,
+      "top_skills": [
+        "Apex",
+        "Salesforce",
+        "Visualforce",
+        "LWC",
+        "Aura"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Lead Software Engineer",
+      "total_jds": 4,
+      "top_skills": [
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker",
+        "Kubernetes"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Project Manager",
+      "total_jds": 4,
+      "top_skills": [
+        "Jira",
+        "JavaScript",
+        "HTML/CSS",
+        "PHP",
+        "Java"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Intern",
+      "total_jds": 4,
+      "top_skills": [
+        "PHP",
+        "SQL",
+        "Laravel",
+        "CodeIgniter",
+        "HTML"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Generative AI Engineer",
+      "total_jds": 4,
+      "top_skills": [
+        "Python",
+        "LangChain",
+        "LlamaIndex",
+        "Docker",
+        "AWS"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Team Leader",
+      "total_jds": 4,
+      "top_skills": [
+        "PostgreSQL",
+        "Python",
+        "JavaScript",
+        "XML",
+        "Java"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Chief Technology Officer",
+      "total_jds": 4,
+      "top_skills": [
+        "Not Specified",
+        "Java",
+        "AI",
+        "Blockchain",
+        "Cloud"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Database Developer",
+      "total_jds": 4,
+      "top_skills": [
+        "SQL",
+        "Oracle",
+        "Python",
+        "SQL Server",
+        "MySQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "IT Support",
+      "total_jds": 3,
+      "top_skills": [
+        "PHP",
+        "Not Specified",
+        "Python",
+        "Bash",
+        "SQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "API Integration Engineer",
+      "total_jds": 3,
+      "top_skills": [
+        "Java",
+        "Python",
+        "AWS",
+        "Go",
+        "JavaScript"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Software Development Manager",
+      "total_jds": 3,
+      "top_skills": [
+        "JavaScript",
+        "CI/CD",
+        "Java",
+        "Python",
+        "Agile"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Scrum Master",
+      "total_jds": 3,
+      "top_skills": [
+        "Not Specified",
+        "C#",
+        "JavaScript",
+        "HTML/CSS",
+        ".NET"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Technical Artist",
+      "total_jds": 3,
+      "top_skills": [
+        "Unity",
+        "C#",
+        "ShaderLab"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Technical Architect",
+      "total_jds": 3,
+      "top_skills": [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "Next.js",
+        "C#"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Quality Assurance Engineer",
+      "total_jds": 3,
+      "top_skills": [
+        "JavaScript",
+        "SQL",
+        "TypeScript",
+        "Java",
+        "Python"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "PHP Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "PHP",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MySQL"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Senior .NET Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "C#",
+        "Docker",
+        "JavaScript",
+        ".NET",
+        "Angular"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "AI Backend Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "Python",
+        "LangChain",
+        "OpenSearch",
+        "Elasticsearch",
+        "FastAPI"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Senior Java Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "Java",
+        "Git",
+        "Hibernate",
+        "Maven",
+        "Gradle"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "QA Manager",
+      "total_jds": 3,
+      "top_skills": [
+        "Not Specified",
+        "Selenium",
+        "Playwright",
+        "Agile",
+        "Java"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Low-Code Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "JavaScript",
+        "SQL",
+        "Salesforce",
+        "Outsystems",
+        "Servicenow"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "IT Developer",
+      "total_jds": 3,
+      "top_skills": [
+        "HTML/CSS",
+        "JavaScript",
+        "PHP",
+        "Node.js",
+        "Python"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Game Designer",
+      "total_jds": 3,
+      "top_skills": [
+        "Unity"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "role": "Android Engineer",
+      "total_jds": 3,
+      "top_skills": [
+        "Kotlin",
+        "Flutter",
+        "Android Studio",
+        "Jetpack Compose",
+        "Kotlin Multiplatform Mobile"
+      ],
+      "avg_salary_usd": null,
+      "salary_range_usd": {
+        "min": null,
+        "max": null
+      }
+    }
+  ],
+  "skills": [
+    {
+      "skill": "AWS",
+      "file": "data/real/skills/aws.json",
+      "total_learning_hours": 60,
+      "market_role": "DevOps Engineer, Backend Developer, Data Engineer",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2824
+    },
+    {
+      "skill": "Docker",
+      "file": "data/real/skills/docker.json",
+      "total_learning_hours": 20,
+      "market_role": "Backend Developer, DevOps Engineer, Full-stack Developer",
+      "module_count": 2,
+      "quiz_question_count": 5,
+      "size_bytes": 8661
+    },
+    {
+      "skill": "Git",
+      "file": "data/real/skills/git.json",
+      "total_learning_hours": 15,
+      "market_role": "Tất cả roles IT",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2862
+    },
+    {
+      "skill": "Java",
+      "file": "data/real/skills/java.json",
+      "total_learning_hours": 90,
+      "market_role": "Backend Developer, Full-stack Developer",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2526
+    },
+    {
+      "skill": "JavaScript",
+      "file": "data/real/skills/javascript.json",
+      "total_learning_hours": 70,
+      "market_role": "Frontend Developer, Full-stack Developer",
+      "module_count": 1,
+      "quiz_question_count": 3,
+      "size_bytes": 4259
+    },
+    {
+      "skill": "Node.js",
+      "file": "data/real/skills/node_js.json",
+      "total_learning_hours": 50,
+      "market_role": "Backend Developer, Full-stack Developer",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2759
+    },
+    {
+      "skill": "Python",
+      "file": "data/real/skills/python.json",
+      "total_learning_hours": 80,
+      "market_role": "Backend Developer, Data Engineer, AI/ML Engineer",
+      "module_count": 2,
+      "quiz_question_count": 5,
+      "size_bytes": 8389
+    },
+    {
+      "skill": "React",
+      "file": "data/real/skills/react.json",
+      "total_learning_hours": 60,
+      "market_role": "Frontend Developer, Full-stack Developer",
+      "module_count": 1,
+      "quiz_question_count": 3,
+      "size_bytes": 4458
+    },
+    {
+      "skill": "Spring Boot",
+      "file": "data/real/skills/spring_boot.json",
+      "total_learning_hours": 60,
+      "market_role": "Backend Developer",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2599
+    },
+    {
+      "skill": "SQL",
+      "file": "data/real/skills/sql.json",
+      "total_learning_hours": 40,
+      "market_role": "Data Analyst, Data Engineer, Backend Developer",
+      "module_count": 1,
+      "quiz_question_count": 2,
+      "size_bytes": 3652
+    },
+    {
+      "skill": "TypeScript",
+      "file": "data/real/skills/typescript.json",
+      "total_learning_hours": 30,
+      "market_role": "Frontend Developer, Full-stack Developer, Backend Developer",
+      "module_count": 1,
+      "quiz_question_count": 1,
+      "size_bytes": 2986
+    }
+  ],
+  "schedules": [
+    {
+      "role": "Backend Developer",
+      "file": "data/real/schedule_templates/backend_developer_schedule.json",
+      "skills_covered": [
+        "Java",
+        "MySQL",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "variants": {
+        "5h_per_week": {
+          "hours_per_week": 5,
+          "total_weeks": 22,
+          "description": "Hoàn thành Backend Developer roadmap trong 22 tuần với 5h/tuần"
+        },
+        "10h_per_week": {
+          "hours_per_week": 10,
+          "total_weeks": 11,
+          "description": "Hoàn thành Backend Developer roadmap trong 11 tuần với 10h/tuần"
+        },
+        "20h_per_week": {
+          "hours_per_week": 20,
+          "total_weeks": 6,
+          "description": "Hoàn thành Backend Developer roadmap trong 6 tuần với 20h/tuần"
+        }
+      },
+      "size_bytes": 104567
+    },
+    {
+      "role": "Frontend Developer",
+      "file": "data/real/schedule_templates/frontend_developer_schedule.json",
+      "skills_covered": [
+        "JavaScript",
+        "Git",
+        "TypeScript",
+        "React",
+        "RESTful APIs",
+        "HTML/CSS"
+      ],
+      "variants": {
+        "5h_per_week": {
+          "hours_per_week": 5,
+          "total_weeks": 35,
+          "description": "Hoàn thành Frontend Developer roadmap trong 35 tuần với 5h/tuần"
+        },
+        "10h_per_week": {
+          "hours_per_week": 10,
+          "total_weeks": 18,
+          "description": "Hoàn thành Frontend Developer roadmap trong 18 tuần với 10h/tuần"
+        },
+        "20h_per_week": {
+          "hours_per_week": 20,
+          "total_weeks": 9,
+          "description": "Hoàn thành Frontend Developer roadmap trong 9 tuần với 20h/tuần"
+        }
+      },
+      "size_bytes": 167523
+    },
+    {
+      "role": "Full-stack Developer",
+      "file": "data/real/schedule_templates/full_stack_developer_schedule.json",
+      "skills_covered": [
+        "JavaScript",
+        "PostgreSQL",
+        "MySQL",
+        "React",
+        "Node.js",
+        "Docker"
+      ],
+      "variants": {
+        "5h_per_week": {
+          "hours_per_week": 5,
+          "total_weeks": 35,
+          "description": "Hoàn thành Full-stack Developer roadmap trong 35 tuần với 5h/tuần"
+        },
+        "10h_per_week": {
+          "hours_per_week": 10,
+          "total_weeks": 18,
+          "description": "Hoàn thành Full-stack Developer roadmap trong 18 tuần với 10h/tuần"
+        },
+        "20h_per_week": {
+          "hours_per_week": 20,
+          "total_weeks": 9,
+          "description": "Hoàn thành Full-stack Developer roadmap trong 9 tuần với 20h/tuần"
+        }
+      },
+      "size_bytes": 166449
+    },
+    {
+      "role": "Other IT Role",
+      "file": "data/real/schedule_templates/other_it_role_schedule.json",
+      "skills_covered": [
+        "Not Specified"
+      ],
+      "variants": {
+        "5h_per_week": {
+          "hours_per_week": 5,
+          "total_weeks": 6,
+          "description": "Hoàn thành Other IT Role roadmap trong 6 tuần với 5h/tuần"
+        },
+        "10h_per_week": {
+          "hours_per_week": 10,
+          "total_weeks": 4,
+          "description": "Hoàn thành Other IT Role roadmap trong 4 tuần với 10h/tuần"
+        },
+        "20h_per_week": {
+          "hours_per_week": 20,
+          "total_weeks": 4,
+          "description": "Hoàn thành Other IT Role roadmap trong 4 tuần với 20h/tuần"
+        }
+      },
+      "size_bytes": 44149
+    },
+    {
+      "role": "Software Engineer",
+      "file": "data/real/schedule_templates/software_engineer_schedule.json",
+      "skills_covered": [
+        "Java",
+        "JavaScript"
+      ],
+      "variants": {
+        "5h_per_week": {
+          "hours_per_week": 5,
+          "total_weeks": 18,
+          "description": "Hoàn thành Software Engineer roadmap trong 18 tuần với 5h/tuần"
+        },
+        "10h_per_week": {
+          "hours_per_week": 10,
+          "total_weeks": 9,
+          "description": "Hoàn thành Software Engineer roadmap trong 9 tuần với 10h/tuần"
+        },
+        "20h_per_week": {
+          "hours_per_week": 20,
+          "total_weeks": 4,
+          "description": "Hoàn thành Software Engineer roadmap trong 4 tuần với 20h/tuần"
+        }
+      },
+      "size_bytes": 82179
+    }
+  ]
+}

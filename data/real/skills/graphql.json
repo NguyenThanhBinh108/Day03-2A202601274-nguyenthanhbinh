@@ -1,0 +1,82 @@
+{
+  "skill": "GraphQL",
+  "market_frequency": "1.0% JDs yêu cầu GraphQL",
+  "market_role": "Backend Developer, Full-stack Developer",
+  "total_learning_hours": 25,
+  "generated_at": "2026-06-12T00:05:36.358829",
+  "modules": [
+    {
+      "module_id": "gql_01",
+      "title": "GraphQL API Development",
+      "order": 1,
+      "hours": 25,
+      "topics": [
+        {
+          "topic_id": "gql_01_01",
+          "title": "Schema Design, Queries, Mutations, Subscriptions",
+          "hours": 10,
+          "academic": {
+            "summary": "SDL, types, queries, mutations, subscriptions, resolvers, DataLoader, N+1 problem",
+            "resources": [
+              {
+                "title": "GraphQL Official Learn",
+                "url": "https://graphql.org/learn/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 180
+              },
+              {
+                "title": "Apollo Server Docs",
+                "url": "https://www.apollographql.com/docs/apollo-server/",
+                "type": "official_docs",
+                "is_free": true,
+                "duration_minutes": 240
+              }
+            ]
+          },
+          "market_ready": {
+            "hands_on_task": "Build GraphQL API cho E-commerce: products, orders, users. DataLoader để giải quyết N+1. Subscriptions cho order status",
+            "resources": [
+              {
+                "title": "Apollo Studio Explorer",
+                "url": "https://studio.apollographql.com/sandbox",
+                "type": "tool",
+                "is_free": true
+              }
+            ]
+          },
+          "quiz": {
+            "questions": [
+              {
+                "question_id": "gql_01_01_q1",
+                "level": 3,
+                "question": "GraphQL N+1 problem và cách fix với DataLoader?",
+                "options": {
+                  "A": "Resolver gọi DB cho mỗi item trong list → N+1 queries. DataLoader: batch và dedupe queries trong single tick",
+                  "B": "N+1 là tốt trong GraphQL",
+                  "C": "Chỉ REST có N+1",
+                  "D": "DataLoader không hoạt động với GraphQL"
+                },
+                "correct_answer": "A",
+                "explanation": "posts query → 10 posts → mỗi post resolve author → 10 user queries = 11 queries. DataLoader: collect all user IDs trong current tick → 1 batched query. Memoize trong request scope."
+              },
+              {
+                "question_id": "gql_01_01_q2",
+                "level": 4,
+                "question": "GraphQL vs REST — khi nào chọn GraphQL?",
+                "options": {
+                  "A": "GraphQL: complex queries, multiple clients with different data needs, rapid iteration. REST: simple CRUD, file uploads, HTTP caching",
+                  "B": "GraphQL luôn tốt hơn REST",
+                  "C": "REST luôn tốt hơn",
+                  "D": "Chúng giống nhau"
+                },
+                "correct_answer": "A",
+                "explanation": "GraphQL lợi: over-fetching/under-fetching eliminated, strongly typed, introspection, single endpoint. Hại: complexity, N+1, HTTP caching khó, file upload phức tạp. REST: simpler, HTTP native caching, easier for public APIs."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

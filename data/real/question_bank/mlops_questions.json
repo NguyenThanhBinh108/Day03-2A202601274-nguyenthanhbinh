@@ -1,0 +1,218 @@
+{
+  "skill": "MLOps",
+  "skill_key": "mlops",
+  "total_questions": 10,
+  "levels": {
+    "1_beginner": 2,
+    "2_understanding": 2,
+    "3_application": 2,
+    "4_debugging": 2,
+    "5_production": 2
+  },
+  "generated_at": "2026-06-12T05:19:53.652076Z",
+  "source_references": [
+    "https://www.google.com/search?q=MLOps+documentation"
+  ],
+  "questions": [
+    {
+      "question_id": "mlops_l1_001",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong MLOps, ML pipeline có vai trò gì?",
+      "options": {
+        "A": "ML pipeline là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "ML pipeline là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "ML pipeline đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên ML pipeline là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "ML pipeline trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và ML pipeline là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ ML pipeline giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+ML+pipeline+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "ml-pipeline"
+      ]
+    },
+    {
+      "question_id": "mlops_l1_002",
+      "level": 1,
+      "category": "definition",
+      "question": "Trong MLOps, Feature store có vai trò gì?",
+      "options": {
+        "A": "Feature store là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Feature store là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Feature store đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Feature store là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Feature store trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và Feature store là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ Feature store giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+Feature+store+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "feature-store"
+      ]
+    },
+    {
+      "question_id": "mlops_l2_003",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong MLOps, MLflow model registry có vai trò gì?",
+      "options": {
+        "A": "MLflow model registry là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "MLflow model registry là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "MLflow model registry đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên MLflow model registry là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "MLflow model registry trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và MLflow model registry là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ MLflow model registry giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+MLflow+model+registry+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "mlflow-model-registry"
+      ]
+    },
+    {
+      "question_id": "mlops_l2_004",
+      "level": 2,
+      "category": "understanding",
+      "question": "Trong MLOps, Model versioning có vai trò gì?",
+      "options": {
+        "A": "Model versioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model versioning là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model versioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model versioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model versioning trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và Model versioning là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ Model versioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+Model+versioning+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "model-versioning"
+      ]
+    },
+    {
+      "question_id": "mlops_l3_005",
+      "level": 3,
+      "category": "application",
+      "question": "Trong MLOps, A/B testing có vai trò gì?",
+      "options": {
+        "A": "A/B testing là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "A/B testing là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "A/B testing đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên A/B testing là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "A/B testing trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và A/B testing là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ A/B testing giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+A/B+testing+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "a-b-testing"
+      ]
+    },
+    {
+      "question_id": "mlops_l3_006",
+      "level": 3,
+      "category": "application",
+      "question": "Trong MLOps, DVC data versioning có vai trò gì?",
+      "options": {
+        "A": "DVC data versioning là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "DVC data versioning là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "DVC data versioning đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên DVC data versioning là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "DVC data versioning trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và DVC data versioning là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ DVC data versioning giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+DVC+data+versioning+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "dvc-data-versioning"
+      ]
+    },
+    {
+      "question_id": "mlops_l4_007",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong MLOps, Model monitoring có vai trò gì?",
+      "options": {
+        "A": "Model monitoring là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Model monitoring là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Model monitoring đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Model monitoring là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Model monitoring trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và Model monitoring là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ Model monitoring giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+Model+monitoring+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "model-monitoring"
+      ]
+    },
+    {
+      "question_id": "mlops_l4_008",
+      "level": 4,
+      "category": "debugging",
+      "question": "Trong MLOps, CI/CD for ML có vai trò gì?",
+      "options": {
+        "A": "CI/CD for ML là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "CI/CD for ML là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "CI/CD for ML đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên CI/CD for ML là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "CI/CD for ML trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và CI/CD for ML là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ CI/CD for ML giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+CI/CD+for+ML+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "ci-cd-for-ml"
+      ]
+    },
+    {
+      "question_id": "mlops_l5_009",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong MLOps, Kubeflow có vai trò gì?",
+      "options": {
+        "A": "Kubeflow là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "Kubeflow là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "Kubeflow đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên Kubeflow là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "Kubeflow trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và Kubeflow là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ Kubeflow giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+Kubeflow+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "kubeflow"
+      ]
+    },
+    {
+      "question_id": "mlops_l5_010",
+      "level": 5,
+      "category": "production_scenario",
+      "question": "Trong MLOps, BentoML/Triton có vai trò gì?",
+      "options": {
+        "A": "BentoML/Triton là concept nâng cao không cần thiết cho hầu hết projects",
+        "B": "BentoML/Triton là core concept trong MLOps — cần master để build production-grade AI/ML solutions. Hiểu sâu giúp bạn design scalable, maintainable systems",
+        "C": "BentoML/Triton đã bị deprecated trong phiên bản mới nhất",
+        "D": "Chỉ cần biết tên BentoML/Triton là đủ trong interviews"
+      },
+      "correct_answer": "B",
+      "explanation": "BentoML/Triton trong MLOps: Đây là một trong những concepts quan trọng nhất. MLOps được sử dụng rộng rãi trong industry và BentoML/Triton là phần không thể thiếu. Khi làm việc với MLOps trong production, hiểu rõ BentoML/Triton giúp bạn: (1) Build reliable và scalable solutions, (2) Debug problems hiệu quả, (3) Optimize performance, (4) Pass technical interviews tại top companies. Nghiên cứu kỹ documentation và build projects thực tế để nắm vững concept này.",
+      "source": "https://www.google.com/search?q=MLOps+BentoML/Triton+tutorial",
+      "tags": [
+        "mlops",
+        "ai/ml",
+        "bentoml-triton"
+      ]
+    }
+  ]
+}

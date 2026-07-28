@@ -1,0 +1,101 @@
+{
+  "skill": "AWS",
+  "skill_key": "aws",
+  "total_topics": 9,
+  "estimated_total_hours": 11.0,
+  "generated_at": "2026-06-12T02:22:05.497810",
+  "checklist_items": [
+    {
+      "item_id": "aws_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "AWS Core Services overview",
+      "description": "EC2, S3, RDS, Lambda, VPC, IAM — hiểu mỗi service dùng cho gì",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/amazon-web-services/",
+      "resource_title": "GeeksForGeeks — AWS Tutorial"
+    },
+    {
+      "item_id": "aws_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "IAM — Identity và Access Management",
+      "description": "Users, groups, roles, policies, least privilege, MFA, access keys vs instance profile",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/aws-iam-tutorial/",
+      "resource_title": "GeeksForGeeks — AWS IAM"
+    },
+    {
+      "item_id": "aws_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "EC2 và VPC Basics",
+      "description": "Launch EC2, security groups, key pairs, VPC subnets, public/private, NAT gateway",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/amazon-vpc/",
+      "resource_title": "GeeksForGeeks — Amazon VPC",
+      "hands_on_task": "Deploy Node.js app lên EC2 trong private subnet với ALB"
+    },
+    {
+      "item_id": "aws_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "S3 và CloudFront CDN",
+      "description": "S3 operations, storage classes, lifecycle, versioning, static website, CloudFront distribution",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/s3-storage-classes/",
+      "resource_title": "GeeksForGeeks — S3 Storage Classes"
+    },
+    {
+      "item_id": "aws_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "RDS và ElastiCache",
+      "description": "RDS Multi-AZ, read replicas, parameter groups, ElastiCache Redis setup, connection strings",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/amazon-rds/",
+      "resource_title": "GeeksForGeeks — Amazon RDS"
+    },
+    {
+      "item_id": "aws_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "ECS Fargate và ECR",
+      "description": "Push image to ECR, Task Definition, ECS Service, Fargate launch, ALB integration",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/amazon-elastic-container-service/",
+      "resource_title": "GeeksForGeeks — Amazon ECS",
+      "hands_on_task": "Deploy Docker app lên ECS Fargate với ALB và auto scaling"
+    },
+    {
+      "item_id": "aws_c007",
+      "order": 7,
+      "phase": "core",
+      "title": "Lambda và Serverless",
+      "description": "Lambda functions, triggers (API GW, S3, SQS), layers, cold start, Provisioned Concurrency",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.geeksforgeeks.org/aws-lambda/",
+      "resource_title": "GeeksForGeeks — AWS Lambda"
+    },
+    {
+      "item_id": "aws_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "High Availability Architecture",
+      "description": "Multi-AZ design, Auto Scaling Groups, ALB, Route 53 failover, disaster recovery",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/aws-high-availability/",
+      "resource_title": "GeeksForGeeks — AWS High Availability"
+    },
+    {
+      "item_id": "aws_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "AWS CI/CD — CodePipeline, CodeBuild, CodeDeploy",
+      "description": "Pipeline stages, build specs, deploy to EC2/ECS, blue/green deployment",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.geeksforgeeks.org/aws-codepipeline/",
+      "resource_title": "GeeksForGeeks — AWS CodePipeline"
+    }
+  ]
+}

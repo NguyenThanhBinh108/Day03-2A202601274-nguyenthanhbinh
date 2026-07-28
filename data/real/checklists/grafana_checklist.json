@@ -1,0 +1,154 @@
+{
+  "skill": "Grafana",
+  "skill_key": "grafana",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.630375Z",
+  "checklist_items": [
+    {
+      "item_id": "grafana_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Dashboard creation",
+      "description": "Master Dashboard creation trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Grafana+Dashboard+creation+tutorial",
+      "resource_title": "Grafana — Dashboard creation",
+      "quiz_ids": [
+        "grafana_l1_001"
+      ],
+      "market_relevance": "Dashboard creation là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "Panels",
+      "description": "Master Panels trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Grafana+Panels+tutorial",
+      "resource_title": "Grafana — Panels",
+      "quiz_ids": [
+        "grafana_l2_002"
+      ],
+      "market_relevance": "Panels là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "Data sources",
+      "description": "Master Data sources trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Grafana+Data+sources+tutorial",
+      "resource_title": "Grafana — Data sources",
+      "quiz_ids": [
+        "grafana_l3_003"
+      ],
+      "market_relevance": "Data sources là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Variables",
+      "description": "Master Variables trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Grafana+Variables+tutorial",
+      "resource_title": "Grafana — Variables",
+      "quiz_ids": [
+        "grafana_l4_004"
+      ],
+      "market_relevance": "Variables là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Alerting",
+      "description": "Master Alerting trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Grafana+Alerting+tutorial",
+      "resource_title": "Grafana — Alerting",
+      "quiz_ids": [
+        "grafana_l5_005"
+      ],
+      "market_relevance": "Alerting là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "Annotations",
+      "description": "Master Annotations trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Grafana+Annotations+tutorial",
+      "resource_title": "Grafana — Annotations",
+      "quiz_ids": [
+        "grafana_l5_006"
+      ],
+      "market_relevance": "Annotations là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Grafana Loki",
+      "description": "Master Grafana Loki trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Grafana+Grafana+Loki+tutorial",
+      "resource_title": "Grafana — Grafana Loki",
+      "quiz_ids": [
+        "grafana_l5_007"
+      ],
+      "market_relevance": "Grafana Loki là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "Grafana Tempo",
+      "description": "Master Grafana Tempo trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Grafana+Grafana+Tempo+tutorial",
+      "resource_title": "Grafana — Grafana Tempo",
+      "quiz_ids": [
+        "grafana_l5_008"
+      ],
+      "market_relevance": "Grafana Tempo là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "RBAC",
+      "description": "Master RBAC trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Grafana+RBAC+tutorial",
+      "resource_title": "Grafana — RBAC",
+      "quiz_ids": [
+        "grafana_l5_009"
+      ],
+      "market_relevance": "RBAC là key skill trong Grafana DevOps development"
+    },
+    {
+      "item_id": "grafana_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Provisioning",
+      "description": "Master Provisioning trong Grafana — essential cho DevOps developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Grafana+Provisioning+tutorial",
+      "resource_title": "Grafana — Provisioning",
+      "quiz_ids": [
+        "grafana_l5_010"
+      ],
+      "market_relevance": "Provisioning là key skill trong Grafana DevOps development"
+    }
+  ]
+}

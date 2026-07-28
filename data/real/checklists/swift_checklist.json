@@ -1,0 +1,154 @@
+{
+  "skill": "Swift iOS",
+  "skill_key": "swift",
+  "total_topics": 10,
+  "estimated_total_hours": 13.2,
+  "phases": [
+    "foundation",
+    "core",
+    "advanced"
+  ],
+  "generated_at": "2026-06-12T05:19:53.562938Z",
+  "checklist_items": [
+    {
+      "item_id": "swift_c001",
+      "order": 1,
+      "phase": "foundation",
+      "title": "Swift basics",
+      "description": "Master Swift basics trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+Swift+basics+tutorial",
+      "resource_title": "Swift iOS — Swift basics",
+      "quiz_ids": [
+        "swift_l1_001"
+      ],
+      "market_relevance": "Swift basics là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c002",
+      "order": 2,
+      "phase": "foundation",
+      "title": "SwiftUI",
+      "description": "Master SwiftUI trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+SwiftUI+tutorial",
+      "resource_title": "Swift iOS — SwiftUI",
+      "quiz_ids": [
+        "swift_l2_002"
+      ],
+      "market_relevance": "SwiftUI là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c003",
+      "order": 3,
+      "phase": "foundation",
+      "title": "UIKit basics",
+      "description": "Master UIKit basics trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+UIKit+basics+tutorial",
+      "resource_title": "Swift iOS — UIKit basics",
+      "quiz_ids": [
+        "swift_l3_003"
+      ],
+      "market_relevance": "UIKit basics là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c004",
+      "order": 4,
+      "phase": "core",
+      "title": "Combine framework",
+      "description": "Master Combine framework trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+Combine+framework+tutorial",
+      "resource_title": "Swift iOS — Combine framework",
+      "quiz_ids": [
+        "swift_l4_004"
+      ],
+      "market_relevance": "Combine framework là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c005",
+      "order": 5,
+      "phase": "core",
+      "title": "Core Data",
+      "description": "Master Core Data trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+Core+Data+tutorial",
+      "resource_title": "Swift iOS — Core Data",
+      "quiz_ids": [
+        "swift_l5_005"
+      ],
+      "market_relevance": "Core Data là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c006",
+      "order": 6,
+      "phase": "core",
+      "title": "URLSession networking",
+      "description": "Master URLSession networking trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+URLSession+networking+tutorial",
+      "resource_title": "Swift iOS — URLSession networking",
+      "quiz_ids": [
+        "swift_l5_006"
+      ],
+      "market_relevance": "URLSession networking là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c007",
+      "order": 7,
+      "phase": "advanced",
+      "title": "Authentication",
+      "description": "Master Authentication trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 90,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+Authentication+tutorial",
+      "resource_title": "Swift iOS — Authentication",
+      "quiz_ids": [
+        "swift_l5_007"
+      ],
+      "market_relevance": "Authentication là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c008",
+      "order": 8,
+      "phase": "advanced",
+      "title": "APNs notifications",
+      "description": "Master APNs notifications trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 105,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+APNs+notifications+tutorial",
+      "resource_title": "Swift iOS — APNs notifications",
+      "quiz_ids": [
+        "swift_l5_008"
+      ],
+      "market_relevance": "APNs notifications là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c009",
+      "order": 9,
+      "phase": "advanced",
+      "title": "App Store submission",
+      "description": "Master App Store submission trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 60,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+App+Store+submission+tutorial",
+      "resource_title": "Swift iOS — App Store submission",
+      "quiz_ids": [
+        "swift_l5_009"
+      ],
+      "market_relevance": "App Store submission là key skill trong Swift iOS Mobile development"
+    },
+    {
+      "item_id": "swift_c010",
+      "order": 10,
+      "phase": "advanced",
+      "title": "Xcode tools",
+      "description": "Master Xcode tools trong Swift iOS — essential cho Mobile developer",
+      "estimated_minutes": 75,
+      "resource_url": "https://www.google.com/search?q=Swift+iOS+Xcode+tools+tutorial",
+      "resource_title": "Swift iOS — Xcode tools",
+      "quiz_ids": [
+        "swift_l5_010"
+      ],
+      "market_relevance": "Xcode tools là key skill trong Swift iOS Mobile development"
+    }
+  ]
+}
