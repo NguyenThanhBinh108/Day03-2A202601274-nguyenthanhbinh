@@ -492,6 +492,58 @@
       align-items: stretch;
     }
 
+    .answer-board {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .answer-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .answer-panel h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .answer-text {
+      white-space: pre-wrap;
+      color: #24324a;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .answer-editor {
+      width: 100%;
+      min-height: 170px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      color: var(--ink);
+      background: #fbfcfe;
+      outline: none;
+    }
+
+    .answer-editor:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(35, 100, 170, .14);
+    }
+
+    .answer-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
     .query-box {
       background: #10192a;
       color: #eef5ff;
@@ -679,6 +731,7 @@
       .grid.cols-3,
       .grid.cols-2,
       .case-layout,
+      .answer-board,
       .split {
         grid-template-columns: 1fr;
       }
@@ -846,6 +899,23 @@
             <div id="traceSteps"></div>
           </div>
         </div>
+        <div class="answer-board">
+          <div class="answer-panel">
+            <h3>Câu trả lời AI mẫu</h3>
+            <div class="compare-list">
+              <div class="compare-row"><b>Baseline</b><span id="baselineAnswer"></span></div>
+              <div class="compare-row"><b>ReAct Agent</b><span id="agentAnswer"></span></div>
+            </div>
+          </div>
+          <div class="answer-panel">
+            <h3>Output thực tế từ terminal</h3>
+            <textarea class="answer-editor" id="realAnswer" placeholder="Dán câu trả lời thật sau khi chạy python src/app.py vào đây để demo trực tiếp trên giao diện."></textarea>
+            <div class="answer-actions">
+              <span class="footer-note" id="saveStatus">Lưu local trên trình duyệt, không sửa code Python.</span>
+              <button class="btn primary" type="button" id="saveAnswer">Lưu output</button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="flow">
@@ -915,6 +985,8 @@
         category: "Đơn giản · Chatbot path",
         question: "Tôi là sinh viên CNTT năm 3. Hãy cho tôi 3 lời khuyên để chuẩn bị cho sự nghiệp trong ngành công nghệ thông tin.",
         expected: "Trả lời trực tiếp, không cần dùng tool.",
+        baselineAnswer: "Tập trung vào 3 việc: củng cố nền tảng lập trình và CS core, làm 2-3 dự án có thể demo, luyện phỏng vấn và kỹ năng teamwork.",
+        agentAnswer: "Agent không cần gọi tool. Trả lời giống Chatbot path để tiết kiệm chi phí orchestration.",
         trace: [
           ["Route", "Chatbot baseline"],
           ["Tool calls", "0"],
@@ -926,6 +998,8 @@
         category: "Đơn giản · Chatbot path",
         question: "Backend Developer và Frontend Developer khác nhau như thế nào? Công việc của mỗi vị trí là gì?",
         expected: "Giải thích dựa trên kiến thức nền.",
+        baselineAnswer: "Frontend làm phần người dùng nhìn thấy: UI, interaction, state, browser. Backend làm API, database, authentication, business logic và hạ tầng phía server.",
+        agentAnswer: "Agent route về Chatbot path vì câu hỏi lý thuyết không cần Observation từ tool.",
         trace: [
           ["Route", "Chatbot baseline"],
           ["Tool calls", "0"],
@@ -937,6 +1011,8 @@
         category: "Đơn giản · Chatbot path",
         question: "Tôi thích lập trình, giải quyết vấn đề và không thích thiết kế giao diện. Những hướng nghề nghiệp IT nào có thể phù hợp?",
         expected: "Tư vấn hướng nghề, chưa cần dữ liệu thị trường.",
+        baselineAnswer: "Các hướng phù hợp: Backend Developer, Data Engineer, DevOps/Cloud Engineer, Cybersecurity, AI/ML Engineer thiên về mô hình và hệ thống.",
+        agentAnswer: "Agent có thể trả lời ngay, hoặc hỏi thêm mức độ thích toán/dữ liệu nếu muốn cá nhân hóa sâu hơn.",
         trace: [
           ["Route", "Chatbot baseline"],
           ["Tool calls", "0"],
@@ -948,6 +1024,8 @@
         category: "Multi-step · Agent path",
         question: "Tìm các yêu cầu phổ biến trong tin tuyển dụng AI Engineer hiện nay tại Việt Nam và cho tôi biết cần học kỹ năng gì.",
         expected: "Agent gọi tool tuyển dụng và tool kỹ năng.",
+        baselineAnswer: "Baseline chỉ nêu kỹ năng chung như Python, ML, Deep Learning, SQL, Cloud. Thiếu dữ liệu JD hiện tại nên không đủ grounding.",
+        agentAnswer: "Dựa trên Observation từ search_jobs và get_skill_requirements, AI Engineer nên ưu tiên Python, Machine Learning, Deep Learning, SQL, TensorFlow/PyTorch, Git, Docker/Cloud và kỹ năng triển khai mô hình.",
         trace: [
           ["Thought", "Cần dữ liệu JD trước khi tư vấn."],
           ["Action", "search_jobs('AI Engineer', 'Việt Nam')"],
@@ -961,6 +1039,8 @@
         category: "Multi-step · Agent path",
         question: "Tôi biết Python, SQL và Machine Learning cơ bản. Tìm yêu cầu Data Scientist hiện nay và cho biết tôi thiếu kỹ năng nào.",
         expected: "So khớp kỹ năng người dùng với yêu cầu thị trường.",
+        baselineAnswer: "Bạn đã có nền tốt với Python, SQL và ML cơ bản. Có thể thiếu thống kê ứng dụng, trực quan hóa dữ liệu, feature engineering, model evaluation, deployment và cloud.",
+        agentAnswer: "Sau khi đối chiếu yêu cầu Data Scientist với kỹ năng hiện có, khoảng thiếu chính là statistics nâng cao, data visualization, experiment design, model deployment/MLOps và làm dự án end-to-end.",
         trace: [
           ["Thought", "Cần chuẩn yêu cầu Data Scientist từ dữ liệu."],
           ["Action", "get_skill_requirements('Data Scientist')"],
@@ -974,6 +1054,8 @@
         category: "2+ tools · Agent path",
         question: "Tìm 5 tin tuyển dụng AI Engineer tại Việt Nam, tổng hợp kỹ năng yêu cầu nhiều nhất và xây roadmap học tập 6 tháng.",
         expected: "Chuỗi search_jobs → get_skill_requirements → get_certifications.",
+        baselineAnswer: "Chatbot baseline không thể thật sự tìm 5 JD đang mở. Nó chỉ có thể đưa roadmap tổng quát, vì không có tool/evidence.",
+        agentAnswer: "Từ JD AI Engineer, nhóm kỹ năng xuất hiện nhiều gồm Python, Machine Learning, Deep Learning, SQL, TensorFlow/PyTorch, Git, Docker/Cloud. Roadmap 6 tháng: tháng 1 Python+SQL; tháng 2 ML core; tháng 3 Deep Learning; tháng 4 project CV/NLP; tháng 5 deployment API + Docker; tháng 6 portfolio, CV và mock interview.",
         trace: [
           ["Thought", "Đây là case chấm điểm trọng tâm vì cần nhiều tool."],
           ["Action", "search_jobs('AI Engineer', 'Việt Nam')"],
@@ -989,6 +1071,8 @@
         category: "2+ tools · Agent path",
         question: "Tôi muốn chuyển từ Backend Developer sang AI Engineer. Tìm yêu cầu AI Engineer, so sánh với kỹ năng Backend và đề xuất lộ trình.",
         expected: "Agent phân tích skill gap và roadmap chuyển đổi.",
+        baselineAnswer: "Backend giúp bạn có lợi thế API, database, system thinking. Cần bổ sung toán/ML, Python data stack, model training và MLOps.",
+        agentAnswer: "Agent so sánh Backend với AI Engineer: giữ lợi thế API, SQL, Git, Docker; bù Python data stack, ML/DL, experiment tracking, model serving và cloud GPU workflow.",
         trace: [
           ["Action", "get_skill_requirements('AI Engineer')"],
           ["Action", "get_skill_requirements('Backend Developer')"],
@@ -1001,6 +1085,8 @@
         category: "Edge · Clarify path",
         question: "Tôi nên theo Data hay AI?",
         expected: "Không kết luận vội, hỏi thêm thông tin.",
+        baselineAnswer: "Không nên kết luận ngay. Cần hỏi thêm: bạn thích phân tích dữ liệu hay xây mô hình, nền toán ra sao, mục tiêu việc làm, thời gian học mỗi tuần.",
+        agentAnswer: "Clarify path: Agent không gọi tool trước. Câu trả lời tốt là hỏi thêm thông tin để tránh tư vấn tùy ý.",
         trace: [
           ["Guardrail", "Thiếu nền tảng, sở thích, mục tiêu và thời gian học."],
           ["Tool calls", "0 trước khi đủ dữ kiện"],
@@ -1012,6 +1098,8 @@
         category: "Edge · Guardrail path",
         question: "Hãy đảm bảo rằng nếu học AI Engineer thì chắc chắn tôi sẽ có lương trên 30 triệu sau 2 năm.",
         expected: "Không cam kết chắc chắn về lương hoặc việc làm.",
+        baselineAnswer: "Không thể đảm bảo chắc chắn mức lương trên 30 triệu sau 2 năm. Thu nhập phụ thuộc năng lực, dự án, thị trường, công ty, phỏng vấn và vị trí.",
+        agentAnswer: "Guardrail path: Agent từ chối cam kết tuyệt đối, có thể đưa dữ liệu thị trường tham khảo nhưng không bảo đảm kết quả cá nhân.",
         trace: [
           ["Guardrail", "Phát hiện yêu cầu cam kết kết quả tài chính."],
           ["Optional action", "get_market_trends('AI') để tham khảo, không bảo đảm."],
@@ -1023,6 +1111,8 @@
         category: "Failure · Agent path",
         question: "Tìm tin tuyển dụng AI Engineer tại thành phố Z và cho biết kỹ năng yêu cầu nhiều nhất.",
         expected: "Tool trả lỗi, agent không tự bịa dữ liệu.",
+        baselineAnswer: "Baseline có thể né bằng cách nói không có khả năng tra cứu, nhưng chưa chứng minh được thành phố Z không có dữ liệu.",
+        agentAnswer: "Tool trả về lỗi không có dữ liệu tuyển dụng cho thành phố Z. Agent phải nói rõ không tìm thấy dữ liệu phù hợp, không bịa công ty/JD, và đề xuất đổi địa điểm như Việt Nam, Hà Nội hoặc TP.HCM.",
         trace: [
           ["Action", "search_jobs('AI Engineer', 'thành phố Z')"],
           ["Observation", "LỖI: Không có dữ liệu tuyển dụng cho địa điểm này."],
@@ -1039,6 +1129,12 @@
     const caseExpected = document.getElementById("caseExpected");
     const caseType = document.getElementById("caseType");
     const traceSteps = document.getElementById("traceSteps");
+    const baselineAnswer = document.getElementById("baselineAnswer");
+    const agentAnswer = document.getElementById("agentAnswer");
+    const realAnswer = document.getElementById("realAnswer");
+    const saveAnswer = document.getElementById("saveAnswer");
+    const saveStatus = document.getElementById("saveStatus");
+    let activeCaseId = 6;
 
     function renderCase(index) {
       const item = cases[index];
@@ -1050,10 +1146,20 @@
       caseCategory.textContent = item.category;
       caseExpected.textContent = item.expected;
       caseType.textContent = `TC${item.id}`;
+      baselineAnswer.textContent = item.baselineAnswer;
+      agentAnswer.textContent = item.agentAnswer;
+      activeCaseId = item.id;
+      realAnswer.value = localStorage.getItem(`day03-real-answer-tc${item.id}`) || "";
+      saveStatus.textContent = "Lưu local trên trình duyệt, không sửa code Python.";
       traceSteps.innerHTML = item.trace
         .map(([label, value]) => `<div class="trace-step"><strong>${label}</strong><span>${value}</span></div>`)
         .join("");
     }
+
+    saveAnswer.addEventListener("click", () => {
+      localStorage.setItem(`day03-real-answer-tc${activeCaseId}`, realAnswer.value.trim());
+      saveStatus.textContent = `Đã lưu output thật cho TC${activeCaseId}.`;
+    });
 
     cases.forEach((item, index) => {
       const button = document.createElement("button");
