@@ -132,12 +132,59 @@ class OpenRouterProvider(BaseLLMProvider):
 
 
 class MockProvider(BaseLLMProvider):
-    """Offline Mock Provider (Cho bài test không cần kết nối API)"""
+    """
+    Smart Offline Mock Provider — Career Domain (Cho bài test không cần kết nối API)
+    Trả về trace ReAct thực tế cho các loại câu hỏi nghề nghiệp IT.
+    KHÔNG dùng mock này để chấm Mốc 2/3 — chỉ dùng cho smoke test và CI.
+    """
+    model_name = "mock-career-v1"
+
     def generate(self, prompt: str, system_prompt: str = "") -> str:
-        text = prompt.lower()
-        if "thời tiết" in text and "hà nội" in text:
-            return "Thought: Cần tra cứu thời tiết Hà Nội.\nAction: get_weather['Hà Nội']"
-        return "🤖 [Mock Provider]: Phản hồi giả lập offline cho bài test."
+        text = (prompt + " " + system_prompt).lower()
+
+        # Multi-step: skill gap / thiếu kỹ năng
+        if any(kw in text for kw in ["thiếu", "skill gap", "kỹ năng", "cần học", "ứng tuyển"]):
+            return (
+                "Thought: Người dùng muốn biết skill gap. Cần lấy yêu cầu role trước.\n"
+                "Action: get_skill_requirements(Backend Developer)"
+            )
+
+        # Multi-step: roadmap / lộ trình
+        if any(kw in text for kw in ["roadmap", "lộ trình", "học trong", "tháng"]):
+            return (
+                "Thought: Cần biết yêu cầu role để xây lộ trình học tập.\n"
+                "Action: get_career_path(Software Engineer)"
+            )
+
+        # So sánh nghề
+        if any(kw in text for kw in ["so sánh", "compare", "khác nhau", "nên chọn"]):
+            return (
+                "Thought: Câu hỏi so sánh hai nghề. Dùng compare_careers.\n"
+                "Action: compare_careers(Data Analyst, Data Engineer)"
+            )
+
+        # Xu hướng thị trường
+        if any(kw in text for kw in ["xu hướng", "trend", "hot nhất", "market"]):
+            return (
+                "Thought: Người dùng hỏi xu hướng thị trường IT.\n"
+                "Action: get_market_trends(AI/ML)"
+            )
+
+        # Final Answer (khi đã có Observation trong prompt)
+        if "observation:" in text:
+            return (
+                "Thought: Tôi đã có đủ thông tin từ dataset để trả lời.\n"
+                "Final Answer: [Mock] Dựa trên dữ liệu ITviec VN 2025, đây là câu trả lời mô phỏng. "
+                "Để có kết quả thực tế, vui lòng cấu hình LLM_PROVIDER=gemini hoặc LLM_PROVIDER=groq."
+            )
+
+        # Simple / FAQ — không cần tool
+        return (
+            "Thought: Đây là câu hỏi định nghĩa/khái niệm, không cần gọi tool.\n"
+            "Final Answer: [Mock] Đây là phản hồi mô phỏng offline. "
+            "Chạy với LLM_PROVIDER=gemini để nhận câu trả lời thực từ AI."
+        )
+
 
 
 def get_llm_provider(provider_name: str = None) -> BaseLLMProvider:
