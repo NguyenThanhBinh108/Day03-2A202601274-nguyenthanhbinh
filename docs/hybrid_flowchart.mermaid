@@ -1,0 +1,16 @@
+flowchart TD
+    Q[User Query] --> S[Safety + Normalize]
+    S --> T{Complexity / Intent}
+    T -->|FAQ or general concept| C[Retrieval Chatbot]
+    T -->|Skill gap / personalized roadmap| A[ReAct Agent]
+    T -->|Missing target/profile/time| CL[Clarification]
+    T -->|Unsafe or unsupported claim| F[Safe Fallback]
+    A --> TOOL[Tool Registry]
+    TOOL --> OBS[Real Observation]
+    OBS --> D{Enough evidence?}
+    D -->|No, budget remains| A
+    D -->|Yes| V[Validate Output]
+    V -->|Pass| O[Final Answer + Evidence]
+    V -->|Fail, revision remains| A
+    V -->|Fail, limit reached| F
+    C --> O
